@@ -1,0 +1,281 @@
+#!/bin/bash
+#
+echo
+echo "select-1.29 (Version September 4 2011) "
+echo "(C) Copyright 2011 Arjan Koning"
+echo "All Rights Reserved"
+#
+# Script to randomize selected parts of and ENDF-6 file
+# or to make covariance files during the random runs
+# Use: 'select <nuclide> <number of run> <selectflag> <covariance flag>
+# <nuclide>: should be given in the form Pu239-n
+# <number of run>: integer below 10000
+# <selectflag>: 1 to have different varying MF/MT sections, 0 if not
+# <covariance flag>: 1 to have covariance file after every random run, 0 in not
+#
+# Example: select Pu239-n  0001 1 1
+#
+# This script is called from the TASMAN code, which makes sure that all
+# the files and directories for this script are present.
+#
+# For the TALYS nuclear data evaluation system, often a very large number of
+# files need to be removed, copied or moved. A standard Linux operating
+# system may not be able to handle this, which results in the message
+# "Argument list too long". We circumvent this with the 'find' command.
+#
+if [ $# == 0 ]
+then
+  echo
+  echo "Usage: $0 <nuclide> <number of run> <selectflag> <covariance flag>"
+  echo
+  echo " <nuclide>: should be given in the form Pu239-n"
+  echo " <number of run>: integer below 10000"
+  echo " <selectflag>: 1 to have different varying MF/MT sections, 0 if not"
+  echo " <covariance flag>: 1 to have covariance file after every random run, 0 in not"
+  echo
+  exit
+fi
+echo
+echo " Used values"
+echo
+echo "nuclide                " $1
+echo "number of run          " $2
+echo "selectflag             " $3
+echo "covariance flag        " $4
+echo
+Thome=/Users/koning
+bin=$Thome'/bin/'
+tefal=$bin'tefal'
+mfsel=$3
+cov=$4
+#
+################################################################################
+# Option 1: Specific MT number variation
+################################################################################
+#
+if [ $mfsel == 1 ]
+then
+#
+# MF1 variation only
+#
+  if [ -e fission.tot ]
+  then
+    cp -rf 0000 var
+    cp -f 0000/fns.mf5.0000 var/fns.mf5.$2
+    cd var
+    $tefal < ../gpf$2.inp > tefal.out
+    mv $1_rand_$2 ../$1_rand_MF1_$2
+    cd ..
+    rm -rf var
+  fi
+#
+# MF2 variation only
+#
+  cp -rf 0000 var
+  if [ -e fission.tot ]
+  then
+    cp -f 0000/fission.mt452.0000 var/fission.mt452.$2
+    cp -f 0000/fission.mt458.0000 var/fission.mt458.$2
+    cp -f 0000/fns.mf5.0000 var/fns.mf5.$2
+  fi
+  cp -f mf2.res* var
+  cd var
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF2_$2
+#
+# Gamma_n only
+#
+  cp -f ../mf2.ela mf2.res
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF2gamN_$2
+#
+# Gamma_gamma only
+#
+  cp -f ../mf2.cap mf2.res
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF2gamG_$2
+#
+# Gamma_f only
+#
+  if [ -e ../fission.tot ]
+  then
+    cp -f ../mf2.fis mf2.res
+    $tefal < ../gpf$2.inp > tefal.out
+    mv $1_rand_$2 ../$1_rand_MF2gamF_$2
+  fi
+  cd ..
+  rm -rf var
+#
+# MF3 variation only
+#
+  cp -rf 0000 var
+  if [ -e fission.tot ]
+  then
+    cp -f 0000/fission.mt452.0000 var/fission.mt452.$2
+    cp -f 0000/fission.mt458.0000 var/fission.mt458.$2
+    cp -f 0000/fns.mf5.0000 var/fns.mf5.$2
+  fi
+#
+# MT2 only
+#
+  cp -f totalxs.tot total.tot elastic.tot endf.tot var
+  cd var
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF3MT2_$2
+  cp -f ../0000/total.tot ../0000/elastic.tot ../0000/endf.tot .
+#
+# MT4 only
+#
+  cp -f ../xs100000.tot .
+  cp -f ../nn.L?? .
+  cp -f ../nn.con .
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF3MT4_$2
+  cp -f ../0000/xs100000.tot .
+  cp -f ../0000/nn.L?? . 
+  cp -f ../0000/nn.con .
+#
+# MT18 only
+#
+  if [ -e ../fission.tot ]
+  then
+    cp -f ../fission.tot .
+    $tefal < ../gpf$2.inp > tefal.out
+    mv $1_rand_$2 ../$1_rand_MF3MT18_$2
+    cp -f ../0000/fission.tot .
+  fi
+#
+# MT102 only
+#
+  cp -f ../xs000000.tot .
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF3MT102_$2
+  cp -f ../0000/xs000000.tot .
+  cd ..
+#
+# Entire MF3
+#
+  cd 0000
+  for xs in `ls xs*.tot`
+  do
+    cp -f ../$xs ../var
+  done
+  for xs in `ls ??.con`
+  do
+    cp -f ../$xs ../var
+  done
+  for xs in `ls ??.L??`
+  do
+    cp -f ../$xs ../var
+  done
+  cd ..
+  cp -f totalxs.tot total.tot elastic.tot endf.tot var
+  cp -f nonelastic.000 var/nonelastic.tot
+  if [ -e fission.tot ]
+  then
+    cp -f fission.tot var
+  fi
+  cd var
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF3_$2
+  #
+  # MF2 and MF3 variation
+  #
+  cp -f ../mf2.res* .
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF23_$2
+  cd ..
+  rm -rf var
+#
+# MF4 variation only
+#
+  cp -rf 0000 var
+  if [ -e fission.tot ]
+  then
+    cp -f 0000/fission.mt452.0000 var/fission.mt452.$2
+    cp -f 0000/fission.mt458.0000 var/fission.mt458.$2
+    cp -f 0000/fns.mf5.0000 var/fns.mf5.$2
+  fi
+  find . -maxdepth 1 -name "*leg.L??" -exec cp -f {} var \;
+  find . -maxdepth 1 -name "*ang.L??" -exec cp -f {} var \;
+  cd var
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF4_$2
+  cd ..
+  rm -rf var
+#
+# MF5 variation only
+#
+  if [ -e fission.tot ]
+  then
+    cp -rf 0000 var
+    cp -f 0000/fission.mt452.0000 var/fission.mt452.$2
+    cp -f 0000/fission.mt458.0000 var/fission.mt458.$2
+    cd var
+    $tefal < ../gpf$2.inp > tefal.out
+    mv $1_rand_$2 ../$1_rand_MF5_$2
+    cd ..
+    rm -rf var
+  fi
+#
+# MF6 variation only
+#
+  cp -rf 0000 var
+  if [ -e fission.tot ]
+  then
+    cp -f 0000/fission.mt452.0000 var/fission.mt452.$2
+    cp -f 0000/fission.mt458.0000 var/fission.mt458.$2
+    cp -f 0000/fns.mf5.0000 var/fns.mf5.$2
+  fi
+  find . -maxdepth 1 -name "sp*tot" -exec cp -f {} var \;
+  cd var
+  $tefal < ../gpf$2.inp > tefal.out
+  mv $1_rand_$2 ../$1_rand_MF6_$2
+  cd ..
+  rm -rf var
+fi
+#
+################################################################################
+# Option 2: Create covariance file 
+################################################################################
+#
+if [ $cov == 1 ]
+then
+  cp -rf 0000 var
+  cp variance.ave var
+  cp cov* var
+  cp gpf.inp var/gpfcov.inp
+  cd var
+  covfile=$1_rand_cov_$2
+  cat >> gpfcov.inp << EOI
+covariance y
+endffile $covfile
+EOI
+  if [ -e ../tefal.add ]
+  then
+    cat ../tefal.add >> gpfcov.inp
+  fi
+  if [ -e nubar.mf31 ] 
+  then
+    cat >> gpfcov.inp << EOI
+adopt 31 452 nubar.mf31
+EOI
+  fi
+  if [ -e mf2.res.mf32c ] 
+  then
+    cat >> gpfcov.inp << EOI
+adopt 32 151 mf2.res.mf32c
+EOI
+  fi
+  if [ -e fns.mf35 ] 
+  then
+    cat >> gpfcov.inp << EOI
+adopt 35 18 fns.mf35
+EOI
+  fi
+  $tefal < gpfcov.inp > gpfcov.out
+  mv $covfile ..
+  cd ..
+  rm -rf var
+fi
+echo "End of select"
