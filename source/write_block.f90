@@ -205,7 +205,7 @@
   return
   end
 !Copyright (C)  2023 A.J. Koning
-  subroutine write_covariance(reaction,MFa,MTa,MFb,MTb)
+  subroutine write_covariance(reaction,MFa,MTa,MFb,MTb,N)
 !
 ! +---------------------------------------------------------------------
 ! | Author: Arjan Koning
@@ -221,6 +221,7 @@
   integer          MTa
   integer          MFb
   integer          MTb
+  integer          N
 !
 ! ************* Write output block *************************************
 !
@@ -236,6 +237,7 @@
     call write_char(2,'reaction',reaction)
     call write_endfMFMT(MFb,MTb)
   endif
+  if (N > 0) call write_integer(2,'number of random samples',N)
   return
   end
 !Copyright (C)  2023 A.J. Koning
