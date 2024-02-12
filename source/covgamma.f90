@@ -116,7 +116,7 @@ subroutine covgamma
   col(3)='xslow'
   col(4)='xsup'
   headerline=''
-  quantity='cross section covariance matrix'
+  quantity='average cross section'
   do i = 1, Nchangam
     ofile = gamfile(i)
     if (ofile(1:1) == ' ') cycle
@@ -137,6 +137,9 @@ subroutine covgamma
       if (istat == -1) exit
       if (line(1:1) /= '#') exit
       headerline(j)=line
+      key='title:'  
+      keyix=index(line,trim(key))
+      if (keyix > 0) headerline(j)=trim(line)//' - average'
       key='source:'
       keyix=index(line,trim(key))
       if (keyix > 0) write(headerline(j)(keyix+len_trim(key)+1:80),'("TASMAN")')
