@@ -198,9 +198,9 @@ subroutine inputout
   write(*, '(" #ld                 ", a1, "     flagld       flag for optimization of level density parameters")') yesno(flagld)
   write(*, '(" #sample             ", a1, "     flagsample   flag for sampling experimental data ")') yesno(flagsample)
   write(*, '(" #talysversion ", a, t27, " talysversion", " version of TALYS")') trim(talysversion)
-  write(*, '(" #user   ", a, t27, "user         user for this calculation")') trim(user)
-  write(*, '(" #source ", a, t27, "source       source for this calculation")') trim(source)
-  write(*, '(" #format ", a, t27, "oformat      format for output")') trim(oformat)
+  write(*, '(" #user   ", a, t27, " user         user for this calculation")') trim(user)
+  write(*, '(" #source ", a, t27, " source       source for this calculation")') trim(source)
+  write(*, '(" #format ", a, t27, " oformat      format for output")') trim(oformat)
   write(*, '(" #"/" # Keywords for mode ", i1, /" #")') mode
 !
 ! 2. Keywords for uncertainties and covariances
