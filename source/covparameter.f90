@@ -6,6 +6,7 @@ subroutine covparameter
 ! Author    : Arjan Koning
 !
 ! 2021-12-30: Original code
+! 2024-02-01: Beautify output
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -50,9 +51,18 @@ subroutine covparameter
 !
   implicit none
   character(len=25) :: pfile      ! parameter file
+  character(len=15) :: col(9)                         ! header 
+  character(len=15) :: un(9)
+  character(len=16) :: reaction                       
+  character(len=132) :: line
+  character(len=132) :: key                           
+  character(len=132) :: quantity                      
+  character(len=132) :: topline    ! topline          
+  character(len=132), dimension(100) :: headerline   ! header line of file 
   integer           :: j          ! counter
   integer           :: k          ! Legendre order
   integer           :: l          ! counter
+  integer           :: Ncol                           
   real(sgl)         :: Ei         ! incident energy
   real(sgl)         :: Eprev      ! previous energy
   real(sgl)         :: err        ! error
@@ -65,6 +75,12 @@ subroutine covparameter
   real(sgl)         :: term       ! help variable
 !
 ! Output of accepted and rejected parameters
+!
+  col = ''
+  un = ''
+  reaction='('//ptype0//',x)'
+  quantity='parameter covariance matrix'
+  topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
 !
 ! parameter covariance matrix
 !
@@ -93,20 +109,43 @@ subroutine covparameter
 !
 ! Output of covariance matrices for parameters
 !
-  open (unit = 3, file = 'cov_parameter.ave', status = 'replace')
-  write(3, '(6x, "parameter", 17x, "parameter", 11x, "      Pij     ", "  correlation")')
+  col(1)='parameter_1'
+  col(3)='parameter_2'
+  col(5)='Covariance'
+  col(6)='Correlation'
+  Ncol=6
+  open (unit = 1, file = 'cov_parameter.ave', status = 'replace')
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  write(1, '("# covariance:")')
+  write(1, '("#   class: covariance")')
+  write(1, '("#   number of accepted runs: ", i4)') italys
+  call write_datablock(quantity,Ncol,Npar*Npar,col,un)
   do k = 1, Npar
     do l = 1, Npar
-      write(3, '(2a25, 2es15.6)') parstring(k), parstring(l), parcov(k, l), parcor(k, l)
+      write(1, '(2a30, 2es15.6)') parstring(k), parstring(l), parcov(k, l), parcor(k, l)
     enddo
   enddo
-  close (3)
+  close (1)
 !
 ! Output of average parameters
 !
-  open (unit = 3, file = 'parameter.ave', status = 'replace')
-  write(3, '("Number of accepted runs: ", i4)') italys
-  write(3, '(6x, "parameter", 11x, "    average       uncertainty      %         input        uncertainty     %      Ratio")')
+  col(1)='parameter'
+  col(3)='Average'
+  col(4)='Std._dev.'
+  col(5)='Rel._dev.'
+  un(5)='%'
+  col(6)='Input'
+  col(7)='Std._dev.'
+  col(8)='Rel._dev.'
+  un(8)='%'
+  col(9)='Unc._ratio'
+  Ncol=9
+  open (unit = 1, file = 'parameter.ave', status = 'replace')
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  call write_covariance(reaction,0,0,0,0,italys)
+  call write_datablock(quantity,Ncol,Npar,col,un)
   do k = 1, Npar
     err = parav(k, 0) * sqrt(abs(parcov(k, k)))
     inperr = parsave(0, k) * pardelta(k)
@@ -116,9 +155,9 @@ subroutine covparameter
     if (parsave(0, k) /= 0.) inpperc = 100. * inperr / parsave(0, k)
     if (parav(k, 0) /= 0.) finperc = 100. * err / parav(k, 0)
     if (finperc /= 0.) ratio = inpperc / finperc
-    write(3, '(a25, 2(2es15.6, f9.3), f9.3)') parstring(k), parav(k, 0), err, finperc, parsave(0, k), inperr, inpperc, ratio
+    write(1, '(a30, 7es15.6)') parstring(k), parav(k, 0), err, finperc, parsave(0, k), inperr, inpperc, ratio
   enddo
-  close (3)
+  close (1)
 !
 ! Output of energy-dependent average parameters
 !
@@ -129,7 +168,7 @@ subroutine covparameter
       else
         pfile = 'upd.'//trim(parfile(k))
       endif
-      open (unit = 8, file = pfile, status = 'replace')
+      open (unit = 1, file = pfile, status = 'replace')
       Eprev = 0.
       do j = 1, Nen(1)
         if (parinp(k) /= 0.) then
@@ -139,11 +178,11 @@ subroutine covparameter
           else
             Ei = Ein(j)
           endif
-          if (Ei > Eprev) write(8, '(2es12.5)') Ei, ratio
+          if (Ei > Eprev) write(1, '(2es12.5)') Ei, ratio
           Eprev = Ei
         endif
       enddo
-      close(8)
+      close(1)
     enddo
   endif
   return
