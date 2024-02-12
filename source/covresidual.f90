@@ -129,7 +129,7 @@ subroutine covresidual
   un(1)='MeV'
   col(2)='E_b'
   un(2)='MeV'
-  col(3)='Rcov'
+  col(3)='Rel._covariance'
   Ncol=3
 !
 ! Intra-channel correlations
@@ -148,8 +148,8 @@ subroutine covresidual
     call write_target
     call write_reaction(reaction,0.D0,0.D0,6,5)
     call write_residual(Zrp(i),Arp(i),finalnuclide)
-    if (Lrp(i) >= 0) call write_level(2,Lrp(i),-1,0.,-1.,0,0.)
-    call write_covariance(reaction,6,5,6,5)
+!   if (Lrp(i) >= 0) call write_level(2,Lrp(i),-1,0.,-1.,0,0.)
+    call write_covariance(reaction,6,5,6,5,italys)
     call write_datablock(quantity,Ncol,Nencov*Nencov,col,un)
     do j = 1, Nencov
       jj = Ecovindex(j)
@@ -165,6 +165,7 @@ subroutine covresidual
 !
 ! Average cross sections
 !
+  quantity='average cross section'
   un = 'mb'
   col(1)='E'
   un(1)='MeV'
@@ -197,6 +198,9 @@ subroutine covresidual
       if (istat == -1) exit
       if (line(1:1) /= '#') exit
       headerline(j)=line
+      key='title:'
+      keyix=index(line,trim(key))
+      if (keyix > 0) headerline(j)=trim(line)//' - average'
       key='source:'
       keyix=index(line,trim(key))
       if (keyix > 0) write(headerline(j)(keyix+len_trim(key)+1:80),'("TASMAN")')
