@@ -385,9 +385,9 @@ subroutine covcross
   un(1)='MeV'
   col(2)='E_b'
   un(2)='MeV'
-  col(3)='Rcov'
-  col(4)='Ccov'
-  col(5)='Vcov'
+  col(3)='Rel._covariance'
+  col(4)='Correlation'
+  col(5)='Covariance'
   Ncol=5
 !
 ! Inter-channel correlations
@@ -402,7 +402,7 @@ subroutine covcross
       call write_reaction(reaction,0.D0,0.D0,3,MTcov(i))
       if (MTisocov(i) >= 0) call write_level(2,MTisocov(i),-1,0.,-1.,0,0.)
       reaction_cov=MTreac(MTcov(k))
-      call write_covariance(reaction_cov,3,MTcov(i),3,MTcov(k))
+      call write_covariance(reaction_cov,3,MTcov(i),3,MTcov(k),italys)
       if (MTisocov(k) >= 0) call write_level(4,MTisocov(k),-1,0.,-1.,0,0.)
       call write_datablock(quantity,Ncol,Nencov*Nencov,col,un)
       do j = 1, Nencov
@@ -423,12 +423,12 @@ subroutine covcross
   open (unit = 1, file = 'cov_intra.ave', status = 'replace')
   do i = 1, Nchanxs
     reaction=MTreac(MT(i))
-    topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)//' covariance data'
+    topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
     call write_header(topline,source,user,date,oformat)
     call write_target
     call write_reaction(reaction,0.D0,0.D0,3,MT(i))
     if (MTiso(i) >= 0) call write_level(2,MTiso(i),-1,0.,-1.,0,0.)
-    call write_covariance(reaction,3,MT(i),3,MT(i))
+    call write_covariance(reaction,3,MT(i),3,MT(i),italys)
     call write_datablock(quantity,Ncol,Nencov*Nencov,col,un)
     do j = 1, Nencov
       jj = Ecovindex(j)
@@ -447,11 +447,11 @@ subroutine covcross
   un=''
   col(1)='E'
   un(1)='MeV'
-  col(2)='Rmt'
-  col(3)='errmtC'
-  col(4)='xsavC'
+  col(2)='Rel._variance'
+  col(3)='Rel._std._dev.'
+  col(4)='Average_xs'
   un(4)='mb'
-  col(5)='err'
+  col(5)='Std._dev.'
   un(5)='mb'
   Ncol=5
   open (unit = 1, file = 'variance.ave', status = 'replace')
@@ -462,7 +462,7 @@ subroutine covcross
     call write_target
     call write_reaction(reaction,0.D0,0.D0,3,MT(i))
     if (MTiso(i) >= 0) call write_level(2,MTiso(i),-1,0.,-1.,0,0.)
-    call write_covariance(reaction,3,MT(i),0,0)
+    call write_covariance(reaction,3,MT(i),0,0,italys)
     call write_datablock(quantity,Ncol,Nencov,col,un)
     do j = 1, Nencov
       jj = Ecovindex(j)
@@ -482,6 +482,7 @@ subroutine covcross
   col(3)='xslow'
   col(4)='xsup'
   headerline=''
+  quantity='average cross section'
   do i = 1, Nchanxs
     ofile = xsfile(i)
     if (ofile(1:1) == ' ') cycle
@@ -509,6 +510,9 @@ subroutine covcross
       if (istat == -1) exit
       if (line(1:1) /= '#') exit
       headerline(j)=line
+      key='title:'
+      keyix=index(line,trim(key))
+      if (keyix > 0) headerline(j)=trim(line)//' - average'
       key='source:'
       keyix=index(line,trim(key))
       if (keyix > 0) write(headerline(j)(keyix+len_trim(key)+1:80),'("TASMAN")')
