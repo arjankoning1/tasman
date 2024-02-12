@@ -181,7 +181,7 @@ subroutine covangle
   un(1)='degrees'
   col(2)='Angle2'
   un(2)='degrees'
-  col(3)='Rangle'
+  col(3)='Rel._covariance'
   Ncol=3
   open (unit = 1, file = 'cov_angle.ave', status = 'replace')
   do i = 1, Nchanang
@@ -191,8 +191,8 @@ subroutine covangle
     call write_target
     call write_reaction(reaction,0.D0,0.D0,4,2)
     call write_real(2,'E-incident [MeV]',Eang(i))
-    call write_covariance(reaction,4,2,4,2)
-    call write_real(4,'E-incident [MeV]',Eang(i))
+    call write_covariance(reaction,4,2,4,2,italys)
+    call write_real(2,'E-incident [MeV]',Eang(i))
     call write_datablock(quantity,Ncol,(Nang(i)+1)**2,col,un)
     do j = 0, Nang(i)
       do l = 0, Nang(i)
