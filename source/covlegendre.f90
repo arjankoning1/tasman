@@ -99,8 +99,8 @@ subroutine covlegendre
   if (.not.flagblock) then
     un = ''
     col(1)='l'
-    col(2)='Legendre coeff.'
-    col(3)='uncertainty'
+    col(2)='Legendre_coeff.'
+    col(3)='Std._dev.'
     headerline=''
     do i = 1, Nchanleg
       if (legfile(i)(1:1) == ' ') cycle
@@ -115,6 +115,9 @@ subroutine covlegendre
         if (istat == -1) exit
         if (line(1:1) /= '#') exit
         headerline(j)=line
+        key='title:'
+        keyix=index(line,trim(key))
+        if (keyix > 0) headerline(j)=trim(line)//' - average'
         key='source:'
         keyix=index(line,trim(key))
         if (keyix > 0) write(headerline(j)(keyix+len_trim(key)+1:80),'("TASMAN")')
@@ -147,9 +150,9 @@ subroutine covlegendre
 !
   un=''
   Ncol=3
-  col(1)='l1'
-  col(2)='l2'
-  col(3)='Rleg'
+  col(1)='Leg._coeff_1'
+  col(2)='Leg._coeff_2'
+  col(3)='Rel._covariance'
   open (unit = 1, file = 'cov_legendre.ave', status = 'replace')
   do i = 1, Nchanleg
     do k = 1, Nchanleg
@@ -159,8 +162,8 @@ subroutine covlegendre
       call write_target
       call write_reaction(reaction,0.D0,0.D0,4,2)
       call write_real(2,'E-incident [MeV]',Eleg(i))
-      call write_covariance(reaction,4,2,4,2)
-      call write_real(4,'E-incident [MeV]',Eleg(k))
+      call write_covariance(reaction,4,2,4,2,italys)
+      call write_real(2,'E-incident [MeV]',Eleg(k))
       call write_datablock(quantity,Ncol,(numleg+1)**2,col,un)
       do j = 0, numleg
         do l = 0, numleg
