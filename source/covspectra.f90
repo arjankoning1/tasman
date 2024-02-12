@@ -102,7 +102,7 @@ subroutine covspectra
   col(3)='xslow'
   col(4)='xsup'
   headerline=''
-  quantity='emission spectrum covariance matrix'
+  quantity='average emission spectrum'
   if (.not.flagblock) then
     do i = 1, Nchansp
       if (spfile(i)(1:1) == ' ') cycle
@@ -123,6 +123,9 @@ subroutine covspectra
         if (istat == -1) exit
         if (line(1:1) /= '#') exit
         headerline(j)=line
+        key='title:'  
+        keyix=index(line,trim(key))
+        if (keyix > 0) headerline(j)=trim(line)//' - average'
         key='source:'
         keyix=index(line,trim(key))
         if (keyix > 0) write(headerline(j)(keyix+len_trim(key)+1:80),'("TASMAN")')
@@ -159,12 +162,13 @@ subroutine covspectra
 !
 ! Covariance matrices for emission spectra
 !
+  quantity='emission spectrum covariance matrix'
   un = ''
   col(1)='E-out1'
   un(1)='MeV'
   col(2)='E-out2'
   un(2)='MeV'
-  col(3)='Rspec'
+  col(3)='Rel._covariance'
   Ncol=3
   reaction='('//ptype0//',x'//ptype0//')'
   topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
@@ -174,7 +178,7 @@ subroutine covspectra
     call write_target
     call write_reaction(reaction,0.D0,0.D0,6,5)
     call write_real(2,'E-incident [MeV]',Ein(i))
-    call write_covariance(reaction,35,5,0,0)
+    call write_covariance(reaction,35,5,0,0,italys)
     call write_real(4,'E-incident [MeV]',Ein(i))
     call write_datablock(quantity,Ncol,(Nensp(i)+1)**2,col,un)
     do j = 0, Nensp(i)
