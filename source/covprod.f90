@@ -111,7 +111,7 @@ subroutine covprod
 !
 ! Output
 !
-  quantity='cross section covariance matrix'
+  quantity='average cross section'
   un = 'mb'
   col(1)='E'
   un(1)='MeV'
@@ -139,6 +139,9 @@ subroutine covprod
       if (istat == -1) exit
       if (line(1:1) /= '#') exit
       headerline(j)=line
+      key='title:'
+      keyix=index(line,trim(key))
+      if (keyix > 0) headerline(j)=trim(line)//' - average'
       key='source:'
       keyix=index(line,trim(key))
       if (keyix > 0) write(headerline(j)(keyix+len_trim(key)+1:80),'("TASMAN")')
