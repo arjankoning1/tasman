@@ -54,11 +54,8 @@ subroutine covparameter
   character(len=15) :: col(9)                         ! header 
   character(len=15) :: un(9)
   character(len=16) :: reaction                       
-  character(len=132) :: line
-  character(len=132) :: key                           
   character(len=132) :: quantity                      
   character(len=132) :: topline    ! topline          
-  character(len=132), dimension(100) :: headerline   ! header line of file 
   integer           :: j          ! counter
   integer           :: k          ! Legendre order
   integer           :: l          ! counter
