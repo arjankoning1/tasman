@@ -407,7 +407,7 @@ subroutine input2
   expclass = 3
   outsearch = 5
   source = 'TASMAN'
-  oformat = 'YANDF-0.1'
+  oformat = 'YANDF-0.2'
 !
 ! Read input
 !
