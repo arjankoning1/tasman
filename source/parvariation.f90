@@ -79,7 +79,7 @@ subroutine parvariation
   real(sgl) :: Plow(numhist)              ! bottom of histogram
   real(sgl) :: Rdist                      ! random number
   real(sgl) :: RR                         ! random number
-  real(sgl) :: rnlow                      ! 
+! real(sgl) :: rnlow                      ! 
   real(dbl) :: mersenne                   ! random number generator (Mersenne twister)
 !
 ! ******* One-parameter variation for linear sensitivity matrix ********
