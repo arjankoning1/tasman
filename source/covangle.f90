@@ -69,6 +69,7 @@ subroutine covangle
 !
 ! Average angular distributions
 !
+  xslimit = 10.
   do i = 1, Nchanang
     do j = 0, Nang(i)
       angi0 = angtalys(0, i, j)
@@ -80,7 +81,6 @@ subroutine covangle
 !
 ! Covariances
 !
-  xslimit = 10.
   do i = 1, Nchanang
     do j = 0, Nang(i)
       angi0 = angtalys(0, i, j)
