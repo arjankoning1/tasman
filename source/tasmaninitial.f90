@@ -98,9 +98,6 @@ subroutine tasmaninitial
   E1mb = 0.
   xsfile = ''
   Nenexp = 0
-  xsth = 0.
-  Eindex = 0
-  Eexp = 0.
   Ebeg = 0.
   Eend = 0.
   Eweight = 1.
