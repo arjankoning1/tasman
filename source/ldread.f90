@@ -37,6 +37,8 @@ subroutine ldread
   integer           :: keyix
   real(sgl)         :: Dexp
   real(sgl)         :: dDexp
+  real(sgl)         :: Dglobal
+  real(sgl)         :: dDglobal
   real(sgl)         :: Dth
   real(sgl)         :: Frms
 !
@@ -72,6 +74,14 @@ subroutine ldread
       keyix=index(line,trim(key))
       if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) dDexp
       if (istat /= 0) call read_error(xsf, istat)
+      key='global D0 [eV]'
+      keyix=index(line,trim(key))
+      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Dglobal
+      if (istat /= 0) call read_error(xsf, istat)
+      key='global D0 unc. [eV]'
+      keyix=index(line,trim(key))
+      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) dDglobal
+      if (istat /= 0) call read_error(xsf, istat)
       key='theoretical D0 [eV]'
       keyix=index(line,trim(key))
       if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Dth
@@ -82,11 +92,16 @@ subroutine ldread
       if (istat /= 0) call read_error(xsf, istat)
     enddo
     close (2)
-    xsexp(1, 1, 1) = Dexp
-    dxsexp(1, 1, 1) = dDexp
+    if (Dexp > 0.) then
+      xsexp(1, 1, 1) = Dexp
+      dxsexp(1, 1, 1) = dDexp
+    else
+      xsexp(1, 1, 1) = Dglobal
+      dxsexp(1, 1, 1) = dDglobal
+    endif
     xsth(1, 1, 1) = Dth
     xsexp(1, 1, 2) = 1.
-    dxsexp(1, 1, 2) = 0.1
+    dxsexp(1, 1, 2) = 0.05
     xsth(1, 1, 2) = Frms
   endif
   return
