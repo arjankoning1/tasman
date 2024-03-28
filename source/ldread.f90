@@ -35,18 +35,24 @@ subroutine ldread
   integer           :: isamp     ! variable for 0th or random run
   integer           :: istat     ! logical for file access
   integer           :: keyix
+  integer           :: k
+  integer           :: l1
+  integer           :: Nlow
+  integer           :: Ntop
   real(sgl)         :: Dexp
   real(sgl)         :: dDexp
   real(sgl)         :: Dglobal
   real(sgl)         :: dDglobal
   real(sgl)         :: Dth
   real(sgl)         :: Frms
+  real(sgl)         :: chi2
+  real(sgl)         :: Nc1
 !
 ! Read level densities
 !
   Nchanall = 1
-  Nenexp(1, 1) = 2
-  Nsets(1) = 1
+  Nenexp(1, 1) = 1
+  Nsets(1) = 2
   MT(1) = 1
   MTexp(1) = 1
   NMTexp = 1
@@ -66,6 +72,14 @@ subroutine ldread
     do
       read(2,'(a)', iostat = istat) line
       if (istat == -1) exit
+      key='Nlow'
+      keyix=index(line,trim(key))
+      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Nlow
+      if (istat /= 0) call read_error(xsf, istat)
+      key='Ntop'
+      keyix=index(line,trim(key))
+      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Ntop
+      if (istat /= 0) call read_error(xsf, istat)
       key='experimental D0 [eV]'
       keyix=index(line,trim(key))
       if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Dexp
@@ -86,24 +100,66 @@ subroutine ldread
       keyix=index(line,trim(key))
       if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Dth
       if (istat /= 0) call read_error(xsf, istat)
+      key='Chi-2 per level'
+      keyix=index(line,trim(key))
+      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) chi2
+      if (istat /= 0) call read_error(xsf, istat)
       key='Frms per level'
       keyix=index(line,trim(key))
       if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Frms
       if (istat /= 0) call read_error(xsf, istat)
+      k = 0
+      key='entries' 
+      keyix=index(line,trim(key))
+      if (keyix > 0) then
+        read(2,'(/)',iostat = istat)
+        if (istat == -1) exit
+        do
+          read(2, '(15x,i6,9x,es15.6)', iostat = istat) l1, Nc1 
+          if (istat == -1) exit
+          if (istat /= 0) call read_error(xsf, istat, eor = 'continue')
+          if (l1 < Nlow) cycle
+          if (l1 > Ntop) exit
+          k = k + 1
+          if (k > numenin) then 
+            write(*, '(" TASMAN-error: Number of incident energies larger than numenin =",i6)') numenin
+            stop  
+          endif
+          xsexp(1, 2, k) = real(l1)
+!         dxsexp(1, 2, k) = sqrt(real(l1))
+          dxsexp(1, 2, k) = 1.
+!         dxsexp(1, 2, k) = sqrt(real(Ntop-Nlow))
+          xsth(1, 2, k) = Nc1
+          if (k == numenexp) exit
+        enddo     
+        exit
+      endif
     enddo
     close (2)
+    Nenexp(1,2) = k
     if (Dexp > 0.) then
+!     xsexp(1, 1, 1) = 1./(Dexp*1.e-6)
+!     dxsexp(1, 1, 1) = 1./(dDexp*1.e-6)
       xsexp(1, 1, 1) = Dexp
       dxsexp(1, 1, 1) = dDexp
     else
-      xsexp(1, 1, 1) = Dglobal
-      dxsexp(1, 1, 1) = dDglobal
+!     if (Dglobal > 0.) then
+!       xsexp(1, 1, 1) = 1./(Dglobal*1.e-6)
+!       dxsexp(1, 1, 1) = 1./(dDglobal*1.e-6)
+        xsexp(1, 1, 1) = Dglobal
+        dxsexp(1, 1, 1) = dDglobal
+      endif
     endif
+!   if (Dth > 0.) xsth(1, 1, 1) = 1./(Dth*1.e-6)
     xsth(1, 1, 1) = Dth
-    xsexp(1, 1, 2) = 1.
-    dxsexp(1, 1, 2) = 0.05
-    xsth(1, 1, 2) = Frms
-  endif
+!   xsexp(1, 1, 2) = 1.
+!   dxsexp(1, 1, 2) = 0.1
+!   if (ichi2 == 3) then
+!     xsth(1, 1, 2) = chi2+1.
+!   else
+!     xsth(1, 1, 2) = Frms
+!   endif
+! endif
   return
 end subroutine ldread
 ! Copyright A.J. Koning 2023
