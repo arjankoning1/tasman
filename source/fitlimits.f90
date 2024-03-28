@@ -97,6 +97,17 @@ subroutine fitlimits
     parhigh(i) = max(p1, p2)
     if (parlow(i) == parhigh(i)) parhigh(i) = parhigh(i) * 1.001
 !
+! Special case for level density fitting
+!
+    if (parkey(i) == 'nlow') then   
+      parlow(i) = max(parlow(i), 4.)
+      parhigh(i) = min(parhigh(i), 8.)
+    endif
+    if (parkey(i) == 'ntop') then
+      parlow(i) = max(parlow(i), 20.)
+      parhigh(i) = max(parlow(i)+1, parhigh(i))
+    endif
+!
 ! Make histogram for parameter
 !
     if (flagweight) then
