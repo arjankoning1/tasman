@@ -457,7 +457,11 @@ Loop2: do
         if (flagdeltaE) then
           term = max(abs(Eend(i,j)-Ebeg(i,j)), 1.)
         else
-          term = real(nenset(j))
+!         if (flagld) then
+!           term = 1.
+!         else
+            term = real(nenset(j))
+!         endif
         endif
         do m = 1, numtype
           if (m == 1) then
