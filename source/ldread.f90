@@ -39,6 +39,7 @@ subroutine ldread
   integer           :: l1
   integer           :: Nlow
   integer           :: Ntop
+  integer           :: nlev
   real(sgl)         :: Dexp
   real(sgl)         :: dDexp
   real(sgl)         :: Dglobal
@@ -72,6 +73,14 @@ subroutine ldread
     do
       read(2,'(a)', iostat = istat) line
       if (istat == -1) exit
+      key='number of excited levels'
+      keyix=index(line,trim(key))
+      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) nlev
+      if (istat /= 0) call read_error(xsf, istat)
+      if (nlev <= 10) then 
+        write(*, '(" TASMAN-error: Not enough levels for level density optimization =",i6)') nlev
+        stop  
+      endif
       key='Nlow'
       keyix=index(line,trim(key))
       if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Nlow
@@ -126,9 +135,7 @@ subroutine ldread
             stop  
           endif
           xsexp(1, 2, k) = real(l1)
-!         dxsexp(1, 2, k) = sqrt(real(l1))
-          dxsexp(1, 2, k) = 1.
-!         dxsexp(1, 2, k) = sqrt(real(Ntop-Nlow))
+          dxsexp(1, 2, k) = sqrt(real(l1))
           xsth(1, 2, k) = Nc1
           if (k == numenexp) exit
         enddo     
@@ -138,28 +145,16 @@ subroutine ldread
     close (2)
     Nenexp(1,2) = k
     if (Dexp > 0.) then
-!     xsexp(1, 1, 1) = 1./(Dexp*1.e-6)
-!     dxsexp(1, 1, 1) = 1./(dDexp*1.e-6)
+      flagD0exp=.true.
       xsexp(1, 1, 1) = Dexp
       dxsexp(1, 1, 1) = dDexp
     else
-!     if (Dglobal > 0.) then
-!       xsexp(1, 1, 1) = 1./(Dglobal*1.e-6)
-!       dxsexp(1, 1, 1) = 1./(dDglobal*1.e-6)
-        xsexp(1, 1, 1) = Dglobal
-        dxsexp(1, 1, 1) = dDglobal
-      endif
+      flagD0exp=.false.
+      xsexp(1, 1, 1) = Dglobal
+      dxsexp(1, 1, 1) = dDglobal
     endif
-!   if (Dth > 0.) xsth(1, 1, 1) = 1./(Dth*1.e-6)
     xsth(1, 1, 1) = Dth
-!   xsexp(1, 1, 2) = 1.
-!   dxsexp(1, 1, 2) = 0.1
-!   if (ichi2 == 3) then
-!     xsth(1, 1, 2) = chi2+1.
-!   else
-!     xsth(1, 1, 2) = Frms
-!   endif
-! endif
+  endif
   return
 end subroutine ldread
 ! Copyright A.J. Koning 2023
