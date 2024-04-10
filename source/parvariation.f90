@@ -205,7 +205,7 @@ subroutine parvariation
 !           rnlow=par(i)
           endif
           if (parkey(i) == 'ntop') then
-            par(i) = max(par(i), 15.)
+            par(i) = max(par(i), 20.)
 !           par(i) = max(par(i), rnlow+5.)
           endif
           if (parkey(i) == 'fishw') par(i) = max(0.01, min(par(i), 10.))
