@@ -430,6 +430,7 @@ module A0_tasman_mod
 ! Variables for reading MACS
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
+  logical                          :: flagD0exp
   real(sgl), dimension(0:numtalys) :: macssave  ! average Maxwellian averaged cross section
   real(sgl), dimension(0:1)        :: macstalys ! Maxwellian averaged cross section from TALYS
   real(sgl)                        :: ratmacs   ! Maxwellian rate
