@@ -545,22 +545,22 @@ subroutine input4
         exit
       endif
       if (key == 'ctable') then
-        delta0 = 0.80
+        delta0 = 1.00
         partype0 = 'shift '
         exit
       endif
       if (key == 'ptable') then
-        delta0 = 0.80
+        delta0 = 2.00
         partype0 = 'shift '
         exit
       endif
       if (key == 'ctableadjust') then
-        delta0 = 0.80
+        delta0 = 1.00
         partype0 = 'shift '
         exit
       endif
       if (key == 'ptableadjust') then
-        delta0 = 0.80
+        delta0 = 2.00
         partype0 = 'shift '
         exit
       endif
