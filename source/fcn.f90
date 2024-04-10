@@ -161,6 +161,7 @@ subroutine fcn(N, P, G)
   real(sgl)          :: wtot                                        ! total weight
   real(sgl)          :: ww                                          ! weight
   real(sgl)          :: xsde                                        ! uncertainty of cross section
+  real(sgl)          :: xsdemin 
   real(sgl)          :: xsdif                                       ! difference between experimental and theoretical cross  section
   real(sgl)          :: xse                                         ! experimental cross section
   real(sgl)          :: xslim                                       ! limit of cross section per channel
@@ -295,6 +296,10 @@ subroutine fcn(N, P, G)
       write(ifile,'("# A                :",i4)') ia
       write(ifile,'("# Target isomer    : ",a1)') isochar
       write(ifile,'("# Nuclide          : ",a,i3.3,a1)') trim(nuc(iz)),ia,trim(isochar)
+      write(ifile,'("# Parameters       :")') 
+      do i= 1, Npar
+        write(ifile,'(a)') trim(string(i))
+      enddo
     enddo
 !
 ! Calculate goodness-of-fit estimator
@@ -419,10 +424,15 @@ Loop2: do
           endif
           if (isearch == 0 .and. Gpoint(1) > Fmax(imt)) chinclude(i, j, k) = ' '
 !
-! 3. Chi2
+! 3. Chi2  (asymmetric error bars for D0)
 !
           if (xsde > 0.) then
             Gpoint(3) = (xsdif / xsde) **2
+            if (flagld .and. .not.flagD0exp .and. j == 1 .and. xst < xse) then 
+              xsdemin = xsde
+              if (xse > 0. .and. xsde > 0.) xsdemin =  xse * ( 1. - 1. / (1. + xsde / xse))
+              Gpoint(3) = (xsdif / xsdemin) **2
+            endif
           else
             Gpoint(3) = 0.
           endif
