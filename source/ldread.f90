@@ -40,6 +40,7 @@ subroutine ldread
   integer           :: Nlow
   integer           :: Ntop
   integer           :: nlev
+  integer           :: Nlimit
   real(sgl)         :: Dexp
   real(sgl)         :: dDexp
   real(sgl)         :: Dglobal
@@ -65,6 +66,7 @@ subroutine ldread
   else
     isamp = 1
   endif
+  Nlimit=15
   inquire (file = xsf, exist = lexist)
   if (lexist) then
     open (unit = 2, file = xsf, status = 'old')
@@ -75,11 +77,13 @@ subroutine ldread
       if (istat == -1) exit
       key='number of excited levels'
       keyix=index(line,trim(key))
-      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) nlev
-      if (istat /= 0) call read_error(xsf, istat)
-      if (nlev <= 10) then 
-        write(*, '(" TASMAN-error: Not enough levels for level density optimization =",i6)') nlev
-        stop  
+      if (keyix > 0) then
+        read(line(keyix+len_trim(key)+2:80),*, iostat = istat) nlev
+        if (istat /= 0) call read_error(xsf, istat)
+        if (nlev <= Nlimit) then 
+          write(*, '(" TASMAN-error: Not enough levels for level density optimization =",i6)') nlev
+          stop  
+        endif
       endif
       key='Nlow'
       keyix=index(line,trim(key))
