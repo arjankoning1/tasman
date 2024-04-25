@@ -110,7 +110,7 @@ subroutine input1
         numE = 1
         cycle
       else
-        read(value, '(a73)', iostat = istat) energyfile
+        read(value, '(a)', iostat = istat) energyfile
         if (istat /= 0) call read_error(line, istat)
       endif
     endif
