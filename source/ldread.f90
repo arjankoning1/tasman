@@ -29,18 +29,20 @@ subroutine ldread
 !
   implicit none
   logical           :: lexist    ! logical to determine existence
-  character(len=12) :: xsf       ! filename
+  character(len=20) :: xsf       ! filename
   character(len=132) :: line
   character(len=132) :: key
   integer           :: isamp     ! variable for 0th or random run
   integer           :: istat     ! logical for file access
   integer           :: keyix
+  integer           :: i
   integer           :: k
   integer           :: l1
   integer           :: Nlow
   integer           :: Ntop
   integer           :: nlev
   integer           :: Nlimit
+  integer           :: Nentries
   real(sgl)         :: Dexp
   real(sgl)         :: dDexp
   real(sgl)         :: Dglobal
@@ -58,9 +60,9 @@ subroutine ldread
   MT(1) = 1
   MTexp(1) = 1
   NMTexp = 1
-  xsf = 'ld000000.tot'
-  write(xsf(3:5), '(i3.3)') ZCN
-  write(xsf(6:8), '(i3.3)') ACN
+  xsf = 'tld000000.gs'
+  write(xsf(4:6), '(i3.3)') ZCN
+  write(xsf(7:9), '(i3.3)') ACN
   if (italys <= 0) then
     isamp = 0
   else
@@ -124,24 +126,25 @@ subroutine ldread
       k = 0
       key='entries' 
       keyix=index(line,trim(key))
+      if (keyix > 0) read(line(keyix+len_trim(key)+2:80),*, iostat = istat) Nentries
+      if (istat /= 0) call read_error(xsf, istat)
       if (keyix > 0) then
         read(2,'(/)',iostat = istat)
         if (istat == -1) exit
-        do
+        do i = 1, Nentries
           read(2, '(15x,i6,9x,es15.6)', iostat = istat) l1, Nc1 
-          if (istat == -1) exit
           if (istat /= 0) call read_error(xsf, istat, eor = 'continue')
           if (l1 < Nlow) cycle
-          if (l1 > Ntop) exit
           k = k + 1
           if (k > numenin) then 
-            write(*, '(" TASMAN-error: Number of incident energies larger than numenin =",i6)') numenin
+            write(*, '(" TASMAN-error: Number of energies larger than numenin =",i6)') numenin
             stop  
           endif
           xsexp(1, 2, k) = real(l1)
           dxsexp(1, 2, k) = sqrt(real(l1))
           xsth(1, 2, k) = Nc1
           if (k == numenexp) exit
+          if (l1 >= Ntop) exit
         enddo     
         exit
       endif
