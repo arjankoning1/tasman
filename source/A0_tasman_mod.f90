@@ -22,7 +22,7 @@ module A0_tasman_mod
   integer, parameter :: numZ=124        ! maximum number of elements
   integer, parameter :: nump=6          ! maximum number of particles
   integer, parameter :: numchancov=14   ! maximum number of channels with covariances
-  integer, parameter :: numlib=10       ! maximum number of data libraries
+  integer, parameter :: numlib=11       ! maximum number of data libraries
   integer, parameter :: nummt=850       ! maximum number of MT numbers
   integer, parameter :: numencov=52     ! maximum number of covariance energies
   integer, parameter :: numlines=5000   ! maximum number of input lines
