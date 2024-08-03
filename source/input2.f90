@@ -352,7 +352,7 @@ subroutine input2
   aamin = 0
   aamax = 0
   cwidth = 1.
-  fiscor0 = 3.
+  fiscor0 = 2.
   offset = 0
   tmcoffset = 0
   seed = 20032703
