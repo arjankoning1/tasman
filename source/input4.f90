@@ -1030,6 +1030,7 @@ subroutine input4
       else
         Gunc = dripvar(Ztarget, Atarget) * fiscor(Atarget)
       endif
+      Gunc = min(Gunc, 3.) 
       delta = Gunc * delta0
       if (class == 7) then
         if (ptype == 'p') delta = 2.*delta
