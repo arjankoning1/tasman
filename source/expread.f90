@@ -192,7 +192,7 @@ Loop1: do j = 1, expinccount(imt)
       do
         read(3, '(a132)', iostat = istat) str
         if (istat == -1) exit
-        if (istat /= 0) call read_error(xslist, istat)
+        if (istat /= 0) call read_error(psflist, istat)
         k = index(str, ZAstring)
         l = index(str, 'photoneut')
         if (k > 0 .and. l > 0) then
@@ -283,14 +283,14 @@ Loop2:  do i = 1, NMTexp
           do
             read(2, '(a132)', iostat = istat) str
             if (istat == -1) exit
-            if (istat /= 0) call read_error(xslist, istat)
+            if (istat /= 0) call read_error(expfi, istat)
 !           if (str(1:8) == '# Author') author = str(11:40)
             if (str(1:10) == '#   author' .and. author == '') author = str(13:40)
             if (str(1:1) /= '#') then
               if (k > numexpen) cycle
               read(str, * , iostat = istat) ee0, de0, xs0, dxs0
               if (istat == -1) exit
-              if (istat /= 0) call read_error(xslist, istat)
+              if (istat /= 0) call read_error(expfi, istat)
               k = k + 1
               ee(k) = ee0
               xs(k) = xs0
