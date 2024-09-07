@@ -714,9 +714,9 @@ module A0_tasman_mod
   logical           :: flags60      ! flag for creation of ENDF general purpose file with switch at 60 MeV
   logical           :: flagsdefault ! flag for creation of ENDF file with def. switch (30 MeV for neutrons, 0 for other particles)
   logical           :: flagselect   ! flag for varying only parts of an ENDF-6 data file
-  character(len=16) :: tareslib     ! library name for adoption of resonance parameters (default or endfb8.0)
-  character(len=16) :: tafislib     ! library name for adoption of nubar values (none[default], endfb8.0, jeff3.3, jendl4.0)
-  character(len=16) :: taneslib     ! library name for adoption of FNS (none[default], endfb8.0, jeff3.3, jendl4.0)
+  character(len=16) :: tareslib     ! library name for adoption of resonance parameters (default or endfb8.1)
+  character(len=16) :: tafislib     ! library name for adoption of nubar values (none[default], endfb8.1, jeff3.3, jendl5.0)
+  character(len=16) :: taneslib     ! library name for adoption of FNS (none[default], endfb8.1, jeff3.3, jendl5.0)
   character(len=132):: background   ! library name for adoption of back ground cross sections in MF3
   integer           :: fislim       ! mass above which nuclide fissions
   integer           :: offset       ! offset for numbering or random files (TMC only)
