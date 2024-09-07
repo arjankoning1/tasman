@@ -106,9 +106,9 @@ subroutine inputout
 !   flagsdefault    ! flag for creation of ENDF file with def. switch (30 MeV for neutrons, 0 for other particles)
 !   flagselect      ! flag for varying only parts of an ENDF - 6 data file
 !   offset          ! offset for numbering or random files (TMC only)
-!   tafislib        ! library name for adoption of nubar values (none[default], endfb8.0, jeff3.3, jendl4.0, brc09)
-!   taneslib        ! library name for adoption of FNS (none[default], endfb8.0, jeff3.3, jendl4.0, brc09)
-!   tareslib        ! library name for adoption of resonance parameters (default or endfb8.0)
+!   tafislib        ! library name for adoption of nubar values (none[default], endfb8.1, jeff3.3, jendl5.0, brc09)
+!   taneslib        ! library name for adoption of FNS (none[default], endfb8.1, jeff3.3, jendl5.0, brc09)
+!   tareslib        ! library name for adoption of resonance parameters (default or endfb8.1)
 !   tmcoffset       ! offset for starting creation of ENDF - 6 files (TMC only)
 ! Variables for processing input
 !   flagautoinc     ! flag to automatically in - or exclude important channels
