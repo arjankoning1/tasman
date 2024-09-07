@@ -222,7 +222,7 @@ subroutine tasmaninitial
   legtalys = 0.
   leg0 = 0.
   libinclude = -1
-  lib(1) = 'endfb8.0'
+  lib(1) = 'endfb8.1'
   lib(2) = 'jeff3.3'
   lib(3) = 'jendl5.0'
   lib(4) = 'cendl3.2'
