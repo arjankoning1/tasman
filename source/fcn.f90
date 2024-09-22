@@ -400,13 +400,19 @@ Loop2: do
           if (xst > 0. .and. xse > 0.) then
             CE = xst/xse
             if (flagdexp .and. xsde > 0.) then
-              x = (xst - xse)/(xsde*sqrt(2.))
-              if (xst > xse) then
-                pp = erf(x)
+              if (flaggorgof) then
+                Ri = 1.
+                if (xst < xse - xsde) Ri = xst/(xse-xsde)
+                if (xst > xse + xsde) Ri = xst/(xse+xsde)
               else
-                pp = -erf(x)
+                x = (xst - xse)/(xsde*sqrt(2.))
+                if (xst > xse) then
+                  pp = erf(x)
+                else
+                  pp = -erf(x)
+                endif
+                Ri = 1. + (CE-1.)*pp
               endif
-              Ri = 1. + (CE-1.)*pp
             else
               Ri = CE
             endif
