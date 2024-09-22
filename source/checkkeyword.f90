@@ -21,7 +21,7 @@ subroutine checkkeyword
 ! *** Declaration of local data
 !
   implicit none
-  integer, parameter :: numkey=136        ! number of keywords
+  integer, parameter :: numkey=137        ! number of keywords
   integer            :: i                 ! counter
   integer            :: j                 ! counter
   character(len=132) :: key               ! keyword
@@ -40,8 +40,8 @@ subroutine checkkeyword
     '#cdevi', '#chi2', '#chi2max', '#covrand', '#cross', '#cwidth', '#ddevi', '#defonly', '#deltae', '#dev', '#dexp', '#discrete', &
     '#dsmooth', '#e1vary', '#eaf', '#ecent', '#ecis', '#edependent', '#efracmax', '#ehigh', '#equisample', '#errlim', '#error', &
     '#esearch', '#esearch1', '#esearch2', '#eweight', '#expclass', '#expinclude', '#expexclude', '#extparvar', '#fiscor', '#fmax', &
-    '#fns', '#format', '#fracmax', '#gamgam', '#gamma', '#gauss', &
-    '#getcalcscript', '#global', '#gofmode', '#gpf', '#inponly', '#integral', '#isomer', '#kdburn', '#keyvary', '#ld', &
+    '#fns', '#format', '#fracmax', '#gamgam', '#gamma', '#gauss', '#getcalcscript', &
+    '#global', '#gofmode', '#gorielygof', '#gpf', '#inponly', '#integral', '#isomer', '#kdburn', '#keyvary', '#ld', &
     '#legendre', '#libexclude', '#libinclude', '#liso', '#lrf7', '#m1vary', '#macs', '#magnet', '#maxbar', '#maxexpsets', &
     '#maxgam', '#mcak', '#metropolis', '#minbar', '#mode', '#mt', '#nburn', '#nhigh', '#njoy', '#ntalys', '#nubar', '#offset', &
     '#ompinc', '#omponly', '#outsearch', '#parameters', &
