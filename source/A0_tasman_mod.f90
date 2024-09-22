@@ -6,7 +6,7 @@ module A0_tasman_mod
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2024-08-07: Current revision
+! 2024-09-22: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -672,6 +672,7 @@ module A0_tasman_mod
 !
   logical                                           :: flagdeltaE ! flag to weigh goodness-of-fit with dE of E grid
   logical                                           :: flagdexp   ! flag to include exp. uncertainty in C/E
+  logical                                           :: flaggorgof ! flag to use Goriely (2018) GOF estimator  
   integer, dimension (numchanxs,numsets,0:numenexp) :: Eindex     ! index for experimental data
   integer                                           :: ichi2      ! parameter to set goodness-of-fit estimator
   integer                                           :: isearch    ! number of trial run
