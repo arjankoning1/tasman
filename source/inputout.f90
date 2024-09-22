@@ -297,6 +297,7 @@ subroutine inputout
     write(*, '(" #deltaE             ", a1, "     flagdeltaE   flag to weigh goodness-of-fit with dE of energy grid")') &
  &    yesno(flagdeltaE)
     write(*, '(" #dexp               ", a1, "     flagdexp     flag to include exp. uncertainty in C/E")') yesno(flagdexp)
+    write(*, '(" #gorielygof         ", a1, "     flaggorgof   flag to use Goriely (2018) GOF estimator")') yesno(flaggorgof)
     write(*, '(" #band               ", a1, "     flagband     flag to represent results as error bands ")') yesno(flagband)
     write(*, '(" #E1vary             ", a1, "     flagE1vary   flag to automatically vary keywords for E1 radiation")') &
  &    yesno(flagE1vary)
