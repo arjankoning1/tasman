@@ -278,7 +278,7 @@ subroutine input2
   flagsens = .false.
   flagdeltaE = .false.
   flagdexp = .true.
-  flaggorgof = .false.
+  flagerf = .true.
   flagband = .false.
   flagscore = .true.
   flagerror = .true.
@@ -558,9 +558,9 @@ subroutine input2
       if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
       cycle
     endif
-    if (key == '#gorielygof') then
-      if (ch == 'n') flaggorgof = .false.
-      if (ch == 'y') flaggorgof = .true.
+    if (key == '#erf') then
+      if (ch == 'n') flagerf = .false.
+      if (ch == 'y') flagerf = .true.
       if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
       cycle
     endif
