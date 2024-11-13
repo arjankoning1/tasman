@@ -426,6 +426,11 @@ subroutine input4
         partype0 = 'shift '
         exit
       endif
+      if (key == 'cbarrier') then
+        delta0 = 0.50
+        partype0 = 'factor'
+        exit
+      endif
 !
 ! Class=2: keyword Z A value(real) delta
 !
