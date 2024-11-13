@@ -36,21 +36,21 @@ subroutine checkkeyword
 ! TASMAN will stop if a keyword is incorrect
 !
   data (keyword(i), i = 1, numkey) / '# ', '#acf', '#adeep', '#adevi', '#allpar', '#amax', '#amin', '#angle', &
-    '#autoinclude', '#average', '#background', '#band', '#bdevi', '#block', &
-    '#cdevi', '#chi2', '#chi2max', '#covrand', '#cross', '#cwidth', '#ddevi', '#defonly', '#deltae', '#dev', '#dexp', '#discrete', &
-    '#dsmooth', '#e1vary', '#eaf', '#ecent', '#ecis', '#edependent', '#efracmax', '#ehigh', '#equisample', '#errlim', '#error', &
-    '#esearch', '#esearch1', '#esearch2', '#eweight', '#expclass', '#expinclude', '#expexclude', '#extparvar', '#fiscor', '#fmax', &
-    '#fns', '#format', '#fracmax', '#gamgam', '#gamma', '#gauss', '#getcalcscript', &
-    '#global', '#gofmode', '#gorielygof', '#gpf', '#inponly', '#integral', '#isomer', '#kdburn', '#keyvary', '#ld', &
-    '#legendre', '#libexclude', '#libinclude', '#liso', '#lrf7', '#m1vary', '#macs', '#magnet', '#maxbar', '#maxexpsets', &
-    '#maxgam', '#mcak', '#metropolis', '#minbar', '#mode', '#mt', '#nburn', '#nhigh', '#njoy', '#ntalys', '#nubar', '#offset', &
-    '#ompinc', '#omponly', '#outsearch', '#parameters', &
-    '#partvary', '#proconly', '#prepro', '#prod', '#production', '#psf', '#purr', '#readpar', '#readsens', &
-    '#residual', '#resonance', '#runfns', '#runnubar', '#runtares', '#s20', '#s30', '#s60', '#sample', '#save', &
-    '#searchmode', '#seed', '#select', '#sens', '#sort', '#source', '#spectra', &
-    '#tafislib', '#tafisversion', '#talexclude', '#talinclude', '#talysversion', '#taneslib', '#tanesversion', &
-    '#tareslib', '#taresversion', '#tefalversion', '#tmc', '#tmcoffset', '#tweight', '#user', '#weight', '#weightpower', &
-    '#zaskip', '#zavary', '#zdeep', '#zmax', '#zmin'/
+&   '#autoinclude', '#average', '#background', '#band', '#bdevi', '#block', &
+&   '#cdevi', '#chi2', '#chi2max', '#covrand', '#cross', '#cwidth', '#ddevi', '#defonly', '#deltae', '#dev', '#dexp', '#discrete', &
+&   '#dsmooth', '#e1vary', '#eaf', '#ecent', '#ecis', '#edependent', '#efracmax', '#ehigh', '#equisample', '#erf', '#errlim', &
+&   '#error', '#esearch', '#esearch1', '#esearch2', '#eweight', '#expclass', '#expinclude', '#expexclude', '#extparvar', &
+&   '#fiscor', '#fmax', '#fns', '#format', '#fracmax', '#gamgam', '#gamma', '#gauss', '#getcalcscript', &
+&   '#global', '#gofmode', '#gpf', '#inponly', '#integral', '#isomer', '#kdburn', '#keyvary', '#ld', &
+&   '#legendre', '#libexclude', '#libinclude', '#liso', '#lrf7', '#m1vary', '#macs', '#magnet', '#maxbar', '#maxexpsets', &
+&   '#maxgam', '#mcak', '#metropolis', '#minbar', '#mode', '#mt', '#nburn', '#nhigh', '#njoy', '#ntalys', '#nubar', '#offset', &
+&   '#ompinc', '#omponly', '#outsearch', '#parameters', &
+&   '#partvary', '#proconly', '#prepro', '#prod', '#production', '#psf', '#purr', '#readpar', '#readsens', &
+&   '#residual', '#resonance', '#runfns', '#runnubar', '#runtares', '#s20', '#s30', '#s60', '#sample', '#save', &
+&   '#searchmode', '#seed', '#select', '#sens', '#sort', '#source', '#spectra', &
+&   '#tafislib', '#tafisversion', '#talexclude', '#talinclude', '#talysversion', '#taneslib', '#tanesversion', &
+&   '#tareslib', '#taresversion', '#tefalversion', '#tmc', '#tmcoffset', '#tweight', '#user', '#weight', '#weightpower', &
+&   '#zaskip', '#zavary', '#zdeep', '#zmax', '#zmin'/
 !
 ! A keyword can be de-activated by putting a # in front of it.
 ! All first words of the input lines are checked against the list of keywords.
