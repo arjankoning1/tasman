@@ -752,6 +752,16 @@ subroutine input4
         partype0 = 'factor'
         exit
       endif
+      if (key == 'upbende') then
+        delta0 = 1.00
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'upbendf') then
+        delta0 = 1.00
+        partype0 = 'factor'
+        exit
+      endif
 !
 ! Class=7: keyword symbol value delta (optical model)
 !
