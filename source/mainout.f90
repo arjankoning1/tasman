@@ -15,7 +15,7 @@ subroutine mainout
 !
 ! Main output
 !
-  write(*,'(/"    TASMAN-2.1 (Version: December 8, 2024)"/)')
+  write(*,'(/"    TASMAN-2.1 (Version: December 29, 2024)"/)')
   write(*, '(" Copyright (C) 2024  A.J. Koning"/)')
   write(*, '(" Dimensions - Cross sections: mb, Energies: MeV, ", "Angles: degrees")')
   write(*, '(/" User: ",a)') trim(user)
