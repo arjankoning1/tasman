@@ -5,7 +5,7 @@ subroutine koekel(N, x, xmin, xmax, xopt, Fopt, mode)
 !
 ! Author    : Arjan Koning
 !
-! 2021-12-30: Original code
+! 2024-12-14: Original code
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Declaration of local data
@@ -92,7 +92,7 @@ subroutine koekelinput(flagwrite, flagsens, flagall, flagquasi, &
 !
   implicit none
   integer, parameter :: sgl = selected_real_kind(6,37)   ! single precision kind
-  integer, parameter :: numkey=16         ! number of keywords
+  integer, parameter :: numkey=17         ! number of keywords
   integer, parameter :: numlin=100        ! maximum number of input lines
   logical            :: flagall           ! logical for variation of all parameters simultaneously
   logical            :: flaghistory       ! logical for using information from previous runs
@@ -121,6 +121,7 @@ subroutine koekelinput(flagwrite, flagsens, flagall, flagquasi, &
   integer            :: NT                ! number of loops before temperature reduction
   integer            :: out               ! unit for main output
   integer            :: seed              ! seed for random number generator
+  integer            :: istat
   real(sgl)          :: Cglob             ! adjustment factor for step length for all parameters
   real(sgl)          :: eps               ! convergence criteria
   real(sgl)          :: RT                ! factor for temperature reduction
@@ -129,7 +130,7 @@ subroutine koekelinput(flagwrite, flagsens, flagall, flagquasi, &
 ! Data block: possible keywords.
 !
   data (keyword(i), i = 1, numkey) / ' ', 'all', 'cglob', 'eps', 'history', 'quasi', 'neps', 'nr', &
-    'ns', 'nt', 'write', 'seed', 'sens', 'sobol', 'rt', 't'/
+    'ns', 'nt', 'write', 'save', 'seed', 'sens', 'sobol', 'rt', 't'/
 !
 ! ******************** Defaults for input variables ********************
 !
@@ -167,15 +168,17 @@ subroutine koekelinput(flagwrite, flagsens, flagall, flagquasi, &
 !
   open(unit = inp, status = 'unknown', file = 'koekel.inp')
   i = 1
-   10 read(inp, '(a)', end = 100) inline(i)
-  i = i + 1
-  if (i > numlin) then
-    write(out, '(" KOEKEL-error: Number of input lines", " exceeds ", i5)') numlin
-    write(out, '(" numlin should be increased")')
-    stop
-  endif
-  goto 10
-100 close(inp)
+  do
+    read(inp, '(a)', iostat = istat) inline(i)
+    if (istat == -1) exit
+    i = i + 1
+    if (i > numlin) then
+      write(out, '(" KOEKEL-error: Number of input lines", " exceeds ", i5)') numlin
+      write(out, '(" numlin should be increased")')
+      stop
+    endif
+  enddo
+  close(inp)
   nlines = i - 1
 !
 ! 2. Convert uppercase to lowercase characters.
@@ -212,9 +215,9 @@ subroutine koekelinput(flagwrite, flagsens, flagall, flagquasi, &
         if (nkey == 2) value = inline(i)(kbeg:kend)
         if (nkey == 3) param = inline(i)(kbeg:kend)
       endif
-      if (nkey > 3) goto 230
+      if (nkey > 3) exit
     enddo
-  230   ch = value(1:1)
+    ch = value(1:1)
 !
 ! 4. Check for errors in keywords.
 !
@@ -693,8 +696,8 @@ subroutine koekelsearch(Npar, P, Pmin, Pmax, Popt, Fopt, flagwrite, flagsens, fl
               Frand(j) = Frand(i)
               Frand(i) = Ftmp
             endif
-    enddo
-  enddo
+          enddo
+        enddo
         p0 = 0.5
         Fdif = Frand(NR / 2) - Fopt
         T = - Fdif / log(p0)
