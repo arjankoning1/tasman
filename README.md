@@ -2,9 +2,9 @@
 # TASMAN
 TASMAN is a statistical software package for the TALYS nuclear model code. The most important features are:
   - uncertainty distributions and covariance matrices for TALYS results, through Monte Carlo sampling of TALYS nuclear model parameters 
-  - parameter sensitivity profiles for TALYS output
   - automatic optimization ('search') of TALYS nuclear model parameters to experimental nuclear reaction data and data from nuclear data libraries
   - Total Monte Carlo: generation of a statistical ensemble of complete nuclear data libraries for uncertainty propagation
+  - parameter sensitivity profiles for TALYS output
 
 ## Documentation and reference
 A description of the code and its options can be found in the [TASMAN Tutorial (pdf)](https://github.com/arjankoning1/tasman/blob/main/doc/tasman.pdf).
@@ -47,19 +47,20 @@ tar zxf tasman_samples.tar
 ```
 you should move both *parameters/* and *samples/* inside the *tasman/* directory.
 
-Full use of TASMAN, including optimization to experimental data and use of other nuclear data libraries, is only possible when you install the *libraries/* 
-directory. This can be obtained as follows
-```
-Download all tar files from  Libraries-2023 from https://nds.iaea.org/talys/
-tar zxf libraries-n-A-D.tar etc.
-```
-and place the resulting directory *libraries/* in your home directory.
-If you will only use experimental data to optimize on and no nuclear data libraries, it is enough to install the EXFORTABLES database
+Full use of TASMAN, including optimization to experimental data or evaluated data, is only possible when you install the appropriate directories.  
+If you will only use experimental data to optimize to, it is enough to install the EXFORTABLES database
 ```
 Download EXFORTABLES from https://nds.iaea.org/talys/
 tar zxf exfortables.tar
 ```
 and place the resulting directory *exfortables/* in your home directory.
+
+If you also want to optimize to existing nuclear data libraries, you need to
+```
+Download all tar files from  Libraries-2023 from https://nds.iaea.org/talys/
+tar zxf libraries-n-A-D.tar etc.
+```
+and place the resulting directory *libraries/* in your home directory.
 
 ### Installation instructions :
 
@@ -69,14 +70,14 @@ To install TASMAN, you can use one of the following options:
 cd tasman/source
 make
 ```
-#### 2. Using the code_build script:
+#### 2. Using the install_tasman.bash script:
 ```
 cd tasman
-code_build tasman
+install_tasman.bash tasman
 ```
 
 The above will produce a *tasman* executable in the *tasman/bin* directory. 
-The compiler and its flags can be set in either the *source/Makefile* or in *code_build*.
+The compiler and its flags can be set in either the *source/Makefile* or in *code_build.bash*.
 
 ## The TASMAN package
 
@@ -84,10 +85,10 @@ The *tasman/* directory contains the following directories and files:
 
 + `README.md` this README file
 + `LICENSE` the License file
-+ `code_build` and `path_change` installation scripts
++ `install_tasman.bash`, `code_build.bash` and `path_change.bash` installation scripts
 + `source/` the Fortran source code of TASMAN and the Makefile
 + `bin/` the executable after successful installation
-+ `misc/` files with TASMAN input settings which can be used if needed
++ `misc/` files with TASMAN input settings which can be used if needed, and EXFOR outlier table
 + `doc/` the tutorial in pdf format
 + `samples/` the input and output files of the sample cases, and the *verify* script to run the sample cases
 
