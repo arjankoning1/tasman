@@ -25,17 +25,17 @@ The following are the prerequisites for compiling TASMAN:
 ### Downloads:
 
 To download TASMAN, you can use one of the following options:
-#### 1. Download the entire tar file:
+#### 1. Download the entire tar file (frozen version):
 ```
 https://nds.iaea.org/talys/tasman.tar
 tar zxf tasman.tar
 ```
 
-#### 2. Using git:
+#### 2. Using git (latest beta version):
 ```
 git clone https://github.com/arjankoning1/tasman.git
 ```
-The TASMAN parameter distribution database and sample cases do not fall under the git repository. Hence, to get a  working system you need to download
+The TASMAN parameter distribution database and sample cases do not fall under the git repository. Hence, to get a complete system you need to download
 ```
 https://nds.iaea.org/talys/misc/parameters.tar
 https://nds.iaea.org/talys/samples/tasman_samples.tar
@@ -48,9 +48,9 @@ tar zxf tasman_samples.tar
 you should move both *parameters/* and *samples/* inside the *tasman/* directory.
 
 Full use of TASMAN, including optimization to experimental data or evaluated data, is only possible when you install the appropriate directories.  
-If you will only use experimental data to optimize to, it is enough to install the EXFORTABLES database
+If you will only use experimental data for parameter optimization, it is sufficient to install the EXFORTABLES database
 ```
-Download EXFORTABLES from https://nds.iaea.org/talys/
+https://nds.iaea.org/talys/exfortables.tar
 tar zxf exfortables.tar
 ```
 and place the resulting directory *exfortables/* in your home directory.
@@ -73,7 +73,7 @@ make
 #### 2. Using the install_tasman.bash script:
 ```
 cd tasman
-install_tasman.bash tasman
+install_tasman.bash
 ```
 
 The above will produce a *tasman* executable in the *tasman/bin* directory. 
