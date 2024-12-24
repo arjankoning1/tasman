@@ -1,6 +1,6 @@
 # This file is part of TASMAN
 # 
-#    Author: Arjan Koning Copyright: (C) 2023
+#    Author: Arjan Koning Copyright: (C) 2024
 #
 # TASMAN is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
@@ -35,7 +35,7 @@ src = $(fsub) $(fsub1)
 all: change tasman install clean
 
 change : 
-	../path_change
+	../path_change.bash
 
 tasman : $(obj)
 	$(FC) $(FFLAGS) -o  tasman  $(obj)
