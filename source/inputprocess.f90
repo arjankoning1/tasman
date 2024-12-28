@@ -143,7 +143,7 @@ subroutine inputprocess
 ! *** Declaration of local data
 !
   implicit none
-  integer, parameter :: numsub=150000   ! number of subentries
+  integer, parameter :: numsub=200000   ! number of subentries
   logical            :: lexist          ! logical to determine existence
   character(len=1)   :: ch              ! character
   character(len=4)   :: massstring      ! string for mass number
