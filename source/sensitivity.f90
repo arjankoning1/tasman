@@ -51,8 +51,15 @@ subroutine sensitivity
 ! *** Declaration of local data
 !
   implicit none
+  character(len=15) :: col(200)                         ! header
+  character(len=15) :: un(200)
+  character(len=16) :: reaction
+  character(len=132) :: line
+  character(len=132) :: quantity
+  character(len=132) :: topline    ! topline
   integer           :: i                                   ! counter
   integer           :: j                                   ! counter
+  integer           :: Ncol
   integer           :: k                                   ! Legendre order
   integer           :: l                                   ! counter
   integer           :: n                                   ! counter
@@ -89,6 +96,7 @@ subroutine sensitivity
 !
 ! Linear sensitivity matrix
 !
+  quantity = 'sensitivity coefficients'
   if ( .not. flagsens .or. flagreadsens) then
     Np = Npar
   else
@@ -161,40 +169,58 @@ subroutine sensitivity
 !
 ! Sensitivity per parameter, cross section and energy
 !
-  open (unit = 3, file = 'sensitivity.par', status = 'replace')
-  write(3, '("#Number of parameters :", i4)') Np
+  topline=trim(targetnuclide)//' '//trim(quantity)
+  open (unit = 1, file = 'sensitivity.par', status = 'replace')
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  un = ''
+  col(1) = 'Energy'
+  un(1) = 'MeV'
+  col(2) = 'S'
+  col(3) = 'max. deviation'
+  un(3) = 'mb'
+  col(4) = 'xs'
+  un(4) = '%'
+  Ncol = 4
+  call write_integer(2,'Number of parameters',Np)
   do k = 1, Np
-    write(3, '("#Parameter ", i4, "       : ", a30)') k, parstring(k)
-    write(3, '("#Parameter uncertainty:", f12.5, " %")') 100. * pardelta(k)
-    write(3, '("#Number of channels   :", i4)') Nchanxs
+    call write_char(2,'Parameter',parstring(k))
+    call write_real(2,'Parameter uncertainty [%]',100. * pardelta(k))
+    call write_integer(2,'Number of channels',Nchanxs)
     do i = 1, Nchanxs
-      write(3, '("#Parameter ", i4, "       : ", a30)') k, parstring(k)
-      write(3, '("#Parameter uncertainty:", f12.5, " %")') 100. * pardelta(k)
-      write(3, '("#Channel   ", i4, "       : ", a20)') i, xsfile(i)
-      write(3, '("#Number of energies   :", i4)') Nen(i)
-      write(3, '("#      E            S         ", "max. dev. (mb)  cross section (mb)")')
+      call write_char(2,'Channel',xsfile(i))
+      call write_datablock(quantity,Ncol,Nen(i),col,un)
       do j = 1, Nen(i)
         n = Sindex(i, j)
-        write(3, '(es12.5, 3(es15.6))') E(i, j), S(k, i, n), xsdev(k, i, n), xstalys(0, i, j)
+        write(1, '(4es15.6)') E(i, j), S(k, i, n), xsdev(k, i, n), xstalys(0, i, j)
       enddo
     enddo
   enddo
-  close (3)
+  close (1)
 !
 ! Sensitivity per cross section, energy and parameter, sorted
 !
-  open (unit = 3, file = 'sensitivity.xs', status = 'replace')
-  write(3, '("#Number of channels   :", i4)') Nchanxs
+  topline=trim(targetnuclide)//' '//trim(quantity)
+  open (unit = 1, file = 'sensitivity.xs', status = 'replace')
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  un = ''
+  col(1) = 'Parameter'
+  col(2) = ''
+  col(3) = 'S'
+  col(4) = 'max. deviation'
+  un(4) = 'mb'
+  col(5) = 'par. deviation'
+  un(5) = '%'
+  Ncol = 5
+  call write_integer(2,'Number of channels',Nchanxs)
   do i = 1, Nchanxs
-    write(3, '("#Channel   ", i4, "       : ", a20)') i, xsfile(i)
-    write(3, '("#Number of energies   :", i4)') Nen(i)
+    call write_char(2,'Channel',xsfile(i))
+    call write_integer(2,'Number of energies',Nen(i))
     do j = 1, Nen(i)
       n = Sindex(i, j)
-      write(3, '("#Channel   ", i4, "       : ", a20)') i, xsfile(i)
-      write(3, '("#Energy               : ", es12.5 , " MeV")') E(i, j)
-      write(3, '("#Cross section        : ", es12.5 , " mb")') xstalys(0, i, j)
-      write(3, '("#Number of parameters :", i4)') Np
-      write(3, '("#Parameter                            S         ", "max. dev. (mb)   pardev(%)")')
+      call write_real(2,'E-incident [MeV]',e(i, j))
+      call write_real(2,'Cross section [mb]',xstalys(0, i, j))
       do k = 1, Np
         strloc(k) = parstring(k)
         ploc(k) = pardelta(k)
@@ -218,57 +244,87 @@ subroutine sensitivity
            strloc(l) = sttmp
         enddo
       enddo
+      call write_datablock(quantity,Ncol,Np,col,un)
       do k = 1, Np
-        write(3, '(a30, 2es15.6, f12.5)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k)
+        write(1, '(a30, 3es15.6)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k)
       enddo
     enddo
   enddo
-  close (3)
+  close (1)
 !
 ! Sensitivity per energy, parameter and cross section
 !
-  open (unit = 3, file = 'sensitivity.E', status = 'replace')
-  write(3, '("#Number of energies   :", i4)') Nen(1)
+  topline=trim(targetnuclide)//' '//trim(quantity)
+  open (unit = 1, file = 'sensitivity.E', status = 'replace')
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  un = ''
+  col(1) = 'Channel'
+  col(2) = ''
+  col(3) = 'S'
+  col(4) = 'max. deviation'
+  un(4) = 'mb'
+  col(5) = 'xs'
+  un(5) = 'mb'
+  Ncol = 5
+  call write_integer(2,'Number of energies',Nen(1))
   do j = 1, Nen(1)
-    write(3, '("#Energy               : ", es12.5 , " MeV")') e(1, j)
-    write(3, '("#Number of parameters :", i4)') Np
+    call write_real(2,'E-incident [MeV]',e(1, j))
+    call write_integer(2,'Number of parameters',Np)
     do k = 1, Np
-      write(3, '("#Energy               : ", es12.5 , " MeV")') e(1, j)
-      write(3, '("#Parameter ", i4, "       : ", a30)') k, parstring(k)
-      write(3, '("#Parameter uncertainty:", f12.5, " %")') 100. * pardelta(k)
-      write(3, '("#Number of channels   :", i4)') Nchanxs
-      write(3, '("#Channel                    S         ", "max. dev. (mb) Cross section (mb)")')
+      call write_char(2,'Parameter',parstring(k))
+      call write_real(2,'Parameter uncertainty [%]',100. * pardelta(k))
+      call write_datablock(quantity,Ncol,Nchanxs,col,un)
       do i = 1, Nchanxs
         n = Sindex(i, j)
-        write(3, '(a20, 3(es15.6))') xsfile(i), S(k, i, n), xsdev(k, i, n), xstalys(0, i, j)
+        write(1, '(a30, 3es15.6)') xsfile(i), S(k, i, n), xsdev(k, i, n), xstalys(0, i, j)
       enddo
     enddo
   enddo
-  close (3)
+  close (1)
 !
 ! Sensitivity per parameter integrated over energy, sorted
 !
+  topline=trim(targetnuclide)//' '//trim(quantity)
   open (unit = 1, file = 'sensitivity.parave', status = 'replace')
-  write(1, '("#Number of parameters :", i4)') Np
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  un = ''
+  col(1) = 'Channel'
+  col(2) = ''
+  col(3) = 'S'
+  col(4) = 'max. deviation'
+  un(4) = 'mb'
+  Ncol = 4
+  call write_integer(2,'Number of parameters',Np)
   do k = 1, Np
-    write(1, '("#Parameter ", i4, "       : ", a30)') k, parstring(k)
-    write(1, '("#Parameter uncertainty:", f12.5, " %")') 100. * pardelta(k)
-    write(1, '("#Number of channels   :", i4)') Nchanxs
-    write(1, '("#Channel                    S         ", "max. dev. (mb)")')
+    call write_char(2,'Parameter',parstring(k))
+    call write_real(2,'Parameter uncertainty [%]',100. * pardelta(k))
+    call write_datablock(quantity,Ncol,Nchanxs,col,un)
     do i = 1, Nchanxs
-      write(1, '(a20, 2(es15.6))') xsfile(i), Schan(k, i), xsdevav(k, i)
+      write(1, '(a30, 2es15.6)') xsfile(i), Schan(k, i), xsdevav(k, i)
     enddo
   enddo
   close (1)
 !
 ! Sensitivity per channel integrated over energy, sorted
 !
+  topline=trim(targetnuclide)//' '//trim(quantity)
   open (unit = 1, file = 'sensitivity.xsave', status = 'replace')
-  write(1, '("#Number of channels   :", i4)') Nchanxs
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  un = ''
+  col(1) = 'Parameter'
+  col(2) = ''
+  col(3) = 'S'
+  col(4) = 'max. deviation'
+  un(4) = 'mb'
+  col(5) = 'par. deviation'
+  un(5) = '%'
+  Ncol = 5
+  call write_integer(2,'Number of channels',Nchanxs)
   do i = 1, Nchanxs
-    write(1, '("#Channel   ", i4, "       : ", a20)') i, xsfile(i)
-    write(1, '("#Number of parameters :", i4)') Np
-    write(1, '("#Parameter                            S         ", "max. dev. (mb)   pardev(%)")')
+    call write_char(2,'Channel',xsfile(i))
     do k = 1, Np
       strloc(k) = parstring(k)
       ploc(k) = pardelta(k)
@@ -292,20 +348,27 @@ subroutine sensitivity
         strloc(l) = sttmp
       enddo
     enddo
+    call write_datablock(quantity,Ncol,Np,col,un)
     do k = 1, Np
-      write(1, '(a30, 2es15.6, f12.5)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k)
+      write(1, '(a30, 3es15.6)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k)
     enddo
   enddo
   close (1)
 !
 ! Sensitivity per energy, summed over channels
 !
-  open (unit = 3, file = 'sensitivity.Eave', status = 'replace')
-  write(3, '("#Number of energies  :", i4)') Nen(1)
+  topline=trim(targetnuclide)//' '//trim(quantity)
+  open (unit = 1, file = 'sensitivity.Eave', status = 'replace')
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  un = ''
+  col(1) = 'Parameter'
+  col(2) = ''
+  col(3) = 'S'
+  Ncol = 3
+  call write_integer(2,'number of energies',Nen(1))
   do j = 1, Nen(1)
-    write(3, '("#Energy               : ", es12.5 , " MeV")') e(1, j)
-    write(3, '("#Number of parameters :", i4)') Np
-    write(3, '("#Parameter                            S    ")')
+    call write_real(2,'E-incident [MeV]',e(1, j))
     do k = 1, Np
       strloc(k) = parstring(k)
       Sloc(k) = SE(k, j)
@@ -321,17 +384,25 @@ subroutine sensitivity
         strloc(l) = sttmp
       enddo
     enddo
+    call write_datablock(quantity,Ncol,Np,col,un)
     do k = 1, Np
-      write(3, '(a30, es15.6)') strloc(k)(1:30), Sloc(k)
+      write(1, '(a30, es15.6)') strloc(k)(1:30), Sloc(k)
     enddo
   enddo
-  close (3)
+  close (1)
 !
 ! Sensitivity integrated over all channels
 !
-  open (unit = 2, file = 'sensitivity.all', status = 'replace')
-  write(2, '("#Number of parameters :", i4)') Np
-  write(2, '("#Parameter                            S    ")')
+  topline=trim(targetnuclide)//' '//trim(quantity)
+  open (unit = 1, file = 'sensitivity.all', status = 'replace')
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  un = ''
+  col(1) = 'Parameter'
+  col(2) = ''
+  col(3) = 'S'
+  Ncol = 3
+  call write_datablock(quantity,Ncol,Np,col,un)
   do k = 1, Np
     strloc(k) = parstring(k)
     Sloc(k) = Sall(k)
@@ -348,25 +419,38 @@ subroutine sensitivity
     enddo
   enddo
   do k = 1, Np
-    write(2, '(a30, es15.6)') strloc(k)(1:30), Sloc(k)
+    write(1, '(a30, es15.6)') strloc(k)(1:30), Sloc(k)
   enddo
-  close (2)
+  close (1)
 !
 ! Output of sensitivity profile per reaction channel
 !
   if (Np == 0) return
   format1 = '("#E                   ",xxxa30))'
   write(format1(26:28), '(i3.3)') Np
-  format2='(es12.5,xxx(es20.5,10x))'
+  format2='(es15.5,xxxes15.6)'
   write(format2(9:11), '(i3.3)') Np
   do i = 1, Nchanxs
-    open (unit = 3, file = 'sens_'//xsfile(i), status = 'replace')
-    write(3, fmt = format1) (parstring(k)(1:30), k = 1, Np)
+    reaction=xsfile(i)
+    topline=trim(targetnuclide)//' '//trim(reaction)//' '//trim(quantity)
+    open (unit = 1, file = 'sens_'//xsfile(i), status = 'replace')
+    call write_header(topline,source,user,date,oformat)
+    call write_target
+    call write_reaction(reaction,0.D0,0.D0,0,0)
+    un = ''
+    col(1) = 'E-incident'
+    un(1) = 'MeV'
+    do k = 1, Np
+      col(k+1) = parstring(k)
+    enddo
+    Ncol = Np + 1
+    call write_datablock(quantity,Ncol,Nen(i),col,un)
+!   write(1, fmt = format1) (parstring(k)(1:30), k = 1, Np)
     do j = 1, Nen(i)
       n = Sindex(i, j)
-      write(3, fmt = format2) E(i, j), (S(k, i, n), k = 1, Np)
+      write(1, fmt = format2) E(i, j), (S(k, i, n), k = 1, Np)
     enddo
-    close (3)
+    close (1)
   enddo
   return
 end subroutine sensitivity
