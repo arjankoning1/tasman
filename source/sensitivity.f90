@@ -189,6 +189,7 @@ subroutine sensitivity
     call write_integer(4,'number of channels',Nchanxs)
     do i = 1, Nchanxs
       call write_char(6,'channel',xsfile(i))
+      call write_char(6,'reaction',reaction_string(i))
       call write_datablock(quantity,Ncol,Nen(i),col,un)
       do j = 1, Nen(i)
         n = Sindex(i, j)
@@ -217,6 +218,7 @@ subroutine sensitivity
   call write_integer(2,'number of channels',Nchanxs)
   do i = 1, Nchanxs
     call write_char(4,'channel',xsfile(i))
+    call write_char(4,'reaction',reaction_string(i))
     call write_integer(4,'number of energies',Nen(i))
     do j = 1, Nen(i)
       n = Sindex(i, j)
@@ -279,7 +281,7 @@ subroutine sensitivity
       call write_datablock(quantity,Ncol,Nchanxs,col,un)
       do i = 1, Nchanxs
         n = Sindex(i, j)
-        write(1, '(2a15, 3es15.6)') MTreac(MT(i)),xsfile(i), S(k, i, n), xsdev(k, i, n), xstalys(0, i, j)
+        write(1, '(2a15, 3es15.6)') reaction_string(i),xsfile(i), S(k, i, n), xsdev(k, i, n), xstalys(0, i, j)
       enddo
     enddo
   enddo
@@ -305,7 +307,7 @@ subroutine sensitivity
     call write_real(4,'parameter variation [%]',100. * pardelta(k))
     call write_datablock(quantity,Ncol,Nchanxs,col,un)
     do i = 1, Nchanxs
-      write(1, '(2a15, 2es15.6)') MTreac(MT(i)), xsfile(i), Schan(k, i), xsdevav(k, i)
+      write(1, '(2a15, 2es15.6)') reaction_string(i), xsfile(i), Schan(k, i), xsdevav(k, i)
     enddo
   enddo
   close (1)
@@ -329,6 +331,7 @@ subroutine sensitivity
   call write_integer(2,'number of channels',Nchanxs)
   do i = 1, Nchanxs
     call write_char(4,'channel',xsfile(i))
+    call write_char(4,'reaction',reaction_string(i))
     do k = 1, Np
       strloc(k) = parstring(k)
       ploc(k) = pardelta(k)
@@ -436,7 +439,7 @@ subroutine sensitivity
   format2='(es15.5,xxxes15.6)'
   write(format2(9:11), '(i3.3)') Np
   do i = 1, Nchanxs
-    reaction=MTreac(MT(i))
+    reaction=reaction_string(i)
     topline=trim(targetnuclide)//' '//trim(reaction)//' '//trim(quantity)//' per reaction channel'
     open (unit = 1, file = 'sens_'//xsfile(i), status = 'replace')
     call write_header(topline,source,user,date,oformat)
