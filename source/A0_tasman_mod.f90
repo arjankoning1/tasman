@@ -6,7 +6,7 @@ module A0_tasman_mod
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2024-12-29: Current revision
+! 2025-02-21: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -723,3 +723,4 @@ module A0_tasman_mod
   integer           :: offset       ! offset for numbering or random files (TMC only)
   integer           :: tmcoffset    ! offset for starting creation of ENDF-6 files (TMC only)
 end module A0_tasman_mod
+! Copyright A.J. Koning 2025
