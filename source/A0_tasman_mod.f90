@@ -294,8 +294,10 @@ module A0_tasman_mod
 !
   logical                                             :: flagdiscrete ! flag for discrete level cross sections
   logical                                             :: flagisomer   ! flag for isomeric production cross sections
-  character(len=20), dimension(numchanxs)             :: xsfile       ! file with crosssections
+  character(len=20), dimension(numchanxs)             :: xsfile       ! file with cross sections
+  character(len=16), dimension(numchanxs)             :: reaction_string  ! reaction string
   integer, dimension(numchanxs)                       :: MT           ! MT number
+  integer, dimension(numchanxs)                       :: MF           ! MF number
   integer, dimension(numchanxs)                       :: MTiso        ! isomer of MT number
   integer, dimension(nummt)                           :: MTnum        ! MT number of reaction channel
   integer                                             :: Nchanxs      ! total number of channels with cross sections
