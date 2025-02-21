@@ -422,13 +422,13 @@ subroutine covcross
 !
   open (unit = 1, file = 'cov_intra.ave', status = 'replace')
   do i = 1, Nchanxs
-    reaction=MTreac(MT(i))
+    reaction=reaction_string(i)
     topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
     call write_header(topline,source,user,date,oformat)
     call write_target
-    call write_reaction(reaction,0.D0,0.D0,3,MT(i))
+    call write_reaction(reaction,0.D0,0.D0,MF(i),MT(i))
     if (MTiso(i) >= 0) call write_level(2,MTiso(i),-1,0.,-1.,0,0.)
-    call write_covariance(reaction,3,MT(i),3,MT(i),italys)
+    call write_covariance(reaction,MF(i),MT(i),MF(i),MT(i),italys)
     call write_datablock(quantity,Ncol,Nencov*Nencov,col,un)
     do j = 1, Nencov
       jj = Ecovindex(j)
@@ -456,11 +456,11 @@ subroutine covcross
   Ncol=5
   open (unit = 1, file = 'variance.ave', status = 'replace')
   do i = 1, Nchanxs
-    reaction=MTreac(MT(i))
+    reaction=reaction_string(i)
     topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
     call write_header(topline,source,user,date,oformat)
     call write_target
-    call write_reaction(reaction,0.D0,0.D0,3,MT(i))
+    call write_reaction(reaction,0.D0,0.D0,MF(i),MT(i))
     if (MTiso(i) >= 0) call write_level(2,MTiso(i),-1,0.,-1.,0,0.)
     call write_covariance(reaction,3,MT(i),0,0,italys)
     call write_datablock(quantity,Ncol,Nencov,col,un)
