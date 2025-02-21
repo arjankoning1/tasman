@@ -335,6 +335,8 @@ subroutine tasmaninitial
 !
 ! Reaction strings
 !
+  reaction_string = ''
+  MF = 3
   MTreac=''
   MTreac(1)='(n,tot)'
   MTreac(2)='(n,el)'
