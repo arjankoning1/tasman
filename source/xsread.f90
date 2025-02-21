@@ -575,6 +575,21 @@ subroutine xsread
       enddo
     endif
   endif
+  do i = 1, Nchanxs
+    reaction_string(i) = MTreac(MT(i))
+    if (MTiso(i) == 0) reaction_string(i) = trim(reaction_string(i))//'g'
+    if (MTiso(i) == 1) reaction_string(i) = trim(reaction_string(i))//'m'
+    if (MTiso(i) == 2) reaction_string(i) = trim(reaction_string(i))//'n'
+    if (MTiso(i) == 0) reaction_string(i) = trim(reaction_string(i))//'g'
+    MF(i) = 3
+    if (MTiso(i) >= 0) then
+      if (MT(i) == 102) then
+        MF(i) = 9
+      else
+        MF(i) = 10
+      endif
+    endif
+  enddo
   return
 end subroutine xsread
 ! Copyright A.J. Koning 2021
