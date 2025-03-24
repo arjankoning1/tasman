@@ -6,7 +6,7 @@ module A0_tasman_mod
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2025-02-21: Current revision
+! 2025-03-10: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -718,8 +718,8 @@ module A0_tasman_mod
   logical           :: flagsdefault ! flag for creation of ENDF file with def. switch (30 MeV for neutrons, 0 for other particles)
   logical           :: flagselect   ! flag for varying only parts of an ENDF-6 data file
   character(len=16) :: tareslib     ! library name for adoption of resonance parameters (default or endfb8.1)
-  character(len=16) :: tafislib     ! library name for adoption of nubar values (none[default], endfb8.1, jeff3.3, jendl5.0)
-  character(len=16) :: taneslib     ! library name for adoption of FNS (none[default], endfb8.1, jeff3.3, jendl5.0)
+  character(len=16) :: tafislib     ! library name for adoption of nubar values (none[default], endfb8.1, jeff4.0, jendl5.0)
+  character(len=16) :: taneslib     ! library name for adoption of FNS (none[default], endfb8.1, jeff4.0, jendl5.0)
   character(len=132):: background   ! library name for adoption of back ground cross sections in MF3
   integer           :: fislim       ! mass above which nuclide fissions
   integer           :: offset       ! offset for numbering or random files (TMC only)
