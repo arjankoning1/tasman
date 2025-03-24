@@ -223,14 +223,14 @@ subroutine tasmaninitial
   leg0 = 0.
   libinclude = -1
   lib(1) = 'endfb8.1'
-  lib(2) = 'jeff3.3'
+  lib(2) = 'jeff4.0'
   lib(3) = 'jendl5.0'
   lib(4) = 'cendl3.2'
   lib(5) = 'eaf.2010'
   lib(6) = 'irdff2.0'
   lib(7) = 'tendl.2023'
   lib(8) = 'tendl.2021'
-  lib(9) = 'iaea.2019'
+  lib(9) = 'iaea.2024'
   lib(10) = 'iaea.pd'
   lib(11) = 'ibandl'
 !
