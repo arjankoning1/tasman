@@ -68,8 +68,8 @@ subroutine checkvalue
 !   searchmode      ! search mode
 ! Variables for TMC
 !   offset          ! offset for numbering or random files (TMC only)
-!   tafislib        ! library name for adoption of nubar values (none[default], endfb8.1, jeff3.0, jendl5.0, brc09)
-!   taneslib        ! library name for adoption of FNS (none[default], endfb8.1, jeff3.0, jendl5.0, brc09)
+!   tafislib        ! library name for adoption of nubar values (none[default], endfb8.1, jeff4.0, jendl5.0)
+!   taneslib        ! library name for adoption of FNS (none[default], endfb8.1, jeff4.0, jendl5.0)
 !   tareslib        ! library name for adoption of resonance parameters (default or endfb8.1)
 !   tmcoffset       ! offset for starting creation of ENDF - 6 files (TMC only)
 ! Variables for processing input
@@ -191,10 +191,9 @@ subroutine checkvalue
     else
       if (library(1:4) == 'none') cycle
     endif
-    if (library(1:7) == 'jeff3.3') cycle
+    if (library(1:7) == 'jeff4.0') cycle
     if (library(1:8) == 'endfb8.1') cycle
     if (library(1:8) == 'jendl5.0') cycle
-    if (library(1:5) == 'brc09') cycle
     write(*, '(" TASMAN-error: Wrong library name: ", a16)') library
     stop
   enddo
