@@ -150,7 +150,7 @@ c
       write(21,'("  fi")')
       write(21,'("done")')
       write(21,'("for file in ",
-     +  "talys.inp parameters.dat gof.opt psf* tld* ; do ")')
+     +  "talys.inp parameters.dat gof.opt psf* ld* ; do ")')
       write(21,'("  if [ -e $file ]; then")')
       write(21,'("    \cp -f $file optimum")')
       write(21,'("  fi")')
