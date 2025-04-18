@@ -60,9 +60,9 @@ subroutine ldread
   MT(1) = 1
   MTexp(1) = 1
   NMTexp = 1
-  xsf = 'tld000000.gs'
-  write(xsf(4:6), '(i3.3)') ZCN
-  write(xsf(7:9), '(i3.3)') ACN
+  xsf = 'ld000000.gs'
+  write(xsf(3:5), '(i3.3)') ZCN
+  write(xsf(6:8), '(i3.3)') ACN
   if (italys <= 0) then
     isamp = 0
   else
