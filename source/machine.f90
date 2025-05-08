@@ -36,8 +36,6 @@ subroutine machine
   exforpath = trim(basedir) // 'exfortables/'
   binpath = trim(basedir) // 'bin/'
   tasmanpath = codedir
-  talyspath = trim(basedir) // 'talys/bin/'
-  tefalpath = trim(basedir) // 'tefal/bin/'
   psfpath = trim(basedir) // 'PSF/Photo/'
   call date_and_time(VALUES=values)
   year=values(1)
