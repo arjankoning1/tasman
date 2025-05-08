@@ -253,9 +253,9 @@ subroutine input2
   Nhigh = -1
   Ehigh = 1000.
   talysversion = 'talys'
-  talys = trim(talyspath)//talysversion
+  talys = trim(binpath)//talysversion
   tefalversion = 'tefal'
-  tefal = trim(talyspath)//tefalversion
+  tefal = trim(binpath)//tefalversion
   taresversion = 'tares'
   tares = trim(binpath)//taresversion
   tafisversion = 'tafis'
@@ -455,33 +455,28 @@ subroutine input2
       cycle
     endif
     if (key == '#talysversion') then
-      read(value, '(a)' , iostat = istat) talysversion
+      read(value, '(a)' , iostat = istat) talys
       if (istat /= 0) call read_error(line, istat)
-      talys = trim(talyspath)//talysversion
       cycle
     endif
     if (key == '#tefalversion') then
-      read(value, '(a)' , iostat = istat) tefalversion
+      read(value, '(a)' , iostat = istat) tefal
       if (istat /= 0) call read_error(line, istat)
-      tefal = trim(tefalpath)//tefalversion
       cycle
     endif
     if (key == '#taresversion') then
-      read(value, '(a)' , iostat = istat) taresversion
+      read(value, '(a)' , iostat = istat) tares
       if (istat /= 0) call read_error(line, istat)
-      tares = trim(binpath)//taresversion
       cycle
     endif
     if (key == '#tafisversion') then
-      read(value, '(a)' , iostat = istat) tafisversion
+      read(value, '(a)' , iostat = istat) tafis
       if (istat /= 0) call read_error(line, istat)
-      tafis = trim(binpath)//tafisversion
       cycle
     endif
     if (key == '#tanesversion') then
-      read(value, '(a)' , iostat = istat) tanesversion
+      read(value, '(a)' , iostat = istat) tanes
       if (istat /= 0) call read_error(line, istat)
-      tanes = trim(binpath)//tanesversion
       cycle
     endif
     if (key == '#liso') then
