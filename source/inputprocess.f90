@@ -218,21 +218,18 @@ subroutine inputprocess
 !
 ! Set TALYS version to be used and test availability of other codes
 !
-  talys = trim(talyspath)//talysversion
   inquire (file = talys, exist = lexist)
   if ( .not. lexist) then
     write(*, '(" TASMAN-error: TALYS can not be found: ", a)') trim(talys)
     stop
   endif
   if (flagtmc) then
-    tefal = trim(tefalpath)//tefalversion
     inquire (file = tefal, exist = lexist)
     if ( .not. lexist) then
       write(*, '(" TASMAN-error: TEFAL can not be found: ", a)') trim(tefal)
       stop
     endif
     if (flagruntares) then
-      tares = trim(binpath)//taresversion
       inquire (file = tares, exist = lexist)
       if ( .not. lexist) then
         write(*, '(" TASMAN-error: TARES can not be found: ", a)') trim(tares)
@@ -240,7 +237,6 @@ subroutine inputprocess
       endif
     endif
     if (flagrunnubar) then
-      tafis = trim(binpath)//tafisversion
       inquire (file = tafis, exist = lexist)
       if ( .not. lexist) then
         write(*, '(" TASMAN-error: TAFIS can not be found: ", a)') trim(tafis)
@@ -248,7 +244,6 @@ subroutine inputprocess
       endif
     endif
     if (flagrunfns) then
-      tanes = trim(binpath)//tanesversion
       inquire (file = tanes, exist = lexist)
       if ( .not. lexist) then
         write(*, '(" TASMAN-error: TANES can not be found: ", a)') trim(tanes)
