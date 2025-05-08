@@ -69,8 +69,6 @@ module A0_tasman_mod
   character(len=132) :: exforpath     ! directory containing files to be read
   character(len=132) :: binpath       ! directory containing files to be read
   character(len=132) :: tasmanpath    ! directory containing files to be read
-  character(len=132) :: talyspath     ! directory containing files to be read
-  character(len=132) :: tefalpath     ! directory containing files to be read
   character(len=132) :: psfpath       ! directory containing files to be read
   integer            :: year          ! year
   integer            :: month         ! month
