@@ -104,9 +104,16 @@ subroutine fcn(N, P, G)
   implicit none
 
   integer, parameter :: numtype=3                                   ! number of GOF types
+  character(len=15) :: col(10)                         ! header
+  character(len=15) :: un(10)
+  character(len=15) :: reaction
+  character(len=132) :: line
+  character(len=132) :: quantity
+  character(len=132) :: topline    ! topline
   character(len=1),save :: chinclude(numchanxs, numsets, 0:numenexp)! flag to include channel
   character(len=6)   :: ext                                         ! filename extension
-  character(len=8)   :: goffile                                     ! file with GOF results
+  character(len=6)   :: runstr
+  character(len=20)  :: goffile                                     ! file with GOF results
   character(len=10)  :: Gstring(numtype)                            ! string for G estimator
   character(len=132) :: cmd                                         ! command
   integer            :: i                                           ! counter
@@ -135,6 +142,7 @@ subroutine fcn(N, P, G)
   integer            :: system                                      ! system call
   integer            :: ir(numtalys)                                ! 
   integer            :: Nr                                          ! 
+  integer            :: Ncol
   integer            :: istat                                       ! 
   real(sgl)          :: deltaE                                      ! energy bin around outgoing energies
   real(sgl)          :: expo                                        ! exponent
@@ -233,13 +241,27 @@ subroutine fcn(N, P, G)
   deltaE = 1.
   goffile = 'gof.0000'
   write(goffile(5:8), '(i4.4)') isearch
-  open (unit = 7, file = goffile, status = 'unknown')
+  open (unit = 7, file = trim(goffile)//'A', status = 'unknown')
   write(*,'()')
   do ifile = 6, 7
     write(ifile,'("#                         Goodness-of-fit")')
     write(ifile,'("# TALYS run        :",i6)') isearch
     write(ifile,'("# GOF estimator    :",a)') Gstring(ichi2)
   enddo
+  col = ''
+  un = ''
+  open (unit = 1, file = goffile, status = 'unknown')
+  reaction='('//ptype0//',x)'
+  write(runstr,'(i6)') isearch
+  quantity = 'Goodness-of-fit for run '//runstr
+  topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
+  call write_header(topline,source,user,date,oformat)
+  call write_target
+  call write_integer(2,'TALYS run',isearch)
+  call write_char(2,'GOF estimator',Gstring(ichi2))
+  close(1)
+  quantity = 'Parameters'
+  Ncol = 0
 !
 ! Write Talys input, run Talys, and read cross sections
 !
@@ -290,6 +312,11 @@ subroutine fcn(N, P, G)
     endif
     if (inuc == Nnuc) first = .false.
     write(*,'()')
+    open (unit = 1, file = goffile, status = 'unknown', position = 'append')
+    call write_datablock(quantity,Ncol,Npar,col,un)
+    do i = 1, Npar
+      write(1,'(a)') trim(string(i))
+    enddo
     do ifile = 6, 7
       write(ifile,'("# projectile       : ",a1)') ptype0
       write(ifile,'("# Z                :",i4)') iz
@@ -352,6 +379,11 @@ Loop2: do
         if (Nenexp(i, j) <= 0) cycle
         if (outsearch >= 4) then
           if (j == 1) then
+            call write_char(2,'Channel',xsfile(i))
+            call write_real(4,'Frms limit',Fmax(imt))
+            call write_real(4,'Chi2 limit',chi2max(imt))
+            call write_real(4,'Fracmax',fracmax(imt))
+            call write_real(4,'xs limit [mb]',xslim)
             write(7,'(/"# Channel          : ",a15)') xsfile(i)
             write(7,'("# Frms limit       :",es10.3)') Fmax(imt)
             write(7,'("# Chi2 limit       :",es10.3)') chi2max(imt)
@@ -364,8 +396,30 @@ Loop2: do
           write(7,'("# EXFOR subentry   : ",a9)') subentry(i,j)
           write(7,'("# Weight           : ",f12.5)') Eweight(i,j)
           write(7,'("# Quality          : ",a2)') quality(i,j)
+          call write_integer(4,'Data set',j)
+          call write_char(6,'Author',auth(i,j))
+          call write_integer(6,'Year',expyear(i,j))
+          call write_char(6,'EXFOR subentry',subentry(i,j))
+          call write_real(6,'Weight',Eweight(i,j))
+          call write_char(6,'Quality',quality(i,j))
+          Ncol = 8
         endif
         if (outsearch == 5) write(7,'("# energy     TALYS      exp       dexp  rel. unc. %   Chi2      C/E   include")')
+        col(1) = 'energy'
+        col(2) = 'TALYS'
+        col(3) = 'exp.'
+        col(4) = 'dexp'
+        col(5) = 'rel. unc.'
+        col(6) = 'Chi2'
+        col(7) = 'C/E'
+        col(8) = 'include'
+        un(1) = 'MeV'
+        un(2) = 'mb'
+        un(3) = 'mb'
+        un(4) = 'mb'
+        un(5) = '%'
+        quantity = 'deviation'
+        call write_datablock(quantity,Ncol,Nenexp(i, j),col,un)
         nenchanorg(i) = nenchanorg(i) + Nenexp(i, j)
         do k = 1, Nenexp(i, j)
           xst = xsth(i, j, k)
@@ -446,6 +500,8 @@ Loop2: do
 !
 ! Write goodness-of-fit results
 !
+          if (outsearch == 5) write(1,'(7es15.6,7x,a1)') Eexp(i,j,k),xst,xse,xsde,relerr, &
+ &          (Gpoint(m),m=3,2,-1),chinclude(i,j,k)
           if (outsearch == 5) write(7,'(7es10.3,4x,a1)') Eexp(i,j,k),xst,xse,xsde,relerr, &
  &          (Gpoint(m),m=3,2,-1),chinclude(i,j,k)
 !
@@ -499,12 +555,17 @@ Loop2: do
         wchan = wchan + ww
         Nsetchan(i) = Nsetchan(i) + 1
         if (outsearch >= 4) then
-          write(7,'("# Frms             :",es10.3)') Gsetav(j,1)
-          write(7,'("# Erms             :",es10.3)') Gsetav(j,2)
-          write(7,'("# Chi2             :",es10.3)') Gsetav(j,3)
+          write(7,'("# Data set Frms         :",es10.3)') Gsetav(j,1)
+          write(7,'("# Data set Erms         :",es10.3)') Gsetav(j,2)
+          write(7,'("# Data set Chi2         :",es10.3)') Gsetav(j,3)
           write(7,'("# Total points     :",i6)') Nenexp(i,j)
           write(7,'("# Included points  :",i6)') nenset(j)
           write(7,'("# End Data set     :",i4)') j
+          call write_real(6,'Data set Frms',Gsetav(j,1))
+          call write_real(6,'Data set Erms',Gsetav(j,2))
+          call write_real(6,'Data set Chi2',Gsetav(j,3))
+          call write_integer(6,'Total points',Nenexp(i,j))
+          call write_integer(6,'Included points',nenset(j))
         endif
       enddo
       if (nenchan(i) == 0) cycle
@@ -528,6 +589,9 @@ Loop2: do
         write(7,'("# Channel Erms     : ",es10.3)') Gchanav(i, 2)
         write(7,'("# Channel Chi2     : ",es10.3)') Gchanav(i, 3)
         write(7,'("# End Channel      : ",a15)') xsfile(i)
+        call write_real(4,'Channel Frms',Gchanav(i, 1))
+        call write_real(4,'Channel Erms',Gchanav(i, 2))
+        call write_real(4,'Channel Chi2',Gchanav(i, 3))
       endif
       Gchannel(i) = Gchanav(i, ichi2)
       Gchannelsave(isearch, i) = Gchannel(i)
@@ -566,6 +630,15 @@ Loop2: do
       write(7,'("# Nuclide Erms     : ",es10.3)') Gnucav(2)
       write(7,'("# Nuclide Chi2     : ",es10.3)') Gnucav(3)
       write(7,'("# End Nuclide      : ",a,i3.3,a1)') trim(nuc(iz)), ia, trim(isochar)
+      if (Nnuc > 1) then
+        call write_integer(2,'Nuclide channels',Nchannuc)
+        call write_integer(2,'Nuclide data sets',Nsetnuc)
+        call write_integer(2,'Nuclide points',nennucorg)
+        call write_integer(2,'Nuclide included points',nennuc)
+        call write_real(2,'Nuclide Frms',Gnucav(1))
+        call write_real(2,'Nuclide Erms',Gnucav(2))
+        call write_real(2,'Nuclide Chi2',Gnucav(3))
+      endif
     endif
   enddo
 !
@@ -592,6 +665,16 @@ Loop2: do
       write(ifile,'("# Chi2             :",1p,g12.4," Optimum: ",g12.4)') Gtotav(3),Gmin(3)
       write(ifile,'()')
     enddo
+    call write_integer(2,'Nuclides',Nnuctot)
+    call write_integer(2,'Channels',Nchantot)
+    call write_integer(2,'Data sets',Nsettot)
+    call write_integer(2,'Included data points',nentot)
+    call write_real(2,'Total Frms',Gtotav(1))
+    call write_real(2,'Total Frms optimum',Gmin(1))
+    call write_real(2,'Total Erms',Gtotav(2))
+    call write_real(2,'Total Erms optimum',Gmin(2))
+    call write_real(2,'Total Chi2',Gtotav(3))
+    call write_real(2,'Total Chi2 optimum',Gmin(3))
     write(22,'(i6,1p,g14.6)') isearch,G
   endif
   if (G < Gmin(0)) then
@@ -615,12 +698,14 @@ Loop2: do
     enddo
     write(23,'(i6,1p,g14.6)') isearch,Gmin(0)
     close(7)
+    write(1, '(2i4," Run:", i6, " New optimum (Frms Erms Chi-2): ",3es15.6)') Ztarget, Atarget, isearch, (Gmin(i),i=1,3)
     cmd = '\cp -f '//goffile//' gof.opt'
     i = system(cmd)
     call optimum
   else
     close(7)
   endif
+  close(1)
   do i = 1, numchanxs
     if (Gchannel(i) < Gchanopt(i)) then
       Gchanopt(i) = Gchannel(i)
@@ -685,7 +770,6 @@ Loop2: do
         write(23,'(i6,1p,2g14.6)') ir(i), gofR(i), gofrel
       enddo
       close(unit=23)
-
       call timer
       stop
     endif
