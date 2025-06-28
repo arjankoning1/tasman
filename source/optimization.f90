@@ -39,7 +39,6 @@ subroutine optimization
 !
 ! expfiles  : subroutine to read experimental cross sections for all nuclides
 ! fitlimits : subroutine to set parameter limits for optimization
-! inputwrite: subroutine to write parameters for TALYS input file
 ! Fopt      : optimal function value
 !
   if (mode == 4) call expfiles
