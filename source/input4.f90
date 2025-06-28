@@ -460,6 +460,16 @@ subroutine input4
         partype0 = 'norm  '
         exit
       endif
+      if (key == 'rmiufiscor') then
+        delta0 = 0.80
+        partype0 = 'norm  '
+        exit
+      endif
+      if (key == 'rmiufiscoradjust') then
+        delta0 = 0.80
+        partype0 = 'norm  '
+        exit
+      endif
       if (key == 'gamgam') then
         delta0 = 0.40
         partype0 = 'norm  '
