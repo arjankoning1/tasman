@@ -1,0 +1,25 @@
+#weight y
+#mcak y
+#global y
+#deltaE n
+#gauss n
+#kdburn n
+#libinclude irdff2.0 5.
+#expinclude all 1.
+#talinclude all
+#chi2 1
+#Fmax 1.2 1
+#Fmax 1.4 4
+#Fmax 1.4 16
+#Fmax 1.4 51
+#Fmax 1.8 102
+#Fmax 1.8 103
+#Fmax 2. 107
+#Fmax 2.
+#fracmax 0.1
+#readpar y
+#Ehigh 30.
+#nhigh 0
+#prod y
+#gamma y
+#spectra y
