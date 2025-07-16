@@ -24,12 +24,31 @@ subroutine machine
   implicit none
   character(len=132) :: codedir   ! code directory
   character(len=132) :: basedir   ! base directory
+  character(len=132) :: homedir   ! home directory
+  character(len=132) :: envvar    ! environment variable
   integer            :: values(8)
   integer            :: ix
+  integer            :: istat     ! I/O status
 !
 ! ************************ Set directories *****************************
 !
-  codedir = '/Users/koning/tasman/'
+! Try to get TASMAN directory from environment variable first
+  call get_environment_variable('TASMAN_DIR', envvar, status=istat)
+  if (istat == 0 .and. len_trim(envvar) > 0) then
+    codedir = trim(envvar)
+    if (codedir(len_trim(codedir):len_trim(codedir)) /= '/') then
+      codedir = trim(codedir) // '/'
+    endif
+  else
+    ! Try to get from HOME directory
+    call get_environment_variable('HOME', homedir, status=istat)
+    if (istat == 0 .and. len_trim(homedir) > 0) then
+      codedir = trim(homedir) // '/tasman/'
+    else
+      ! Fallback to current working directory
+      codedir = './tasman/'
+    endif
+  endif
   ix = index(codedir,'/tasman/')
   basedir = codedir(1:ix)
   librariespath = trim(basedir) // 'libraries/'
