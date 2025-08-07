@@ -66,6 +66,8 @@ subroutine covresidual
   integer           :: l         ! counter
   integer           :: ll        ! angular momentum
   integer           :: Ncol
+  integer           :: indent
+  integer           :: id2
   real(sgl)         :: err       ! error
   real(sgl)         :: term      ! help variable
   real(sgl)         :: term0     ! help variable
@@ -79,6 +81,8 @@ subroutine covresidual
 !
 ! Average residual production cross sections and covariances
 !
+  indent = 0
+  id2 = indent + 2
   col = ''
   un = ''
   quantity='cross section covariance matrix'
@@ -144,13 +148,14 @@ subroutine covresidual
     finalnuclide=trim(nuc(Zrp(i)))//trim(adjustl(massstring))//isoch
     reaction='('//ptype0//',x)'
     topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
-    call write_header(topline,source,user,date,oformat)
-    call write_target
-    call write_reaction(reaction,0.D0,0.D0,6,5)
-    call write_residual(Zrp(i),Arp(i),finalnuclide)
+    call write_header(indent,topline,source,user,date,oformat)
+    call write_target(indent)
+    call write_reaction(indent,reaction,0.D0,0.D0,6,5)
+    call write_residual(id2,Zrp(i),Arp(i),finalnuclide)
 !   if (Lrp(i) >= 0) call write_level(2,Lrp(i),-1,0.,-1.,0,0.)
-    call write_covariance(reaction,6,5,6,5,italys)
-    call write_datablock(quantity,Ncol,Nencov*Nencov,col,un)
+    call write_covariance(id2,reaction,6,5,6,5,italys)
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,Nencov*Nencov,col,un)
     do j = 1, Nencov
       jj = Ecovindex(j)
       do l = 1, Nencov
@@ -220,7 +225,8 @@ subroutine covresidual
     do j = 1, jheader
       write(1,'(a)') trim(headerline(j))
     enddo
-    call write_datablock(quantity,Ncol,Nen(i),col,un)
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,Nen(i),col,un)
     do j = 1, Nenrp(i)
       err = rpav(i, j) * errrp(i, j)
       if (err /= 0.) err = min(err, rpav(i, j) - 1.e-13)
