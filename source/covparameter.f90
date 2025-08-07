@@ -60,6 +60,8 @@ subroutine covparameter
   integer           :: k          ! Legendre order
   integer           :: l          ! counter
   integer           :: Ncol                           
+  integer           :: indent
+  integer           :: id2
   real(sgl)         :: Ei         ! incident energy
   real(sgl)         :: Eprev      ! previous energy
   real(sgl)         :: err        ! error
@@ -73,6 +75,8 @@ subroutine covparameter
 !
 ! Output of accepted and rejected parameters
 !
+  indent = 0
+  id2 = indent + 2
   col = ''
   un = ''
   reaction='('//ptype0//',x)'
@@ -112,12 +116,13 @@ subroutine covparameter
   col(6)='Correlation'
   Ncol=6
   open (unit = 1, file = 'cov_parameter.ave', status = 'replace')
-  call write_header(topline,source,user,date,oformat)
-  call write_target
-  write(1, '("# covariance:")')
-  write(1, '("#   class: covariance")')
-  write(1, '("#   number of accepted runs: ", i4)') italys
-  call write_datablock(quantity,Ncol,Npar*Npar,col,un)
+  call write_header(indent,topline,source,user,date,oformat)
+  call write_target(indent)
+  call write_char(indent,'covariance','')
+  call write_char(id2,'class: covariance','')
+  call write_integer(id2,'number of accepted runs',italys)
+  call write_quantity(id2,quantity)
+  call write_datablock(id2,Ncol,Npar*Npar,col,un)
   do k = 1, Npar
     do l = 1, Npar
       write(1, '(2a30, 2es15.6)') parstring(k), parstring(l), parcov(k, l), parcor(k, l)
@@ -139,10 +144,11 @@ subroutine covparameter
   col(9)='Unc._ratio'
   Ncol=9
   open (unit = 1, file = 'parameter.ave', status = 'replace')
-  call write_header(topline,source,user,date,oformat)
-  call write_target
-  call write_covariance(reaction,0,0,0,0,italys)
-  call write_datablock(quantity,Ncol,Npar,col,un)
+  call write_header(indent,topline,source,user,date,oformat)
+  call write_target(indent)
+  call write_covariance(indent,reaction,0,0,0,0,italys)
+  call write_quantity(indent,quantity)
+  call write_datablock(indent,Ncol,Npar,col,un)
   do k = 1, Npar
     err = parav(k, 0) * sqrt(abs(parcov(k, k)))
     inperr = parsave(0, k) * pardelta(k)
