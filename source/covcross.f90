@@ -100,6 +100,9 @@ subroutine covcross
   integer           :: k                              ! Legendre order
   integer           :: keyix
   integer           :: Ncol
+  integer           :: indent
+  integer           :: id2
+  integer           :: id4
   integer           :: kchan                          ! counter
   integer           :: l                              ! counter
   integer           :: ll                             ! angular momentum
@@ -157,6 +160,9 @@ subroutine covcross
 !
 ! ******** Create covariance matrix and average cross sections *********
 !
+  indent = 0
+  id2 = indent + 2
+  id4 = indent + 4
   col = ''
   un = ''
   quantity='cross section covariance matrix'
@@ -397,14 +403,15 @@ subroutine covcross
     do k = i, Nchancovint
       reaction=MTreac(MTcov(i))
       topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
-      call write_header(topline,source,user,date,oformat)
-      call write_target
-      call write_reaction(reaction,0.D0,0.D0,3,MTcov(i))
-      if (MTisocov(i) >= 0) call write_level(2,MTisocov(i),-1,0.,-1.,0,0.)
+      call write_header(indent,topline,source,user,date,oformat)
+      call write_target(indent)
+      call write_reaction(indent,reaction,0.D0,0.D0,3,MTcov(i))
+      if (MTisocov(i) >= 0) call write_level(id2,MTisocov(i),-1,0.,-1.,0,0.)
       reaction_cov=MTreac(MTcov(k))
-      call write_covariance(reaction_cov,3,MTcov(i),3,MTcov(k),italys)
-      if (MTisocov(k) >= 0) call write_level(4,MTisocov(k),-1,0.,-1.,0,0.)
-      call write_datablock(quantity,Ncol,Nencov*Nencov,col,un)
+      call write_covariance(id2,reaction_cov,3,MTcov(i),3,MTcov(k),italys)
+      if (MTisocov(k) >= 0) call write_level(id4,MTisocov(k),-1,0.,-1.,0,0.)
+      call write_quantity(id2,quantity)
+      call write_datablock(id2,Ncol,Nencov*Nencov,col,un)
       do j = 1, Nencov
         jj = Ecovindex(j)
         do l = 1, Nencov
@@ -424,12 +431,13 @@ subroutine covcross
   do i = 1, Nchanxs
     reaction=reaction_string(i)
     topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
-    call write_header(topline,source,user,date,oformat)
-    call write_target
-    call write_reaction(reaction,0.D0,0.D0,MF(i),MT(i))
-    if (MTiso(i) >= 0) call write_level(2,MTiso(i),-1,0.,-1.,0,0.)
-    call write_covariance(reaction,MF(i),MT(i),MF(i),MT(i),italys)
-    call write_datablock(quantity,Ncol,Nencov*Nencov,col,un)
+    call write_header(indent,topline,source,user,date,oformat)
+    call write_target(indent)
+    call write_reaction(indent,reaction,0.D0,0.D0,MF(i),MT(i))
+    if (MTiso(i) >= 0) call write_level(id2,MTiso(i),-1,0.,-1.,0,0.)
+    call write_covariance(id2,reaction,MF(i),MT(i),MF(i),MT(i),italys)
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,Nencov*Nencov,col,un)
     do j = 1, Nencov
       jj = Ecovindex(j)
       do l = 1, Nencov
@@ -458,12 +466,13 @@ subroutine covcross
   do i = 1, Nchanxs
     reaction=reaction_string(i)
     topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
-    call write_header(topline,source,user,date,oformat)
-    call write_target
-    call write_reaction(reaction,0.D0,0.D0,MF(i),MT(i))
-    if (MTiso(i) >= 0) call write_level(2,MTiso(i),-1,0.,-1.,0,0.)
-    call write_covariance(reaction,3,MT(i),0,0,italys)
-    call write_datablock(quantity,Ncol,Nencov,col,un)
+    call write_header(indent,topline,source,user,date,oformat)
+    call write_target(indent)
+    call write_reaction(indent,reaction,0.D0,0.D0,MF(i),MT(i))
+    if (MTiso(i) >= 0) call write_level(id2,MTiso(i),-1,0.,-1.,0,0.)
+    call write_covariance(id2,reaction,3,MT(i),0,0,italys)
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,Nencov,col,un)
     do j = 1, Nencov
       jj = Ecovindex(j)
       err = xsavC(i, j) * errmtC(i, j)
@@ -531,7 +540,8 @@ subroutine covcross
     do k = 1, jheader
       write(1,'(a)') trim(headerline(k))
     enddo
-    call write_datablock(quantity,Ncol,Nen(i),col,un)
+    call write_quantity(indent,quantity)
+    call write_datablock(indent,Ncol,Nen(i),col,un)
     do j = 1, Nen(i)
       xsA = xsav(i, j)
       if (average == 2) xsA = xseval(0, i, j)
