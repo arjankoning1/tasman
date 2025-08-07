@@ -53,6 +53,9 @@ subroutine covangle
   integer           :: istat
   integer           :: keyix
   integer           :: jheader
+  integer           :: indent
+  integer           :: id2
+  integer           :: id4
   real(sgl)         :: ang2       ! product of angular cross section
   real(sgl)         :: angdifi    ! difference in angular cross section
   real(sgl)         :: angdifk    ! difference in angular cross section
@@ -69,6 +72,9 @@ subroutine covangle
 !
 ! Average angular distributions
 !
+  indent = 0
+  id2 = indent + 2
+  id4 = indent + 4
   xslimit = 10.
   do i = 1, Nchanang
     do j = 0, Nang(i)
@@ -159,7 +165,8 @@ subroutine covangle
       do j = 1, jheader
         write(1,'(a)') trim(headerline(j))
       enddo
-      call write_datablock(quantity,Ncol,Nang(i)+1,col,un)
+      call write_quantity(id2,quantity)
+      call write_datablock(id2,Ncol,Nang(i)+1,col,un)
       do j = 0, Nang(i)
         err = angav(i, j) * errang(i, j)
         if (flagband) then
@@ -187,13 +194,14 @@ subroutine covangle
   do i = 1, Nchanang
     reaction='('//ptype0//',el)'
     topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
-    call write_header(topline,source,user,date,oformat)
-    call write_target
-    call write_reaction(reaction,0.D0,0.D0,4,2)
-    call write_real(2,'E-incident [MeV]',Eang(i))
-    call write_covariance(reaction,4,2,4,2,italys)
-    call write_real(2,'E-incident [MeV]',Eang(i))
-    call write_datablock(quantity,Ncol,(Nang(i)+1)**2,col,un)
+    call write_header(indent,topline,source,user,date,oformat)
+    call write_target(indent)
+    call write_reaction(indent,reaction,0.D0,0.D0,4,2)
+    call write_real(id2,'E-incident [MeV]',Eang(i))
+    call write_covariance(id2,reaction,4,2,4,2,italys)
+    call write_real(id4,'E-incident [MeV]',Eang(i))
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,(Nang(i)+1)**2,col,un)
     do j = 0, Nang(i)
       do l = 0, Nang(i)
         write(1, '(2(3x,i6,6x),es15.6)') j, l, Rang(i, j, l)
