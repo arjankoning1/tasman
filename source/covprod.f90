@@ -56,6 +56,8 @@ subroutine covprod
   integer           :: keyix
   integer           :: istat
   integer           :: jheader
+  integer           :: indent
+  integer           :: id2
   real(sgl)         :: err       ! error
   real(sgl)         :: term      ! help variable
   real(sgl)         :: term0     ! help variable
@@ -69,8 +71,8 @@ subroutine covprod
 !
 ! Average particle production cross sections and covariances
 !
-!   sections
-!
+  indent = 0
+  id2 = indent + 2
   do i = 1, Nchanprod
     do j = 1, Nencov
       jj = Ecovindex(j)
@@ -160,7 +162,8 @@ subroutine covprod
     do j = 1, jheader
       write(1,'(a)') trim(headerline(j))
     enddo
-    call write_datablock(quantity,Ncol,Nenprod(i),col,un)
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,Nenprod(i),col,un)
     do j = 1, Nenprod(i)
       err = prodav(i, j) * errprod(i, j)
       if (err /= 0.) err = min(err, prodav(i, j) - 1.e-13)
