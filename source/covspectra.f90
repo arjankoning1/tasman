@@ -55,6 +55,9 @@ subroutine covspectra
   integer           :: keyix
   integer           :: istat
   integer           :: jheader
+  integer           :: indent
+  integer           :: id2
+  integer           :: id4
   real(sgl)         :: down      ! lower value
   real(sgl)         :: err       ! error
   real(sgl)         :: sp2       ! product of spectra
@@ -70,6 +73,9 @@ subroutine covspectra
 !
 ! Average emission spectra and covariances
 !
+  indent = 0
+  id2 = indent + 2
+  id4 = indent + 4
   do i = 1, Nchansp
     do j = 0, Nensp(i)
       spi0 = sptalys(0, i, j)
@@ -144,7 +150,8 @@ subroutine covspectra
       do j = 1, jheader
         write(1,'(a)') trim(headerline(j))
       enddo
-      call write_datablock(quantity,Ncol,Nensp(i),col,un)
+      call write_quantity(id2,quantity)
+      call write_datablock(id2,Ncol,Nensp(i),col,un)
 !     write(3, '("#", a20, " Number of runs: ", i6)') spfile(i), italys
       do j = 1, Nensp(i)
         err = spav(i, j) * errsp(i, j)
@@ -174,13 +181,14 @@ subroutine covspectra
   topline=trim(targetnuclide)//trim(reaction)//' '//trim(quantity)
   open (unit = 1, file = 'cov_spectra.ave', status = 'replace')
   do i = 1, Nchansp
-    call write_header(topline,source,user,date,oformat)
-    call write_target
-    call write_reaction(reaction,0.D0,0.D0,6,5)
-    call write_real(2,'E-incident [MeV]',Ein(i))
-    call write_covariance(reaction,35,5,0,0,italys)
-    call write_real(4,'E-incident [MeV]',Ein(i))
-    call write_datablock(quantity,Ncol,(Nensp(i)+1)**2,col,un)
+    call write_header(indent,topline,source,user,date,oformat)
+    call write_target(indent)
+    call write_reaction(indent,reaction,0.D0,0.D0,6,5)
+    call write_real(id2,'E-incident [MeV]',Ein(i))
+    call write_covariance(id2,reaction,35,5,0,0,italys)
+    call write_real(id4,'E-incident [MeV]',Ein(i))
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,(Nensp(i)+1)**2,col,un)
     do j = 0, Nensp(i)
       do l = 0, Nensp(i)
         write(1, '(3es15.6)')  Eout(i, j), Eout(i, l), Rsp(i, j, l)
