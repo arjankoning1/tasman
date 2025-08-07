@@ -55,6 +55,8 @@ subroutine covgamma
   integer           :: keyix
   integer           :: istat
   integer           :: jheader
+  integer           :: indent
+  integer           :: id2
   integer           :: ll        ! angular momentum
   real(sgl)         :: err       ! error
   real(sgl)         :: term      ! help variable
@@ -69,6 +71,8 @@ subroutine covgamma
 !
 ! Average gamma production cross sections and covariances
 !
+  indent = 0
+  id2 = indent + 2
   do i = 1, Nchangam
     do j = 1, Nencov
       jj = Ecovindex(j)
@@ -158,7 +162,8 @@ subroutine covgamma
     do j = 1, jheader
       write(1,'(a)') trim(headerline(j))
     enddo
-    call write_datablock(quantity,Ncol,Nengam(i),col,un)
+    call write_quantity(id2,quantity)
+    call write_datablock(id2,Ncol,Nengam(i),col,un)
 !   write(3, '("#", a20, " Number of runs: ", i6)') gamfile(i), italys
     do j = 1, Nengam(i)
       err = gamav(i, j) * errgam(i, j)
