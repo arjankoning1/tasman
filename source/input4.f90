@@ -431,6 +431,66 @@ subroutine input4
         partype0 = 'factor'
         exit
       endif
+      if (key == 'gmradjustd') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'gmradjuste') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'gmradjustg') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'gqradjustd') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'gqradjuste') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'gqradjustg') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'leoradjustd') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'leoradjuste') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'leoradjustg') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'heoradjustd') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'heoradjuste') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
+      if (key == 'heoradjustg') then
+        delta0 = 0.40
+        partype0 = 'factor'
+        exit
+      endif
 !
 ! Class=2: keyword Z A value(real) delta
 !
