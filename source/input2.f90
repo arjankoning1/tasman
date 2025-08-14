@@ -210,6 +210,7 @@ subroutine input2
 !
   implicit none
   logical            :: flagset     ! flag for on-set
+  logical            :: found_library
   character(len=1)   :: ch          ! character
   character(len=1)   :: w1          ! word
   character(len=3)   :: w3          ! word
@@ -1087,7 +1088,9 @@ subroutine input2
 ! Library name
 !
         do ilib = 1, numlib
+          found_library = .false.
           if (trim(lib(ilib)) == trim(word(k))) then
+            found_library = .true.
             klib = ilib
             if (imt > 0) then
               mtlib(imt, ilib) = 1
@@ -1098,6 +1101,7 @@ subroutine input2
             exit
           endif
         enddo
+        if (.not. found_library) call read_error(line, istat)
       endif
 !
 ! Weights
@@ -1149,8 +1153,10 @@ subroutine input2
 ! Library name
 !
       klib = 0
+      found_library = .false.
       do ilib = 1, numlib
         if (trim(lib(ilib)) == trim(word(k))) then
+          found_library = .false.
           klib = ilib
           if (imt > 0) then
             mtlib(imt, ilib) = 0
@@ -1161,6 +1167,7 @@ subroutine input2
           cycle
         endif
       enddo
+      if (.not. found_library) call read_error(line, istat)
       cycle
     endif
 !
