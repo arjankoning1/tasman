@@ -1156,7 +1156,7 @@ subroutine input2
       found_library = .false.
       do ilib = 1, numlib
         if (trim(lib(ilib)) == trim(word(k))) then
-          found_library = .false.
+          found_library = .true.
           klib = ilib
           if (imt > 0) then
             mtlib(imt, ilib) = 0
