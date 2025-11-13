@@ -427,7 +427,7 @@ subroutine input4
         exit
       endif
       if (key == 'cbarrier') then
-        delta0 = 0.50
+        delta0 = 0.80
         partype0 = 'factor'
         exit
       endif
