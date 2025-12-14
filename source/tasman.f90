@@ -1,7 +1,7 @@
 program tasman
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
-! Purpose   : Main program
+! Purpose   : Uncertainty quantifiaction code for TALYS
 !
 ! Author    : Arjan Koning
 !
