@@ -45,7 +45,7 @@ subroutine checkkeyword
 &   '#legendre', '#libexclude', '#libinclude', '#liso', '#lrf7', '#m1vary', '#macs', '#magnet', '#maxbar', '#maxexpsets', &
 &   '#maxgam', '#mcak', '#metropolis', '#minbar', '#mode', '#mt', '#nburn', '#nhigh', '#njoy', '#ntalys', '#nubar', '#offset', &
 &   '#ompinc', '#omponly', '#outsearch', '#parameters', &
-&   '#partvary', '#proconly', '#prepro', '#prod', '#production', '#psf', '#purr', '#readpar', '#readsens', &
+&   '#partvary', '#prepro', '#proconly', '#prod', '#production', '#psf', '#purr', '#readpar', '#readsens', &
 &   '#residual', '#resonance', '#runfns', '#runnubar', '#runtares', '#s20', '#s30', '#s60', '#sample', '#save', &
 &   '#searchmode', '#seed', '#select', '#sens', '#sort', '#source', '#spectra', &
 &   '#tafislib', '#tafisversion', '#talexclude', '#talinclude', '#talysversion', '#taneslib', '#tanesversion', &
