@@ -1,0 +1,19 @@
+\begin{samplecase}
+{\bf n + ${}^{93}$Nb: Experiment-weighted uncertainty calculation}\newline
+
+In this sample case we add some more variation of the parameters and some more TASMAN features. The input file is as follows:
+
+\VerbatimInput{\samples n-Nb093-ang-unc/org/tasman.inp}
+
+Note that we have added angular distributions for the elastic channel and
+first 4 inelastic levels. In the TASMAN part, we now perform 20 random
+calculations, instead of the default 10, and to avoid starting with the
+same results as sample case 1 we change the random seed. Moreover, we
+request to save the results of all individual TALYS runs,
+and output average + standard deviation files for angular distributions
+and isomeric production.
+Next, we have added variation of more OMP parameters and also a few level
+density parameters. For 3 OMP and 3 level density parameters we overrule the
+built-in variation by adding the relative standard deviation to the input
+lines.
+\end{samplecase}

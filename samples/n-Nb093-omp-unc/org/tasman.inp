@@ -1,0 +1,21 @@
+#
+# General
+#
+projectile n
+element nb
+mass 93
+energy energies
+channels y
+filechannels y
+bins 20
+#
+# TASMAN keywords start here
+#
+#change
+#mode 1
+#band y
+##
+## Parameters to be varied
+##
+rvadjust n 1.
+avadjust n 1.

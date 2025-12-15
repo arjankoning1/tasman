@@ -1,0 +1,1196 @@
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E-11
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.530000E-08
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E-06
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E-05
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E-04
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.000000E-04
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  5.000000E-04
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E-03
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.000000E-03
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  5.000000E-03
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E-02
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.000000E-02
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  5.000000E-02
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E-01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.000000E-01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  5.000000E-01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  8.000000E-01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.200000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.400000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.600000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.800000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.500000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  3.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  3.500000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  4.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  5.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  6.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  7.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  8.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  9.000000E+00
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.000000E+01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.200000E+01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.400000E+01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.600000E+01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 0
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  1.800000E+01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 66
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+     1              0            2.969056E-10   4.877700E-01   0.000000E+00   4.877700E-01
+     2              1            1.966730E-11   1.164940E+00   4.877700E-01   6.771700E-01
+     3              1            1.598000E-17   1.269000E+00   4.877700E-01   7.812301E-01
+     3              2            4.318759E-13   1.269000E+00   1.164940E+00   1.040601E-01
+     4              0            1.019935E-13   1.277580E+00   0.000000E+00   1.277580E+00
+     4              1            1.480519E-13   1.277580E+00   4.877700E-01   7.898101E-01
+     5              1            6.148120E-13   1.285610E+00   4.877700E-01   7.978400E-01
+     6              1            1.008466E-12   1.460000E+00   4.877700E-01   9.722301E-01
+     6              4            8.277499E-14   1.460000E+00   1.277580E+00   1.824200E-01
+     7              1            7.472007E-13   1.615070E+00   4.877700E-01   1.127300E+00
+     7              4            3.885389E-14   1.615070E+00   1.277580E+00   3.374900E-01
+     8              1            3.595662E-14   1.915770E+00   4.877700E-01   1.428000E+00
+     8              4            1.405954E-14   1.915770E+00   1.277580E+00   6.381900E-01
+     9              1            4.407602E-15   1.929140E+00   4.877700E-01   1.441370E+00
+     9              2            5.416845E-15   1.929140E+00   1.164940E+00   7.642000E-01
+     9              4            9.182028E-15   1.929140E+00   1.277580E+00   6.515599E-01
+    10              1            7.354078E-15   1.935000E+00   4.877700E-01   1.447230E+00
+    10              2            2.943589E-15   1.935000E+00   1.164940E+00   7.700599E-01
+    10              4            2.425187E-15   1.935000E+00   1.277580E+00   6.574199E-01
+    10              8            2.710545E-18   1.935000E+00   1.915770E+00   1.922989E-02
+    11              2            4.619750E-14   2.004815E+00   1.164940E+00   8.398751E-01
+    12              1            1.265158E-14   2.073690E+00   4.877700E-01   1.585920E+00
+    13              1            1.734101E-15   2.091610E+00   4.877700E-01   1.603840E+00
+    13              2            1.734101E-15   2.091610E+00   1.164940E+00   9.266700E-01
+    13              4            1.734101E-15   2.091610E+00   1.277580E+00   8.140299E-01
+    14              0            5.557686E-15   2.110000E+00   0.000000E+00   2.110000E+00
+    14              1            3.365139E-15   2.110000E+00   4.877700E-01   1.622230E+00
+    14              4            1.247050E-15   2.110000E+00   1.277580E+00   8.324199E-01
+    14              5            1.215070E-15   2.110000E+00   1.285610E+00   8.243899E-01
+    15             11            1.435479E-14   2.182140E+00   2.004815E+00   1.773250E-01
+    16              2            2.919988E-14   2.223330E+00   1.164940E+00   1.058390E+00
+    16              9            3.153589E-15   2.223330E+00   1.929140E+00   2.941900E-01
+    17              2            1.909358E-14   2.322310E+00   1.164940E+00   1.157370E+00
+    17              8            2.977371E-15   2.322310E+00   1.915770E+00   4.065399E-01
+    18              2            1.480523E-14   2.395000E+00   1.164940E+00   1.230060E+00
+    18              3            1.730411E-17   2.395000E+00   1.269000E+00   1.126000E+00
+    18              9            5.202419E-18   2.395000E+00   1.929140E+00   4.658600E-01
+    18             11            3.818930E-15   2.395000E+00   2.004815E+00   3.901849E-01
+    19              9            1.118863E-14   2.471840E+00   1.929140E+00   5.426999E-01
+    19             16            1.118863E-14   2.471840E+00   2.223330E+00   2.485099E-01
+    20              0            6.810850E-15   2.575000E+00   0.000000E+00   2.575000E+00
+    20              1            4.291678E-15   2.575000E+00   4.877700E-01   2.087230E+00
+    20              4            1.853438E-15   2.575000E+00   1.277580E+00   1.297420E+00
+    20              5            1.818113E-15   2.575000E+00   1.285610E+00   1.289390E+00
+    21             11            3.772565E-15   2.590900E+00   2.004815E+00   5.860848E-01
+    22             16            1.072109E-15   2.621000E+00   2.223330E+00   3.976700E-01
+    23             11            2.895587E-15   2.640550E+00   2.004815E+00   6.357348E-01
+    24             16            2.459029E-15   2.756000E+00   2.223330E+00   5.326700E-01
+    24             17            7.130931E-16   2.756000E+00   2.322310E+00   4.336901E-01
+    25              0            3.037356E-15   2.788720E+00   0.000000E+00   2.788720E+00
+    25              1            1.639990E-16   2.788720E+00   4.877700E-01   2.300950E+00
+    26             21            4.227773E-16   3.017900E+00   2.590900E+00   4.270000E-01
+    27             15            1.053257E-17   3.031850E+00   2.182140E+00   8.497100E-01
+    27             16            2.340503E-17   3.031850E+00   2.223330E+00   8.085201E-01
+    27             22            7.960522E-18   3.031850E+00   2.621000E+00   4.108500E-01
+    27             23            9.597836E-18   3.031850E+00   2.640550E+00   3.913002E-01
+    27             24            9.597836E-18   3.031850E+00   2.756000E+00   2.758501E-01
+    28              1            2.552133E-17   3.181730E+00   4.877700E-01   2.693960E+00
+    28              2            1.377853E-17   3.181730E+00   1.164940E+00   2.016790E+00
+    29              0            1.897944E-18   3.224320E+00   0.000000E+00   3.224320E+00
+    29              1            3.568594E-19   3.224320E+00   4.877700E-01   2.736550E+00
+    29              5            6.644149E-19   3.224320E+00   1.285610E+00   1.938710E+00
+    29             25            8.730647E-20   3.224320E+00   2.788720E+00   4.356000E-01
+    30              1            3.039857E-16   3.265770E+00   4.877700E-01   2.778000E+00
+    30              2            3.009595E-16   3.265770E+00   1.164940E+00   2.100830E+00
+    30              9            3.891079E-17   3.265770E+00   1.929140E+00   1.336630E+00
+# header: 
+#   title: Sn120(n,h)Cd118 gamma cross section and multiplicity
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,h)
+#   Q-value [MeV]: -1.125550E+01
+#   E-threshold [MeV]:  1.135019E+01
+#   ENDF_MF: 13
+#   ENDF_MT: 106
+#   E-incident [MeV]:  2.000000E+01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: gamma cross section and multiplicity
+#   datablock: 
+#     columns: 6
+#     entries: 66
+## Parent_level  Daughter_level       xs        Parent_energy Daughter_energy Gamma_energy
+##      []             []            [mb]           [MeV]          [MeV]          [MeV]
+     1              0            1.372597E-07   4.877700E-01   0.000000E+00   4.877700E-01
+     2              1            2.778811E-08   1.164940E+00   4.877700E-01   6.771700E-01
+     3              1            3.563622E-14   1.269000E+00   4.877700E-01   7.812301E-01
+     3              2            9.631055E-10   1.269000E+00   1.164940E+00   1.040601E-01
+     4              0            7.126937E-10   1.277580E+00   0.000000E+00   1.277580E+00
+     4              1            1.034533E-09   1.277580E+00   4.877700E-01   7.898101E-01
+     5              1            1.687545E-09   1.285610E+00   4.877700E-01   7.978400E-01
+     6              1            2.474710E-09   1.460000E+00   4.877700E-01   9.722301E-01
+     6              4            2.031245E-10   1.460000E+00   1.277580E+00   1.824200E-01
+     7              1            2.087062E-09   1.615070E+00   4.877700E-01   1.127300E+00
+     7              4            1.085257E-10   1.615070E+00   1.277580E+00   3.374900E-01
+     8              1            5.349583E-10   1.915770E+00   4.877700E-01   1.428000E+00
+     8              4            2.091762E-10   1.915770E+00   1.277580E+00   6.381900E-01
+     9              1            3.377381E-10   1.929140E+00   4.877700E-01   1.441370E+00
+     9              2            4.150727E-10   1.929140E+00   1.164940E+00   7.642000E-01
+     9              4            7.035846E-10   1.929140E+00   1.277580E+00   6.515599E-01
+    10              1            6.958902E-11   1.935000E+00   4.877700E-01   1.447230E+00
+    10              2            2.785413E-11   1.935000E+00   1.164940E+00   7.700599E-01
+    10              4            2.294868E-11   1.935000E+00   1.277580E+00   6.574199E-01
+    10              8            2.564892E-14   1.935000E+00   1.915770E+00   1.922989E-02
+    11              2            2.395222E-09   2.004815E+00   1.164940E+00   8.398751E-01
+    12              1            5.540274E-10   2.073690E+00   4.877700E-01   1.585920E+00
+    13              1            1.375665E-10   2.091610E+00   4.877700E-01   1.603840E+00
+    13              2            1.375665E-10   2.091610E+00   1.164940E+00   9.266700E-01
+    13              4            1.375665E-10   2.091610E+00   1.277580E+00   8.140299E-01
+    14              0            4.984605E-10   2.110000E+00   0.000000E+00   2.110000E+00
+    14              1            3.018143E-10   2.110000E+00   4.877700E-01   1.622230E+00
+    14              4            1.118460E-10   2.110000E+00   1.277580E+00   8.324199E-01
+    14              5            1.089778E-10   2.110000E+00   1.285610E+00   8.243899E-01
+    15             11            1.298978E-09   2.182140E+00   2.004815E+00   1.773250E-01
+    16              2            2.581861E-09   2.223330E+00   1.164940E+00   1.058390E+00
+    16              9            2.788413E-10   2.223330E+00   1.929140E+00   2.941900E-01
+    17              2            1.709991E-09   2.322310E+00   1.164940E+00   1.157370E+00
+    17              8            2.666488E-10   2.322310E+00   1.915770E+00   4.065399E-01
+    18              2            1.338263E-09   2.395000E+00   1.164940E+00   1.230060E+00
+    18              3            1.564140E-12   2.395000E+00   1.269000E+00   1.126000E+00
+    18              9            4.702533E-13   2.395000E+00   1.929140E+00   4.658600E-01
+    18             11            3.451980E-10   2.395000E+00   2.004815E+00   3.901849E-01
+    19              9            1.013529E-09   2.471840E+00   1.929140E+00   5.426999E-01
+    19             16            1.013529E-09   2.471840E+00   2.223330E+00   2.485099E-01
+    20              0            3.420908E-10   2.575000E+00   0.000000E+00   2.575000E+00
+    20              1            2.155595E-10   2.575000E+00   4.877700E-01   2.087230E+00
+    20              4            9.309322E-11   2.575000E+00   1.277580E+00   1.297420E+00
+    20              5            9.131895E-11   2.575000E+00   1.285610E+00   1.289390E+00
+    21             11            3.523507E-10   2.590900E+00   2.004815E+00   5.860848E-01
+    22             16            7.408201E-11   2.621000E+00   2.223330E+00   3.976700E-01
+    23             11            1.801324E-10   2.640550E+00   2.004815E+00   6.357348E-01
+    24             16            1.514355E-10   2.756000E+00   2.223330E+00   5.326700E-01
+    24             17            4.391472E-11   2.756000E+00   2.322310E+00   4.336901E-01
+    25              0            2.997685E-10   2.788720E+00   0.000000E+00   2.788720E+00
+    25              1            1.618570E-11   2.788720E+00   4.877700E-01   2.300950E+00
+    26             21            2.951685E-10   3.017900E+00   2.590900E+00   4.270000E-01
+    27             15            1.826998E-11   3.031850E+00   2.182140E+00   8.497100E-01
+    27             16            4.059878E-11   3.031850E+00   2.223330E+00   8.085201E-01
+    27             22            1.380846E-11   3.031850E+00   2.621000E+00   4.108500E-01
+    27             23            1.664858E-11   3.031850E+00   2.640550E+00   3.913002E-01
+    27             24            1.664858E-11   3.031850E+00   2.756000E+00   2.758501E-01
+    28              1            1.099773E-11   3.181730E+00   4.877700E-01   2.693960E+00
+    28              2            5.937488E-12   3.181730E+00   1.164940E+00   2.016790E+00
+    29              0            4.662181E-12   3.224320E+00   0.000000E+00   3.224320E+00
+    29              1            8.766030E-13   3.224320E+00   4.877700E-01   2.736550E+00
+    29              5            1.632094E-12   3.224320E+00   1.285610E+00   1.938710E+00
+    29             25            2.144629E-13   3.224320E+00   2.788720E+00   4.356000E-01
+    30              1            1.000995E-09   3.265770E+00   4.877700E-01   2.778000E+00
+    30              2            9.910298E-10   3.265770E+00   1.164940E+00   2.100830E+00
+    30              9            1.281294E-10   3.265770E+00   1.929140E+00   1.336630E+00

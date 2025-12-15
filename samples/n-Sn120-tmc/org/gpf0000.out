@@ -1,0 +1,99 @@
+
+    TEFAL-2.2 (Version: December 9, 2025)
+
+           Creating ENDF-6 files with TALYS
+
+ Copyright (C) 2025  A.J. Koning     
+
+ ########### DATA FILE ##########
+
+ TENDL-2025: neutron  + Sn-120  1.e-5 eV -  20 MeV       CC-BY-4.0
+
+ ########## USER INPUT ##########
+
+ USER INPUT FILE
+
+ eswitch 30.
+ endffile n-Sn120-rand-0000
+ diffweight  1.00000e+00
+ adopt 2 151 /Users/koning/libraries/resbase/Sn120/random/n-Sn120.mf2.0000
+
+ USER INPUT FILE + DEFAULTS
+
+ Keyword           Value   Variable     Explanation
+
+ #
+ # Type of data library
+ #
+ gpf                 y     flaggpf       flag for general purpose library
+ eaf                 n     flageaf       flag for EAF-formatted activation library
+ #
+ # Specific structure of the data file
+ #
+ linenumbers         y     flaglinenum   flag to write line numbers of ENDF file
+ high                n     flaghigh      flag for high energies
+ mtall               y     flagmtall     flag to include all defined MT numbers from ENDF manual
+ mtextra             n     flagmtextra   flag to include extra numbers up to MT200
+ Eswitch        30.000     Eswitch       energy where ENDF-6 representation is switched (in MeV)
+ Eswitch4       30.000     Eswitch4      energy where MF4 representation is switched (in MeV)
+ cuteps          0.000     cuteps        energy shift  at MT5 cutoff energy (in eV)
+ resonance           y     flagres       flag to include resonance parameters
+ capt6               y     flagcapt6     flag to put all MT102 gamma production in MF6 instead of MF12/14/15
+ disc6               n     flagdisc6     flag to put all discrete angular distributions and gamma production in MF6 instead of MF4/12/14
+ part6               y     flagpart6     flag to put all gamma production for partial cross sections in MF6 instead of MF12/14/15
+ rp6                 y     flagrp6       flag to put all residual production cross sections in MF6
+ rp10                n     flagrp10      flag to put all residual production cross sections in MF10
+ fis10               n     flagfis10     flag to put (subactinide) fission cross sections in MF10
+ gam13               n     flaggam13     flag to use MF13 for gamma production instead of MF12 (if not in MF6)
+ gamdisc             y     flaggamdisc   flag to store gamma production per discrete level cross section (MT51..) instead of in the total of MT4
+ gamspectrum         n     flaggamspec   flag to store gamma production only as a spectrum and not per discrete level
+ ngn                 n     flagngn       flag to include (n,gamma n) data
+ partialn            y     flagparn      flag to include partial cross sections for neutrons
+ partialp            n     flagparp      flag to include partial cross sections for protons
+ partiald            n     flagpard      flag to include partial cross sections for deuterons
+ partialt            n     flagpart      flag to include partial cross sections for tritons
+ partialh            n     flagparh      flag to include partial cross sections for helions
+ partiala            n     flagpara      flag to include partial cross sections for alphas
+ endfdetail          y     flagendfdet   flag for detailed ENDF-6 information per channel
+ addlow              y     flagaddlow    flag to add low-energy Q>0 reactions to total cross section
+ clean               y     flagclean     flag for cleaning up double points
+ renorm              y     flagrenorm    flag for renormalization of spectra
+ multichance         y     flagmulti     flag to include multi-chance fission
+ recoil              y     flagrecoil    flag to include recoil information
+ subfission          n     flagsubfis    flag to include subactinide fission
+ urrmode             0     urrmode       0: no URR, 1: URR from TALYS, 2: URR from data library
+ lssf               -1     lssfinp       0: URR cross section from MF2, 1: URR cross section from URR (input option)
+ urrcomp             1     urrcomp       mode for competition in the URR, 0:none, 1:MT4, 2:all
+ urrenergy        -1.00000 urrenergy     upper energy of the URR in MeV
+ NMTmax                400 NMTmax        maximum number of MT numbers
+ disclim             10.00 disclim       limit for specific MT numbers for discrete levels
+ tabddx              n     flagtabddx    flag to give explicit DDX in MF6
+ #
+ # Use of specific data
+ #
+ adopt       2 151 /Users/koning/libraries/resbase/Sn120/random/n-Sn120.mf2.0000 1.00000E-05 2.00000E+08
+ #
+ # Information for MF1
+ #
+ author             A.J. Koning and D. Rochman       
+ lab                IAEA       
+ identifier         TENDL-2025
+ endftext           /Users/koning/tefal/misc/endf_n.txt
+ #
+ # Covariance data
+ #
+ covariance          n     flagcovar     flag for covariances
+ partialcov          n     flagparcov    flag to include covariances for MT600-849
+ covdiscrete         4     covdiscrete   number of discrete inelastic levels with covariances
+ intercor            y     flagintercor  flag for inter-MT covariance data
+ #
+ # Miscellaneous
+ #
+ endffile n-Sn120-rand-0000 endffile      name of ENDF file
+
+
+ Number of deleted points:   369 (see file tefal.clean)
+
+ Execution time:  0 hours  0 minutes  4.46 seconds 
+
+ TEFAL has created the following ENDF-6 file: n-Sn120-rand-0000

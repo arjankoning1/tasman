@@ -1,0 +1,43 @@
+# header: 
+#   title: Nb93(n,n')Nb93g cross section
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,n')
+#   Q-value [MeV]:  0.000000E+00
+#   E-threshold [MeV]:  3.110406E-02
+#   ENDF_MF: 10
+#   ENDF_MT: 4
+#   residual: 
+#     Z: 41
+#     A: 93
+#     nuclide: Nb93g
+#     level: 
+#       number: 0
+#       energy [MeV]:  0.000000E+00
+#       spin:  4.500000E+00
+#       parity: 1
+#       isomer: 0
+#   quantity: 
+#     type: cross section
+#   datablock: 
+#     columns: 3
+#     entries: 10
+##       E             xs       Isomeric_ratio
+##     [MeV]          [mb]            []
+   1.000000E-01   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00
+   1.000000E+00   6.169979E+02   8.478864E-01
+   2.000000E+00   1.861957E+03   9.052275E-01
+   3.000000E+00   1.893757E+03   8.929960E-01
+   4.000000E+00   1.663839E+03   8.772696E-01
+   5.000000E+00   1.521346E+03   8.680553E-01
+   8.000000E+00   1.519397E+03   8.726813E-01
+   1.000000E+01   9.690801E+02   8.738360E-01

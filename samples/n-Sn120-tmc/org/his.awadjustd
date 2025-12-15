@@ -1,0 +1,8 @@
+# Histogram after     3 runs
+# Range         :  9.43396E-01 -  1.06000E+00
+# Average       :  1.00125E+00 Variance:  1.01017E-03 Stand. dev.:  0.31783E-01 =      3.17434645 %
+# Number of bins:     3
+#    Bin   Sampled weight Number
+ 9.62830E-01 3.40168E-01    1
+ 1.00170E+00 3.31197E-01    1
+ 1.04057E+00 3.28635E-01    1

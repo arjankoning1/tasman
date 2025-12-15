@@ -1,0 +1,39 @@
+# header:
+#   title: Nb93(n,g)Nb94 cross section - average
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction:
+#   type: (n,g)
+#   Q-value [MeV]:  7.227540E+00
+#   E-threshold [MeV]:  0.000000E+00
+#   ENDF_MF: 3
+#   ENDF_MT: 102
+#   residual:
+#     Z: 41
+#     A: 94
+#     nuclide: Nb94
+#   quantity:
+#     type: cross section
+# quantity: 
+#   type: average cross section
+# datablock: 
+#   columns: 4
+#   entries: 10
+##       E             xs            xslow          xsup
+##     [MeV]          [mb]           [mb]           [mb]
+   1.000000E-01   8.548452E+01   6.095151E+01   1.100175E+02
+   2.000000E-01   5.711497E+01   4.066015E+01   7.356979E+01
+   5.000000E-01   4.173471E+01   2.858208E+01   5.488734E+01
+   1.000000E+00   2.608903E+01   1.661855E+01   3.555951E+01
+   2.000000E+00   6.875606E+00   4.052373E+00   9.698839E+00
+   3.000000E+00   4.048956E+00   2.273638E+00   5.824274E+00
+   4.000000E+00   2.763426E+00   1.447078E+00   4.079774E+00
+   5.000000E+00   1.997042E+00   9.685413E-01   3.025543E+00
+   8.000000E+00   8.640955E-01   5.064192E-01   1.221772E+00
+   1.000000E+01   1.026101E+00   8.680850E-01   1.184117E+00

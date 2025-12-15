@@ -1,0 +1,435 @@
+# header:
+#   title: Sn120(n,urr) URR parameter at 1.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  1.000000E+00
+#     potential scattering radius [fm]:  6.191656E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       3.784763E+02   3.784763E+02   3.983707E-01   3.983707E-01   0.000000E+00   1.507739E-02   7.061239E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              0.5             -1       1.505953E+02   3.769309E+02   2.168618E+00   2.301273E+00   0.000000E+00   8.674208E-02   8.313920E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              1.5             -1       1.505953E+02   2.507958E+02   2.168618E+00   2.124400E+00   0.000000E+00   5.327905E-02   8.506784E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              1.5              1       1.286030E+02   2.530248E+02   4.682553E-01   4.540451E-01   0.000000E+00   1.148847E-02   7.212671E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              2.5              1       1.286030E+02   2.615276E+02   4.682553E-01   4.767814E-01   0.000000E+00   1.246915E-02   8.108018E-02   0.000000E+00   0.000000E+00   0.000000E+00
+# header:
+#   title: Sn120(n,urr) URR parameter at 1.200000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  1.200000E+00
+#     potential scattering radius [fm]:  5.867043E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       3.018426E+02   3.018426E+02   3.976747E-01   3.976747E-01   8.510902E-04   1.200351E-02   7.440020E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              0.5             -1       1.194201E+02   2.998389E+02   1.864792E+00   1.985795E+00   3.680603E-01   5.954186E-02   8.613076E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              1.5             -1       1.194201E+02   1.984649E+02   1.864792E+00   1.824457E+00   6.403977E-01   3.620908E-02   8.785193E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              1.5              1       1.015501E+02   2.001201E+02   4.838163E-01   4.626324E-01   1.053904E+00   9.258203E-03   7.560787E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              2.5              1       1.015501E+02   2.061706E+02   4.838163E-01   4.965265E-01   1.103047E+00   1.023692E-02   8.497958E-02   0.000000E+00   0.000000E+00   0.000000E+00
+# header:
+#   title: Sn120(n,urr) URR parameter at 1.400000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  1.400000E+00
+#     potential scattering radius [fm]:  5.554553E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       2.423344E+02   2.423344E+02   3.971570E-01   3.971570E-01   2.984482E-01   9.624477E-03   7.871912E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              0.5             -1       9.567702E+01   2.411340E+02   1.643630E+00   1.752733E+00   4.850159E+00   4.226436E-02   9.011456E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              1.5             -1       9.567702E+01   1.586104E+02   1.643630E+00   1.607263E+00   8.008340E+00   2.549285E-02   9.150128E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              1.5              1       8.099664E+01   1.596199E+02   4.973214E-01   4.700349E-01   2.553675E+00   7.502695E-03   7.971363E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              2.5              1       8.099664E+01   1.644383E+02   4.973214E-01   5.136933E-01   2.681286E+00   8.447084E-03   8.986484E-02   0.000000E+00   0.000000E+00   0.000000E+00
+# header:
+#   title: Sn120(n,urr) URR parameter at 1.600000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  1.600000E+00
+#     potential scattering radius [fm]:  5.265018E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       1.960829E+02   1.960829E+02   3.967466E-01   3.967466E-01   1.162461E+00   7.779520E-03   8.374712E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              0.5             -1       7.758200E+01   1.964180E+02   1.475727E+00   1.574275E+00   6.441402E+00   3.092158E-02   9.545697E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              1.5             -1       7.758200E+01   1.282314E+02   1.475727E+00   1.442878E+00   1.013073E+01   1.850221E-02   9.635154E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              1.5              1       6.536621E+01   1.285820E+02   5.088415E-01   4.763438E-01   3.394169E+00   6.124923E-03   8.468395E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              2.5              1       6.536621E+01   1.329560E+02   5.088415E-01   5.283400E-01   3.571625E+00   7.024597E-03   9.612437E-02   0.000000E+00   0.000000E+00   0.000000E+00
+# header:
+#   title: Sn120(n,urr) URR parameter at 1.800000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  1.800000E+00
+#     potential scattering radius [fm]:  5.004429E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       1.586394E+02   1.586394E+02   3.964019E-01   3.964019E-01   2.350589E+00   6.288497E-03   8.887722E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              0.5             -1       6.290066E+01   1.599745E+02   1.343937E+00   1.433495E+00   6.950226E+00   2.293227E-02   1.009703E-01   0.000000E+00   0.000000E+00   0.000000E+00
+        1              1.5             -1       6.290066E+01   1.036582E+02   1.343937E+00   1.314084E+00   1.027254E+01   1.362156E-02   1.013086E-01   0.000000E+00   0.000000E+00   0.000000E+00
+        2              1.5              1       5.274544E+01   1.035667E+02   5.185249E-01   4.816772E-01   4.057922E+00   4.988570E-03   8.971728E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              2.5              1       5.274544E+01   1.074879E+02   5.185249E-01   5.406334E-01   4.283341E+00   5.811157E-03   1.025103E-01   0.000000E+00   0.000000E+00   0.000000E+00
+# header:
+#   title: Sn120(n,urr) URR parameter at 2.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  2.000000E+00
+#     potential scattering radius [fm]:  4.775074E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       1.303895E+02   1.303895E+02   3.960942E-01   3.960942E-01   6.395651E+00   5.164651E-03   9.564768E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        1              0.5             -1       5.147682E+01   1.315976E+02   1.237744E+00   1.319688E+00   1.042781E+01   1.736678E-02   1.078046E-01   0.000000E+00   0.000000E+00   0.000000E+00
+        1              1.5             -1       5.147682E+01   8.455017E+01   1.237744E+00   1.210429E+00   1.161798E+01   1.023420E-02   1.073831E-01   0.000000E+00   0.000000E+00   0.000000E+00
+        2              1.5              1       4.302187E+01   8.446323E+01   5.265415E-01   4.861459E-01   4.589390E+00   4.106145E-03   9.602512E-02   0.000000E+00   0.000000E+00   0.000000E+00
+        2              2.5              1       4.302187E+01   8.768451E+01   5.265415E-01   5.507788E-01   4.851955E+00   4.829477E-03   1.100309E-01   0.000000E+00   0.000000E+00   0.000000E+00
+# header:
+#   title: Sn120(n,urr) URR parameter at 2.500000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  2.500000E+00
+#     potential scattering radius [fm]:  4.334632E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       8.132345E+01   8.132345E+01   3.953620E-01   3.953620E-01   1.238070E+01   3.215220E-03   1.160339E-01   0.000000E+00   0.000000E+00   3.586561E-18
+        1              0.5             -1       3.164846E+01   8.175789E+01   1.044456E+00   1.112003E+00   2.383963E+01   9.091498E-03   1.277857E-01   0.000000E+00   0.000000E+00   1.655728E-18
+        1              1.5             -1       3.164846E+01   5.163721E+01   1.044456E+00   1.021940E+00   2.437383E+01   5.277014E-03   1.254870E-01   0.000000E+00   0.000000E+00   1.045736E-18
+        2              1.5              1       2.624838E+01   5.159575E+01   5.404578E-01   4.941831E-01   1.162434E+01   2.549775E-03   1.145848E-01   0.000000E+00   0.000000E+00   1.155869E-18
+        2              2.5              1       2.624838E+01   5.342981E+01   5.404578E-01   5.682226E-01   1.346110E+01   3.036003E-03   1.316351E-01   0.000000E+00   0.000000E+00   1.196956E-18
+# header:
+#   title: Sn120(n,urr) URR parameter at 3.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  3.000000E+00
+#     potential scattering radius [fm]:  4.057451E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       5.258076E+01   5.258076E+01   3.945523E-01   3.945523E-01   2.025287E+01   2.074586E-03   1.441267E-01   0.000000E+00   0.000000E+00   1.015685E-15
+        1              0.5             -1       2.017617E+01   5.248346E+01   9.134170E-01   9.710122E-01   3.537791E+01   5.096208E-03   1.550586E-01   0.000000E+00   0.000000E+00   2.953110E-16
+        1              1.5             -1       2.017617E+01   3.277635E+01   9.134170E-01   8.942186E-01   3.514318E+01   2.930922E-03   1.509707E-01   0.000000E+00   0.000000E+00   2.308864E-16
+        2              1.5              1       1.656659E+01   3.267436E+01   5.475937E-01   4.987317E-01   1.997453E+01   1.629574E-03   1.397683E-01   0.000000E+00   0.000000E+00   4.896634E-16
+        2              2.5              1       1.656659E+01   3.360505E+01   5.475937E-01   5.769109E-01   2.498907E+01   1.938712E-03   1.600056E-01   0.000000E+00   0.000000E+00   4.520138E-16
+# header:
+#   title: Sn120(n,urr) URR parameter at 3.500000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  3.500000E+00
+#     potential scattering radius [fm]:  3.908464E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       3.490077E+01   3.490077E+01   3.935801E-01   3.935801E-01   3.849115E+01   1.373625E-03   1.813283E-01   0.000000E+00   0.000000E+00   2.565399E-13
+        1              0.5             -1       1.329153E+01   3.486811E+01   8.181080E-01   8.684624E-01   5.265434E+01   3.028164E-03   1.925918E-01   0.000000E+00   0.000000E+00   4.565311E-14
+        1              1.5             -1       1.329153E+01   2.147934E+01   8.181080E-01   8.013231E-01   4.996999E+01   1.721189E-03   1.854254E-01   0.000000E+00   0.000000E+00   5.157904E-14
+        2              1.5              1       1.079134E+01   2.137518E+01   5.499032E-01   5.006998E-01   3.612207E+01   1.070255E-03   1.736375E-01   0.000000E+00   0.000000E+00   1.838118E-13
+        2              2.5              1       1.079134E+01   2.179424E+01   5.499032E-01   5.794251E-01   4.360010E+01   1.262813E-03   1.974912E-01   0.000000E+00   0.000000E+00   1.480951E-13
+# header:
+#   title: Sn120(n,urr) URR parameter at 4.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  4.000000E+00
+#     potential scattering radius [fm]:  3.857485E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       2.359757E+01   2.359757E+01   3.924071E-01   3.924071E-01   6.563335E+01   9.259853E-04   2.289674E-01   0.000000E+00   0.000000E+00   2.430555E-11
+        1              0.5             -1       8.902719E+00   2.357757E+01   7.451979E-01   7.900438E-01   7.671367E+01   1.862731E-03   2.405027E-01   0.000000E+00   0.000000E+00   2.793084E-12
+        1              1.5             -1       8.902719E+00   1.430369E+01   7.451979E-01   7.302492E-01   7.127482E+01   1.044526E-03   2.285990E-01   0.000000E+00   0.000000E+00   3.895912E-12
+        2              1.5              1       7.191171E+00   1.432934E+01   5.487958E-01   5.007184E-01   6.045210E+01   7.174967E-04   2.178535E-01   0.000000E+00   0.000000E+00   1.811408E-11
+        2              2.5              1       7.191171E+00   1.443573E+01   5.487958E-01   5.776422E-01   7.002259E+01   8.338687E-04   2.452851E-01   0.000000E+00   0.000000E+00   1.440747E-11
+# header:
+#   title: Sn120(n,urr) URR parameter at 5.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  5.000000E+00
+#     potential scattering radius [fm]:  3.945789E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       1.131367E+01   1.131367E+01   3.894272E-01   3.894272E-01   1.345840E+02   4.405850E-04   3.658985E-01   0.000000E+00   0.000000E+00   2.035106E-08
+        1              0.5             -1       4.210321E+00   1.128410E+01   6.399739E-01   6.769039E-01   1.399061E+02   7.638250E-04   3.772640E-01   0.000000E+00   0.000000E+00   1.385549E-09
+        1              1.5             -1       4.210321E+00   6.716310E+00   6.399739E-01   6.276639E-01   1.337921E+02   4.215585E-04   3.533907E-01   0.000000E+00   0.000000E+00   2.265903E-09
+        2              1.5              1       3.341892E+00   6.727201E+00   5.400221E-01   4.965740E-01   1.261702E+02   3.340553E-04   3.422924E-01   0.000000E+00   0.000000E+00   1.494696E-08
+        2              2.5              1       3.341892E+00   6.640922E+00   5.400221E-01   5.660909E-01   1.458039E+02   3.759366E-04   3.786993E-01   0.000000E+00   0.000000E+00   1.122649E-08
+# header:
+#   title: Sn120(n,urr) URR parameter at 6.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  6.000000E+00
+#     potential scattering radius [fm]:  4.143568E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       5.782244E+00   5.782244E+00   3.856221E-01   3.856221E-01   2.625463E+02   2.229761E-04   5.859240E-01   0.000000E+00   5.840908E-10   7.075936E-07
+        1              0.5             -1       2.120458E+00   5.756382E+00   5.666544E-01   5.980486E-01   2.612505E+02   3.442596E-04   5.969573E-01   0.000000E+00   6.672681E-10   1.244685E-07
+        1              1.5             -1       2.120458E+00   3.357101E+00   5.666544E-01   5.561896E-01   2.515962E+02   1.867185E-04   5.501732E-01   0.000000E+00   3.982774E-10   1.448608E-07
+        2              1.5              1       1.661087E+00   3.378505E+00   5.262647E-01   4.886730E-01   2.482555E+02   1.650984E-04   5.409122E-01   0.000000E+00   3.730286E-10   6.163141E-07
+        2              2.5              1       1.661087E+00   3.267690E+00   5.262647E-01   5.488197E-01   2.884937E+02   1.793372E-04   5.875943E-01   0.000000E+00   7.717764E-11   5.100716E-07
+# header:
+#   title: Sn120(n,urr) URR parameter at 7.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  7.000000E+00
+#     potential scattering radius [fm]:  4.333044E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       3.130503E+00   3.130503E+00   3.810726E-01   3.810726E-01   5.229155E+02   1.192949E-04   9.369714E-01   0.000000E+00   4.756566E-06   1.055810E-05
+        1              0.5             -1       1.129276E+00   3.090133E+00   5.119516E-01   5.391338E-01   5.096729E+02   1.665995E-04   9.406830E-01   0.000000E+00   6.369554E-06   4.700622E-06
+        1              1.5             -1       1.129276E+00   1.779638E+00   5.119516E-01   5.028908E-01   5.002747E+02   8.949635E-05   8.595464E-01   0.000000E+00   4.071015E-06   4.554765E-06
+        2              1.5              1       8.760825E-01   1.796035E+00   5.101134E-01   4.784302E-01   5.002500E+02   8.592774E-05   8.528824E-01   0.000000E+00   3.335405E-06   9.442673E-06
+        2              2.5              1       8.760825E-01   1.710387E+00   5.101134E-01   5.291234E-01   5.861775E+02   9.050056E-05   9.138281E-01   0.000000E+00   1.464977E-06   8.652468E-06
+# header:
+#   title: Sn120(n,urr) URR parameter at 8.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  8.000000E+00
+#     potential scattering radius [fm]:  4.466871E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       1.778224E+00   1.778224E+00   3.758757E-01   3.758757E-01   1.091586E+03   6.683912E-05   1.487057E+00   0.000000E+00   4.814161E-04   1.099997E-04
+        1              0.5             -1       6.358702E-01   1.758939E+00   4.692198E-01   4.929986E-01   1.064636E+03   8.671544E-05   1.489029E+00   0.000000E+00   6.405770E-04   1.122048E-04
+        1              1.5             -1       6.358702E-01   9.958935E-01   4.692198E-01   4.612935E-01   1.049952E+03   4.593992E-05   1.343371E+00   0.000000E+00   4.662689E-04   1.005861E-04
+        2              1.5              1       4.856578E-01   1.006132E+00   4.929681E-01   4.667561E-01   1.050793E+03   4.696181E-05   1.340399E+00   0.000000E+00   4.031834E-04   1.001212E-04
+        2              2.5              1       4.856578E-01   9.388283E-01   4.929681E-01   5.086953E-01   1.224635E+03   4.775775E-05   1.409571E+00   0.000000E+00   3.000177E-04   1.034564E-04
+# header:
+#   title: Sn120(n,urr) URR parameter at 9.000000E+00 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction:
+#   type: (n,urr)
+#   parameters:
+#     neutron separation energy [MeV]:  6.170202E+00
+#     thermal capture cross section [mb]:  1.420000E+02
+#   quantity:
+#     type: URR parameter
+#     E-incident [MeV]:  9.000000E+00
+#     potential scattering radius [fm]:  4.539614E+00
+#   datablock:
+#     columns: 13
+#     entries: 38
+##       l              J              P            D(l)          D(l,J)          S(l)          S(l,J)         Gx(l,J)        Gn(l,J)        Gg(l,J)        Gf(l,J)        Gp(l,J)        Ga(l,J)
+##      []             []             []            [eV]           [eV]            []             []            [eV]           [eV]           [eV]           [eV]           [eV]           [eV]
+        0              0.5              1       1.051098E+00   1.051098E+00   3.701396E-01   3.701396E-01   2.263315E+03   3.890531E-05   2.330239E+00   0.000000E+00   7.952544E-03   9.797050E-04
+        1              0.5             -1       3.755456E-01   1.049090E+00   4.347731E-01   4.556795E-01   2.234418E+03   4.780488E-05   2.343570E+00   0.000000E+00   1.015633E-02   2.368832E-03
+        1              1.5             -1       3.755456E-01   5.849372E-01   4.347731E-01   4.278043E-01   2.192021E+03   2.502386E-05   2.091640E+00   0.000000E+00   7.911317E-03   2.000507E-03
+        2              1.5              1       2.810035E-01   5.880024E-01   4.756118E-01   4.542642E-01   2.175663E+03   2.671084E-05   2.085297E+00   0.000000E+00   7.118115E-03   8.969979E-04
+        2              2.5              1       2.810035E-01   5.382128E-01   4.756118E-01   4.884203E-01   2.501845E+03   2.628741E-05   2.154989E+00   0.000000E+00   6.073571E-03   1.125832E-03

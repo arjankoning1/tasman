@@ -1,0 +1,44 @@
+# Original input file
+#
+# general
+#
+projectile n
+element nb
+mass 93
+energy energies
+bins 20
+omponly y
+#
+# tasman keywords start here
+#
+#change
+#mode 3
+#ntalys 100
+#expinclude 1
+##
+## parameters to be varied
+##
+rvadjust n 1.
+avadjust n 1.
+v1adjust n 1.
+v2adjust n 1.
+d1adjust n 1.
+d2adjust n 1.
+d3adjust n 1.
+rwdadjust n 1.
+awdadjust n 1.
+# Current variables Run:   100
+#Ztarget  41
+partable y
+ecissave y
+inccalc y
+eciscalc y
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278

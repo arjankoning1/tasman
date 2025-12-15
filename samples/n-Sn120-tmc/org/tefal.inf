@@ -1,0 +1,15 @@
+  1       : projectile type
+ 50       : Z of target
+120       : A of target
+119.902203: mass of target in a.m.u.
+ 0.0      : spin of target
+  0.000000: energy of target
+   0   0  : level and isomeric number of target
+  38      : number of incident energies
+  30      : number of discrete levels
+energies.endf : file with incident energies
+y         : detailed ENDF-6 information per channel
+y         : keep elastic cross section in normalization
+y         : recoils
+y         : urr
+y         : block

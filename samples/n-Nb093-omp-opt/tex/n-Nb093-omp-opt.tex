@@ -1,0 +1,61 @@
+\begin{samplecase}
+{\bf n-Nb093-omp-opt: Optimization of optical model parameters for total cross section}\newline
+The sample case below does a simple optical model search, on total cross sections only.
+The {\it tasman.inp} file looks as follows
+
+\VerbatimInput{\samples n-Nb093-omp-opt/org/tasman.inp}
+
+and you can run this after going to {\it /samples/n-Nb093-omp-opt/new/} with {\it tasman < tasman.inp > tasman.out \&}.
+TASMAN does not have the same flexibilty for the {\bf energy} keyword as TALYS, so you always have to give either 1 incident energy or
+your own list of incident energies, like in TALYS. (for example, {\bf energy 0.5 20 0.5} does not work for TASMAN.)
+Note that for this sample case, we stop at a maximum of 100 TALYS runs, and you may need a lot more to reach convergence.
+With the {\bf \#expinclude} keyword we automatically include all experimental
+data from the EXFOR database for MT1, i.e. total
+cross sections. We limit the search to 9 different parameters and for this particular sample case we give them explicitly including their
+starting values, so TASMAN knows how to change them.
+Each time the search method finds a new optimum, it is mentioned in the main
+output file {\it tasman.out}.
+
+The main output file now contains more information. Below the used parameters
+for the particular random input file there is now a block with a goodness-of-fit summary of the TALYS run, when compared with experimental data,
+{\small \begin{verbatim}
+ Comparison of TALYS and experimental data for  Z:  41 A:  93  Run:     0
+
+ Goodness-of-fit summary for Z:  41 A:  93
+
+ Channel         Sets  Points     GOF           Total optimum         Channel optimum
+totalxs.tot        25   866      1.115         1.0000E+38 (   0)     1.0000E+38 (   0)
+
+GOF no.                0   1.115
+Number of nuclides     1
+Number of channels     1
+Number of data sets   25
+Number of points     866                Optimum
+Total chi2             271.0
+chi2 per point         10.84            1.0000E+38
+F per point           1.0239E+06        1.0000E+38
+Total D               2.5596E+07
+D per point           1.0239E+06        1.0000E+38
+Av. distance           1012.     mb     1.0000E+19 mb
+K per point            1.271            1.0000E+38
+
+ New optimum G=    1.11451721
+\end{verbatim} } \renewcommand{\baselinestretch}{1.07}\small\normalsize
+\noindent
+In our case, the optimum is found for sample run number 95 which gives
+
+{\small \begin{verbatim}
+ New optimum G=  1.10180080
+\end{verbatim} } \renewcommand{\baselinestretch}{1.07}\small\normalsize
+\noindent
+The block above is just a summary, giving the number of sets, and various
+goodness-of-fit estimators, per channel, and as total. This is given for every random run. Run number 0 is always the one with default parameter values.
+Note that the default is to use the F-value as the leading goodness-of-fit
+estimator. This can be changed with the {\bf \#chi2} keyword.
+More extensive information about the goodness-of-fit is given in the {\it gof.NNNN} files where NNNN denotes the random run. You may want to study e.g. {\it gof.0001} which gives details about every included experimental data set, and point, and its deviation from the TALYS calculation. At the bottom of the file,
+the summary for each particular random run is given, just like in the main
+output file. Note also that inside {\it gof.NNNN} averages per reaction channel are given.
+Moreover, when a new optimum is found, the current optimal set of TALYS output files and parameters are copied to a directory
+{\it optimum/}. In the process, some linux 'cp' warnings may occur for non-existing files, as I was not able to get rid of them.
+\end{samplecase}
+

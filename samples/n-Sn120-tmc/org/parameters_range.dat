@@ -1,0 +1,299 @@
+v1adjust     n    0.99231 # Range:      0.92593 -      1.08000
+v2adjust     n    1.01463 # Range:      0.89286 -      1.12000
+v3adjust     n    1.02950 # Range:      0.89286 -      1.12000
+v4adjust     n    1.14850 # Range:      0.83333 -      1.20000
+rvadjust     n    1.04188 # Range:      0.92593 -      1.08000
+avadjust     n    1.01175 # Range:      0.92593 -      1.08000
+w1adjust     n    0.98038 # Range:      0.71429 -      1.40000
+w2adjust     n    0.79581 # Range:      0.71429 -      1.40000
+w3adjust     n    1.22727 # Range:      0.71429 -      1.40000
+w4adjust     n    0.91385 # Range:      0.71429 -      1.40000
+rwadjust     n    1.01978 # Range:      0.98039 -      1.02000
+awadjust     n    1.01894 # Range:      0.98039 -      1.02000
+rvdadjust    n    0.90175 # Range:      0.89286 -      1.12000
+avdadjust    n    0.91916 # Range:      0.86207 -      1.16000
+d1adjust     n    0.79746 # Range:      0.71429 -      1.40000
+d2adjust     n    1.08982 # Range:      0.71429 -      1.40000
+d3adjust     n    1.08281 # Range:      0.71429 -      1.40000
+rwdadjust    n    0.97481 # Range:      0.97087 -      1.03000
+awdadjust    n    1.03779 # Range:      0.96154 -      1.04000
+rvsoadjust   n    1.13850 # Range:      0.71429 -      1.40000
+avsoadjust   n    1.13551 # Range:      0.71429 -      1.40000
+vso1adjust   n    1.06762 # Range:      0.83333 -      1.20000
+vso2adjust   n    0.82633 # Range:      0.71429 -      1.40000
+wso1adjust   n    0.82298 # Range:      0.71429 -      1.40000
+wso2adjust   n    1.31685 # Range:      0.71429 -      1.40000
+rcadjust     n    0.89785 # Range:      0.83333 -      1.20000
+cstrip       n    0.93114 # Range:      0.50000 -      2.00000
+cknock       n    0.93114 # Range:      0.50000 -      2.00000
+cbreak       n    0.58789 # Range:      0.50000 -      2.00000
+m2constant      1.52864 # Range:      0.55556 -      1.80000
+rgamma          2.63935 # Range:      0.66667 -      6.00000
+gamgamadjust  50 121    1.43975 # Range:      0.26923 -      1.82000
+sgradjust     50 121    1.30420 e1 # Range:      0.55556 -      1.80000
+egradjust     50 121    0.86972 e1 # Range:      0.71429 -      1.40000
+ggradjust     50 121    1.29830 e1 # Range:      0.55556 -      1.80000
+s2adjust      50 121    1.24499 0 # Range:      0.76923 -      1.30000
+s2adjust      50 120    1.19546 0 # Range:      0.76923 -      1.30000
+s2adjust      49 120    0.81234 0 # Range:      0.68548 -      1.45882
+s2adjust      49 119    1.18902 0 # Range:      0.72319 -      1.38276
+s2adjust      49 118    0.83556 0 # Range:      0.75581 -      1.32308
+s2adjust      48 118    0.78353 0 # Range:      0.72319 -      1.38276
+s2adjust      48 117    0.90413 0 # Range:      0.75581 -      1.32308
+s2adjust      50 119    1.65362 0 # Range:      1.38462 -      2.34000
+s2adjust      49 117    0.77642 0 # Range:      0.76923 -      1.30000
+s2adjust      48 116    1.27163 0 # Range:      0.76923 -      1.30000
+s2adjust      47 116    0.79517 0 # Range:      0.62500 -      1.60000
+s2adjust      47 115    0.72773 0 # Range:      0.65183 -      1.53415
+s2adjust      47 114    1.25284 0 # Range:      0.68548 -      1.45882
+s2adjust      46 114    1.39077 0 # Range:      0.65183 -      1.53415
+s2adjust      46 113    1.33185 0 # Range:      0.68548 -      1.45882
+s2adjust      48 119    1.28712 0 # Range:      0.68548 -      1.45882
+s2adjust      47 117    0.63685 0 # Range:      0.60456 -      1.65410
+s2adjust      50 118    0.91047 0 # Range:      0.76923 -      1.30000
+s2adjust      49 116    0.87445 0 # Range:      0.76923 -      1.30000
+s2adjust      48 115    1.27823 0 # Range:      0.76923 -      1.30000
+s2adjust      47 113    1.25118 0 # Range:      0.72319 -      1.38276
+s2adjust      46 112    1.35165 0 # Range:      0.72319 -      1.38276
+s2adjust      50 117    0.79233 0 # Range:      0.76923 -      1.30000
+s2adjust      49 115    0.92707 0 # Range:      0.76923 -      1.30000
+s2adjust      48 114    0.86342 0 # Range:      0.76923 -      1.30000
+s2adjust      46 115    0.75430 0 # Range:      0.62500 -      1.60000
+s2adjust      47 118    1.52392 0 # Range:      0.58917 -      1.69730
+s2adjust      46 116    1.35004 0 # Range:      0.60456 -      1.65410
+s2adjust      47 112    0.84766 0 # Range:      0.75581 -      1.32308
+s2adjust      46 111    1.24256 0 # Range:      0.75581 -      1.32308
+gnadjust      50 121    1.00534 # Range:      0.69231 -      1.17000
+gnadjust      50 120    0.84278 # Range:      0.76923 -      1.30000
+gnadjust      49 120    1.02726 # Range:      0.61818 -      1.61765
+gnadjust      49 119    1.11567 # Range:      0.68235 -      1.46552
+gnadjust      49 118    1.06233 # Range:      0.74286 -      1.34615
+gnadjust      48 118    0.80345 # Range:      0.68235 -      1.46552
+gnadjust      48 117    1.22911 # Range:      0.74286 -      1.34615
+gnadjust      50 119    1.04021 # Range:      0.76923 -      1.30000
+gnadjust      49 117    1.05696 # Range:      0.76923 -      1.30000
+gnadjust      48 116    0.93161 # Range:      0.76923 -      1.30000
+gnadjust      47 116    1.60327 # Range:      0.52632 -      1.90000
+gnadjust      47 115    1.34031 # Range:      0.56552 -      1.76829
+gnadjust      47 114    1.14770 # Range:      0.61818 -      1.61765
+gnadjust      46 114    0.75394 # Range:      0.56552 -      1.76829
+gnadjust      46 113    0.63260 # Range:      0.61818 -      1.61765
+gnadjust      48 119    1.32175 # Range:      0.61818 -      1.61765
+gnadjust      47 117    1.14504 # Range:      0.49796 -      2.00820
+gnadjust      50 118    1.22426 # Range:      0.76923 -      1.30000
+gnadjust      49 116    1.05333 # Range:      0.76923 -      1.30000
+gnadjust      48 115    0.86922 # Range:      0.76923 -      1.30000
+gnadjust      47 113    0.93197 # Range:      0.68235 -      1.46552
+gnadjust      46 112    0.95031 # Range:      0.68235 -      1.46552
+gnadjust      50 117    1.09212 # Range:      0.76923 -      1.30000
+gnadjust      49 115    0.88832 # Range:      0.76923 -      1.30000
+gnadjust      48 114    0.84838 # Range:      0.76923 -      1.30000
+gnadjust      46 115    0.89250 # Range:      0.86957 -      1.15000
+gnadjust      47 118    0.85859 # Range:      0.85155 -      1.17432
+gnadjust      46 116    1.15969 # Range:      0.85946 -      1.16352
+gnadjust      47 112    1.16468 # Range:      0.74286 -      1.34615
+gnadjust      46 111    1.32140 # Range:      0.74286 -      1.34615
+gpadjust      50 121    1.08602 # Range:      0.69231 -      1.17000
+gpadjust      50 120    0.96798 # Range:      0.76923 -      1.30000
+gpadjust      49 120    0.75180 # Range:      0.61818 -      1.61765
+gpadjust      49 119    0.71916 # Range:      0.68235 -      1.46552
+gpadjust      49 118    0.97667 # Range:      0.74286 -      1.34615
+gpadjust      48 118    1.26612 # Range:      0.68235 -      1.46552
+gpadjust      48 117    1.18057 # Range:      0.74286 -      1.34615
+gpadjust      50 119    1.19178 # Range:      0.76923 -      1.30000
+gpadjust      49 117    0.93611 # Range:      0.76923 -      1.30000
+gpadjust      48 116    0.94536 # Range:      0.76923 -      1.30000
+gpadjust      47 116    1.60375 # Range:      0.52632 -      1.90000
+gpadjust      47 115    0.95956 # Range:      0.56552 -      1.76829
+gpadjust      47 114    1.18240 # Range:      0.61818 -      1.61765
+gpadjust      46 114    1.60912 # Range:      0.56552 -      1.76829
+gpadjust      46 113    1.08381 # Range:      0.61818 -      1.61765
+gpadjust      48 119    1.46470 # Range:      0.61818 -      1.61765
+gpadjust      47 117    0.60497 # Range:      0.49796 -      2.00820
+gpadjust      50 118    0.95489 # Range:      0.76923 -      1.30000
+gpadjust      49 116    0.98954 # Range:      0.76923 -      1.30000
+gpadjust      48 115    1.07622 # Range:      0.76923 -      1.30000
+gpadjust      47 113    1.05526 # Range:      0.68235 -      1.46552
+gpadjust      46 112    0.76213 # Range:      0.68235 -      1.46552
+gpadjust      50 117    0.89407 # Range:      0.76923 -      1.30000
+gpadjust      49 115    1.23310 # Range:      0.76923 -      1.30000
+gpadjust      48 114    0.98550 # Range:      0.76923 -      1.30000
+gpadjust      46 115    1.14283 # Range:      0.86957 -      1.15000
+gpadjust      47 118    0.92187 # Range:      0.85155 -      1.17432
+gpadjust      46 116    0.95304 # Range:      0.85946 -      1.16352
+gpadjust      47 112    1.24878 # Range:      0.74286 -      1.34615
+gpadjust      46 111    0.77921 # Range:      0.74286 -      1.34615
+aadjust       50 120    0.97722 # Range:      0.76923 -      1.30000
+aadjust       49 120    1.29041 # Range:      0.61818 -      1.61765
+aadjust       49 119    0.77303 # Range:      0.68235 -      1.46552
+aadjust       49 118    0.97738 # Range:      0.74286 -      1.34615
+aadjust       48 118    1.13366 # Range:      0.68235 -      1.46552
+aadjust       48 117    0.84612 # Range:      0.74286 -      1.34615
+aadjust       50 119    1.04842 # Range:      0.76923 -      1.30000
+aadjust       49 117    1.28043 # Range:      0.76923 -      1.30000
+aadjust       48 116    1.21921 # Range:      0.76923 -      1.30000
+aadjust       47 116    1.73450 # Range:      0.52632 -      1.90000
+aadjust       47 115    1.45254 # Range:      0.56552 -      1.76829
+aadjust       47 114    1.13670 # Range:      0.61818 -      1.61765
+aadjust       46 114    1.58257 # Range:      0.56552 -      1.76829
+aadjust       46 113    1.20187 # Range:      0.61818 -      1.61765
+aadjust       48 119    1.11812 # Range:      0.61818 -      1.61765
+aadjust       47 117    1.48848 # Range:      0.49796 -      2.00820
+aadjust       50 118    1.08474 # Range:      0.76923 -      1.30000
+aadjust       49 116    0.92692 # Range:      0.76923 -      1.30000
+aadjust       48 115    1.22236 # Range:      0.76923 -      1.30000
+aadjust       47 113    1.22063 # Range:      0.68235 -      1.46552
+aadjust       46 112    0.79837 # Range:      0.68235 -      1.46552
+aadjust       50 117    1.00274 # Range:      0.76923 -      1.30000
+aadjust       49 115    1.12866 # Range:      0.76923 -      1.30000
+aadjust       48 114    1.15397 # Range:      0.76923 -      1.30000
+aadjust       46 115    1.08934 # Range:      0.86957 -      1.15000
+aadjust       47 118    0.94442 # Range:      0.85155 -      1.17432
+aadjust       46 116    0.93747 # Range:      0.85946 -      1.16352
+aadjust       47 112    1.23942 # Range:      0.74286 -      1.34615
+aadjust       46 111    0.99881 # Range:      0.74286 -      1.34615
+v1adjust     p    1.01452 # Range:      0.86207 -      1.16000
+v2adjust     p    0.92620 # Range:      0.80645 -      1.24000
+v3adjust     p    1.18525 # Range:      0.80645 -      1.24000
+v4adjust     p    0.88808 # Range:      0.71429 -      1.40000
+rvadjust     p    0.94321 # Range:      0.91379 -      1.22960
+avadjust     p    0.98618 # Range:      0.91379 -      1.22960
+w1adjust     p    0.94976 # Range:      0.55556 -      1.80000
+w2adjust     p    1.27092 # Range:      0.55556 -      1.80000
+w3adjust     p    0.82488 # Range:      0.55556 -      1.80000
+w4adjust     p    1.34926 # Range:      0.55556 -      1.80000
+rwadjust     p    1.09814 # Range:      1.01923 -      1.10240
+awadjust     p    1.03104 # Range:      1.01923 -      1.10240
+rvdadjust    p    1.09735 # Range:      0.80645 -      1.24000
+avdadjust    p    0.85051 # Range:      0.75758 -      1.32000
+d1adjust     p    1.18297 # Range:      0.55556 -      1.80000
+d2adjust     p    1.30291 # Range:      0.55556 -      1.80000
+d3adjust     p    1.66617 # Range:      0.55556 -      1.80000
+rwdadjust    p    0.98131 # Range:      0.94340 -      1.06000
+awdadjust    p    1.06197 # Range:      0.92593 -      1.08000
+rvsoadjust   p    1.67570 # Range:      0.55556 -      1.80000
+avsoadjust   p    1.38797 # Range:      0.55556 -      1.80000
+vso1adjust   p    0.82083 # Range:      0.71429 -      1.40000
+vso2adjust   p    1.05836 # Range:      0.55556 -      1.80000
+wso1adjust   p    1.21673 # Range:      0.55556 -      1.80000
+wso2adjust   p    1.61049 # Range:      0.55556 -      1.80000
+rcadjust     p    0.98898 # Range:      0.71429 -      1.40000
+cstrip       p    1.71842 # Range:      0.50000 -      2.00000
+cknock       p    1.71842 # Range:      0.50000 -      2.00000
+cbreak       p    1.52165 # Range:      0.50000 -      2.00000
+v1adjust     a    1.00449 # Range:      0.86207 -      1.16000
+v2adjust     a    0.95269 # Range:      0.80645 -      1.24000
+v3adjust     a    0.90278 # Range:      0.80645 -      1.24000
+v4adjust     a    1.01983 # Range:      0.71429 -      1.40000
+rvadjust     a    0.91045 # Range:      0.86207 -      1.16000
+avadjust     a    0.93728 # Range:      0.86207 -      1.16000
+w1adjust     a    1.12915 # Range:      0.55556 -      1.80000
+w2adjust     a    1.32461 # Range:      0.55556 -      1.80000
+w3adjust     a    1.02184 # Range:      0.55556 -      1.80000
+w4adjust     a    1.28088 # Range:      0.55556 -      1.80000
+rwadjust     a    1.03734 # Range:      0.96154 -      1.04000
+awadjust     a    1.03788 # Range:      0.96154 -      1.04000
+rvdadjust    a    1.20929 # Range:      0.80645 -      1.24000
+avdadjust    a    1.25514 # Range:      0.75758 -      1.32000
+d1adjust     a    1.48511 # Range:      0.55556 -      1.80000
+d2adjust     a    1.65452 # Range:      0.55556 -      1.80000
+d3adjust     a    1.39331 # Range:      0.55556 -      1.80000
+rwdadjust    a    1.04711 # Range:      0.94340 -      1.06000
+awdadjust    a    1.04509 # Range:      0.92593 -      1.08000
+rvsoadjust   a    1.22840 # Range:      0.55556 -      1.80000
+avsoadjust   a    1.66526 # Range:      0.55556 -      1.80000
+vso1adjust   a    0.94385 # Range:      0.71429 -      1.40000
+vso2adjust   a    0.80992 # Range:      0.55556 -      1.80000
+wso1adjust   a    1.22534 # Range:      0.55556 -      1.80000
+wso2adjust   a    1.56551 # Range:      0.55556 -      1.80000
+rcadjust     a    0.87986 # Range:      0.71429 -      1.40000
+cstrip       a    0.31413 # Range:      0.20000 -      5.00000
+cknock       a    0.31413 # Range:      0.20000 -      5.00000
+cbreak       a    0.57107 # Range:      0.50000 -      2.00000
+v1adjust     d    0.98087 # Range:      0.80645 -      1.24000
+v2adjust     d    1.14782 # Range:      0.73529 -      1.36000
+v3adjust     d    1.30940 # Range:      0.73529 -      1.36000
+v4adjust     d    0.90336 # Range:      0.62500 -      1.60000
+rvadjust     d    0.88822 # Range:      0.80645 -      1.24000
+avadjust     d    1.21500 # Range:      0.80645 -      1.24000
+w1adjust     d    1.04250 # Range:      0.45454 -      2.20000
+w2adjust     d    1.63285 # Range:      0.45454 -      2.20000
+w3adjust     d    0.69582 # Range:      0.45454 -      2.20000
+w4adjust     d    1.55870 # Range:      0.45454 -      2.20000
+rwadjust     d    1.05796 # Range:      0.94340 -      1.06000
+awadjust     d    1.04970 # Range:      0.94340 -      1.06000
+rvdadjust    d    1.11768 # Range:      0.73529 -      1.36000
+avdadjust    d    1.17059 # Range:      0.67568 -      1.48000
+d1adjust     d    1.46062 # Range:      0.45454 -      2.20000
+d2adjust     d    0.69926 # Range:      0.45454 -      2.20000
+d3adjust     d    0.60362 # Range:      0.45454 -      2.20000
+rwdadjust    d    0.92023 # Range:      0.91743 -      1.09000
+awdadjust    d    0.92575 # Range:      0.89286 -      1.12000
+rvsoadjust   d    1.87717 # Range:      0.45454 -      2.20000
+avsoadjust   d    1.89988 # Range:      0.45454 -      2.20000
+vso1adjust   d    1.45373 # Range:      0.62500 -      1.60000
+vso2adjust   d    2.12428 # Range:      0.45454 -      2.20000
+wso1adjust   d    1.35778 # Range:      0.45454 -      2.20000
+wso2adjust   d    1.74197 # Range:      0.45454 -      2.20000
+rcadjust     d    0.71664 # Range:      0.62500 -      1.60000
+cstrip       d    2.95830 # Range:      0.11111 -      9.00000
+cknock       d    2.95830 # Range:      0.33333 -      3.00000
+cbreak       d    0.38147 # Range:      0.33333 -      3.00000
+v1adjust     t    0.80779 # Range:      0.80645 -      1.24000
+v2adjust     t    1.08503 # Range:      0.73529 -      1.36000
+v3adjust     t    1.14342 # Range:      0.73529 -      1.36000
+v4adjust     t    0.93685 # Range:      0.62500 -      1.60000
+rvadjust     t    0.96867 # Range:      0.80645 -      1.24000
+avadjust     t    0.90030 # Range:      0.80645 -      1.24000
+w1adjust     t    1.23873 # Range:      0.45454 -      2.20000
+w2adjust     t    0.95106 # Range:      0.45454 -      2.20000
+w3adjust     t    1.86075 # Range:      0.45454 -      2.20000
+w4adjust     t    1.60425 # Range:      0.45454 -      2.20000
+rwadjust     t    1.03565 # Range:      0.94340 -      1.06000
+awadjust     t    0.96074 # Range:      0.94340 -      1.06000
+rvdadjust    t    1.18807 # Range:      0.73529 -      1.36000
+avdadjust    t    0.86470 # Range:      0.67568 -      1.48000
+d1adjust     t    1.11823 # Range:      0.45454 -      2.20000
+d2adjust     t    0.89836 # Range:      0.45454 -      2.20000
+d3adjust     t    1.06483 # Range:      0.45454 -      2.20000
+rwdadjust    t    1.06854 # Range:      0.91743 -      1.09000
+awdadjust    t    1.09855 # Range:      0.89286 -      1.12000
+rvsoadjust   t    1.01056 # Range:      0.45454 -      2.20000
+avsoadjust   t    0.89848 # Range:      0.45454 -      2.20000
+vso1adjust   t    0.65718 # Range:      0.62500 -      1.60000
+vso2adjust   t    1.76618 # Range:      0.45454 -      2.20000
+wso1adjust   t    2.04346 # Range:      0.45454 -      2.20000
+wso2adjust   t    0.57074 # Range:      0.45454 -      2.20000
+rcadjust     t    0.77923 # Range:      0.62500 -      1.60000
+cstrip       t    2.22441 # Range:      0.11111 -      9.00000
+cknock       t    2.22441 # Range:      0.33333 -      3.00000
+cbreak       t    2.72808 # Range:      0.33333 -      3.00000
+v1adjust     h    1.11040 # Range:      0.75758 -      1.32000
+v2adjust     h    1.39099 # Range:      0.67568 -      1.48000
+v3adjust     h    1.01044 # Range:      0.67568 -      1.48000
+v4adjust     h    0.89969 # Range:      0.55556 -      1.80000
+rvadjust     h    0.97685 # Range:      0.75758 -      1.32000
+avadjust     h    1.06478 # Range:      0.75758 -      1.32000
+w1adjust     h    0.67028 # Range:      0.38462 -      2.60000
+w2adjust     h    1.42968 # Range:      0.38462 -      2.60000
+w3adjust     h    1.80098 # Range:      0.38462 -      2.60000
+w4adjust     h    2.06784 # Range:      0.38462 -      2.60000
+rwadjust     h    1.06527 # Range:      0.92593 -      1.08000
+awadjust     h    0.93006 # Range:      0.92593 -      1.08000
+rvdadjust    h    0.72132 # Range:      0.67568 -      1.48000
+avdadjust    h    1.12500 # Range:      0.60976 -      1.64000
+d1adjust     h    0.80860 # Range:      0.38462 -      2.60000
+d2adjust     h    0.71469 # Range:      0.38462 -      2.60000
+d3adjust     h    2.36047 # Range:      0.38462 -      2.60000
+rwdadjust    h    0.94780 # Range:      0.89286 -      1.12000
+awdadjust    h    1.09044 # Range:      0.86207 -      1.16000
+rvsoadjust   h    1.67873 # Range:      0.38462 -      2.60000
+avsoadjust   h    0.49264 # Range:      0.38462 -      2.60000
+vso1adjust   h    0.84842 # Range:      0.55556 -      1.80000
+vso2adjust   h    1.80277 # Range:      0.38462 -      2.60000
+wso1adjust   h    2.35922 # Range:      0.38462 -      2.60000
+wso2adjust   h    1.18407 # Range:      0.38462 -      2.60000
+rcadjust     h    0.92189 # Range:      0.55556 -      1.80000
+cstrip       h    1.07528 # Range:      0.11111 -      9.00000
+cknock       h    1.07528 # Range:      0.33333 -      3.00000
+cbreak       h    0.96339 # Range:      0.33333 -      3.00000

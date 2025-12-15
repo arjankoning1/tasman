@@ -1,0 +1,30 @@
+# Original input file
+#
+# general
+#
+projectile n
+element nb
+mass 93
+energy energies
+channels y
+filechannels y
+bins 20
+#
+# tasman keywords start here
+#
+#change
+#mode 1
+#band y
+##
+## parameters to be varied
+##
+rvadjust n 1.
+avadjust n 1.
+# Current variables Run:    -1
+#Ztarget  41
+partable y
+ecissave y
+inccalc y
+eciscalc y
+rvadjust     n    1.01037
+avadjust     n    1.01702

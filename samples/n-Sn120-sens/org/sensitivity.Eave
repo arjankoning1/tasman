@@ -1,0 +1,714 @@
+# header: 
+#   title: Sn120 sensitivity coefficients per energy, integrated over channels
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# parameters: 
+#   number of energies: 39
+#     E-incident [MeV]:  1.000000E-11
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.752944E+01
+v1adjust n                       1.077635E+01
+avadjust n                       2.850106E+00
+aadjust  50 121                  9.982339E-01
+v2adjust n                       5.941907E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.530000E-08
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.852923E+01
+v1adjust n                       1.139098E+01
+avadjust n                       3.012658E+00
+aadjust  50 121                  1.055168E+00
+v2adjust n                       6.280789E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.000000E-07
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.854306E+01
+v1adjust n                       1.139948E+01
+avadjust n                       3.014905E+00
+aadjust  50 121                  1.055955E+00
+v2adjust n                       6.285475E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.000000E-06
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.345109E+01
+v1adjust n                       8.280901E+00
+avadjust n                       2.192729E+00
+aadjust  50 121                  9.127713E-01
+v2adjust n                       4.575635E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.000000E-05
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.322150E+01
+v1adjust n                       8.122260E+00
+avadjust n                       2.157382E+00
+aadjust  50 121                  5.916894E-01
+v2adjust n                       4.494384E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.000000E-04
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.164815E+01
+v1adjust n                       7.111045E+00
+avadjust n                       1.919197E+00
+v2adjust n                       3.922756E-01
+aadjust  50 121                  2.689902E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.000000E-04
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.071827E+01
+v1adjust n                       6.510538E+00
+avadjust n                       1.766707E+00
+v2adjust n                       3.593121E-01
+aadjust  50 121                  1.992271E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  5.000000E-04
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       9.104902E+00
+v1adjust n                       5.478776E+00
+avadjust n                       1.500409E+00
+v2adjust n                       3.021476E-01
+aadjust  50 121                  1.316810E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.000000E-03
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       7.357897E+00
+v1adjust n                       4.371430E+00
+avadjust n                       1.240504E+00
+v2adjust n                       2.404958E-01
+aadjust  50 121                  1.016541E-01
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.000000E-03
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       5.074570E+00
+v1adjust n                       2.936527E+00
+avadjust n                       9.306941E-01
+v2adjust n                       1.597304E-01
+aadjust  50 121                  8.731555E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  5.000000E-03
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.319190E+00
+v1adjust n                       6.036421E-01
+avadjust n                       4.453489E-01
+aadjust  50 121                  7.470857E-02
+v2adjust n                       2.812270E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.000000E-02
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       2.046214E+00
+v1adjust n                       1.463233E+00
+v2adjust n                       8.879186E-02
+avadjust n                       7.613552E-02
+aadjust  50 121                  5.972078E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.000000E-02
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       5.177135E+00
+v1adjust n                       3.374508E+00
+avadjust n                       2.917680E-01
+v2adjust n                       1.971168E-01
+aadjust  50 121                  4.199703E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  5.000000E-02
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       8.906843E+00
+v1adjust n                       5.627359E+00
+avadjust n                       6.703683E-01
+v2adjust n                       3.262547E-01
+aadjust  50 121                  2.372483E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.000000E-01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.071500E+01
+v1adjust n                       6.735256E+00
+avadjust n                       8.120675E-01
+v2adjust n                       3.925156E-01
+aadjust  50 121                  1.761107E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.000000E-01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.093903E+01
+v1adjust n                       6.919566E+00
+avadjust n                       8.096286E-01
+v2adjust n                       4.068877E-01
+aadjust  50 121                  1.636390E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  5.000000E-01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       7.916512E+00
+v1adjust n                       5.245649E+00
+avadjust n                       4.451861E-01
+v2adjust n                       3.189765E-01
+aadjust  50 121                  1.955273E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  8.000000E-01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       5.084016E+00
+v1adjust n                       3.556222E+00
+v2adjust n                       2.235094E-01
+avadjust n                       1.712664E-01
+aadjust  50 121                  2.508352E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       3.517334E+00
+v1adjust n                       2.596906E+00
+v2adjust n                       1.677766E-01
+aadjust  50 121                  3.103184E-02
+avadjust n                       2.045389E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.200000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       2.186056E+00
+v1adjust n                       1.758221E+00
+v2adjust n                       1.163514E-01
+avadjust n                       1.113002E-01
+aadjust  50 121                  3.219596E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.400000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.135138E+00
+v1adjust n                       1.080945E+00
+avadjust n                       2.141486E-01
+v2adjust n                       7.360653E-02
+aadjust  50 121                  2.674576E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.600000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       4.848863E-01
+v1adjust n                       4.793524E-01
+avadjust n                       2.963082E-01
+v2adjust n                       3.424859E-02
+aadjust  50 121                  3.014215E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  1.800000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.152292E+00
+v1adjust n                       3.999815E-01
+avadjust n                       3.615982E-01
+aadjust  50 121                  3.593029E-02
+v2adjust n                       2.765787E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.692080E+00
+v1adjust n                       7.725916E-01
+avadjust n                       4.120553E-01
+v2adjust n                       5.530613E-02
+aadjust  50 121                  4.273012E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  2.500000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       2.544979E+00
+v1adjust n                       1.350742E+00
+avadjust n                       5.075992E-01
+v2adjust n                       1.024614E-01
+aadjust  50 121                  3.077997E-02
+gpadjust  50 121                 0.000000E+00
+m2constant                       0.000000E+00
+gamgamadjust  50 121             0.000000E+00
+gnadjust  50 121                 0.000000E+00
+aadjust  50 120                  0.000000E+00
+#     E-incident [MeV]:  3.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       3.603336E+00
+v1adjust n                       1.818766E+00
+avadjust n                       5.931658E-01
+v2adjust n                       1.430734E-01
+aadjust  50 121                  2.653526E-02
+aadjust  50 120                  4.871636E-04
+gnadjust  50 121                 7.485453E-06
+gpadjust  50 121                 3.315154E-06
+m2constant                       2.622565E-06
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  3.500000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       4.314900E+00
+v1adjust n                       2.079685E+00
+avadjust n                       6.665543E-01
+v2adjust n                       1.728758E-01
+aadjust  50 121                  2.279904E-02
+aadjust  50 120                  1.873750E-02
+gnadjust  50 121                 5.231331E-04
+gpadjust  50 121                 2.297774E-04
+m2constant                       1.098101E-04
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  4.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       4.314947E+00
+v1adjust n                       1.944890E+00
+avadjust n                       6.931309E-01
+v2adjust n                       1.703567E-01
+aadjust  50 120                  2.412597E-02
+aadjust  50 121                  1.990754E-02
+gnadjust  50 121                 6.631999E-04
+gpadjust  50 121                 2.849711E-04
+m2constant                       1.353615E-04
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  5.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       2.566199E+00
+v1adjust n                       8.761018E-01
+avadjust n                       5.613242E-01
+v2adjust n                       8.416988E-02
+aadjust  50 120                  1.797120E-02
+aadjust  50 121                  1.620937E-02
+gnadjust  50 121                 5.054487E-04
+gpadjust  50 121                 2.283316E-04
+m2constant                       1.114527E-04
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  6.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       8.398098E-01
+avadjust n                       3.865299E-01
+v1adjust n                       2.544685E-01
+v2adjust n                       2.870307E-02
+aadjust  50 121                  1.311731E-02
+aadjust  50 120                  1.096081E-02
+gnadjust  50 121                 2.560187E-04
+gpadjust  50 121                 1.295923E-04
+m2constant                       5.845906E-05
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  7.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+v1adjust n                       6.494144E-01
+rvadjust n                       4.990517E-01
+avadjust n                       2.827494E-01
+v2adjust n                       7.401784E-02
+aadjust  50 121                  1.017511E-02
+aadjust  50 120                  7.784521E-03
+gnadjust  50 121                 1.742402E-04
+gpadjust  50 121                 6.403134E-05
+m2constant                       3.524477E-05
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  8.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+v1adjust n                       8.307864E-01
+rvadjust n                       7.802033E-01
+avadjust n                       2.524869E-01
+v2adjust n                       1.022527E-01
+aadjust  50 121                  7.819709E-03
+aadjust  50 120                  6.258247E-03
+gnadjust  50 121                 1.831846E-04
+gpadjust  50 121                 9.824778E-05
+m2constant                       4.234897E-05
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  9.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+v1adjust n                       8.470571E-01
+rvadjust n                       7.888841E-01
+avadjust n                       2.559776E-01
+v2adjust n                       1.108387E-01
+aadjust  50 121                  5.873146E-03
+aadjust  50 120                  5.800056E-03
+gnadjust  50 121                 1.794038E-04
+gpadjust  50 121                 8.040203E-05
+m2constant                       7.645333E-05
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  1.000000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+v1adjust n                       7.339932E-01
+rvadjust n                       6.749513E-01
+avadjust n                       2.624659E-01
+v2adjust n                       1.027743E-01
+gnadjust  50 121                 3.153015E-02
+gpadjust  50 121                 1.395522E-02
+m2constant                       6.951096E-03
+aadjust  50 121                  4.939025E-03
+aadjust  50 120                  3.709027E-03
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  1.200000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       4.803168E-01
+v1adjust n                       3.853526E-01
+avadjust n                       2.685125E-01
+gnadjust  50 121                 1.065520E-01
+v2adjust n                       5.960903E-02
+gpadjust  50 121                 4.720623E-02
+m2constant                       2.355280E-02
+aadjust  50 121                  3.591707E-03
+aadjust  50 120                  2.958787E-03
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  1.400000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       7.124850E-01
+avadjust n                       2.797607E-01
+gnadjust  50 121                 1.233617E-01
+v1adjust n                       9.632957E-02
+gpadjust  50 121                 5.464342E-02
+m2constant                       2.749094E-02
+v2adjust n                       1.556896E-02
+aadjust  50 120                  1.148432E-02
+aadjust  50 121                  2.933596E-03
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  1.600000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.190253E+00
+v1adjust n                       3.507344E-01
+avadjust n                       2.925027E-01
+gnadjust  50 121                 1.170755E-01
+v2adjust n                       6.982309E-02
+gpadjust  50 121                 5.162104E-02
+m2constant                       2.641368E-02
+aadjust  50 120                  1.314432E-02
+aadjust  50 121                  2.603691E-03
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  1.800000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.701120E+00
+v1adjust n                       5.765037E-01
+avadjust n                       3.008961E-01
+v2adjust n                       1.251824E-01
+gnadjust  50 121                 1.144475E-01
+gpadjust  50 121                 5.012662E-02
+m2constant                       2.603664E-02
+aadjust  50 120                  2.296227E-02
+aadjust  50 121                  2.459405E-03
+gamgamadjust  50 121             0.000000E+00
+#     E-incident [MeV]:  2.000000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 3
+#   entries: 10
+##   Parameter                         S
+##      []             []             []
+rvadjust n                       1.982898E+00
+v1adjust n                       7.450938E-01
+avadjust n                       3.028988E-01
+v2adjust n                       1.770220E-01
+gnadjust  50 121                 1.134302E-01
+aadjust  50 120                  5.340960E-02
+gpadjust  50 121                 5.027112E-02
+m2constant                       2.595349E-02
+aadjust  50 121                  2.377677E-03
+gamgamadjust  50 121             0.000000E+00

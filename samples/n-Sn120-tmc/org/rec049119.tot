@@ -1,0 +1,250 @@
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 1.200000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  1.200000E+01
+#     Integrated recoil spectrum [mb]:  7.673448E-05
+#     Residual production cross section [mb]:  7.670660E-05
+#   residual: 
+#     Z: 49
+#     A: 119
+#     nuclide: In119
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   7.306125E-03   2.336664E-04
+   2.191838E-02   4.299502E-04
+   3.653063E-02   4.037546E-04
+   5.114288E-02   3.793016E-04
+   6.575513E-02   3.563516E-04
+   8.036737E-02   3.347651E-04
+   9.497963E-02   3.145840E-04
+   1.095919E-01   2.955772E-04
+   1.242041E-01   2.777028E-04
+   1.388164E-01   2.609224E-04
+   1.534286E-01   2.451726E-04
+   1.680409E-01   2.303915E-04
+   1.826531E-01   2.164883E-04
+   1.972654E-01   2.034236E-04
+   2.118776E-01   1.911574E-04
+   2.264899E-01   1.796337E-04
+   2.411021E-01   1.688093E-04
+   2.557144E-01   1.586300E-04
+   2.703266E-01   1.488150E-04
+   2.849389E-01   1.358491E-04
+   2.995511E-01   7.858766E-05
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 1.400000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  1.400000E+01
+#     Integrated recoil spectrum [mb]:  3.168992E-02
+#     Residual production cross section [mb]:  3.166879E-02
+#   residual: 
+#     Z: 49
+#     A: 119
+#     nuclide: In119
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   9.769063E-03   1.207924E-01
+   2.930719E-02   1.323847E-01
+   4.884532E-02   1.231038E-01
+   6.838344E-02   1.146793E-01
+   8.792157E-02   1.129194E-01
+   1.074597E-01   1.323463E-01
+   1.269978E-01   1.272625E-01
+   1.465359E-01   9.555339E-02
+   1.660741E-01   8.098390E-02
+   1.856122E-01   7.383019E-02
+   2.051503E-01   6.852481E-02
+   2.246885E-01   6.368251E-02
+   2.442266E-01   5.913693E-02
+   2.637647E-01   5.493324E-02
+   2.833028E-01   5.105890E-02
+   3.028409E-01   4.745302E-02
+   3.223791E-01   4.404233E-02
+   3.419172E-01   4.060519E-02
+   3.614554E-01   3.622416E-02
+   3.809935E-01   2.942270E-02
+   4.005316E-01   1.301333E-02
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 1.600000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  1.600000E+01
+#     Integrated recoil spectrum [mb]:  1.456903E+00
+#     Residual production cross section [mb]:  1.443717E+00
+#   residual: 
+#     Z: 49
+#     A: 119
+#     nuclide: In119
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   1.216902E-02   4.160558E+00
+   3.650707E-02   4.209197E+00
+   6.084511E-02   3.863056E+00
+   8.518316E-02   4.160772E+00
+   1.095212E-01   6.563157E+00
+   1.338592E-01   1.050401E+01
+   1.581973E-01   5.998297E+00
+   1.825353E-01   3.497972E+00
+   2.068734E-01   2.434297E+00
+   2.312114E-01   2.080952E+00
+   2.555495E-01   1.894569E+00
+   2.798875E-01   1.732009E+00
+   3.042256E-01   1.583669E+00
+   3.285636E-01   1.448432E+00
+   3.529017E-01   1.325279E+00
+   3.772397E-01   1.211201E+00
+   4.015777E-01   1.097556E+00
+   4.259158E-01   9.212739E-01
+   4.502538E-01   6.151547E-01
+   4.745919E-01   4.222333E-01
+   4.989299E-01   1.374828E-01
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 1.800000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  1.800000E+01
+#     Integrated recoil spectrum [mb]:  1.084998E+01
+#     Residual production cross section [mb]:  1.068279E+01
+#   residual: 
+#     Z: 49
+#     A: 119
+#     nuclide: In119
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   1.453862E-02   2.431929E+01
+   4.361587E-02   2.301117E+01
+   7.269312E-02   2.193102E+01
+   1.017704E-01   3.429935E+01
+   1.308476E-01   6.617487E+01
+   1.599249E-01   6.864317E+01
+   1.890021E-01   3.783411E+01
+   2.180794E-01   1.959303E+01
+   2.471566E-01   1.226617E+01
+   2.762339E-01   1.019509E+01
+   3.053111E-01   9.112655E+00
+   3.343883E-01   8.205772E+00
+   3.634656E-01   7.414258E+00
+   3.925428E-01   6.679099E+00
+   4.216201E-01   6.018254E+00
+   4.506973E-01   5.389182E+00
+   4.797746E-01   4.717283E+00
+   5.088519E-01   3.927526E+00
+   5.379291E-01   2.192688E+00
+   5.670063E-01   9.696473E-01
+   5.960836E-01   2.494771E-01
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 2.000000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  2.000000E+01
+#     Integrated recoil spectrum [mb]:  2.772952E+01
+#     Residual production cross section [mb]:  2.695395E+01
+#   residual: 
+#     Z: 49
+#     A: 119
+#     nuclide: In119
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   1.689146E-02   4.295978E+01
+   5.067436E-02   3.999140E+01
+   8.445728E-02   4.538683E+01
+   1.182402E-01   1.119485E+02
+   1.520231E-01   1.914734E+02
+   1.858060E-01   1.624664E+02
+   2.195889E-01   7.844496E+01
+   2.533718E-01   3.327967E+01
+   2.871547E-01   1.962984E+01
+   3.209376E-01   1.605179E+01
+   3.547206E-01   1.410727E+01
+   3.885035E-01   1.251116E+01
+   4.222864E-01   1.114827E+01
+   4.560693E-01   9.880128E+00
+   4.898522E-01   8.727454E+00
+   5.236351E-01   7.545814E+00
+   5.574180E-01   6.203615E+00
+   5.912009E-01   4.602432E+00
+   6.249838E-01   2.913991E+00
+   6.587668E-01   1.278099E+00
+   6.925497E-01   2.643030E-01

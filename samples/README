@@ -1,0 +1,28 @@
+
+                    SAMPLE CASES FOR TASMAN
+
+This directory contains sample cases.
+Every sample case has its own directory with a descriptive name, and contains 
+a subdirectory org/ with input files and OUR calculated results. For this, 
+we used the gfortran compiler on MacOS. There is also a subdirectory new/ which, 
+when you receive this, contains only the input files.
+By running the script 'verify', the sample cases are executed one by one 
+and the new/ subdirectories are filled with YOUR calculated results. 
+
+To run all sample cases, give
+verify
+To only run the first e.g. 2 sample case, give
+verify 2
+
+There should be no, or at most small, numerical differences between the results 
+in new/ and those in org/. These differences are written to file 'outputdiff' in
+each new/ directory.
+Running the total test set will probably take less than an hour.
+The calculated information of interest is in the output file (called 'tasman.out') 
+or in the other produced files.
+
+The sample cases also contain a subdirectory tex/ with a description for the
+TASMAN tutorial. 
+
+Consult the manual for the meaning of all the used keywords and a description 
+of all the sample cases.

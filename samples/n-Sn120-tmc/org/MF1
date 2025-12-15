@@ -1,0 +1,544 @@
+ 5.012000+4 1.188722+2          1          0         17          15049 1451    0
+ 0.000000+0 0.000000+0          0          0          0          65049 1451    0
+ 1.000000+0 2.000000+7          1          0         10       20255049 1451    0
+ 0.000000+0 0.000000+0          0          0        377        1615049 1451    0
+ 50-Sn-120 IAEA       EVAL-DEC25 A.J. Koning and D. Rochman       5049 1451    0
+ TENDL-2025           DIST-      REV1-                            5049 1451    0
+----TENDL-2025        Material 5049         REVISION 1            5049 1451    0
+-----Incident neutron  data                                       5049 1451    0
+------ENDF-6 Format                                               5049 1451    0
+                                                                  5049 1451    0
+TENDL-2025 (TALYS Evaluated Nuclear Data Library)                 5049 1451    0
+                                                                  5049 1451    0
+Neutron general purpose library                                   5049 1451    0
+                                                                  5049 1451    0
+Author: A.J. Koning and D. Rochman, IAEA - PSI                    5049 1451    0
+                                                                  5049 1451    0
+Ref.: A.J. Koning, D. Rochman, J.-Ch. Sublet, N. Dzysiuk,         5049 1451    0
+      M. Fleming, and S. van der Marck, TENDL: Complete nuclear   5049 1451    0
+      data library for innovative nuclear science and             5049 1451    0
+      technology, Nuclear Data Sheets 155, 1 (2019).              5049 1451    0
+                                                                  5049 1451    0
+************** G E N E R A L   I N F O R M A T I O N *************5049 1451    0
+                                                                  5049 1451    0
+This evaluated data file is based on a software system built      5049 1451    0
+around the nuclear model code TALYS [kon23], version 2.0. It is   5049 1451    0
+part of a large collection of isotopic evaluations, all created by5049 1451    0
+running the system with either adjusted or default input          5049 1451    0
+parameters. This means that the data in the entire collection have5049 1451    0
+been tested in detail for many isotopes against individual        5049 1451    0
+experimental data, while for other isotopes it is only as good as 5049 1451    0
+the global quality of TALYS at the moment. The mutual quality of  5049 1451    0
+all individual data files is however consistent: The same set of  5049 1451    0
+nuclear models is used and, equally important, the same ENDF-6    5049 1451    0
+formatting procedures for each isotope. The data file has been    5049 1451    0
+created automatically using the ENDF-6 format generator TEFAL.    5049 1451    0
+                                                                  5049 1451    0
+The resulting data file provides a complete representation of     5049 1451    0
+nuclear data needed for transport, activation, damage, heating,   5049 1451    0
+radioactivity, and shielding applications over the incident       5049 1451    0
+neutron energy range from 1.e-11 to 200. MeV.                     5049 1451    0
+                                                                  5049 1451    0
+All transport and activation data for neutrons, charged particles,5049 1451    0
+photons and residual nuclides are filed. This includes cross      5049 1451    0
+sections, angular distributions, double-differential spectra,     5049 1451    0
+isomeric production, discrete and continuum photon production     5049 1451    0
+cross sections, residual production cross sections and recoils.   5049 1451    0
+This general purpose evaluation can thus be used as both          5049 1451    0
+transport and activation library.                                 5049 1451    0
+                                                                  5049 1451    0
+A complete set of covariance data is included, which is stored    5049 1451    0
+in MF31-40.                                                       5049 1451    0
+                                                                  5049 1451    0
+                      Resonance Range                             5049 1451    0
+                                                                  5049 1451    0
+  --------------------------------------------------------------- 5049 1451    0
+  --------------------------------------------------------------- 5049 1451    0
+                                                                  5049 1451    0
+  General methodology: The global approach considered in this     5049 1451    0
+          work is presented in the following papers:              5049 1451    0
+          (1) Modern nuclear data evaluation with the TALYS       5049 1451    0
+              code system, A.J. Koning and D. Rochman,            5049 1451    0
+              A.J. Koning and D. Rochman,                         5049 1451    0
+              Nuclear Data Sheets 113 (2012) 2841.                5049 1451    0
+          (2) TENDL: Complete Nuclear Data Library for            5049 1451    0
+              Innovative Nuclear Science and Technology,          5049 1451    0
+              A.J. Koning, D. Rochman, J.Ch Sublet, N. Dzysiuk,   5049 1451    0
+              M. Fleming and S. van der Marck,                    5049 1451    0
+              Nuclear Data Sheets 155 (2019) 1.                   5049 1451    0
+                                                                  5049 1451    0
+  MF2:  Resolved resonance range  (RRR)                           5049 1451    0
+       The RRR was generated with TARES-1.4                       5049 1451    0
+       The unresolved resonance range is obtained from the TALYS  5049 1451    0
+       code.                                                      5049 1451    0
+                                                                  5049 1451    0
+  MF33 in the resonance range:                                    5049 1451    0
+  The MF33 in the resonance range is obtained by using a number   5049 1451    0
+  of MF2 random files. There is therefore a consistency           5049 1451    0
+  between the MF2 random and the MF33.                            5049 1451    0
+  MF32:                                                           5049 1451    0
+  The MF32 contains the resonance parameters, uncertainties and   5049 1451    0
+  some correlation. These values are used to generate random      5049 1451    0
+  MF2, taking advantage of the code ENDSAM from L. Plevnik and    5049 1451    0
+  G. Zerovnik from JSI, Slovenia (thanks to A. Trkov, IAEA).      5049 1451    0
+                                                                  5049 1451    0
+***************************** T A L Y S **************************5049 1451    0
+                                                                  5049 1451    0
+TALYS is a computer code system for the prediction and analysis   5049 1451    0
+of nuclear reactions. TALYS simulates reactions that involve      5049 1451    0
+neutrons, gamma-rays, protons, deuterons, tritons, helions and    5049 1451    0
+alpha-particles, in the 1 keV - 200 MeV energy range. This is     5049 1451    0
+achieved by implementing a suite of nuclear reaction models into  5049 1451    0
+a single code system. This nuclear data file is based on a        5049 1451    0
+theoretical analysis that utilizes the optical model, compound    5049 1451    0
+nucleus statistical theory, fission, direct reactions and         5049 1451    0
+pre-equilibrium processes, in combination with databases and      5049 1451    0
+models for nuclear structure. The following output of TALYS is    5049 1451    0
+stored in this data file:                                         5049 1451    0
+                                                                  5049 1451    0
+- Total, elastic and non-elastic cross sections                   5049 1451    0
+- Inelastic cross sections to discrete states                     5049 1451    0
+- Exclusive channel cross sections, e.g. (n,g), (n,2n), (n,np),.. 5049 1451    0
+- Inelastic scattering angular distributions to discrete states   5049 1451    0
+- Exclusive channel energy spectra                                5049 1451    0
+- Exclusive channel double-differential spectra                   5049 1451    0
+- Exclusive gamma production for discrete states and continuum    5049 1451    0
+- Elastic scattering angular distributions                        5049 1451    0
+- Recoil data                                                     5049 1451    0
+- Total particle cross sections, e.g. (n,xn), (n,xp),..           5049 1451    0
+- Total particle energy spectra                                   5049 1451    0
+- Total particle double-differential spectra                      5049 1451    0
+- Isomeric and ground state cross sections                        5049 1451    0
+- Residual production cross sections                              5049 1451    0
+                                                                  5049 1451    0
+For a description of the used nuclear models and their            5049 1451    0
+parameterization we refer to [kon19]. If for this specific        5049 1451    0
+nuclide we deviate from the global parameterization, it is made   5049 1451    0
+explicit above under Nuclide Specific Information.                5049 1451    0
+                                                                  5049 1451    0
+***************** F I L E   I N F O R M A T I O N ****************5049 1451    0
+                                                                  5049 1451    0
+##### MF1: GENERAL INFORMATION                                    5049 1451    0
+                                                                  5049 1451    0
+- MT451    : Descriptive data and directory                       5049 1451    0
+                                                                  5049 1451    0
+This text and the full directory of used MF/MT sections.          5049 1451    0
+                                                                  5049 1451    0
+##### MF2: RESONANCE PARAMETERS                                   5049 1451    0
+                                                                  5049 1451    0
+- MT151    : Resonance parameters                                 5049 1451    0
+                                                                  5049 1451    0
+Details about the origin of the resonance parameters for this     5049 1451    0
+nuclide are given above in this description. In general, both a   5049 1451    0
+Resolved and an Unresolved Resonance Range are given.             5049 1451    0
+                                                                  5049 1451    0
+##### MF3: REACTION CROSS SECTIONS                                5049 1451    0
+                                                                  5049 1451    0
+All the data present in the following MT-sections have been       5049 1451    0
+calculated with TALYS, possibly normalized to experimental data.  5049 1451    0
+If the maximal cross section in an excitation function over the   5049 1451    0
+whole energy range does not exceed 1.e-9 b, the MT-number is not  5049 1451    0
+included. Cross sections lower than 1.e-20 b are assumed to have  5049 1451    0
+no physical meaning and are set to zero. All MT numbers extend up 5049 1451    0
+to the highest incident energy.                                   5049 1451    0
+The following reaction channels/MT numbers are generally included:5049 1451    0
+                                                                  5049 1451    0
+- MT1      : Total cross section                                  5049 1451    0
+                                                                  5049 1451    0
+Calculated with the optical model over the whole energy range,    5049 1451    0
+or partly reproduced using experimental data.                     5049 1451    0
+                                                                  5049 1451    0
+- MT2      : Elastic scattering cross section                     5049 1451    0
+                                                                  5049 1451    0
+Obtained by subtracting the non-elastic cross section from the    5049 1451    0
+total cross section.                                              5049 1451    0
+                                                                  5049 1451    0
+- MT3      : Non-elastic cross section                            5049 1451    0
+                                                                  5049 1451    0
+Calculated with the optical model over the whole energy range.    5049 1451    0
+                                                                  5049 1451    0
+- MT4      : Total inelastic cross section                        5049 1451    0
+                                                                  5049 1451    0
+Sum of MT=51-91.                                                  5049 1451    0
+                                                                  5049 1451    0
+- MT5      : (n,anything) cross section                           5049 1451    0
+                                                                  5049 1451    0
+MT5 contains the reactions which can not be stored in any other   5049 1451    0
+MT-number. The information of MF3/MT5 can be combined with        5049 1451    0
+MF6/MT5 to obtain residual production cross sections particle     5049 1451    0
+production cross sections and (double-)differential cross         5049 1451    0
+sections.                                                         5049 1451    0
+                                                                  5049 1451    0
+- MT16     : (n,2n) cross section                                 5049 1451    0
+- MT17     : (n,3n) cross section                                 5049 1451    0
+- MT22     : (n,na) cross section                                 5049 1451    0
+- MT28     : (n,np) cross section                                 5049 1451    0
+- MT51-90  : (n,n') cross section for 1st-40th excited state      5049 1451    0
+- MT91     : (n,n') continuum cross section                       5049 1451    0
+- MT102    : (n,gamma) cross section                              5049 1451    0
+- MT103    : (n,p) cross section                                  5049 1451    0
+- MT104    : (n,d) cross section                                  5049 1451    0
+- MT105    : (n,t) cross section                                  5049 1451    0
+- MT106    : (n,h) cross section                                  5049 1451    0
+- MT107    : (n,a) cross section                                  5049 1451    0
+- MT600-610: (n,p) cross section for 0th-10th excited state       5049 1451    0
+- MT649    : (n,p) continuum cross section                        5049 1451    0
+- MT650-655: (n,d) cross section for 0th-5th excited state        5049 1451    0
+- MT699    : (n,d) continuum cross section                        5049 1451    0
+- MT700-705: (n,t) cross section for 0th-5th excited state        5049 1451    0
+- MT749    : (n,t) continuum cross section                        5049 1451    0
+- MT750-755: (n,h) cross section for 0th-5th excited state        5049 1451    0
+- MT799    : (n,h) continuum cross section                        5049 1451    0
+- MT800-810: (n,a) cross section for 0th-10th excited state       5049 1451    0
+- MT849    : (n,a) continuum cross section                        5049 1451    0
+                                                                  5049 1451    0
+##### MF4: ANGULAR DISTRIBUTIONS OF SECONDARY PARTICLES           5049 1451    0
+                                                                  5049 1451    0
+We use MF4 for the neutron scattering angular distribution for    5049 1451    0
+discrete levels.                                                  5049 1451    0
+                                                                  5049 1451    0
+- MT2      : Elastic angular distribution                         5049 1451    0
+                                                                  5049 1451    0
+The flag LTT=3 is used to indicate a switch at some high energy,  5049 1451    0
+generally 50 MeV, from a Legendre representation to a tabulated   5049 1451    0
+representation. For incident energies below this energy, the      5049 1451    0
+Legendre coefficients are given on a sufficiently precise energy  5049 1451    0
+grid. They are a sum of calculated Legendre coefficients for      5049 1451    0
+compound nucleus and shape-elastic scattering. For higher         5049 1451    0
+incident energies, relative angular distributions are tabulated   5049 1451    0
+on an angular grid.                                               5049 1451    0
+                                                                  5049 1451    0
+- MT51-70  : (n,n') angular distribution for 1st-20th state       5049 1451    0
+- MT600-610: (n,p) angular distribution for 0th-10th state        5049 1451    0
+- MT650-655: (n,d) angular distribution for 0th-5th state         5049 1451    0
+- MT700-705: (n,t) angular distribution for 0th-5th state         5049 1451    0
+- MT750-755: (n,h) angular distribution for 0th-5th state         5049 1451    0
+- MT800-810: (n,a) angular distribution for 0th-10th state        5049 1451    0
+                                                                  5049 1451    0
+##### MF6: PRODUCT ENERGY-ANGLE DISTRIBUTIONS                     5049 1451    0
+                                                                  5049 1451    0
+In MF6 we store all secondary energy, angle, and energy-angle     5049 1451    0
+distributions, as well as all residual and discrete + continuum   5049 1451    0
+photon production cross sections for channels other than capture  5049 1451    0
+(MT102) and reactions to discrete levels (MT51,etc.).             5049 1451    0
+All data are generated with TALYS.                                5049 1451    0
+                                                                  5049 1451    0
+- MT5      : (n,anything) yields and energy-angle distributions   5049 1451    0
+                                                                  5049 1451    0
+MT5 contains, in this order,                                      5049 1451    0
+For neutrons up to alpha particles and photons:                   5049 1451    0
+- the production yields per particle for the whole energy range   5049 1451    0
+- the secondary energy-angle distributions per particles which are5049 1451    0
+  not represented by explicit MT numbers. On a secondary energy   5049 1451    0
+  grid the relative emission spectra are given together with the  5049 1451    0
+  parameters for the Kalbach systematics for angular              5049 1451    0
+  distributions. Inelastic scattering cross sections for discrete 5049 1451    0
+  states have been broadened and added to the continuum spectra.  5049 1451    0
+For each residual product:                                        5049 1451    0
+- the production yields for the whole energy range.               5049 1451    0
+- the recoil                                                      5049 1451    0
+These distributions can be multiplied with MF3/MT5 to get         5049 1451    0
+the production cross sections and (double-)differential cross     5049 1451    0
+sections.                                                         5049 1451    0
+                                                                  5049 1451    0
+- MT16     : (n,2n) energy-angle distr. and photon production     5049 1451    0
+                                                                  5049 1451    0
+First, for each type of outgoing particle, the (trivial) integer  5049 1451    0
+particle yields are given. Next, on a sufficiently dense incident 5049 1451    0
+energy grid the secondary energy-angle distributions are          5049 1451    0
+specified by means of the relative emission spectra and the       5049 1451    0
+parameters for the Kalbach systematics for angular distributions. 5049 1451    0
+Next, the photon yield is tabulated as a function of incident     5049 1451    0
+energy. For each incident energy, the photon production is given  5049 1451    0
+for all discrete gamma lines present in the final nucleus. A      5049 1451    0
+continuum photon distribution is added to this. We assume         5049 1451    0
+isotropy for all produced gamma rays.                             5049 1451    0
+                                                                  5049 1451    0
+For the following MT-numbers, the same procedure as for MT16 is   5049 1451    0
+followed:                                                         5049 1451    0
+                                                                  5049 1451    0
+- MT17 : (n,3n) energy-angle distr. and photon production         5049 1451    0
+- MT22 : (n,na) energy-angle distr. and photon production         5049 1451    0
+- MT28 : (n,np) energy-angle distr. and photon production         5049 1451    0
+- MT91 : (n,n') continuum energy-angle distr. and phot. prod.     5049 1451    0
+- MT649: (n,p) continuum energy-angle distr. and photon prod.     5049 1451    0
+- MT699: (n,d) continuum energy-angle distr. and photon prod.     5049 1451    0
+- MT749: (n,t) continuum energy-angle distr. and photon prod.     5049 1451    0
+- MT809: (n,h) continuum energy-angle distr. and photon prod.     5049 1451    0
+- MT849: (n,a) continuum energy-angle distr. and photon prod.     5049 1451    0
+                                                                  5049 1451    0
+##### MF8: RADIOACTIVE DECAY DATA                                 5049 1451    0
+                                                                  5049 1451    0
+For reactions to isomers, MF8 designates where the information    5049 1451    0
+for isomeric versus ground state production, or residual          5049 1451    0
+production can be found, i.e. for each MT number it points to     5049 1451    0
+either MF6, MF9 or MF10.                                          5049 1451    0
+                                                                  5049 1451    0
+##### MF9: MULTIPLICITIES FOR PRODUCTION OF RADIOACTIVE NUCLIDES  5049 1451    0
+                                                                  5049 1451    0
+MF9 is used for isomer production by non-threshold reactions.     5049 1451    0
+Final states with a lifetime that exceeds 1 second are treated    5049 1451    0
+as isomer.                                                        5049 1451    0
+                                                                  5049 1451    0
+##### MF10: CROSS SECTIONS FOR PRODUCTION OF RADIOACTIVE NUCLIDES 5049 1451    0
+                                                                  5049 1451    0
+MF10 is used for isomer production by threshold reactions.        5049 1451    0
+Final states with a lifetime that exceeds 1 second are treated    5049 1451    0
+as isomer.                                                        5049 1451    0
+                                                                  5049 1451    0
+##### MF12: PHOTON PRODUCTION YIELD DATA                          5049 1451    0
+                                                                  5049 1451    0
+MF12 is used for the photon production for two types of reactions:5049 1451    0
+- Reactions to discrete levels (MT51, etc.) For this transition   5049 1451    0
+  probabilities are used (LO=2)                                   5049 1451    0
+- Photons from neutron capture (MT102). Here multiplicities are   5049 1451    0
+  given                                                           5049 1451    0
+                                                                  5049 1451    0
+##### MF14: PHOTON ANGULAR DISTRIBUTIONS                          5049 1451    0
+                                                                  5049 1451    0
+All photon production is considered as isotropic                  5049 1451    0
+                                                                  5049 1451    0
+##### MF15: PHOTON ENERGY SPECTRA                                 5049 1451    0
+                                                                  5049 1451    0
+For capture (MT102), the photon energy spectrum is given.         5049 1451    0
+                                                                  5049 1451    0
+##### MF32: COVARIANCES OF RESONANCE PARAMETERS                   5049 1451    0
+                                                                  5049 1451    0
+In MF32, we store the covariances of resonance parameters,        5049 1451    0
+and more details are given above in this description. In most     5049 1451    0
+versions of TENDL, this information is now stored in MF33.        5049 1451    0
+                                                                  5049 1451    0
+##### MF33: COVARIANCES OF NEUTRON CROSS SECTIONS                 5049 1451    0
+                                                                  5049 1451    0
+In MF33, we store the covariances of most, but not all, reaction  5049 1451    0
+channels that are given in MF3. All covariances are generated     5049 1451    0
+with the TASMAN code [kon19], which generates TALYS runs using    5049 1451    0
+a Monte Carlo parameter method.                                   5049 1451    0
+For each MT-number, the information consists of:                  5049 1451    0
+1. Covariances for MTa, Ea and MTa, Ea (variances)                5049 1451    0
+2. Covariances for MTa, Ea and MTa, Eb (correlations for the      5049 1451    0
+   same reaction channel between different energies)              5049 1451    0
+3. Covariances for MTa, Ea and MTb, Ea (correlations between      5049 1451    0
+   different reaction channels for the same energy)               5049 1451    0
+4. Covariances for MTa, Ea and MTb, Eb (correlations between      5049 1451    0
+   different reaction channels for different energies)            5049 1451    0
+Classes 1 and 2 are covered by NI-type subsubsections with        5049 1451    0
+flag LB=5, followed by a LB=8 section which contains              5049 1451    0
+the cross section variances multiplied by 1.e-3. Next, classes 3  5049 1451    0
+and 4 are covered by flag LB=6 to account for the different       5049 1451    0
+energy grids that two correlating MT-sections may have. Since     5049 1451    0
+the total correlation matrix is fully symmetric, we only need to  5049 1451    0
+include the correlation elements between different MT-numbers     5049 1451    0
+once, and we do that in the subsection with the lowest of the     5049 1451    0
+two MT-numbers. We include covariance information for all the     5049 1451    0
+total cross sections, the lumped partial cross sections and the   5049 1451    0
+individual inelastic cross sections per level (MT51,...). We do   5049 1451    0
+not include covariances for MT600 and higher MT-numbers. For the  5049 1451    0
+most important channels, we include cross-channel correlations.   5049 1451    0
+                                                                  5049 1451    0
+##### MF34: COVARIANCES OF ANGULAR DISTRIBUTIONS                  5049 1451    0
+                                                                  5049 1451    0
+In MF34, we store the covariances of the elastic scattering       5049 1451    0
+angular distributions that are given in MF4/MT2. All covariances  5049 1451    0
+are generated with the TASMAN code [kon19], which generates       5049 1451    0
+TALYS runs using a Monte Carlo parameter method. The tables are   5049 1451    0
+restricted to MT2 and contain covariances for the first 6         5049 1451    0
+Legendre coefficients. Both intra- and inter-correlations of the  5049 1451    0
+various Legendre coefficients are given. As in MF33, the LB5      5049 1451    0
+representation is used.                                           5049 1451    0
+                                                                  5049 1451    0
+##### MF40: COVARIANCES OF ISOMER PRODUCTION                      5049 1451    0
+                                                                  5049 1451    0
+For covariances of ground state and isomeric cross sections, the  5049 1451    0
+same procedures as for MF33 are used.                             5049 1451    0
+                                                                  5049 1451    0
+***** F I L E   C H E C K I N G   A N D   P R O C E S S I N G ****5049 1451    0
+                                                                  5049 1451    0
+This file has been checked and processed by                       5049 1451    0
+- the BNL checking codes CHECKR-8.24, FIZCON-8.19 and PSYCHE-8.11 5049 1451    0
+  [her08],                                                        5049 1451    0
+- the preprocessing codes PREPRO-2021 [cul23] into a PENDF file,  5049 1451    0
+- the processing code NJOY-2016.68 [mac10] into a PENDF file and a5049 1451    0
+  MCNP (ACE) library,                                             5049 1451    0
+- MCNP for a standard calculation with the ACE library.           5049 1451    0
+                                                                  5049 1451    0
+*********************** R E F E R E N C E S **********************5049 1451    0
+                                                                  5049 1451    0
+[cul23] D.E. Cullen, PREPRO 2023 - ENDF/B Pre-processing codes,   5049 1451    0
+        Technical report IAEA-NDS-0241, IAEA (2023)               5049 1451    0
+[her08] M. Herman, ENDF Utility Codes Release 8.0, (2008)         5049 1451    0
+[kon23] A.J. Koning, S. Hilaire and S. Goriely,                   5049 1451    0
+        TALYS: modeling of nuclear reactions,                     5049 1451    0
+        European Journal of Physics A59 (6), 131 (2023).          5049 1451    0
+[kon19] A.J. Koning, D. Rochman, J.-Ch. Sublet, N. Dzysiuk,       5049 1451    0
+        M. Fleming, and S. van der Marck, TENDL: Complete nuclear 5049 1451    0
+        data library for innovative nuclear science and           5049 1451    0
+        technology, Nuclear Data Sheets 155, 1 (2019)             5049 1451    0
+[mac10] R.E. Macfarlane and A.C. Kahler, Methods for processing   5049 1451    0
+        ENDF/B-VII with NJOY, Nuclear Data Sheets 111, 2739 (2010)5049 1451    0
+                                                                  5049 1451    0
+************************* C O N T E N T S ************************5049 1451    0
+                                                                  5049 1451    0
+                                1        451        542          15049 1451    0
+                                2        151        286          15049 1451    0
+                                3          1         86          15049 1451    0
+                                3          2         84          15049 1451    0
+                                3          3         86          15049 1451    0
+                                3          4         20          15049 1451    0
+                                3         16          6          15049 1451    0
+                                3         17          5          15049 1451    0
+                                3         22          6          15049 1451    0
+                                3         28          5          15049 1451    0
+                                3         51         20          15049 1451    0
+                                3         52         18          15049 1451    0
+                                3         53         18          15049 1451    0
+                                3         54         17          15049 1451    0
+                                3         55         17          15049 1451    0
+                                3         56         17          15049 1451    0
+                                3         57         16          15049 1451    0
+                                3         58         16          15049 1451    0
+                                3         59         16          15049 1451    0
+                                3         60         15          15049 1451    0
+                                3         61         15          15049 1451    0
+                                3         62         15          15049 1451    0
+                                3         63         14          15049 1451    0
+                                3         64         14          15049 1451    0
+                                3         65         13          15049 1451    0
+                                3         66         13          15049 1451    0
+                                3         67         13          15049 1451    0
+                                3         68         12          15049 1451    0
+                                3         69         12          15049 1451    0
+                                3         70         12          15049 1451    0
+                                3         71         11          15049 1451    0
+                                3         72         11          15049 1451    0
+                                3         73         11          15049 1451    0
+                                3         74         10          15049 1451    0
+                                3         75         10          15049 1451    0
+                                3         76         10          15049 1451    0
+                                3         77          9          15049 1451    0
+                                3         78          9          15049 1451    0
+                                3         79          9          15049 1451    0
+                                3         80          8          15049 1451    0
+                                3         91          8          15049 1451    0
+                                3        102         13          15049 1451    0
+                                3        103          7          15049 1451    0
+                                3        104          6          15049 1451    0
+                                3        105          5          15049 1451    0
+                                3        107         10          15049 1451    0
+                                4          2         94          15049 1451    0
+                                4         51         84          15049 1451    0
+                                4         52         69          15049 1451    0
+                                4         53         72          15049 1451    0
+                                4         54         66          15049 1451    0
+                                4         55         64          15049 1451    0
+                                4         56         72          15049 1451    0
+                                4         57         72          15049 1451    0
+                                4         58         65          15049 1451    0
+                                4         59         72          15049 1451    0
+                                4         60         73          15049 1451    0
+                                4         61         71          15049 1451    0
+                                4         62         71          15049 1451    0
+                                4         63         66          15049 1451    0
+                                4         64         68          15049 1451    0
+                                4         65         62          15049 1451    0
+                                4         66         68          15049 1451    0
+                                4         67         67          15049 1451    0
+                                4         68         67          15049 1451    0
+                                4         69         60          15049 1451    0
+                                4         70         69          15049 1451    0
+                                4         71         59          15049 1451    0
+                                4         72         68          15049 1451    0
+                                4         73         68          15049 1451    0
+                                4         74         66          15049 1451    0
+                                4         75         62          15049 1451    0
+                                4         76         64          15049 1451    0
+                                4         77         59          15049 1451    0
+                                4         78         62          15049 1451    0
+                                4         79         62          15049 1451    0
+                                4         80         68          15049 1451    0
+                                6         16        455          15049 1451    0
+                                6         17        182          15049 1451    0
+                                6         22        550          15049 1451    0
+                                6         28        444          15049 1451    0
+                                6         91        987          15049 1451    0
+                                6        102       1380          15049 1451    0
+                                6        103        795          15049 1451    0
+                                6        104        443          15049 1451    0
+                                6        105        339          15049 1451    0
+                                6        107        858          15049 1451    0
+                                8         16          3          15049 1451    0
+                                8         28          3          15049 1451    0
+                                8        102          3          15049 1451    0
+                                8        103          4          15049 1451    0
+                                8        104          3          15049 1451    0
+                                8        105          4          15049 1451    0
+                                8        107          3          15049 1451    0
+                                9        102         31          15049 1451    0
+                               10         16         11          15049 1451    0
+                               10         28          9          15049 1451    0
+                               10        103         19          15049 1451    0
+                               10        104         11          15049 1451    0
+                               10        105         13          15049 1451    0
+                               10        107         17          15049 1451    0
+                               12         51          3          15049 1451    0
+                               12         52          3          15049 1451    0
+                               12         53          3          15049 1451    0
+                               12         54          3          15049 1451    0
+                               12         55          3          15049 1451    0
+                               12         56          3          15049 1451    0
+                               12         57          3          15049 1451    0
+                               12         58          4          15049 1451    0
+                               12         59          3          15049 1451    0
+                               12         60          3          15049 1451    0
+                               12         61          4          15049 1451    0
+                               12         62          3          15049 1451    0
+                               12         63          3          15049 1451    0
+                               12         64          4          15049 1451    0
+                               12         65          3          15049 1451    0
+                               12         66          4          15049 1451    0
+                               12         67          3          15049 1451    0
+                               12         68          4          15049 1451    0
+                               12         69          3          15049 1451    0
+                               12         70          3          15049 1451    0
+                               12         71          3          15049 1451    0
+                               12         72          4          15049 1451    0
+                               12         73          3          15049 1451    0
+                               12         74          4          15049 1451    0
+                               12         75          3          15049 1451    0
+                               12         76          3          15049 1451    0
+                               12         77          3          15049 1451    0
+                               12         78          3          15049 1451    0
+                               12         79          3          15049 1451    0
+                               12         80          3          15049 1451    0
+                               14         51          1          15049 1451    0
+                               14         52          1          15049 1451    0
+                               14         53          1          15049 1451    0
+                               14         54          1          15049 1451    0
+                               14         55          1          15049 1451    0
+                               14         56          1          15049 1451    0
+                               14         57          1          15049 1451    0
+                               14         58          1          15049 1451    0
+                               14         59          1          15049 1451    0
+                               14         60          1          15049 1451    0
+                               14         61          1          15049 1451    0
+                               14         62          1          15049 1451    0
+                               14         63          1          15049 1451    0
+                               14         64          1          15049 1451    0
+                               14         65          1          15049 1451    0
+                               14         66          1          15049 1451    0
+                               14         67          1          15049 1451    0
+                               14         68          1          15049 1451    0
+                               14         69          1          15049 1451    0
+                               14         70          1          15049 1451    0
+                               14         71          1          15049 1451    0
+                               14         72          1          15049 1451    0
+                               14         73          1          15049 1451    0
+                               14         74          1          15049 1451    0
+                               14         75          1          15049 1451    0
+                               14         76          1          15049 1451    0
+                               14         77          1          15049 1451    0
+                               14         78          1          15049 1451    0
+                               14         79          1          15049 1451    0
+                               14         80          1          15049 1451    0
+                                                                  5049 1  0    0
+                                                                  5049 0  0    0

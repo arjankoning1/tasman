@@ -1,0 +1,49 @@
+# header: 
+#   title: Sn120(n,pd) recoil spectrum - exclusive at 2.000000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,pd)
+#   Q-value [MeV]: -1.674956E+01
+#   E-threshold [MeV]:  1.689046E+01
+#   ENDF_MF: 6
+#   ENDF_MT: 115
+#   E-incident [MeV]:  2.000000E+01
+#   residual: 
+#     Z: 48
+#     A: 118
+#     nuclide: Cd118
+#   quantity: 
+#     type: recoil spectrum - exclusive
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   1.793538E-02   4.685831E-20
+   5.380615E-02   4.555610E-20
+   8.967691E-02   4.086094E-20
+   1.255477E-01   3.665354E-20
+   1.614184E-01   3.288469E-20
+   1.972892E-01   2.950345E-20
+   2.331600E-01   2.646675E-20
+   2.690307E-01   2.374485E-20
+   3.049015E-01   2.130156E-20
+   3.407723E-01   1.911375E-20
+   3.766430E-01   1.715395E-20
+   4.125138E-01   1.539508E-20
+   4.483846E-01   1.381297E-20
+   4.842553E-01   1.239549E-20
+   5.201261E-01   1.112477E-20
+   5.559968E-01   9.983773E-21
+   5.918676E-01   8.914752E-21
+   6.277384E-01   7.869231E-21
+   6.636091E-01   6.854427E-21
+   6.994799E-01   5.633058E-21
+   7.353507E-01   2.035227E-21

@@ -1,0 +1,44 @@
+# header:
+#   title: Nb93(n,2n)Nb92m cross section Run 0003
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction:
+#   type: (n,2n)
+#   Q-value [MeV]: -8.966367E+00
+#   E-threshold [MeV]:  9.063713E+00
+#   ENDF_MF: 10
+#   ENDF_MT: 16
+#   residual:
+#     Z: 41
+#     A: 92
+#     nuclide: Nb92m
+#     level:
+#       number: 1
+#       energy [MeV]:  1.355000E-01
+#       spin:  2.000000E+00
+#       parity: 1
+#       isomer: 1
+#       half-life [sec]:  8.770000E+05
+#   quantity:
+#     type: cross section
+#   datablock:
+#     columns: 3
+#     entries: 10
+##       E             xs       Isomeric_ratio
+##     [MeV]          [mb]            []
+   1.000000E-01   0.000000E+00
+   2.000000E-01   0.000000E+00
+   5.000000E-01   0.000000E+00
+   1.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00
+   8.000000E+00   0.000000E+00
+   1.000000E+01   2.138442E+02

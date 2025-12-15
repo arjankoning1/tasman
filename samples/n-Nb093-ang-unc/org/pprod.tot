@@ -1,0 +1,31 @@
+# header: 
+#   title: Nb93(n,xp) cross section
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,xp)
+#   ENDF_MF: 3
+#   ENDF_MT: 203
+#   quantity: 
+#     type: cross section
+#   datablock: 
+#     columns: 3
+#     entries: 10
+##       E             xs        Multiplicity
+##     [MeV]          [mb]            []
+   1.000000E-01   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00
+   1.000000E+00   3.000801E-04   4.069965E-07
+   2.000000E+00   1.813348E-02   8.934085E-06
+   3.000000E+00   1.722278E-01   8.034917E-05
+   4.000000E+00   6.725097E-01   3.424598E-04
+   5.000000E+00   1.668214E+00   9.124019E-04
+   8.000000E+00   8.368937E+00   4.633197E-03
+   1.000000E+01   1.779798E+01   9.957418E-03

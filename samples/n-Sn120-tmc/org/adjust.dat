@@ -1,0 +1,16 @@
+# Adjusted parameters from fitting
+rvadjust     p    0.99386
+gadjust       50 121    0.81460
+gadjust       50 120    1.06832
+gadjust       49 120    0.94211
+s2adjust      49 120    1.39553 0
+risomer       49 120    2.33594
+s2adjust      50 119    1.03976 0
+risomer       50 119    1.45189
+wtable        50 121    0.98701 e1
+s2adjust      50 121    0.86675 0
+risomer       50 121    2.35451
+rvadjust     a    1.05565
+cstrip       a    1.16973
+s2adjust      48 117    1.37389 0
+risomer       48 117    1.07091

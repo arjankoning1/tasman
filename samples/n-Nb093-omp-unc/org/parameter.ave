@@ -1,0 +1,21 @@
+# header: 
+#   title: Nb93(n,x) parameter covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# covariance: 
+#   class: variance
+# quantity: 
+#   type: parameter covariance matrix
+# datablock: 
+#   columns: 9
+#   entries: 2
+##   parameter                      Average       Std._dev.      Rel._dev.        Input        Std._dev.      Rel._dev.     Unc._ratio
+##      []             []             []             []             [%]            []             []             [%]            []
+rvadjust n                       1.000435E+00   8.757436E-03   8.753626E-01   1.000000E+00   2.000000E-02   2.000000E+00   2.284768E+00
+avadjust n                       1.003430E+00   1.056597E-02   1.052985E+00   1.000000E+00   2.000000E-02   2.000000E+00   1.899363E+00

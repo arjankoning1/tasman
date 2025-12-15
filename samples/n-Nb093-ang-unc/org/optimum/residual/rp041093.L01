@@ -1,0 +1,46 @@
+# header: 
+#   title: Nb93(n,x)Nb93m cross section
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,x)
+#   Q-value [MeV]: -3.077016E-02
+#   E-threshold [MeV]:  3.110422E-02
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   residual: 
+#     Z: 41
+#     A: 93
+#     nuclide: Nb93m
+#   parameters: 
+#     mass [amu]:  9.290637E+01
+#     level: 
+#       number: 1
+#       energy [MeV]:  3.077000E-02
+#       spin:  5.000000E-01
+#       parity: -1
+#       isomer: 1
+#       half-life [sec]:  5.087000E+08
+#   quantity: 
+#     type: cross section
+#   datablock: 
+#     columns: 3
+#     entries: 10
+##       E             xs       Isomeric_ratio
+##     [MeV]          [mb]            []
+   1.000000E-01   7.272265E-01   9.523962E-01
+   2.000000E-01   2.982401E+00   9.912609E-01
+   5.000000E-01   1.668041E+01   9.813125E-01
+   1.000000E+00   1.107078E+02   1.519500E-01
+   2.000000E+00   1.950051E+02   9.474988E-02
+   3.000000E+00   2.270881E+02   1.069804E-01
+   4.000000E+00   2.330423E+02   1.227111E-01
+   5.000000E+00   2.316090E+02   1.319299E-01
+   8.000000E+00   2.221198E+02   1.273131E-01
+   1.000000E+01   1.402810E+02   1.261645E-01

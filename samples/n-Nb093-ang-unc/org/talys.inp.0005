@@ -1,0 +1,58 @@
+# Original input file
+#
+# general
+#
+projectile n
+element nb
+mass 93
+energy energies
+channels y
+filechannels y
+bins 20
+outangle y
+fileangle 0
+fileangle 1
+fileangle 2
+fileangle 3
+fileangle 4
+#
+# tasman keywords start here
+#
+#change
+#mode 1
+#ntalys 20
+#seed 3042015
+#band y
+#save y
+#angle y
+#isomer y
+#expinclude all
+##
+## parameters to be varied
+##
+rvadjust n 1.
+avadjust n 1.
+v1adjust n 1. 0.05
+v2adjust n 1.
+rwdadjust n 1. 0.10
+awdadjust n 1. 0.05
+aadjust 41 94 1. 0.15
+aadjust 41 93 1. 0.15
+aadjust 40 93 1. 0.15
+# Current variables Run:     4
+outangle y
+fileelastic y
+#Ztarget  41
+partable y
+ecissave y
+inccalc y
+eciscalc y
+rvadjust     n    0.99829
+avadjust     n    0.99928
+v1adjust     n    1.02049
+v2adjust     n    0.98813
+rwdadjust    n    0.96567
+awdadjust    n    0.97126
+aadjust       41  94    1.01298
+aadjust       41  93    1.00029
+aadjust       40  93    0.95178

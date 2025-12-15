@@ -1,0 +1,99 @@
+\begin{samplecase}
+{\bf n + ${}^{93}$Nb: Basic, unweighted uncertainty calculation}\newline
+
+The first sample case is given below. It concerns a default calculation for
+neutrons on $^{93}$Nb, with an energy grid specified in the file
+{\it energies}. As explained in this manual, the {\bf \#change} keyword is
+essential.
+After this line, TASMAN keywords, always starting with a '\#', can be given
+while comment lines after {\bf \#change} need to start with '\#\#'.
+Keyword {\bf \#mode 1} specifies that we are interested in an uncertainty
+calculation, i.e. a statistical spread of the final results.
+{\bf \#band y} means that the final cross section files contain, besides
+the central values, the lower and upper 1-sigma uncertainty band.
+In this sample case, only 2 parameters are varied, namely the radius and
+diffuseness of the real volume central OMP. Since only the central value,
+for both parameters 1., is specified, the default uncertainties for these
+parameters are used.
+
+\VerbatimInput{\samples n-Nb093-omp-unc/org/tasman.inp}
+
+This input file called {\em tasman.inp} can simply be run as follows:\newline
+
+{\bf tasman $<$ tasman.inp $>$ tasman.out}\newline
+
+The {\it tasman.out} file starts with a display of the version of TASMAN
+you are using,
+the name of the author, and the Copyright statement. Also the physics
+dimensions used in the output are given.
+As can be seen in the output below, the first section of the output is a print of the keywords/input
+parameters. This is done in two steps: In the first block
+an exact copy of the input file as given by the user is returned. In
+the next block
+a table with all keywords is given,
+not only the ones that you have specified in the input file, but also all the
+defaults that are set automatically. The corresponding Fortran variables are
+also printed, together with a short explanation of their meaning. This table
+can be helpful as a guide to change further input parameters for a next run.
+You may also copy and paste the block directly into your next input file.
+
+In the next output block
+we print the random parameters used at each run.
+At the end of this simple output, the total calculation time is printed, followed by a
+message that the calculation has been successfully completed.
+
+\VerbatimInput{\samples n-Nb093-omp-unc/org/tasman.out80}
+
+More interesting are the various output files that have been generated.
+Apart from the standard output files of TALYS, like {\it totalxs.tot},
+{\it xs200000.tot}, etc. you will also find various files
+whose names end with {\it .ave}. These are the average cross section files,
+including an uncertainty band.
+These results are obtained after 10 random TALYS calculations.
+
+A full covariance matrix, correlating all channels and energies with each other, is available. 
+For example in {\em cov\_intra.ave} we have:
+
+{\small \begin{verbatim}
+
+# header:
+#   title: Nb93(n,tot) cross section
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2023-12-16
+#   format: YANDF-0.1
+# target:
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction:
+#   type: (n,tot)
+#   ENDF_MF: 3
+#   ENDF_MT: 1
+# covariance:
+#   type: in-channel covariance
+# datablock:
+#   quantity: cross section
+#   columns: 5
+#   entries: 100
+##      E_a            E_b           Rcov           Ccov           Vcov
+##     [MeV]          [MeV]           []             []             []
+   1.000000E-01   1.000000E-01   9.706488E-03   1.000000E+00   8.987610E+05
+   1.000000E-01   2.000000E-01   9.188086E-03   9.894124E-01   9.013705E+05
+   1.000000E-01   5.000000E-01   6.335274E-03   9.482473E-01   5.574611E+05
+   1.000000E-01   1.000000E+00   5.746896E-03   9.581335E-01   3.820715E+05
+   1.000000E-01   2.000000E+00   4.502018E-03   9.734957E-01   2.111240E+05
+   1.000000E-01   3.000000E+00   1.400545E-03   9.506426E-01   5.472231E+04
+   1.000000E-01   4.000000E+00  -5.533088E-04  -8.405757E-01  -1.970543E+04
+......................................
+\end{verbatim} } \renewcommand{\baselinestretch}{1.07}\small\normalsize
+\noindent
+
+%Fig. \ref{unc} shows the difference between the files {\it totalxs.tot},
+%which represents the default TALYS run, while the other 3 curves come
+%from {\it totalxs.ave} which contains the uncertainty band. Clearly 10 random
+%runs is not enough to get a converged result for the average, although it can
+%not always be expected that the average after many more runs goes to the
+%default run, due to non-linearities in the model.
+
+\end{samplecase}

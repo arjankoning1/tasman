@@ -1,0 +1,17 @@
+\begin{samplecase}
+{\bf n + Sn120: Total Monte Carlo}\newline
+
+This is a sample case which demonstrates the principle of Total Monte Carlo. It also contains all particular features we
+use to create covariance files for the TENDL library. With every random sample of parameters,  the random ENDF-6 file is retained for
+TMC uncertainty propagation.
+Below is the input file for ${}^{120}$Sn.
+
+\VerbatimInput{\samples n-Sn120-tmc/org/tasman.inp}
+
+Besides the uncertainty files mentioned in the previous sample cases, the important
+covariance information is in the files starting with {\it var} (variance) and
+{\it cov} (covariance). For example, {\it cov\_intra.ave} contains all covariance matrix
+elements of cross sections correlated within the same reaction channel.
+These files are read by another software package, TEFAL, for the production of
+covariance files in nuclear data libraries.
+\end{samplecase}

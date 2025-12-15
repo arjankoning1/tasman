@@ -1,0 +1,270 @@
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  1.000000E-01
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  1.000000E-01
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  2.000000E-01
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  2.000000E-01
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  5.000000E-01
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  5.000000E-01
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  1.000000E+00
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  1.000000E+00
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  2.000000E+00
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  2.000000E+00
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  3.000000E+00
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  3.000000E+00
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  4.000000E+00
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  4.000000E+00
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  5.000000E+00
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  5.000000E+00
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  8.000000E+00
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  8.000000E+00
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00
+# header: 
+#   title: Nb93(n,el) angular distribution covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 4
+#   ENDF_MT: 2
+#   E-incident [MeV]:  1.000000E+01
+#   covariance: 
+#     class: in-channel covariance
+#     number of random samples: 20
+#     E-incident [MeV]:  1.000000E+01
+#   quantity: 
+#     type: angular distribution covariance matrix
+#   datablock: 
+#     columns: 3
+#     entries: 1
+##    Angle1         Angle2     Rel._covariance
+##   [degrees]      [degrees]         []
+        0              0         0.000000E+00

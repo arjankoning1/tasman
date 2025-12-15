@@ -1,0 +1,22 @@
+\begin{samplecase}
+{\bf n + ${}^{120}$Sn: Linear sensitivity analysis}\newline
+
+In this sample case we create the sensitivity matrix of cross sections to model parameters. The input file is as follows:
+
+\VerbatimInput{\samples n-Sn120-sens/org/tasman.inp}
+
+Note that we have only include 10 parameters. If you want, you can paste parts of the TALYS output file {\it parameters.dat} to the end of
+this input file, at the expense of waiting longer for the result of course.
+
+Besides the standard TALYS output file, various files starting with 'sens' have been created:
+\begin{itemize}
+\item sensitivity files per reaction channel, e.g. {\it sens\_totalxs.tot, sens\_xs000000.tot}, etc. gives the sensitivity
+per incident energy for each model parameter
+\item sensitivity file per incident energy and tabulated per reaction channel {\it sensitivity.E} and averaged over all reaction channels
+{\it sensitivity.Eave}
+\item sensitivity file per reaction channel and incident energy and tabulated per parameter {\it sensitivity.xs} and averaged over all incident energies {\it sensitivity.xsave}.
+\item sensitivity file per parameter and reaction channel and tabulated per incident energy {\it sensitivity.par} and averaged over all incident energies {\it sensitivity.parave}.
+\item sensitivity per parameter averaged over all reaction channels and incident energies {\it sensitivity.all}.
+\end{itemize}
+To learn about a particular parameter sensitivity for a reaction channel at one incident energy I usually consult {\it sensitivity.xs}.
+\end{samplecase}

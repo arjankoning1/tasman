@@ -1,0 +1,2543 @@
+
+    TALYS-2.2 (Version: December 14, 2025)
+
+ Copyright (C) 2025  A.J. Koning, S. Hilaire and S. Goriely
+
+ Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
+
+ User: Arjan Koning
+ Date: 2025-12-15
+
+ ########## USER INPUT ##########
+
+ USER INPUT FILE
+
+ # original input file
+ #
+ # general
+ #
+ projectile n
+ element nb
+ mass 93
+ energy energies
+ channels y
+ filechannels y
+ bins 20
+ outangle y
+ fileangle 0
+ fileangle 1
+ fileangle 2
+ fileangle 3
+ fileangle 4
+ #
+ # tasman keywords start here
+ #
+ #change
+ #mode 1
+ #ntalys 20
+ #seed 3042015
+ #band y
+ #save y
+ #angle y
+ #isomer y
+ #expinclude all
+ ##
+ ## parameters to be varied
+ ##
+ rvadjust n 1.
+ avadjust n 1.
+ v1adjust n 1. 0.05
+ v2adjust n 1.
+ rwdadjust n 1. 0.10
+ awdadjust n 1. 0.05
+ aadjust 41 94 1. 0.15
+ aadjust 41 93 1. 0.15
+ aadjust 40 93 1. 0.15
+ # current variables run:    19
+ outangle y
+ fileelastic y
+ #ztarget  41
+ partable y
+ ecissave y
+ inccalc y
+ eciscalc y
+ rvadjust     n    0.99766
+ avadjust     n    1.00242
+ v1adjust     n    0.97481
+ v2adjust     n    0.98456
+ rwdadjust    n    0.95364
+ awdadjust    n    1.01261
+ aadjust       41  94    1.03626
+ aadjust       41  93    0.94891
+ aadjust       40  93    0.98948
+
+ USER INPUT FILE + DEFAULTS
+
+ Keyword           Value   Variable     Explanation
+
+ #
+ # Four main keywords
+ #
+ projectile          n     ptype0       type of incident particle
+ element            Nb     Starget      symbol of target nucleus
+ mass               93     mass         mass number of target nucleus
+ energy energies           energyfile   file with incident energies
+ #
+ # Basic physical and numerical parameters
+ #
+ ejectiles g n p d t h a   outtype      outgoing particles
+ maxz               12     maxZ         maximal number of protons from the initial compound nucleus
+ maxn               32     maxN         maximal number of neutrons from the initial compound nucleus
+ bins               20     nbins        number of continuum excitation energy bins
+ equidistant         y     flagequi     flag to use equidistant excitation bins instead of logarithmic bins
+ equispec            n     flagequispec flag to use equidistant bins for emission spectra
+ popmev              n     flagpopmev   flag to use initial population per MeV instead of histograms
+ segment             1     segment      number of segments to divide emission energy grid
+ maxlevelstar       30     nlevmax      maximum number of included discrete levels for target
+ maxlevelsres       30     nlevmaxres   maximum number of included discrete levels for residual nucleus
+ maxlevelsbin g     30     nlevbin      maximum number of included discrete levels for gamma    channel
+ maxlevelsbin n     30     nlevbin      maximum number of included discrete levels for neutron  channel
+ maxlevelsbin p     30     nlevbin      maximum number of included discrete levels for proton   channel
+ maxlevelsbin d     30     nlevbin      maximum number of included discrete levels for deuteron channel
+ maxlevelsbin t     30     nlevbin      maximum number of included discrete levels for triton   channel
+ maxlevelsbin h     30     nlevbin      maximum number of included discrete levels for helium-3 channel
+ maxlevelsbin a     30     nlevbin      maximum number of included discrete levels for alpha    channel
+ ltarget             0     ltarget      excited level of target
+ isomer           1.00E+00 isomer       definition of isomer in seconds
+ transpower          5     transpower   power for transmission coefficient limit
+ transeps         1.00E-08 transeps     limit for transmission coefficient
+ xseps            1.00E-07 xseps        limit for cross sections
+ popeps           1.00E-03 popeps       limit for population cross section per nucleus
+ Rfiseps          1.00E-03 Rfiseps      ratio for limit for fission cross section per nucleus
+ elow             1.00E-06 elow         minimal incident energy for nuclear model calculations
+ angles             90     nangle       number of angles
+ anglescont         18     nanglecont   number of angles for continuum
+ anglesrec           1     nanglerec    number of recoil angles
+ maxenrec           20     maxenrec     number of recoil energies
+ channels            y     flagchannels flag for exclusive channels calculation
+ maxchannel          4     maxchannel   maximal number of outgoing particles in individual channel description
+ micro               n     flagmicro    flag for completely microscopic Talys calculation
+ best                n     flagbest     flag to use best set of adjusted parameters
+ bestbranch          n     flagbestbr   flag to use flag to use only best set of branching ratios
+ bestend             n     flagbestend  flag to put best set of parameters at end of input file
+ relativistic        y     flagrel      flag for relativistic kinematics
+ recoil              n     flagrecoil   flag for calculation of recoils
+ labddx              n     flaglabddx   flag for calculation of DDX in LAB system
+ recoilaverage       n     flagrecoilav flag for average velocity in recoil calculation
+ channelenergy       n     flagEchannel flag for channel energy for emission spectrum
+ reaction            y     flagreaction flag for calculation of nuclear reactions
+ fit                 n     flagfit      flag to use automatically fitted parameters
+ ngfit               n     flagngfit    flag for using fitted (n,g) nuclear model parameters
+ nffit               n     flagnffit    flag for using fitted (n,f) nuclear model parameters
+ nnfit               n     flagnnfit    flag for using fitted (n,n), (n,2n) and (n,p) nuclear model parameters
+ nafit               n     flagnafit    flag for using fitted (n,a) nuclear model parameters
+ ndfit               n     flagndfit    flag for using fitted (n,d) nuclear model parameters
+ pnfit               n     flagpnfit    flag for using fitted (p,n) nuclear model parameters
+ dnfit               n     flagdnfit    flag for using fitted (d,n) nuclear model parameters
+ gnfit               n     flaggnfit    flag for using fitted (g,n) nuclear model parameters
+ anfit               n     flaganfit    flag for using fitted (a,n) nuclear model parameters
+ gamgamfit           n    flaggamgamfit flag for using fitted Gamma_gamma nuclear model parameters
+ macsfit             n     flagmacsfit  flag for using fitted MACS nuclear model parameters
+ astro               n     flagastro    flag for calculation of astrophysics reaction rate
+ astrogs             n     flagastrogs  flag for calculation of astrophysics reaction rate with target in ground state only
+ astroex             n     flagastroex  flag for calculation of astrophysics reaction rate to long-lived excited states
+ nonthermlev        -1     nonthermlev  excited level non-thermalized in the calculation of astrophysics rate
+ massmodel           2     massmodel    model for theoretical nuclear mass
+ expmass             y     flagexpmass  flag for using experimental nuclear mass if available
+ disctable           1     disctable    table with discrete levels
+ production          n     flagprod     flag for isotope production
+ outfy               n     flagoutfy    flag for output detailed fission yield calculation
+ gefran          50000     gefran       number of random events for GEF calculation
+ Estop            1000.000 Estop        incident energy above which TALYS stops
+ rpevap              n     flagrpevap   flag for evaporation of residual products at high incident energies
+ legacy              n     flaglegacy   flag to run legacy models
+ maxZrp             12     maxZrp       maximal number of protons from the initial CN before residual evaporation
+ maxNrp             32     maxNrp       maximal number of neutrons from the initial CN before residual evaporation
+ user      Arjan Koning    user         user for this calculation
+ source    TALYS-2.2       source       source for this calculation
+ format    YANDF-0.4       oformat      format for output
+ #
+ # Optical model
+ #
+ localomp            y     flaglocalomp flag for local (y) or global (n) optical model
+ dispersion          n     flagdisp     flag for dispersive optical model
+ jlmomp              n     flagjlm      flag for using semi-microscopic JLM OMP
+ pruitt              n     flagpruitt   identifier for Pruitt parameters for KD03
+ pruittset           0     pruittset    random set for Pruitt et al OMP
+ riplomp             n     flagriplomp  flag for RIPL OMP
+ riplrisk            n     flagriplrisk flag for going outside RIPL mass validity range
+ optmodall           n     flagompall   flag for new optical model calculation for all residual nuclei
+ incadjust           y     flagincadj   flag for OMP adjustment on incident channel also
+ omponly             n     flagomponly  flag to execute ONLY an optical model calculation
+ autorot             n     flagautorot  flag for automatic rotational coupled channels calculations for A > 150
+ spherical           n     flagspher    flag to force spherical optical model
+ soukho              y     flagsoukho   flag for Soukhovitskii OMP for actinides
+ coulomb             y     flagcoulomb  flag for Coulomb excitation calculation with ECIS
+ statepot            n     flagstate    flag for optical model potential for each excited state
+ maxband             0     maxband      highest vibrational band added to rotational model
+ maxrot              4     maxrot       number of included excited rotational levels
+ sysreaction               sysreaction  particles with reaction cross section from systematics
+ rotational                rotational   particles with possible rotational optical model
+ core               -1     core         even-even core for weakcoupling (-1 or 1)
+ ecissave            y     flagecissave flag for saving ECIS input and output files
+ eciscalc            y     flageciscalc flag for new ECIS calculation for outgoing particles and energy grid
+ inccalc             y     flaginccalc  flag for new ECIS calculation for incident channel
+ endfecis            y     flagendfecis flag for new ECIS calculation for ENDF-6 files
+ radialmodel         2     radialmodel  model for radial matter densities (JLM OMP only)
+ jlmmode             0     jlmmode      option for JLM imaginary potential normalization
+ alphaomp            6     alphaomp     alpha OMP (1=normal, 2= McFadden-Satchler, 3-5= folding pot., 6,8= Avrigeanu, 7=Nolte)
+ deuteronomp         4     deuteronomp  deuteron OMP (1=normal, 2=Daehnick, 3=Bojowald, 4=Han-Shi-Shen, 5=An-Cai)
+ ecisstep         0.00E+00 ecisstep     integration step size for ECIS OMP calculation
+ #
+ # Compound nucleus
+ #
+ widthfluc           8.831 ewfc         off-set incident energy for width fluctuation calculation
+ widthmode           1     wmode        designator for width fluctuation model
+ WFCfactor           1     WFCfactor    enhancement factor for WFC: 1: Original, 2: Ernebjerg and Herman 3: Kawano
+ compound            y     flagcomp     flag for compound nucleus model
+ fullhf              n     flagfullhf   flag for full spin dependence of transmission coefficients
+ eciscompound        n     flageciscomp flag for compound nucleus calculation by ECIS
+ cpang               n     flagcpang    flag for compound angular distribution calculation for incident charged particles
+ urr                 n     flagurr      flag for URR calculation
+ urrnjoy             n     flagurrnjoy  flag for normalization of URR parameters with NJOY method
+ lurr                2     lurr         maximal orbital angular momentum for URR
+ #
+ # Gamma emission
+ #
+ gammax              2     gammax       number of l-values for gamma multipolarity
+ strength            9     strength     model for E1 gamma-ray strength function
+ strengthM1          3     strengthM1   model for M1 gamma-ray strength function
+ pseudoresonances    n    flagpseudores flag for using light nuclide discrete levels for resonances
+ electronconv        y     flagelectron flag for application of electron conversion coefficient
+ racap               n     flagracap    flag for radiative capture model
+ ldmodelracap        3     ldmodelracap level density model for direct radiative capture
+ upbend              y     flagupbend   flag for low-energy upbend of photon strength function
+ psfglobal           n    flagpsfglobal flag for global photon strength functions only
+ globalwtable        y    flagglobalwtable flag for global average wtable value instead of 1.
+ gnorm               n     flaggnorm    flag to normalize PSF to average radiative width
+ #
+ # Pre-equilibrium
+ #
+ preequilibrium      1.694 epreeq       on-set incident energy for preequilibrium calculation
+ preeqmode           2     preeqmode    designator for pre-equilibrium model
+ multipreeq          n     flagmulpre   flag for multiple pre-equilibrium calculation
+ mpreeqmode          2     mpreeqmode   designator for multiple pre-equilibrium model
+ breakupmodel        1     breakupmodel model for break-up reaction: 1. Kalbach 2. Avrigeanu
+ phmodel             1     phmodel      particle-hole state density model
+ pairmodel           2     pairmodel    designator for pre-equilibrium pairing model
+ preeqspin           1     pespinmodel  model for pre-equilibrium spin distribution
+ giantresonance      y     flaggiant    flag for collective contribution from giant resonances
+ preeqsurface        y     flagsurface  flag for surface effects in exciton model
+ preeqcomplex        y     flagpecomp   flag for Kalbach complex particle emission model
+ twocomponent        y     flag2comp    flag for two-component pre-equilibrium model
+ ecisdwba            y     flagecisdwba flag for new ECIS calculation for DWBA for MSD
+ onestep             n     flagonestep  flag for continuum one-step direct only
+ #
+ # Level densities
+ #
+ ldmodel             1     ldmodelall   level density model
+ ldmodelCN           1     ldmodelCN    level density model for compound nucleus
+ shellmodel          1     shellmodel   model for shell correction energies
+ kvibmodel           2     kvibmodel    model for vibrational enhancement
+ spincutmodel        1     spincutmodel model for spin cutoff factor for ground state
+ ldglobal            n     flagldglobal flag for global level density model
+ asys                n     flagasys     flag for all level density parameters a from systematics
+ parity              n     flagparity   flag for non-equal parity distribution
+ colenhance          n     flagcolall   flag for collective enhancement of level density for all nuclides
+ ctmglobal           n     flagctmglob  flag for global CTM model (no discrete level info)
+ gshell              n     flaggshell   flag for energy dependence of single particle level density parameter g
+ colldamp            n     flagcolldamp flag for damping of collective effects in effective level density
+ #
+ # Fission
+ #
+ fission             n     flagfission  flag for fission
+ fismodel            6     fismodel     fission model
+ fismodelalt         3     fismodelalt  alternative fission model for default barriers
+ hbstate             n     flaghbstate  flag for head band states in fission
+ class2              n     flagclass2   flag for class2 states in fission
+ fispartdamp         n  flagfispartdamp flag for fission partial damping
+ sffactor            n     flagsffactor flag to constrain vfiscor and rmiufiscor by sp. fis. half-life
+ massdis             n     flagmassdis  flag for calculation of fission fragment mass yields
+ ffevaporation       y     flagffevap   flag for calculation of particle evaporation from fission fragment mass yields
+ fisfeed             n     flagfisfeed  flag for output of fission per excitation bin
+ fymodel             2     fymodel      fission yield model, 1: Brosa 2: GEF
+ ffmodel             1     ffmodel      fission fragment model, 1: GEF 2: HF3D (Okumura) 3: SPY 4: Langevin-4D 0: own files
+ pfnsmodel           1     pfnsmodel    PFNS model, 1: Iwamoto 2: from FF decay
+ ffspin              n     flagffspin   flag to use spin distribution in initial FF population
+ #
+ # Output
+ #
+ outmain             y     flagmain     flag for main output
+ outbasic            n     flagbasic    flag for output of basic information and results
+ outall              n     flagoutall   flag for output of all data in main output file
+ outpopulation       n     flagpop      flag for output of population
+ outcheck            n     flagcheck    flag for output of numerical checks
+ outlevels           n     flaglevels   flag for output of discrete level information
+ outdensity          n     flagdensity  flag for output of level densities
+ outomp              n     flagoutomp   flag for output of optical model parameters
+ outkd               n     flagoutkd    flag for output of KD03 OMP parameters
+ outdirect           n     flagdirect   flag for output of direct reaction results
+ outinverse          n     flaginverse  flag for output of transmission coefficients and inverse reaction cross sections
+ outdecay            n     flagdecay    flag for output of decay of each population bin
+ outtransenergy      y     flagtransen  flag for output of transmission coefficients per energy
+ outecis             n     flagoutecis  flag for output of ECIS results
+ outgamma            n     flaggamma    flag for output of gamma-ray information
+ outpreequilibrium   n     flagpeout    flag for output of pre-equilibrium results 
+ outfission          n     flagfisout   flag for output of fission information
+ outdiscrete         n     flagdisc     flag for output of discrete state cross sections
+ outspectra          n     flagspec     flag for output of double-differential cross sections
+ outbinspectra       n     flagbinspec  flag for output of emission spectrum per excitation bin
+ resonance           n     flagres      flag for output of low energy resonance cross sections
+ group               n     flaggroup    flag for output of low energy groupwise cross sections
+ adddiscrete         y     flagadd      flag for addition of discrete states to spectra
+ addelastic          y     flagaddel    flag for addition of elastic peak to spectra
+ outangle            y     flagang      flag for output of angular distributions
+ outlegendre         n     flaglegendre flag for output of Legendre coefficients
+ ddxmode             0     ddxmode      mode for double-differential cross sections
+ outdwba             n     flagoutdwba  flag for output of DWBA cross sections for MSD
+ outgamdis           n     flaggamdis   flag for output of discrete gamma-ray intensities
+ outexcitation       y     flagexc      flag for output of excitation functions
+ filedensity         n     filedensity  flag for level densities on separate files
+ filepsf             n     filepsf      flag for photon strength functions on separate files
+ filechannels        y     filechannels flag for exclusive channel cross sections on separate file
+ fileelastic         y     fileelastic  flag for elastic angular distribution on separate file
+ filefission         n     filefission  flag for fission cross sections on separate file
+ filegamdis          n     filegamdis   flag for gamma-ray intensities on separate file
+ filerecoil          n     filerecoil   flag for recoil spectra on separate file
+ fileresidual        y     fileresidual flag for residual production cross sections on separate file
+ filetotal           y     filetotal    flag for total cross sections on separate file
+ components          n     flagcompo    flag for output of cross section components
+ endf                n     flagendf     flag for information for ENDF-6 file
+ endfdetail          y     flagendfdet  flag for detailed ENDF-6 information per channel
+ sacs                n     flagsacs     flag for statistical analysis of cross sections
+ partable            y     flagpartable flag for output of model parameters on separate file
+ block               n     flagblock    flag to block spectra, angle and gamma files
+ blockddx            n     flagblockddx flag to block DDX files
+ blockspectra        n flagblockspectra flag to block spectra files
+ blockangle          n   flagblockangle flag to block angle files
+ blockdirect         n  flagblockdirect flag to block direct reaction files
+ blockbin            n     flagblockbin flag to block binary files
+ blocklevels         n  flagblocklevels flag to block discrete level files
+ blockomp            y     flagblockomp flag to block optical model files
+ blockpreeq          n   flagblockpreeq flag to block preequilibrium files
+ blockastro          n   flagblockastro flag to block astro reaction rate files
+ blockyield          n   flagblockyield flag to block isotopic yield files
+ blockZA             y     flagblockZA  flag to block residual nuclide files
+
+ ########## BASIC REACTION PARAMETERS ##########
+
+ Projectile           : neutron     Mass in a.m.u.      :   1.008665
+ Target               : Nb93        Mass in a.m.u.      :  92.906373
+
+ Included channels:
+                     gamma   
+                     neutron 
+                     proton  
+                     deuteron
+                     triton  
+                     helium-3
+                     alpha   
+
+    10 incident energies (LAB):
+
+      0.100
+      0.200
+      0.500
+      1.000
+      2.000
+      3.000
+      4.000
+      5.000
+      8.000
+     10.000
+
+ Q-values for binary reactions:
+
+ Q(n,g):  7.22754
+ Q(n,n):  0.00000
+ Q(n,p):  0.69161
+ Q(n,d): -3.81839
+ Q(n,t): -6.19563
+ Q(n,h): -7.72093
+ Q(n,a):  4.93077
+
+ ########## RESULTS FOR E=   0.10000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : n
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   0.10000 ###########
+
+ Center-of-mass energy:    0.099
+
+ 1. Total (binary) cross sections
+
+ Total           = 8.24052E+03
+   Shape elastic   = 5.22938E+03
+   Reaction        = 3.01114E+03
+     Compound elastic= 2.91011E+03
+     Non-elastic     = 1.01025E+02
+       Direct          = 0.00000E+00
+       Pre-equilibrium = 0.00000E+00
+       Compound non-el = 1.01025E+02
+     Total elastic   = 8.13949E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 1.00280E+02
+ neutron = 7.28614E-01
+ proton  = 0.00000E+00
+ deuteron= 0.00000E+00
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 0.00000E+00
+
+ 3. Total particle production cross sections
+
+ gamma   = 2.50507E+02    Multiplicity= 2.47965E+00
+ neutron = 7.63042E-01    Multiplicity= 7.55297E-03
+ proton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 0.00000E+00    Multiplicity= 0.00000E+00
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 1.00246E+02    0    3.79458E+01  0.37853
+                                 1    6.22997E+01  0.62147   3.75800E+02 sec. 
+   41  93 ( 93Nb) 7.63042E-01    0    3.41467E-02  0.04475
+                                 1    7.28895E-01  0.95525   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.00000E-07    0    0.00000E+00  0.00000
+   39  90 ( 90Y ) 1.00000E-07    0    0.00000E+00  0.00000
+                                 2    0.00000E+00  0.00000   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 1.00246E+02
+   93 7.63042E-01
+
+ Total residual production cross section:   101.0085526
+ Non-elastic cross section              :   101.0253906
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    1.00246E+02  (n,g)                                                     9.92784E-01
+                                                             0     3.79458E+01  0.37853
+                                                             1     6.22997E+01  0.62147   3.75800E+02 sec. 
+    1   0   0   0   0   0    7.28614E-01  (n,n')                                                    7.21585E-03
+                                                             0     0.00000E+00  0.00000
+                                                             1     7.28614E-01  1.00000   5.08700E+08 sec. 
+    0   1   0   0   0   0    1.00000E-07  (n,p)                                                     9.90353E-10
+    0   0   0   0   0   1    1.00000E-07  (n,a)                                                     9.90353E-10
+                                                             0     5.00000E-08  0.50000
+                                                             2     5.00000E-08  0.50000   1.14800E+04 sec. 
+
+ Absorption cross section                 :   100.24551
+
+ Sum over exclusive channel cross sections:   100.97413
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     0.03443
+ Total                                    :   101.00856
+ Non-elastic cross section                :   101.02539
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0000.100ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0000.100ang.L01
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0000.100ang.L00
+file: ng0000.100ang.L01
+file: ng0000.100ang.L02
+file: ng0000.100ang.L03
+file: ng0000.100ang.L04
+file: ng0000.100ang.L05
+file: ng0000.100ang.L06
+file: ng0000.100ang.L07
+file: ng0000.100ang.L08
+file: ng0000.100ang.L09
+file: ng0000.100ang.L10
+file: ng0000.100ang.L11
+file: ng0000.100ang.L12
+file: ng0000.100ang.L13
+file: ng0000.100ang.L14
+file: ng0000.100ang.L15
+file: ng0000.100ang.L16
+file: ng0000.100ang.L17
+file: ng0000.100ang.L18
+file: ng0000.100ang.L19
+file: ng0000.100ang.L20
+file: ng0000.100ang.L21
+file: ng0000.100ang.L22
+file: ng0000.100ang.L23
+file: ng0000.100ang.L24
+file: ng0000.100ang.L25
+file: ng0000.100ang.L26
+file: ng0000.100ang.L27
+file: ng0000.100ang.L28
+file: ng0000.100ang.L29
+file: ng0000.100ang.L30
+
+ ########## RESULTS FOR E=   0.20000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : n
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   0.20000 ###########
+
+ Center-of-mass energy:    0.198
+
+ 1. Total (binary) cross sections
+
+ Total           = 8.56402E+03
+   Shape elastic   = 5.03828E+03
+   Reaction        = 3.52574E+03
+     Compound elastic= 3.45484E+03
+     Non-elastic     = 7.08999E+01
+       Direct          = 0.00000E+00
+       Pre-equilibrium = 0.00000E+00
+       Compound non-el = 7.08999E+01
+     Total elastic   = 8.49312E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 6.78872E+01
+ neutron = 2.96154E+00
+ proton  = 0.00000E+00
+ deuteron= 0.00000E+00
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 0.00000E+00
+
+ 3. Total particle production cross sections
+
+ gamma   = 1.72150E+02    Multiplicity= 2.42808E+00
+ neutron = 2.98676E+00    Multiplicity= 4.21265E-02
+ proton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 0.00000E+00    Multiplicity= 0.00000E+00
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 6.78619E+01    0    2.69848E+01  0.39764
+                                 1    4.08772E+01  0.60236   3.75800E+02 sec. 
+   41  93 ( 93Nb) 2.98676E+00    0    2.47576E-02  0.00829
+                                 1    2.96200E+00  0.99171   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.00000E-07    0    0.00000E+00  0.00000
+   39  90 ( 90Y ) 1.00000E-07    0    0.00000E+00  0.00000
+                                 2    0.00000E+00  0.00000   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 6.78619E+01
+   93 2.98676E+00
+
+ Total residual production cross section:    70.8487091
+ Non-elastic cross section              :    70.8999023
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    6.78619E+01  (n,g)                                                     9.58184E-01
+                                                             0     2.69848E+01  0.39764
+                                                             1     4.08772E+01  0.60236   3.75800E+02 sec. 
+    1   0   0   0   0   0    2.96154E+00  (n,n')                                                    4.18158E-02
+                                                             0     0.00000E+00  0.00000
+                                                             1     2.96154E+00  1.00000   5.08700E+08 sec. 
+    0   1   0   0   0   0    1.00000E-07  (n,p)                                                     1.41196E-09
+    0   0   0   0   0   1    1.00000E-07  (n,a)                                                     1.41196E-09
+                                                             0     5.00000E-08  0.50000
+                                                             2     5.00000E-08  0.50000   1.14800E+04 sec. 
+
+ Absorption cross section                 :    67.86194
+
+ Sum over exclusive channel cross sections:    70.82348
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     0.02522
+ Total                                    :    70.84870
+ Non-elastic cross section                :    70.89990
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0000.200ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0000.200ang.L01
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0000.200ang.L00
+file: ng0000.200ang.L01
+file: ng0000.200ang.L02
+file: ng0000.200ang.L03
+file: ng0000.200ang.L04
+file: ng0000.200ang.L05
+file: ng0000.200ang.L06
+file: ng0000.200ang.L07
+file: ng0000.200ang.L08
+file: ng0000.200ang.L09
+file: ng0000.200ang.L10
+file: ng0000.200ang.L11
+file: ng0000.200ang.L12
+file: ng0000.200ang.L13
+file: ng0000.200ang.L14
+file: ng0000.200ang.L15
+file: ng0000.200ang.L16
+file: ng0000.200ang.L17
+file: ng0000.200ang.L18
+file: ng0000.200ang.L19
+file: ng0000.200ang.L20
+file: ng0000.200ang.L21
+file: ng0000.200ang.L22
+file: ng0000.200ang.L23
+file: ng0000.200ang.L24
+file: ng0000.200ang.L25
+file: ng0000.200ang.L26
+file: ng0000.200ang.L27
+file: ng0000.200ang.L28
+file: ng0000.200ang.L29
+file: ng0000.200ang.L30
+
+ ########## RESULTS FOR E=   0.50000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : n
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   0.50000 ###########
+
+ Center-of-mass energy:    0.495
+
+ 1. Total (binary) cross sections
+
+ Total           = 8.05793E+03
+   Shape elastic   = 4.71594E+03
+   Reaction        = 3.34199E+03
+     Compound elastic= 3.27513E+03
+     Non-elastic     = 6.68594E+01
+       Direct          = 0.00000E+00
+       Pre-equilibrium = 0.00000E+00
+       Compound non-el = 6.68594E+01
+     Total elastic   = 7.99107E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 5.04412E+01
+ neutron = 1.63903E+01
+ proton  = 0.00000E+00
+ deuteron= 0.00000E+00
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 0.00000E+00
+
+ 3. Total particle production cross sections
+
+ gamma   = 1.32104E+02    Multiplicity= 1.97585E+00
+ neutron = 1.66994E+01    Multiplicity= 2.49769E-01
+ proton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 0.00000E+00    Multiplicity= 0.00000E+00
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 5.01321E+01    0    2.22904E+01  0.44463
+                                 1    2.78417E+01  0.55537   3.75800E+02 sec. 
+   41  93 ( 93Nb) 1.66994E+01    0    2.99949E-01  0.01796
+                                 1    1.63995E+01  0.98204   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.00000E-07    0    0.00000E+00  0.00000
+   39  90 ( 90Y ) 1.00000E-07    0    0.00000E+00  0.00000
+                                 2    0.00000E+00  0.00000   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 5.01321E+01
+   93 1.66994E+01
+
+ Total residual production cross section:    66.8314972
+ Non-elastic cross section              :    66.8593750
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    5.01321E+01  (n,g)                                                     7.53612E-01
+                                                             0     2.22904E+01  0.44463
+                                                             1     2.78417E+01  0.55537   3.75800E+02 sec. 
+    1   0   0   0   0   0    1.63903E+01  (n,n')                                                    2.46388E-01
+                                                             0     0.00000E+00  0.00000
+                                                             1     1.63903E+01  1.00000   5.08700E+08 sec. 
+    0   1   0   0   0   0    1.00000E-07  (n,p)                                                     1.50325E-09
+    0   0   0   0   0   1    1.00000E-07  (n,a)                                                     1.50325E-09
+                                                             0     5.00000E-08  0.50000
+                                                             2     5.00000E-08  0.50000   1.14800E+04 sec. 
+
+ Absorption cross section                 :    50.13207
+
+ Sum over exclusive channel cross sections:    66.52236
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     0.30914
+ Total                                    :    66.83150
+ Non-elastic cross section                :    66.85938
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0000.500ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0000.500ang.L01
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0000.500ang.L00
+file: ng0000.500ang.L01
+file: ng0000.500ang.L02
+file: ng0000.500ang.L03
+file: ng0000.500ang.L04
+file: ng0000.500ang.L05
+file: ng0000.500ang.L06
+file: ng0000.500ang.L07
+file: ng0000.500ang.L08
+file: ng0000.500ang.L09
+file: ng0000.500ang.L10
+file: ng0000.500ang.L11
+file: ng0000.500ang.L12
+file: ng0000.500ang.L13
+file: ng0000.500ang.L14
+file: ng0000.500ang.L15
+file: ng0000.500ang.L16
+file: ng0000.500ang.L17
+file: ng0000.500ang.L18
+file: ng0000.500ang.L19
+file: ng0000.500ang.L20
+file: ng0000.500ang.L21
+file: ng0000.500ang.L22
+file: ng0000.500ang.L23
+file: ng0000.500ang.L24
+file: ng0000.500ang.L25
+file: ng0000.500ang.L26
+file: ng0000.500ang.L27
+file: ng0000.500ang.L28
+file: ng0000.500ang.L29
+file: ng0000.500ang.L30
+
+ ########## RESULTS FOR E=   1.00000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : n
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   1.00000 ###########
+
+ Center-of-mass energy:    0.989
+
+ 1. Total (binary) cross sections
+
+ Total           = 6.17037E+03
+   Shape elastic   = 3.68615E+03
+   Reaction        = 2.48422E+03
+     Compound elastic= 1.74692E+03
+     Non-elastic     = 7.37304E+02
+       Direct          = 1.74724E+01
+       Pre-equilibrium = 0.00000E+00
+       Compound non-el = 7.19832E+02
+     Total elastic   = 5.43307E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 3.29504E+01
+ neutron = 7.04353E+02
+ proton  = 3.00079E-04
+ deuteron= 0.00000E+00
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 2.31813E-04
+
+ 3. Total particle production cross sections
+
+ gamma   = 8.97260E+01    Multiplicity= 1.21695E-01
+ neutron = 7.05194E+02    Multiplicity= 9.56449E-01
+ proton  = 3.00080E-04    Multiplicity= 4.06997E-07
+ deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 2.31814E-04    Multiplicity= 3.14407E-07
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 3.21095E+01    0    1.70530E+01  0.53109
+                                 1    1.50565E+01  0.46891   3.75800E+02 sec. 
+   41  93 ( 93Nb) 7.05194E+02    0    6.00287E+02  0.85124
+                                 1    1.04907E+02  0.14876   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.00000E-07    0    2.95506E-04  0.00000
+   39  90 ( 90Y ) 1.00000E-07    0    1.03076E-04  0.00000
+                                 2    0.00000E+00  0.00000   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 3.21095E+01
+   93 7.05194E+02
+
+ Total residual production cross section:   737.3033447
+ Non-elastic cross section              :   737.3039551
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    3.21095E+01  (n,g)                                                     4.35996E-02
+                                                             0     1.70530E+01  0.53109
+                                                             1     1.50565E+01  0.46891   3.75800E+02 sec. 
+    1   0   0   0   0   0    7.04353E+02  (n,n')                                                    9.56400E-01
+                                                             0     5.99461E+02  0.85108
+                                                             1     1.04892E+02  0.14892   5.08700E+08 sec. 
+    0   1   0   0   0   0    2.95505E-04  (n,p)                                                     4.01249E-07
+    0   0   0   0   0   1    1.03075E-04  (n,a)                                                     1.39960E-07
+                                                             0     1.03075E-04  1.00000
+                                                             2     0.00000E+00  0.00000   1.14800E+04 sec. 
+
+ Absorption cross section                 :    32.10991
+
+ Sum over exclusive channel cross sections:   736.46283
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     0.84088
+ Total                                    :   737.30371
+ Non-elastic cross section                :   737.30396
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0001.000ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0001.000ang.L01
+file: nn0001.000ang.L02
+file: nn0001.000ang.L03
+file: nn0001.000ang.L04
+file: nn0001.000ang.L05
+file: nn0001.000ang.L06
+file: nn0001.000ang.L07
+file: nn0001.000ang.L08
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0001.000ang.L00
+file: ng0001.000ang.L01
+file: ng0001.000ang.L02
+file: ng0001.000ang.L03
+file: ng0001.000ang.L04
+file: ng0001.000ang.L05
+file: ng0001.000ang.L06
+file: ng0001.000ang.L07
+file: ng0001.000ang.L08
+file: ng0001.000ang.L09
+file: ng0001.000ang.L10
+file: ng0001.000ang.L11
+file: ng0001.000ang.L12
+file: ng0001.000ang.L13
+file: ng0001.000ang.L14
+file: ng0001.000ang.L15
+file: ng0001.000ang.L16
+file: ng0001.000ang.L17
+file: ng0001.000ang.L18
+file: ng0001.000ang.L19
+file: ng0001.000ang.L20
+file: ng0001.000ang.L21
+file: ng0001.000ang.L22
+file: ng0001.000ang.L23
+file: ng0001.000ang.L24
+file: ng0001.000ang.L25
+file: ng0001.000ang.L26
+file: ng0001.000ang.L27
+file: ng0001.000ang.L28
+file: ng0001.000ang.L29
+file: ng0001.000ang.L30
+
+ 8c2. (n,p) angular distributions
+file: np0001.000ang.L00
+file: np0001.000ang.L01
+
+ 8c2. (n,a) angular distributions
+file: na0001.000ang.L00
+file: na0001.000ang.L01
+
+ ########## RESULTS FOR E=   2.00000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : y
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   2.00000 ###########
+
+ Center-of-mass energy:    1.978
+
+ 1. Total (binary) cross sections
+
+ Total           = 4.49631E+03
+   Shape elastic   = 2.15065E+03
+   Reaction        = 2.34566E+03
+     Compound elastic= 3.15963E+02
+     Non-elastic     = 2.02970E+03
+       Direct          = 1.14985E+02
+       Pre-equilibrium = 2.14335E+00
+       Giant resonance = 1.56789E-01
+       Compound non-el = 1.91241E+03
+     Total elastic   = 2.46661E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 1.00772E+01
+ neutron = 2.01960E+03
+ proton  = 1.81333E-02
+ deuteron= 0.00000E+00
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 3.86883E-03
+
+ 3. Total particle production cross sections
+
+ gamma   = 2.77915E+02    Multiplicity= 1.36924E-01
+ neutron = 2.02076E+03    Multiplicity= 9.95599E-01
+ proton  = 1.81335E-02    Multiplicity= 8.93408E-06
+ deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 3.86889E-03    Multiplicity= 1.90614E-06
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 8.91223E+00    0    4.66508E+00  0.52345
+                                 1    4.24714E+00  0.47655   3.75800E+02 sec. 
+   41  93 ( 93Nb) 2.02076E+03    0    1.82987E+03  0.90554
+                                 1    1.90890E+02  0.09446   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.81335E-02    0    1.81335E-02  1.00000
+   39  90 ( 90Y ) 3.86889E-03    0    3.46414E-03  0.89538
+                                 2    4.04750E-04  0.10462   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 8.91223E+00
+   93 2.02078E+03
+   90 3.86889E-03
+
+ Total residual production cross section:  2029.6992188
+ Non-elastic cross section              :  2029.6965332
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    8.91223E+00  (n,g)                                                     4.39343E-03
+                                                             0     4.66508E+00  0.52345
+                                                             1     4.24714E+00  0.47655   3.75800E+02 sec. 
+    1   0   0   0   0   0    2.01960E+03  (n,n')                                                    9.95596E-01
+                                                             0     1.82877E+03  0.90551
+                                                             1     1.90825E+02  0.09449   5.08700E+08 sec. 
+    0   1   0   0   0   0    1.81333E-02  (n,p)                                                     8.93910E-06
+    0   0   0   0   0   1    3.86883E-03  (n,a)                                                     1.90720E-06
+                                                             0     3.46409E-03  0.89538
+                                                             2     4.04739E-04  0.10462   1.14800E+04 sec. 
+
+ Absorption cross section                 :     8.93423
+
+ Sum over exclusive channel cross sections:  2028.53418
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     1.16496
+ Total                                    :  2029.69910
+ Non-elastic cross section                :  2029.69653
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0002.000ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0002.000ang.L01
+file: nn0002.000ang.L02
+file: nn0002.000ang.L03
+file: nn0002.000ang.L04
+file: nn0002.000ang.L05
+file: nn0002.000ang.L06
+file: nn0002.000ang.L07
+file: nn0002.000ang.L08
+file: nn0002.000ang.L09
+file: nn0002.000ang.L10
+file: nn0002.000ang.L11
+file: nn0002.000ang.L12
+file: nn0002.000ang.L13
+file: nn0002.000ang.L14
+file: nn0002.000ang.L15
+file: nn0002.000ang.L16
+file: nn0002.000ang.L17
+file: nn0002.000ang.L18
+file: nn0002.000ang.L19
+file: nn0002.000ang.L20
+file: nn0002.000ang.L21
+file: nn0002.000ang.L22
+file: nn0002.000ang.L23
+file: nn0002.000ang.L24
+file: nn0002.000ang.L25
+file: nn0002.000ang.L26
+file: nn0002.000ang.L27
+file: nn0002.000ang.L28
+file: nn0002.000ang.L29
+file: nn0002.000ang.L30
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0002.000ang.L00
+file: ng0002.000ang.L01
+file: ng0002.000ang.L02
+file: ng0002.000ang.L03
+file: ng0002.000ang.L04
+file: ng0002.000ang.L05
+file: ng0002.000ang.L06
+file: ng0002.000ang.L07
+file: ng0002.000ang.L08
+file: ng0002.000ang.L09
+file: ng0002.000ang.L10
+file: ng0002.000ang.L11
+file: ng0002.000ang.L12
+file: ng0002.000ang.L13
+file: ng0002.000ang.L14
+file: ng0002.000ang.L15
+file: ng0002.000ang.L16
+file: ng0002.000ang.L17
+file: ng0002.000ang.L18
+file: ng0002.000ang.L19
+file: ng0002.000ang.L20
+file: ng0002.000ang.L21
+file: ng0002.000ang.L22
+file: ng0002.000ang.L23
+file: ng0002.000ang.L24
+file: ng0002.000ang.L25
+file: ng0002.000ang.L26
+file: ng0002.000ang.L27
+file: ng0002.000ang.L28
+file: ng0002.000ang.L29
+file: ng0002.000ang.L30
+
+ 8c2. (n,p) angular distributions
+file: np0002.000ang.L00
+file: np0002.000ang.L01
+file: np0002.000ang.L02
+file: np0002.000ang.L03
+file: np0002.000ang.L04
+file: np0002.000ang.L05
+file: np0002.000ang.L06
+file: np0002.000ang.L07
+file: np0002.000ang.L08
+file: np0002.000ang.L09
+file: np0002.000ang.L10
+file: np0002.000ang.L11
+file: np0002.000ang.L12
+file: np0002.000ang.L13
+file: np0002.000ang.L14
+file: np0002.000ang.L15
+file: np0002.000ang.L16
+file: np0002.000ang.L17
+file: np0002.000ang.L18
+file: np0002.000ang.L19
+file: np0002.000ang.L20
+file: np0002.000ang.L21
+file: np0002.000ang.L22
+file: np0002.000ang.L23
+file: np0002.000ang.L24
+file: np0002.000ang.L25
+file: np0002.000ang.L26
+file: np0002.000ang.L27
+file: np0002.000ang.L28
+file: np0002.000ang.L29
+file: np0002.000ang.L30
+
+ 8c2. (n,a) angular distributions
+file: na0002.000ang.L00
+file: na0002.000ang.L01
+file: na0002.000ang.L02
+file: na0002.000ang.L03
+file: na0002.000ang.L04
+file: na0002.000ang.L05
+file: na0002.000ang.L06
+file: na0002.000ang.L07
+file: na0002.000ang.L08
+file: na0002.000ang.L09
+file: na0002.000ang.L10
+file: na0002.000ang.L11
+file: na0002.000ang.L12
+file: na0002.000ang.L13
+file: na0002.000ang.L14
+file: na0002.000ang.L15
+file: na0002.000ang.L16
+file: na0002.000ang.L17
+file: na0002.000ang.L18
+file: na0002.000ang.L19
+file: na0002.000ang.L20
+file: na0002.000ang.L21
+file: na0002.000ang.L22
+file: na0002.000ang.L23
+file: na0002.000ang.L24
+file: na0002.000ang.L25
+file: na0002.000ang.L26
+file: na0002.000ang.L27
+file: na0002.000ang.L28
+file: na0002.000ang.L29
+file: na0002.000ang.L30
+
+ ########## RESULTS FOR E=   3.00000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : y
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   3.00000 ###########
+
+ Center-of-mass energy:    2.968
+
+ 1. Total (binary) cross sections
+
+ Total           = 4.00300E+03
+   Shape elastic   = 1.75449E+03
+   Reaction        = 2.24851E+03
+     Compound elastic= 1.05018E+02
+     Non-elastic     = 2.14349E+03
+       Direct          = 1.26585E+02
+       Pre-equilibrium = 1.81953E+01
+       Giant resonance = 1.73019E+01
+       Compound non-el = 1.98141E+03
+     Total elastic   = 1.85951E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 7.63304E+00
+ neutron = 2.13566E+03
+ proton  = 1.72224E-01
+ deuteron= 0.00000E+00
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 3.39197E-02
+
+ 3. Total particle production cross sections
+
+ gamma   = 1.35331E+03    Multiplicity= 6.31356E-01
+ neutron = 2.13768E+03    Multiplicity= 9.97287E-01
+ proton  = 1.72228E-01    Multiplicity= 8.03492E-05
+ deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 3.39203E-02    Multiplicity= 1.58248E-05
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 5.61282E+00    0    2.96494E+00  0.52825
+                                 1    2.64787E+00  0.47175   3.75800E+02 sec. 
+   41  93 ( 93Nb) 2.13768E+03    0    1.91031E+03  0.89363
+                                 1    2.27377E+02  0.10637   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.72228E-01    0    1.72228E-01  1.00000
+   39  90 ( 90Y ) 3.39201E-02    0    2.99035E-02  0.88159
+                                 2    4.01654E-03  0.11841   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 5.61282E+00
+   93 2.13786E+03
+   90 3.39201E-02
+
+ Total residual production cross section:  2143.5029297
+ Non-elastic cross section              :  2143.4921875
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    5.61282E+00  (n,g)                                                     2.62100E-03
+                                                             0     2.96494E+00  0.52825
+                                                             1     2.64787E+00  0.47175   3.75800E+02 sec. 
+    1   0   0   0   0   0    2.13566E+03  (n,n')                                                    9.97283E-01
+                                                             0     1.90845E+03  0.89361
+                                                             1     2.27212E+02  0.10639   5.08700E+08 sec. 
+    0   1   0   0   0   0    1.72224E-01  (n,p)                                                     8.04229E-05
+    0   0   0   0   0   1    3.39195E-02  (n,a)                                                     1.58393E-05
+                                                             0     2.99031E-02  0.88159
+                                                             2     4.01643E-03  0.11841   1.14800E+04 sec. 
+
+ Absorption cross section                 :     5.81896
+
+ Sum over exclusive channel cross sections:  2141.48267
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     2.02023
+ Total                                    :  2143.50293
+ Non-elastic cross section                :  2143.49219
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0003.000ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0003.000ang.L01
+file: nn0003.000ang.L02
+file: nn0003.000ang.L03
+file: nn0003.000ang.L04
+file: nn0003.000ang.L05
+file: nn0003.000ang.L06
+file: nn0003.000ang.L07
+file: nn0003.000ang.L08
+file: nn0003.000ang.L09
+file: nn0003.000ang.L10
+file: nn0003.000ang.L11
+file: nn0003.000ang.L12
+file: nn0003.000ang.L13
+file: nn0003.000ang.L14
+file: nn0003.000ang.L15
+file: nn0003.000ang.L16
+file: nn0003.000ang.L17
+file: nn0003.000ang.L18
+file: nn0003.000ang.L19
+file: nn0003.000ang.L20
+file: nn0003.000ang.L21
+file: nn0003.000ang.L22
+file: nn0003.000ang.L23
+file: nn0003.000ang.L24
+file: nn0003.000ang.L25
+file: nn0003.000ang.L26
+file: nn0003.000ang.L27
+file: nn0003.000ang.L28
+file: nn0003.000ang.L29
+file: nn0003.000ang.L30
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0003.000ang.L00
+file: ng0003.000ang.L01
+file: ng0003.000ang.L02
+file: ng0003.000ang.L03
+file: ng0003.000ang.L04
+file: ng0003.000ang.L05
+file: ng0003.000ang.L06
+file: ng0003.000ang.L07
+file: ng0003.000ang.L08
+file: ng0003.000ang.L09
+file: ng0003.000ang.L10
+file: ng0003.000ang.L11
+file: ng0003.000ang.L12
+file: ng0003.000ang.L13
+file: ng0003.000ang.L14
+file: ng0003.000ang.L15
+file: ng0003.000ang.L16
+file: ng0003.000ang.L17
+file: ng0003.000ang.L18
+file: ng0003.000ang.L19
+file: ng0003.000ang.L20
+file: ng0003.000ang.L21
+file: ng0003.000ang.L22
+file: ng0003.000ang.L23
+file: ng0003.000ang.L24
+file: ng0003.000ang.L25
+file: ng0003.000ang.L26
+file: ng0003.000ang.L27
+file: ng0003.000ang.L28
+file: ng0003.000ang.L29
+file: ng0003.000ang.L30
+
+ 8c2. (n,p) angular distributions
+file: np0003.000ang.L00
+file: np0003.000ang.L01
+file: np0003.000ang.L02
+file: np0003.000ang.L03
+file: np0003.000ang.L04
+file: np0003.000ang.L05
+file: np0003.000ang.L06
+file: np0003.000ang.L07
+file: np0003.000ang.L08
+file: np0003.000ang.L09
+file: np0003.000ang.L10
+file: np0003.000ang.L11
+file: np0003.000ang.L12
+file: np0003.000ang.L13
+file: np0003.000ang.L14
+file: np0003.000ang.L15
+file: np0003.000ang.L16
+file: np0003.000ang.L17
+file: np0003.000ang.L18
+file: np0003.000ang.L19
+file: np0003.000ang.L20
+file: np0003.000ang.L21
+file: np0003.000ang.L22
+file: np0003.000ang.L23
+file: np0003.000ang.L24
+file: np0003.000ang.L25
+file: np0003.000ang.L26
+file: np0003.000ang.L27
+file: np0003.000ang.L28
+file: np0003.000ang.L29
+file: np0003.000ang.L30
+
+ 8c2. (n,a) angular distributions
+file: na0003.000ang.L00
+file: na0003.000ang.L01
+file: na0003.000ang.L02
+file: na0003.000ang.L03
+file: na0003.000ang.L04
+file: na0003.000ang.L05
+file: na0003.000ang.L06
+file: na0003.000ang.L07
+file: na0003.000ang.L08
+file: na0003.000ang.L09
+file: na0003.000ang.L10
+file: na0003.000ang.L11
+file: na0003.000ang.L12
+file: na0003.000ang.L13
+file: na0003.000ang.L14
+file: na0003.000ang.L15
+file: na0003.000ang.L16
+file: na0003.000ang.L17
+file: na0003.000ang.L18
+file: na0003.000ang.L19
+file: na0003.000ang.L20
+file: na0003.000ang.L21
+file: na0003.000ang.L22
+file: na0003.000ang.L23
+file: na0003.000ang.L24
+file: na0003.000ang.L25
+file: na0003.000ang.L26
+file: na0003.000ang.L27
+file: na0003.000ang.L28
+file: na0003.000ang.L29
+file: na0003.000ang.L30
+
+ ########## RESULTS FOR E=   4.00000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : y
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   4.00000 ###########
+
+ Center-of-mass energy:    3.957
+
+ 1. Total (binary) cross sections
+
+ Total           = 3.78983E+03
+   Shape elastic   = 1.79537E+03
+   Reaction        = 1.99446E+03
+     Compound elastic= 3.06975E+01
+     Non-elastic     = 1.96376E+03
+       Direct          = 1.15551E+02
+       Pre-equilibrium = 3.71348E+01
+       Giant resonance = 2.12341E+01
+       Compound non-el = 1.78984E+03
+     Total elastic   = 1.82607E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 6.59365E+00
+ neutron = 1.95638E+03
+ proton  = 6.72486E-01
+ deuteron= 0.00000E+00
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 1.23145E-01
+
+ 3. Total particle production cross sections
+
+ gamma   = 1.88913E+03    Multiplicity= 9.61993E-01
+ neutron = 1.95896E+03    Multiplicity= 9.97556E-01
+ proton  = 6.72510E-01    Multiplicity= 3.42460E-04
+ deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 1.23148E-01    Multiplicity= 6.27104E-05
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 4.00715E+00    0    2.13243E+00  0.53216
+                                 1    1.87472E+00  0.46784   3.75800E+02 sec. 
+   41  93 ( 93Nb) 1.95898E+03    0    1.71905E+03  0.87753
+                                 1    2.39924E+02  0.12247   5.08700E+08 sec. 
+   40  93 ( 93Zr) 6.72508E-01    0    6.72508E-01  1.00000
+   39  90 ( 90Y ) 1.23148E-01    0    9.54759E-02  0.77530
+                                 2    2.76717E-02  0.22470   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 4.00715E+00
+   93 1.95965E+03
+   90 1.23148E-01
+
+ Total residual production cross section:  1963.7797852
+ Non-elastic cross section              :  1963.7624512
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    4.00715E+00  (n,g)                                                     2.04322E-03
+                                                             0     2.13243E+00  0.53216
+                                                             1     1.87472E+00  0.46784   3.75800E+02 sec. 
+    1   0   0   0   0   0    1.95639E+03  (n,n')                                                    9.97551E-01
+                                                             0     1.71674E+03  0.87751
+                                                             1     2.39646E+02  0.12249   5.08700E+08 sec. 
+    0   1   0   0   0   0    6.72484E-01  (n,p)                                                     3.42895E-04
+    0   0   0   0   0   1    1.23144E-01  (n,a)                                                     6.27904E-05
+                                                             0     9.54732E-02  0.77530
+                                                             2     2.76709E-02  0.22470   1.14800E+04 sec. 
+
+ Absorption cross section                 :     4.80278
+
+ Sum over exclusive channel cross sections:  1961.19336
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     2.58651
+ Total                                    :  1963.77991
+ Non-elastic cross section                :  1963.76245
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0004.000ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0004.000ang.L01
+file: nn0004.000ang.L02
+file: nn0004.000ang.L03
+file: nn0004.000ang.L04
+file: nn0004.000ang.L05
+file: nn0004.000ang.L06
+file: nn0004.000ang.L07
+file: nn0004.000ang.L08
+file: nn0004.000ang.L09
+file: nn0004.000ang.L10
+file: nn0004.000ang.L11
+file: nn0004.000ang.L12
+file: nn0004.000ang.L13
+file: nn0004.000ang.L14
+file: nn0004.000ang.L15
+file: nn0004.000ang.L16
+file: nn0004.000ang.L17
+file: nn0004.000ang.L18
+file: nn0004.000ang.L19
+file: nn0004.000ang.L20
+file: nn0004.000ang.L21
+file: nn0004.000ang.L22
+file: nn0004.000ang.L23
+file: nn0004.000ang.L24
+file: nn0004.000ang.L25
+file: nn0004.000ang.L26
+file: nn0004.000ang.L27
+file: nn0004.000ang.L28
+file: nn0004.000ang.L29
+file: nn0004.000ang.L30
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0004.000ang.L00
+file: ng0004.000ang.L01
+file: ng0004.000ang.L02
+file: ng0004.000ang.L03
+file: ng0004.000ang.L04
+file: ng0004.000ang.L05
+file: ng0004.000ang.L06
+file: ng0004.000ang.L07
+file: ng0004.000ang.L08
+file: ng0004.000ang.L09
+file: ng0004.000ang.L10
+file: ng0004.000ang.L11
+file: ng0004.000ang.L12
+file: ng0004.000ang.L13
+file: ng0004.000ang.L14
+file: ng0004.000ang.L15
+file: ng0004.000ang.L16
+file: ng0004.000ang.L17
+file: ng0004.000ang.L18
+file: ng0004.000ang.L19
+file: ng0004.000ang.L20
+file: ng0004.000ang.L21
+file: ng0004.000ang.L22
+file: ng0004.000ang.L23
+file: ng0004.000ang.L24
+file: ng0004.000ang.L25
+file: ng0004.000ang.L26
+file: ng0004.000ang.L27
+file: ng0004.000ang.L28
+file: ng0004.000ang.L29
+file: ng0004.000ang.L30
+
+ 8c2. (n,p) angular distributions
+file: np0004.000ang.L00
+file: np0004.000ang.L01
+file: np0004.000ang.L02
+file: np0004.000ang.L03
+file: np0004.000ang.L04
+file: np0004.000ang.L05
+file: np0004.000ang.L06
+file: np0004.000ang.L07
+file: np0004.000ang.L08
+file: np0004.000ang.L09
+file: np0004.000ang.L10
+file: np0004.000ang.L11
+file: np0004.000ang.L12
+file: np0004.000ang.L13
+file: np0004.000ang.L14
+file: np0004.000ang.L15
+file: np0004.000ang.L16
+file: np0004.000ang.L17
+file: np0004.000ang.L18
+file: np0004.000ang.L19
+file: np0004.000ang.L20
+file: np0004.000ang.L21
+file: np0004.000ang.L22
+file: np0004.000ang.L23
+file: np0004.000ang.L24
+file: np0004.000ang.L25
+file: np0004.000ang.L26
+file: np0004.000ang.L27
+file: np0004.000ang.L28
+file: np0004.000ang.L29
+file: np0004.000ang.L30
+
+ 8c2. (n,a) angular distributions
+file: na0004.000ang.L00
+file: na0004.000ang.L01
+file: na0004.000ang.L02
+file: na0004.000ang.L03
+file: na0004.000ang.L04
+file: na0004.000ang.L05
+file: na0004.000ang.L06
+file: na0004.000ang.L07
+file: na0004.000ang.L08
+file: na0004.000ang.L09
+file: na0004.000ang.L10
+file: na0004.000ang.L11
+file: na0004.000ang.L12
+file: na0004.000ang.L13
+file: na0004.000ang.L14
+file: na0004.000ang.L15
+file: na0004.000ang.L16
+file: na0004.000ang.L17
+file: na0004.000ang.L18
+file: na0004.000ang.L19
+file: na0004.000ang.L20
+file: na0004.000ang.L21
+file: na0004.000ang.L22
+file: na0004.000ang.L23
+file: na0004.000ang.L24
+file: na0004.000ang.L25
+file: na0004.000ang.L26
+file: na0004.000ang.L27
+file: na0004.000ang.L28
+file: na0004.000ang.L29
+file: na0004.000ang.L30
+
+ ########## RESULTS FOR E=   5.00000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : y
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   5.00000 ###########
+
+ Center-of-mass energy:    4.946
+
+ 1. Total (binary) cross sections
+
+ Total           = 3.78377E+03
+   Shape elastic   = 1.94612E+03
+   Reaction        = 1.83765E+03
+     Compound elastic= 9.27372E+00
+     Non-elastic     = 1.82838E+03
+       Direct          = 9.18502E+01
+       Pre-equilibrium = 6.03282E+01
+       Giant resonance = 2.39471E+01
+       Compound non-el = 1.65225E+03
+     Total elastic   = 1.95539E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 6.10057E+00
+ neutron = 1.82021E+03
+ proton  = 1.66812E+00
+ deuteron= 5.46088E-13
+ triton  = 0.00000E+00
+ helium-3= 0.00000E+00
+ alpha   = 4.02549E-01
+
+ 3. Total particle production cross sections
+
+ gamma   = 2.28574E+03    Multiplicity= 1.25015E+00
+ neutron = 1.82333E+03    Multiplicity= 9.97239E-01
+ proton  = 1.66821E+00    Multiplicity= 9.12402E-04
+ deuteron= 5.46088E-13    Multiplicity= 2.98674E-16
+ triton  = 0.00000E+00    Multiplicity= 0.00000E+00
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 4.02564E-01    Multiplicity= 2.20176E-04
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 2.98175E+00    0    1.60942E+00  0.53976
+                                 1    1.37233E+00  0.46024   3.75800E+02 sec. 
+   41  93 ( 93Nb) 1.82335E+03    0    1.58239E+03  0.86785
+                                 1    2.40963E+02  0.13215   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.66821E+00    0    1.66821E+00  1.00000
+   39  90 ( 90Y ) 4.02563E-01    0    2.84218E-01  0.70602
+                                 2    1.18345E-01  0.29398   1.14800E+04 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 2.98175E+00
+   93 1.82502E+03
+   90 4.02563E-01
+
+ Total residual production cross section:  1828.4023438
+ Non-elastic cross section              :  1828.3763428
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    2.98175E+00  (n,g)                                                     1.63358E-03
+                                                             0     1.60942E+00  0.53976
+                                                             1     1.37233E+00  0.46024   3.75800E+02 sec. 
+    1   0   0   0   0   0    1.82023E+03  (n,n')                                                    9.97232E-01
+                                                             0     1.57965E+03  0.86783
+                                                             1     2.40578E+02  0.13217   5.08700E+08 sec. 
+    0   1   0   0   0   0    1.66812E+00  (n,p)                                                     9.13896E-04
+    0   0   0   0   0   1    4.02548E-01  (n,a)                                                     2.20540E-04
+                                                             0     2.84208E-01  0.70602
+                                                             2     1.18340E-01  0.29398   1.14800E+04 sec. 
+
+ Absorption cross section                 :     5.05241
+
+ Sum over exclusive channel cross sections:  1825.28333
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     3.11883
+ Total                                    :  1828.40210
+ Non-elastic cross section                :  1828.37634
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0005.000ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0005.000ang.L01
+file: nn0005.000ang.L02
+file: nn0005.000ang.L03
+file: nn0005.000ang.L04
+file: nn0005.000ang.L05
+file: nn0005.000ang.L06
+file: nn0005.000ang.L07
+file: nn0005.000ang.L08
+file: nn0005.000ang.L09
+file: nn0005.000ang.L10
+file: nn0005.000ang.L11
+file: nn0005.000ang.L12
+file: nn0005.000ang.L13
+file: nn0005.000ang.L14
+file: nn0005.000ang.L15
+file: nn0005.000ang.L16
+file: nn0005.000ang.L17
+file: nn0005.000ang.L18
+file: nn0005.000ang.L19
+file: nn0005.000ang.L20
+file: nn0005.000ang.L21
+file: nn0005.000ang.L22
+file: nn0005.000ang.L23
+file: nn0005.000ang.L24
+file: nn0005.000ang.L25
+file: nn0005.000ang.L26
+file: nn0005.000ang.L27
+file: nn0005.000ang.L28
+file: nn0005.000ang.L29
+file: nn0005.000ang.L30
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0005.000ang.L00
+file: ng0005.000ang.L01
+file: ng0005.000ang.L02
+file: ng0005.000ang.L03
+file: ng0005.000ang.L04
+file: ng0005.000ang.L05
+file: ng0005.000ang.L06
+file: ng0005.000ang.L07
+file: ng0005.000ang.L08
+file: ng0005.000ang.L09
+file: ng0005.000ang.L10
+file: ng0005.000ang.L11
+file: ng0005.000ang.L12
+file: ng0005.000ang.L13
+file: ng0005.000ang.L14
+file: ng0005.000ang.L15
+file: ng0005.000ang.L16
+file: ng0005.000ang.L17
+file: ng0005.000ang.L18
+file: ng0005.000ang.L19
+file: ng0005.000ang.L20
+file: ng0005.000ang.L21
+file: ng0005.000ang.L22
+file: ng0005.000ang.L23
+file: ng0005.000ang.L24
+file: ng0005.000ang.L25
+file: ng0005.000ang.L26
+file: ng0005.000ang.L27
+file: ng0005.000ang.L28
+file: ng0005.000ang.L29
+file: ng0005.000ang.L30
+
+ 8c2. (n,p) angular distributions
+file: np0005.000ang.L00
+file: np0005.000ang.L01
+file: np0005.000ang.L02
+file: np0005.000ang.L03
+file: np0005.000ang.L04
+file: np0005.000ang.L05
+file: np0005.000ang.L06
+file: np0005.000ang.L07
+file: np0005.000ang.L08
+file: np0005.000ang.L09
+file: np0005.000ang.L10
+file: np0005.000ang.L11
+file: np0005.000ang.L12
+file: np0005.000ang.L13
+file: np0005.000ang.L14
+file: np0005.000ang.L15
+file: np0005.000ang.L16
+file: np0005.000ang.L17
+file: np0005.000ang.L18
+file: np0005.000ang.L19
+file: np0005.000ang.L20
+file: np0005.000ang.L21
+file: np0005.000ang.L22
+file: np0005.000ang.L23
+file: np0005.000ang.L24
+file: np0005.000ang.L25
+file: np0005.000ang.L26
+file: np0005.000ang.L27
+file: np0005.000ang.L28
+file: np0005.000ang.L29
+file: np0005.000ang.L30
+
+ 8c2. (n,d) angular distributions
+file: nd0005.000ang.L00
+file: nd0005.000ang.L01
+
+ 8c2. (n,a) angular distributions
+file: na0005.000ang.L00
+file: na0005.000ang.L01
+file: na0005.000ang.L02
+file: na0005.000ang.L03
+file: na0005.000ang.L04
+file: na0005.000ang.L05
+file: na0005.000ang.L06
+file: na0005.000ang.L07
+file: na0005.000ang.L08
+file: na0005.000ang.L09
+file: na0005.000ang.L10
+file: na0005.000ang.L11
+file: na0005.000ang.L12
+file: na0005.000ang.L13
+file: na0005.000ang.L14
+file: na0005.000ang.L15
+file: na0005.000ang.L16
+file: na0005.000ang.L17
+file: na0005.000ang.L18
+file: na0005.000ang.L19
+file: na0005.000ang.L20
+file: na0005.000ang.L21
+file: na0005.000ang.L22
+file: na0005.000ang.L23
+file: na0005.000ang.L24
+file: na0005.000ang.L25
+file: na0005.000ang.L26
+file: na0005.000ang.L27
+file: na0005.000ang.L28
+file: na0005.000ang.L29
+file: na0005.000ang.L30
+
+ ########## RESULTS FOR E=   8.00000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : y
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : y
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=   8.00000 ###########
+
+ Center-of-mass energy:    7.914
+
+ 1. Total (binary) cross sections
+
+ Total           = 4.18200E+03
+   Shape elastic   = 2.37529E+03
+   Reaction        = 1.80671E+03
+     Compound elastic= 4.11402E-01
+     Non-elastic     = 1.80630E+03
+       Direct          = 6.45717E+01
+       Pre-equilibrium = 1.54435E+02
+       Giant resonance = 4.88845E+01
+       Compound non-el = 1.53841E+03
+     Total elastic   = 2.37570E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 5.30762E+00
+ neutron = 1.78816E+03
+ proton  = 8.36034E+00
+ deuteron= 6.74340E-03
+ triton  = 4.66581E-12
+ helium-3= 0.00000E+00
+ alpha   = 4.48311E+00
+
+ 3. Total particle production cross sections
+
+ gamma   = 3.45329E+03    Multiplicity= 1.91180E+00
+ neutron = 1.79220E+03    Multiplicity= 9.92195E-01
+ proton  = 8.36894E+00    Multiplicity= 4.63320E-03
+ deuteron= 6.74340E-03    Multiplicity= 3.73327E-06
+ triton  = 4.66581E-12    Multiplicity= 2.58308E-15
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 4.48544E+00    Multiplicity= 2.48322E-03
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 1.27025E+00    0    6.60614E-01  0.52006
+                                 1    6.09641E-01  0.47994   3.75800E+02 sec. 
+   41  93 ( 93Nb) 1.79226E+03    0    1.56396E+03  0.87262
+                                 1    2.28301E+02  0.12738   5.08700E+08 sec. 
+   40  93 ( 93Zr) 8.36133E+00    0    8.36133E+00  1.00000
+   40  92 ( 92Zr) 1.45101E-02    0    1.45101E-02  1.00000
+   39  90 ( 90Y ) 4.48334E+00    0    2.47408E+00  0.55184
+                                 2    2.00926E+00  0.44816   1.14800E+04 sec. 
+   39  89 ( 89Y ) 2.09698E-03    0    2.09698E-03  1.00000
+                                 1    0.00000E+00  0.00000   1.56600E+01 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 1.27025E+00
+   93 1.80062E+03
+   92 1.45101E-02
+   90 4.48334E+00
+   89 2.09698E-03
+
+ Total residual production cross section:  1806.3905029
+ Non-elastic cross section              :  1806.2985840
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    1.27025E+00  (n,g)                                                     7.04776E-04
+                                                             0     6.60614E-01  0.52006
+                                                             1     6.09641E-01  0.47994   3.75800E+02 sec. 
+    1   0   0   0   0   0    1.78822E+03  (n,n')                                                    9.92160E-01
+                                                             0     1.56043E+03  0.87261
+                                                             1     2.27798E+02  0.12739   5.08700E+08 sec. 
+    0   1   0   0   0   0    8.36043E+00  (n,p)                                                     4.63862E-03
+    0   0   1   0   0   0    6.74340E-03  (n,d)                                                     3.74144E-06
+    0   0   0   0   0   1    4.48310E+00  (n,a)                                                     2.48736E-03
+                                                             0     2.47393E+00  0.55183
+                                                             2     2.00917E+00  0.44817   1.14800E+04 sec. 
+    1   1   0   0   0   0    7.76667E-03  (n,np)                                                    4.30918E-06
+    1   0   0   0   0   1    2.09698E-03  (n,na)                                                    1.16347E-06
+                                                             0     2.09698E-03  1.00000
+                                                             1     0.00000E+00  0.00000   1.56600E+01 sec. 
+
+ Absorption cross section                 :    14.12052
+
+ Sum over exclusive channel cross sections:  1802.35339
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     4.03737
+ Total                                    :  1806.39075
+ Non-elastic cross section                :  1806.29858
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0008.000ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0008.000ang.L01
+file: nn0008.000ang.L02
+file: nn0008.000ang.L03
+file: nn0008.000ang.L04
+file: nn0008.000ang.L05
+file: nn0008.000ang.L06
+file: nn0008.000ang.L07
+file: nn0008.000ang.L08
+file: nn0008.000ang.L09
+file: nn0008.000ang.L10
+file: nn0008.000ang.L11
+file: nn0008.000ang.L12
+file: nn0008.000ang.L13
+file: nn0008.000ang.L14
+file: nn0008.000ang.L15
+file: nn0008.000ang.L16
+file: nn0008.000ang.L17
+file: nn0008.000ang.L18
+file: nn0008.000ang.L19
+file: nn0008.000ang.L20
+file: nn0008.000ang.L21
+file: nn0008.000ang.L22
+file: nn0008.000ang.L23
+file: nn0008.000ang.L24
+file: nn0008.000ang.L25
+file: nn0008.000ang.L26
+file: nn0008.000ang.L27
+file: nn0008.000ang.L28
+file: nn0008.000ang.L29
+file: nn0008.000ang.L30
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0008.000ang.L00
+file: ng0008.000ang.L01
+file: ng0008.000ang.L02
+file: ng0008.000ang.L03
+file: ng0008.000ang.L04
+file: ng0008.000ang.L05
+file: ng0008.000ang.L06
+file: ng0008.000ang.L07
+file: ng0008.000ang.L08
+file: ng0008.000ang.L09
+file: ng0008.000ang.L10
+file: ng0008.000ang.L11
+file: ng0008.000ang.L12
+file: ng0008.000ang.L13
+file: ng0008.000ang.L14
+file: ng0008.000ang.L15
+file: ng0008.000ang.L16
+file: ng0008.000ang.L17
+file: ng0008.000ang.L18
+file: ng0008.000ang.L19
+file: ng0008.000ang.L20
+file: ng0008.000ang.L21
+file: ng0008.000ang.L22
+file: ng0008.000ang.L23
+file: ng0008.000ang.L24
+file: ng0008.000ang.L25
+file: ng0008.000ang.L26
+file: ng0008.000ang.L27
+file: ng0008.000ang.L28
+file: ng0008.000ang.L29
+file: ng0008.000ang.L30
+
+ 8c2. (n,p) angular distributions
+file: np0008.000ang.L00
+file: np0008.000ang.L01
+file: np0008.000ang.L02
+file: np0008.000ang.L03
+file: np0008.000ang.L04
+file: np0008.000ang.L05
+file: np0008.000ang.L06
+file: np0008.000ang.L07
+file: np0008.000ang.L08
+file: np0008.000ang.L09
+file: np0008.000ang.L10
+file: np0008.000ang.L11
+file: np0008.000ang.L12
+file: np0008.000ang.L13
+file: np0008.000ang.L14
+file: np0008.000ang.L15
+file: np0008.000ang.L16
+file: np0008.000ang.L17
+file: np0008.000ang.L18
+file: np0008.000ang.L19
+file: np0008.000ang.L20
+file: np0008.000ang.L21
+file: np0008.000ang.L22
+file: np0008.000ang.L23
+file: np0008.000ang.L24
+file: np0008.000ang.L25
+file: np0008.000ang.L26
+file: np0008.000ang.L27
+file: np0008.000ang.L28
+file: np0008.000ang.L29
+file: np0008.000ang.L30
+
+ 8c2. (n,d) angular distributions
+file: nd0008.000ang.L00
+file: nd0008.000ang.L01
+file: nd0008.000ang.L02
+file: nd0008.000ang.L03
+file: nd0008.000ang.L04
+file: nd0008.000ang.L05
+file: nd0008.000ang.L06
+file: nd0008.000ang.L07
+file: nd0008.000ang.L08
+file: nd0008.000ang.L09
+file: nd0008.000ang.L10
+file: nd0008.000ang.L11
+file: nd0008.000ang.L12
+file: nd0008.000ang.L13
+file: nd0008.000ang.L14
+file: nd0008.000ang.L15
+file: nd0008.000ang.L16
+file: nd0008.000ang.L17
+file: nd0008.000ang.L18
+file: nd0008.000ang.L19
+file: nd0008.000ang.L20
+file: nd0008.000ang.L21
+file: nd0008.000ang.L22
+file: nd0008.000ang.L23
+file: nd0008.000ang.L24
+file: nd0008.000ang.L25
+file: nd0008.000ang.L26
+file: nd0008.000ang.L27
+file: nd0008.000ang.L28
+file: nd0008.000ang.L29
+file: nd0008.000ang.L30
+
+ 8c2. (n,t) angular distributions
+file: nt0008.000ang.L00
+file: nt0008.000ang.L01
+file: nt0008.000ang.L02
+
+ 8c2. (n,a) angular distributions
+file: na0008.000ang.L00
+file: na0008.000ang.L01
+file: na0008.000ang.L02
+file: na0008.000ang.L03
+file: na0008.000ang.L04
+file: na0008.000ang.L05
+file: na0008.000ang.L06
+file: na0008.000ang.L07
+file: na0008.000ang.L08
+file: na0008.000ang.L09
+file: na0008.000ang.L10
+file: na0008.000ang.L11
+file: na0008.000ang.L12
+file: na0008.000ang.L13
+file: na0008.000ang.L14
+file: na0008.000ang.L15
+file: na0008.000ang.L16
+file: na0008.000ang.L17
+file: na0008.000ang.L18
+file: na0008.000ang.L19
+file: na0008.000ang.L20
+file: na0008.000ang.L21
+file: na0008.000ang.L22
+file: na0008.000ang.L23
+file: na0008.000ang.L24
+file: na0008.000ang.L25
+file: na0008.000ang.L26
+file: na0008.000ang.L27
+file: na0008.000ang.L28
+file: na0008.000ang.L29
+file: na0008.000ang.L30
+
+ ########## RESULTS FOR E=  10.00000 ##########
+
+ Energy dependent input flags
+
+ Width fluctuations (flagwidth)            : n
+ Unresolved resonance parameters (flagurr) : n
+ Preequilibrium (flagpreeq)                : y
+ Multiple preequilibrium (flagmulpre)      : n
+ Number of continuum excitation energy bins: 20
+
+ ########### REACTION SUMMARY FOR E=  10.00000 ###########
+
+ Center-of-mass energy:    9.892
+
+ 1. Total (binary) cross sections
+
+ Total           = 4.21191E+03
+   Shape elastic   = 2.42446E+03
+   Reaction        = 1.78745E+03
+     Compound elastic= 4.08964E-02
+     Non-elastic     = 1.78741E+03
+       Direct          = 6.12521E+01
+       Pre-equilibrium = 2.29993E+02
+       Giant resonance = 5.50624E+01
+       Compound non-el = 1.44110E+03
+     Total elastic   = 2.42450E+03
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+ gamma   = 4.57624E+00
+ neutron = 1.75371E+03
+ proton  = 1.66664E+01
+ deuteron= 3.02105E-01
+ triton  = 2.81952E-05
+ helium-3= 0.00000E+00
+ alpha   = 1.21573E+01
+
+ 3. Total particle production cross sections
+
+ gamma   = 2.42842E+03    Multiplicity= 1.35862E+00
+ neutron = 2.37361E+03    Multiplicity= 1.32796E+00
+ proton  = 1.77980E+01    Multiplicity= 9.95742E-03
+ deuteron= 3.02106E-01    Multiplicity= 1.69019E-04
+ triton  = 2.81953E-05    Multiplicity= 1.57744E-08
+ helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
+ alpha   = 1.22588E+01    Multiplicity= 6.85841E-03
+
+ 4. Residual production cross sections
+
+   a. Per isotope
+
+   Z   A  nuclide    total     level   isomeric    isomeric    lifetime
+                 cross section       cross section  ratio
+
+   41  94 ( 94Nb) 1.19724E+00    0    5.04891E-01  0.42171
+                                 1    6.92347E-01  0.57829   3.75800E+02 sec. 
+   41  93 ( 93Nb) 1.13956E+03    0    9.96350E+02  0.87433
+                                 1    1.43208E+02  0.12567   5.08700E+08 sec. 
+   40  93 ( 93Zr) 1.65518E+01    0    1.65518E+01  1.00000
+   41  92 ( 92Nb) 6.16400E+02    0    4.21008E+02  0.68301
+                                 1    1.95392E+02  0.31699   8.77000E+05 sec. 
+   40  92 ( 92Zr) 1.54941E+00    0    1.54941E+00  1.00000
+   39  90 ( 90Y ) 1.21487E+01    0    5.94522E+00  0.48937
+                                 2    6.20346E+00  0.51063   1.14800E+04 sec. 
+   39  89 ( 89Y ) 1.10100E-01    0    9.13307E-02  0.82952
+                                 1    1.87695E-02  0.17048   1.56600E+01 sec. 
+
+   b. Per mass
+
+   A  cross section
+
+   94 1.19724E+00
+   93 1.15611E+03
+   92 6.17949E+02
+   90 1.21487E+01
+   89 1.10100E-01
+
+ Total residual production cross section:  1787.5158691
+ Non-elastic cross section              :  1787.4090576
+
+ 6. Exclusive cross sections
+
+ 6a. Total exclusive cross sections 
+
+     Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
+    n   p   d   t   h   a                                        cross section   ratio
+    0   0   0   0   0   0    1.19724E+00  (n,g)                                                     6.71046E-04
+                                                             0     5.04891E-01  0.42171
+                                                             1     6.92347E-01  0.57829   3.75800E+02 sec. 
+    1   0   0   0   0   0    1.13619E+03  (n,n')                                                    6.36827E-01
+                                                             0     9.93402E+02  0.87433
+                                                             1     1.42784E+02  0.12567   5.08700E+08 sec. 
+    0   1   0   0   0   0    1.65500E+01  (n,p)                                                     9.27620E-03
+    0   0   1   0   0   0    3.02103E-01  (n,d)                                                     1.69327E-04
+    0   0   0   1   0   0    2.77855E-05  (n,t)                                                     1.55736E-08
+    0   0   0   0   0   1    1.21481E+01  (n,a)                                                     6.80898E-03
+                                                             0     5.94491E+00  0.48937
+                                                             2     6.20323E+00  0.51063   1.14800E+04 sec. 
+    2   0   0   0   0   0    6.16395E+02  (n,2n)                                                    3.45487E-01
+                                                             0     4.21004E+02  0.68301
+                                                             1     1.95391E+02  0.31699   8.77000E+05 sec. 
+    1   1   0   0   0   0    1.24725E+00  (n,np)                                                    6.99079E-04
+    1   0   0   0   0   1    1.10095E-01  (n,na)                                                    6.17078E-05
+                                                             0     9.13261E-02  0.82952
+                                                             1     1.87691E-02  0.17048   1.56600E+01 sec. 
+
+ Absorption cross section                 :    30.19752
+
+ Sum over exclusive channel cross sections:  1784.13672
+ (n,gn) + (n,gp) +...(n,ga) cross sections:     3.37901
+ Total                                    :  1787.51575
+ Non-elastic cross section                :  1787.40906
+
+ 8. Discrete state angular distributions
+
+ 8a2. Elastic scattering angular distribution
+
+file: nn0010.000ang.L00
+
+ 8b2. Inelastic angular distributions
+file: nn0010.000ang.L01
+file: nn0010.000ang.L02
+file: nn0010.000ang.L03
+file: nn0010.000ang.L04
+file: nn0010.000ang.L05
+file: nn0010.000ang.L06
+file: nn0010.000ang.L07
+file: nn0010.000ang.L08
+file: nn0010.000ang.L09
+file: nn0010.000ang.L10
+file: nn0010.000ang.L11
+file: nn0010.000ang.L12
+file: nn0010.000ang.L13
+file: nn0010.000ang.L14
+file: nn0010.000ang.L15
+file: nn0010.000ang.L16
+file: nn0010.000ang.L17
+file: nn0010.000ang.L18
+file: nn0010.000ang.L19
+file: nn0010.000ang.L20
+file: nn0010.000ang.L21
+file: nn0010.000ang.L22
+file: nn0010.000ang.L23
+file: nn0010.000ang.L24
+file: nn0010.000ang.L25
+file: nn0010.000ang.L26
+file: nn0010.000ang.L27
+file: nn0010.000ang.L28
+file: nn0010.000ang.L29
+file: nn0010.000ang.L30
+
+ 8c. Angular distributions for other reactions
+
+ 8c2. (n,g) angular distributions
+file: ng0010.000ang.L00
+file: ng0010.000ang.L01
+file: ng0010.000ang.L02
+file: ng0010.000ang.L03
+file: ng0010.000ang.L04
+file: ng0010.000ang.L05
+file: ng0010.000ang.L06
+file: ng0010.000ang.L07
+file: ng0010.000ang.L08
+file: ng0010.000ang.L09
+file: ng0010.000ang.L10
+file: ng0010.000ang.L11
+file: ng0010.000ang.L12
+file: ng0010.000ang.L13
+file: ng0010.000ang.L14
+file: ng0010.000ang.L15
+file: ng0010.000ang.L16
+file: ng0010.000ang.L17
+file: ng0010.000ang.L18
+file: ng0010.000ang.L19
+file: ng0010.000ang.L20
+file: ng0010.000ang.L21
+file: ng0010.000ang.L22
+file: ng0010.000ang.L23
+file: ng0010.000ang.L24
+file: ng0010.000ang.L25
+file: ng0010.000ang.L26
+file: ng0010.000ang.L27
+file: ng0010.000ang.L28
+file: ng0010.000ang.L29
+file: ng0010.000ang.L30
+
+ 8c2. (n,p) angular distributions
+file: np0010.000ang.L00
+file: np0010.000ang.L01
+file: np0010.000ang.L02
+file: np0010.000ang.L03
+file: np0010.000ang.L04
+file: np0010.000ang.L05
+file: np0010.000ang.L06
+file: np0010.000ang.L07
+file: np0010.000ang.L08
+file: np0010.000ang.L09
+file: np0010.000ang.L10
+file: np0010.000ang.L11
+file: np0010.000ang.L12
+file: np0010.000ang.L13
+file: np0010.000ang.L14
+file: np0010.000ang.L15
+file: np0010.000ang.L16
+file: np0010.000ang.L17
+file: np0010.000ang.L18
+file: np0010.000ang.L19
+file: np0010.000ang.L20
+file: np0010.000ang.L21
+file: np0010.000ang.L22
+file: np0010.000ang.L23
+file: np0010.000ang.L24
+file: np0010.000ang.L25
+file: np0010.000ang.L26
+file: np0010.000ang.L27
+file: np0010.000ang.L28
+file: np0010.000ang.L29
+file: np0010.000ang.L30
+
+ 8c2. (n,d) angular distributions
+file: nd0010.000ang.L00
+file: nd0010.000ang.L01
+file: nd0010.000ang.L02
+file: nd0010.000ang.L03
+file: nd0010.000ang.L04
+file: nd0010.000ang.L05
+file: nd0010.000ang.L06
+file: nd0010.000ang.L07
+file: nd0010.000ang.L08
+file: nd0010.000ang.L09
+file: nd0010.000ang.L10
+file: nd0010.000ang.L11
+file: nd0010.000ang.L12
+file: nd0010.000ang.L13
+file: nd0010.000ang.L14
+file: nd0010.000ang.L15
+file: nd0010.000ang.L16
+file: nd0010.000ang.L17
+file: nd0010.000ang.L18
+file: nd0010.000ang.L19
+file: nd0010.000ang.L20
+file: nd0010.000ang.L21
+file: nd0010.000ang.L22
+file: nd0010.000ang.L23
+file: nd0010.000ang.L24
+file: nd0010.000ang.L25
+file: nd0010.000ang.L26
+file: nd0010.000ang.L27
+file: nd0010.000ang.L28
+file: nd0010.000ang.L29
+file: nd0010.000ang.L30
+
+ 8c2. (n,t) angular distributions
+file: nt0010.000ang.L00
+file: nt0010.000ang.L01
+file: nt0010.000ang.L02
+file: nt0010.000ang.L03
+file: nt0010.000ang.L04
+file: nt0010.000ang.L05
+file: nt0010.000ang.L06
+file: nt0010.000ang.L07
+file: nt0010.000ang.L08
+file: nt0010.000ang.L09
+file: nt0010.000ang.L10
+file: nt0010.000ang.L11
+file: nt0010.000ang.L12
+file: nt0010.000ang.L13
+file: nt0010.000ang.L14
+file: nt0010.000ang.L15
+file: nt0010.000ang.L16
+file: nt0010.000ang.L17
+file: nt0010.000ang.L18
+file: nt0010.000ang.L19
+file: nt0010.000ang.L20
+file: nt0010.000ang.L21
+file: nt0010.000ang.L22
+file: nt0010.000ang.L23
+file: nt0010.000ang.L24
+file: nt0010.000ang.L25
+file: nt0010.000ang.L26
+file: nt0010.000ang.L27
+file: nt0010.000ang.L28
+file: nt0010.000ang.L29
+file: nt0010.000ang.L30
+
+ 8c2. (n,a) angular distributions
+file: na0010.000ang.L00
+file: na0010.000ang.L01
+file: na0010.000ang.L02
+file: na0010.000ang.L03
+file: na0010.000ang.L04
+file: na0010.000ang.L05
+file: na0010.000ang.L06
+file: na0010.000ang.L07
+file: na0010.000ang.L08
+file: na0010.000ang.L09
+file: na0010.000ang.L10
+file: na0010.000ang.L11
+file: na0010.000ang.L12
+file: na0010.000ang.L13
+file: na0010.000ang.L14
+file: na0010.000ang.L15
+file: na0010.000ang.L16
+file: na0010.000ang.L17
+file: na0010.000ang.L18
+file: na0010.000ang.L19
+file: na0010.000ang.L20
+file: na0010.000ang.L21
+file: na0010.000ang.L22
+file: na0010.000ang.L23
+file: na0010.000ang.L24
+file: na0010.000ang.L25
+file: na0010.000ang.L26
+file: na0010.000ang.L27
+file: na0010.000ang.L28
+file: na0010.000ang.L29
+file: na0010.000ang.L30
+
+ ########## EXCITATION FUNCTIONS ###########
+
+ 1. Total (binary) cross sections
+
+file: all.tot
+file: total.tot
+file: elastic.tot
+file: nonelastic.tot
+file: reaction.tot
+
+ 2. Binary non-elastic cross sections (non-exclusive)
+
+file: binary.tot
+
+ 3. Total particle production cross sections
+
+file: gprod.tot
+file: nprod.tot
+file: pprod.tot
+file: dprod.tot
+file: tprod.tot
+file: hprod.tot
+file: aprod.tot
+
+ 4. Residual production cross sections
+
+file: rp041094.tot
+file: rp041094.L00
+file: rp041094.L01
+file: rp041093.tot
+file: rp041093.L00
+file: rp041093.L01
+file: rp040093.tot
+file: rp041092.tot
+file: rp041092.L00
+file: rp041092.L01
+file: rp040092.tot
+file: rp039090.tot
+file: rp039090.L00
+file: rp039090.L02
+file: rp039089.tot
+file: rp039089.L00
+file: rp039089.L01
+
+ 6. Exclusive cross sections
+
+file: xs000000.tot
+file: xs100000.tot
+file: xs010000.tot
+file: xs001000.tot
+file: xs000100.tot
+file: xs000001.tot
+file: xs200000.tot
+file: xs110000.tot
+file: xs100001.tot
+
+ Execution time:  0 hours  0 minutes  6.77 seconds 
+
+ The TALYS team congratulates you with this successful calculation.

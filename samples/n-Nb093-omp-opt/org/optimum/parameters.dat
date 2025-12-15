@@ -1,0 +1,281 @@
+## header:
+##   title: Nb93(n,x) nuclear model parameters
+##   source: TALYS-2.2
+##   user: Arjan Koning
+##   date: 2025-12-15
+##   format: YANDF-0.4
+## target:
+##   Z: 41
+##   A: 93
+##   nuclide: Nb93  
+## General parameters:
+##   level density
+ldmodel        1
+colenhance     n
+alphald           0.06926
+betald            0.28277
+gammashell1       0.43309
+gammashell2       0.00000
+pairconstant     12.00000
+pshiftconstant    0.00000
+Rspincut          1.00000
+Rspincutff        4.00000
+cglobal         1.00000E-20
+pglobal         1.00000E-20
+Kph              15.00000
+## General parameters:
+##   photon strength function
+strength        9
+strengthM1      3
+xscaptherm      0.00000E+00
+levinger        6.50000E+00
+## General parameters:
+##   pre-equilibrium
+M2constant        1.00000
+M2limit           1.00000
+M2shift           1.00000
+Rpipi             1.00000
+Rnunu             1.50000
+Rpinu             1.00000
+Rnupi             1.00000
+Rgamma            2.00000
+Rspincutpreeq     1.00000
+Esurf             0.00000
+Cstrip        n   1.00000
+Cknock        n   1.00000
+Cbreak        n   1.00000
+Cstrip        p   1.00000
+Cknock        p   1.00000
+Cbreak        p   1.00000
+Cstrip        d   1.00000
+Cknock        d   1.00000
+Cbreak        d   1.00000
+Cstrip        t   1.00000
+Cknock        t   1.00000
+Cbreak        t   1.00000
+Cstrip        h   1.00000
+Cknock        h   1.00000
+Cbreak        h   1.00000
+Cstrip        a   1.00000
+Cknock        a   1.00000
+Cbreak        a   1.00000
+GMRadjustE        1.00000
+GMRadjustG        1.00000
+GMRadjustD        1.00000
+GQRadjustE        1.00000
+GQRadjustG        1.00000
+GQRadjustD        1.00000
+LEORadjustE       1.00000
+LEORadjustG       1.00000
+LEORadjustD       1.00000
+HEORadjustE       1.00000
+HEORadjustG       1.00000
+HEORadjustD       1.00000
+## General parameters:
+##   fission
+fismodel       6
+Cnubar1           1.00000
+Cnubar2           1.00000
+Tmadjust          1.00000
+Fsadjust          1.00000
+Cbarrier          1.50000
+## General parameters:
+##   optical model
+deuteronomp    4
+alphaomp       6
+v1adjust      n   0.99570
+v2adjust      n   1.00384
+v3adjust      n   1.00000
+v4adjust      n   1.00000
+rvadjust      n   0.99716
+avadjust      n   0.99037
+w1adjust      n   1.00000
+w2adjust      n   1.00000
+w3adjust      n   1.00000
+w4adjust      n   1.00000
+rwadjust      n   0.99716
+awadjust      n   0.99037
+rvdadjust     n   1.03889
+avdadjust     n   0.98278
+d1adjust      n   1.08030
+d2adjust      n   1.01791
+d3adjust      n   1.06008
+rwdadjust     n   1.03889
+awdadjust     n   0.98278
+rvsoadjust    n   1.00000
+avsoadjust    n   1.00000
+vso1adjust    n   1.00000
+vso2adjust    n   1.00000
+rwsoadjust    n   1.00000
+awsoadjust    n   1.00000
+wso1adjust    n   1.00000
+wso2adjust    n   1.00000
+rcadjust      n   1.00000
+v1adjust      p   1.00000
+v2adjust      p   1.00000
+v3adjust      p   1.00000
+v4adjust      p   1.00000
+rvadjust      p   1.00000
+avadjust      p   1.00000
+w1adjust      p   1.00000
+w2adjust      p   1.00000
+w3adjust      p   1.00000
+w4adjust      p   1.00000
+rwadjust      p   1.00000
+awadjust      p   1.00000
+rvdadjust     p   1.00000
+avdadjust     p   1.00000
+d1adjust      p   1.00000
+d2adjust      p   1.00000
+d3adjust      p   1.00000
+rwdadjust     p   1.00000
+awdadjust     p   1.00000
+rvsoadjust    p   1.00000
+avsoadjust    p   1.00000
+vso1adjust    p   1.00000
+vso2adjust    p   1.00000
+rwsoadjust    p   1.00000
+awsoadjust    p   1.00000
+wso1adjust    p   1.00000
+wso2adjust    p   1.00000
+rcadjust      p   1.00000
+v1adjust      d   1.00000
+v2adjust      d   1.00000
+v3adjust      d   1.00000
+v4adjust      d   1.00000
+rvadjust      d   1.00000
+avadjust      d   1.00000
+w1adjust      d   1.00000
+w2adjust      d   1.00000
+w3adjust      d   1.00000
+w4adjust      d   1.00000
+rwadjust      d   1.00000
+awadjust      d   1.00000
+rvdadjust     d   1.00000
+avdadjust     d   1.00000
+d1adjust      d   1.00000
+d2adjust      d   1.00000
+d3adjust      d   1.00000
+rwdadjust     d   1.00000
+awdadjust     d   1.00000
+rvsoadjust    d   1.00000
+avsoadjust    d   1.00000
+vso1adjust    d   1.00000
+vso2adjust    d   1.00000
+rwsoadjust    d   1.00000
+awsoadjust    d   1.00000
+wso1adjust    d   1.00000
+wso2adjust    d   1.00000
+rcadjust      d   1.00000
+v1adjust      t   1.00000
+v2adjust      t   1.00000
+v3adjust      t   1.00000
+v4adjust      t   1.00000
+rvadjust      t   1.00000
+avadjust      t   1.00000
+w1adjust      t   1.00000
+w2adjust      t   1.00000
+w3adjust      t   1.00000
+w4adjust      t   1.00000
+rwadjust      t   1.00000
+awadjust      t   1.00000
+rvdadjust     t   1.00000
+avdadjust     t   1.00000
+d1adjust      t   1.00000
+d2adjust      t   1.00000
+d3adjust      t   1.00000
+rwdadjust     t   1.00000
+awdadjust     t   1.00000
+rvsoadjust    t   1.00000
+avsoadjust    t   1.00000
+vso1adjust    t   1.00000
+vso2adjust    t   1.00000
+rwsoadjust    t   1.00000
+awsoadjust    t   1.00000
+wso1adjust    t   1.00000
+wso2adjust    t   1.00000
+rcadjust      t   1.00000
+v1adjust      h   1.00000
+v2adjust      h   1.00000
+v3adjust      h   1.00000
+v4adjust      h   1.00000
+rvadjust      h   1.00000
+avadjust      h   1.00000
+w1adjust      h   1.00000
+w2adjust      h   1.00000
+w3adjust      h   1.00000
+w4adjust      h   1.00000
+rwadjust      h   1.00000
+awadjust      h   1.00000
+rvdadjust     h   1.00000
+avdadjust     h   1.00000
+d1adjust      h   1.00000
+d2adjust      h   1.00000
+d3adjust      h   1.00000
+rwdadjust     h   1.00000
+awdadjust     h   1.00000
+rvsoadjust    h   1.00000
+avsoadjust    h   1.00000
+vso1adjust    h   1.00000
+vso2adjust    h   1.00000
+rwsoadjust    h   1.00000
+awsoadjust    h   1.00000
+wso1adjust    h   1.00000
+wso2adjust    h   1.00000
+rcadjust      h   1.00000
+v1adjust      a   1.00000
+v2adjust      a   1.00000
+v3adjust      a   1.00000
+v4adjust      a   1.00000
+rvadjust      a   1.00000
+avadjust      a   1.00000
+w1adjust      a   1.00000
+w2adjust      a   1.00000
+w3adjust      a   1.00000
+w4adjust      a   1.00000
+rwadjust      a   1.00000
+awadjust      a   1.00000
+rvdadjust     a   1.00000
+avdadjust     a   1.00000
+d1adjust      a   1.00000
+d2adjust      a   1.00000
+d3adjust      a   1.00000
+rwdadjust     a   1.00000
+awdadjust     a   1.00000
+rvsoadjust    a   1.00000
+avsoadjust    a   1.00000
+vso1adjust    a   1.00000
+vso2adjust    a   1.00000
+rwsoadjust    a   1.00000
+awsoadjust    a   1.00000
+wso1adjust    a   1.00000
+wso2adjust    a   1.00000
+rcadjust      a   1.00000
+v1adjust      e   0.99570
+v2adjust      e   1.00384
+v3adjust      e   1.00000
+v4adjust      e   1.00000
+rvadjust      e   0.99716
+avadjust      e   0.99037
+w1adjust      e   1.00000
+w2adjust      e   1.00000
+w3adjust      e   1.00000
+w4adjust      e   1.00000
+rwadjust      e   0.99716
+awadjust      e   0.99037
+rvdadjust     e   1.03889
+avdadjust     e   0.98278
+d1adjust      e   1.08030
+d2adjust      e   1.01791
+d3adjust      e   1.06008
+rwdadjust     e   1.03889
+awdadjust     e   0.98278
+rvsoadjust    e   1.00000
+avsoadjust    e   1.00000
+vso1adjust    e   1.00000
+vso2adjust    e   1.00000
+rwsoadjust    e   1.00000
+awsoadjust    e   1.00000
+wso1adjust    e   1.00000
+wso2adjust    e   1.00000
+rcadjust      e   1.00000

@@ -1,0 +1,101 @@
+# header: 
+#   title: Nb93(n,x) parameter covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# covariance: 
+#   class: covariance: 
+#   number of accepted runs: 20
+#   quantity: 
+#     type: parameter covariance matrix
+#   datablock: 
+#     columns: 6
+#     entries: 81
+##  parameter_1                   parameter_2                   Covariance     Correlation
+##      []             []             []             []             []             []
+rvadjust n                    rvadjust n                       1.251587E-04   9.999999E-01
+rvadjust n                    avadjust n                       2.810332E-05   2.896774E-01
+rvadjust n                    v1adjust n                       4.412989E-05   1.931661E-01
+rvadjust n                    v2adjust n                      -1.926477E-05  -1.174878E-01
+rvadjust n                    rwdadjust n                      1.785414E-04   3.090217E-01
+rvadjust n                    awdadjust n                      9.161466E-05   3.037188E-01
+rvadjust n                    aadjust  41  94                  1.413180E-04   1.868758E-01
+rvadjust n                    aadjust  41  93                  5.933639E-05   7.375718E-02
+rvadjust n                    aadjust  40  93                  1.096797E-04   1.503296E-01
+avadjust n                    rvadjust n                       2.810332E-05   2.896774E-01
+avadjust n                    avadjust n                       7.520120E-05   1.000000E+00
+avadjust n                    v1adjust n                       4.185911E-05   2.363776E-01
+avadjust n                    v2adjust n                      -4.555979E-05  -3.584504E-01
+avadjust n                    rwdadjust n                     -8.792704E-05  -1.963318E-01
+avadjust n                    awdadjust n                      8.671605E-05   3.708723E-01
+avadjust n                    aadjust  41  94                  2.607337E-04   4.448064E-01
+avadjust n                    aadjust  41  93                 -6.578222E-05  -1.054897E-01
+avadjust n                    aadjust  40  93                  1.262530E-04   2.232432E-01
+v1adjust n                    rvadjust n                       4.412989E-05   1.931661E-01
+v1adjust n                    avadjust n                       4.185911E-05   2.363776E-01
+v1adjust n                    v1adjust n                       4.170064E-04   1.000000E+00
+v1adjust n                    v2adjust n                      -4.571406E-05  -1.527348E-01
+v1adjust n                    rwdadjust n                      1.103819E-05   1.046663E-02
+v1adjust n                    awdadjust n                      5.627376E-05   1.022049E-01
+v1adjust n                    aadjust  41  94                  2.787743E-04   2.019610E-01
+v1adjust n                    aadjust  41  93                  1.002068E-04   6.824013E-02
+v1adjust n                    aadjust  40  93                  1.378027E-05   1.034750E-02
+v2adjust n                    rvadjust n                      -1.926477E-05  -1.174878E-01
+v2adjust n                    avadjust n                      -4.555979E-05  -3.584504E-01
+v2adjust n                    v1adjust n                      -4.571406E-05  -1.527348E-01
+v2adjust n                    v2adjust n                       2.148230E-04   1.000000E+00
+v2adjust n                    rwdadjust n                      8.893219E-05   1.174895E-01
+v2adjust n                    awdadjust n                     -1.767896E-04  -4.473565E-01
+v2adjust n                    aadjust  41  94                  9.626162E-05   9.716257E-02
+v2adjust n                    aadjust  41  93                  5.125547E-04   4.863105E-01
+v2adjust n                    aadjust  40  93                 -3.542770E-04  -3.706394E-01
+rwdadjust n                   rvadjust n                       1.785414E-04   3.090217E-01
+rwdadjust n                   avadjust n                      -8.792704E-05  -1.963318E-01
+rwdadjust n                   v1adjust n                       1.103819E-05   1.046663E-02
+rwdadjust n                   v2adjust n                       8.893219E-05   1.174895E-01
+rwdadjust n                   rwdadjust n                      2.667097E-03   1.000000E+00
+rwdadjust n                   awdadjust n                      1.796192E-04   1.289943E-01
+rwdadjust n                   aadjust  41  94                  2.597300E-04   7.440275E-02
+rwdadjust n                   aadjust  41  93                  1.609144E-03   4.333006E-01
+rwdadjust n                   aadjust  40  93                 -1.137322E-03  -3.376861E-01
+awdadjust n                   rvadjust n                       9.161466E-05   3.037188E-01
+awdadjust n                   avadjust n                       8.671605E-05   3.708723E-01
+awdadjust n                   v1adjust n                       5.627376E-05   1.022049E-01
+awdadjust n                   v2adjust n                      -1.767896E-04  -4.473565E-01
+awdadjust n                   rwdadjust n                      1.796192E-04   1.289943E-01
+awdadjust n                   awdadjust n                      7.269851E-04   9.999999E-01
+awdadjust n                   aadjust  41  94                  5.824497E-04   3.195817E-01
+awdadjust n                   aadjust  41  93                 -5.030624E-04  -2.594615E-01
+awdadjust n                   aadjust  40  93                  5.265719E-04   2.994635E-01
+aadjust  41  94               rvadjust n                       1.413180E-04   1.868758E-01
+aadjust  41  94               avadjust n                       2.607337E-04   4.448064E-01
+aadjust  41  94               v1adjust n                       2.787743E-04   2.019610E-01
+aadjust  41  94               v2adjust n                       9.626162E-05   9.716257E-02
+aadjust  41  94               rwdadjust n                      2.597300E-04   7.440275E-02
+aadjust  41  94               awdadjust n                      5.824497E-04   3.195817E-01
+aadjust  41  94               aadjust  41  94                  4.569068E-03   1.000000E+00
+aadjust  41  94               aadjust  41  93                  5.777932E-04   1.188700E-01
+aadjust  41  94               aadjust  40  93                 -3.108864E-04  -7.052400E-02
+aadjust  41  93               rvadjust n                       5.933639E-05   7.375718E-02
+aadjust  41  93               avadjust n                      -6.578222E-05  -1.054897E-01
+aadjust  41  93               v1adjust n                       1.002068E-04   6.824013E-02
+aadjust  41  93               v2adjust n                       5.125547E-04   4.863105E-01
+aadjust  41  93               rwdadjust n                      1.609144E-03   4.333006E-01
+aadjust  41  93               awdadjust n                     -5.030624E-04  -2.594615E-01
+aadjust  41  93               aadjust  41  94                  5.777932E-04   1.188700E-01
+aadjust  41  93               aadjust  41  93                  5.170974E-03   1.000000E+00
+aadjust  41  93               aadjust  40  93                 -1.493971E-03  -3.185702E-01
+aadjust  40  93               rvadjust n                       1.096797E-04   1.503296E-01
+aadjust  40  93               avadjust n                       1.262530E-04   2.232432E-01
+aadjust  40  93               v1adjust n                       1.378027E-05   1.034750E-02
+aadjust  40  93               v2adjust n                      -3.542770E-04  -3.706394E-01
+aadjust  40  93               rwdadjust n                     -1.137322E-03  -3.376861E-01
+aadjust  40  93               awdadjust n                      5.265719E-04   2.994635E-01
+aadjust  40  93               aadjust  41  94                 -3.108864E-04  -7.052400E-02
+aadjust  40  93               aadjust  41  93                 -1.493971E-03  -3.185702E-01
+aadjust  40  93               aadjust  40  93                  4.253064E-03   9.999999E-01

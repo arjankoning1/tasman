@@ -1,0 +1,17 @@
+\begin{samplecase}
+{\bf p + Ag107: Optimization of model parameters for (p,n) cross section}\newline
+The sample case includes more nuclear model parameter than just the optical model and is meant for fitting an experimental (p,n) cross section only.
+The {\it tasman.inp} file looks as follows
+
+\VerbatimInput{\samples p-Ag107-pn-opt/org/tasman.inp}
+
+Besides the TALYS input parameters this contains various TASMAN keywords which can be found in this manual. The most essential for this
+sample case are {\bf expinclude 4} which means optimization to experimental data for MT4, i.e. (p,n) cross sections,
+An important line is {\bf \#parameters y} which means that TASMAN will first do one TALYS run with {\bf partable y}, meaning that when TALYS is finished a file {\it parameters.dat} has been created with all the nuclear model parameters used in the run.
+TASMAN then reads this file and uses it in combination with the {\bf \#keyvary} keywords which  sets the TALYS parametrs to be varied.
+For this sample case this is only done for nuclides which are Z=1, A=1 deep from the initial compound nucleus
+(this is for {\bf gnadjust} and {\bf gpadjust}) and for neutrons and protons only (this is for the OMP parameters).
+The {\it talys.inp} file this TASMAN input file generates shows all the parameters which are then varied.
+Also note that this sample cases does not contain {\bf \#ntalys} keyword for the number of trials, and it will thus continue until
+the optimization routine declares convergence. In our sample directory, we interrupted the TASMAN run after a few samples.
+\end{samplecase}

@@ -1,0 +1,28 @@
+#
+# General
+#
+projectile n
+element nb
+mass 93
+energy energies
+bins 20
+omponly y
+#
+# TASMAN keywords start here
+#
+#change
+#mode 3
+#ntalys 100
+#expinclude 1
+##
+## Parameters to be varied
+##
+rvadjust n 1.
+avadjust n 1.
+v1adjust n 1.
+v2adjust n 1.
+d1adjust n 1.
+d2adjust n 1.
+d3adjust n 1.
+rwdadjust n 1.
+awdadjust n 1.

@@ -1,0 +1,4786 @@
+
+    TASMAN-2.2 (Version: December 9, 2025)
+
+ Copyright (C) 2025  A.J. Koning
+
+ Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
+
+ User: Arjan Koning
+ Date: 2025-12-15
+
+ ########## USER INPUT ##########
+
+ USER INPUT FILE
+
+ #
+ # general
+ #
+ projectile n
+ element nb
+ mass 93
+ energy energies
+ bins 20
+ omponly y
+ #
+ # tasman keywords start here
+ #
+ #change
+ #mode 3
+ #ntalys 100
+ #expinclude 1
+ ##
+ ## parameters to be varied
+ ##
+ rvadjust n 1.
+ avadjust n 1.
+ v1adjust n 1.
+ v2adjust n 1.
+ d1adjust n 1.
+ d2adjust n 1.
+ d3adjust n 1.
+ rwdadjust n 1.
+ awdadjust n 1.
+
+ USER INPUT FILE + DEFAULTS
+
+ Keyword           Value   Variable     Explanation
+
+ #
+ # Main TASMAN keywords
+ #
+ #mode               3     mode         mode for TASMAN: optimization with experimental data for one nucleus 
+ #Ntalys           100     Ntalys       number of TALYS runs 
+ #Nburn            100     Nburn        number of burn-in runs 
+ #Nhigh            100     Nhigh        number of high energy runs 
+ #Ehigh       1000.000     Ehigh        energy cutoff of high energy runs 
+ #Liso               0     Liso         number of the isomeric state 
+ #maxgam             4     maxgam       maximum number of discrete levels with gamma cross section
+ #minbar             0     minbar       minimum number of fission barriers
+ #maxbar             3     maxbar       maximum number of fission barriers
+ #cross              y     flagcross    flag for covariances or optimization of cross sections
+ #angle              n     flagangle    flag for covariances or optimization of angular distributions
+ #legendre           n     flagleg      flag for covariances or optimization of Legendre coefficients
+ #spectra            n     flagspectra  flag for covariances or optimization of emission spectra
+ #gamma              n     flaggamma    flag for covariances or optimization of discrete gamma ray transitions
+ #residual           n     flagresidual flag for covariances or optimization of residual production cross sections
+ #prod               n     flagprod     flag for covariances or optimization of particle production cross sections
+ #production         n     flagproduct  flag for covariances or optimization of isotope production
+ #discrete           n     flagdiscrete flag for covariances or optimization of discrete level cross sections
+ #isomer             n     flagisomer   flag for covariances or optimization of isomeric production cross sections
+ #ompinc             y     flagompinc   flag to vary OMP parameters for incident channel
+ #omponly            n     flagomponly  flag for covariances or optimization for basic optical model observables
+ #integral           n     flagintegral flag for covariances or optimization of integral activation data
+ #macs               n     flagmacs     flag for covariances or optimization of Maxwellian averaged cross sections
+ #gamgam             n     flaggamgam   flag for covariances or optimization of average radiative width
+ #psf                n     flagpsf      flag for optimization of photon strength functions
+ #ld                 n     flagld       flag for optimization of level density parameters
+ #sample             n     flagsample   flag for sampling experimental data 
+ #talysversion talys       talysversion version of TALYS
+ #user   Arjan Koning      user         user for this calculation
+ #source TASMAN            source       source for this calculation
+ #format YANDF-0.4         oformat      format for output
+ #
+ # Keywords for mode 3
+ #
+ #chi2               1     ichi2        parameter to set goodness-of-fit estimator 
+ #weightpower        2.000 weightpower  power for weight of random run
+ #readsens           n     flagreadsens flag to read sensitivities from tables
+ #sens               n     flagsens     flag to use sensitivity in parameter weighting
+ #deltaE             n     flagdeltaE   flag to weigh goodness-of-fit with dE of energy grid
+ #dexp               y     flagdexp     flag to include exp. uncertainty in C/E
+ #erf                y     flagerf      flag to use error function for Frms
+ #band               n     flagband     flag to represent results as error bands 
+ #E1vary             y     flagE1vary   flag to automatically vary keywords for E1 radiation
+ #M1vary             n     flagM1vary   flag to automatically vary keywords for M1 radiation
+ #score              y     flagscore    flag to use scores for inclusion or exclusion
+ #error              y     flagerror    flag to include true experimental uncertainties
+ #expclass           3     expclass     quality class of experimental data (1, 2 or 3)
+ #sort               y     flagsort     flag to sort experimental data in increasing energies in the output
+ #searchexp          y     flagexp      flag to optimize to experimental data
+ #searchlib          n     flaglib      flag to optimize to nuclear data libraries
+ #outsearch          5     outsearch    level of output of search (1 (minimal) - 5 (all))
+
+ Parameter ranges for optimization
+
+ Parameter           Input           Delta           Lower         Upper
+
+rvadjust           1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
+avadjust           1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
+v1adjust           1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
+v2adjust           1.000000E+00   3.000000E-02   9.708738E-01   1.030000E+00
+d1adjust           1.000000E+00   1.000000E-01   9.090909E-01   1.100000E+00
+d2adjust           1.000000E+00   1.000000E-01   9.090909E-01   1.100000E+00
+d3adjust           1.000000E+00   1.000000E-01   9.090909E-01   1.100000E+00
+rwdadjust          1.000000E+00   3.000000E-02   9.708738E-01   1.030000E+00
+awdadjust          1.000000E+00   4.000000E-02   9.615385E-01   1.040000E+00
+
+#                         Goodness-of-fit
+# TALYS run        :     0
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     0
+
+ rvadjust     n    1.00000
+ avadjust     n    1.00000
+ v1adjust     n    1.00000
+ v2adjust     n    1.00000
+ d1adjust     n    1.00000
+ d2adjust     n    1.00000
+ d3adjust     n    1.00000
+ rwdadjust    n    1.00000
+ awdadjust    n    1.00000
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00000
+avadjust     n    1.00000
+v1adjust     n    1.00000
+v2adjust     n    1.00000
+d1adjust     n    1.00000
+d2adjust     n    1.00000
+d3adjust     n    1.00000
+rwdadjust    n    1.00000
+awdadjust    n    1.00000
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.057          1.029          4.897         1.0000E+38 (   0)     1.0000E+38 (   0)
+
+# GOF no.                0   1.057    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.057     Optimum:   1.0000E+38
+# Erms             :   1.029     Optimum:   1.0000E+38
+# Chi2             :   4.897     Optimum:   1.0000E+38
+
+  41  93 Run:     0 New optimum (Frms Erms Chi-2):    1.056737E+00   1.029392E+00   4.897484E+00
+
+#                         Goodness-of-fit
+# TALYS run        :     1
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     1
+
+ rvadjust     n    1.00459
+ avadjust     n    0.98088
+ v1adjust     n    0.99950
+ v2adjust     n    0.97357
+ d1adjust     n    1.02919
+ d2adjust     n    0.96953
+ d3adjust     n    1.06466
+ rwdadjust    n    0.98408
+ awdadjust    n    1.00358
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00459
+avadjust     n    0.98088
+v1adjust     n    0.99950
+v2adjust     n    0.97357
+d1adjust     n    1.02919
+d2adjust     n    0.96953
+d3adjust     n    1.06466
+rwdadjust    n    0.98408
+awdadjust    n    1.00358
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.081          1.046          9.058          1.057     (   0)      1.057     (   0)
+
+# GOF no.                1   1.081    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.081     Optimum:    1.057    
+# Erms             :   1.046     Optimum:    1.029    
+# Chi2             :   9.058     Optimum:    4.897    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     2
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     2
+
+ rvadjust     n    1.00232
+ avadjust     n    0.98160
+ v1adjust     n    1.00843
+ v2adjust     n    1.00553
+ d1adjust     n    1.04977
+ d2adjust     n    0.91002
+ d3adjust     n    0.95868
+ rwdadjust    n    1.01445
+ awdadjust    n    0.97427
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00232
+avadjust     n    0.98160
+v1adjust     n    1.00843
+v2adjust     n    1.00553
+d1adjust     n    1.04977
+d2adjust     n    0.91002
+d3adjust     n    0.95868
+rwdadjust    n    1.01445
+awdadjust    n    0.97427
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.054          1.023          4.370          1.057     (   0)      1.057     (   0)
+
+# GOF no.                2   1.054    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.054     Optimum:    1.057    
+# Erms             :   1.023     Optimum:    1.029    
+# Chi2             :   4.370     Optimum:    4.897    
+
+  41  93 Run:     2 New optimum (Frms Erms Chi-2):    1.054140E+00   1.022524E+00   4.369506E+00
+
+#                         Goodness-of-fit
+# TALYS run        :     3
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     3
+
+ rvadjust     n    1.01885
+ avadjust     n    0.99816
+ v1adjust     n    0.98563
+ v2adjust     n    0.98845
+ d1adjust     n    1.00620
+ d2adjust     n    0.93284
+ d3adjust     n    0.97549
+ rwdadjust    n    0.98841
+ awdadjust    n    0.97057
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01885
+avadjust     n    0.99816
+v1adjust     n    0.98563
+v2adjust     n    0.98845
+d1adjust     n    1.00620
+d2adjust     n    0.93284
+d3adjust     n    0.97549
+rwdadjust    n    0.98841
+awdadjust    n    0.97057
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.131          1.100          24.63          1.054     (   2)      1.054     (   2)
+
+# GOF no.                3   1.131    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.131     Optimum:    1.054    
+# Erms             :   1.100     Optimum:    1.023    
+# Chi2             :   24.63     Optimum:    4.370    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     4
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     4
+
+ rvadjust     n    0.98608
+ avadjust     n    0.99290
+ v1adjust     n    1.01312
+ v2adjust     n    0.98243
+ d1adjust     n    0.93598
+ d2adjust     n    0.97527
+ d3adjust     n    0.98893
+ rwdadjust    n    1.02965
+ awdadjust    n    1.02205
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98608
+avadjust     n    0.99290
+v1adjust     n    1.01312
+v2adjust     n    0.98243
+d1adjust     n    0.93598
+d2adjust     n    0.97527
+d3adjust     n    0.98893
+rwdadjust    n    1.02965
+awdadjust    n    1.02205
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.037         0.9886          2.077          1.054     (   2)      1.054     (   2)
+
+# GOF no.                4   1.037    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.037     Optimum:    1.054    
+# Erms             :  0.9886     Optimum:    1.023    
+# Chi2             :   2.077     Optimum:    4.370    
+
+  41  93 Run:     4 New optimum (Frms Erms Chi-2):    1.036911E+00   9.885685E-01   2.077411E+00
+
+#                         Goodness-of-fit
+# TALYS run        :     5
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     5
+
+ rvadjust     n    1.01579
+ avadjust     n    0.98146
+ v1adjust     n    0.98663
+ v2adjust     n    1.01664
+ d1adjust     n    1.07378
+ d2adjust     n    0.99520
+ d3adjust     n    0.98034
+ rwdadjust    n    0.98777
+ awdadjust    n    0.99437
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01579
+avadjust     n    0.98146
+v1adjust     n    0.98663
+v2adjust     n    1.01664
+d1adjust     n    1.07378
+d2adjust     n    0.99520
+d3adjust     n    0.98034
+rwdadjust    n    0.98777
+awdadjust    n    0.99437
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.081          1.054          9.564          1.037     (   4)      1.037     (   4)
+
+# GOF no.                5   1.081    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.081     Optimum:    1.037    
+# Erms             :   1.054     Optimum:   0.9886    
+# Chi2             :   9.564     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     6
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     6
+
+ rvadjust     n    1.00627
+ avadjust     n    0.98171
+ v1adjust     n    1.01354
+ v2adjust     n    0.98179
+ d1adjust     n    0.98002
+ d2adjust     n    1.09731
+ d3adjust     n    0.97004
+ rwdadjust    n    0.97456
+ awdadjust    n    0.97509
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00627
+avadjust     n    0.98171
+v1adjust     n    1.01354
+v2adjust     n    0.98179
+d1adjust     n    0.98002
+d2adjust     n    1.09731
+d3adjust     n    0.97004
+rwdadjust    n    0.97456
+awdadjust    n    0.97509
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.138          1.091          25.46          1.037     (   4)      1.037     (   4)
+
+# GOF no.                6   1.138    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.138     Optimum:    1.037    
+# Erms             :   1.091     Optimum:   0.9886    
+# Chi2             :   25.46     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     7
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     7
+
+ rvadjust     n    0.99028
+ avadjust     n    0.98337
+ v1adjust     n    1.01976
+ v2adjust     n    1.00283
+ d1adjust     n    1.01782
+ d2adjust     n    1.03957
+ d3adjust     n    1.08322
+ rwdadjust    n    1.01268
+ awdadjust    n    1.01753
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99028
+avadjust     n    0.98337
+v1adjust     n    1.01976
+v2adjust     n    1.00283
+d1adjust     n    1.01782
+d2adjust     n    1.03957
+d3adjust     n    1.08322
+rwdadjust    n    1.01268
+awdadjust    n    1.01753
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.047          1.013          3.373          1.037     (   4)      1.037     (   4)
+
+# GOF no.                7   1.047    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.047     Optimum:    1.037    
+# Erms             :   1.013     Optimum:   0.9886    
+# Chi2             :   3.373     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     8
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     8
+
+ rvadjust     n    0.98333
+ avadjust     n    0.98495
+ v1adjust     n    1.01973
+ v2adjust     n    0.99230
+ d1adjust     n    0.98733
+ d2adjust     n    1.01588
+ d3adjust     n    0.99858
+ rwdadjust    n    0.98854
+ awdadjust    n    1.03421
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98333
+avadjust     n    0.98495
+v1adjust     n    1.01973
+v2adjust     n    0.99230
+d1adjust     n    0.98733
+d2adjust     n    1.01588
+d3adjust     n    0.99858
+rwdadjust    n    0.98854
+awdadjust    n    1.03421
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.044         0.9761          2.645          1.037     (   4)      1.037     (   4)
+
+# GOF no.                8   1.044    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.044     Optimum:    1.037    
+# Erms             :  0.9761     Optimum:   0.9886    
+# Chi2             :   2.645     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     9
+# GOF estimator    :    Frms  
+
+  Parameters for input file:     9
+
+ rvadjust     n    1.01122
+ avadjust     n    0.99254
+ v1adjust     n    1.01854
+ v2adjust     n    0.98148
+ d1adjust     n    0.95394
+ d2adjust     n    1.00756
+ d3adjust     n    1.03423
+ rwdadjust    n    0.98340
+ awdadjust    n    0.97933
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01122
+avadjust     n    0.99254
+v1adjust     n    1.01854
+v2adjust     n    0.98148
+d1adjust     n    0.95394
+d2adjust     n    1.00756
+d3adjust     n    1.03423
+rwdadjust    n    0.98340
+awdadjust    n    0.97933
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.187          1.136          48.42          1.037     (   4)      1.037     (   4)
+
+# GOF no.                9   1.187    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.187     Optimum:    1.037    
+# Erms             :   1.136     Optimum:   0.9886    
+# Chi2             :   48.42     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    10
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    10
+
+ rvadjust     n    1.01993
+ avadjust     n    1.00580
+ v1adjust     n    1.01266
+ v2adjust     n    1.00316
+ d1adjust     n    0.92646
+ d2adjust     n    0.95602
+ d3adjust     n    1.01529
+ rwdadjust    n    0.98556
+ awdadjust    n    0.97342
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01993
+avadjust     n    1.00580
+v1adjust     n    1.01266
+v2adjust     n    1.00316
+d1adjust     n    0.92646
+d2adjust     n    0.95602
+d3adjust     n    1.01529
+rwdadjust    n    0.98556
+awdadjust    n    0.97342
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.194          1.147          52.38          1.037     (   4)      1.037     (   4)
+
+# GOF no.               10   1.194    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.194     Optimum:    1.037    
+# Erms             :   1.147     Optimum:   0.9886    
+# Chi2             :   52.38     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    11
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    11
+
+ rvadjust     n    0.98413
+ avadjust     n    1.00548
+ v1adjust     n    0.98438
+ v2adjust     n    1.01452
+ d1adjust     n    1.05729
+ d2adjust     n    1.05269
+ d3adjust     n    1.09791
+ rwdadjust    n    0.97350
+ awdadjust    n    1.01111
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98413
+avadjust     n    1.00548
+v1adjust     n    0.98438
+v2adjust     n    1.01452
+d1adjust     n    1.05729
+d2adjust     n    1.05269
+d3adjust     n    1.09791
+rwdadjust    n    0.97350
+awdadjust    n    1.01111
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.126         0.9069          15.19          1.037     (   4)      1.037     (   4)
+
+# GOF no.               11   1.126    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.126     Optimum:    1.037    
+# Erms             :  0.9069     Optimum:   0.9886    
+# Chi2             :   15.19     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    12
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    12
+
+ rvadjust     n    1.00518
+ avadjust     n    0.98417
+ v1adjust     n    1.01766
+ v2adjust     n    0.98833
+ d1adjust     n    0.91409
+ d2adjust     n    0.93708
+ d3adjust     n    0.97849
+ rwdadjust    n    0.97855
+ awdadjust    n    1.02336
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00518
+avadjust     n    0.98417
+v1adjust     n    1.01766
+v2adjust     n    0.98833
+d1adjust     n    0.91409
+d2adjust     n    0.93708
+d3adjust     n    0.97849
+rwdadjust    n    0.97855
+awdadjust    n    1.02336
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.138          1.095          25.74          1.037     (   4)      1.037     (   4)
+
+# GOF no.               12   1.138    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.138     Optimum:    1.037    
+# Erms             :   1.095     Optimum:   0.9886    
+# Chi2             :   25.74     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    13
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    13
+
+ rvadjust     n    1.01554
+ avadjust     n    1.01787
+ v1adjust     n    1.01157
+ v2adjust     n    0.98364
+ d1adjust     n    0.97504
+ d2adjust     n    0.99255
+ d3adjust     n    0.94714
+ rwdadjust    n    1.01366
+ awdadjust    n    1.01811
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01554
+avadjust     n    1.01787
+v1adjust     n    1.01157
+v2adjust     n    0.98364
+d1adjust     n    0.97504
+d2adjust     n    0.99255
+d3adjust     n    0.94714
+rwdadjust    n    1.01366
+awdadjust    n    1.01811
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.123          1.095          20.73          1.037     (   4)      1.037     (   4)
+
+# GOF no.               13   1.123    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.123     Optimum:    1.037    
+# Erms             :   1.095     Optimum:   0.9886    
+# Chi2             :   20.73     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    14
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    14
+
+ rvadjust     n    0.99003
+ avadjust     n    1.00332
+ v1adjust     n    1.00285
+ v2adjust     n    1.00518
+ d1adjust     n    1.06713
+ d2adjust     n    0.98795
+ d3adjust     n    0.98484
+ rwdadjust    n    1.00768
+ awdadjust    n    1.00323
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99003
+avadjust     n    1.00332
+v1adjust     n    1.00285
+v2adjust     n    1.00518
+d1adjust     n    1.06713
+d2adjust     n    0.98795
+d3adjust     n    0.98484
+rwdadjust    n    1.00768
+awdadjust    n    1.00323
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.039         0.9841          2.210          1.037     (   4)      1.037     (   4)
+
+# GOF no.               14   1.039    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.039     Optimum:    1.037    
+# Erms             :  0.9841     Optimum:   0.9886    
+# Chi2             :   2.210     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    15
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    15
+
+ rvadjust     n    0.99824
+ avadjust     n    0.98811
+ v1adjust     n    0.98660
+ v2adjust     n    0.98623
+ d1adjust     n    1.06215
+ d2adjust     n    1.00559
+ d3adjust     n    1.07842
+ rwdadjust    n    0.99692
+ awdadjust    n    0.99647
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99824
+avadjust     n    0.98811
+v1adjust     n    0.98660
+v2adjust     n    0.98623
+d1adjust     n    1.06215
+d2adjust     n    1.00559
+d3adjust     n    1.07842
+rwdadjust    n    0.99692
+awdadjust    n    0.99647
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.044         0.9768          2.679          1.037     (   4)      1.037     (   4)
+
+# GOF no.               15   1.044    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.044     Optimum:    1.037    
+# Erms             :  0.9768     Optimum:   0.9886    
+# Chi2             :   2.679     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    16
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    16
+
+ rvadjust     n    0.98439
+ avadjust     n    1.01936
+ v1adjust     n    0.98219
+ v2adjust     n    0.99004
+ d1adjust     n    1.08991
+ d2adjust     n    0.98281
+ d3adjust     n    1.05626
+ rwdadjust    n    0.97774
+ awdadjust    n    0.96190
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98439
+avadjust     n    1.01936
+v1adjust     n    0.98219
+v2adjust     n    0.99004
+d1adjust     n    1.08991
+d2adjust     n    0.98281
+d3adjust     n    1.05626
+rwdadjust    n    0.97774
+awdadjust    n    0.96190
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.111         0.9164          12.25          1.037     (   4)      1.037     (   4)
+
+# GOF no.               16   1.111    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.111     Optimum:    1.037    
+# Erms             :  0.9164     Optimum:   0.9886    
+# Chi2             :   12.25     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    17
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    17
+
+ rvadjust     n    0.98168
+ avadjust     n    0.99637
+ v1adjust     n    1.00432
+ v2adjust     n    1.02945
+ d1adjust     n    1.01013
+ d2adjust     n    0.97857
+ d3adjust     n    1.05073
+ rwdadjust    n    0.97942
+ awdadjust    n    1.02048
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98168
+avadjust     n    0.99637
+v1adjust     n    1.00432
+v2adjust     n    1.02945
+d1adjust     n    1.01013
+d2adjust     n    0.97857
+d3adjust     n    1.05073
+rwdadjust    n    0.97942
+awdadjust    n    1.02048
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.086         0.9337          7.970          1.037     (   4)      1.037     (   4)
+
+# GOF no.               17   1.086    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.086     Optimum:    1.037    
+# Erms             :  0.9337     Optimum:   0.9886    
+# Chi2             :   7.970     Optimum:    2.077    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    18
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    18
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.037     (   4)      1.037     (   4)
+
+# GOF no.               18   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.037    
+# Erms             :  0.9932     Optimum:   0.9886    
+# Chi2             :   2.000     Optimum:    2.077    
+
+  41  93 Run:    18 New optimum (Frms Erms Chi-2):    1.035777E+00   9.931907E-01   2.000378E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    19
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    19
+
+ rvadjust     n    1.00432
+ avadjust     n    0.98720
+ v1adjust     n    1.00476
+ v2adjust     n    1.01331
+ d1adjust     n    0.97722
+ d2adjust     n    0.98874
+ d3adjust     n    1.00975
+ rwdadjust    n    0.99974
+ awdadjust    n    1.03090
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00432
+avadjust     n    0.98720
+v1adjust     n    1.00476
+v2adjust     n    1.01331
+d1adjust     n    0.97722
+d2adjust     n    0.98874
+d3adjust     n    1.00975
+rwdadjust    n    0.99974
+awdadjust    n    1.03090
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.080          1.052          9.117          1.036     (  18)      1.036     (  18)
+
+# GOF no.               19   1.080    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.080     Optimum:    1.036    
+# Erms             :   1.052     Optimum:   0.9932    
+# Chi2             :   9.117     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    20
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    20
+
+ rvadjust     n    1.01689
+ avadjust     n    1.00574
+ v1adjust     n    0.98509
+ v2adjust     n    0.97961
+ d1adjust     n    1.05147
+ d2adjust     n    1.05369
+ d3adjust     n    0.97375
+ rwdadjust    n    1.02269
+ awdadjust    n    1.00581
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01689
+avadjust     n    1.00574
+v1adjust     n    0.98509
+v2adjust     n    0.97961
+d1adjust     n    1.05147
+d2adjust     n    1.05369
+d3adjust     n    0.97375
+rwdadjust    n    1.02269
+awdadjust    n    1.00581
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.091          1.071          12.08          1.036     (  18)      1.036     (  18)
+
+# GOF no.               20   1.091    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.091     Optimum:    1.036    
+# Erms             :   1.071     Optimum:   0.9932    
+# Chi2             :   12.08     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    21
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    21
+
+ rvadjust     n    0.98052
+ avadjust     n    1.00274
+ v1adjust     n    0.98687
+ v2adjust     n    0.99813
+ d1adjust     n    1.05833
+ d2adjust     n    0.95517
+ d3adjust     n    1.01529
+ rwdadjust    n    0.98810
+ awdadjust    n    1.01740
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98052
+avadjust     n    1.00274
+v1adjust     n    0.98687
+v2adjust     n    0.99813
+d1adjust     n    1.05833
+d2adjust     n    0.95517
+d3adjust     n    1.01529
+rwdadjust    n    0.98810
+awdadjust    n    1.01740
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.124         0.9076          14.85          1.036     (  18)      1.036     (  18)
+
+# GOF no.               21   1.124    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.124     Optimum:    1.036    
+# Erms             :  0.9076     Optimum:   0.9932    
+# Chi2             :   14.85     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    22
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    22
+
+ rvadjust     n    1.01750
+ avadjust     n    0.99960
+ v1adjust     n    0.99512
+ v2adjust     n    1.00191
+ d1adjust     n    1.05650
+ d2adjust     n    0.91901
+ d3adjust     n    0.97433
+ rwdadjust    n    1.00450
+ awdadjust    n    1.00101
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01750
+avadjust     n    0.99960
+v1adjust     n    0.99512
+v2adjust     n    1.00191
+d1adjust     n    1.05650
+d2adjust     n    0.91901
+d3adjust     n    0.97433
+rwdadjust    n    1.00450
+awdadjust    n    1.00101
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.110          1.084          17.34          1.036     (  18)      1.036     (  18)
+
+# GOF no.               22   1.110    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.110     Optimum:    1.036    
+# Erms             :   1.084     Optimum:   0.9932    
+# Chi2             :   17.34     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    23
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    23
+
+ rvadjust     n    1.01854
+ avadjust     n    1.01097
+ v1adjust     n    1.01540
+ v2adjust     n    1.00583
+ d1adjust     n    1.07118
+ d2adjust     n    1.09128
+ d3adjust     n    0.95939
+ rwdadjust    n    0.99770
+ awdadjust    n    1.01005
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01854
+avadjust     n    1.01097
+v1adjust     n    1.01540
+v2adjust     n    1.00583
+d1adjust     n    1.07118
+d2adjust     n    1.09128
+d3adjust     n    0.95939
+rwdadjust    n    0.99770
+awdadjust    n    1.01005
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.121          1.088          19.62          1.036     (  18)      1.036     (  18)
+
+# GOF no.               23   1.121    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.121     Optimum:    1.036    
+# Erms             :   1.088     Optimum:   0.9932    
+# Chi2             :   19.62     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    24
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    24
+
+ rvadjust     n    0.99525
+ avadjust     n    0.99419
+ v1adjust     n    1.01486
+ v2adjust     n    1.00426
+ d1adjust     n    0.99336
+ d2adjust     n    1.00718
+ d3adjust     n    0.96376
+ rwdadjust    n    0.98670
+ awdadjust    n    0.96308
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99525
+avadjust     n    0.99419
+v1adjust     n    1.01486
+v2adjust     n    1.00426
+d1adjust     n    0.99336
+d2adjust     n    1.00718
+d3adjust     n    0.96376
+rwdadjust    n    0.98670
+awdadjust    n    0.96308
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.071          1.032          6.941          1.036     (  18)      1.036     (  18)
+
+# GOF no.               24   1.071    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.071     Optimum:    1.036    
+# Erms             :   1.032     Optimum:   0.9932    
+# Chi2             :   6.941     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    25
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    25
+
+ rvadjust     n    1.01719
+ avadjust     n    0.99691
+ v1adjust     n    0.98499
+ v2adjust     n    1.00731
+ d1adjust     n    0.97999
+ d2adjust     n    1.00630
+ d3adjust     n    0.94995
+ rwdadjust    n    1.01596
+ awdadjust    n    1.02880
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01719
+avadjust     n    0.99691
+v1adjust     n    0.98499
+v2adjust     n    1.00731
+d1adjust     n    0.97999
+d2adjust     n    1.00630
+d3adjust     n    0.94995
+rwdadjust    n    1.01596
+awdadjust    n    1.02880
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.087          1.067          10.98          1.036     (  18)      1.036     (  18)
+
+# GOF no.               25   1.087    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.087     Optimum:    1.036    
+# Erms             :   1.067     Optimum:   0.9932    
+# Chi2             :   10.98     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    26
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    26
+
+ rvadjust     n    0.98945
+ avadjust     n    1.00347
+ v1adjust     n    1.01669
+ v2adjust     n    1.02391
+ d1adjust     n    1.06349
+ d2adjust     n    1.00716
+ d3adjust     n    0.98005
+ rwdadjust    n    0.98627
+ awdadjust    n    1.01275
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98945
+avadjust     n    1.00347
+v1adjust     n    1.01669
+v2adjust     n    1.02391
+d1adjust     n    1.06349
+d2adjust     n    1.00716
+d3adjust     n    0.98005
+rwdadjust    n    0.98627
+awdadjust    n    1.01275
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.044          1.008          2.938          1.036     (  18)      1.036     (  18)
+
+# GOF no.               26   1.044    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.044     Optimum:    1.036    
+# Erms             :   1.008     Optimum:   0.9932    
+# Chi2             :   2.938     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    27
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    27
+
+ rvadjust     n    1.00025
+ avadjust     n    1.00744
+ v1adjust     n    1.01544
+ v2adjust     n    0.99955
+ d1adjust     n    1.01513
+ d2adjust     n    1.05917
+ d3adjust     n    0.94545
+ rwdadjust    n    0.97742
+ awdadjust    n    0.96508
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00025
+avadjust     n    1.00744
+v1adjust     n    1.01544
+v2adjust     n    0.99955
+d1adjust     n    1.01513
+d2adjust     n    1.05917
+d3adjust     n    0.94545
+rwdadjust    n    0.97742
+awdadjust    n    0.96508
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.118          1.078          18.79          1.036     (  18)      1.036     (  18)
+
+# GOF no.               27   1.118    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.118     Optimum:    1.036    
+# Erms             :   1.078     Optimum:   0.9932    
+# Chi2             :   18.79     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    28
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    28
+
+ rvadjust     n    0.98943
+ avadjust     n    0.98199
+ v1adjust     n    0.99283
+ v2adjust     n    1.01116
+ d1adjust     n    1.08981
+ d2adjust     n    0.93068
+ d3adjust     n    0.99971
+ rwdadjust    n    0.98931
+ awdadjust    n    1.01102
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98943
+avadjust     n    0.98199
+v1adjust     n    0.99283
+v2adjust     n    1.01116
+d1adjust     n    1.08981
+d2adjust     n    0.93068
+d3adjust     n    0.99971
+rwdadjust    n    0.98931
+awdadjust    n    1.01102
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.082         0.9373          7.328          1.036     (  18)      1.036     (  18)
+
+# GOF no.               28   1.082    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.082     Optimum:    1.036    
+# Erms             :  0.9373     Optimum:   0.9932    
+# Chi2             :   7.328     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    29
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    29
+
+ rvadjust     n    0.98769
+ avadjust     n    1.01318
+ v1adjust     n    0.99115
+ v2adjust     n    0.98153
+ d1adjust     n    1.05542
+ d2adjust     n    1.05889
+ d3adjust     n    1.01217
+ rwdadjust    n    1.00592
+ awdadjust    n    1.02257
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98769
+avadjust     n    1.01318
+v1adjust     n    0.99115
+v2adjust     n    0.98153
+d1adjust     n    1.05542
+d2adjust     n    1.05889
+d3adjust     n    1.01217
+rwdadjust    n    1.00592
+awdadjust    n    1.02257
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.056         0.9643          4.022          1.036     (  18)      1.036     (  18)
+
+# GOF no.               29   1.056    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.056     Optimum:    1.036    
+# Erms             :  0.9643     Optimum:   0.9932    
+# Chi2             :   4.022     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    30
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    30
+
+ rvadjust     n    1.00614
+ avadjust     n    1.01638
+ v1adjust     n    1.01708
+ v2adjust     n    1.01076
+ d1adjust     n    1.03944
+ d2adjust     n    1.03205
+ d3adjust     n    1.05965
+ rwdadjust    n    0.97559
+ awdadjust    n    1.00882
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00614
+avadjust     n    1.01638
+v1adjust     n    1.01708
+v2adjust     n    1.01076
+d1adjust     n    1.03944
+d2adjust     n    1.03205
+d3adjust     n    1.05965
+rwdadjust    n    0.97559
+awdadjust    n    1.00882
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.175          1.136          43.80          1.036     (  18)      1.036     (  18)
+
+# GOF no.               30   1.175    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.175     Optimum:    1.036    
+# Erms             :   1.136     Optimum:   0.9932    
+# Chi2             :   43.80     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    31
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    31
+
+ rvadjust     n    1.01946
+ avadjust     n    0.99433
+ v1adjust     n    0.98345
+ v2adjust     n    0.98760
+ d1adjust     n    1.09398
+ d2adjust     n    1.08721
+ d3adjust     n    0.95241
+ rwdadjust    n    0.99999
+ awdadjust    n    1.02592
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01946
+avadjust     n    0.99433
+v1adjust     n    0.98345
+v2adjust     n    0.98760
+d1adjust     n    1.09398
+d2adjust     n    1.08721
+d3adjust     n    0.95241
+rwdadjust    n    0.99999
+awdadjust    n    1.02592
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.088          1.067          11.35          1.036     (  18)      1.036     (  18)
+
+# GOF no.               31   1.088    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.088     Optimum:    1.036    
+# Erms             :   1.067     Optimum:   0.9932    
+# Chi2             :   11.35     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    32
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    32
+
+ rvadjust     n    0.99518
+ avadjust     n    0.98434
+ v1adjust     n    1.00009
+ v2adjust     n    0.97734
+ d1adjust     n    1.06663
+ d2adjust     n    0.93034
+ d3adjust     n    0.99838
+ rwdadjust    n    0.97508
+ awdadjust    n    0.96190
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99518
+avadjust     n    0.98434
+v1adjust     n    1.00009
+v2adjust     n    0.97734
+d1adjust     n    1.06663
+d2adjust     n    0.93034
+d3adjust     n    0.99838
+rwdadjust    n    0.97508
+awdadjust    n    0.96190
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.043         0.9850          2.586          1.036     (  18)      1.036     (  18)
+
+# GOF no.               32   1.043    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.043     Optimum:    1.036    
+# Erms             :  0.9850     Optimum:   0.9932    
+# Chi2             :   2.586     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    33
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    33
+
+ rvadjust     n    1.01339
+ avadjust     n    0.98242
+ v1adjust     n    0.98326
+ v2adjust     n    1.01010
+ d1adjust     n    1.08960
+ d2adjust     n    0.94814
+ d3adjust     n    1.03173
+ rwdadjust    n    1.02179
+ awdadjust    n    0.98987
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01339
+avadjust     n    0.98242
+v1adjust     n    0.98326
+v2adjust     n    1.01010
+d1adjust     n    1.08960
+d2adjust     n    0.94814
+d3adjust     n    1.03173
+rwdadjust    n    1.02179
+awdadjust    n    0.98987
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.053          1.031          4.491          1.036     (  18)      1.036     (  18)
+
+# GOF no.               33   1.053    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.053     Optimum:    1.036    
+# Erms             :   1.031     Optimum:   0.9932    
+# Chi2             :   4.491     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    34
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    34
+
+ rvadjust     n    1.00824
+ avadjust     n    0.98852
+ v1adjust     n    0.99839
+ v2adjust     n    0.97960
+ d1adjust     n    0.99182
+ d2adjust     n    1.05202
+ d3adjust     n    1.03307
+ rwdadjust    n    1.02312
+ awdadjust    n    0.99035
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00824
+avadjust     n    0.98852
+v1adjust     n    0.99839
+v2adjust     n    0.97960
+d1adjust     n    0.99182
+d2adjust     n    1.05202
+d3adjust     n    1.03307
+rwdadjust    n    1.02312
+awdadjust    n    0.99035
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.089          1.062          11.30          1.036     (  18)      1.036     (  18)
+
+# GOF no.               34   1.089    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.089     Optimum:    1.036    
+# Erms             :   1.062     Optimum:   0.9932    
+# Chi2             :   11.30     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    35
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    35
+
+ rvadjust     n    1.01861
+ avadjust     n    1.01305
+ v1adjust     n    1.00810
+ v2adjust     n    1.00140
+ d1adjust     n    1.05395
+ d2adjust     n    1.07313
+ d3adjust     n    1.09822
+ rwdadjust    n    0.97492
+ awdadjust    n    0.99001
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01861
+avadjust     n    1.01305
+v1adjust     n    1.00810
+v2adjust     n    1.00140
+d1adjust     n    1.05395
+d2adjust     n    1.07313
+d3adjust     n    1.09822
+rwdadjust    n    0.97492
+awdadjust    n    0.99001
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.211          1.168          64.78          1.036     (  18)      1.036     (  18)
+
+# GOF no.               35   1.211    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.211     Optimum:    1.036    
+# Erms             :   1.168     Optimum:   0.9932    
+# Chi2             :   64.78     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    36
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    36
+
+ rvadjust     n    1.00445
+ avadjust     n    1.00748
+ v1adjust     n    1.00619
+ v2adjust     n    0.98171
+ d1adjust     n    1.07321
+ d2adjust     n    1.04085
+ d3adjust     n    0.93721
+ rwdadjust    n    1.01136
+ awdadjust    n    1.03972
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00445
+avadjust     n    1.00748
+v1adjust     n    1.00619
+v2adjust     n    0.98171
+d1adjust     n    1.07321
+d2adjust     n    1.04085
+d3adjust     n    0.93721
+rwdadjust    n    1.01136
+awdadjust    n    1.03972
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.068          1.046          6.826          1.036     (  18)      1.036     (  18)
+
+# GOF no.               36   1.068    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.068     Optimum:    1.036    
+# Erms             :   1.046     Optimum:   0.9932    
+# Chi2             :   6.826     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    37
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    37
+
+ rvadjust     n    1.01462
+ avadjust     n    1.00574
+ v1adjust     n    1.01360
+ v2adjust     n    0.98402
+ d1adjust     n    1.07544
+ d2adjust     n    0.91561
+ d3adjust     n    1.00222
+ rwdadjust    n    1.02517
+ awdadjust    n    0.97828
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01462
+avadjust     n    1.00574
+v1adjust     n    1.01360
+v2adjust     n    0.98402
+d1adjust     n    1.07544
+d2adjust     n    0.91561
+d3adjust     n    1.00222
+rwdadjust    n    1.02517
+awdadjust    n    0.97828
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.108          1.078          15.90          1.036     (  18)      1.036     (  18)
+
+# GOF no.               37   1.108    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.108     Optimum:    1.036    
+# Erms             :   1.078     Optimum:   0.9932    
+# Chi2             :   15.90     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    38
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    38
+
+ rvadjust     n    0.98656
+ avadjust     n    0.98264
+ v1adjust     n    0.98065
+ v2adjust     n    0.98729
+ d1adjust     n    0.99030
+ d2adjust     n    0.94206
+ d3adjust     n    1.09423
+ rwdadjust    n    0.99287
+ awdadjust    n    1.00451
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98656
+avadjust     n    0.98264
+v1adjust     n    0.98065
+v2adjust     n    0.98729
+d1adjust     n    0.99030
+d2adjust     n    0.94206
+d3adjust     n    1.09423
+rwdadjust    n    0.99287
+awdadjust    n    1.00451
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.138         0.8973          17.88          1.036     (  18)      1.036     (  18)
+
+# GOF no.               38   1.138    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.138     Optimum:    1.036    
+# Erms             :  0.8973     Optimum:   0.9932    
+# Chi2             :   17.88     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    39
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    39
+
+ rvadjust     n    1.00826
+ avadjust     n    1.00113
+ v1adjust     n    0.98993
+ v2adjust     n    0.98300
+ d1adjust     n    1.01034
+ d2adjust     n    1.00264
+ d3adjust     n    0.94287
+ rwdadjust    n    1.02210
+ awdadjust    n    0.99723
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.00826
+avadjust     n    1.00113
+v1adjust     n    0.98993
+v2adjust     n    0.98300
+d1adjust     n    1.01034
+d2adjust     n    1.00264
+d3adjust     n    0.94287
+rwdadjust    n    1.02210
+awdadjust    n    0.99723
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.058          1.037          5.305          1.036     (  18)      1.036     (  18)
+
+# GOF no.               39   1.058    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.058     Optimum:    1.036    
+# Erms             :   1.037     Optimum:   0.9932    
+# Chi2             :   5.305     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    40
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    40
+
+ rvadjust     n    1.01776
+ avadjust     n    0.99151
+ v1adjust     n    1.00761
+ v2adjust     n    1.02823
+ d1adjust     n    1.08337
+ d2adjust     n    1.09336
+ d3adjust     n    0.99918
+ rwdadjust    n    1.00412
+ awdadjust    n    0.98631
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    1.01776
+avadjust     n    0.99151
+v1adjust     n    1.00761
+v2adjust     n    1.02823
+d1adjust     n    1.08337
+d2adjust     n    1.09336
+d3adjust     n    0.99918
+rwdadjust    n    1.00412
+awdadjust    n    0.98631
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.127          1.094          22.68          1.036     (  18)      1.036     (  18)
+
+# GOF no.               40   1.127    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.127     Optimum:    1.036    
+# Erms             :   1.094     Optimum:   0.9932    
+# Chi2             :   22.68     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    41
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    41
+
+ rvadjust     n    0.99058
+ avadjust     n    0.99348
+ v1adjust     n    1.00358
+ v2adjust     n    1.00572
+ d1adjust     n    0.92264
+ d2adjust     n    0.97713
+ d3adjust     n    1.01364
+ rwdadjust    n    1.02675
+ awdadjust    n    1.03084
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99058
+avadjust     n    0.99348
+v1adjust     n    1.00358
+v2adjust     n    1.00572
+d1adjust     n    0.92264
+d2adjust     n    0.97713
+d3adjust     n    1.01364
+rwdadjust    n    1.02675
+awdadjust    n    1.03084
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.037         0.9889          2.111          1.036     (  18)      1.036     (  18)
+
+# GOF no.               41   1.037    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.037     Optimum:    1.036    
+# Erms             :  0.9889     Optimum:   0.9932    
+# Chi2             :   2.111     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    42
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    42
+
+ rvadjust     n    0.99189
+ avadjust     n    0.99470
+ v1adjust     n    1.01903
+ v2adjust     n    1.00572
+ d1adjust     n    0.92015
+ d2adjust     n    1.04300
+ d3adjust     n    0.96378
+ rwdadjust    n    0.97107
+ awdadjust    n    0.99563
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99189
+avadjust     n    0.99470
+v1adjust     n    1.01903
+v2adjust     n    1.00572
+d1adjust     n    0.92015
+d2adjust     n    1.04300
+d3adjust     n    0.96378
+rwdadjust    n    0.97107
+awdadjust    n    0.99563
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.075          1.035          7.599          1.036     (  18)      1.036     (  18)
+
+# GOF no.               42   1.075    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.075     Optimum:    1.036    
+# Erms             :   1.035     Optimum:   0.9932    
+# Chi2             :   7.599     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    43
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    43
+
+ rvadjust     n    0.98465
+ avadjust     n    1.00878
+ v1adjust     n    1.01328
+ v2adjust     n    0.98138
+ d1adjust     n    0.96137
+ d2adjust     n    0.96717
+ d3adjust     n    1.03974
+ rwdadjust    n    1.00280
+ awdadjust    n    1.01701
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.98465
+avadjust     n    1.00878
+v1adjust     n    1.01328
+v2adjust     n    0.98138
+d1adjust     n    0.96137
+d2adjust     n    0.96717
+d3adjust     n    1.03974
+rwdadjust    n    1.00280
+awdadjust    n    1.01701
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.039         0.9965          2.231          1.036     (  18)      1.036     (  18)
+
+# GOF no.               43   1.039    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.039     Optimum:    1.036    
+# Erms             :  0.9965     Optimum:   0.9932    
+# Chi2             :   2.231     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    44
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    44
+
+ rvadjust     n    0.99537
+ avadjust     n    0.99928
+ v1adjust     n    1.00541
+ v2adjust     n    1.01285
+ d1adjust     n    0.95937
+ d2adjust     n    0.93707
+ d3adjust     n    1.03609
+ rwdadjust    n    0.97485
+ awdadjust    n    0.99627
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99537
+avadjust     n    0.99928
+v1adjust     n    1.00541
+v2adjust     n    1.01285
+d1adjust     n    0.95937
+d2adjust     n    0.93707
+d3adjust     n    1.03609
+rwdadjust    n    0.97485
+awdadjust    n    0.99627
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.056          1.023          4.774          1.036     (  18)      1.036     (  18)
+
+# GOF no.               44   1.056    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.056     Optimum:    1.036    
+# Erms             :   1.023     Optimum:   0.9932    
+# Chi2             :   4.774     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    45
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    45
+
+ rvadjust     n    0.99980
+ avadjust     n    0.98854
+ v1adjust     n    1.01241
+ v2adjust     n    1.01424
+ d1adjust     n    0.96121
+ d2adjust     n    1.02701
+ d3adjust     n    0.95149
+ rwdadjust    n    0.98097
+ awdadjust    n    1.01043
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99980
+avadjust     n    0.98854
+v1adjust     n    1.01241
+v2adjust     n    1.01424
+d1adjust     n    0.96121
+d2adjust     n    1.02701
+d3adjust     n    0.95149
+rwdadjust    n    0.98097
+awdadjust    n    1.01043
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.082          1.046          9.140          1.036     (  18)      1.036     (  18)
+
+# GOF no.               45   1.082    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.082     Optimum:    1.036    
+# Erms             :   1.046     Optimum:   0.9932    
+# Chi2             :   9.140     Optimum:    2.000    
+
+
+    45 FUNCTION EVALUATIONS USED FOR SAMPLING
+
+#                         Goodness-of-fit
+# TALYS run        :    46
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    46
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  18)      1.036     (  18)
+
+# GOF no.               46   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    47
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    47
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  18)      1.036     (  18)
+
+# GOF no.               47   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    48
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    48
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  18)      1.036     (  18)
+
+# GOF no.               48   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    49
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    49
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  18)      1.036     (  18)
+
+# GOF no.               49   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    50
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    50
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  18)      1.036     (  18)
+
+# GOF no.               50   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    51
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    51
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07174
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07174
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  18)      1.036     (  18)
+
+# GOF no.               51   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+  41  93 Run:    51 New optimum (Frms Erms Chi-2):    1.035777E+00   9.931894E-01   2.000366E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    52
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    52
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  51)      1.036     (  51)
+
+# GOF no.               52   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    53
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    53
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04673
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04673
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  51)      1.036     (  51)
+
+# GOF no.               53   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    54
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    54
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02603
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02603
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  51)      1.036     (  51)
+
+# GOF no.               54   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+  41  93 Run:    54 New optimum (Frms Erms Chi-2):    1.035777E+00   9.931909E-01   2.000343E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    55
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    55
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07171
+ d2adjust     n    1.01791
+ d3adjust     n    1.04671
+ rwdadjust    n    1.02602
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07171
+d2adjust     n    1.01791
+d3adjust     n    1.04671
+rwdadjust    n    1.02602
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  54)      1.036     (  54)
+
+# GOF no.               55   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    56
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    56
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07176
+ d2adjust     n    1.01791
+ d3adjust     n    1.04679
+ rwdadjust    n    1.02610
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07176
+d2adjust     n    1.01791
+d3adjust     n    1.04679
+rwdadjust    n    1.02610
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  54)      1.036     (  54)
+
+# GOF no.               56   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+  41  93 Run:    56 New optimum (Frms Erms Chi-2):    1.035773E+00   9.931992E-01   2.000045E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    57
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    57
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07181
+ d2adjust     n    1.01791
+ d3adjust     n    1.04686
+ rwdadjust    n    1.02617
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07181
+d2adjust     n    1.01791
+d3adjust     n    1.04686
+rwdadjust    n    1.02617
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          2.000          1.036     (  56)      1.036     (  56)
+
+# GOF no.               57   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   2.000     Optimum:    2.000    
+
+  41  93 Run:    57 New optimum (Frms Erms Chi-2):    1.035769E+00   9.932070E-01   1.999755E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    58
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    58
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07190
+ d2adjust     n    1.01791
+ d3adjust     n    1.04701
+ rwdadjust    n    1.02631
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07190
+d2adjust     n    1.01791
+d3adjust     n    1.04701
+rwdadjust    n    1.02631
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9932          1.999          1.036     (  57)      1.036     (  57)
+
+# GOF no.               58   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9932     Optimum:   0.9932    
+# Chi2             :   1.999     Optimum:    2.000    
+
+  41  93 Run:    58 New optimum (Frms Erms Chi-2):    1.035760E+00   9.932238E-01   1.999167E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    59
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    59
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07209
+ d2adjust     n    1.01791
+ d3adjust     n    1.04731
+ rwdadjust    n    1.02659
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07209
+d2adjust     n    1.01791
+d3adjust     n    1.04731
+rwdadjust    n    1.02659
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9933          1.998          1.036     (  58)      1.036     (  58)
+
+# GOF no.               59   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9933     Optimum:   0.9932    
+# Chi2             :   1.998     Optimum:    1.999    
+
+  41  93 Run:    59 New optimum (Frms Erms Chi-2):    1.035745E+00   9.932562E-01   1.998017E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    60
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    60
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07246
+ d2adjust     n    1.01791
+ d3adjust     n    1.04791
+ rwdadjust    n    1.02716
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07246
+d2adjust     n    1.01791
+d3adjust     n    1.04791
+rwdadjust    n    1.02716
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9933          1.996          1.036     (  59)      1.036     (  59)
+
+# GOF no.               60   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9933     Optimum:   0.9933    
+# Chi2             :   1.996     Optimum:    1.998    
+
+  41  93 Run:    60 New optimum (Frms Erms Chi-2):    1.035713E+00   9.933224E-01   1.995754E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    61
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    61
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07321
+ d2adjust     n    1.01791
+ d3adjust     n    1.04910
+ rwdadjust    n    1.02829
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07321
+d2adjust     n    1.01791
+d3adjust     n    1.04910
+rwdadjust    n    1.02829
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9935          1.991          1.036     (  60)      1.036     (  60)
+
+# GOF no.               61   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9935     Optimum:   0.9933    
+# Chi2             :   1.991     Optimum:    1.996    
+
+  41  93 Run:    61 New optimum (Frms Erms Chi-2):    1.035654E+00   9.934558E-01   1.991423E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    62
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    62
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07471
+ d2adjust     n    1.01791
+ d3adjust     n    1.05149
+ rwdadjust    n    1.03055
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07471
+d2adjust     n    1.01791
+d3adjust     n    1.05149
+rwdadjust    n    1.03055
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.036         0.9937          1.984          1.036     (  61)      1.036     (  61)
+
+# GOF no.               62   1.036    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.036     Optimum:    1.036    
+# Erms             :  0.9937     Optimum:   0.9935    
+# Chi2             :   1.984     Optimum:    1.991    
+
+  41  93 Run:    62 New optimum (Frms Erms Chi-2):    1.035549E+00   9.937314E-01   1.983556E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    63
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    63
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.036     (  62)      1.036     (  62)
+
+# GOF no.               63   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.036    
+# Erms             :  0.9943     Optimum:   0.9937    
+# Chi2             :   1.971     Optimum:    1.984    
+
+  41  93 Run:    63 New optimum (Frms Erms Chi-2):    1.035404E+00   9.943169E-01   1.971256E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    64
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    64
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  63)      1.035     (  63)
+
+# GOF no.               64   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    65
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    65
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  63)      1.035     (  63)
+
+# GOF no.               65   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    66
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    66
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  63)      1.035     (  63)
+
+# GOF no.               66   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    67
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    67
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  63)      1.035     (  63)
+
+# GOF no.               67   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    68
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    68
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07773
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07773
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  63)      1.035     (  63)
+
+# GOF no.               68   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+  41  93 Run:    68 New optimum (Frms Erms Chi-2):    1.035404E+00   9.943161E-01   1.971258E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    69
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    69
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  68)      1.035     (  68)
+
+# GOF no.               69   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    70
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    70
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05628
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05628
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  68)      1.035     (  68)
+
+# GOF no.               70   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    71
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    71
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03509
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03509
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  68)      1.035     (  68)
+
+# GOF no.               71   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+  41  93 Run:    71 New optimum (Frms Erms Chi-2):    1.035404E+00   9.943177E-01   1.971244E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    72
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    72
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07771
+ d2adjust     n    1.01791
+ d3adjust     n    1.05626
+ rwdadjust    n    1.03508
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07771
+d2adjust     n    1.01791
+d3adjust     n    1.05626
+rwdadjust    n    1.03508
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9943          1.971          1.035     (  71)      1.035     (  71)
+
+# GOF no.               72   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9943     Optimum:   0.9943    
+# Chi2             :   1.971     Optimum:    1.971    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    73
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    73
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07900
+ d2adjust     n    1.01791
+ d3adjust     n    1.05817
+ rwdadjust    n    1.03698
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07900
+d2adjust     n    1.01791
+d3adjust     n    1.05817
+rwdadjust    n    1.03698
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9946          1.968          1.035     (  71)      1.035     (  71)
+
+# GOF no.               73   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9946     Optimum:   0.9943    
+# Chi2             :   1.968     Optimum:    1.971    
+
+  41  93 Run:    73 New optimum (Frms Erms Chi-2):    1.035372E+00   9.945706E-01   1.967588E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    74
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    74
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  73)      1.035     (  73)
+
+# GOF no.               74   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9946    
+# Chi2             :   1.965     Optimum:    1.968    
+
+  41  93 Run:    74 New optimum (Frms Erms Chi-2):    1.035358E+00   9.948347E-01   1.964860E+00
+
+#                         Goodness-of-fit
+# TALYS run        :    75
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    75
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               75   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    76
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    76
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               76   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    77
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    77
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               77   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    78
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    78
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               78   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    79
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    79
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08033
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08033
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               79   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    80
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    80
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               80   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    81
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    81
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06010
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06010
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               81   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    82
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    82
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03890
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03890
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               82   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    83
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    83
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               83   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    84
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    84
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.07987
+ d2adjust     n    1.01791
+ d3adjust     n    1.05947
+ rwdadjust    n    1.03829
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.07987
+d2adjust     n    1.01791
+d3adjust     n    1.05947
+rwdadjust    n    1.03829
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.966          1.035     (  74)      1.035     (  74)
+
+# GOF no.               84   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.966     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    85
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    85
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08008
+ d2adjust     n    1.01791
+ d3adjust     n    1.05978
+ rwdadjust    n    1.03859
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08008
+d2adjust     n    1.01791
+d3adjust     n    1.05978
+rwdadjust    n    1.03859
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               85   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    86
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    86
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08028
+ d2adjust     n    1.01791
+ d3adjust     n    1.06005
+ rwdadjust    n    1.03886
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08028
+d2adjust     n    1.01791
+d3adjust     n    1.06005
+rwdadjust    n    1.03886
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               86   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    87
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    87
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08029
+ d2adjust     n    1.01791
+ d3adjust     n    1.06007
+ rwdadjust    n    1.03887
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08029
+d2adjust     n    1.01791
+d3adjust     n    1.06007
+rwdadjust    n    1.03887
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               87   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    88
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    88
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               88   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    89
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    89
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               89   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    90
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    90
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               90   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    91
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    91
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               91   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    92
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    92
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               92   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    93
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    93
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               93   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    94
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    94
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               94   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    95
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    95
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               95   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    96
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    96
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               96   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    97
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    97
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               97   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    98
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    98
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               98   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    99
+# GOF estimator    :    Frms  
+
+  Parameters for input file:    99
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.               99   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+
+#                         Goodness-of-fit
+# TALYS run        :   100
+# GOF estimator    :    Frms  
+
+  Parameters for input file:   100
+
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
+
+# projectile       : n
+# Z                :  41
+# A                :  93
+# Target isomer    :  
+# Nuclide          : Nb093 
+# Parameters       :
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278
+
+# Channel summary  : Nb093 
+# Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
+total.tot          28  1237      1.035         0.9948          1.965          1.035     (  74)      1.035     (  74)
+
+# GOF no.              100   1.035    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :   28
+# Data points      :   1237
+# Frms             :   1.035     Optimum:    1.035    
+# Erms             :  0.9948     Optimum:   0.9948    
+# Chi2             :   1.965     Optimum:    1.965    
+
+ Maximum number of runs done:          100
+
+ Execution time:  0 hours  0 minutes  2.38 seconds 
+
+ This TASMAN run has finished

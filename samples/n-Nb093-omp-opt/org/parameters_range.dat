@@ -1,0 +1,9 @@
+rvadjust     n    1.00000 # Range:      0.98039 -      1.02000
+avadjust     n    1.00000 # Range:      0.98039 -      1.02000
+v1adjust     n    1.00000 # Range:      0.98039 -      1.02000
+v2adjust     n    1.00000 # Range:      0.97087 -      1.03000
+d1adjust     n    1.00000 # Range:      0.90909 -      1.10000
+d2adjust     n    1.00000 # Range:      0.90909 -      1.10000
+d3adjust     n    1.00000 # Range:      0.90909 -      1.10000
+rwdadjust    n    1.00000 # Range:      0.97087 -      1.03000
+awdadjust    n    1.00000 # Range:      0.96154 -      1.04000

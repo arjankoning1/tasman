@@ -1,0 +1,33 @@
+# header:
+#   title: Nb93(n,el) cross section - average
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2025-12-15
+#   format: YANDF-0.4
+# target:
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction:
+#   type: (n,el)
+#   ENDF_MF: 3
+#   ENDF_MT: 2
+#   quantity:
+#     type: cross section
+# quantity: 
+#   type: average cross section
+# datablock: 
+#   columns: 4
+#   entries: 10
+##       E             xs            xslow          xsup
+##     [MeV]          [mb]           [mb]           [mb]
+   1.000000E-01   9.536270E+03   8.335525E+03   1.073701E+04
+   2.000000E-01   1.013472E+04   8.805344E+03   1.146410E+04
+   5.000000E-01   9.085514E+03   8.118006E+03   1.005302E+04
+   1.000000E+00   6.150739E+03   5.495761E+03   6.805717E+03
+   2.000000E+00   2.861721E+03   2.499457E+03   3.223985E+03
+   3.000000E+00   1.992629E+03   1.855134E+03   2.130125E+03
+   4.000000E+00   1.786605E+03   1.740193E+03   1.833017E+03
+   5.000000E+00   1.839664E+03   1.742659E+03   1.936669E+03
+   8.000000E+00   2.291707E+03   2.213976E+03   2.369438E+03
+   1.000000E+01   2.410707E+03   2.373955E+03   2.447459E+03
