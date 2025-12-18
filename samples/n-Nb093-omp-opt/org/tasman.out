@@ -1,12 +1,12 @@
 
-    TASMAN-2.2 (Version: December 9, 2025)
+    TASMAN-2.2 (Version: December 18, 2025)
 
  Copyright (C) 2025  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2025-12-15
+ Date: 2025-12-18
 
  ########## USER INPUT ##########
 
@@ -4781,6 +4781,6 @@ total.tot          28  1237      1.035         0.9948          1.965          1.
 
  Maximum number of runs done:          100
 
- Execution time:  0 hours  0 minutes  2.38 seconds 
+ Execution time:  0 hours  0 minutes  3.10 seconds 
 
  This TASMAN run has finished

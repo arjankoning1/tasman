@@ -1,304 +1,306 @@
 
                      Deleted points with zero or equal values
 
- Deleted point: MF=  3 MT=  1 E= 2.51189E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.01187E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94328E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.00000E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25892E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.99526E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51189E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.01187E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94327E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 9.99999E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25892E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.99526E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51189E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.01187E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94328E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.00000E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25893E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.99526E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.44320E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.05456E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.81890E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.77450E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 5.96922E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 7.46289E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 9.33033E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.16651E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.45840E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.82333E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.27958E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.85000E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.56316E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.45477E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 5.56948E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 6.96313E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 8.70551E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.08839E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.36073E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.70123E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.12693E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.65915E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.32454E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.15644E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 5.19651E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 6.49683E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 8.12253E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.01550E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.26961E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.58730E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.98449E-02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 2.53000E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.01187E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94328E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.00000E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25893E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.99526E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51189E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.01187E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94329E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.10191E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.87810E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.84851E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 6.06175E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 7.57858E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 9.47497E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.18459E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.48101E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.85160E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.31492E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.89418E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.61839E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.52382E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 5.65582E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 7.07106E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 8.84045E-01 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 1.00000E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25892E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.99526E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51189E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.01187E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94327E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.38183E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.72760E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.15990E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.70037E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.37608E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.22087E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 5.27706E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 6.59754E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 8.24843E+00 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 1.00000E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25893E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.99526E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51188E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.01187E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94328E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.28929E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.61191E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.01526E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.51953E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.15000E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.93822E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.92367E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 6.15572E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 7.69606E+01 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 1.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25892E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.20295E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.50396E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 2.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51189E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.35081E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.93905E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.67448E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 5.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94328E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 5.74349E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 7.18068E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 1.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25892E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.12239E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.40325E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.75438E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 2.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51188E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.74223E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.42842E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 4.28630E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 5.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30957E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.94327E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 6.69981E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 8.37630E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 1.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.25892E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 1.58489E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.30928E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 1.63689E+04 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 2.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 2.51188E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.16228E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 3.98107E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 5.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 6.30958E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  1 E= 7.49020E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 2.55859E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.19883E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  1 E= 3.74510E+04 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  1 E= 1.10000E+06 eV xs= 7.08976E+00 b
+ Deleted point: MF=  3 MT=  2 E= 1.00000E+05 eV xs= 7.45891E+00 b
  Deleted point: MF=  3 MT=  2 E= 2.00000E+05 eV xs= 7.45891E+00 b
  Deleted point: MF=  3 MT=  2 E= 5.00000E+05 eV xs= 7.45891E+00 b
  Deleted point: MF=  3 MT=  2 E= 8.00000E+05 eV xs= 7.45891E+00 b
  Deleted point: MF=  3 MT=  2 E= 1.00000E+06 eV xs= 7.45891E+00 b
  Deleted point: MF=  3 MT=  2 E= 1.00000E+06 eV xs= 7.45891E+00 b
- Deleted point: MF=  3 MT=  3 E= 2.51189E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.01187E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94328E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.00000E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25892E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.99526E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51189E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.01187E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94327E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 9.99999E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25892E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.99526E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51189E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.01187E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94328E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.00000E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25893E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.99526E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.44320E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.05456E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.81890E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.77450E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 5.96922E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 7.46289E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 9.33033E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.16651E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.45840E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.82333E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.27958E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.85000E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.56316E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.45477E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 5.56948E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 6.96313E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 8.70551E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.08839E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.36073E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.70123E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.12693E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.65915E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.32454E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.15644E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 5.19651E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 6.49683E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 8.12253E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.01550E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.26961E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.58730E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.98449E-02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 2.53000E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.01187E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94328E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.00000E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25893E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.99526E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51189E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.01187E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94329E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.10191E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.87810E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.84851E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 6.06175E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 7.57858E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 9.47497E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.18459E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.48101E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.85160E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.31492E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.89418E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.61839E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.52382E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 5.65582E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 7.07106E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 8.84045E-01 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 1.00000E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25892E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.99526E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51189E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.01187E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94327E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.38183E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.72760E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.15990E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.70037E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.37608E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.22087E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 5.27706E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 6.59754E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 8.24843E+00 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 1.00000E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25893E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.99526E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51188E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.01187E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94328E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.28929E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.61191E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.01526E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.51953E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.15000E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.93822E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.92367E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 6.15572E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 7.69606E+01 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 1.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25892E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.20295E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.50396E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 2.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51189E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.35081E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.93905E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.67448E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 5.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94328E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 5.74349E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 7.18068E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 1.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25892E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.12239E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.40325E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.75438E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 2.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51188E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.74223E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.42842E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 4.28630E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 5.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30957E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.94327E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 6.69981E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 8.37630E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 1.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.25892E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 1.58489E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.30928E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 1.63689E+04 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 2.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 2.51188E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.16228E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 3.98107E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 5.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 6.30958E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=  3 E= 7.49020E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 2.55859E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.19883E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=  3 E= 3.74510E+04 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=  3 E= 1.10000E+06 eV xs= 1.90578E-02 b
  Deleted point: MF=  3 MT= 22 E= 9.00000E+06 eV xs= 1.04263E-15 b
  Deleted point: MF=  3 MT=103 E= 6.00000E+06 eV xs= 1.12673E-12 b
  Deleted point: MF=  3 MT=104 E= 1.00000E+07 eV xs= 3.34249E-16 b
  Deleted point: MF=  3 MT=105 E= 1.40000E+07 eV xs= 2.64178E-11 b
- Deleted point: MF=  3 MT=107 E= 2.51189E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.01187E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94328E-05 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.00000E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25892E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.99526E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51189E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.01187E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94327E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 9.99999E-04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25892E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.99526E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51189E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.01187E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94328E-03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.00000E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25893E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.99526E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.44320E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.05456E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.81890E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.77450E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 5.96922E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 7.46289E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 9.33033E-05 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.16651E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.45840E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.82333E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.27958E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.85000E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.56316E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.45477E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 5.56948E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 6.96313E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 8.70551E-04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.08839E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.36073E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.70123E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.12693E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.65915E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.32454E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.15644E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 5.19651E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 6.49683E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 8.12253E-03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.01550E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.26961E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.58730E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.98449E-02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 2.53000E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.01187E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94328E-02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.00000E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25893E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.99526E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51189E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.01187E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E-01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94329E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.10191E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.87810E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.84851E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 6.06175E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 7.57858E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 9.47497E-02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.18459E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.48101E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.85160E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.31492E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.89418E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.61839E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.52382E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 5.65582E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 7.07106E-01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 8.84045E-01 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 1.00000E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25892E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.99526E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51189E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.01187E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E+00 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94327E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.38183E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.72760E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.15990E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.70037E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.37608E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.22087E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 5.27706E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 6.59754E+00 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 8.24843E+00 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 1.00000E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25893E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.99526E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51188E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.01187E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E+01 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94328E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.28929E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.61191E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.01526E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.51953E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.15000E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.93822E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.92367E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 6.15572E+01 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 7.69606E+01 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 1.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25892E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.20295E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.50396E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 2.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51189E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.35081E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.93905E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.67448E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 5.00000E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E+02 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94328E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 5.74349E+02 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 7.18068E+02 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 1.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25892E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.12239E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.40325E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.75438E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 2.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51188E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.74223E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.42842E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 4.28630E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 5.00000E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30957E+03 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 7.94327E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 6.69981E+03 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 8.37630E+03 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 1.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.25892E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 1.58489E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.30928E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.63689E+04 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 2.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 2.51188E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.16228E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 3.98107E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 5.00000E+04 eV xs= 1.00000E-20 b
- Deleted point: MF=  3 MT=107 E= 6.30958E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 2.55859E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 3.19883E+04 eV xs= 1.00000E-20 b
+ Deleted point: MF=  3 MT=107 E= 1.00000E+05 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 2.00000E+05 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 5.00000E+05 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 8.00000E+05 eV xs= 1.00000E-20 b
@@ -370,4 +372,4 @@
  Deleted point: MF= 10 MT=107 iso=  2 E= 2.00000E+06 eV xs= 1.00000E-20 b
  Deleted point: MF= 10 MT=107 iso=  2 E= 2.50000E+06 eV xs= 1.00000E-20 b
 
- Number of deleted points:   368
+ Number of deleted points:   370

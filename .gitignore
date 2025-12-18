@@ -104,7 +104,7 @@ tags
 
 #AK software
 
-samples
+##samples
 samples1.97
 LOG-*
 export
@@ -116,4 +116,6 @@ structure
 parameters
 t6copy
 exforcopy
+clean
+create
 
