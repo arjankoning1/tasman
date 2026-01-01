@@ -70,7 +70,7 @@ subroutine integralread
       xsefftalys(isamp, k) = xsc
       xseffexp(k) = xse
       xseffrat(isamp, k) = rat
-      if (mode == 2 .and. italys <= numpar) xseffsave(italys, k) = xsc
+      if (mode == 2 .and. italys >= 0 .and. italys <= numpar) xseffsave(italys, k) = xsc
     enddo
     Nxseff = k
     close (2)
