@@ -6,7 +6,7 @@ module A0_tasman_mod
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2025-12-18: Current revision
+! 2026-01-01: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -582,6 +582,9 @@ module A0_tasman_mod
 !
   logical                                :: flagreadsens ! flag to read sensitivities from tables
   logical                                :: flagsens     ! flag to use sensitivity in parameter weighting
+  logical                                :: flagmorris   ! flag to use Morris screening
+  integer                                :: Nmorris      ! number of samples for Morris screening
+  integer                                :: iloop        ! counter for Morris screening
   real(sgl), dimension(numpar)           :: Sall         ! sensitivity for all channels
   real(sgl), dimension(numpar,numchanxs) :: Schan        ! sensitivity for channel
   real(sgl), dimension(numpar,numenin)   :: SE           ! sensitivity for energy
@@ -723,4 +726,4 @@ module A0_tasman_mod
   integer           :: offset       ! offset for numbering or random files (TMC only)
   integer           :: tmcoffset    ! offset for starting creation of ENDF-6 files (TMC only)
 end module A0_tasman_mod
-! Copyright A.J. Koning 2025
+! Copyright A.J. Koning 2026
