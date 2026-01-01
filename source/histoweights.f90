@@ -66,12 +66,14 @@ subroutine histoweights
     hweight = weight(0)
     if (P >= Plow(1) .and. P <= Plow(Nhistbin(ipar) + 1)) then
       call locate_nr(Plow, Nhistbin(ipar) + 1, P, j)
-      if (readpar(ipar) == 0) then
-        hist(ipar, j) = (hist(ipar, j) * nhist(ipar, j) + hweight) / (nhist(ipar, j) + 1)
-        nhist(ipar, j) = nhist(ipar, j) + 1
+      if (j > 0) then
+        if (readpar(ipar) == 0) then
+          hist(ipar, j) = (hist(ipar, j) * nhist(ipar, j) + hweight) / (nhist(ipar, j) + 1)
+          nhist(ipar, j) = nhist(ipar, j) + 1
+        endif
+        histsam(ipar, j) = (histsam(ipar, j) * nhistsam(ipar, j) + hweight) / (nhistsam(ipar, j) + 1)
+        nhistsam(ipar, j) = nhistsam(ipar, j) + 1
       endif
-      histsam(ipar, j) = (histsam(ipar, j) * nhistsam(ipar, j) + hweight) / (nhistsam(ipar, j) + 1)
-      nhistsam(ipar, j) = nhistsam(ipar, j) + 1
     else
       write(*, '(" TASMAN-warning: parameter ", a24, " with value ", es12.5, " outside boundaries", es12.5," - ", es12.5)') &
  &      parfile(ipar), P, Plow(1), Plow(Nhistbin(ipar) + 1)
