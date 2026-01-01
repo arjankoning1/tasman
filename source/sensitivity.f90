@@ -51,11 +51,12 @@ subroutine sensitivity
 ! *** Declaration of local data
 !
   implicit none
-  character(len=15) :: col(200)                         ! header
-  character(len=15) :: un(200)
+  character(len=15) :: col(numpar)                         ! header
+  character(len=15) :: un(numpar)
   character(len=16) :: reaction
   character(len=132) :: quantity
   character(len=132) :: topline    ! topline
+  character(len=132) :: sensfile
   integer           :: i                                   ! counter
   integer           :: j                                   ! counter
   integer           :: Ncol
@@ -75,6 +76,7 @@ subroutine sensitivity
   real(sgl)         :: ploc(numpar)                        ! help variable
   real(sgl)         :: ptmp                                ! help variable
   real(sgl)         :: Sabs                                ! absolute sensitivity
+  real(sgl)         :: sens                                ! sensitivity
   real(sgl)         :: Sloc(numpar)                        ! help variable
   real(sgl)         :: Stmp                                ! help variable
   real(sgl)         :: sumdev                              ! summed deviation
@@ -90,6 +92,7 @@ subroutine sensitivity
   real(sgl)         :: xsik                                ! cross section of random run
   real(sgl)         :: xsloc(numpar)                       ! help variable
   real(sgl)         :: xstmp                               ! help variable
+  real(sgl)         :: Sprev                               ! help variable
   character(len=33) :: format1                             ! format string
   character(len=26) :: format2                             ! format string
   character(len=132):: strloc(numpar)                      ! help variable
@@ -109,6 +112,7 @@ subroutine sensitivity
   else
     Np = min(italys, numpar)
   endif
+  Np = min(Npar, numpar)
   if (mode == 2) then
     do k = 1, Np
       parj0 = partalys(0, k)
@@ -127,7 +131,16 @@ subroutine sensitivity
               else
                 factor = parj0 / xsi0
               endif
-              S(k,i,n) = factor * xsdifi / pardifj
+              sens = factor * xsdifi / pardifj
+              if (flagmorris .and. iloop > 1) then
+                if (italys == k) then
+                  Sprev = S(k,i,n)
+                  S(k,i,n) = (Sprev*(iloop - 1)+sens) / iloop
+                endif
+              else
+                S(k,i,n) = sens
+                Sprev = sens
+              endif
             endif
           enddo
         enddo
@@ -177,7 +190,9 @@ subroutine sensitivity
 ! Sensitivity per parameter, cross section and energy
 !
   topline=trim(targetnuclide)//' '//trim(quantity)//' per parameter, cross section and energy'
-  open (unit = 1, file = 'sensitivity.par', status = 'replace')
+  sensfile = 'sensitivity.par'
+! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+  open (unit = 1, file = sensfile, status = 'replace')
   call write_header(indent,topline,source,user,date,oformat)
   call write_target(indent)
   un = ''
@@ -211,7 +226,9 @@ subroutine sensitivity
 ! Sensitivity per cross section, energy and parameter, sorted
 !
   topline=trim(targetnuclide)//' '//trim(quantity)//' per cross section, energy and parameter, sorted'
-  open (unit = 1, file = 'sensitivity.xs', status = 'replace')
+  sensfile = 'sensitivity.xs'
+! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+  open (unit = 1, file = sensfile, status = 'replace')
   call write_header(indent,topline,source,user,date,oformat)
   call write_target(indent)
   un = ''
@@ -268,7 +285,9 @@ subroutine sensitivity
 ! Sensitivity per energy, parameter and cross section
 !
   topline=trim(targetnuclide)//' '//trim(quantity)//' per energy, parameter and cross section'
-  open (unit = 1, file = 'sensitivity.E', status = 'replace')
+  sensfile = 'sensitivity.E'
+! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+  open (unit = 1, file = sensfile, status = 'replace')
   call write_header(indent,topline,source,user,date,oformat)
   call write_target(indent)
   un = ''
@@ -301,7 +320,9 @@ subroutine sensitivity
 ! Sensitivity per parameter integrated over energy, sorted
 !
   topline=trim(targetnuclide)//' '//trim(quantity)//' per parameter integrated over energy, sorted'
-  open (unit = 1, file = 'sensitivity.parave', status = 'replace')
+  sensfile = 'sensitivity.parave'
+! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+  open (unit = 1, file = sensfile, status = 'replace')
   call write_header(indent,topline,source,user,date,oformat)
   call write_target(indent)
   un = ''
@@ -327,7 +348,9 @@ subroutine sensitivity
 ! Sensitivity per channel integrated over energy, sorted
 !
   topline=trim(targetnuclide)//' '//trim(quantity)//' per channel integrated over energy, sorted'
-  open (unit = 1, file = 'sensitivity.xsave', status = 'replace')
+  sensfile = 'sensitivity.xsave'
+! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+  open (unit = 1, file = sensfile, status = 'replace')
   call write_header(indent,topline,source,user,date,oformat)
   call write_target(indent)
   un = ''
@@ -378,7 +401,9 @@ subroutine sensitivity
 ! Sensitivity per energy, summed over channels
 !
   topline=trim(targetnuclide)//' '//trim(quantity)//' per energy, integrated over channels'
-  open (unit = 1, file = 'sensitivity.Eave', status = 'replace')
+  sensfile = 'sensitivity.Eave'
+! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+  open (unit = 1, file = sensfile, status = 'replace')
   call write_header(indent,topline,source,user,date,oformat)
   call write_target(indent)
   un = ''
@@ -416,7 +441,9 @@ subroutine sensitivity
 ! Sensitivity integrated over all channels
 !
   topline=trim(targetnuclide)//' '//trim(quantity)//' integrated over all channels and energies'
-  open (unit = 1, file = 'sensitivity.all', status = 'replace')
+  sensfile = 'sensitivity.all'
+! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+  open (unit = 1, file = sensfile, status = 'replace')
   call write_header(indent,topline,source,user,date,oformat)
   call write_target(indent)
   un = ''
@@ -456,7 +483,9 @@ subroutine sensitivity
   do i = 1, Nchanxs
     reaction=reaction_string(i)
     topline=trim(targetnuclide)//' '//trim(reaction)//' '//trim(quantity)//' per reaction channel'
-    open (unit = 1, file = 'sens_'//xsfile(i), status = 'replace')
+    sensfile = 'sens_'//xsfile(i)
+!   if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
+    open (unit = 1, file = sensfile, status = 'replace')
     call write_header(indent,topline,source,user,date,oformat)
     call write_target(indent)
     call write_reaction(indent,reaction,0.D0,0.D0,0,0)
@@ -469,7 +498,6 @@ subroutine sensitivity
     Ncol = Np + 1
     call write_quantity(indent,quantity)
     call write_datablock(indent,Ncol,Nen(i),col,un)
-!   write(1, fmt = format1) (parstring(k)(1:30), k = 1, Np)
     do j = 1, Nen(i)
       n = Sindex(i, j)
       write(1, fmt = format2) E(i, j), (S(k, i, n), k = 1, Np)
