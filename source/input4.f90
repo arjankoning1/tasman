@@ -5,7 +5,7 @@ subroutine input4
 !
 ! Author    : Arjan Koning
 !
-! 2021-12-30: Original code
+! 2025-12-26: Original code
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -515,8 +515,18 @@ subroutine input4
         partype0 = 'norm  '
         exit
       endif
+      if (key == 'betafiscoradjust') then
+        delta0 = 0.20
+        partype0 = 'norm  '
+        exit
+      endif
       if (key == 'vfiscor') then
         delta0 = 0.30
+        partype0 = 'norm  '
+        exit
+      endif
+      if (key == 'vfiscoradjust') then
+        delta0 = 0.15
         partype0 = 'norm  '
         exit
       endif
@@ -526,7 +536,7 @@ subroutine input4
         exit
       endif
       if (key == 'rmiufiscoradjust') then
-        delta0 = 0.80
+        delta0 = 0.40
         partype0 = 'norm  '
         exit
       endif
@@ -536,7 +546,7 @@ subroutine input4
         exit
       endif
       if (key == 'gamgamadjust') then
-        delta0 = 0.40
+        delta0 = 0.20
         partype0 = 'factor'
         exit
       endif
@@ -630,12 +640,12 @@ subroutine input4
         exit
       endif
       if (key == 'ctableadjust') then
-        delta0 = 1.00
+        delta0 = 0.50
         partype0 = 'shift '
         exit
       endif
       if (key == 'ptableadjust') then
-        delta0 = 2.00
+        delta0 = 1.00
         partype0 = 'shift '
         exit
       endif
@@ -645,7 +655,7 @@ subroutine input4
         exit
       endif
       if (key == 'fisbaradjust') then
-        delta0 = 0.10
+        delta0 = 0.05
         partype0 = 'factor'
         exit
       endif
@@ -660,7 +670,7 @@ subroutine input4
         exit
       endif
       if (key == 'fishwadjust') then
-        delta0 = 0.10
+        delta0 = 0.05
         partype0 = 'factor'
         exit
       endif
@@ -670,7 +680,7 @@ subroutine input4
         exit
       endif
       if (key == 'bdampadjust') then
-        delta0 = 5.
+        delta0 = 0.05
         partype0 = 'factor'
         exit
       endif
@@ -685,7 +695,7 @@ subroutine input4
         exit
       endif
       if (key == 'e0adjust') then
-        delta0 = 0.15
+        delta0 = 0.075
         partype0 = 'shift '
         exit
       endif
@@ -695,7 +705,7 @@ subroutine input4
         exit
       endif
       if (key == 'exmatchadjust') then
-        delta0 = 0.15
+        delta0 = 0.075
         partype0 = 'shift '
         exit
       endif
@@ -803,17 +813,17 @@ subroutine input4
         exit
       endif
       if (key == 'etableadjust') then
-        delta0 = 0.80
+        delta0 = 0.40
         partype0 = 'shift '
         exit
       endif
       if (key == 'ftableadjust') then
-        delta0 = 0.50
+        delta0 = 0.25
         partype0 = 'factor'
         exit
       endif
       if (key == 'wtableadjust') then
-        delta0 = 0.30
+        delta0 = 0.15
         partype0 = 'factor'
         exit
       endif
@@ -833,17 +843,17 @@ subroutine input4
         exit
       endif
       if (key == 'upbendcadjust') then
-        delta0 = 1.00
+        delta0 = 0.50
         partype0 = 'factor'
         exit
       endif
       if (key == 'upbendeadjust') then
-        delta0 = 1.00
+        delta0 = 0.50
         partype0 = 'factor'
         exit
       endif
       if (key == 'upbendfadjust') then
-        delta0 = 1.00
+        delta0 = 0.50
         partype0 = 'factor'
         exit
       endif
@@ -1210,7 +1220,13 @@ subroutine input4
 !
     if (class > 0) then
       pardelta(ii) = cwidth * delta
-      if (mode == 2) pardelta(ii) = 0.1 * pardelta(ii)
+!     if (mode == 2) then
+!       if (flagmorris) then
+!         pardelta(ii) = 0.3 * pardelta(ii)
+!       else
+!         pardelta(ii) = 0.1 * pardelta(ii)
+!       endif
+!     endif
     else
       pardelta(ii) = delta
     endif
