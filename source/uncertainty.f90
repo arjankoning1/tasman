@@ -5,7 +5,7 @@ subroutine uncertainty
 !
 ! Author    : Arjan Koning
 !
-! 2021-12-30: Original code
+! 2025-12-25: Original code
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -44,6 +44,7 @@ subroutine uncertainty
   character(len=132) :: talcmd    ! TALYS command
   integer            :: i         ! counter
   integer            :: system    ! system call
+  integer            :: Nloop     ! number of loops, > 1 for Morris screening
 !
 ! ******************** Uncertainties and sensitivities *****************
 !
@@ -59,31 +60,39 @@ subroutine uncertainty
   call covinitial
   if (flagweight .and. flagreadsens) call readsens
   if (flagextparvar) open(unit=80,file='parvars.inp',status='old')
-  do italys = Ntalbeg, Ntalys
-    if (italys > 0) call parvariation
-    call inputwrite
-    if (flaginponly) cycle
+  if (flagmorris) then
+    Nloop = Nmorris
+  else
+    Nloop = 1
+  endif
+  do iloop = 1, Nloop
+    if (iloop > 1) write(*,'(/," Random loop :",i6)') iloop
+    do italys = Ntalbeg, Ntalys
+      if ((mode == 1 .and. italys > 0) .or. (mode == 2 .and. flagmorris .and. italys == 0 .and. iloop > 1)) call parvariation
+      if (mode == 2) call sensinput
+      call inputwrite
+      if (flaginponly) cycle
 !
 ! Patch by Georg Schnabel to read pre-calculated TALYS results
 !
-    write(calcnumstr, '(i4.4)') italys + 1
-    if (trim(getcalcscript) /= 'none') then
-      talcmd = trim(getcalcscript)// ' ' // calcnumstr
-      write(*,*) trim(talcmd)
-      i = system(talcmd)
-    else
-      talcmd = trim(talys) //' < talys.inp > talys.out'
-      i = system(talcmd)
-    endif
+      write(calcnumstr, '(i4.4)') italys + 1
+      if (trim(getcalcscript) /= 'none') then
+        talcmd = trim(getcalcscript)// ' ' // calcnumstr
+        write(*,*) trim(talcmd)
+        i = system(talcmd)
+      else
+        talcmd = trim(talys) //' < talys.inp > talys.out'
+        i = system(talcmd)
+      endif
 !
 ! Read and process output of TALYS
 !
 ! talysread: subroutine to read results from TALYS files
 !
-    call talysread
-    if ( .not. flagtalys) cycle
-    if (flagsave) call output
-    if (italys ==  -1) cycle
+      call talysread
+      if ( .not. flagtalys) cycle
+      if (flagsave) call output
+      if (italys ==  -1) cycle
 !
 ! Statistical processing
 !
@@ -93,13 +102,14 @@ subroutine uncertainty
 ! sensitivity: subroutine to create sensitivity matrix
 ! cleaner    : subroutine to clean up TALYS files before next random run
 !
-    if (italys >= 0) then
-      if (flagexp .or. flaglib .or. flagtal) call gof
-    endif
-    if (italys > 0) then
-      if (mode == 1 .and. italys > tmcoffset .and. flagcross) call covariance
-      if ((flagsens .and. .not. flagreadsens) .or. mode == 2) call sensitivity
-    endif
+      if (italys >= 0) then
+        if (flagexp .or. flaglib .or. flagtal) call gof
+      endif
+      if (italys > 0) then
+        if (mode == 1 .and. italys > tmcoffset .and. flagcross) call covariance
+        if ((flagsens .and. .not. flagreadsens) .or. mode == 2) call sensitivity
+      endif
+    enddo
   enddo
   if (flagextparvar) close(unit=80)
   return
