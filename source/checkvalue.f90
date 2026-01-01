@@ -5,7 +5,7 @@ subroutine checkvalue
 !
 ! Author    : Arjan Koning
 !
-! 2021-12-30: Original code
+! 2025-12-30: Original code
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -126,6 +126,7 @@ subroutine checkvalue
   call range_real_error('#cwidth', cwidth, 0., 20.)
   call range_real_error('#fiscor', fiscor0, 0.1, 10.)
   call range_integer_error('#offset', offset, 0, 10000)
+  call range_integer_error('#nmorris', Nmorris, 1, 10000)
   call range_integer_error('#zmin', zzmin, 1, numZ)
   call range_integer_error('#zmax', zzmax, 1, numZ)
   call range_integer_error('#amin', aamin, 0, nummass)
