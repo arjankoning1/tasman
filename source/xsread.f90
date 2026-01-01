@@ -566,7 +566,7 @@ subroutine xsread
         endif
       enddo
     endif
-    if (italys <= numpar) then
+    if (italys >= 0 .and. italys <= numpar) then
       do i = 1, Nchanxs
         do k = 1, Nen(i)
           n = Sindex(i, k)
