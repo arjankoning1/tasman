@@ -198,7 +198,7 @@ subroutine gamread
         endif
       enddo
     endif
-    if (italys <= numpar) then
+    if (italys >= 0 .and. italys <= numpar) then
       do i = 1, Nchangam
         do k = 1, Nengam(i)
           n = Sgamindex(i, k)
