@@ -1,0 +1,34 @@
+
+     KOEKEL-0.3 Beta (Version: March 24, 2008)
+
+ Copyright (C) 2008  Arjan Koning
+
+
+      Optimization with simulated annealing
+
+
+ ########## USER INPUT ##########
+
+ USER INPUT FILE
+
+
+ USER INPUT FILE + DEFAULTS
+
+ Keyword  Value   Explanation
+
+ write       F       logical for extensive output
+ quasi       F       logical for quasi-random search
+ sobol       F       logical for quasi-random search with Sobol sequence
+ history     F       logical for using information from previous runs
+ save        F       logical for saving information from previous runs
+ sens        F       logical for sensitivity weighted random parameter
+ all         F       logical for variation of all parameters simultaneously
+ NR          10      number of initial runs with random parameters
+ NS           5      number of loops through all parameters before step adjustment
+ NT           5      number of loops before temperature reduction
+ Neps         4      number of times tolerance is achieved before termination
+ seed  20032703      seed for random number initialization
+ eps       1.000E-06 convergence criteria
+ RT        0.500     factor for temperature reduction
+ T         0.000E+00 initial temperature
+ Cglob     2.000     adjustment factor for step length for all parameters

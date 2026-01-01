@@ -53,7 +53,7 @@ vfiscor       92 239    0.95026
 #parameters y
 #ntalys 20
 ##expinclude 18
-#libinclude 18 endfb8.0
+#libinclude 18 endfb8.1
 #fracmax 0.02
 #Zdeep 0
 #Adeep 0

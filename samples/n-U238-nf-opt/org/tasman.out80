@@ -1,3 +1,1092 @@
- TASMAN-error: Error in #libinclude 18 endfb8.0
-              IOSTAT =      0
-              Wrong value
+ Performing first TALYS run to retrieve parameters
+
+    TASMAN-2.21 (Version: January 1, 2026)
+
+ Copyright (C) 2026  A.J. Koning
+
+ Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
+
+ User: Arjan Koning
+ Date: 2026-01-01
+
+ ########## USER INPUT ##########
+
+ USER INPUT FILE
+
+ projectile n
+ element    u
+ mass       238
+ energy   energies
+ maxrot 4
+ dispersion y
+ strength 8
+ strengthm1 8
+ upbend y
+ ldmodel 5
+ fismodel 5
+ fispartdamp y
+ hbstate n
+ class2 n
+ filechannels y
+ channels y
+ ftable        92 239    0.63082 e1
+ etable        92 239   -1.06343 e1
+ ecissave y
+ eciscalc y
+ inccalc y
+ outdiscrete y
+ filediscrete 1
+ filediscrete 2
+ filediscrete 3
+ filediscrete 4
+ v1adjust     n    1.00686
+ v2adjust     n    0.96942
+ v3adjust     n    1.05701
+ rvadjust     n    1.00987
+ avadjust     n    1.03252
+ w1adjust     n    0.97443
+ w2adjust     n    1.17850
+ d1adjust     n    1.06325
+ d2adjust     n    1.22364
+ d3adjust     n    1.39542
+ rwdadjust    n    1.00953
+ awdadjust    n    1.01263
+ ctable        92 239   -0.39753 1
+ ptable        92 239   -0.03277 1
+ ctable        92 239    0.66973 2
+ ptable        92 239   -0.45975 2
+ ctable        92 239    0.44307 3
+ ptable        92 239   -0.14079 3
+ betafiscor    92 239    0.80811
+ vfiscor       92 239    0.95026
+ #change
+ #mode 3
+ #chi2 2
+ #ecis n
+ #save y
+ #deltae y
+ #parameters y
+ #ntalys 20
+ ##expinclude 18
+ #libinclude 18 endfb8.1
+ #fracmax 0.02
+ #zdeep 0
+ #adeep 0
+ #minbar 1
+ ##keyvary bdampadjust
+ #keyvary ctable
+ #keyvary ptable
+ #keyvary vfiscor
+ #keyvary betafiscor
+ ctable           92 239  -0.39753   1
+ ptable           92 239  -0.03277   1
+ ctable           92 239   0.66973   2
+ ptable           92 239  -0.45975   2
+ ctable           92 239   0.44307   3
+ ptable           92 239  -0.14079   3
+ betafiscor       92 239   0.80811
+ vfiscor          92 239   0.95026
+
+ USER INPUT FILE + DEFAULTS
+
+ Keyword           Value   Variable     Explanation
+
+ #
+ # Main TASMAN keywords
+ #
+ #mode               3     mode         mode for TASMAN: optimization with exper
+ #Ntalys            20     Ntalys       number of TALYS runs 
+ #Nburn             20     Nburn        number of burn-in runs 
+ #Nhigh             20     Nhigh        number of high energy runs 
+ #Ehigh       1000.000     Ehigh        energy cutoff of high energy runs 
+ #Liso               0     Liso         number of the isomeric state 
+ #maxgam             4     maxgam       maximum number of discrete levels with g
+ #minbar             1     minbar       minimum number of fission barriers
+ #maxbar             3     maxbar       maximum number of fission barriers
+ #cross              y     flagcross    flag for covariances or optimization of 
+ #angle              n     flagangle    flag for covariances or optimization of 
+ #legendre           n     flagleg      flag for covariances or optimization of 
+ #spectra            n     flagspectra  flag for covariances or optimization of 
+ #gamma              n     flaggamma    flag for covariances or optimization of 
+ #residual           n     flagresidual flag for covariances or optimization of 
+ #prod               n     flagprod     flag for covariances or optimization of 
+ #production         n     flagproduct  flag for covariances or optimization of 
+ #discrete           n     flagdiscrete flag for covariances or optimization of 
+ #isomer             n     flagisomer   flag for covariances or optimization of 
+ #ompinc             y     flagompinc   flag to vary OMP parameters for incident
+ #omponly            n     flagomponly  flag for covariances or optimization for
+ #integral           n     flagintegral flag for covariances or optimization of 
+ #macs               n     flagmacs     flag for covariances or optimization of 
+ #gamgam             n     flaggamgam   flag for covariances or optimization of 
+ #psf                n     flagpsf      flag for optimization of photon strength
+ #ld                 n     flagld       flag for optimization of level density p
+ #sample             n     flagsample   flag for sampling experimental data 
+ #talysversion talys       talysversion version of TALYS
+ #user   Arjan Koning      user         user for this calculation
+ #source TASMAN            source       source for this calculation
+ #format YANDF-0.4         oformat      format for output
+ #
+ # Keywords for mode 3
+ #
+ #chi2               2     ichi2        parameter to set goodness-of-fit estimat
+ #weightpower        2.000 weightpower  power for weight of random run
+ #readsens           n     flagreadsens flag to read sensitivities from tables
+ #sens               n     flagsens     flag to use sensitivity in parameter wei
+ #deltaE             y     flagdeltaE   flag to weigh goodness-of-fit with dE of
+ #dexp               y     flagdexp     flag to include exp. uncertainty in C/E
+ #erf                y     flagerf      flag to use error function for Frms
+ #band               n     flagband     flag to represent results as error bands
+ #E1vary             y     flagE1vary   flag to automatically vary keywords for 
+ #M1vary             n     flagM1vary   flag to automatically vary keywords for 
+ #score              y     flagscore    flag to use scores for inclusion or excl
+ #error              y     flagerror    flag to include true experimental uncert
+ #expclass           3     expclass     quality class of experimental data (1, 2
+ #sort               y     flagsort     flag to sort experimental data in increa
+ #searchexp          n     flagexp      flag to optimize to experimental data
+ #searchlib          y     flaglib      flag to optimize to nuclear data librari
+ #outsearch          5     outsearch    level of output of search (1 (minimal) -
+
+ Parameter ranges for optimization
+
+ Parameter           Input           Delta           Lower         Upper
+
+ctable            -3.975300E-01   1.076923E+00  -1.474453E+00   6.793932E-01
+ptable            -3.277000E-02   2.153846E+00  -2.186616E+00   2.121076E+00
+ctable             6.697300E-01   1.076923E+00  -4.071931E-01   1.746653E+00
+ptable            -4.597500E-01   2.153846E+00  -2.613596E+00   1.694096E+00
+ctable             4.430700E-01   1.076923E+00  -6.338531E-01   1.519993E+00
+ptable            -1.407900E-01   2.153846E+00  -2.294636E+00   2.013056E+00
+betafiscor         8.081100E-01   4.307693E-01   5.648081E-01   1.156219E+00
+vfiscor            9.502600E-01   3.230770E-01   7.182198E-01   1.257267E+00
+
+#                         Goodness-of-fit
+# TALYS run        :     0
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     0
+
+ ctable        92 239 -3.97530E-01 1
+ ptable        92 239 -3.27700E-02 1
+ ctable        92 239    0.66973 2
+ ptable        92 239 -4.59750E-01 2
+ ctable        92 239    0.44307 3
+ ptable        92 239 -1.40790E-01 3
+ betafiscor    92 239    0.80811
+ vfiscor       92 239    0.95026
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -3.97530E-01 1
+ptable        92 239 -3.27700E-02 1
+ctable        92 239    0.66973 2
+ptable        92 239 -4.59750E-01 2
+ctable        92 239    0.44307 3
+ptable        92 239 -1.40790E-01 3
+betafiscor    92 239    0.80811
+vfiscor       92 239    0.95026
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      7.772         0.2153          2.173         1.0
+
+# GOF no.                0  0.2153    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   7.772     Optimum:   1.0000E+38
+# Erms             :  0.2153     Optimum:   1.0000E+38
+# Chi2             :   2.173     Optimum:   1.0000E+38
+
+  92 238 Run:     0 New optimum (Frms Erms Chi-2):    7.772021E+00   2.153264E-0
+
+#                         Goodness-of-fit
+# TALYS run        :     1
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     1
+
+ ctable        92 239 -1.58537E-01 1
+ ptable        92 239 -2.13385E+00 1
+ ctable        92 239    0.63214 2
+ ptable        92 239 -2.41703E+00 2
+ ctable        92 239    0.72111 3
+ ptable        92 239 -9.30988E-01 3
+ betafiscor    92 239    1.04675
+ vfiscor       92 239    0.83866
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.58537E-01 1
+ptable        92 239 -2.13385E+00 1
+ctable        92 239    0.63214 2
+ptable        92 239 -2.41703E+00 2
+ctable        92 239    0.72111 3
+ptable        92 239 -9.30988E-01 3
+betafiscor    92 239    1.04675
+vfiscor       92 239    0.83866
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      2.739          2.127          18.24         0.2
+
+# GOF no.                1   2.127    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   2.739     Optimum:    7.772    
+# Erms             :   2.127     Optimum:   0.2153    
+# Chi2             :   18.24     Optimum:    2.173    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     2
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     2
+
+ ctable        92 239 -2.82110E-01 1
+ ptable        92 239 -2.05559E+00 1
+ ctable        92 239    1.11725 2
+ ptable        92 239 -8.85023E-02 2
+ ctable        92 239    0.95331 3
+ ptable        92 239 -2.27369E+00 3
+ betafiscor    92 239    0.71844
+ vfiscor       92 239    1.11549
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -2.82110E-01 1
+ptable        92 239 -2.05559E+00 1
+ctable        92 239    1.11725 2
+ptable        92 239 -8.85023E-02 2
+ctable        92 239    0.95331 3
+ptable        92 239 -2.27369E+00 3
+betafiscor    92 239    0.71844
+vfiscor       92 239    1.11549
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      9.872         0.1796          2.243         0.2
+
+# GOF no.                2  0.1796    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   9.872     Optimum:    7.772    
+# Erms             :  0.1796     Optimum:   0.2153    
+# Chi2             :   2.243     Optimum:    2.173    
+
+  92 238 Run:     2 New optimum (Frms Erms Chi-2):    9.872332E+00   1.795597E-0
+
+#                         Goodness-of-fit
+# TALYS run        :     3
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     3
+
+ ctable        92 239    0.61683 1
+ ptable        92 239 -2.54408E-01 1
+ ctable        92 239 -1.22496E-01 2
+ ptable        92 239 -1.33300E+00 2
+ ctable        92 239    0.46170 3
+ ptable        92 239 -1.75876E+00 3
+ betafiscor    92 239    0.77050
+ vfiscor       92 239    0.87808
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239    0.61683 1
+ptable        92 239 -2.54408E-01 1
+ctable        92 239 -1.22496E-01 2
+ptable        92 239 -1.33300E+00 2
+ctable        92 239    0.46170 3
+ptable        92 239 -1.75876E+00 3
+betafiscor    92 239    0.77050
+vfiscor       92 239    0.87808
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      2.239         0.5477          1.282         0.1
+
+# GOF no.                3  0.5477    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   2.239     Optimum:    9.872    
+# Erms             :  0.5477     Optimum:   0.1796    
+# Chi2             :   1.282     Optimum:    2.243    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     4
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     4
+
+ ctable        92 239 -1.16530E+00 1
+ ptable        92 239 -8.26624E-01 1
+ ctable        92 239    1.37250 2
+ ptable        92 239 -1.77190E+00 2
+ ctable        92 239 -3.30467E-01 3
+ ptable        92 239 -8.01365E-01 3
+ betafiscor    92 239    0.81215
+ vfiscor       92 239    1.25408
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.16530E+00 1
+ptable        92 239 -8.26624E-01 1
+ctable        92 239    1.37250 2
+ptable        92 239 -1.77190E+00 2
+ctable        92 239 -3.30467E-01 3
+ptable        92 239 -8.01365E-01 3
+betafiscor    92 239    0.81215
+vfiscor       92 239    1.25408
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      10.15         0.1758          2.250         0.1
+
+# GOF no.                4  0.1758    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   10.15     Optimum:    9.872    
+# Erms             :  0.1758     Optimum:   0.1796    
+# Chi2             :   2.250     Optimum:    2.243    
+
+  92 238 Run:     4 New optimum (Frms Erms Chi-2):    1.015049E+01   1.758469E-0
+
+#                         Goodness-of-fit
+# TALYS run        :     5
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     5
+
+ ctable        92 239    0.45049 1
+ ptable        92 239 -2.07044E+00 1
+ ctable        92 239 -6.81781E-02 2
+ ptable        92 239    0.72082 2
+ ctable        92 239    1.22420 3
+ ptable        92 239 -3.51651E-01 3
+ betafiscor    92 239    0.78553
+ vfiscor       92 239    0.87226
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239    0.45049 1
+ptable        92 239 -2.07044E+00 1
+ctable        92 239 -6.81781E-02 2
+ptable        92 239    0.72082 2
+ctable        92 239    1.22420 3
+ptable        92 239 -3.51651E-01 3
+betafiscor    92 239    0.78553
+vfiscor       92 239    0.87226
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      9.497         0.1849          2.234         0.1
+
+# GOF no.                5  0.1849    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   9.497     Optimum:    10.15    
+# Erms             :  0.1849     Optimum:   0.1758    
+# Chi2             :   2.234     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     6
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     6
+
+ ctable        92 239 -6.72944E-02 1
+ ptable        92 239 -2.04284E+00 1
+ ctable        92 239    1.39511 2
+ ptable        92 239 -1.81798E+00 2
+ ctable        92 239    0.16638 3
+ ptable        92 239    1.95246 3
+ betafiscor    92 239    0.75363
+ vfiscor       92 239    0.75179
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -6.72944E-02 1
+ptable        92 239 -2.04284E+00 1
+ctable        92 239    1.39511 2
+ptable        92 239 -1.81798E+00 2
+ctable        92 239    0.16638 3
+ptable        92 239    1.95246 3
+betafiscor    92 239    0.75363
+vfiscor       92 239    0.75179
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      1.032         0.9847         4.7058E-02     0.1
+
+# GOF no.                6  0.9847    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   1.032     Optimum:    10.15    
+# Erms             :  0.9847     Optimum:   0.1758    
+# Chi2             :  4.7058E-02 Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     7
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     7
+
+ ctable        92 239 -9.37022E-01 1
+ ptable        92 239 -1.86277E+00 1
+ ctable        92 239    1.73373 2
+ ptable        92 239 -2.85048E-01 2
+ ctable        92 239    0.59283 3
+ ptable        92 239    0.64952 3
+ betafiscor    92 239    1.10423
+ vfiscor       92 239    1.09935
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -9.37022E-01 1
+ptable        92 239 -1.86277E+00 1
+ctable        92 239    1.73373 2
+ptable        92 239 -2.85048E-01 2
+ctable        92 239    0.59283 3
+ptable        92 239    0.64952 3
+betafiscor    92 239    1.10423
+vfiscor       92 239    1.09935
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      10.11         0.1764          2.249         0.1
+
+# GOF no.                7  0.1764    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   10.11     Optimum:    10.15    
+# Erms             :  0.1764     Optimum:   0.1758    
+# Chi2             :   2.249     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     8
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     8
+
+ ctable        92 239 -1.31462E+00 1
+ ptable        92 239 -1.69090E+00 1
+ ctable        92 239    1.73202 2
+ ptable        92 239 -1.05245E+00 2
+ ctable        92 239    0.24882 3
+ ptable        92 239    0.11498 3
+ betafiscor    92 239    0.84204
+ vfiscor       92 239    0.87931
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.31462E+00 1
+ptable        92 239 -1.69090E+00 1
+ctable        92 239    1.73202 2
+ptable        92 239 -1.05245E+00 2
+ctable        92 239    0.24882 3
+ptable        92 239    0.11498 3
+betafiscor    92 239    0.84204
+vfiscor       92 239    0.87931
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      1.004         0.9985         4.9347E-03     0.1
+
+# GOF no.                8  0.9985    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   1.004     Optimum:    10.15    
+# Erms             :  0.9985     Optimum:   0.1758    
+# Chi2             :  4.9347E-03 Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :     9
+# GOF estimator    :    Erms  
+
+  Parameters for input file:     9
+
+ ctable        92 239    0.20188 1
+ ptable        92 239 -8.65899E-01 1
+ ctable        92 239    1.66707 2
+ ptable        92 239 -1.84083E+00 2
+ ctable        92 239 -1.27812E-01 3
+ ptable        92 239 -7.27587E-02 3
+ betafiscor    92 239    0.95249
+ vfiscor       92 239    0.83241
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239    0.20188 1
+ptable        92 239 -8.65899E-01 1
+ctable        92 239    1.66707 2
+ptable        92 239 -1.84083E+00 2
+ctable        92 239 -1.27812E-01 3
+ptable        92 239 -7.27587E-02 3
+betafiscor    92 239    0.95249
+vfiscor       92 239    0.83241
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      2.354          1.896          10.48         0.1
+
+# GOF no.                9   1.896    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   2.354     Optimum:    10.15    
+# Erms             :   1.896     Optimum:   0.1758    
+# Chi2             :   10.48     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    10
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    10
+
+ ctable        92 239    0.67539 1
+ ptable        92 239    0.57637 1
+ ctable        92 239    1.34764 2
+ ptable        92 239 -2.61027E-01 2
+ ctable        92 239 -4.37886E-01 3
+ ptable        92 239 -1.23578E+00 3
+ betafiscor    92 239    0.89380
+ vfiscor       92 239    0.85214
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239    0.67539 1
+ptable        92 239    0.57637 1
+ctable        92 239    1.34764 2
+ptable        92 239 -2.61027E-01 2
+ctable        92 239 -4.37886E-01 3
+ptable        92 239 -1.23578E+00 3
+betafiscor    92 239    0.89380
+vfiscor       92 239    0.85214
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      2.629         0.4872          1.460         0.1
+
+# GOF no.               10  0.4872    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   2.629     Optimum:    10.15    
+# Erms             :  0.4872     Optimum:   0.1758    
+# Chi2             :   1.460     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    11
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    11
+
+ ctable        92 239 -1.27132E+00 1
+ ptable        92 239    0.54172 1
+ ctable        92 239 -1.90529E-01 2
+ ptable        92 239    0.56596 2
+ ctable        92 239    1.03811 3
+ ptable        92 239    0.94559 3
+ betafiscor    92 239    1.14975
+ vfiscor       92 239    0.74213
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.27132E+00 1
+ptable        92 239    0.54172 1
+ctable        92 239 -1.90529E-01 2
+ptable        92 239    0.56596 2
+ctable        92 239    1.03811 3
+ptable        92 239    0.94559 3
+betafiscor    92 239    1.14975
+vfiscor       92 239    0.74213
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      6.801         0.2375          2.128         0.1
+
+# GOF no.               11  0.2375    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   6.801     Optimum:    10.15    
+# Erms             :  0.2375     Optimum:   0.1758    
+# Chi2             :   2.128     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    12
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    12
+
+ ctable        92 239 -1.26674E-01 1
+ ptable        92 239 -1.77548E+00 1
+ ctable        92 239    1.61947 2
+ ptable        92 239 -1.34178E+00 2
+ ctable        92 239 -5.77464E-01 3
+ ptable        92 239 -1.66298E+00 3
+ betafiscor    92 239    0.77978
+ vfiscor       92 239    0.78822
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.26674E-01 1
+ptable        92 239 -1.77548E+00 1
+ctable        92 239    1.61947 2
+ptable        92 239 -1.34178E+00 2
+ctable        92 239 -5.77464E-01 3
+ptable        92 239 -1.66298E+00 3
+betafiscor    92 239    0.77978
+vfiscor       92 239    0.78822
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      3.023          2.291          25.79         0.1
+
+# GOF no.               12   2.291    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   3.023     Optimum:    10.15    
+# Erms             :   2.291     Optimum:   0.1758    
+# Chi2             :   25.79     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    13
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    13
+
+ ctable        92 239    0.43710 1
+ ptable        92 239    1.88932 1
+ ctable        92 239    1.28822 2
+ ptable        92 239 -1.68375E+00 2
+ ctable        92 239    0.11022 3
+ ptable        92 239 -4.11435E-01 3
+ betafiscor    92 239    0.68267
+ vfiscor       92 239    1.10827
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239    0.43710 1
+ptable        92 239    1.88932 1
+ctable        92 239    1.28822 2
+ptable        92 239 -1.68375E+00 2
+ctable        92 239    0.11022 3
+ptable        92 239 -4.11435E-01 3
+betafiscor    92 239    0.68267
+vfiscor       92 239    1.10827
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      9.705         0.1820          2.239         0.1
+
+# GOF no.               13  0.1820    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   9.705     Optimum:    10.15    
+# Erms             :  0.1820     Optimum:   0.1758    
+# Chi2             :   2.239     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    14
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    14
+
+ ctable        92 239 -9.50585E-01 1
+ ptable        92 239    0.30694 1
+ ctable        92 239    0.81388 2
+ ptable        92 239 -1.14183E-01 2
+ ctable        92 239    1.14918 3
+ ptable        92 239 -5.15254E-01 3
+ betafiscor    92 239    0.79946
+ vfiscor       92 239    1.05377
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -9.50585E-01 1
+ptable        92 239    0.30694 1
+ctable        92 239    0.81388 2
+ptable        92 239 -1.14183E-01 2
+ctable        92 239    1.14918 3
+ptable        92 239 -5.15254E-01 3
+betafiscor    92 239    0.79946
+vfiscor       92 239    1.05377
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      10.04         0.1773          2.247         0.1
+
+# GOF no.               14  0.1773    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   10.04     Optimum:    10.15    
+# Erms             :  0.1773     Optimum:   0.1758    
+# Chi2             :   2.247     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    15
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    15
+
+ ctable        92 239 -5.03733E-01 1
+ ptable        92 239 -1.34734E+00 1
+ ctable        92 239 -6.94342E-02 2
+ ptable        92 239 -1.49482E+00 2
+ ctable        92 239    1.09292 3
+ ptable        92 239 -1.17259E-01 3
+ betafiscor    92 239    1.08936
+ vfiscor       92 239    0.95566
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -5.03733E-01 1
+ptable        92 239 -1.34734E+00 1
+ctable        92 239 -6.94342E-02 2
+ptable        92 239 -1.49482E+00 2
+ctable        92 239    1.09292 3
+ptable        92 239 -1.17259E-01 3
+betafiscor    92 239    1.08936
+vfiscor       92 239    0.95566
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      6.340         0.2525          2.086         0.1
+
+# GOF no.               15  0.2525    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   6.340     Optimum:    10.15    
+# Erms             :  0.2525     Optimum:   0.1758    
+# Chi2             :   2.086     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    16
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    16
+
+ ctable        92 239 -1.25697E+00 1
+ ptable        92 239    2.05098 1
+ ctable        92 239 -3.09646E-01 2
+ ptable        92 239 -1.21721E+00 2
+ ctable        92 239    1.40620 3
+ ptable        92 239 -6.31220E-01 3
+ betafiscor    92 239    1.02072
+ vfiscor       92 239    0.78078
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.25697E+00 1
+ptable        92 239    2.05098 1
+ctable        92 239 -3.09646E-01 2
+ptable        92 239 -1.21721E+00 2
+ctable        92 239    1.40620 3
+ptable        92 239 -6.31220E-01 3
+betafiscor    92 239    1.02072
+vfiscor       92 239    0.78078
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      9.585         0.1836          2.236         0.1
+
+# GOF no.               16  0.1836    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   9.585     Optimum:    10.15    
+# Erms             :  0.1836     Optimum:   0.1758    
+# Chi2             :   2.236     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    17
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    17
+
+ ctable        92 239 -1.40462E+00 1
+ ptable        92 239 -4.48554E-01 1
+ ctable        92 239    0.89419 2
+ ptable        92 239    1.65377 2
+ ctable        92 239    0.50612 3
+ ptable        92 239 -7.26967E-01 3
+ betafiscor    92 239    1.00360
+ vfiscor       92 239    0.79617
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.40462E+00 1
+ptable        92 239 -4.48554E-01 1
+ctable        92 239    0.89419 2
+ptable        92 239    1.65377 2
+ctable        92 239    0.50612 3
+ptable        92 239 -7.26967E-01 3
+betafiscor    92 239    1.00360
+vfiscor       92 239    0.79617
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      9.884         0.1794          2.244         0.1
+
+# GOF no.               17  0.1794    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   9.884     Optimum:    10.15    
+# Erms             :  0.1794     Optimum:   0.1758    
+# Chi2             :   2.244     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    18
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    18
+
+ ctable        92 239 -5.62801E-01 1
+ ptable        92 239 -1.10136E+00 1
+ ctable        92 239    0.42538 2
+ ptable        92 239 -2.11901E-01 2
+ ctable        92 239    1.20084 3
+ ptable        92 239    0.16074 3
+ betafiscor    92 239    0.99114
+ vfiscor       92 239    1.22102
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -5.62801E-01 1
+ptable        92 239 -1.10136E+00 1
+ctable        92 239    0.42538 2
+ptable        92 239 -2.11901E-01 2
+ctable        92 239    1.20084 3
+ptable        92 239    0.16074 3
+betafiscor    92 239    0.99114
+vfiscor       92 239    1.22102
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      10.15         0.1758          2.250         0.1
+
+# GOF no.               18  0.1758    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   10.15     Optimum:    10.15    
+# Erms             :  0.1758     Optimum:   0.1758    
+# Chi2             :   2.250     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    19
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    19
+
+ ctable        92 239 -1.73343E-01 1
+ ptable        92 239 -1.44588E+00 1
+ ctable        92 239    0.91815 2
+ ptable        92 239    0.47786 2
+ ctable        92 239    0.13482 3
+ ptable        92 239 -4.97468E-01 3
+ betafiscor    92 239    0.87665
+ vfiscor       92 239    0.98140
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239 -1.73343E-01 1
+ptable        92 239 -1.44588E+00 1
+ctable        92 239    0.91815 2
+ptable        92 239    0.47786 2
+ctable        92 239    0.13482 3
+ptable        92 239 -4.97468E-01 3
+betafiscor    92 239    0.87665
+vfiscor       92 239    0.98140
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      9.867         0.1797          2.243         0.1
+
+# GOF no.               19  0.1797    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   9.867     Optimum:    10.15    
+# Erms             :  0.1797     Optimum:   0.1758    
+# Chi2             :   2.243     Optimum:    2.250    
+
+
+#                         Goodness-of-fit
+# TALYS run        :    20
+# GOF estimator    :    Erms  
+
+  Parameters for input file:    20
+
+ ctable        92 239    0.51031 1
+ ptable        92 239    0.57035 1
+ ctable        92 239 -1.51698E-01 2
+ ptable        92 239 -1.97709E+00 2
+ ctable        92 239    0.97253 3
+ ptable        92 239    0.96821 3
+ betafiscor    92 239    0.76510
+ vfiscor       92 239    1.19064
+
+# projectile       : n
+# Z                :  92
+# A                : 238
+# Target isomer    :  
+# Nuclide          : U238 
+# Parameters       :
+ctable        92 239    0.51031 1
+ptable        92 239    0.57035 1
+ctable        92 239 -1.51698E-01 2
+ptable        92 239 -1.97709E+00 2
+ctable        92 239    0.97253 3
+ptable        92 239    0.96821 3
+betafiscor    92 239    0.76510
+vfiscor       92 239    1.19064
+
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      10.14         0.1760          2.250         0.1
+
+# GOF no.               20  0.1760    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   10.14     Optimum:    10.15    
+# Erms             :  0.1760     Optimum:   0.1758    
+# Chi2             :   2.250     Optimum:    2.250    
+
+ Maximum number of runs done:           20
+
+ Execution time:  0 hours  0 minutes  1.27 seconds 
+
+ This TASMAN run has finished

@@ -1,0 +1,8 @@
+# Reference Number = 2408 Incident Particle: neutron  imodel=1 Target: Z= 92 A= 238 Ef = -5.480
+# ncoll= 5 lmax= 8 ndef= 6 K= 0.0 betas:  0.228   0.062  -0.006
+# LEVELS: rigid rotor     
+  0.00000000    0.0   1
+  0.04491000    2.0   1
+  0.14841000    4.0   1
+  0.30721000    6.0   1
+  0.51830000    8.0   1

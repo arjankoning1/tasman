@@ -1,0 +1,18 @@
+#!/bin/bash
+mkdir -p optimum/xs
+mkdir -p optimum/residual
+for file in xs*.tot xs*.L?? ??.L?? ?prod.tot elastic.tot totalxs.tot total.tot nonelastic.tot fission.tot ; do
+  if [ -e $file ]; then
+    \cp -f $file optimum/xs
+  fi
+done
+for file in rp* ; do 
+  if [ -e $file ]; then
+   \cp -f $file optimum/residual
+  fi
+done
+for file in talys.inp parameters.dat gof.opt psf* ld* ; do 
+  if [ -e $file ]; then
+    \cp -f $file optimum
+  fi
+done

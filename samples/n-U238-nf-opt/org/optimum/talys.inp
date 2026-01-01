@@ -1,0 +1,88 @@
+# Original input file
+projectile n
+element    u
+mass       238
+energy   energies
+maxrot 4
+dispersion y
+strength 8
+strengthm1 8
+upbend y
+ldmodel 5
+fismodel 5
+fispartdamp y
+hbstate n
+class2 n
+filechannels y
+channels y
+ftable        92 239    0.63082 e1
+etable        92 239   -1.06343 e1
+ecissave y
+eciscalc y
+inccalc y
+outdiscrete y
+filediscrete 1
+filediscrete 2
+filediscrete 3
+filediscrete 4
+v1adjust     n    1.00686
+v2adjust     n    0.96942
+v3adjust     n    1.05701
+rvadjust     n    1.00987
+avadjust     n    1.03252
+w1adjust     n    0.97443
+w2adjust     n    1.17850
+d1adjust     n    1.06325
+d2adjust     n    1.22364
+d3adjust     n    1.39542
+rwdadjust    n    1.00953
+awdadjust    n    1.01263
+ctable        92 239   -0.39753 1
+ptable        92 239   -0.03277 1
+ctable        92 239    0.66973 2
+ptable        92 239   -0.45975 2
+ctable        92 239    0.44307 3
+ptable        92 239   -0.14079 3
+betafiscor    92 239    0.80811
+vfiscor       92 239    0.95026
+#change
+#mode 3
+#chi2 2
+#ecis n
+#save y
+#deltae y
+#parameters y
+#ntalys 20
+##expinclude 18
+#libinclude 18 endfb8.1
+#fracmax 0.02
+#zdeep 0
+#adeep 0
+#minbar 1
+##keyvary bdampadjust
+#keyvary ctable
+#keyvary ptable
+#keyvary vfiscor
+#keyvary betafiscor
+ctable           92 239  -0.39753   1
+ptable           92 239  -0.03277   1
+ctable           92 239   0.66973   2
+ptable           92 239  -0.45975   2
+ctable           92 239   0.44307   3
+ptable           92 239  -0.14079   3
+betafiscor       92 239   0.80811
+vfiscor          92 239   0.95026
+# Current variables Run:     4
+#Ztarget  92
+partable y
+ecissave y
+inccalc n
+eciscalc n
+ctable        92 239 -1.16530E+00 1
+ptable        92 239 -8.26624E-01 1
+ctable        92 239    1.37250 2
+ptable        92 239 -1.77190E+00 2
+ctable        92 239 -3.30467E-01 3
+ptable        92 239 -8.01365E-01 3
+betafiscor    92 239    0.81215
+vfiscor       92 239    1.25408
