@@ -193,7 +193,7 @@
         endif
       enddo
     endif
-    if (italys <= numpar) then
+    if (italys >= 0 .and. italys <= numpar) then
       do i = 1, Nchanprod
         do k = 1, Nenprod(i)
           n = Sprodindex(i, k)
