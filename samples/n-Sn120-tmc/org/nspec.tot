@@ -2,7 +2,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -42,7 +42,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.200000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -84,7 +84,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.400000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -128,7 +128,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.600000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -174,7 +174,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.800000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -222,7 +222,7 @@
 #   title: Sn120(n,xn) emission spectrum at 2.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -272,7 +272,7 @@
 #   title: Sn120(n,xn) emission spectrum at 2.500000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -325,7 +325,7 @@
 #   title: Sn120(n,xn) emission spectrum at 3.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -380,7 +380,7 @@
 #   title: Sn120(n,xn) emission spectrum at 3.500000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -438,7 +438,7 @@
 #   title: Sn120(n,xn) emission spectrum at 4.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -498,7 +498,7 @@
 #   title: Sn120(n,xn) emission spectrum at 5.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -560,7 +560,7 @@
 #   title: Sn120(n,xn) emission spectrum at 6.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -624,7 +624,7 @@
 #   title: Sn120(n,xn) emission spectrum at 7.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -690,7 +690,7 @@
 #   title: Sn120(n,xn) emission spectrum at 8.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -758,7 +758,7 @@
 #   title: Sn120(n,xn) emission spectrum at 9.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -828,7 +828,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -900,7 +900,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -976,7 +976,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1056,7 +1056,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1140,7 +1140,7 @@
 #   title: Sn120(n,xn) emission spectrum at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1228,7 +1228,7 @@
 #   title: Sn120(n,xn) emission spectrum at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

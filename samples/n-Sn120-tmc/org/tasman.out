@@ -1,12 +1,12 @@
 
-    TASMAN-2.2 (Version: December 18, 2025)
+    TASMAN-2.21 (Version: January 1, 2026)
 
- Copyright (C) 2025  A.J. Koning
+ Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2025-12-18
+ Date: 2026-01-01
 
  ########## USER INPUT ##########
 
@@ -550,7 +550,7 @@ cknock             1.000000E+00   1.000000E+00   5.000000E-01   2.000000E+00
 cbreak             1.000000E+00   1.000000E+00   5.000000E-01   2.000000E+00
 m2constant         1.000000E+00   2.000000E-01   8.333333E-01   1.200000E+00
 rgamma             2.000000E+00   5.000000E-01   1.333333E+00   3.000000E+00
-gamgamadjust       7.000000E-01   4.000000E-01   5.000000E-01   9.800000E-01
+gamgamadjust       7.000000E-01   2.000000E-01   5.833333E-01   8.400000E-01
 sgradjust          1.000000E+00   2.000000E-01   8.333333E-01   1.200000E+00
 egradjust          1.000000E+00   1.000000E-01   9.090909E-01   1.100000E+00
 ggradjust          1.000000E+00   2.000000E-01   8.333333E-01   1.200000E+00
@@ -3790,6 +3790,6 @@ MAT: 5049 AWI: 1.000000+0 element: Sn mass: 120 iso: projectile: neutron
 Diagnosis of NJOY output in njoy.ers
 autonjoy is done
 
- Execution time:  0 hours  0 minutes  6.76 seconds 
+ Execution time:  0 hours  0 minutes  7.06 seconds 
 
  This TASMAN run has finished
