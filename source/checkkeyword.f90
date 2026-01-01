@@ -5,7 +5,7 @@ subroutine checkkeyword
 !
 ! Author    : Arjan Koning
 !
-! 2022-05-09: Original code
+! 2025-12-25: Original code
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -21,7 +21,7 @@ subroutine checkkeyword
 ! *** Declaration of local data
 !
   implicit none
-  integer, parameter :: numkey=137        ! number of keywords
+  integer, parameter :: numkey=139        ! number of keywords
   integer            :: i                 ! counter
   integer            :: j                 ! counter
   character(len=132) :: key               ! keyword
@@ -43,8 +43,8 @@ subroutine checkkeyword
 &   '#fiscor', '#fmax', '#fns', '#format', '#fracmax', '#gamgam', '#gamma', '#gauss', '#getcalcscript', &
 &   '#global', '#gofmode', '#gpf', '#inponly', '#integral', '#isomer', '#kdburn', '#keyvary', '#ld', &
 &   '#legendre', '#libexclude', '#libinclude', '#liso', '#lrf7', '#m1vary', '#macs', '#magnet', '#maxbar', '#maxexpsets', &
-&   '#maxgam', '#mcak', '#metropolis', '#minbar', '#mode', '#mt', '#nburn', '#nhigh', '#njoy', '#ntalys', '#nubar', '#offset', &
-&   '#ompinc', '#omponly', '#outsearch', '#parameters', &
+&   '#maxgam', '#mcak', '#metropolis', '#minbar', '#mode', '#morris', '#mt', '#nburn', '#nhigh', '#njoy', '#nmorris', & 
+&   '#ntalys', '#nubar', '#offset', '#ompinc', '#omponly', '#outsearch', '#parameters', &
 &   '#partvary', '#prepro', '#proconly', '#prod', '#production', '#psf', '#purr', '#readpar', '#readsens', &
 &   '#residual', '#resonance', '#runfns', '#runnubar', '#runtares', '#s20', '#s30', '#s60', '#sample', '#save', &
 &   '#searchmode', '#seed', '#select', '#sens', '#sort', '#source', '#spectra', &
