@@ -89,6 +89,7 @@ subroutine input2
 ! Variables for sensitivity
 !   flagreadsens      ! flag to read sensitivities from tables
 !   flagsens          ! flag to use sensitivity in parameter weighting
+!   flagmorris        ! flag to use Morris screening
 ! Variables for GOF function
 !   flagdeltaE        ! flag to weigh goodness - of - fit with dE of energy grid
 ! Variables for reading TALYS output
@@ -277,6 +278,8 @@ subroutine input2
   weightpower = 2.
   flagreadsens = .false.
   flagsens = .false.
+  flagmorris = .false.
+  Nmorris = 20
   flagdeltaE = .false.
   flagdexp = .true.
   flagerf = .true.
@@ -440,6 +443,11 @@ subroutine input2
       if (istat /= 0) call read_error(line, istat)
       cycle
     endif
+    if (key == '#nmorris') then
+      read(value, * , iostat = istat) Nmorris
+      if (istat /= 0) call read_error(line, istat)
+      cycle
+    endif
     if (key == '#nburn') then
       read(value, * , iostat = istat) Nburn
       if (istat /= 0) call read_error(line, istat)
@@ -539,6 +547,12 @@ subroutine input2
     if (key == '#sens') then
       if (ch == 'n') flagsens = .false.
       if (ch == 'y') flagsens = .true.
+      if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
+      cycle
+    endif
+    if (key == '#morris') then
+      if (ch == 'n') flagmorris = .false.
+      if (ch == 'y') flagmorris = .true.
       if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
       cycle
     endif
