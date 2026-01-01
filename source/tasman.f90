@@ -6,7 +6,7 @@ program tasman
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2025-12-26: Current revision
+! 2026-01-01: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !   |-------------------------------------------------------|
@@ -18,7 +18,7 @@ program tasman
 !
 ! MIT License
 !
-! Copyright (c) 2025 Arjan Koning
+! Copyright (c) 2026 Arjan Koning
 !
 ! Permission is hereby granted, free of charge, to any person obtaining a copy
 ! of this software and associated documentation files (the "Software"), to deal
@@ -70,4 +70,4 @@ program tasman
   endif
   call timer
 end program tasman
-! Copyright A.J. Koning 2025
+! Copyright A.J. Koning 2026
