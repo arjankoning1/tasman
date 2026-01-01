@@ -2,7 +2,7 @@
 ##   title: Sn120(n,x) nuclear model parameters
 ##   source: TALYS-2.2
 ##   user: Arjan Koning
-##   date: 2025-12-18
+##   date: 2026-01-01
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 50
@@ -90,16 +90,16 @@ ggradjust        50 121   1.000 M2
 ##   nuclide: Sn120 
 ## parameters: 
 ##   level density
-a                50 120  15.06071
-aadjust          50 120   1.00750
+a                50 120  16.06975
+aadjust          50 120   1.07500
 gammald          50 120   0.08780
 pair             50 120   2.19089
 Pshift           50 120   0.00000   0
 Pshiftadjust     50 120   0.00000   0
 deltaW           50 120   0.88978   0
-T                50 120   0.67797   0
-E0               50 120   0.48598   0
-Exmatch          50 120   6.74381   0
+T                50 120   0.62216   0
+E0               50 120   0.70269   0
+Exmatch          50 120   6.25152   0
 Tadjust          50 120   1.00000   0
 E0adjust         50 120   1.00000   0
 Exmatchadjust    50 120   1.00000   0

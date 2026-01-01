@@ -2,7 +2,7 @@
 #   title: Sn120 sensitivity coefficients per energy, integrated over channels
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2025-12-18
+#   date: 2026-01-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -18,11 +18,11 @@
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.752944E+01
-v1adjust n                       1.077635E+01
-avadjust n                       2.850106E+00
-aadjust  50 121                  9.982339E-01
-v2adjust n                       5.941907E-01
+rvadjust n                       2.415270E+01
+v1adjust n                       1.304593E+01
+avadjust n                       2.994723E+00
+aadjust  50 121                  1.105882E+00
+v2adjust n                       5.856887E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -36,11 +36,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.852923E+01
-v1adjust n                       1.139098E+01
-avadjust n                       3.012658E+00
-aadjust  50 121                  1.055168E+00
-v2adjust n                       6.280789E-01
+rvadjust n                       2.553028E+01
+v1adjust n                       1.379001E+01
+avadjust n                       3.165529E+00
+aadjust  50 121                  1.168956E+00
+v2adjust n                       6.190935E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -54,11 +54,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.854306E+01
-v1adjust n                       1.139948E+01
-avadjust n                       3.014905E+00
-aadjust  50 121                  1.055955E+00
-v2adjust n                       6.285475E-01
+rvadjust n                       2.554933E+01
+v1adjust n                       1.380030E+01
+avadjust n                       3.167891E+00
+aadjust  50 121                  1.169828E+00
+v2adjust n                       6.195554E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -72,11 +72,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.345109E+01
-v1adjust n                       8.280901E+00
-avadjust n                       2.192729E+00
-aadjust  50 121                  9.127713E-01
-v2adjust n                       4.575635E-01
+rvadjust n                       1.792795E+01
+v1adjust n                       9.828295E+00
+avadjust n                       2.292481E+00
+aadjust  50 121                  1.011189E+00
+v2adjust n                       4.517948E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -90,11 +90,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.322150E+01
-v1adjust n                       8.122260E+00
-avadjust n                       2.157382E+00
-aadjust  50 121                  5.916894E-01
-v2adjust n                       4.494384E-01
+rvadjust n                       1.777846E+01
+v1adjust n                       9.699008E+00
+avadjust n                       2.258576E+00
+aadjust  50 121                  6.824827E-01
+v2adjust n                       4.426125E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -108,11 +108,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.164815E+01
-v1adjust n                       7.111045E+00
-avadjust n                       1.919197E+00
-v2adjust n                       3.922756E-01
-aadjust  50 121                  2.689902E-01
+rvadjust n                       1.591631E+01
+v1adjust n                       8.599101E+00
+avadjust n                       2.011220E+00
+v2adjust n                       3.863927E-01
+aadjust  50 121                  3.188793E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -126,11 +126,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.071827E+01
-v1adjust n                       6.510538E+00
-avadjust n                       1.766707E+00
-v2adjust n                       3.593121E-01
-aadjust  50 121                  1.992271E-01
+rvadjust n                       1.468419E+01
+v1adjust n                       7.898239E+00
+avadjust n                       1.852256E+00
+v2adjust n                       3.535284E-01
+aadjust  50 121                  2.374021E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -144,11 +144,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       9.104902E+00
-v1adjust n                       5.478776E+00
-avadjust n                       1.500409E+00
-v2adjust n                       3.021476E-01
-aadjust  50 121                  1.316810E-01
+rvadjust n                       1.265367E+01
+v1adjust n                       6.735057E+00
+avadjust n                       1.573794E+00
+v2adjust n                       2.965328E-01
+aadjust  50 121                  1.571662E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -162,11 +162,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       7.357897E+00
-v1adjust n                       4.371430E+00
-avadjust n                       1.240504E+00
-v2adjust n                       2.404958E-01
-aadjust  50 121                  1.016541E-01
+rvadjust n                       1.054790E+01
+v1adjust n                       5.517797E+00
+avadjust n                       1.303630E+00
+v2adjust n                       2.350946E-01
+aadjust  50 121                  1.203947E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -180,11 +180,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       5.074570E+00
-v1adjust n                       2.936527E+00
-avadjust n                       9.306941E-01
-v2adjust n                       1.597304E-01
-aadjust  50 121                  8.731555E-02
+rvadjust n                       7.919039E+00
+v1adjust n                       3.982053E+00
+avadjust n                       9.764875E-01
+v2adjust n                       1.550595E-01
+aadjust  50 121                  1.023604E-01
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -198,11 +198,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.319190E+00
-v1adjust n                       6.036421E-01
-avadjust n                       4.453489E-01
-aadjust  50 121                  7.470857E-02
-v2adjust n                       2.812270E-02
+rvadjust n                       3.776513E+00
+v1adjust n                       1.539087E+00
+avadjust n                       4.812243E-01
+aadjust  50 121                  8.791234E-02
+v2adjust n                       2.384803E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -216,11 +216,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       2.046214E+00
-v1adjust n                       1.463233E+00
-v2adjust n                       8.879186E-02
-avadjust n                       7.613552E-02
-aadjust  50 121                  5.972078E-02
+v1adjust n                       5.682372E-01
+rvadjust n                       4.005673E-01
+avadjust n                       9.324868E-02
+v2adjust n                       9.299125E-02
+aadjust  50 121                  7.109646E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -234,11 +234,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       5.177135E+00
-v1adjust n                       3.374508E+00
-avadjust n                       2.917680E-01
-v2adjust n                       1.971168E-01
-aadjust  50 121                  4.199703E-02
+rvadjust n                       2.970257E+00
+v1adjust n                       2.485726E+00
+avadjust n                       2.763446E-01
+v2adjust n                       2.018446E-01
+aadjust  50 121                  5.056131E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -252,11 +252,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       8.906843E+00
-v1adjust n                       5.627359E+00
-avadjust n                       6.703683E-01
-v2adjust n                       3.262547E-01
-aadjust  50 121                  2.372483E-02
+rvadjust n                       6.667885E+00
+v1adjust n                       4.712242E+00
+avadjust n                       6.611850E-01
+v2adjust n                       3.316674E-01
+aadjust  50 121                  2.864784E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -270,11 +270,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.071500E+01
-v1adjust n                       6.735256E+00
-avadjust n                       8.120675E-01
-v2adjust n                       3.925156E-01
-aadjust  50 121                  1.761107E-02
+rvadjust n                       8.585280E+00
+v1adjust n                       5.856323E+00
+avadjust n                       8.240720E-01
+v2adjust n                       3.971992E-01
+aadjust  50 121                  2.097053E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -288,11 +288,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.093903E+01
-v1adjust n                       6.919566E+00
-avadjust n                       8.096286E-01
-v2adjust n                       4.068877E-01
-aadjust  50 121                  1.636390E-02
+rvadjust n                       9.220278E+00
+v1adjust n                       6.212055E+00
+avadjust n                       8.098674E-01
+v2adjust n                       4.109156E-01
+aadjust  50 121                  1.938163E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -306,11 +306,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       7.916512E+00
-v1adjust n                       5.245649E+00
-avadjust n                       4.451861E-01
-v2adjust n                       3.189765E-01
-aadjust  50 121                  1.955273E-02
+rvadjust n                       7.194171E+00
+v1adjust n                       4.940026E+00
+avadjust n                       4.613667E-01
+v2adjust n                       3.205310E-01
+aadjust  50 121                  2.350468E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -324,11 +324,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       5.084016E+00
-v1adjust n                       3.556222E+00
-v2adjust n                       2.235094E-01
-avadjust n                       1.712664E-01
-aadjust  50 121                  2.508352E-02
+rvadjust n                       4.676237E+00
+v1adjust n                       3.416740E+00
+v2adjust n                       2.245553E-01
+avadjust n                       1.718174E-01
+aadjust  50 121                  3.051550E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -342,11 +342,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       3.517334E+00
-v1adjust n                       2.596906E+00
-v2adjust n                       1.677766E-01
-aadjust  50 121                  3.103184E-02
-avadjust n                       2.045389E-02
+rvadjust n                       3.132457E+00
+v1adjust n                       2.495422E+00
+v2adjust n                       1.679807E-01
+aadjust  50 121                  3.784286E-02
+avadjust n                       1.843933E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -360,11 +360,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       2.186056E+00
-v1adjust n                       1.758221E+00
-v2adjust n                       1.163514E-01
-avadjust n                       1.113002E-01
-aadjust  50 121                  3.219596E-02
+rvadjust n                       1.775395E+00
+v1adjust n                       1.671035E+00
+v2adjust n                       1.167013E-01
+avadjust n                       1.166643E-01
+aadjust  50 121                  3.956619E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -378,11 +378,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.135138E+00
-v1adjust n                       1.080945E+00
-avadjust n                       2.141486E-01
-v2adjust n                       7.360653E-02
-aadjust  50 121                  2.674576E-02
+v1adjust n                       9.707446E-01
+rvadjust n                       5.840716E-01
+avadjust n                       2.228142E-01
+v2adjust n                       7.417953E-02
+aadjust  50 121                  3.307798E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -396,11 +396,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       4.848863E-01
-v1adjust n                       4.793524E-01
-avadjust n                       2.963082E-01
-v2adjust n                       3.424859E-02
-aadjust  50 121                  3.014215E-02
+rvadjust n                       7.958028E-01
+v1adjust n                       3.553126E-01
+avadjust n                       3.070168E-01
+aadjust  50 121                  3.756706E-02
+v2adjust n                       3.470475E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -414,11 +414,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.152292E+00
-v1adjust n                       3.999815E-01
-avadjust n                       3.615982E-01
-aadjust  50 121                  3.593029E-02
-v2adjust n                       2.765787E-02
+rvadjust n                       1.550197E+00
+v1adjust n                       4.544931E-01
+avadjust n                       3.738813E-01
+aadjust  50 121                  4.503696E-02
+v2adjust n                       2.767234E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -432,11 +432,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.692080E+00
-v1adjust n                       7.725916E-01
-avadjust n                       4.120553E-01
-v2adjust n                       5.530613E-02
-aadjust  50 121                  4.273012E-02
+rvadjust n                       2.135485E+00
+v1adjust n                       8.387913E-01
+avadjust n                       4.252477E-01
+v2adjust n                       5.496087E-02
+aadjust  50 121                  5.374222E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -450,11 +450,11 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       2.544979E+00
-v1adjust n                       1.350742E+00
-avadjust n                       5.075992E-01
-v2adjust n                       1.024614E-01
-aadjust  50 121                  3.077997E-02
+rvadjust n                       3.578214E+00
+v1adjust n                       1.484344E+00
+avadjust n                       5.247014E-01
+v2adjust n                       1.020883E-01
+aadjust  50 121                  4.028129E-02
 gpadjust  50 121                 0.000000E+00
 m2constant                       0.000000E+00
 gamgamadjust  50 121             0.000000E+00
@@ -468,15 +468,15 @@ aadjust  50 120                  0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       3.603336E+00
-v1adjust n                       1.818766E+00
-avadjust n                       5.931658E-01
-v2adjust n                       1.430734E-01
-aadjust  50 121                  2.653526E-02
-aadjust  50 120                  4.871636E-04
-gnadjust  50 121                 7.485453E-06
-gpadjust  50 121                 3.315154E-06
-m2constant                       2.622565E-06
+rvadjust n                       4.799304E+00
+v1adjust n                       2.069248E+00
+avadjust n                       6.104761E-01
+v2adjust n                       1.410102E-01
+aadjust  50 121                  3.542187E-02
+aadjust  50 120                  5.189982E-04
+gnadjust  50 121                 1.640367E-05
+gpadjust  50 121                 8.105192E-06
+m2constant                       5.499912E-06
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  3.500000E+00
 # quantity: 
@@ -486,15 +486,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       4.314900E+00
-v1adjust n                       2.079685E+00
-avadjust n                       6.665543E-01
-v2adjust n                       1.728758E-01
-aadjust  50 121                  2.279904E-02
-aadjust  50 120                  1.873750E-02
-gnadjust  50 121                 5.231331E-04
-gpadjust  50 121                 2.297774E-04
-m2constant                       1.098101E-04
+rvadjust n                       5.346164E+00
+v1adjust n                       2.315351E+00
+avadjust n                       6.855863E-01
+v2adjust n                       1.701122E-01
+aadjust  50 121                  3.083673E-02
+aadjust  50 120                  1.941124E-02
+gnadjust  50 121                 4.385544E-04
+gpadjust  50 121                 2.163982E-04
+m2constant                       9.366551E-05
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  4.000000E+00
 # quantity: 
@@ -504,15 +504,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       4.314947E+00
-v1adjust n                       1.944890E+00
-avadjust n                       6.931309E-01
-v2adjust n                       1.703567E-01
-aadjust  50 120                  2.412597E-02
-aadjust  50 121                  1.990754E-02
-gnadjust  50 121                 6.631999E-04
-gpadjust  50 121                 2.849711E-04
-m2constant                       1.353615E-04
+rvadjust n                       4.883676E+00
+v1adjust n                       2.105862E+00
+avadjust n                       7.092753E-01
+v2adjust n                       1.676977E-01
+aadjust  50 121                  2.724520E-02
+aadjust  50 120                  2.437210E-02
+gnadjust  50 121                 5.896092E-04
+gpadjust  50 121                 2.863067E-04
+m2constant                       1.229811E-04
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  5.000000E+00
 # quantity: 
@@ -522,15 +522,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       2.566199E+00
-v1adjust n                       8.761018E-01
-avadjust n                       5.613242E-01
-v2adjust n                       8.416988E-02
-aadjust  50 120                  1.797120E-02
-aadjust  50 121                  1.620937E-02
-gnadjust  50 121                 5.054487E-04
-gpadjust  50 121                 2.283316E-04
-m2constant                       1.114527E-04
+rvadjust n                       2.594082E+00
+v1adjust n                       9.346062E-01
+avadjust n                       5.707472E-01
+v2adjust n                       8.300230E-02
+aadjust  50 121                  2.271562E-02
+aadjust  50 120                  1.719351E-02
+gnadjust  50 121                 4.313540E-04
+gpadjust  50 121                 2.083922E-04
+m2constant                       8.859652E-05
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  6.000000E+00
 # quantity: 
@@ -540,15 +540,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       8.398098E-01
-avadjust n                       3.865299E-01
-v1adjust n                       2.544685E-01
-v2adjust n                       2.870307E-02
-aadjust  50 121                  1.311731E-02
-aadjust  50 120                  1.096081E-02
-gnadjust  50 121                 2.560187E-04
-gpadjust  50 121                 1.295923E-04
-m2constant                       5.845906E-05
+rvadjust n                       8.148434E-01
+avadjust n                       3.912576E-01
+v1adjust n                       1.454087E-01
+v2adjust n                       3.008204E-02
+aadjust  50 121                  1.868227E-02
+aadjust  50 120                  9.896506E-03
+gnadjust  50 121                 2.303521E-04
+gpadjust  50 121                 1.112622E-04
+m2constant                       5.032400E-05
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  7.000000E+00
 # quantity: 
@@ -558,15 +558,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-v1adjust n                       6.494144E-01
-rvadjust n                       4.990517E-01
-avadjust n                       2.827494E-01
-v2adjust n                       7.401784E-02
-aadjust  50 121                  1.017511E-02
-aadjust  50 120                  7.784521E-03
-gnadjust  50 121                 1.742402E-04
-gpadjust  50 121                 6.403134E-05
-m2constant                       3.524477E-05
+v1adjust n                       6.075090E-01
+rvadjust n                       4.175788E-01
+avadjust n                       2.869322E-01
+v2adjust n                       7.515981E-02
+aadjust  50 121                  1.487831E-02
+aadjust  50 120                  6.329626E-03
+gnadjust  50 121                 1.661887E-04
+gpadjust  50 121                 7.901802E-05
+m2constant                       3.605782E-05
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  8.000000E+00
 # quantity: 
@@ -576,15 +576,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-v1adjust n                       8.307864E-01
-rvadjust n                       7.802033E-01
-avadjust n                       2.524869E-01
-v2adjust n                       1.022527E-01
-aadjust  50 121                  7.819709E-03
-aadjust  50 120                  6.258247E-03
-gnadjust  50 121                 1.831846E-04
-gpadjust  50 121                 9.824778E-05
-m2constant                       4.234897E-05
+v1adjust n                       8.021405E-01
+rvadjust n                       7.804733E-01
+avadjust n                       2.567707E-01
+v2adjust n                       1.025571E-01
+aadjust  50 121                  1.167930E-02
+aadjust  50 120                  4.626622E-03
+gnadjust  50 121                 1.502498E-04
+gpadjust  50 121                 7.275658E-05
+m2constant                       3.172149E-05
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  9.000000E+00
 # quantity: 
@@ -594,15 +594,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-v1adjust n                       8.470571E-01
-rvadjust n                       7.888841E-01
-avadjust n                       2.559776E-01
-v2adjust n                       1.108387E-01
-aadjust  50 121                  5.873146E-03
-aadjust  50 120                  5.800056E-03
-gnadjust  50 121                 1.794038E-04
-gpadjust  50 121                 8.040203E-05
-m2constant                       7.645333E-05
+v1adjust n                       8.445693E-01
+rvadjust n                       8.089973E-01
+avadjust n                       2.611955E-01
+v2adjust n                       1.109311E-01
+aadjust  50 121                  9.113031E-03
+aadjust  50 120                  3.561765E-03
+gnadjust  50 121                 1.579745E-04
+gpadjust  50 121                 7.905857E-05
+m2constant                       6.714812E-05
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  1.000000E+01
 # quantity: 
@@ -612,15 +612,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-v1adjust n                       7.339932E-01
-rvadjust n                       6.749513E-01
-avadjust n                       2.624659E-01
-v2adjust n                       1.027743E-01
-gnadjust  50 121                 3.153015E-02
-gpadjust  50 121                 1.395522E-02
-m2constant                       6.951096E-03
-aadjust  50 121                  4.939025E-03
-aadjust  50 120                  3.709027E-03
+v1adjust n                       7.498971E-01
+rvadjust n                       6.242833E-01
+avadjust n                       2.683080E-01
+v2adjust n                       1.018458E-01
+gnadjust  50 121                 2.782157E-02
+gpadjust  50 121                 1.328146E-02
+aadjust  50 120                  1.183249E-02
+aadjust  50 121                  7.603194E-03
+m2constant                       6.037459E-03
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  1.200000E+01
 # quantity: 
@@ -630,15 +630,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       4.803168E-01
-v1adjust n                       3.853526E-01
-avadjust n                       2.685125E-01
-gnadjust  50 121                 1.065520E-01
-v2adjust n                       5.960903E-02
-gpadjust  50 121                 4.720623E-02
-m2constant                       2.355280E-02
-aadjust  50 121                  3.591707E-03
-aadjust  50 120                  2.958787E-03
+v1adjust n                       4.305987E-01
+rvadjust n                       3.253029E-01
+avadjust n                       2.731739E-01
+gnadjust  50 121                 9.457602E-02
+v2adjust n                       5.819475E-02
+gpadjust  50 121                 4.507740E-02
+aadjust  50 120                  2.108976E-02
+m2constant                       2.052366E-02
+aadjust  50 121                  5.719527E-03
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  1.400000E+01
 # quantity: 
@@ -648,15 +648,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       7.124850E-01
-avadjust n                       2.797607E-01
-gnadjust  50 121                 1.233617E-01
-v1adjust n                       9.632957E-02
-gpadjust  50 121                 5.464342E-02
-m2constant                       2.749094E-02
-v2adjust n                       1.556896E-02
-aadjust  50 120                  1.148432E-02
-aadjust  50 121                  2.933596E-03
+rvadjust n                       6.879782E-01
+avadjust n                       2.833722E-01
+v1adjust n                       1.512271E-01
+gnadjust  50 121                 1.101860E-01
+gpadjust  50 121                 5.233256E-02
+m2constant                       2.402059E-02
+aadjust  50 120                  2.329490E-02
+v2adjust n                       1.579728E-02
+aadjust  50 121                  4.827406E-03
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  1.600000E+01
 # quantity: 
@@ -666,15 +666,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.190253E+00
-v1adjust n                       3.507344E-01
-avadjust n                       2.925027E-01
-gnadjust  50 121                 1.170755E-01
-v2adjust n                       6.982309E-02
-gpadjust  50 121                 5.162104E-02
-m2constant                       2.641368E-02
-aadjust  50 120                  1.314432E-02
-aadjust  50 121                  2.603691E-03
+rvadjust n                       1.278332E+00
+v1adjust n                       3.055097E-01
+avadjust n                       2.959179E-01
+gnadjust  50 121                 1.052546E-01
+v2adjust n                       7.249181E-02
+gpadjust  50 121                 4.965585E-02
+m2constant                       2.313991E-02
+aadjust  50 120                  1.971650E-02
+aadjust  50 121                  4.420570E-03
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  1.800000E+01
 # quantity: 
@@ -684,15 +684,15 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.701120E+00
-v1adjust n                       5.765037E-01
-avadjust n                       3.008961E-01
-v2adjust n                       1.251824E-01
-gnadjust  50 121                 1.144475E-01
-gpadjust  50 121                 5.012662E-02
-m2constant                       2.603664E-02
-aadjust  50 120                  2.296227E-02
-aadjust  50 121                  2.459405E-03
+rvadjust n                       1.791199E+00
+v1adjust n                       5.466410E-01
+avadjust n                       3.040183E-01
+v2adjust n                       1.272821E-01
+gnadjust  50 121                 1.034479E-01
+gpadjust  50 121                 4.845117E-02
+aadjust  50 120                  2.632977E-02
+m2constant                       2.286680E-02
+aadjust  50 121                  4.285404E-03
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  2.000000E+01
 # quantity: 
@@ -702,13 +702,13 @@ gamgamadjust  50 121             0.000000E+00
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.982898E+00
-v1adjust n                       7.450938E-01
-avadjust n                       3.028988E-01
-v2adjust n                       1.770220E-01
-gnadjust  50 121                 1.134302E-01
-aadjust  50 120                  5.340960E-02
-gpadjust  50 121                 5.027112E-02
-m2constant                       2.595349E-02
-aadjust  50 121                  2.377677E-03
+rvadjust n                       2.020635E+00
+v1adjust n                       7.279844E-01
+avadjust n                       3.065718E-01
+v2adjust n                       1.778011E-01
+gnadjust  50 121                 1.031459E-01
+aadjust  50 120                  5.325559E-02
+gpadjust  50 121                 4.830591E-02
+m2constant                       2.286892E-02
+aadjust  50 121                  4.284915E-03
 gamgamadjust  50 121             0.000000E+00

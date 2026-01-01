@@ -1,12 +1,12 @@
 
-    TASMAN-2.2 (Version: December 18, 2025)
+    TASMAN-2.21 (Version: January 1, 2026)
 
- Copyright (C) 2025  A.J. Koning
+ Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2025-12-18
+ Date: 2026-01-01
 
  ########## USER INPUT ##########
 
@@ -154,16 +154,16 @@
 
  Parameter           Input           Delta           Lower         Upper
 
-v1adjust           1.000000E+00   2.000000E-03   9.980040E-01   1.002000E+00
-v2adjust           1.000000E+00   3.000000E-03   9.970090E-01   1.003000E+00
-rvadjust           1.000000E+00   2.000000E-03   9.980040E-01   1.002000E+00
-avadjust           1.000000E+00   2.000000E-03   9.980040E-01   1.002000E+00
-gnadjust           1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
-gpadjust           1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
-m2constant         1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
-gamgamadjust       1.000000E+00   4.000000E-02   9.615385E-01   1.040000E+00
-aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
-aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
+v1adjust           1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
+v2adjust           1.000000E+00   3.000000E-02   9.708738E-01   1.030000E+00
+rvadjust           1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
+avadjust           1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
+gnadjust           1.000000E+00   7.500000E-02   9.302325E-01   1.075000E+00
+gpadjust           1.000000E+00   7.500000E-02   9.302325E-01   1.075000E+00
+m2constant         1.000000E+00   2.000000E-01   8.333333E-01   1.200000E+00
+gamgamadjust       1.000000E+00   2.000000E-01   8.333333E-01   1.200000E+00
+aadjust            1.000000E+00   7.500000E-02   9.302325E-01   1.075000E+00
+aadjust            1.000000E+00   7.500000E-02   9.302325E-01   1.075000E+00
 
   Parameters for input file:     0
 
@@ -180,7 +180,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
 
   Parameters for input file:     1
 
- v1adjust     n    1.00200
+ v1adjust     n    1.02000
  v2adjust     n    1.00000
  rvadjust     n    1.00000
  avadjust     n    1.00000
@@ -194,7 +194,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
   Parameters for input file:     2
 
  v1adjust     n    1.00000
- v2adjust     n    1.00300
+ v2adjust     n    1.03000
  rvadjust     n    1.00000
  avadjust     n    1.00000
  gnadjust      50 121    1.00000
@@ -208,7 +208,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
 
  v1adjust     n    1.00000
  v2adjust     n    1.00000
- rvadjust     n    1.00200
+ rvadjust     n    1.02000
  avadjust     n    1.00000
  gnadjust      50 121    1.00000
  gpadjust      50 121    1.00000
@@ -222,7 +222,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
  v1adjust     n    1.00000
  v2adjust     n    1.00000
  rvadjust     n    1.00000
- avadjust     n    1.00200
+ avadjust     n    1.02000
  gnadjust      50 121    1.00000
  gpadjust      50 121    1.00000
  m2constant      1.00000
@@ -236,7 +236,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
  v2adjust     n    1.00000
  rvadjust     n    1.00000
  avadjust     n    1.00000
- gnadjust      50 121    1.00750
+ gnadjust      50 121    1.07500
  gpadjust      50 121    1.00000
  m2constant      1.00000
  gamgamadjust  50 121    1.00000
@@ -250,7 +250,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
  rvadjust     n    1.00000
  avadjust     n    1.00000
  gnadjust      50 121    1.00000
- gpadjust      50 121    1.00750
+ gpadjust      50 121    1.07500
  m2constant      1.00000
  gamgamadjust  50 121    1.00000
  aadjust       50 121    1.00000
@@ -264,7 +264,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
  avadjust     n    1.00000
  gnadjust      50 121    1.00000
  gpadjust      50 121    1.00000
- m2constant      1.02000
+ m2constant      1.20000
  gamgamadjust  50 121    1.00000
  aadjust       50 121    1.00000
  aadjust       50 120    1.00000
@@ -278,7 +278,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
  gnadjust      50 121    1.00000
  gpadjust      50 121    1.00000
  m2constant      1.00000
- gamgamadjust  50 121    1.04000
+ gamgamadjust  50 121    1.20000
  aadjust       50 121    1.00000
  aadjust       50 120    1.00000
 
@@ -292,7 +292,7 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
  gpadjust      50 121    1.00000
  m2constant      1.00000
  gamgamadjust  50 121    1.00000
- aadjust       50 121    1.00750
+ aadjust       50 121    1.07500
  aadjust       50 120    1.00000
 
   Parameters for input file:    10
@@ -306,8 +306,8 @@ aadjust            1.000000E+00   7.500000E-03   9.925558E-01   1.007500E+00
  m2constant      1.00000
  gamgamadjust  50 121    1.00000
  aadjust       50 121    1.00000
- aadjust       50 120    1.00750
+ aadjust       50 120    1.07500
 
- Execution time:  0 hours  0 minutes  1.00 seconds 
+ Execution time:  0 hours  0 minutes  1.04 seconds 
 
  This TASMAN run has finished
