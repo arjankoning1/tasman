@@ -147,6 +147,7 @@ subroutine covcross
   real(sgl)         :: xsdifi                         ! difference in cross section
   real(sgl)         :: xsdifk                         ! difference in cross section
   real(sgl)         :: xsex                           ! help variable
+  real(sgl)         :: Ssign                          ! help variable
   real(sgl)         :: xsA                            ! average cross section
   real(sgl)         :: xsi0                           ! cross section of run 0
   real(sgl)         :: xsi1                           ! cross section of random run
@@ -335,11 +336,18 @@ subroutine covcross
           Np = min(Npar, numpar)
           n = Sindex(i, j)
           do k = 1, Np
-            parj0 = parsave(0, k)
-            parjk = partalys(1, k)
+            if (parsave(0, k) /= 0.) then
+              parj0 = parsave(0, k)
+              parjk = partalys(1, k)
+              Ssign = 1.
+            else
+              parj0 = partalys(1, k)
+              parjk = parsave(0, k)
+              Ssign = -1.
+            endif
             pardifj = parj0 - parjk
             if (pardifj /= 0.) then
-              term = pardifj * xsdifi
+              term = pardifj * Ssign * xsdifi
               if (Sws > 0.) Senum(k, i, n) = (Senum(k, i, n) * Swp + Sw * term) / Sws
               term = pardifj **2
               if (term == 0.) term = 1.
