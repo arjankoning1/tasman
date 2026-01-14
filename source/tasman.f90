@@ -10,7 +10,7 @@ program tasman
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !   |-------------------------------------------------------|
-!   |                 TASMAN-2.21                           |
+!   |                 TASMAN-2.2                            |
 !   |                 Arjan Koning                          |
 !   |                                                       |
 !   | Email: A.Koning@iaea.org                              |
@@ -18,7 +18,7 @@ program tasman
 !
 ! MIT License
 !
-! Copyright (c) 2026 Arjan Koning
+! Copyright (c) 2025 Arjan Koning
 !
 ! Permission is hereby granted, free of charge, to any person obtaining a copy
 ! of this software and associated documentation files (the "Software"), to deal
