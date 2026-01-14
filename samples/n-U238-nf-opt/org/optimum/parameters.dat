@@ -2,7 +2,7 @@
 ##   title: U238(n,x) nuclear model parameters
 ##   source: TALYS-2.2
 ##   user: Arjan Koning
-##   date: 2026-01-01
+##   date: 2026-01-14
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 92
@@ -37,8 +37,8 @@ deltaW           92 239   2.50000   1
 Ntop             92 239   1   1
 Nlow             92 239   0   1
 s2adjust         92 239   1.00000   1
-ctable           92 239  -1.16530   1
-ptable           92 239  -0.82662   1
+ctable           92 239  -0.56280   1
+ptable           92 239  -1.10136   1
 ctableadjust     92 239   0.00000   1
 ptableadjust     92 239   0.00000   1
 Ufermi           92 239  45.00000   1
@@ -50,8 +50,8 @@ deltaW           92 239   0.60000   2
 Ntop             92 239   1   2
 Nlow             92 239   0   2
 s2adjust         92 239   1.00000   2
-ctable           92 239   1.37250   2
-ptable           92 239  -1.77190   2
+ctable           92 239   0.42538   2
+ptable           92 239  -0.21190   2
 ctableadjust     92 239   0.00000   2
 ptableadjust     92 239   0.00000   2
 Ufermi           92 239  45.00000   2
@@ -63,8 +63,8 @@ deltaW           92 239   0.60000   3
 Ntop             92 239   1   3
 Nlow             92 239   0   3
 s2adjust         92 239   1.00000   3
-ctable           92 239  -0.33047   3
-ptable           92 239  -0.80137   3
+ctable           92 239   1.20084   3
+ptable           92 239   0.16074   3
 ctableadjust     92 239   0.00000   3
 ptableadjust     92 239   0.00000   3
 Ufermi           92 239  45.00000   3
@@ -134,8 +134,8 @@ ggradjust        92 239   1.000 M2
 ## parameters: 
 ##   fission
 ##
-betafiscor       92 239   0.81215
-vfiscor          92 239   1.25408
+betafiscor       92 239   0.99114
+vfiscor          92 239   1.22102
 rmiufiscor       92 239   1.00000
 betafiscoradjust   92 239   1.00000
 vfiscoradjust    92 239   1.00000
@@ -1531,7 +1531,7 @@ Cnubar1           1.00000
 Cnubar2           1.00000
 Tmadjust          1.00000
 Fsadjust          1.00000
-Cbarrier          1.35000
+Cbarrier          1.00000
 ## General parameters:
 ##   optical model
 deuteronomp    4

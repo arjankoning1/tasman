@@ -72,17 +72,17 @@ ctable           92 239   0.44307   3
 ptable           92 239  -0.14079   3
 betafiscor       92 239   0.80811
 vfiscor          92 239   0.95026
-# Current variables Run:     4
+# Current variables Run:    18
 #Ztarget  92
 partable y
 ecissave y
 inccalc n
 eciscalc n
-ctable        92 239 -1.16530E+00 1
-ptable        92 239 -8.26624E-01 1
-ctable        92 239    1.37250 2
-ptable        92 239 -1.77190E+00 2
-ctable        92 239 -3.30467E-01 3
-ptable        92 239 -8.01365E-01 3
-betafiscor    92 239    0.81215
-vfiscor       92 239    1.25408
+ctable        92 239 -5.62801E-01 1
+ptable        92 239 -1.10136E+00 1
+ctable        92 239    0.42538 2
+ptable        92 239 -2.11901E-01 2
+ctable        92 239    1.20084 3
+ptable        92 239    0.16074 3
+betafiscor    92 239    0.99114
+vfiscor       92 239    1.22102

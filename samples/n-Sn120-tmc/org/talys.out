@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-01
+ Date: 2026-01-14
 
  ########## USER INPUT ##########
 
@@ -41054,6 +41054,6 @@ file: gam048115L30L04.tot
 file: gam048115L30L05.tot
 file: gam048115L30L28.tot
 
- Execution time:  0 hours  2 minutes  4.36 seconds 
+ Execution time:  0 hours  1 minutes 50.76 seconds 
 
  The TALYS team congratulates you with this successful calculation.

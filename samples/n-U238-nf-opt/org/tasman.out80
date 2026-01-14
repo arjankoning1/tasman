@@ -1,13 +1,13 @@
  Performing first TALYS run to retrieve parameters
 
-    TASMAN-2.21 (Version: January 1, 2026)
+    TASMAN-2.2  (Version: January 1, 2026)
 
  Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-01
+ Date: 2026-01-14
 
  ########## USER INPUT ##########
 
@@ -191,18 +191,18 @@ vfiscor       92 239    0.95026
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      7.772         0.2153          2.173         1.0
+fission.tot         1     1      3.520          2.729          387.2         1.0
 
-# GOF no.                0  0.2153    
+# GOF no.                0   2.729    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   7.772     Optimum:   1.0000E+38
-# Erms             :  0.2153     Optimum:   1.0000E+38
-# Chi2             :   2.173     Optimum:   1.0000E+38
+# Frms             :   3.520     Optimum:   1.0000E+38
+# Erms             :   2.729     Optimum:   1.0000E+38
+# Chi2             :   387.2     Optimum:   1.0000E+38
 
-  92 238 Run:     0 New optimum (Frms Erms Chi-2):    7.772021E+00   2.153264E-0
+  92 238 Run:     0 New optimum (Frms Erms Chi-2):    3.519866E+00   2.729177E+0
 
 #                         Goodness-of-fit
 # TALYS run        :     1
@@ -236,16 +236,16 @@ vfiscor       92 239    0.83866
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      2.739          2.127          18.24         0.2
+fission.tot         1     1      8.979          7.954          4686.          2.
 
-# GOF no.                1   2.127    
+# GOF no.                1   7.954    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   2.739     Optimum:    7.772    
-# Erms             :   2.127     Optimum:   0.2153    
-# Chi2             :   18.24     Optimum:    2.173    
+# Frms             :   8.979     Optimum:    3.520    
+# Erms             :   7.954     Optimum:    2.729    
+# Chi2             :   4686.     Optimum:    387.2    
 
 
 #                         Goodness-of-fit
@@ -280,18 +280,18 @@ vfiscor       92 239    1.11549
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      9.872         0.1796          2.243         0.2
+fission.tot         1     1      2.611         0.6124          11.99          2.
 
-# GOF no.                2  0.1796    
+# GOF no.                2  0.6124    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   9.872     Optimum:    7.772    
-# Erms             :  0.1796     Optimum:   0.2153    
-# Chi2             :   2.243     Optimum:    2.173    
+# Frms             :   2.611     Optimum:    3.520    
+# Erms             :  0.6124     Optimum:    2.729    
+# Chi2             :   11.99     Optimum:    387.2    
 
-  92 238 Run:     2 New optimum (Frms Erms Chi-2):    9.872332E+00   1.795597E-0
+  92 238 Run:     2 New optimum (Frms Erms Chi-2):    2.611418E+00   6.123850E-0
 
 #                         Goodness-of-fit
 # TALYS run        :     3
@@ -325,16 +325,16 @@ vfiscor       92 239    0.87808
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      2.239         0.5477          1.282         0.1
+fission.tot         1     1      7.385          6.276          3464.         0.6
 
-# GOF no.                3  0.5477    
+# GOF no.                3   6.276    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   2.239     Optimum:    9.872    
-# Erms             :  0.5477     Optimum:   0.1796    
-# Chi2             :   1.282     Optimum:    2.243    
+# Frms             :   7.385     Optimum:    2.611    
+# Erms             :   6.276     Optimum:   0.6124    
+# Chi2             :   3464.     Optimum:    11.99    
 
 
 #                         Goodness-of-fit
@@ -369,18 +369,18 @@ vfiscor       92 239    1.25408
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      10.15         0.1758          2.250         0.1
+fission.tot         1     1      8.367         0.1702          2.683         0.6
 
-# GOF no.                4  0.1758    
+# GOF no.                4  0.1702    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   10.15     Optimum:    9.872    
-# Erms             :  0.1758     Optimum:   0.1796    
-# Chi2             :   2.250     Optimum:    2.243    
+# Frms             :   8.367     Optimum:    2.611    
+# Erms             :  0.1702     Optimum:   0.6124    
+# Chi2             :   2.683     Optimum:    11.99    
 
-  92 238 Run:     4 New optimum (Frms Erms Chi-2):    1.015049E+01   1.758469E-0
+  92 238 Run:     4 New optimum (Frms Erms Chi-2):    8.367114E+00   1.702030E-0
 
 #                         Goodness-of-fit
 # TALYS run        :     5
@@ -414,16 +414,16 @@ vfiscor       92 239    0.87226
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      9.497         0.1849          2.234         0.1
+fission.tot         1     1      2.533         0.5647          11.23         0.1
 
-# GOF no.                5  0.1849    
+# GOF no.                5  0.5647    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   9.497     Optimum:    10.15    
-# Erms             :  0.1849     Optimum:   0.1758    
-# Chi2             :   2.234     Optimum:    2.250    
+# Frms             :   2.533     Optimum:    8.367    
+# Erms             :  0.5647     Optimum:   0.1702    
+# Chi2             :   11.23     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -458,16 +458,16 @@ vfiscor       92 239    0.75179
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      1.032         0.9847         4.7058E-02     0.1
+fission.tot         1     1      6.296          5.269          2304.         0.1
 
-# GOF no.                6  0.9847    
+# GOF no.                6   5.269    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   1.032     Optimum:    10.15    
-# Erms             :  0.9847     Optimum:   0.1758    
-# Chi2             :  4.7058E-02 Optimum:    2.250    
+# Frms             :   6.296     Optimum:    8.367    
+# Erms             :   5.269     Optimum:   0.1702    
+# Chi2             :   2304.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -502,16 +502,16 @@ vfiscor       92 239    1.09935
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      10.11         0.1764          2.249         0.1
+fission.tot         1     1      3.158         0.4180          1.678         0.1
 
-# GOF no.                7  0.1764    
+# GOF no.                7  0.4180    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   10.11     Optimum:    10.15    
-# Erms             :  0.1764     Optimum:   0.1758    
-# Chi2             :   2.249     Optimum:    2.250    
+# Frms             :   3.158     Optimum:    8.367    
+# Erms             :  0.4180     Optimum:   0.1702    
+# Chi2             :   1.678     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -546,16 +546,16 @@ vfiscor       92 239    0.87931
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      1.004         0.9985         4.9347E-03     0.1
+fission.tot         1     1      8.336          7.269          4216.         0.1
 
-# GOF no.                8  0.9985    
+# GOF no.                8   7.269    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   1.004     Optimum:    10.15    
-# Erms             :  0.9985     Optimum:   0.1758    
-# Chi2             :  4.9347E-03 Optimum:    2.250    
+# Frms             :   8.336     Optimum:    8.367    
+# Erms             :   7.269     Optimum:   0.1702    
+# Chi2             :   4216.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -590,16 +590,16 @@ vfiscor       92 239    0.83241
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      2.354          1.896          10.48         0.1
+fission.tot         1     1      8.763          7.717          4573.         0.1
 
-# GOF no.                9   1.896    
+# GOF no.                9   7.717    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   2.354     Optimum:    10.15    
-# Erms             :   1.896     Optimum:   0.1758    
-# Chi2             :   10.48     Optimum:    2.250    
+# Frms             :   8.763     Optimum:    8.367    
+# Erms             :   7.717     Optimum:   0.1702    
+# Chi2             :   4573.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -634,16 +634,16 @@ vfiscor       92 239    0.85214
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      2.629         0.4872          1.460         0.1
+fission.tot         1     1      6.986          6.131          2218.         0.1
 
-# GOF no.               10  0.4872    
+# GOF no.               10   6.131    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   2.629     Optimum:    10.15    
-# Erms             :  0.4872     Optimum:   0.1758    
-# Chi2             :   1.460     Optimum:    2.250    
+# Frms             :   6.986     Optimum:    8.367    
+# Erms             :   6.131     Optimum:   0.1702    
+# Chi2             :   2218.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -678,16 +678,16 @@ vfiscor       92 239    0.74213
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      6.801         0.2375          2.128         0.1
+fission.tot         1     1      2.933          1.580          405.3         0.1
 
-# GOF no.               11  0.2375    
+# GOF no.               11   1.580    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   6.801     Optimum:    10.15    
-# Erms             :  0.2375     Optimum:   0.1758    
-# Chi2             :   2.128     Optimum:    2.250    
+# Frms             :   2.933     Optimum:    8.367    
+# Erms             :   1.580     Optimum:   0.1702    
+# Chi2             :   405.3     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -722,16 +722,16 @@ vfiscor       92 239    0.78822
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      3.023          2.291          25.79         0.1
+fission.tot         1     1      8.964          7.935          4690.         0.1
 
-# GOF no.               12   2.291    
+# GOF no.               12   7.935    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   3.023     Optimum:    10.15    
-# Erms             :   2.291     Optimum:   0.1758    
-# Chi2             :   25.79     Optimum:    2.250    
+# Frms             :   8.964     Optimum:    8.367    
+# Erms             :   7.935     Optimum:   0.1702    
+# Chi2             :   4690.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -766,16 +766,16 @@ vfiscor       92 239    1.10827
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      9.705         0.1820          2.239         0.1
+fission.tot         1     1      5.422         0.2270          2.636         0.1
 
-# GOF no.               13  0.1820    
+# GOF no.               13  0.2270    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   9.705     Optimum:    10.15    
-# Erms             :  0.1820     Optimum:   0.1758    
-# Chi2             :   2.239     Optimum:    2.250    
+# Frms             :   5.422     Optimum:    8.367    
+# Erms             :  0.2270     Optimum:   0.1702    
+# Chi2             :   2.636     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -810,16 +810,16 @@ vfiscor       92 239    1.05377
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      10.04         0.1773          2.247         0.1
+fission.tot         1     1      4.294         0.2703          2.485         0.1
 
-# GOF no.               14  0.1773    
+# GOF no.               14  0.2703    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   10.04     Optimum:    10.15    
-# Erms             :  0.1773     Optimum:   0.1758    
-# Chi2             :   2.247     Optimum:    2.250    
+# Frms             :   4.294     Optimum:    8.367    
+# Erms             :  0.2703     Optimum:   0.1702    
+# Chi2             :   2.485     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -854,16 +854,16 @@ vfiscor       92 239    0.95566
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      6.340         0.2525          2.086         0.1
+fission.tot         1     1      5.075          4.419          473.2         0.1
 
-# GOF no.               15  0.2525    
+# GOF no.               15   4.419    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   6.340     Optimum:    10.15    
-# Erms             :  0.2525     Optimum:   0.1758    
-# Chi2             :   2.086     Optimum:    2.250    
+# Frms             :   5.075     Optimum:    8.367    
+# Erms             :   4.419     Optimum:   0.1702    
+# Chi2             :   473.2     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -898,16 +898,16 @@ vfiscor       92 239    0.78078
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      9.585         0.1836          2.236         0.1
+fission.tot         1     1      4.593         0.2335          2.964         0.1
 
-# GOF no.               16  0.1836    
+# GOF no.               16  0.2335    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   9.585     Optimum:    10.15    
-# Erms             :  0.1836     Optimum:   0.1758    
-# Chi2             :   2.236     Optimum:    2.250    
+# Frms             :   4.593     Optimum:    8.367    
+# Erms             :  0.2335     Optimum:   0.1702    
+# Chi2             :   2.964     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -942,16 +942,16 @@ vfiscor       92 239    0.79617
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      9.884         0.1794          2.244         0.1
+fission.tot         1     1      3.785         0.2787          2.541         0.1
 
-# GOF no.               17  0.1794    
+# GOF no.               17  0.2787    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   9.884     Optimum:    10.15    
-# Erms             :  0.1794     Optimum:   0.1758    
-# Chi2             :   2.244     Optimum:    2.250    
+# Frms             :   3.785     Optimum:    8.367    
+# Erms             :  0.2787     Optimum:   0.1702    
+# Chi2             :   2.541     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -986,17 +986,18 @@ vfiscor       92 239    1.22102
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      10.15         0.1758          2.250         0.1
+fission.tot         1     1      17.08         5.7418E-02      3.976         0.1
 
-# GOF no.               18  0.1758    
+# GOF no.               18  5.7418E-02
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   10.15     Optimum:    10.15    
-# Erms             :  0.1758     Optimum:   0.1758    
-# Chi2             :   2.250     Optimum:    2.250    
+# Frms             :   17.08     Optimum:    8.367    
+# Erms             :  5.7418E-02 Optimum:   0.1702    
+# Chi2             :   3.976     Optimum:    2.683    
 
+  92 238 Run:    18 New optimum (Frms Erms Chi-2):    1.708351E+01   5.741797E-0
 
 #                         Goodness-of-fit
 # TALYS run        :    19
@@ -1030,16 +1031,16 @@ vfiscor       92 239    0.98140
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      9.867         0.1797          2.243         0.1
+fission.tot         1     1      3.343         0.4181          97.19         5.7
 
-# GOF no.               19  0.1797    
+# GOF no.               19  0.4181    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   9.867     Optimum:    10.15    
-# Erms             :  0.1797     Optimum:   0.1758    
-# Chi2             :   2.243     Optimum:    2.250    
+# Frms             :   3.343     Optimum:    17.08    
+# Erms             :  0.4181     Optimum:   5.7418E-02
+# Chi2             :   97.19     Optimum:    3.976    
 
 
 #                         Goodness-of-fit
@@ -1074,19 +1075,19 @@ vfiscor       92 239    1.19064
 
 # Channel summary  : U238 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
-fission.tot         1     1      10.14         0.1760          2.250         0.1
+fission.tot         1     1      6.378         0.2510          2.132         5.7
 
-# GOF no.               20  0.1760    
+# GOF no.               20  0.2510    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    1
 # Data points      :      1
-# Frms             :   10.14     Optimum:    10.15    
-# Erms             :  0.1760     Optimum:   0.1758    
-# Chi2             :   2.250     Optimum:    2.250    
+# Frms             :   6.378     Optimum:    17.08    
+# Erms             :  0.2510     Optimum:   5.7418E-02
+# Chi2             :   2.132     Optimum:    3.976    
 
  Maximum number of runs done:           20
 
- Execution time:  0 hours  0 minutes  1.27 seconds 
+ Execution time:  0 hours  0 minutes  1.20 seconds 
 
  This TASMAN run has finished
