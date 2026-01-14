@@ -116,6 +116,6 @@ structure
 parameters
 t6copy
 exforcopy
-clean
 create
+clean
 
