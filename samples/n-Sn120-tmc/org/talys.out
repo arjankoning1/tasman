@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-14
+ Date: 2026-01-18
 
  ########## USER INPUT ##########
 
@@ -1107,7 +1107,6 @@ file: arrays.out
  Parity=+  J=10.5  j=10.5  l=10  T(j,l)= 8.18752E-15  Sum over outgoing channels= 8.18753E-15  Ratio= 1.00000
  Parity=+  J=11.5  j=11.5  l=12  T(j,l)= 1.62961E-18  Sum over outgoing channels= 1.62961E-18  Ratio= 1.00000
  Parity=+  J=12.5  j=12.5  l=12  T(j,l)= 1.62865E-18  Sum over outgoing channels= 1.62865E-18  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   1.00000 ###########
 
@@ -1818,7 +1817,6 @@ file: ngang.L30
  Parity=+  J=10.5  j=10.5  l=10  T(j,l)= 5.37054E-14  Sum over outgoing channels= 5.37054E-14  Ratio= 1.00000
  Parity=+  J=11.5  j=11.5  l=12  T(j,l)= 1.52128E-17  Sum over outgoing channels= 1.52128E-17  Ratio= 1.00000
  Parity=+  J=12.5  j=12.5  l=12  T(j,l)= 1.52041E-17  Sum over outgoing channels= 1.52041E-17  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   1.20000 ###########
 
@@ -2683,7 +2681,6 @@ file: ngang.L30
  Parity=+  J=12.5  j=12.5  l=12  T(j,l)= 9.97635E-17  Sum over outgoing channels= 9.97635E-17  Ratio= 1.00000
  Parity=+  J=13.5  j=13.5  l=14  T(j,l)= 4.07787E-20  Sum over outgoing channels= 4.07787E-20  Ratio= 1.00000
  Parity=+  J=14.5  j=14.5  l=14  T(j,l)= 4.07360E-20  Sum over outgoing channels= 4.07360E-20  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   1.40000 ###########
 
@@ -3555,7 +3552,6 @@ file: ngang.L30
  Parity=+  J=12.5  j=12.5  l=12  T(j,l)= 5.05683E-16  Sum over outgoing channels= 5.05683E-16  Ratio= 1.00000
  Parity=+  J=13.5  j=13.5  l=14  T(j,l)= 2.67110E-19  Sum over outgoing channels= 2.67110E-19  Ratio= 1.00000
  Parity=+  J=14.5  j=14.5  l=14  T(j,l)= 2.66828E-19  Sum over outgoing channels= 2.66828E-19  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   1.60000 ###########
 
@@ -4432,7 +4428,6 @@ file: ngang.L30
  Parity=+  J=12.5  j=12.5  l=12  T(j,l)= 2.10436E-15  Sum over outgoing channels= 2.10436E-15  Ratio= 1.00000
  Parity=+  J=13.5  j=13.5  l=14  T(j,l)= 1.39222E-18  Sum over outgoing channels= 1.39222E-18  Ratio= 1.00000
  Parity=+  J=14.5  j=14.5  l=14  T(j,l)= 1.39064E-18  Sum over outgoing channels= 1.39064E-18  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   1.80000 ###########
 
@@ -5312,7 +5307,6 @@ file: ngang.L30
  Parity=+  J=12.5  j=12.5  l=12  T(j,l)= 7.49498E-15  Sum over outgoing channels= 7.49498E-15  Ratio= 1.00000
  Parity=+  J=13.5  j=13.5  l=14  T(j,l)= 6.05892E-18  Sum over outgoing channels= 6.05892E-18  Ratio= 1.00000
  Parity=+  J=14.5  j=14.5  l=14  T(j,l)= 6.05187E-18  Sum over outgoing channels= 6.05187E-18  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   2.00000 ###########
 
@@ -6204,7 +6198,6 @@ file: ngang.L30
  Parity=+  J=14.5  j=14.5  l=14  T(j,l)= 1.33231E-16  Sum over outgoing channels= 1.33231E-16  Ratio= 1.00000
  Parity=+  J=15.5  j=15.5  l=16  T(j,l)= 1.67737E-19  Sum over outgoing channels= 1.67737E-19  Ratio= 1.00000
  Parity=+  J=16.5  j=16.5  l=16  T(j,l)= 1.67597E-19  Sum over outgoing channels= 1.67597E-19  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   2.50000 ###########
 
@@ -7224,7 +7217,6 @@ file: naang.L00
  Parity=+  J=14.5  j=14.5  l=14  T(j,l)= 1.62074E-15  Sum over outgoing channels= 1.62074E-15  Ratio= 1.00000
  Parity=+  J=15.5  j=15.5  l=16  T(j,l)= 2.88839E-18  Sum over outgoing channels= 2.88839E-18  Ratio= 1.00000
  Parity=+  J=16.5  j=16.5  l=16  T(j,l)= 2.88551E-18  Sum over outgoing channels= 2.88550E-18  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   3.00000 ###########
 
@@ -8368,7 +8360,6 @@ file: naang.L30
  Parity=+  J=16.5  j=16.5  l=16  T(j,l)= 3.11806E-17  Sum over outgoing channels= 3.11805E-17  Ratio= 1.00000
  Parity=+  J=17.5  j=17.5  l=18  T(j,l)= 6.93456E-20  Sum over outgoing channels= 6.93456E-20  Ratio= 1.00000
  Parity=+  J=18.5  j=18.5  l=18  T(j,l)= 6.92939E-20  Sum over outgoing channels= 6.92938E-20  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   3.50000 ###########
 
@@ -9613,7 +9604,6 @@ file: naang.L30
  Parity=+  J=16.5  j=16.5  l=16  T(j,l)= 2.39504E-16  Sum over outgoing channels= 2.39503E-16  Ratio= 1.00000
  Parity=+  J=17.5  j=17.5  l=18  T(j,l)= 6.91010E-19  Sum over outgoing channels= 6.91009E-19  Ratio= 1.00000
  Parity=+  J=18.5  j=18.5  l=18  T(j,l)= 6.90462E-19  Sum over outgoing channels= 6.90460E-19  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   4.00000 ###########
 
@@ -10877,7 +10867,6 @@ file: naang.L30
  Parity=+  J=18.5  j=18.5  l=18  T(j,l)= 3.03298E-17  Sum over outgoing channels= 3.03297E-17  Ratio= 1.00000
  Parity=+  J=19.5  j=19.5  l=20  T(j,l)= 1.15346E-19  Sum over outgoing channels= 1.15346E-19  Ratio= 1.00000
  Parity=+  J=20.5  j=20.5  l=20  T(j,l)= 1.15346E-19  Sum over outgoing channels= 1.15346E-19  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   5.00000 ###########
 
@@ -12157,7 +12146,6 @@ file: naang.L30
  Parity=+  J=18.5  j=18.5  l=18  T(j,l)= 6.23685E-16  Sum over outgoing channels= 6.23685E-16  Ratio= 1.00000
  Parity=+  J=19.5  j=19.5  l=20  T(j,l)= 3.42216E-18  Sum over outgoing channels= 3.42216E-18  Ratio= 1.00000
  Parity=+  J=20.5  j=20.5  l=20  T(j,l)= 3.42216E-18  Sum over outgoing channels= 3.42216E-18  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   6.00000 ###########
 
@@ -13801,7 +13789,6 @@ file: naang.L30
  Parity=+  J=18.5  j=18.5  l=18  T(j,l)= 7.59541E-15  Sum over outgoing channels= 7.59539E-15  Ratio= 1.00000
  Parity=+  J=19.5  j=19.5  l=20  T(j,l)= 5.67524E-17  Sum over outgoing channels= 5.67524E-17  Ratio= 1.00000
  Parity=+  J=20.5  j=20.5  l=20  T(j,l)= 5.67524E-17  Sum over outgoing channels= 5.67523E-17  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   7.00000 ###########
 
@@ -15467,7 +15454,6 @@ file: naang.L30
  Parity=+  J=18.5  j=18.5  l=18  T(j,l)= 6.30683E-14  Sum over outgoing channels= 6.30685E-14  Ratio= 1.00000
  Parity=+  J=19.5  j=19.5  l=20  T(j,l)= 6.14476E-16  Sum over outgoing channels= 6.14475E-16  Ratio= 1.00000
  Parity=+  J=20.5  j=20.5  l=20  T(j,l)= 6.14476E-16  Sum over outgoing channels= 6.14477E-16  Ratio= 1.00000
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   8.00000 ###########
 
@@ -17152,7 +17138,6 @@ file: naang.L30
  Parity=+  J=18.5  j=18.5  l=18  T(j,l)= 3.91256E-13  Sum over outgoing channels= 3.91254E-13  Ratio= 1.00000
  Parity=+  J=19.5  j=19.5  l=20  T(j,l)= 4.80453E-15  Sum over outgoing channels= 4.80455E-15  Ratio= 0.99999
  Parity=+  J=20.5  j=20.5  l=20  T(j,l)= 4.80453E-15  Sum over outgoing channels= 4.80456E-15  Ratio= 0.99999
-  flagurrendf B  T
 
  ########### REACTION SUMMARY FOR E=   9.00000 ###########
 
@@ -41054,6 +41039,6 @@ file: gam048115L30L04.tot
 file: gam048115L30L05.tot
 file: gam048115L30L28.tot
 
- Execution time:  0 hours  1 minutes 50.76 seconds 
+ Execution time:  0 hours  1 minutes 58.38 seconds 
 
  The TALYS team congratulates you with this successful calculation.

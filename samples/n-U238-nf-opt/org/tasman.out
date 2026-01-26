@@ -7,7 +7,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-14
+ Date: 2026-01-18
 
  ########## USER INPUT ##########
 
@@ -1088,6 +1088,6 @@ fission.tot         1     1      6.378         0.2510          2.132         5.7
 
  Maximum number of runs done:           20
 
- Execution time:  0 hours  0 minutes  1.20 seconds 
+ Execution time:  0 hours  0 minutes  1.17 seconds 
 
  This TASMAN run has finished

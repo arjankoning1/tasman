@@ -2,7 +2,7 @@
 #   title: Sn120(n,xt) emission spectrum at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-14
+#   date: 2026-01-18
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -44,7 +44,7 @@
 #   title: Sn120(n,xt) emission spectrum at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-14
+#   date: 2026-01-18
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -99,7 +99,7 @@
 #   title: Sn120(n,xt) emission spectrum at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-14
+#   date: 2026-01-18
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -168,7 +168,7 @@
 #   title: Sn120(n,xt) emission spectrum at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-14
+#   date: 2026-01-18
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -244,7 +244,7 @@
 #   title: Sn120(n,xt) emission spectrum at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-14
+#   date: 2026-01-18
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

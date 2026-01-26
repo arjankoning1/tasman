@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-14
+ Date: 2026-01-18
 
  ########## USER INPUT ##########
 
@@ -194,6 +194,6 @@ avadjust           1.000000E+00   2.000000E-02   9.803922E-01   1.020000E+00
  rvadjust     n    1.01037
  avadjust     n    1.01702
 
- Execution time:  0 hours  0 minutes  0.78 seconds 
+ Execution time:  0 hours  0 minutes  0.83 seconds 
 
  This TASMAN run has finished

@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-14
+ Date: 2026-01-18
 
  ########## USER INPUT ##########
 
@@ -3790,6 +3790,6 @@ MAT: 5049 AWI: 1.000000+0 element: Sn mass: 120 iso: projectile: neutron
 Diagnosis of NJOY output in njoy.ers
 autonjoy is done
 
- Execution time:  0 hours  0 minutes  6.42 seconds 
+ Execution time:  0 hours  0 minutes  6.25 seconds 
 
  This TASMAN run has finished

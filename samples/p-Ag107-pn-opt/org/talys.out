@@ -7,7 +7,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-14
+ Date: 2026-01-18
 
  ########## USER INPUT ##########
 
@@ -2462,6 +2462,6 @@ file: xs210000.tot
 file: xs200001.tot
 file: xs000003.tot
 
- Execution time:  0 hours  0 minutes 11.15 seconds 
+ Execution time:  0 hours  0 minutes 19.58 seconds 
 
  The TALYS team congratulates you with this successful calculation.

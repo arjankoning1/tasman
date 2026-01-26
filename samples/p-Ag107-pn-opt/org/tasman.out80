@@ -7,7 +7,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-14
+ Date: 2026-01-18
 
  ########## USER INPUT ##########
 
@@ -913,6 +913,6 @@ xs100000.tot        3   102      1.290         0.9876          38.62         0.9
 
  Maximum number of runs done:           10
 
- Execution time:  0 hours  0 minutes  1.37 seconds 
+ Execution time:  0 hours  0 minutes  1.33 seconds 
 
  This TASMAN run has finished
