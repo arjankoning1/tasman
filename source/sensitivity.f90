@@ -74,7 +74,9 @@ subroutine sensitivity
   real(sgl)         :: parj0                               ! parameter of run 0
   real(sgl)         :: parjk                               ! parameter of random run
   real(sgl)         :: ploc(numpar)                        ! help variable
+  real(sgl)         :: pearloc(numpar)                     ! help variable
   real(sgl)         :: ptmp                                ! help variable
+  real(sgl)         :: peartmp                             ! help variable
   real(sgl)         :: Sabs                                ! absolute sensitivity
   real(sgl)         :: sens                                ! sensitivity
   real(sgl)         :: Sloc(numpar)                        ! help variable
@@ -239,7 +241,9 @@ subroutine sensitivity
   un(4) = 'mb'
   col(5) = 'par. deviation'
   un(5) = '%'
-  Ncol = 5
+  col(6) = 'Pearson corr.'
+  un(6) = ''
+  Ncol = 6
   call write_char(indent,'parameters','')
   call write_integer(id2,'number of channels',Nchanxs)
   do i = 1, Nchanxs
@@ -254,20 +258,24 @@ subroutine sensitivity
         strloc(k) = parstring(k)
         ploc(k) = pardelta(k)
         Sloc(k) = S(k, i, n)
+        pearloc(k) = Pearson(k, i, n)
         xsloc(k) = xsdev(k, i, n)
       enddo
       do k = 1, Np
         do l = k, Np
            if (abs(Sloc(k)) >= abs(Sloc(l))) cycle
            ptmp = ploc(k)
+           peartmp = pearloc(k)
            Stmp = Sloc(k)
            xstmp = xsloc(k)
            sttmp = strloc(k)
            ploc(k) = ploc(l)
+           pearloc(k) = pearloc(l)
            Sloc(k) = Sloc(l)
            xsloc(k) = xsloc(l)
            strloc(k) = strloc(l)
            ploc(l) = ptmp
+           pearloc(l) = peartmp
            Sloc(l) = Stmp
            xsloc(l) = xstmp
            strloc(l) = sttmp
@@ -276,7 +284,7 @@ subroutine sensitivity
       call write_quantity(indent,quantity)
       call write_datablock(indent,Ncol,Np,col,un)
       do k = 1, Np
-        write(1, '(a30, 3es15.6)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k)
+        write(1, '(a30, 4es15.6)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k), pearloc(k)
       enddo
     enddo
   enddo
