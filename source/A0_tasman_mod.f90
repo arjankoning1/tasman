@@ -6,7 +6,7 @@ module A0_tasman_mod
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2026-01-01: Current revision
+! 2026-01-25: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -482,6 +482,10 @@ module A0_tasman_mod
   real(sgl), dimension(numchanxs,numencov,numencov) :: Rmt         ! intra-channel rel. cov. matrix for cross section
   real(sgl), dimension(numchanxs,numenin)           :: RmtD        ! diagonal of covariance matrix for cross sections
   real(sgl), dimension(numpar,numchanxs,numenS)     :: S           ! sensitivity matrix
+  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson     ! Pearson correlation
+  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson_enum ! variable for Pearson correlation
+  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson_denom_par ! variable for Pearson correlation
+  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson_denom_xs ! variable for Pearson correlation
   real(sgl), dimension(numpar,numchanxs,numenS)     :: Sdenom      ! denominator of sensitivity matrix
   real(sgl), dimension(numpar,numchanxs,numenS)     :: Senum       ! enumerator of sensitivity matrix
   real(sgl), dimension(numchanxs,numencov,numencov) :: Vmt         ! intra-channel covariance matrix for cross sectio
