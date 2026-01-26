@@ -148,6 +148,8 @@ subroutine covcross
   real(sgl)         :: xsdifk                         ! difference in cross section
   real(sgl)         :: xsex                           ! help variable
   real(sgl)         :: Ssign                          ! help variable
+  real(sgl)         :: Ppar                           ! help variable
+  real(sgl)         :: Pxs                            ! help variable
   real(sgl)         :: xsA                            ! average cross section
   real(sgl)         :: xsi0                           ! cross section of run 0
   real(sgl)         :: xsi1                           ! cross section of random run
@@ -354,6 +356,12 @@ subroutine covcross
               if (Sws > 0.) Sdenom(k, i, n) = (Sdenom(k, i, n) * Swp + Sw * term) / Sws
               S(k, i, n) = Senum(k, i, n) / Sdenom(k, i, n) * parj0 / xsi0
             endif
+            Pearson_enum(k, i, n)= Pearson_enum(k, i, n) + pardifj * xsdifi
+            Pearson_denom_par(k, i, n)= Pearson_denom_par(k, i, n) + (pardifj ** 2)
+            Pearson_denom_xs(k, i, n)= Pearson_denom_xs(k, i, n) + (xsdifi ** 2)
+            Ppar = Pearson_denom_par(k, i, n)
+            Pxs = Pearson_denom_xs(k, i, n)
+            if (Ppar > 0. .and. Pxs > 0.) Pearson(k, i, n)= Pearson_enum(k, i, n) / (sqrt(Ppar) * sqrt(Pxs))
           enddo
         endif
       endif
