@@ -54,6 +54,7 @@ subroutine sensitivity
   character(len=15) :: col(numpar)                         ! header
   character(len=15) :: un(numpar)
   character(len=16) :: reaction
+  character(len=40) :: method
   character(len=132) :: quantity
   character(len=132) :: topline    ! topline
   character(len=132) :: sensfile
@@ -68,6 +69,7 @@ subroutine sensitivity
   integer           :: id2
   integer           :: id4
   integer           :: id6
+  integer           :: Nr   
   real(sgl)         :: dEtot                               ! total energy range
   real(sgl)         :: factor                              ! help variable
   real(sgl)         :: pardifj                             ! difference between parameters
@@ -94,7 +96,6 @@ subroutine sensitivity
   real(sgl)         :: xsik                                ! cross section of random run
   real(sgl)         :: xsloc(numpar)                       ! help variable
   real(sgl)         :: xstmp                               ! help variable
-  real(sgl)         :: Sprev                               ! help variable
   character(len=33) :: format1                             ! format string
   character(len=26) :: format2                             ! format string
   character(len=132):: strloc(numpar)                      ! help variable
@@ -136,12 +137,10 @@ subroutine sensitivity
               sens = factor * xsdifi / pardifj
               if (flagmorris .and. iloop > 1) then
                 if (italys == k) then
-                  Sprev = S(k,i,n)
-                  S(k,i,n) = (Sprev*(iloop - 1)+sens) / iloop
+                  S(k,i,n) = (S(k,i,n)*(iloop - 1)+sens) / iloop
                 endif
               else
                 S(k,i,n) = sens
-                Sprev = sens
               endif
             endif
           enddo
@@ -191,6 +190,18 @@ subroutine sensitivity
 !
 ! Sensitivity per parameter, cross section and energy
 !
+  if (mode == 1) then
+    method = 'Monte Carlo sensitivity'
+    Nr = italys
+  else
+    if (flagmorris) then
+      method = 'Morris sensitivity'
+      Nr = iloop
+    else
+      method = 'Linear sensitivity'
+      Nr = 1
+    endif
+  endif
   topline=trim(targetnuclide)//' '//trim(quantity)//' per parameter, cross section and energy'
   sensfile = 'sensitivity.par'
 ! if (flagmorris) write(sensfile(len_trim(sensfile)+1:len_trim(sensfile)+4),'("_",i3.3)') iloop
@@ -207,6 +218,8 @@ subroutine sensitivity
   un(4) = '%'
   Ncol = 4
   call write_char(indent,'parameters','')
+  call write_char(id2,'method',method)
+  call write_integer(id2,'number of random runs',Nr)
   call write_integer(id2,'number of parameters',Np)
   do k = 1, Np
     call write_char(id4,'parameter',parstring(k))
@@ -245,6 +258,8 @@ subroutine sensitivity
   un(6) = ''
   Ncol = 6
   call write_char(indent,'parameters','')
+  call write_char(id2,'method',method)
+  call write_integer(id2,'number of random runs',Nr)
   call write_integer(id2,'number of channels',Nchanxs)
   do i = 1, Nchanxs
     call write_char(id4,'channel',xsfile(i))
@@ -308,6 +323,8 @@ subroutine sensitivity
   un(5) = 'mb'
   Ncol = 5
   call write_char(indent,'parameters','')
+  call write_char(id2,'method',method)
+  call write_integer(id2,'number of random runs',Nr)
   call write_integer(id2,'number of energies',Nen(1))
   do j = 1, Nen(1)
     call write_real(id4,'E-incident [MeV]',e(1, j))
@@ -341,6 +358,8 @@ subroutine sensitivity
   un(4) = 'mb'
   Ncol = 4
   call write_char(indent,'parameters','')
+  call write_char(id2,'method',method)
+  call write_integer(id2,'number of random runs',Nr)
   call write_integer(id2,'number of parameters',Np)
   do k = 1, Np
     call write_char(id4,'parameter',parstring(k))
@@ -371,6 +390,8 @@ subroutine sensitivity
   un(5) = '%'
   Ncol = 5
   call write_char(indent,'parameters','')
+  call write_char(id2,'method',method)
+  call write_integer(id2,'number of random runs',Nr)
   call write_integer(id2,'number of channels',Nchanxs)
   do i = 1, Nchanxs
     call write_char(id4,'channel',xsfile(i))
@@ -420,6 +441,8 @@ subroutine sensitivity
   col(3) = 'S'
   Ncol = 3
   call write_char(indent,'parameters','')
+  call write_char(id2,'method',method)
+  call write_integer(id2,'number of random runs',Nr)
   call write_integer(id2,'number of energies',Nen(1))
   do j = 1, Nen(1)
     call write_real(id4,'E-incident [MeV]',e(1, j))
