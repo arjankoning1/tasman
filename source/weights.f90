@@ -82,6 +82,7 @@ subroutine weights
     if ((ichi2 == 2 .or. ichi2 == 3) .and. G0 <= 1.) GA0=1.
     G = Grun(j)
     GA = Gall(j)
+    expo = 0.
     if (G0 > 0.) then
       if (gofmode == 1 .or. gofmode == 4) then
         if (gofmode == 1) then
