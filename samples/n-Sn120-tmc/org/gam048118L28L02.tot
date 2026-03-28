@@ -2,7 +2,7 @@
 #   title: Sn120(n,xg_28-2)Cd118 gamma-ray production cross section
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-18
+#   date: 2026-03-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -70,5 +70,5 @@
    1.200000E+01   0.000000E+00
    1.400000E+01   0.000000E+00
    1.600000E+01   0.000000E+00
-   1.800000E+01   1.377853E-17
-   2.000000E+01   5.937488E-12
+   1.800000E+01   1.378012E-17
+   2.000000E+01   5.937952E-12

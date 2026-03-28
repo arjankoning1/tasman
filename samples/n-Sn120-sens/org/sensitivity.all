@@ -2,7 +2,7 @@
 #   title: Sn120 sensitivity coefficients integrated over all channels and energies
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-01-18
+#   date: 2026-03-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -15,13 +15,13 @@
 #   entries: 10
 ##   Parameter                         S
 ##      []             []             []
-rvadjust n                       1.692381E+00
-v1adjust n                       8.752694E-01
-avadjust n                       3.272041E-01
-v2adjust n                       1.011476E-01
-gnadjust  50 121                 8.287913E-02
-aadjust  50 121                  5.030772E-02
-gpadjust  50 121                 3.916201E-02
-aadjust  50 120                  2.085915E-02
-m2constant                       1.823887E-02
+rvadjust n                       1.687523E+00
+v1adjust n                       8.725241E-01
+avadjust n                       3.269733E-01
+v2adjust n                       1.006365E-01
+gnadjust  50 121                 8.546850E-02
+aadjust  50 121                  5.033522E-02
+gpadjust  50 121                 4.038246E-02
+aadjust  50 120                  2.129481E-02
+m2constant                       1.880648E-02
 gamgamadjust  50 121             0.000000E+00

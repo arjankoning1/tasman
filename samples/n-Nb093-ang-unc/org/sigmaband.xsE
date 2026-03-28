@@ -79,11 +79,11 @@
    2.00000E+00           5     0     5     0.00000
    3.00000E+00           4     0     4     0.00000
    4.00000E+00           4     0     4     0.00000
-   5.00000E+00          10     1     9     0.10000
+   5.00000E+00          10     2     8     0.20000
    8.00000E+00           3     0     3     0.00000
    1.00000E+01           0     0     0     1.00000
 #  Energy (MeV)     Points Inside Outside Inside fraction
-#   Total               34     3    31     0.08824
+#   Total               34     4    30     0.11765
 # Channel: xs200000.tot         Energies:  10
 #  Energy (MeV)     Points Inside Outside Inside fraction
    1.00000E-01           0     0     0     1.00000

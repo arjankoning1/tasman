@@ -15,7 +15,7 @@
 
  eswitch 30.
  endffile n-Sn120-rand-0003
- diffweight  9.38285e-01
+ diffweight  9.42825e-01
  adopt 2 151 /Users/koning/libraries/resbase/Sn120/random/n-Sn120.mf2.0003
 
  USER INPUT FILE + DEFAULTS
@@ -94,6 +94,6 @@
 
  Number of deleted points:   370 (see file tefal.clean)
 
- Execution time:  0 hours  0 minutes  4.55 seconds 
+ Execution time:  0 hours  0 minutes  4.30 seconds 
 
  TEFAL has created the following ENDF-6 file: n-Sn120-rand-0003

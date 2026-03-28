@@ -2,7 +2,7 @@
 #   title: U238(n,h_28) cross section
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-18
+#   date: 2026-03-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 92
@@ -10,15 +10,15 @@
 #   nuclide: U238
 # reaction: 
 #   type: (n,h_28)
-#   Q-value [MeV]: -6.812417E+00
-#   E-threshold [MeV]:  6.841282E+00
+#   Q-value [MeV]: -6.895788E+00
+#   E-threshold [MeV]:  6.925007E+00
 #   ENDF_MF: 3
 #   ENDF_MT: 778
 #   level: 
 #     number: 28
-#     energy [MeV]:  1.005535E+00
-#     spin:  2.000000E+00
-#     parity: -1
+#     energy [MeV]:  1.088906E+00
+#     spin:  8.000000E+00
+#     parity: 1
 #   quantity: 
 #     type: cross section
 #   datablock: 

@@ -1281,367 +1281,367 @@
   0 1.80000D+02 1.66315D+00        cross-section  
  -2 1.80000D+02 0.00000D+00        asym. or it11  
     2  4.0+   4   91
-  0 0.00000D+00 2.27330D+00        cross-section  
+  0 0.00000D+00 2.04667D-01        cross-section  
  -2 0.00000D+00 0.00000D+00        asym. or it11  
  -3 0.00000D+00 0.00000D+00         vect. polar.  
  12 0.00000D+00 6.26688D-03            spin-flip  
-  0 2.00000D+00 2.27438D+00        cross-section  
+  0 2.00000D+00 2.04764D-01        cross-section  
  -2 2.00000D+00-4.42511D-02        asym. or it11  
  -3 2.00000D+00-4.26901D-02         vect. polar.  
  12 2.00000D+00 6.81556D-03            spin-flip  
-  0 4.00000D+00 2.27812D+00        cross-section  
+  0 4.00000D+00 2.05101D-01        cross-section  
  -2 4.00000D+00-8.71768D-02        asym. or it11  
  -3 4.00000D+00-8.41236D-02         vect. polar.  
  12 4.00000D+00 8.41117D-03            spin-flip  
-  0 6.00000D+00 2.28581D+00        cross-section  
+  0 6.00000D+00 2.05793D-01        cross-section  
  -2 6.00000D+00-1.27551D-01        asym. or it11  
  -3 6.00000D+00-1.23136D-01         vect. polar.  
  12 6.00000D+00 1.09064D-02            spin-flip  
-  0 8.00000D+00 2.29893D+00        cross-section  
+  0 8.00000D+00 2.06974D-01        cross-section  
  -2 8.00000D+00-1.64371D-01        asym. or it11  
  -3 8.00000D+00-1.58769D-01         vect. polar.  
  12 8.00000D+00 1.40716D-02            spin-flip  
-  0 1.00000D+01 2.31846D+00        cross-section  
+  0 1.00000D+01 2.08733D-01        cross-section  
  -2 1.00000D+01-1.96989D-01        asym. or it11  
  -3 1.00000D+01-1.90395D-01         vect. polar.  
  12 1.00000D+01 1.76243D-02            spin-flip  
-  0 1.20000D+01 2.34436D+00        cross-section  
+  0 1.20000D+01 2.11065D-01        cross-section  
  -2 1.20000D+01-2.25191D-01        asym. or it11  
  -3 1.20000D+01-2.17795D-01         vect. polar.  
  12 1.20000D+01 2.12709D-02            spin-flip  
-  0 1.40000D+01 2.37540D+00        cross-section  
+  0 1.40000D+01 2.13859D-01        cross-section  
  -2 1.40000D+01-2.49169D-01        asym. or it11  
  -3 1.40000D+01-2.41131D-01         vect. polar.  
  12 1.40000D+01 2.47522D-02            spin-flip  
-  0 1.60000D+01 2.40943D+00        cross-section  
+  0 1.60000D+01 2.16923D-01        cross-section  
  -2 1.60000D+01-2.69353D-01        asym. or it11  
  -3 1.60000D+01-2.60790D-01         vect. polar.  
  12 1.60000D+01 2.78771D-02            spin-flip  
-  0 1.80000D+01 2.44396D+00        cross-section  
+  0 1.80000D+01 2.20031D-01        cross-section  
  -2 1.80000D+01-2.86169D-01        asym. or it11  
  -3 1.80000D+01-2.77151D-01         vect. polar.  
  12 1.80000D+01 3.05360D-02            spin-flip  
-  0 2.00000D+01 2.47676D+00        cross-section  
+  0 2.00000D+01 2.22985D-01        cross-section  
  -2 2.00000D+01-2.99801D-01        asym. or it11  
  -3 2.00000D+01-2.90366D-01         vect. polar.  
  12 2.00000D+01 3.26948D-02            spin-flip  
-  0 2.20000D+01 2.50627D+00        cross-section  
+  0 2.20000D+01 2.25642D-01        cross-section  
  -2 2.20000D+01-3.10046D-01        asym. or it11  
  -3 2.20000D+01-3.00219D-01         vect. polar.  
  12 2.20000D+01 3.43788D-02            spin-flip  
-  0 2.40000D+01 2.53148D+00        cross-section  
+  0 2.40000D+01 2.27911D-01        cross-section  
  -2 2.40000D+01-3.16325D-01        asym. or it11  
  -3 2.40000D+01-3.06142D-01         vect. polar.  
  12 2.40000D+01 3.56550D-02            spin-flip  
-  0 2.60000D+01 2.55149D+00        cross-section  
+  0 2.60000D+01 2.29713D-01        cross-section  
  -2 2.60000D+01-3.17834D-01        asym. or it11  
  -3 2.60000D+01-3.07359D-01         vect. polar.  
  12 2.60000D+01 3.66179D-02            spin-flip  
-  0 2.80000D+01 2.56474D+00        cross-section  
+  0 2.80000D+01 2.30906D-01        cross-section  
  -2 2.80000D+01-3.13802D-01        asym. or it11  
  -3 2.80000D+01-3.03141D-01         vect. polar.  
  12 2.80000D+01 3.73807D-02            spin-flip  
-  0 3.00000D+01 2.56835D+00        cross-section  
+  0 3.00000D+01 2.31230D-01        cross-section  
  -2 3.00000D+01-3.03765D-01        asym. or it11  
  -3 3.00000D+01-2.93061D-01         vect. polar.  
  12 3.00000D+01 3.80676D-02            spin-flip  
-  0 3.20000D+01 2.55779D+00        cross-section  
+  0 3.20000D+01 2.30280D-01        cross-section  
  -2 3.20000D+01-2.87746D-01        asym. or it11  
  -3 3.20000D+01-2.77170D-01         vect. polar.  
  12 3.20000D+01 3.88066D-02            spin-flip  
-  0 3.40000D+01 2.52723D+00        cross-section  
+  0 3.40000D+01 2.27528D-01        cross-section  
  -2 3.40000D+01-2.66288D-01        asym. or it11  
  -3 3.40000D+01-2.56021D-01         vect. polar.  
  12 3.40000D+01 3.97230D-02            spin-flip  
-  0 3.60000D+01 2.47048D+00        cross-section  
+  0 3.60000D+01 2.22419D-01        cross-section  
  -2 3.60000D+01-2.40365D-01        asym. or it11  
  -3 3.60000D+01-2.30575D-01         vect. polar.  
  12 3.60000D+01 4.09346D-02            spin-flip  
-  0 3.80000D+01 2.38244D+00        cross-section  
+  0 3.80000D+01 2.14493D-01        cross-section  
  -2 3.80000D+01-2.11225D-01        asym. or it11  
  -3 3.80000D+01-2.02054D-01         vect. polar.  
  12 3.80000D+01 4.25501D-02            spin-flip  
-  0 4.00000D+01 2.26058D+00        cross-section  
+  0 4.00000D+01 2.03522D-01        cross-section  
  -2 4.00000D+01-1.80271D-01        asym. or it11  
  -3 4.00000D+01-1.71820D-01         vect. polar.  
  12 4.00000D+01 4.46702D-02            spin-flip  
-  0 4.20000D+01 2.10621D+00        cross-section  
+  0 4.20000D+01 1.89624D-01        cross-section  
  -2 4.20000D+01-1.49037D-01        asym. or it11  
  -3 4.20000D+01-1.41353D-01         vect. polar.  
  12 4.20000D+01 4.73888D-02            spin-flip  
-  0 4.40000D+01 1.92499D+00        cross-section  
+  0 4.40000D+01 1.73308D-01        cross-section  
  -2 4.40000D+01-1.19267D-01        asym. or it11  
  -3 4.40000D+01-1.12329D-01         vect. polar.  
  12 4.40000D+01 5.07907D-02            spin-flip  
-  0 4.60000D+01 1.72656D+00        cross-section  
+  0 4.60000D+01 1.55443D-01        cross-section  
  -2 4.60000D+01-9.30840D-02        asym. or it11  
  -3 4.60000D+01-8.67865D-02         vect. polar.  
  12 4.60000D+01 5.49377D-02            spin-flip  
-  0 4.80000D+01 1.52337D+00        cross-section  
+  0 4.80000D+01 1.37150D-01        cross-section  
  -2 4.80000D+01-7.31656D-02        asym. or it11  
  -3 4.80000D+01-6.72883D-02         vect. polar.  
  12 4.80000D+01 5.98358D-02            spin-flip  
-  0 5.00000D+01 1.32884D+00        cross-section  
+  0 5.00000D+01 1.19636D-01        cross-section  
  -2 5.00000D+01-6.27223D-02        asym. or it11  
  -3 5.00000D+01-5.69067D-02         vect. polar.  
  12 5.00000D+01 6.53743D-02            spin-flip  
-  0 5.20000D+01 1.15526D+00        cross-section  
+  0 5.20000D+01 1.04009D-01        cross-section  
  -2 5.20000D+01-6.49392D-02        asym. or it11  
  -3 5.20000D+01-5.86850D-02         vect. polar.  
  12 5.20000D+01 7.12416D-02            spin-flip  
-  0 5.40000D+01 1.01197D+00        cross-section  
+  0 5.40000D+01 9.11088D-02        cross-section  
  -2 5.40000D+01-8.14834D-02        asym. or it11  
  -3 5.40000D+01-7.42061D-02         vect. polar.  
  12 5.40000D+01 7.68621D-02            spin-flip  
-  0 5.60000D+01 9.04073D-01        cross-section  
+  0 5.60000D+01 8.13945D-02        cross-section  
  -2 5.60000D+01-1.10252D-01        asym. or it11  
  -3 5.60000D+01-1.01436D-01         vect. polar.  
  12 5.60000D+01 8.14613D-02            spin-flip  
-  0 5.80000D+01 8.31982D-01        cross-section  
+  0 5.80000D+01 7.49040D-02        cross-section  
  -2 5.80000D+01-1.43965D-01        asym. or it11  
  -3 5.80000D+01-1.33383D-01         vect. polar.  
  12 5.80000D+01 8.43502D-02            spin-flip  
-  0 6.00000D+01 7.91864D-01        cross-section  
+  0 6.00000D+01 7.12922D-02        cross-section  
  -2 6.00000D+01-1.71964D-01        asym. or it11  
  -3 6.00000D+01-1.59836D-01         vect. polar.  
  12 6.00000D+01 8.53134D-02            spin-flip  
-  0 6.20000D+01 7.76767D-01        cross-section  
+  0 6.20000D+01 6.99329D-02        cross-section  
  -2 6.20000D+01-1.85051D-01        asym. or it11  
  -3 6.20000D+01-1.72004D-01         vect. polar.  
  12 6.20000D+01 8.47574D-02            spin-flip  
-  0 6.40000D+01 7.78172D-01        cross-section  
+  0 6.40000D+01 7.00595D-02        cross-section  
  -2 6.40000D+01-1.79521D-01        asym. or it11  
  -3 6.40000D+01-1.66377D-01         vect. polar.  
  12 6.40000D+01 8.34472D-02            spin-flip  
-  0 6.60000D+01 7.87618D-01        cross-section  
+  0 6.60000D+01 7.09099D-02        cross-section  
  -2 6.60000D+01-1.57436D-01        asym. or it11  
  -3 6.60000D+01-1.44980D-01         vect. polar.  
  12 6.60000D+01 8.20884D-02            spin-flip  
-  0 6.80000D+01 7.98029D-01        cross-section  
+  0 6.80000D+01 7.18472D-02        cross-section  
  -2 6.80000D+01-1.24322D-01        asym. or it11  
  -3 6.80000D+01-1.13148D-01         vect. polar.  
  12 6.80000D+01 8.10830D-02            spin-flip  
-  0 7.00000D+01 8.04544D-01        cross-section  
+  0 7.00000D+01 7.24337D-02        cross-section  
  -2 7.00000D+01-8.68265D-02        asym. or it11  
  -3 7.00000D+01-7.72871D-02         vect. polar.  
  12 7.00000D+01 8.05116D-02            spin-flip  
-  0 7.20000D+01 8.04721D-01        cross-section  
+  0 7.20000D+01 7.24496D-02        cross-section  
  -2 7.20000D+01-5.14096D-02        asym. or it11  
  -3 7.20000D+01-4.36048D-02         vect. polar.  
  12 7.20000D+01 8.02282D-02            spin-flip  
-  0 7.40000D+01 7.98186D-01        cross-section  
+  0 7.40000D+01 7.18613D-02        cross-section  
  -2 7.40000D+01-2.37087D-02        asym. or it11  
  -3 7.40000D+01-1.75002D-02         vect. polar.  
  12 7.40000D+01 7.99734D-02            spin-flip  
-  0 7.60000D+01 7.85899D-01        cross-section  
+  0 7.60000D+01 7.07551D-02        cross-section  
  -2 7.60000D+01-8.03330D-03        asym. or it11  
  -3 7.60000D+01-3.06966D-03         vect. polar.  
  12 7.60000D+01 7.94794D-02            spin-flip  
-  0 7.80000D+01 7.69278D-01        cross-section  
+  0 7.80000D+01 6.92587D-02        cross-section  
  -2 7.80000D+01-6.75157D-03        asym. or it11  
  -3 7.80000D+01-2.51517D-03         vect. polar.  
  12 7.80000D+01 7.85638D-02            spin-flip  
-  0 8.00000D+01 7.49436D-01        cross-section  
+  0 8.00000D+01 6.74723D-02        cross-section  
  -2 8.00000D+01-1.97435D-02        asym. or it11  
  -3 8.00000D+01-1.56235D-02         vect. polar.  
  12 8.00000D+01 7.72070D-02            spin-flip  
-  0 8.20000D+01 7.26725D-01        cross-section  
+  0 8.20000D+01 6.54276D-02        cross-section  
  -2 8.20000D+01-4.42861D-02        asym. or it11  
  -3 8.20000D+01-3.96695D-02         vect. polar.  
  12 8.20000D+01 7.55926D-02            spin-flip  
-  0 8.40000D+01 7.00670D-01        cross-section  
+  0 8.40000D+01 6.30819D-02        cross-section  
  -2 8.40000D+01-7.56023D-02        asym. or it11  
  -3 8.40000D+01-6.99614D-02         vect. polar.  
  12 8.40000D+01 7.40998D-02            spin-flip  
-  0 8.60000D+01 6.70288D-01        cross-section  
+  0 8.60000D+01 6.03466D-02        cross-section  
  -2 8.60000D+01-1.07937D-01        asym. or it11  
  -3 8.60000D+01-1.00886D-01         vect. polar.  
  12 8.60000D+01 7.32533D-02            spin-flip  
-  0 8.80000D+01 6.34649D-01        cross-section  
+  0 8.80000D+01 5.71380D-02        cross-section  
  -2 8.80000D+01-1.35730D-01        asym. or it11  
  -3 8.80000D+01-1.27040D-01         vect. polar.  
  12 8.80000D+01 7.36605D-02            spin-flip  
-  0 9.00000D+01 5.93507D-01        cross-section  
+  0 9.00000D+01 5.34340D-02        cross-section  
  -2 9.00000D+01-1.54500D-01        asym. or it11  
  -3 9.00000D+01-1.44070D-01         vect. polar.  
  12 9.00000D+01 7.59565D-02            spin-flip  
-  0 9.20000D+01 5.47792D-01        cross-section  
+  0 9.20000D+01 4.93181D-02        cross-section  
  -2 9.20000D+01-1.61341D-01        asym. or it11  
  -3 9.20000D+01-1.49147D-01         vect. polar.  
  12 9.20000D+01 8.07509D-02            spin-flip  
-  0 9.40000D+01 4.99797D-01        cross-section  
+  0 9.40000D+01 4.49971D-02        cross-section  
  -2 9.40000D+01-1.55237D-01        asym. or it11  
  -3 9.40000D+01-1.41270D-01         vect. polar.  
  12 9.40000D+01 8.85310D-02            spin-flip  
-  0 9.60000D+01 4.52991D-01        cross-section  
+  0 9.60000D+01 4.07832D-02        cross-section  
  -2 9.60000D+01-1.37484D-01        asym. or it11  
  -3 9.60000D+01-1.21705D-01         vect. polar.  
  12 9.60000D+01 9.94413D-02            spin-flip  
-  0 9.80000D+01 4.11468D-01        cross-section  
+  0 9.80000D+01 3.70448D-02        cross-section  
  -2 9.80000D+01-1.12291D-01        asym. or it11  
  -3 9.80000D+01-9.46239D-02         vect. polar.  
  12 9.80000D+01 1.12882D-01            spin-flip  
-  0 1.00000D+02 3.79143D-01        cross-section  
+  0 1.00000D+02 3.41346D-02        cross-section  
  -2 1.00000D+02-8.69422D-02        asym. or it11  
  -3 1.00000D+02-6.73396D-02         vect. polar.  
  12 1.00000D+02 1.27056D-01            spin-flip  
-  0 1.02000D+02 3.58911D-01        cross-section  
+  0 1.02000D+02 3.23131D-02        cross-section  
  -2 1.02000D+02-7.01682D-02        asym. or it11  
  -3 1.02000D+02-4.87533D-02         vect. polar.  
  12 1.02000D+02 1.38955D-01            spin-flip  
-  0 1.04000D+02 3.51933D-01        cross-section  
+  0 1.04000D+02 3.16849D-02        cross-section  
  -2 1.04000D+02-6.81367D-02        asym. or it11  
  -3 1.04000D+02-4.53401D-02         vect. polar.  
  12 1.04000D+02 1.45403D-01            spin-flip  
-  0 1.06000D+02 3.57269D-01        cross-section  
+  0 1.06000D+02 3.21652D-02        cross-section  
  -2 1.06000D+02-8.06698D-02        asym. or it11  
  -3 1.06000D+02-5.72310D-02         vect. polar.  
  12 1.06000D+02 1.44781D-01            spin-flip  
-  0 1.08000D+02 3.71940D-01        cross-section  
+  0 1.08000D+02 3.34861D-02        cross-section  
  -2 1.08000D+02-1.01690D-01        asym. or it11  
  -3 1.08000D+02-7.84899D-02         vect. polar.  
  12 1.08000D+02 1.37877D-01            spin-flip  
-  0 1.10000D+02 3.91438D-01        cross-section  
+  0 1.10000D+02 3.52415D-02        cross-section  
  -2 1.10000D+02-1.23513D-01        asym. or it11  
  -3 1.10000D+02-1.01355D-01         vect. polar.  
  12 1.10000D+02 1.27100D-01            spin-flip  
-  0 1.12000D+02 4.10577D-01        cross-section  
+  0 1.12000D+02 3.69646D-02        cross-section  
  -2 1.12000D+02-1.40676D-01        asym. or it11  
  -3 1.12000D+02-1.20126D-01         vect. polar.  
  12 1.12000D+02 1.15113D-01            spin-flip  
-  0 1.14000D+02 4.24509D-01        cross-section  
+  0 1.14000D+02 3.82189D-02        cross-section  
  -2 1.14000D+02-1.51004D-01        asym. or it11  
  -3 1.14000D+02-1.32306D-01         vect. polar.  
  12 1.14000D+02 1.04093D-01            spin-flip  
-  0 1.16000D+02 4.29681D-01        cross-section  
+  0 1.16000D+02 3.86845D-02        cross-section  
  -2 1.16000D+02-1.54917D-01        asym. or it11  
  -3 1.16000D+02-1.37914D-01         vect. polar.  
  12 1.16000D+02 9.57429D-02            spin-flip  
-  0 1.18000D+02 4.24512D-01        cross-section  
+  0 1.18000D+02 3.82192D-02        cross-section  
  -2 1.18000D+02-1.54453D-01        asym. or it11  
  -3 1.18000D+02-1.38459D-01         vect. polar.  
  12 1.18000D+02 9.16413D-02            spin-flip  
-  0 1.20000D+02 4.09647D-01        cross-section  
+  0 1.20000D+02 3.68809D-02        cross-section  
  -2 1.20000D+02-1.52609D-01        asym. or it11  
  -3 1.20000D+02-1.36202D-01         vect. polar.  
  12 1.20000D+02 9.36030D-02            spin-flip  
-  0 1.22000D+02 3.87723D-01        cross-section  
+  0 1.22000D+02 3.49070D-02        cross-section  
  -2 1.22000D+02-1.52898D-01        asym. or it11  
  -3 1.22000D+02-1.33668D-01         vect. polar.  
  12 1.22000D+02 1.03840D-01            spin-flip  
-  0 1.24000D+02 3.62701D-01        cross-section  
+  0 1.24000D+02 3.26542D-02        cross-section  
  -2 1.24000D+02-1.58756D-01        asym. or it11  
  -3 1.24000D+02-1.33116D-01         vect. polar.  
  12 1.24000D+02 1.24703D-01            spin-flip  
-  0 1.26000D+02 3.38922D-01        cross-section  
+  0 1.26000D+02 3.05134D-02        cross-section  
  -2 1.26000D+02-1.72409D-01        asym. or it11  
  -3 1.26000D+02-1.35749D-01         vect. polar.  
  12 1.26000D+02 1.57745D-01            spin-flip  
-  0 1.28000D+02 3.20106D-01        cross-section  
+  0 1.28000D+02 2.88194D-02        cross-section  
  -2 1.28000D+02-1.93287D-01        asym. or it11  
  -3 1.28000D+02-1.40763D-01         vect. polar.  
  12 1.28000D+02 2.02158D-01            spin-flip  
-  0 1.30000D+02 3.08517D-01        cross-section  
+  0 1.30000D+02 2.77760D-02        cross-section  
  -2 1.30000D+02-2.17081D-01        asym. or it11  
  -3 1.30000D+02-1.45049D-01         vect. polar.  
  12 1.30000D+02 2.53599D-01            spin-flip  
-  0 1.32000D+02 3.04500D-01        cross-section  
+  0 1.32000D+02 2.74144D-02        cross-section  
  -2 1.32000D+02-2.37112D-01        asym. or it11  
  -3 1.32000D+02-1.44491D-01         vect. polar.  
  12 1.32000D+02 3.05036D-01            spin-flip  
-  0 1.34000D+02 3.06481D-01        cross-section  
+  0 1.34000D+02 2.75927D-02        cross-section  
  -2 1.34000D+02-2.47823D-01        asym. or it11  
  -3 1.34000D+02-1.36409D-01         vect. polar.  
  12 1.34000D+02 3.49785D-01            spin-flip  
-  0 1.36000D+02 3.11437D-01        cross-section  
+  0 1.36000D+02 2.80389D-02        cross-section  
  -2 1.36000D+02-2.47691D-01        asym. or it11  
  -3 1.36000D+02-1.21243D-01         vect. polar.  
  12 1.36000D+02 3.84311D-01            spin-flip  
-  0 1.38000D+02 3.15714D-01        cross-section  
+  0 1.38000D+02 2.84240D-02        cross-section  
  -2 1.38000D+02-2.39436D-01        asym. or it11  
  -3 1.38000D+02-1.02369D-01         vect. polar.  
  12 1.38000D+02 4.08637D-01            spin-flip  
-  0 1.40000D+02 3.16001D-01        cross-section  
+  0 1.40000D+02 2.84499D-02        cross-section  
  -2 1.40000D+02-2.28391D-01        asym. or it11  
  -3 1.40000D+02-8.49105D-02         vect. polar.  
  12 1.40000D+02 4.24839D-01            spin-flip  
-  0 1.42000D+02 3.10210D-01        cross-section  
+  0 1.42000D+02 2.79285D-02        cross-section  
  -2 1.42000D+02-2.20803D-01        asym. or it11  
  -3 1.42000D+02-7.47146D-02         vect. polar.  
  12 1.42000D+02 4.35327D-01            spin-flip  
-  0 1.44000D+02 2.98062D-01        cross-section  
+  0 1.44000D+02 2.68348D-02        cross-section  
  -2 1.44000D+02-2.22642D-01        asym. or it11  
  -3 1.44000D+02-7.76600D-02         vect. polar.  
  12 1.44000D+02 4.41739D-01            spin-flip  
-  0 1.46000D+02 2.81224D-01        cross-section  
+  0 1.46000D+02 2.53188D-02        cross-section  
  -2 1.46000D+02-2.38253D-01        asym. or it11  
  -3 1.46000D+02-9.85218D-02         vect. polar.  
  12 1.46000D+02 4.44366D-01            spin-flip  
-  0 1.48000D+02 2.62962D-01        cross-section  
+  0 1.48000D+02 2.36747D-02        cross-section  
  -2 1.48000D+02-2.67727D-01        asym. or it11  
  -3 1.48000D+02-1.38259D-01         vect. polar.  
  12 1.48000D+02 4.41882D-01            spin-flip  
-  0 1.50000D+02 2.47381D-01        cross-section  
+  0 1.50000D+02 2.22719D-02        cross-section  
  -2 1.50000D+02-3.02758D-01        asym. or it11  
  -3 1.50000D+02-1.89283D-01         vect. polar.  
  12 1.50000D+02 4.31590D-01            spin-flip  
-  0 1.52000D+02 2.38441D-01        cross-section  
+  0 1.52000D+02 2.14671D-02        cross-section  
  -2 1.52000D+02-3.23918D-01        asym. or it11  
  -3 1.52000D+02-2.31596D-01         vect. polar.  
  12 1.52000D+02 4.10798D-01            spin-flip  
-  0 1.54000D+02 2.38976D-01        cross-section  
+  0 1.54000D+02 2.15152D-02        cross-section  
  -2 1.54000D+02-3.06117D-01        asym. or it11  
  -3 1.54000D+02-2.37321D-01         vect. polar.  
  12 1.54000D+02 3.79307D-01            spin-flip  
-  0 1.56000D+02 2.49952D-01        cross-section  
+  0 1.56000D+02 2.25033D-02        cross-section  
  -2 1.56000D+02-2.33566D-01        asym. or it11  
  -3 1.56000D+02-1.86442D-01         vect. polar.  
  12 1.56000D+02 3.40839D-01            spin-flip  
-  0 1.58000D+02 2.70150D-01        cross-section  
+  0 1.58000D+02 2.43218D-02        cross-section  
  -2 1.58000D+02-1.10488D-01        asym. or it11  
  -3 1.58000D+02-7.99022D-02         vect. polar.  
  12 1.58000D+02 3.01090D-01            spin-flip  
-  0 1.60000D+02 2.96364D-01        cross-section  
+  0 1.60000D+02 2.66819D-02        cross-section  
  -2 1.60000D+02 4.43644D-02        asym. or it11  
  -3 1.60000D+02 6.43770D-02         vect. polar.  
  12 1.60000D+02 2.64277D-01            spin-flip  
-  0 1.62000D+02 3.24061D-01        cross-section  
+  0 1.62000D+02 2.91755D-02        cross-section  
  -2 1.62000D+02 2.10461D-01        asym. or it11  
  -3 1.62000D+02 2.24812D-01         vect. polar.  
  12 1.62000D+02 2.31682D-01            spin-flip  
-  0 1.64000D+02 3.48368D-01        cross-section  
+  0 1.64000D+02 3.13638D-02        cross-section  
  -2 1.64000D+02 3.72220D-01        asym. or it11  
  -3 1.64000D+02 3.84182D-01         vect. polar.  
  12 1.64000D+02 2.02464D-01            spin-flip  
-  0 1.66000D+02 3.65149D-01        cross-section  
+  0 1.66000D+02 3.28747D-02        cross-section  
  -2 1.66000D+02 5.18377D-01        asym. or it11  
  -3 1.66000D+02 5.29786D-01         vect. polar.  
  12 1.66000D+02 1.74931D-01            spin-flip  
-  0 1.68000D+02 3.71932D-01        cross-section  
+  0 1.68000D+02 3.34854D-02        cross-section  
  -2 1.68000D+02 6.38462D-01        asym. or it11  
  -3 1.68000D+02 6.50111D-01         vect. polar.  
  12 1.68000D+02 1.47387D-01            spin-flip  
-  0 1.70000D+02 3.68446D-01        cross-section  
+  0 1.70000D+02 3.31715D-02        cross-section  
  -2 1.70000D+02 7.19387D-01        asym. or it11  
  -3 1.70000D+02 7.31334D-01         vect. polar.  
  12 1.70000D+02 1.18599D-01            spin-flip  
-  0 1.72000D+02 3.56662D-01        cross-section  
+  0 1.72000D+02 3.21106D-02        cross-section  
  -2 1.72000D+02 7.43520D-01        asym. or it11  
  -3 1.72000D+02 7.55267D-01         vect. polar.  
  12 1.72000D+02 8.82298D-02            spin-flip  
-  0 1.74000D+02 3.40314D-01        cross-section  
+  0 1.74000D+02 3.06387D-02        cross-section  
  -2 1.74000D+02 6.89987D-01        asym. or it11  
  -3 1.74000D+02 7.00582D-01         vect. polar.  
  12 1.74000D+02 5.74113D-02            spin-flip  
-  0 1.76000D+02 3.24004D-01        cross-section  
+  0 1.76000D+02 2.91703D-02        cross-section  
  -2 1.76000D+02 5.41981D-01        asym. or it11  
  -3 1.76000D+02 5.50165D-01         vect. polar.  
  12 1.76000D+02 2.93040D-02            spin-flip  
-  0 1.78000D+02 3.12116D-01        cross-section  
+  0 1.78000D+02 2.81001D-02        cross-section  
  -2 1.78000D+02 3.00986D-01        asym. or it11  
  -3 1.78000D+02 3.05490D-01         vect. polar.  
  12 1.78000D+02 8.93495D-03            spin-flip  
-  0 1.80000D+02 3.07776D-01        cross-section  
+  0 1.80000D+02 2.77093D-02        cross-section  
  -2 1.80000D+02 0.00000D+00        asym. or it11  
  -3 1.80000D+02 0.00000D+00         vect. polar.  
  12 1.80000D+02 1.40523D-03            spin-flip  

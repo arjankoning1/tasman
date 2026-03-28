@@ -2,7 +2,7 @@
 #   title: Sn120(n,x)Cd115 cross section
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-18
+#   date: 2026-03-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -64,4 +64,4 @@
    1.400000E+01   0.000000E+00
    1.600000E+01   0.000000E+00
    1.800000E+01   0.000000E+00
-   2.000000E+01   4.532931E-09
+   2.000000E+01   4.530765E-09

@@ -1,12 +1,12 @@
 
-    TASMAN-2.2  (Version: January 1, 2026)
+    TASMAN-2.2  (Version: January 25, 2026)
 
  Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-18
+ Date: 2026-03-28
 
  ########## USER INPUT ##########
 
@@ -200,26 +200,26 @@ aadjust       40  93    1.00000
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.059          1.033          5.251         1.0
-elastic.tot        11    44      1.091         0.9896          6.308         1.0
-nonelastic.tot      1    10      1.447          1.041          6.382         1.0
-xs000000.tot       22   181      1.308         0.7869          35.76         1.0
-xs100000.tot        7    26      1.310         0.9891          19.83         1.0
-xs100000.L01        5    17      1.238          1.011          10.66         1.0
-xs200000.tot        1     2      5.530          4.412          349.5         1.0
-xs200000.L01        7    19      10.74          8.837         1.0435E+05     1.0
-xs000001.tot        1     7      3.138          3.083          780.6         1.0
-xs000001.L02        2     7      3.031          3.014          274.2         1.0
+elastic.tot        11    44      1.091         0.9897          6.297         1.0
+nonelastic.tot      1    10      1.448          1.040          6.406         1.0
+xs000000.tot       22   181      1.307         0.7872          35.75         1.0
+xs100000.tot        7    26      1.311         0.9886          19.96         1.0
+xs100000.L01        5    17      1.237          1.016          10.39         1.0
+xs200000.tot        1     2      5.578          4.457          358.7         1.0
+xs200000.L01        7    19      10.84          8.926         1.0649E+05     1.0
+xs000001.tot        1     7      3.146          3.091          785.7         1.0
+xs000001.L02        2     7      3.037          3.021          276.0         1.0
 
-# GOF no.                0   2.084    
+# GOF no.                0   2.093    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.084     Optimum:   1.0000E+38
-# Erms             :   1.712     Optimum:   1.0000E+38
-# Chi2             :   8627.     Optimum:   1.0000E+38
+# Frms             :   2.093     Optimum:   1.0000E+38
+# Erms             :   1.720     Optimum:   1.0000E+38
+# Chi2             :   8804.     Optimum:   1.0000E+38
 
-  41  93 Run:     0 New optimum (Frms Erms Chi-2):    2.084336E+00   1.711990E+0
+  41  93 Run:     0 New optimum (Frms Erms Chi-2):    2.093228E+00   1.720369E+0
 Weight of run     0: 1.00000E+00 Sum: 1.00000E+00
 
   Parameters for input file:     1
@@ -257,26 +257,26 @@ aadjust       40  93    0.89530
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.087          1.069          9.780          1.
-elastic.tot        11    44      1.093          1.025          9.834          1.
-nonelastic.tot      1    10      1.467          1.031          7.134          1.
-xs000000.tot       22   181      1.289          1.264          33.48          1.
-xs100000.tot        7    26      1.259          1.022          15.94          1.
-xs100000.L01        5    17      1.225          1.098          7.552          1.
-xs200000.tot        1     2      5.957          4.804          435.3          5.
-xs200000.L01        7    19      11.47          9.483         1.2044E+05      10
-xs000001.tot        1     7      3.203          3.151          823.7          3.
-xs000001.L02        2     7      3.095          3.079          292.3          3.
+elastic.tot        11    44      1.093          1.025          9.841          1.
+nonelastic.tot      1    10      1.468          1.030          7.149          1.
+xs000000.tot       22   181      1.290          1.264          33.50          1.
+xs100000.tot        7    26      1.259          1.021          16.01          1.
+xs100000.L01        5    17      1.225          1.101          7.461          1.
+xs200000.tot        1     2      5.999          4.843          444.4          5.
+xs200000.L01        7    19      11.55          9.559         1.2242E+05      10
+xs000001.tot        1     7      3.210          3.158          828.3          3.
+xs000001.L02        2     7      3.101          3.085          293.9          3.
 
-# GOF no.                1   2.151    
+# GOF no.                1   2.159    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.151     Optimum:    2.084    
-# Erms             :   1.920     Optimum:    1.712    
-# Chi2             :   9955.     Optimum:    8627.    
+# Frms             :   2.159     Optimum:    2.093    
+# Erms             :   1.927     Optimum:    1.720    
+# Chi2             :  1.0118E+04 Optimum:    8804.    
 
-Weight of run     1: 9.67248E-01 Sum: 1.96725E+00
+Weight of run     1: 9.67753E-01 Sum: 1.96775E+00
 
   Parameters for input file:     2
 
@@ -313,26 +313,26 @@ aadjust       40  93    1.00420
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.071          1.055          7.172          1.
-elastic.tot        11    44      1.087          1.016          6.305          1.
-nonelastic.tot      1    10      1.442          1.033          6.408          1.
-xs000000.tot       22   181      1.702         0.5973          102.9          1.
-xs100000.tot        7    26      1.282          1.012          17.86          1.
-xs100000.L01        5    17      1.232          1.042          8.673          1.
-xs200000.tot        1     2      5.790          4.651          400.6          5.
-xs200000.L01        7    19      11.17          9.218         1.1369E+05      10
-xs000001.tot        1     7      3.117          3.062          765.1          3.
-xs000001.L02        2     7      3.019          3.002          270.8          3.
+elastic.tot        11    44      1.087          1.016          6.303          1.
+nonelastic.tot      1    10      1.442          1.033          6.426          1.
+xs000000.tot       22   181      1.702         0.5975          102.9          1.
+xs100000.tot        7    26      1.282          1.012          17.95          1.
+xs100000.L01        5    17      1.232          1.045          8.499          1.
+xs200000.tot        1     2      5.835          4.692          409.8          5.
+xs200000.L01        7    19      11.26          9.300         1.1575E+05      10
+xs000001.tot        1     7      3.123          3.069          769.4          3.
+xs000001.L02        2     7      3.024          3.008          272.3          3.
 
-# GOF no.                2   2.225    
+# GOF no.                2   2.233    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.225     Optimum:    2.084    
-# Erms             :   1.711     Optimum:    1.712    
-# Chi2             :   9415.     Optimum:    8627.    
+# Frms             :   2.233     Optimum:    2.093    
+# Erms             :   1.719     Optimum:    1.720    
+# Chi2             :   9584.     Optimum:    8804.    
 
-Weight of run     2: 9.32140E-01 Sum: 2.89939E+00
+Weight of run     2: 9.32496E-01 Sum: 2.90025E+00
 
   Parameters for input file:     3
 
@@ -369,26 +369,26 @@ aadjust       40  93    0.94286
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.187         0.8734          29.24          1.
-elastic.tot        11    44      1.317         0.8193          59.13          1.
-nonelastic.tot      1    10      1.434         0.9419          9.087          1.
-xs000000.tot       22   181      1.785         0.5699          114.7          1.
-xs100000.tot        7    26      1.293         0.9382          16.71          1.
-xs100000.L01        5    17      1.244          1.025          10.29          1.
-xs200000.tot        1     2      5.580          4.458          359.0          5.
-xs200000.L01        7    19      10.98          9.053         1.0960E+05      10
-xs000001.tot        1     7      3.044          2.986          717.9          3.
-xs000001.L02        2     7      2.944          2.925          250.5          3.
+elastic.tot        11    44      1.317         0.8194          59.11          1.
+nonelastic.tot      1    10      1.434         0.9417          9.100          1.
+xs000000.tot       22   181      1.784         0.5700          114.7          1.
+xs100000.tot        7    26      1.293         0.9378          16.82          1.
+xs100000.L01        5    17      1.243          1.029          10.09          1.
+xs200000.tot        1     2      5.618          4.493          366.4          5.
+xs200000.L01        7    19      11.06          9.125         1.1137E+05      10
+xs000001.tot        1     7      3.049          2.991          721.2          3.
+xs000001.L02        2     7      2.948          2.930          251.7          3.
 
-# GOF no.                3   2.295    
+# GOF no.                3   2.302    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.295     Optimum:    2.084    
-# Erms             :   1.592     Optimum:    1.712    
-# Chi2             :   9093.     Optimum:    8627.    
+# Frms             :   2.302     Optimum:    2.093    
+# Erms             :   1.599     Optimum:    1.720    
+# Chi2             :   9239.     Optimum:    8804.    
 
-Weight of run     3: 8.99890E-01 Sum: 3.79928E+00
+Weight of run     3: 9.00682E-01 Sum: 3.80093E+00
 
   Parameters for input file:     4
 
@@ -425,26 +425,26 @@ aadjust       40  93    1.06461
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.090          1.072          10.99          1.
-elastic.tot        11    44      1.093          1.020          8.111          1.
-nonelastic.tot      1    10      1.453          1.038          6.581          1.
-xs000000.tot       22   181      1.224         0.8461          21.85          1.
-xs100000.tot        7    26      1.272          1.021          17.45          1.
-xs100000.L01        5    17      1.221          1.076          7.349          1.
-xs200000.tot        1     2      6.094          4.930          465.1          5.
-xs200000.L01        7    19      11.88          9.855         1.3025E+05      10
-xs000001.tot        1     7      2.770          2.700          552.2          3.
-xs000001.L02        2     7      2.723          2.699          195.5          3.
+elastic.tot        11    44      1.093          1.020          8.115          1.
+nonelastic.tot      1    10      1.453          1.037          6.598          1.
+xs000000.tot       22   181      1.224         0.8463          21.85          1.
+xs100000.tot        7    26      1.273          1.020          17.53          1.
+xs100000.L01        5    17      1.221          1.080          7.231          1.
+xs200000.tot        1     2      6.139          4.971          475.0          5.
+xs200000.L01        7    19      11.98          9.937         1.3246E+05      10
+xs000001.tot        1     7      2.773          2.703          553.7          3.
+xs000001.L02        2     7      2.725          2.702          196.1          3.
 
-# GOF no.                4   2.158    
+# GOF no.                4   2.166    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.158     Optimum:    2.084    
-# Erms             :   1.829     Optimum:    1.712    
-# Chi2             :  1.0755E+04 Optimum:    8627.    
+# Frms             :   2.166     Optimum:    2.093    
+# Erms             :   1.836     Optimum:    1.720    
+# Chi2             :  1.0937E+04 Optimum:    8804.    
 
-Weight of run     4: 9.63948E-01 Sum: 4.76323E+00
+Weight of run     4: 9.64325E-01 Sum: 4.76526E+00
 
   Parameters for input file:     5
 
@@ -481,27 +481,27 @@ aadjust       40  93    0.95178
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.140          1.095          26.03          1.
-elastic.tot        11    44      1.130          1.045          13.23          1.
-nonelastic.tot      1    10      1.460          1.029          6.991          1.
-xs000000.tot       22   181      1.229         0.8417          21.97          1.
-xs100000.tot        7    26      1.347         0.9654          22.87          1.
-xs100000.L01        5    17      1.251         0.9681          14.54          1.
-xs200000.tot        1     2      5.282          4.184          304.2          5.
-xs200000.L01        7    19      10.27          8.412         9.4369E+04      10
-xs000001.tot        1     7      3.099          3.042          754.9          3.
-xs000001.L02        2     7      2.995          2.977          264.3          3.
+elastic.tot        11    44      1.130          1.045          13.24          1.
+nonelastic.tot      1    10      1.460          1.028          7.032          1.
+xs000000.tot       22   181      1.228         0.8422          21.96          1.
+xs100000.tot        7    26      1.348         0.9648          23.06          1.
+xs100000.L01        5    17      1.250         0.9733          14.10          1.
+xs200000.tot        1     2      5.341          4.238          314.7          5.
+xs200000.L01        7    19      10.39          8.522         9.6899E+04      10
+xs000001.tot        1     7      3.109          3.052          761.0          3.
+xs000001.L02        2     7      3.003          2.986          266.4          3.
 
-# GOF no.                5   2.056    
+# GOF no.                5   2.067    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.056     Optimum:    2.084    
-# Erms             :   1.710     Optimum:    1.712    
-# Chi2             :   7809.     Optimum:    8627.    
+# Frms             :   2.067     Optimum:    2.093    
+# Erms             :   1.720     Optimum:    1.720    
+# Chi2             :   8018.     Optimum:    8804.    
 
-  41  93 Run:     5 New optimum (Frms Erms Chi-2):    2.056155E+00   1.710037E+0
-Weight of run     5: 1.01419E+00 Sum: 5.77742E+00
+  41  93 Run:     5 New optimum (Frms Erms Chi-2):    2.067102E+00   1.720415E+0
+Weight of run     5: 1.01315E+00 Sum: 5.77841E+00
 
   Parameters for input file:     6
 
@@ -538,27 +538,27 @@ aadjust       40  93    1.02690
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.048          1.010          3.363          1.
-elastic.tot        11    44      1.092         0.9944          6.652          1.
-nonelastic.tot      1    10      1.446          1.063          5.867          1.
-xs000000.tot       22   181      1.115         0.9766          5.281          1.
-xs100000.tot        7    26      1.341         0.9638          22.16          1.
-xs100000.L01        5    17      1.246         0.9886          13.58          1.
-xs200000.tot        1     2      5.090          4.007          271.4          5.
-xs200000.L01        7    19      9.855          8.046         8.6194E+04      10
-xs000001.tot        1     7      3.252          3.199          862.7          3.
-xs000001.L02        2     7      3.128          3.112          302.2          2.
+elastic.tot        11    44      1.092         0.9946          6.617          1.
+nonelastic.tot      1    10      1.446          1.061          5.909          1.
+xs000000.tot       22   181      1.114         0.9774          5.290          1.
+xs100000.tot        7    26      1.341         0.9631          22.36          1.
+xs100000.L01        5    17      1.245         0.9958          13.05          1.
+xs200000.tot        1     2      5.150          4.063          281.6          5.
+xs200000.L01        7    19      9.981          8.159         8.8667E+04      10
+xs000001.tot        1     7      3.266          3.212          871.8          3.
+xs000001.L02        2     7      3.139          3.123          305.4          3.
 
-# GOF no.                6   1.959    
+# GOF no.                6   1.970    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   1.959     Optimum:    2.056    
-# Erms             :   1.685     Optimum:    1.710    
-# Chi2             :   7125.     Optimum:    7809.    
+# Frms             :   1.970     Optimum:    2.067    
+# Erms             :   1.696     Optimum:    1.720    
+# Chi2             :   7329.     Optimum:    8018.    
 
-  41  93 Run:     6 New optimum (Frms Erms Chi-2):    1.958962E+00   1.684716E+0
-Weight of run     6: 1.06469E+00 Sum: 6.84211E+00
+  41  93 Run:     6 New optimum (Frms Erms Chi-2):    1.970433E+00   1.695644E+0
+Weight of run     6: 1.06332E+00 Sum: 6.84173E+00
 
   Parameters for input file:     7
 
@@ -595,26 +595,26 @@ aadjust       40  93    0.87036
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.100         0.9236          10.43          1.
-elastic.tot        11    44      1.190         0.8845          23.02          1.
-nonelastic.tot      1    10      1.432         0.9883          7.444          1.
-xs000000.tot       22   181      1.578         0.6456          81.27          1.
-xs100000.tot        7    26      1.307         0.9518          18.67          1.
-xs100000.L01        5    17      1.241          1.008          10.48          1.
-xs200000.tot        1     2      5.744          4.609          391.3          5.
-xs200000.L01        7    19      11.37          9.397         1.1822E+05      9.
-xs000001.tot        1     7      2.677          2.599          502.6          3.
-xs000001.L02        2     7      2.638          2.612          176.6          3.
+elastic.tot        11    44      1.190         0.8846          23.00          1.
+nonelastic.tot      1    10      1.432         0.9879          7.460          1.
+xs000000.tot       22   181      1.577         0.6458          81.27          1.
+xs100000.tot        7    26      1.307         0.9514          18.79          1.
+xs100000.L01        5    17      1.240          1.012          10.26          1.
+xs200000.tot        1     2      5.789          4.650          400.3          5.
+xs200000.L01        7    19      11.46          9.480         1.2035E+05      9.
+xs000001.tot        1     7      2.680          2.602          503.7          3.
+xs000001.L02        2     7      2.640          2.614          177.0          3.
 
-# GOF no.                7   2.219    
+# GOF no.                7   2.228    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.219     Optimum:    1.959    
-# Erms             :   1.655     Optimum:    1.685    
-# Chi2             :   9780.     Optimum:    7125.    
+# Frms             :   2.228     Optimum:    1.970    
+# Erms             :   1.663     Optimum:    1.696    
+# Chi2             :   9956.     Optimum:    7329.    
 
-Weight of run     7: 9.34674E-01 Sum: 7.77678E+00
+Weight of run     7: 9.35019E-01 Sum: 7.77675E+00
 
   Parameters for input file:     8
 
@@ -651,26 +651,26 @@ aadjust       40  93    1.02760
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.054         0.9653          3.848          1.
-elastic.tot        11    44      1.135         0.9239          12.63          1.
-nonelastic.tot      1    10      1.438          1.029          6.445          1.
-xs000000.tot       22   181      1.243         0.8303          25.56          1.
-xs100000.tot        7    26      1.299         0.9781          17.87          1.
-xs100000.L01        5    17      1.240          1.014          10.50          1.
-xs200000.tot        1     2      5.098          4.014          272.8          5.
-xs200000.L01        7    19      9.734          7.939         8.3866E+04      9.
-xs000001.tot        1     7      3.952          3.906          1450.          3.
-xs000001.L02        2     7      3.750          3.737          513.9          3.
+elastic.tot        11    44      1.135         0.9240          12.61          1.
+nonelastic.tot      1    10      1.438          1.029          6.464          1.
+xs000000.tot       22   181      1.243         0.8305          25.56          1.
+xs100000.tot        7    26      1.300         0.9777          17.97          1.
+xs100000.L01        5    17      1.239          1.018          10.26          1.
+xs200000.tot        1     2      5.137          4.051          279.4          5.
+xs200000.L01        7    19      9.816          8.011         8.5433E+04      9.
+xs000001.tot        1     7      3.967          3.922          1465.          3.
+xs000001.L02        2     7      3.763          3.750          518.9          3.
 
-# GOF no.                8   2.009    
+# GOF no.                8   2.017    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.009     Optimum:    1.959    
-# Erms             :   1.640     Optimum:    1.685    
-# Chi2             :   6951.     Optimum:    7125.    
+# Frms             :   2.017     Optimum:    1.970    
+# Erms             :   1.647     Optimum:    1.696    
+# Chi2             :   7080.     Optimum:    7329.    
 
-Weight of run     8: 1.03836E+00 Sum: 8.81514E+00
+Weight of run     8: 1.03905E+00 Sum: 8.81580E+00
 
   Parameters for input file:     9
 
@@ -707,26 +707,26 @@ aadjust       40  93    0.97261
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.057          1.038          4.635          1.
-elastic.tot        11    44      1.086         0.9970          5.979          1.
-nonelastic.tot      1    10      1.437          1.025          6.523          1.
-xs000000.tot       22   181      2.245         0.4534          180.9          1.
-xs100000.tot        7    26      1.272          1.019          17.07          1.
-xs100000.L01        5    17      1.228          1.067          7.616          1.
-xs200000.tot        1     2      5.788          4.650          400.3          5.
-xs200000.L01        7    19      11.15          9.197         1.1316E+05      9.
-xs000001.tot        1     7      3.318          3.268          907.0          3.
-xs000001.L02        2     7      3.192          3.177          321.1          3.
+elastic.tot        11    44      1.086         0.9970          5.978          1.
+nonelastic.tot      1    10      1.438          1.025          6.537          1.
+xs000000.tot       22   181      2.244         0.4535          180.9          1.
+xs100000.tot        7    26      1.272          1.018          17.14          1.
+xs100000.L01        5    17      1.228          1.070          7.491          1.
+xs200000.tot        1     2      5.828          4.686          408.4          5.
+xs200000.L01        7    19      11.23          9.269         1.1497E+05      9.
+xs000001.tot        1     7      3.325          3.276          912.3          3.
+xs000001.L02        2     7      3.199          3.184          323.0          3.
 
-# GOF no.                9   2.364    
+# GOF no.                9   2.371    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.364     Optimum:    1.959    
-# Erms             :   1.672     Optimum:    1.685    
-# Chi2             :   9393.     Optimum:    7125.    
+# Frms             :   2.371     Optimum:    1.970    
+# Erms             :   1.679     Optimum:    1.696    
+# Chi2             :   9542.     Optimum:    7329.    
 
-Weight of run     9: 8.69670E-01 Sum: 9.68481E+00
+Weight of run     9: 8.70419E-01 Sum: 9.68622E+00
 
   Parameters for input file:    10
 
@@ -763,26 +763,26 @@ aadjust       40  93    1.11127
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.116         0.9128          13.53          1.
-elastic.tot        11    44      1.206         0.8818          27.06          1.
-nonelastic.tot      1    10      1.418         0.9959          6.849          1.
-xs000000.tot       22   181      2.120         0.4801          163.7          1.
-xs100000.tot        7    26      1.323         0.9390          20.02          1.
-xs100000.L01        5    17      1.250         0.9926          12.50          1.
-xs200000.tot        1     2      5.200          4.108          289.9          5.
-xs200000.L01        7    19      10.14          8.297         9.1750E+04      9.
-xs000001.tot        1     7      3.175          3.120          806.7          3.
-xs000001.L02        2     7      3.057          3.040          281.7          3.
+elastic.tot        11    44      1.206         0.8819          27.02          1.
+nonelastic.tot      1    10      1.419         0.9953          6.876          1.
+xs000000.tot       22   181      2.119         0.4803          163.7          1.
+xs100000.tot        7    26      1.324         0.9384          20.18          1.
+xs100000.L01        5    17      1.249         0.9980          12.11          1.
+xs200000.tot        1     2      5.250          4.155          298.6          5.
+xs200000.L01        7    19      10.24          8.390         9.3874E+04      9.
+xs000001.tot        1     7      3.184          3.130          813.1          3.
+xs000001.L02        2     7      3.065          3.048          283.9          3.
 
-# GOF no.               10   2.277    
+# GOF no.               10   2.286    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.277     Optimum:    1.959    
-# Erms             :   1.526     Optimum:    1.685    
-# Chi2             :   7628.     Optimum:    7125.    
+# Frms             :   2.286     Optimum:    1.970    
+# Erms             :   1.535     Optimum:    1.696    
+# Chi2             :   7803.     Optimum:    7329.    
 
-Weight of run    10: 9.08272E-01 Sum: 1.05931E+01
+Weight of run    10: 9.08113E-01 Sum: 1.05943E+01
 
   Parameters for input file:    11
 
@@ -819,26 +819,26 @@ aadjust       40  93    0.89028
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.130          1.098          23.33          1.
-elastic.tot        11    44      1.124          1.049          13.87          1.
-nonelastic.tot      1    10      1.460          1.006          7.570          1.
-xs000000.tot       22   181      1.189         0.8765          15.58          1.
-xs100000.tot        7    26      1.309         0.9790          19.62          1.
-xs100000.L01        5    17      1.234          1.010          10.62          1.
-xs200000.tot        1     2      5.789          4.650          400.3          5.
-xs200000.L01        7    19      11.32          9.357         1.1719E+05      9.
-xs000001.tot        1     7      2.680          2.602          503.9          3.
-xs000001.L02        2     7      2.645          2.619          178.1          3.
+elastic.tot        11    44      1.124          1.049          13.88          1.
+nonelastic.tot      1    10      1.460          1.006          7.598          1.
+xs000000.tot       22   181      1.189         0.8768          15.58          1.
+xs100000.tot        7    26      1.310         0.9784          19.76          1.
+xs100000.L01        5    17      1.233          1.014          10.33          1.
+xs200000.tot        1     2      5.846          4.703          412.1          5.
+xs200000.L01        7    19      11.44          9.463         1.1992E+05      9.
+xs000001.tot        1     7      2.683          2.605          505.4          3.
+xs000001.L02        2     7      2.647          2.621          178.6          3.
 
-# GOF no.               11   2.118    
+# GOF no.               11   2.128    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.118     Optimum:    1.959    
-# Erms             :   1.794     Optimum:    1.685    
-# Chi2             :   9682.     Optimum:    7125.    
+# Frms             :   2.128     Optimum:    1.970    
+# Erms             :   1.803     Optimum:    1.696    
+# Chi2             :   9906.     Optimum:    7329.    
 
-Weight of run    11: 9.83466E-01 Sum: 1.15766E+01
+Weight of run    11: 9.82698E-01 Sum: 1.15770E+01
 
   Parameters for input file:    12
 
@@ -875,26 +875,26 @@ aadjust       40  93    0.89936
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.113         0.9415          12.22          1.
-elastic.tot        11    44      1.201         0.8961          26.93          1.
-nonelastic.tot      1    10      1.439         0.9954          7.441          1.
-xs000000.tot       22   181      1.104          1.026          3.880          1.
-xs100000.tot        7    26      1.257         0.9839          14.02          1.
-xs100000.L01        5    17      1.228          1.054          7.666          1.
-xs200000.tot        1     2      6.027          4.869          450.4          5.
-xs200000.L01        7    19      11.72          9.712         1.2642E+05      9.
-xs000001.tot        1     7      3.000          2.940          688.6          3.
-xs000001.L02        2     7      2.917          2.898          243.3          3.
+elastic.tot        11    44      1.201         0.8962          26.91          1.
+nonelastic.tot      1    10      1.439         0.9952          7.450          1.
+xs000000.tot       22   181      1.104          1.026          3.883          1.
+xs100000.tot        7    26      1.258         0.9836          14.09          1.
+xs100000.L01        5    17      1.227          1.056          7.575          1.
+xs200000.tot        1     2      6.063          4.902          458.3          5.
+xs200000.L01        7    19      11.80          9.778         1.2818E+05      9.
+xs000001.tot        1     7      3.004          2.945          691.1          3.
+xs000001.L02        2     7      2.920          2.901          244.2          3.
 
-# GOF no.               12   2.141    
+# GOF no.               12   2.147    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.141     Optimum:    1.959    
-# Erms             :   1.806     Optimum:    1.685    
-# Chi2             :  1.0440E+04 Optimum:    7125.    
+# Frms             :   2.147     Optimum:    1.970    
+# Erms             :   1.812     Optimum:    1.696    
+# Chi2             :  1.0586E+04 Optimum:    7329.    
 
-Weight of run    12: 9.72183E-01 Sum: 1.25487E+01
+Weight of run    12: 9.73247E-01 Sum: 1.25503E+01
 
   Parameters for input file:    13
 
@@ -931,26 +931,26 @@ aadjust       40  93    0.92537
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.064         0.9597          4.895          1.
-elastic.tot        11    44      1.118         0.9457          10.13          1.
-nonelastic.tot      1    10      1.423          1.023          6.195          1.
-xs000000.tot       22   181      2.319         0.4396          188.7          1.
-xs100000.tot        7    26      1.346         0.9444          21.84          1.
-xs100000.L01        5    17      1.255         0.9717          14.82          1.
-xs200000.tot        1     2      4.694          3.641          210.3          5.
-xs200000.L01        7    19      8.970          7.257         6.9828E+04      9.
-xs000001.tot        1     7      3.881          3.832          1388.          3.
-xs000001.L02        2     7      3.683          3.669          488.7          3.
+elastic.tot        11    44      1.118         0.9459          10.09          1.
+nonelastic.tot      1    10      1.423          1.022          6.236          1.
+xs000000.tot       22   181      2.317         0.4398          188.7          1.
+xs100000.tot        7    26      1.347         0.9438          22.03          1.
+xs100000.L01        5    17      1.254         0.9786          14.26          1.
+xs200000.tot        1     2      4.747          3.690          218.1          5.
+xs200000.L01        7    19      9.081          7.356         7.1787E+04      9.
+xs000001.tot        1     7      3.903          3.856          1408.          3.
+xs000001.L02        2     7      3.702          3.688          495.8          3.
 
-# GOF no.               13   2.223    
+# GOF no.               13   2.233    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.223     Optimum:    1.959    
-# Erms             :   1.471     Optimum:    1.685    
-# Chi2             :   5835.     Optimum:    7125.    
+# Frms             :   2.233     Optimum:    1.970    
+# Erms             :   1.481     Optimum:    1.696    
+# Chi2             :   5997.     Optimum:    7329.    
 
-Weight of run    13: 9.32973E-01 Sum: 1.34817E+01
+Weight of run    13: 9.32483E-01 Sum: 1.34828E+01
 
   Parameters for input file:    14
 
@@ -987,26 +987,26 @@ aadjust       40  93    0.98976
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.046         0.9986          2.967          1.
-elastic.tot        11    44      1.097         0.9640          6.812          1.
-nonelastic.tot      1    10      1.454          1.029          6.824          1.
-xs000000.tot       22   181      1.107         0.9977          4.251          1.
-xs100000.tot        7    26      1.335         0.9585          21.57          1.
-xs100000.L01        5    17      1.251         0.9772          13.32          1.
-xs200000.tot        1     2      5.319          4.219          310.8          5.
-xs200000.L01        7    19      10.37          8.503         9.6460E+04      9.
-xs000001.tot        1     7      3.109          3.053          761.7          3.
-xs000001.L02        2     7      3.002          2.985          266.3          3.
+elastic.tot        11    44      1.097         0.9641          6.792          1.
+nonelastic.tot      1    10      1.454          1.029          6.852          1.
+xs000000.tot       22   181      1.107         0.9982          4.257          1.
+xs100000.tot        7    26      1.336         0.9580          21.73          1.
+xs100000.L01        5    17      1.250         0.9819          12.95          1.
+xs200000.tot        1     2      5.371          4.266          320.0          5.
+xs200000.L01        7    19      10.47          8.598         9.8671E+04      9.
+xs000001.tot        1     7      3.118          3.061          767.0          3.
+xs000001.L02        2     7      3.009          2.992          268.1          3.
 
-# GOF no.               14   1.997    
+# GOF no.               14   2.007    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   1.997     Optimum:    1.959    
-# Erms             :   1.716     Optimum:    1.685    
-# Chi2             :   7968.     Optimum:    7125.    
+# Frms             :   2.007     Optimum:    1.970    
+# Erms             :   1.725     Optimum:    1.696    
+# Chi2             :   8151.     Optimum:    7329.    
 
-Weight of run    14: 1.04465E+00 Sum: 1.45264E+01
+Weight of run    14: 1.04426E+00 Sum: 1.45270E+01
 
   Parameters for input file:    15
 
@@ -1043,26 +1043,26 @@ aadjust       40  93    1.04239
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.171          1.122          39.39          1.
-elastic.tot        11    44      1.149          1.064          18.81          1.
-nonelastic.tot      1    10      1.468          1.014          7.574          1.
-xs000000.tot       22   181      1.109          1.044          3.895          1.
-xs100000.tot        7    26      1.336         0.9627          21.48          1.
-xs100000.L01        5    17      1.248         0.9747          13.96          1.
-xs200000.tot        1     2      5.365          4.260          319.0          5.
-xs200000.L01        7    19      10.42          8.551         9.7572E+04      9.
-xs000001.tot        1     7      3.073          3.015          736.9          3.
-xs000001.L02        2     7      2.973          2.955          258.3          3.
+elastic.tot        11    44      1.149          1.064          18.83          1.
+nonelastic.tot      1    10      1.469          1.013          7.614          1.
+xs000000.tot       22   181      1.109          1.045          3.905          1.
+xs100000.tot        7    26      1.337         0.9621          21.66          1.
+xs100000.L01        5    17      1.247         0.9797          13.54          1.
+xs200000.tot        1     2      5.426          4.316          330.1          5.
+xs200000.L01        7    19      10.55          8.664         1.0021E+05      9.
+xs000001.tot        1     7      3.082          3.025          742.7          3.
+xs000001.L02        2     7      2.981          2.963          260.3          3.
 
-# GOF no.               15   2.050    
+# GOF no.               15   2.061    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.050     Optimum:    1.959    
-# Erms             :   1.785     Optimum:    1.685    
-# Chi2             :   8073.     Optimum:    7125.    
+# Frms             :   2.061     Optimum:    1.970    
+# Erms             :   1.796     Optimum:    1.696    
+# Chi2             :   8290.     Optimum:    7329.    
 
-Weight of run    15: 1.01749E+00 Sum: 1.55438E+01
+Weight of run    15: 1.01621E+00 Sum: 1.55432E+01
 
   Parameters for input file:    16
 
@@ -1099,26 +1099,26 @@ aadjust       40  93    1.04137
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.040         0.9922          2.318          1.
-elastic.tot        11    44      1.101         0.9549          7.641          1.
-nonelastic.tot      1    10      1.442          1.032          6.473          1.
-xs000000.tot       22   181      1.318         0.7808          37.19          1.
-xs100000.tot        7    26      1.321         0.9697          20.77          1.
-xs100000.L01        5    17      1.241          1.001          11.21          1.
-xs200000.tot        1     2      5.597          4.474          362.3          5.
-xs200000.L01        7    19      11.00          9.070         1.1000E+05      9.
-xs000001.tot        1     7      2.784          2.714          560.6          3.
-xs000001.L02        2     7      2.727          2.704          196.5          3.
+elastic.tot        11    44      1.101         0.9551          7.619          1.
+nonelastic.tot      1    10      1.442          1.031          6.498          1.
+xs000000.tot       22   181      1.317         0.7811          37.19          1.
+xs100000.tot        7    26      1.322         0.9692          20.92          1.
+xs100000.L01        5    17      1.240          1.005          10.91          1.
+xs200000.tot        1     2      5.648          4.521          372.2          5.
+xs200000.L01        7    19      11.11          9.165         1.1236E+05      9.
+xs000001.tot        1     7      2.788          2.718          562.7          3.
+xs000001.L02        2     7      2.730          2.707          197.3          3.
 
-# GOF no.               16   2.094    
+# GOF no.               16   2.103    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.094     Optimum:    1.959    
-# Erms             :   1.698     Optimum:    1.685    
-# Chi2             :   9088.     Optimum:    7125.    
+# Frms             :   2.103     Optimum:    1.970    
+# Erms             :   1.707     Optimum:    1.696    
+# Chi2             :   9283.     Optimum:    7329.    
 
-Weight of run    16: 9.95341E-01 Sum: 1.65392E+01
+Weight of run    16: 9.95097E-01 Sum: 1.65383E+01
 
   Parameters for input file:    17
 
@@ -1155,26 +1155,26 @@ aadjust       40  93    0.97194
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.074         0.9434          6.229          1.
-elastic.tot        11    44      1.152         0.9071          15.20          1.
-nonelastic.tot      1    10      1.431          1.009          6.799          1.
-xs000000.tot       22   181      1.667         0.6102          96.29          1.
-xs100000.tot        7    26      1.323         0.9522          20.55          1.
-xs100000.L01        5    17      1.246         0.9953          11.80          1.
-xs200000.tot        1     2      5.475          4.362          339.2          5.
-xs200000.L01        7    19      10.78          8.868         1.0508E+05      9.
-xs000001.tot        1     7      2.884          2.819          618.4          3.
-xs000001.L02        2     7      2.808          2.787          215.8          3.
+elastic.tot        11    44      1.152         0.9072          15.17          1.
+nonelastic.tot      1    10      1.431          1.009          6.822          1.
+xs000000.tot       22   181      1.667         0.6104          96.28          1.
+xs100000.tot        7    26      1.324         0.9517          20.70          1.
+xs100000.L01        5    17      1.245         0.9999          11.48          1.
+xs200000.tot        1     2      5.524          4.407          348.4          5.
+xs200000.L01        7    19      10.88          8.960         1.0730E+05      9.
+xs000001.tot        1     7      2.889          2.824          621.4          3.
+xs000001.L02        2     7      2.812          2.791          216.9          3.
 
-# GOF no.               17   2.185    
+# GOF no.               17   2.194    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.185     Optimum:    1.959    
-# Erms             :   1.615     Optimum:    1.685    
-# Chi2             :   8701.     Optimum:    7125.    
+# Frms             :   2.194     Optimum:    1.970    
+# Erms             :   1.624     Optimum:    1.696    
+# Chi2             :   8884.     Optimum:    7329.    
 
-Weight of run    17: 9.50683E-01 Sum: 1.74899E+01
+Weight of run    17: 9.50629E-01 Sum: 1.74890E+01
 
   Parameters for input file:    18
 
@@ -1211,26 +1211,26 @@ aadjust       40  93    1.02310
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.112          1.072          16.47          1.
-elastic.tot        11    44      1.114          1.016          9.441          1.
-nonelastic.tot      1    10      1.477          1.048          6.986          1.
-xs000000.tot       22   181      1.493          1.474          110.3          1.
-xs100000.tot        7    26      1.330         0.9716          21.05          1.
-xs100000.L01        5    17      1.245         0.9885          12.68          1.
-xs200000.tot        1     2      5.234          4.140          295.9          5.
-xs200000.L01        7    19      10.12          8.281         9.1411E+04      9.
-xs000001.tot        1     7      3.391          3.340          964.6          3.
-xs000001.L02        2     7      3.248          3.234          338.5          3.
+elastic.tot        11    44      1.114          1.016          9.440          1.
+nonelastic.tot      1    10      1.477          1.047          7.016          1.
+xs000000.tot       22   181      1.493          1.475          110.4          1.
+xs100000.tot        7    26      1.330         0.9710          21.20          1.
+xs100000.L01        5    17      1.244         0.9931          12.33          1.
+xs200000.tot        1     2      5.285          4.187          304.8          5.
+xs200000.L01        7    19      10.22          8.376         9.3540E+04      9.
+xs000001.tot        1     7      3.402          3.352          973.4          3.
+xs000001.L02        2     7      3.258          3.244          341.6          3.
 
-# GOF no.               18   2.108    
+# GOF no.               18   2.118    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.108     Optimum:    1.959    
-# Erms             :   1.863     Optimum:    1.685    
-# Chi2             :   7589.     Optimum:    7125.    
+# Frms             :   2.118     Optimum:    1.970    
+# Erms             :   1.872     Optimum:    1.696    
+# Chi2             :   7764.     Optimum:    7329.    
 
-Weight of run    18: 9.88170E-01 Sum: 1.84780E+01
+Weight of run    18: 9.87685E-01 Sum: 1.84766E+01
 
   Parameters for input file:    19
 
@@ -1267,26 +1267,26 @@ aadjust       40  93    1.04191
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.127          1.080          20.75          1.
-elastic.tot        11    44      1.124          1.032          11.51          1.
-nonelastic.tot      1    10      1.447          1.014          7.036          1.
-xs000000.tot       22   181      2.255         0.4524          180.1          1.
-xs100000.tot        7    26      1.344         0.9662          22.37          1.
-xs100000.L01        5    17      1.254         0.9662          14.70          1.
-xs200000.tot        1     2      5.090          4.007          271.5          5.
-xs200000.L01        7    19      9.794          7.992         8.5008E+04      9.
-xs000001.tot        1     7      3.487          3.438          1041.          3.
-xs000001.L02        2     7      3.334          3.320          365.8          3.
+elastic.tot        11    44      1.124          1.033          11.51          1.
+nonelastic.tot      1    10      1.448          1.014          7.073          1.
+xs000000.tot       22   181      2.253         0.4526          180.1          1.
+xs100000.tot        7    26      1.345         0.9656          22.53          1.
+xs100000.L01        5    17      1.253         0.9710          14.28          1.
+xs200000.tot        1     2      5.144          4.057          280.5          5.
+xs200000.L01        7    19      9.906          8.092         8.7191E+04      9.
+xs000001.tot        1     7      3.501          3.452          1052.          3.
+xs000001.L02        2     7      3.346          3.332          369.8          3.
 
-# GOF no.               19   2.287    
+# GOF no.               19   2.297    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.287     Optimum:    1.959    
-# Erms             :   1.579     Optimum:    1.685    
-# Chi2             :   7082.     Optimum:    7125.    
+# Frms             :   2.297     Optimum:    1.970    
+# Erms             :   1.588     Optimum:    1.696    
+# Chi2             :   7263.     Optimum:    7329.    
 
-Weight of run    19: 9.03426E-01 Sum: 1.93815E+01
+Weight of run    19: 9.02957E-01 Sum: 1.93796E+01
 
   Parameters for input file:    20
 
@@ -1323,27 +1323,27 @@ aadjust       40  93    0.98948
 # Channel summary  : Nb093 
 # Channel        Sets  Points     Frms           Erms          Chi2           To
 total.tot          28  1237      1.065         0.9566          5.176          1.
-elastic.tot        11    44      1.145         0.9199          14.44          1.
-nonelastic.tot      1    10      1.437          1.041          6.159          1.
-xs000000.tot       22   181      1.137         0.9372          8.554          1.
-xs100000.tot        7    26      1.311         0.9674          19.12          1.
-xs100000.L01        5    17      1.240          1.013          11.01          1.
-xs200000.tot        1     2      5.220          4.127          293.4          5.
-xs200000.L01        7    19      10.11          8.272         9.1199E+04      9.
-xs000001.tot        1     7      3.425          3.375          991.9          3.
-xs000001.L02        2     7      3.278          3.263          347.9          3.
+elastic.tot        11    44      1.145         0.9200          14.40          1.
+nonelastic.tot      1    10      1.437          1.040          6.184          1.
+xs000000.tot       22   181      1.137         0.9377          8.557          1.
+xs100000.tot        7    26      1.311         0.9669          19.26          1.
+xs100000.L01        5    17      1.240          1.018          10.68          1.
+xs200000.tot        1     2      5.268          4.171          301.7          5.
+xs200000.L01        7    19      10.21          8.361         9.3207E+04      9.
+xs000001.tot        1     7      3.437          3.388          1001.          3.
+xs000001.L02        2     7      3.288          3.273          351.1          3.
 
-# GOF no.               20   2.002    
+# GOF no.               20   2.012    
 # Nuclides         :    1
 # Channels         :   10
 # Data sets        :   85
 # Data points      :   1550
-# Frms             :   2.002     Optimum:    1.959    
-# Erms             :   1.675     Optimum:    1.685    
-# Chi2             :   7542.     Optimum:    7125.    
+# Frms             :   2.012     Optimum:    1.970    
+# Erms             :   1.683     Optimum:    1.696    
+# Chi2             :   7708.     Optimum:    7329.    
 
-Weight of run    20: 1.04177E+00 Sum: 2.04232E+01
+Weight of run    20: 1.04165E+00 Sum: 2.04212E+01
 
- Execution time:  0 hours  0 minutes  2.43 seconds 
+ Execution time:  0 hours  0 minutes  2.51 seconds 
 
  This TASMAN run has finished

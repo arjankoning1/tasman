@@ -1,0 +1,100 @@
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 1.800000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2026-03-28
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  1.800000E+01
+#     Integrated recoil spectrum [mb]:  7.732584E-12
+#     Residual production cross section [mb]:  7.732588E-12
+#   residual: 
+#     Z: 46
+#     A: 113
+#     nuclide: Pd113
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   4.171929E-02   6.447813E-12
+   1.251579E-01   7.567738E-12
+   2.085964E-01   7.711081E-12
+   2.920350E-01   7.639754E-12
+   3.754736E-01   7.622787E-12
+   4.589122E-01   7.620144E-12
+   5.423508E-01   7.626022E-12
+   6.257893E-01   7.633249E-12
+   7.092279E-01   7.638816E-12
+   7.926664E-01   7.640361E-12
+   8.761051E-01   7.604951E-12
+   9.595436E-01   7.135998E-12
+   1.042982E+00   2.774209E-12
+   1.126421E+00   1.104105E-14
+   1.209859E+00   0.000000E+00
+   1.293298E+00   0.000000E+00
+   1.376737E+00   0.000000E+00
+   1.460175E+00   0.000000E+00
+   1.543614E+00   0.000000E+00
+   1.627052E+00   0.000000E+00
+   1.710491E+00   0.000000E+00
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 2.000000E+01 MeV
+#   source: TALYS-2.2
+#   user: Arjan Koning
+#   date: 2026-03-28
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  2.000000E+01
+#     Integrated recoil spectrum [mb]:  8.202425E-10
+#     Residual production cross section [mb]:  8.202433E-10
+#   residual: 
+#     Z: 46
+#     A: 113
+#     nuclide: Pd113
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   4.741791E-02   5.133249E-10
+   1.422537E-01   7.263452E-10
+   2.370895E-01   7.339955E-10
+   3.319253E-01   7.303241E-10
+   4.267612E-01   7.276689E-10
+   5.215970E-01   7.270142E-10
+   6.164327E-01   7.272862E-10
+   7.112685E-01   7.280267E-10
+   8.061044E-01   7.283317E-10
+   9.009402E-01   7.283752E-10
+   9.957760E-01   7.268980E-10
+   1.090612E+00   6.662323E-10
+   1.185448E+00   1.851092E-10
+   1.280283E+00   1.486153E-13
+   1.375119E+00   0.000000E+00
+   1.469955E+00   0.000000E+00
+   1.564791E+00   0.000000E+00
+   1.659627E+00   0.000000E+00
+   1.754462E+00   0.000000E+00
+   1.849298E+00   0.000000E+00
+   1.944134E+00   0.000000E+00

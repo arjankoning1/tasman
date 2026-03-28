@@ -1,13 +1,13 @@
  Performing first TALYS run to retrieve parameters
 
-    TASMAN-2.2  (Version: January 1, 2026)
+    TASMAN-2.2  (Version: January 25, 2026)
 
  Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-01-18
+ Date: 2026-03-28
 
  ########## USER INPUT ##########
 
@@ -1088,6 +1088,6 @@ fission.tot         1     1      6.378         0.2510          2.132         5.7
 
  Maximum number of runs done:           20
 
- Execution time:  0 hours  0 minutes  1.17 seconds 
+ Execution time:  0 hours  0 minutes  1.16 seconds 
 
  This TASMAN run has finished

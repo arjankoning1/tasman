@@ -2,7 +2,7 @@
 #   title: Sn120(n,p_25) cross section Run 9999
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-18
+#   date: 2026-03-28
 #   format: YANDF-0.4
 # target:
 #   Z: 50
@@ -10,14 +10,14 @@
 #   nuclide: Sn120
 # reaction:
 #   type: (n,p_25)
-#   Q-value [MeV]: -5.073931E+00
-#   E-threshold [MeV]:  5.116615E+00
+#   Q-value [MeV]: -6.149641E+00
+#   E-threshold [MeV]:  6.201374E+00
 #   ENDF_MF: 3
 #   ENDF_MT: 625
 #   level:
 #     number: 25
-#     energy [MeV]:  4.863510E-01
-#     spin:  5.000000E+00
+#     energy [MeV]:  1.562061E+00
+#     spin:  8.000000E+00
 #     parity: 1
 #   quantity:
 #     type: cross section

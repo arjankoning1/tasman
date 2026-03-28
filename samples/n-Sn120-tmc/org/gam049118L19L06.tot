@@ -2,7 +2,7 @@
 #   title: Sn120(n,xg_19-6)In118 gamma-ray production cross section
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-01-18
+#   date: 2026-03-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10,11 +10,11 @@
 #   nuclide: Sn120
 # reaction: 
 #   type: (n,xg_19-6)
-#   Q-value [MeV]: -1.204258E+01
-#   E-threshold [MeV]:  1.214389E+01
+#   Q-value [MeV]: -1.203973E+01
+#   E-threshold [MeV]:  1.214101E+01
 #   level: 
 #     number: 19
-#     energy [MeV]:  1.294638E+00
+#     energy [MeV]:  1.291781E+00
 #     spin:  5.000000E+00
 #     parity: 1
 #     level: 
@@ -22,7 +22,7 @@
 #       energy [MeV]:  3.500000E-01
 #       spin:  4.000000E+00
 #       parity: -1
-#   gamma energy [MeV]:  9.446380E-01
+#   gamma energy [MeV]:  9.417809E-01
 #   residual: 
 #     Z: 49
 #     A: 118
@@ -68,7 +68,7 @@
    9.000000E+00   0.000000E+00
    1.000000E+01   0.000000E+00
    1.200000E+01   0.000000E+00
-   1.400000E+01   2.094062E-14
-   1.600000E+01   5.705390E-07
-   1.800000E+01   2.090581E-04
-   2.000000E+01   4.054336E-03
+   1.400000E+01   2.569463E-14
+   1.600000E+01   6.982243E-07
+   1.800000E+01   2.379732E-04
+   2.000000E+01   4.396924E-03
