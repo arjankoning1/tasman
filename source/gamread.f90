@@ -154,6 +154,7 @@ subroutine gamread
         enddo
         open (unit = 2, file = gamfile(i), status = 'old', iostat = istat)
         if (istat /= 0) call read_error(gamfile(i), istat)
+        jheader = 0
         j = 1
         do
           read(2, '(a)', iostat = istat) gamstring(j)
