@@ -847,7 +847,7 @@ subroutine input2
       cycle
     endif
     if (key == '#getcalcscript') then
-      read(value, * , iostat = istat) getcalcscript
+      read(value, '(a)' , iostat = istat) getcalcscript
       cycle
     endif
     if (key == '#lrf7') then
