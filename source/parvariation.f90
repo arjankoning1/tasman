@@ -195,6 +195,7 @@ subroutine parvariation
         if (parkey(i) == 'ntop') then
           par(i) = max(par(i), 20.)
         endif
+        if (parkey(i) == 'upbendf') par(i) = min(max(par(i), -10.), 10.)
         if (parkey(i) == 'fishw') par(i) = max(0.01, min(par(i), 10.))
         if (parkey(i) == 'gamgamadjust') par(i) = max(0.1, min(par(i), 10.))
         if (parkey(i) == 'deltaw') par(i) = min(max(par(i), -20.), 20.)
