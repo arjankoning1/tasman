@@ -29,7 +29,7 @@ subroutine tmc
 !   ptype0          ! type of incident particle
 !   tafis           ! TAFIS executable
 !   tanes           ! TANES executable
-!   tares           ! TAREL executable
+!   tares           ! TARES executable
 !   tefal           ! TEFAL executable
 !   Ztarget         ! charge number of target nucleus
 ! Variables for covariances
