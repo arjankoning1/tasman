@@ -45,7 +45,7 @@ subroutine optimization
   call fitlimits
   if (Npar >= 1) then
     call koekel(Npar,parinp,parlow,parhigh,Popt,Fopt,searchmode)
-    if (iout.ge.Npar.and.searchmode.ne.4) then
+    if (iout >= Npar .and. searchmode /= 4) then
       searchmode=4
       call koekel(Npar,parinp,parlow,parhigh,Popt,Fopt,searchmode)
     endif
