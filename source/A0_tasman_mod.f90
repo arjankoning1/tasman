@@ -6,7 +6,7 @@ module A0_tasman_mod
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2026-01-25: Current revision
+! 2026-04-11: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -40,7 +40,7 @@ module A0_tasman_mod
   integer, parameter :: numnuc=1000     ! maximum number of nuclides with experimental data
   integer, parameter :: numenendf=10000 ! maximum number of energies on ENDF grid
   integer, parameter :: numsets=100     ! maximum number of experimental data sets
-  integer, parameter :: numenexp=100    ! maximum number of energies forexperimental data set
+  integer, parameter :: numenexp=100    ! maximum number of energies for experimental data set
   integer, parameter :: numchanexp=40   ! maximum number of channels with experimental data
   integer, parameter :: numang=90       ! maximum number of angles
   integer, parameter :: numenS=60       ! maximum number of energies for sensitivities
@@ -107,7 +107,7 @@ module A0_tasman_mod
   character(len=132)               :: tafis        ! TAFIS executable
   character(len=132)               :: talys        ! TALYS executable
   character(len=132)               :: tanes        ! TANES executable
-  character(len=132)               :: tares        ! TAREL executable
+  character(len=132)               :: tares        ! TARES executable
   character(len=132)               :: tefal        ! TEFAL executable
   character(len=132)               :: energyfile   ! file with incident energies
   character(len=132)               :: exppath      ! path for experimental data
@@ -317,8 +317,8 @@ module A0_tasman_mod
   real(sgl), dimension(0:1,3,0:numenendf)             :: xsendf       ! cross section from TALYS
   real(sgl), dimension(0:1,numchanxs,0:numenin)       :: xseval       ! evaluated cross section
   real(sgl), dimension(numchanxs)                     :: xsmax        ! maximum cross section per channel
-  real(sgl), dimension (numchanxs,numsets,0:numenexp) :: xsnon        ! nonelastic cross section
-  real(sgl), dimension(0:numenin)                     :: xsnon0       ! non-elastic crosssection
+  real(sgl), dimension (numchanxs,numsets,0:numenexp) :: xsnon        ! non-elastic cross section
+  real(sgl), dimension(0:numenin)                     :: xsnon0       ! non-elastic cross section
   real(sgl), dimension(0:numtalys,numchanxs,0:numenS) :: xssave       ! cross section from TALYS
   real(sgl), dimension(0:1,numchanxs,0:numenin)       :: xstalys      ! cross section from TALYS
   real(sgl), dimension(0:1,numchanxs,0:numenin)       :: xstalys2     ! cross section from TALYS
@@ -431,7 +431,7 @@ module A0_tasman_mod
 ! Variables for reading MACS
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  logical                          :: flagD0exp
+  logical                          :: flagD0exp ! flag for existence of experimental D0
   real(sgl), dimension(0:numtalys) :: macssave  ! average Maxwellian averaged cross section
   real(sgl), dimension(0:1)        :: macstalys ! Maxwellian averaged cross section from TALYS
   real(sgl)                        :: ratmacs   ! Maxwellian rate
