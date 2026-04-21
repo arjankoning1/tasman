@@ -840,9 +840,9 @@ subroutine input2
       read(value, * , iostat = istat) background
       cycle
     endif
-    if (key.eq.'#extparvar') then
-      if (ch.eq.'n') flagextparvar = .false.
-      if (ch.eq.'y') flagextparvar = .true.
+    if (key == '#extparvar') then
+      if (ch == 'n') flagextparvar = .false.
+      if (ch == 'y') flagextparvar = .true.
       if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
       cycle
     endif
