@@ -130,7 +130,7 @@ subroutine inputprocess
 !   talysversion      ! version of TALYS executable
 !   tanes             ! TANES executable
 !   tanesversion      ! version of TANES executable
-!   tares             ! TAREL executable
+!   tares             ! TARES executable
 !   taresversion      ! version of TARES executable
 !   tefal             ! TEFAL executable
 !   tefalversion      ! version of TEFAL executable
@@ -179,8 +179,10 @@ subroutine inputprocess
     if (mode >= 3) Ntalys = numtalys
   endif
   if (mode == 2) Ntalys = Npar
-  if (Nburn ==  -1) Nburn = min(Ntalys, numtalys)
-  if (Nhigh ==  -1) Nhigh = min(Ntalys, numtalys)
+  if (mode == 1) then
+    if (Nburn ==  -1) Nburn = Ntalys
+    if (Nhigh ==  -1) Nhigh = Ntalys
+  endif
   if (Ltarget /= 0 .and. Liso == 0) Liso = 1
   if (Liso == 0) isochar = ' '
   if (Liso == 1) isochar = 'm'
