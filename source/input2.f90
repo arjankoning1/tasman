@@ -962,7 +962,7 @@ subroutine input2
       if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
       cycle
     endif
-    if (key == '#autoinc') then
+    if (key == '#autoinclude') then
       if (ch == 'n') flagautoinc = .false.
       if (ch == 'y') flagautoinc = .true.
       if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
