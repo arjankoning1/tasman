@@ -21,7 +21,7 @@ subroutine checkkeyword
 ! *** Declaration of local data
 !
   implicit none
-  integer, parameter :: numkey=139        ! number of keywords
+  integer, parameter :: numkey=141        ! number of keywords
   integer            :: i                 ! counter
   integer            :: j                 ! counter
   character(len=132) :: key               ! keyword
@@ -47,7 +47,7 @@ subroutine checkkeyword
 &   '#ntalys', '#nubar', '#offset', '#ompinc', '#omponly', '#outsearch', '#parameters', &
 &   '#partvary', '#prepro', '#proconly', '#prod', '#production', '#psf', '#purr', '#readpar', '#readsens', &
 &   '#residual', '#resonance', '#runfns', '#runnubar', '#runtares', '#s20', '#s30', '#s60', '#sample', '#save', &
-&   '#searchmode', '#seed', '#select', '#sens', '#sort', '#source', '#spectra', &
+&   '#searchmode', '#seed', '#score', '#sdefault', '#select', '#sens', '#sort', '#source', '#spectra', &
 &   '#tafislib', '#tafisversion', '#talexclude', '#talinclude', '#talysversion', '#taneslib', '#tanesversion', &
 &   '#tareslib', '#taresversion', '#tefalversion', '#tmc', '#tmcoffset', '#tweight', '#user', '#weight', '#weightpower', &
 &   '#zaskip', '#zavary', '#zdeep', '#zmax', '#zmin'/
