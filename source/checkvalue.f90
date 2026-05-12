@@ -131,12 +131,12 @@ subroutine checkvalue
   call range_integer_error('#zmax', zzmax, 1, numZ)
   call range_integer_error('#amin', aamin, 0, nummass)
   call range_integer_error('#amax', aamax, 0, nummass)
-  call range_integer_error('#zmax', zzmax, zzmin, nummass)
+  call range_integer_error('#zmax', zzmax, zzmin, numZ)
   call range_integer_error('#amax', aamax, aamin, nummass, default = 0)
   call range_integer_error('#expclass', expclass, 1, 3)
   call range_integer_error('#outsearch', outsearch, 1, 5)
   call range_integer_error('#zdeep', Zdeep, 0, numZ, default = -1)
-  call range_integer_error('#adeep', Adeep, 0, numZ, default = -1)
+  call range_integer_error('#adeep', Adeep, 0, nummass, default = -1)
 !
 ! Check unlogical input combinations
 !
