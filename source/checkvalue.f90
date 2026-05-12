@@ -157,10 +157,10 @@ subroutine checkvalue
 !
   do imt = 1, nummt
     call range_real_error('#dev', devi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
-    call range_real_error('#adev', adevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
-    call range_real_error('#bdev', bdevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
-    call range_real_error('#cdev', cdevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
-    call range_real_error('#ddev', ddevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
+    call range_real_error('#adevi', adevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
+    call range_real_error('#bdevi', bdevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
+    call range_real_error('#cdevi', cdevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
+    call range_real_error('#ddevi', ddevi(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
     call range_real_error('#Ecent', Ecent(imt), 0., 1.e38, index1 = imt, name1 = 'MT')
     call range_real_error('#Fmax', Fmax(imt), 1., 1.e38, index1 = imt, name1 = 'MT')
     call range_real_error('#chi2max', chi2max(imt), 1., 1.e38, index1 = imt, name1 = 'MT')
@@ -169,7 +169,7 @@ subroutine checkvalue
     call range_real_error('#fracmax', fracmax(imt), 0., 1., index1 = imt, name1 = 'MT')
     call range_real_error('#esearch1', Esearch1(imt), 0., 1000., index1 = imt, name1 = 'MT')
     call range_real_error('#esearch2', Esearch2(imt), 0., 1000., index1 = imt, name1 = 'MT')
-    call range_real_error('#esearch2', Esearch1(imt), Esearch1(imt), 1000., index1 = imt, name1 = 'MT')
+    call range_real_error('#esearch2', Esearch2(imt), Esearch1(imt), 1000., index1 = imt, name1 = 'MT')
     call range_real_error('#tweight', Tweight(imt), 0., 1.e10, index1 = imt, name1 = 'MT')
     call range_real_error('#dsmooth', dsmooth(imt), 0.001, 10., index1 = imt, name1 = 'MT')
     do i = 1, numlib
