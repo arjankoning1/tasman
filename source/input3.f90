@@ -129,7 +129,7 @@ subroutine input3
       if (istat /= 0) call read_error(line, istat)
       cycle
     endif
-    if (key == '#adev') then
+    if (key == '#adevi') then
       read(value, * , iostat = istat) imt
       if (istat /= 0) call read_error(line, istat)
       call range_integer_error(key, imt, 1, nummt)
@@ -137,7 +137,7 @@ subroutine input3
       if (istat /= 0) call read_error(line, istat)
       cycle
     endif
-    if (key == '#bdev') then
+    if (key == '#bdevi') then
       read(value, * , iostat = istat) imt
       if (istat /= 0) call read_error(line, istat)
       call range_integer_error(key, imt, 1, nummt)
@@ -145,7 +145,7 @@ subroutine input3
       if (istat /= 0) call read_error(line, istat)
       cycle
     endif
-    if (key == '#cdev') then
+    if (key == '#cdevi') then
       read(value, * , iostat = istat) imt
       if (istat /= 0) call read_error(line, istat)
       call range_integer_error(key, imt, 1, nummt)
@@ -153,7 +153,7 @@ subroutine input3
       if (istat /= 0) call read_error(line, istat)
       cycle
     endif
-    if (key == '#ddev') then
+    if (key == '#ddevi') then
       read(value, * , iostat = istat) imt
       if (istat /= 0) call read_error(line, istat)
       call range_integer_error(key, imt, 1, nummt)
