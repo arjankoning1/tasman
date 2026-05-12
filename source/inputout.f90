@@ -5,7 +5,7 @@ subroutine inputout
 !
 ! Author    : Arjan Koning
 !
-! 2021-12-30: Original code
+! 2026-05-12: Original code
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -236,7 +236,7 @@ subroutine inputout
  &    " with switch at 60 MeV")') yesno(flags60)
     write(*, '(" #mt                 ", a1, "     flagmt       flag for creation of ENDF general purpose file", &
  &    " without switch")') yesno(flagmt)
-    write(*, '(" #act                ", a1, "     flagacf      flag for creation of ENDF activation file ")') yesno(flagacf)
+    write(*, '(" #acf                ", a1, "     flagacf      flag for creation of ENDF activation file ")') yesno(flagacf)
     write(*, '(" #eaf                ", a1, "     flageaf      flag for creation of EAF activation file ")') yesno(flageaf)
     write(*, '(" #prepro             ", a1, "     flagprepro   flag to run PREPRO codes")') yesno(flagprepro)
     write(*, '(" #njoy               ", a1, "     flagnjoy     flag to run NJOY")') yesno(flagnjoy)
@@ -308,10 +308,8 @@ subroutine inputout
     write(*, '(" #expclass         ", i3, "     expclass     quality class of experimental data (1, 2 or 3)")') expclass
     write(*, '(" #sort               ", a1, "     flagsort     flag to sort experimental data in increasing energies in the ", &
  &    "output")') yesno(flagsort)
-    write(*, '(" #searchexp          ", a1, "     flagexp      flag to optimize to experimental data")') yesno(flagexp)
-    write(*, '(" #searchlib          ", a1, "     flaglib      flag to optimize to nuclear data libraries")') yesno(flaglib)
     write(*, '(" #outsearch        ", i3, "     outsearch    level of output of search (1 (minimal) - 5 (all))")') outsearch
   endif
   return
 end subroutine inputout
-! Copyright A.J. Koning 2021
+! Copyright A.J. Koning 2026
