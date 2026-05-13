@@ -1,3 +1,1843 @@
+<ang.dis.>      1.01      1.25000000D-03    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 4.40232D+02        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 4.40232D+02        cross-section                        
+ -2 2.00000D+00 7.82991D-05        asym. or it11                        
+  0 4.00000D+00 4.40232D+02        cross-section                        
+ -2 4.00000D+00 1.56504D-04        asym. or it11                        
+  0 6.00000D+00 4.40233D+02        cross-section                        
+ -2 6.00000D+00 2.34521D-04        asym. or it11                        
+  0 8.00000D+00 4.40234D+02        cross-section                        
+ -2 8.00000D+00 3.12255D-04        asym. or it11                        
+  0 1.00000D+01 4.40235D+02        cross-section                        
+ -2 1.00000D+01 3.89614D-04        asym. or it11                        
+  0 1.20000D+01 4.40236D+02        cross-section                        
+ -2 1.20000D+01 4.66503D-04        asym. or it11                        
+  0 1.40000D+01 4.40238D+02        cross-section                        
+ -2 1.40000D+01 5.42831D-04        asym. or it11                        
+  0 1.60000D+01 4.40240D+02        cross-section                        
+ -2 1.60000D+01 6.18506D-04        asym. or it11                        
+  0 1.80000D+01 4.40242D+02        cross-section                        
+ -2 1.80000D+01 6.93436D-04        asym. or it11                        
+  0 2.00000D+01 4.40244D+02        cross-section                        
+ -2 2.00000D+01 7.67532D-04        asym. or it11                        
+  0 2.20000D+01 4.40247D+02        cross-section                        
+ -2 2.20000D+01 8.40702D-04        asym. or it11                        
+  0 2.40000D+01 4.40249D+02        cross-section                        
+ -2 2.40000D+01 9.12861D-04        asym. or it11                        
+  0 2.60000D+01 4.40252D+02        cross-section                        
+ -2 2.60000D+01 9.83920D-04        asym. or it11                        
+  0 2.80000D+01 4.40256D+02        cross-section                        
+ -2 2.80000D+01 1.05379D-03        asym. or it11                        
+  0 3.00000D+01 4.40259D+02        cross-section                        
+ -2 3.00000D+01 1.12240D-03        asym. or it11                        
+  0 3.20000D+01 4.40263D+02        cross-section                        
+ -2 3.20000D+01 1.18965D-03        asym. or it11                        
+  0 3.40000D+01 4.40267D+02        cross-section                        
+ -2 3.40000D+01 1.25546D-03        asym. or it11                        
+  0 3.60000D+01 4.40271D+02        cross-section                        
+ -2 3.60000D+01 1.31976D-03        asym. or it11                        
+  0 3.80000D+01 4.40275D+02        cross-section                        
+ -2 3.80000D+01 1.38247D-03        asym. or it11                        
+  0 4.00000D+01 4.40280D+02        cross-section                        
+ -2 4.00000D+01 1.44352D-03        asym. or it11                        
+  0 4.20000D+01 4.40285D+02        cross-section                        
+ -2 4.20000D+01 1.50282D-03        asym. or it11                        
+  0 4.40000D+01 4.40290D+02        cross-section                        
+ -2 4.40000D+01 1.56030D-03        asym. or it11                        
+  0 4.60000D+01 4.40295D+02        cross-section                        
+ -2 4.60000D+01 1.61590D-03        asym. or it11                        
+  0 4.80000D+01 4.40301D+02        cross-section                        
+ -2 4.80000D+01 1.66955D-03        asym. or it11                        
+  0 5.00000D+01 4.40306D+02        cross-section                        
+ -2 5.00000D+01 1.72118D-03        asym. or it11                        
+  0 5.20000D+01 4.40312D+02        cross-section                        
+ -2 5.20000D+01 1.77073D-03        asym. or it11                        
+  0 5.40000D+01 4.40318D+02        cross-section                        
+ -2 5.40000D+01 1.81814D-03        asym. or it11                        
+  0 5.60000D+01 4.40325D+02        cross-section                        
+ -2 5.60000D+01 1.86335D-03        asym. or it11                        
+  0 5.80000D+01 4.40331D+02        cross-section                        
+ -2 5.80000D+01 1.90631D-03        asym. or it11                        
+  0 6.00000D+01 4.40338D+02        cross-section                        
+ -2 6.00000D+01 1.94695D-03        asym. or it11                        
+  0 6.20000D+01 4.40345D+02        cross-section                        
+ -2 6.20000D+01 1.98524D-03        asym. or it11                        
+  0 6.40000D+01 4.40352D+02        cross-section                        
+ -2 6.40000D+01 2.02113D-03        asym. or it11                        
+  0 6.60000D+01 4.40359D+02        cross-section                        
+ -2 6.60000D+01 2.05456D-03        asym. or it11                        
+  0 6.80000D+01 4.40366D+02        cross-section                        
+ -2 6.80000D+01 2.08551D-03        asym. or it11                        
+  0 7.00000D+01 4.40374D+02        cross-section                        
+ -2 7.00000D+01 2.11392D-03        asym. or it11                        
+  0 7.20000D+01 4.40382D+02        cross-section                        
+ -2 7.20000D+01 2.13977D-03        asym. or it11                        
+  0 7.40000D+01 4.40389D+02        cross-section                        
+ -2 7.40000D+01 2.16302D-03        asym. or it11                        
+  0 7.60000D+01 4.40397D+02        cross-section                        
+ -2 7.60000D+01 2.18365D-03        asym. or it11                        
+  0 7.80000D+01 4.40405D+02        cross-section                        
+ -2 7.80000D+01 2.20162D-03        asym. or it11                        
+  0 8.00000D+01 4.40414D+02        cross-section                        
+ -2 8.00000D+01 2.21692D-03        asym. or it11                        
+  0 8.20000D+01 4.40422D+02        cross-section                        
+ -2 8.20000D+01 2.22952D-03        asym. or it11                        
+  0 8.40000D+01 4.40430D+02        cross-section                        
+ -2 8.40000D+01 2.23941D-03        asym. or it11                        
+  0 8.60000D+01 4.40439D+02        cross-section                        
+ -2 8.60000D+01 2.24657D-03        asym. or it11                        
+  0 8.80000D+01 4.40447D+02        cross-section                        
+ -2 8.80000D+01 2.25100D-03        asym. or it11                        
+  0 9.00000D+01 4.40456D+02        cross-section                        
+ -2 9.00000D+01 2.25268D-03        asym. or it11                        
+  0 9.20000D+01 4.40464D+02        cross-section                        
+ -2 9.20000D+01 2.25163D-03        asym. or it11                        
+  0 9.40000D+01 4.40473D+02        cross-section                        
+ -2 9.40000D+01 2.24782D-03        asym. or it11                        
+  0 9.60000D+01 4.40482D+02        cross-section                        
+ -2 9.60000D+01 2.24128D-03        asym. or it11                        
+  0 9.80000D+01 4.40491D+02        cross-section                        
+ -2 9.80000D+01 2.23200D-03        asym. or it11                        
+  0 1.00000D+02 4.40499D+02        cross-section                        
+ -2 1.00000D+02 2.22000D-03        asym. or it11                        
+  0 1.02000D+02 4.40508D+02        cross-section                        
+ -2 1.02000D+02 2.20529D-03        asym. or it11                        
+  0 1.04000D+02 4.40517D+02        cross-section                        
+ -2 1.04000D+02 2.18788D-03        asym. or it11                        
+  0 1.06000D+02 4.40526D+02        cross-section                        
+ -2 1.06000D+02 2.16780D-03        asym. or it11                        
+  0 1.08000D+02 4.40534D+02        cross-section                        
+ -2 1.08000D+02 2.14507D-03        asym. or it11                        
+  0 1.10000D+02 4.40543D+02        cross-section                        
+ -2 1.10000D+02 2.11971D-03        asym. or it11                        
+  0 1.12000D+02 4.40552D+02        cross-section                        
+ -2 1.12000D+02 2.09177D-03        asym. or it11                        
+  0 1.14000D+02 4.40560D+02        cross-section                        
+ -2 1.14000D+02 2.06126D-03        asym. or it11                        
+  0 1.16000D+02 4.40569D+02        cross-section                        
+ -2 1.16000D+02 2.02823D-03        asym. or it11                        
+  0 1.18000D+02 4.40577D+02        cross-section                        
+ -2 1.18000D+02 1.99271D-03        asym. or it11                        
+  0 1.20000D+02 4.40585D+02        cross-section                        
+ -2 1.20000D+02 1.95476D-03        asym. or it11                        
+  0 1.22000D+02 4.40593D+02        cross-section                        
+ -2 1.22000D+02 1.91441D-03        asym. or it11                        
+  0 1.24000D+02 4.40601D+02        cross-section                        
+ -2 1.24000D+02 1.87171D-03        asym. or it11                        
+  0 1.26000D+02 4.40609D+02        cross-section                        
+ -2 1.26000D+02 1.82671D-03        asym. or it11                        
+  0 1.28000D+02 4.40617D+02        cross-section                        
+ -2 1.28000D+02 1.77948D-03        asym. or it11                        
+  0 1.30000D+02 4.40624D+02        cross-section                        
+ -2 1.30000D+02 1.73006D-03        asym. or it11                        
+  0 1.32000D+02 4.40632D+02        cross-section                        
+ -2 1.32000D+02 1.67851D-03        asym. or it11                        
+  0 1.34000D+02 4.40639D+02        cross-section                        
+ -2 1.34000D+02 1.62491D-03        asym. or it11                        
+  0 1.36000D+02 4.40646D+02        cross-section                        
+ -2 1.36000D+02 1.56931D-03        asym. or it11                        
+  0 1.38000D+02 4.40653D+02        cross-section                        
+ -2 1.38000D+02 1.51178D-03        asym. or it11                        
+  0 1.40000D+02 4.40659D+02        cross-section                        
+ -2 1.40000D+02 1.45239D-03        asym. or it11                        
+  0 1.42000D+02 4.40665D+02        cross-section                        
+ -2 1.42000D+02 1.39122D-03        asym. or it11                        
+  0 1.44000D+02 4.40671D+02        cross-section                        
+ -2 1.44000D+02 1.32833D-03        asym. or it11                        
+  0 1.46000D+02 4.40677D+02        cross-section                        
+ -2 1.46000D+02 1.26382D-03        asym. or it11                        
+  0 1.48000D+02 4.40682D+02        cross-section                        
+ -2 1.48000D+02 1.19774D-03        asym. or it11                        
+  0 1.50000D+02 4.40688D+02        cross-section                        
+ -2 1.50000D+02 1.13020D-03        asym. or it11                        
+  0 1.52000D+02 4.40692D+02        cross-section                        
+ -2 1.52000D+02 1.06126D-03        asym. or it11                        
+  0 1.54000D+02 4.40697D+02        cross-section                        
+ -2 1.54000D+02 9.91019D-04        asym. or it11                        
+  0 1.56000D+02 4.40701D+02        cross-section                        
+ -2 1.56000D+02 9.19556D-04        asym. or it11                        
+  0 1.58000D+02 4.40705D+02        cross-section                        
+ -2 1.58000D+02 8.46961D-04        asym. or it11                        
+  0 1.60000D+02 4.40709D+02        cross-section                        
+ -2 1.60000D+02 7.73323D-04        asym. or it11                        
+  0 1.62000D+02 4.40712D+02        cross-section                        
+ -2 1.62000D+02 6.98732D-04        asym. or it11                        
+  0 1.64000D+02 4.40715D+02        cross-section                        
+ -2 1.64000D+02 6.23281D-04        asym. or it11                        
+  0 1.66000D+02 4.40718D+02        cross-section                        
+ -2 1.66000D+02 5.47061D-04        asym. or it11                        
+  0 1.68000D+02 4.40720D+02        cross-section                        
+ -2 1.68000D+02 4.70168D-04        asym. or it11                        
+  0 1.70000D+02 4.40722D+02        cross-section                        
+ -2 1.70000D+02 3.92695D-04        asym. or it11                        
+  0 1.72000D+02 4.40724D+02        cross-section                        
+ -2 1.72000D+02 3.14738D-04        asym. or it11                        
+  0 1.74000D+02 4.40725D+02        cross-section                        
+ -2 1.74000D+02 2.36394D-04        asym. or it11                        
+  0 1.76000D+02 4.40726D+02        cross-section                        
+ -2 1.76000D+02 1.57758D-04        asym. or it11                        
+  0 1.78000D+02 4.40726D+02        cross-section                        
+ -2 1.78000D+02 7.89276D-05        asym. or it11                        
+  0 1.80000D+02 4.40727D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      2.00000000D-03    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 4.39480D+02        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 4.39480D+02        cross-section                        
+ -2 2.00000D+00 1.23754D-04        asym. or it11                        
+  0 4.00000D+00 4.39480D+02        cross-section                        
+ -2 4.00000D+00 2.47360D-04        asym. or it11                        
+  0 6.00000D+00 4.39480D+02        cross-section                        
+ -2 6.00000D+00 3.70671D-04        asym. or it11                        
+  0 8.00000D+00 4.39481D+02        cross-section                        
+ -2 8.00000D+00 4.93540D-04        asym. or it11                        
+  0 1.00000D+01 4.39481D+02        cross-section                        
+ -2 1.00000D+01 6.15820D-04        asym. or it11                        
+  0 1.20000D+01 4.39482D+02        cross-section                        
+ -2 1.20000D+01 7.37366D-04        asym. or it11                        
+  0 1.40000D+01 4.39483D+02        cross-section                        
+ -2 1.40000D+01 8.58033D-04        asym. or it11                        
+  0 1.60000D+01 4.39484D+02        cross-section                        
+ -2 1.60000D+01 9.77676D-04        asym. or it11                        
+  0 1.80000D+01 4.39485D+02        cross-section                        
+ -2 1.80000D+01 1.09615D-03        asym. or it11                        
+  0 2.00000D+01 4.39487D+02        cross-section                        
+ -2 2.00000D+01 1.21332D-03        asym. or it11                        
+  0 2.20000D+01 4.39488D+02        cross-section                        
+ -2 2.20000D+01 1.32904D-03        asym. or it11                        
+  0 2.40000D+01 4.39490D+02        cross-section                        
+ -2 2.40000D+01 1.44317D-03        asym. or it11                        
+  0 2.60000D+01 4.39492D+02        cross-section                        
+ -2 2.60000D+01 1.55558D-03        asym. or it11                        
+  0 2.80000D+01 4.39494D+02        cross-section                        
+ -2 2.80000D+01 1.66613D-03        asym. or it11                        
+  0 3.00000D+01 4.39497D+02        cross-section                        
+ -2 3.00000D+01 1.77469D-03        asym. or it11                        
+  0 3.20000D+01 4.39499D+02        cross-section                        
+ -2 3.20000D+01 1.88112D-03        asym. or it11                        
+  0 3.40000D+01 4.39502D+02        cross-section                        
+ -2 3.40000D+01 1.98531D-03        asym. or it11                        
+  0 3.60000D+01 4.39504D+02        cross-section                        
+ -2 3.60000D+01 2.08712D-03        asym. or it11                        
+  0 3.80000D+01 4.39507D+02        cross-section                        
+ -2 3.80000D+01 2.18642D-03        asym. or it11                        
+  0 4.00000D+01 4.39511D+02        cross-section                        
+ -2 4.00000D+01 2.28311D-03        asym. or it11                        
+  0 4.20000D+01 4.39514D+02        cross-section                        
+ -2 4.20000D+01 2.37707D-03        asym. or it11                        
+  0 4.40000D+01 4.39518D+02        cross-section                        
+ -2 4.40000D+01 2.46817D-03        asym. or it11                        
+  0 4.60000D+01 4.39521D+02        cross-section                        
+ -2 4.60000D+01 2.55631D-03        asym. or it11                        
+  0 4.80000D+01 4.39525D+02        cross-section                        
+ -2 4.80000D+01 2.64138D-03        asym. or it11                        
+  0 5.00000D+01 4.39530D+02        cross-section                        
+ -2 5.00000D+01 2.72328D-03        asym. or it11                        
+  0 5.20000D+01 4.39534D+02        cross-section                        
+ -2 5.20000D+01 2.80190D-03        asym. or it11                        
+  0 5.40000D+01 4.39539D+02        cross-section                        
+ -2 5.40000D+01 2.87716D-03        asym. or it11                        
+  0 5.60000D+01 4.39544D+02        cross-section                        
+ -2 5.60000D+01 2.94895D-03        asym. or it11                        
+  0 5.80000D+01 4.39549D+02        cross-section                        
+ -2 5.80000D+01 3.01719D-03        asym. or it11                        
+  0 6.00000D+01 4.39554D+02        cross-section                        
+ -2 6.00000D+01 3.08180D-03        asym. or it11                        
+  0 6.20000D+01 4.39560D+02        cross-section                        
+ -2 6.20000D+01 3.14269D-03        asym. or it11                        
+  0 6.40000D+01 4.39565D+02        cross-section                        
+ -2 6.40000D+01 3.19979D-03        asym. or it11                        
+  0 6.60000D+01 4.39571D+02        cross-section                        
+ -2 6.60000D+01 3.25302D-03        asym. or it11                        
+  0 6.80000D+01 4.39577D+02        cross-section                        
+ -2 6.80000D+01 3.30232D-03        asym. or it11                        
+  0 7.00000D+01 4.39584D+02        cross-section                        
+ -2 7.00000D+01 3.34764D-03        asym. or it11                        
+  0 7.20000D+01 4.39590D+02        cross-section                        
+ -2 7.20000D+01 3.38890D-03        asym. or it11                        
+  0 7.40000D+01 4.39597D+02        cross-section                        
+ -2 7.40000D+01 3.42605D-03        asym. or it11                        
+  0 7.60000D+01 4.39604D+02        cross-section                        
+ -2 7.60000D+01 3.45906D-03        asym. or it11                        
+  0 7.80000D+01 4.39611D+02        cross-section                        
+ -2 7.80000D+01 3.48787D-03        asym. or it11                        
+  0 8.00000D+01 4.39619D+02        cross-section                        
+ -2 8.00000D+01 3.51245D-03        asym. or it11                        
+  0 8.20000D+01 4.39626D+02        cross-section                        
+ -2 8.20000D+01 3.53276D-03        asym. or it11                        
+  0 8.40000D+01 4.39634D+02        cross-section                        
+ -2 8.40000D+01 3.54878D-03        asym. or it11                        
+  0 8.60000D+01 4.39642D+02        cross-section                        
+ -2 8.60000D+01 3.56049D-03        asym. or it11                        
+  0 8.80000D+01 4.39650D+02        cross-section                        
+ -2 8.80000D+01 3.56786D-03        asym. or it11                        
+  0 9.00000D+01 4.39658D+02        cross-section                        
+ -2 9.00000D+01 3.57089D-03        asym. or it11                        
+  0 9.20000D+01 4.39667D+02        cross-section                        
+ -2 9.20000D+01 3.56957D-03        asym. or it11                        
+  0 9.40000D+01 4.39675D+02        cross-section                        
+ -2 9.40000D+01 3.56389D-03        asym. or it11                        
+  0 9.60000D+01 4.39684D+02        cross-section                        
+ -2 9.60000D+01 3.55386D-03        asym. or it11                        
+  0 9.80000D+01 4.39693D+02        cross-section                        
+ -2 9.80000D+01 3.53950D-03        asym. or it11                        
+  0 1.00000D+02 4.39702D+02        cross-section                        
+ -2 1.00000D+02 3.52080D-03        asym. or it11                        
+  0 1.02000D+02 4.39711D+02        cross-section                        
+ -2 1.02000D+02 3.49781D-03        asym. or it11                        
+  0 1.04000D+02 4.39720D+02        cross-section                        
+ -2 1.04000D+02 3.47053D-03        asym. or it11                        
+  0 1.06000D+02 4.39729D+02        cross-section                        
+ -2 1.06000D+02 3.43900D-03        asym. or it11                        
+  0 1.08000D+02 4.39738D+02        cross-section                        
+ -2 1.08000D+02 3.40326D-03        asym. or it11                        
+  0 1.10000D+02 4.39747D+02        cross-section                        
+ -2 1.10000D+02 3.36334D-03        asym. or it11                        
+  0 1.12000D+02 4.39756D+02        cross-section                        
+ -2 1.12000D+02 3.31929D-03        asym. or it11                        
+  0 1.14000D+02 4.39765D+02        cross-section                        
+ -2 1.14000D+02 3.27118D-03        asym. or it11                        
+  0 1.16000D+02 4.39774D+02        cross-section                        
+ -2 1.16000D+02 3.21904D-03        asym. or it11                        
+  0 1.18000D+02 4.39784D+02        cross-section                        
+ -2 1.18000D+02 3.16294D-03        asym. or it11                        
+  0 1.20000D+02 4.39793D+02        cross-section                        
+ -2 1.20000D+02 3.10296D-03        asym. or it11                        
+  0 1.22000D+02 4.39802D+02        cross-section                        
+ -2 1.22000D+02 3.03915D-03        asym. or it11                        
+  0 1.24000D+02 4.39810D+02        cross-section                        
+ -2 1.24000D+02 2.97160D-03        asym. or it11                        
+  0 1.26000D+02 4.39819D+02        cross-section                        
+ -2 1.26000D+02 2.90039D-03        asym. or it11                        
+  0 1.28000D+02 4.39828D+02        cross-section                        
+ -2 1.28000D+02 2.82561D-03        asym. or it11                        
+  0 1.30000D+02 4.39836D+02        cross-section                        
+ -2 1.30000D+02 2.74734D-03        asym. or it11                        
+  0 1.32000D+02 4.39845D+02        cross-section                        
+ -2 1.32000D+02 2.66568D-03        asym. or it11                        
+  0 1.34000D+02 4.39853D+02        cross-section                        
+ -2 1.34000D+02 2.58072D-03        asym. or it11                        
+  0 1.36000D+02 4.39861D+02        cross-section                        
+ -2 1.36000D+02 2.49258D-03        asym. or it11                        
+  0 1.38000D+02 4.39869D+02        cross-section                        
+ -2 1.38000D+02 2.40136D-03        asym. or it11                        
+  0 1.40000D+02 4.39876D+02        cross-section                        
+ -2 1.40000D+02 2.30717D-03        asym. or it11                        
+  0 1.42000D+02 4.39883D+02        cross-section                        
+ -2 1.42000D+02 2.21013D-03        asym. or it11                        
+  0 1.44000D+02 4.39890D+02        cross-section                        
+ -2 1.44000D+02 2.11035D-03        asym. or it11                        
+  0 1.46000D+02 4.39897D+02        cross-section                        
+ -2 1.46000D+02 2.00796D-03        asym. or it11                        
+  0 1.48000D+02 4.39904D+02        cross-section                        
+ -2 1.48000D+02 1.90308D-03        asym. or it11                        
+  0 1.50000D+02 4.39910D+02        cross-section                        
+ -2 1.50000D+02 1.79584D-03        asym. or it11                        
+  0 1.52000D+02 4.39916D+02        cross-section                        
+ -2 1.52000D+02 1.68638D-03        asym. or it11                        
+  0 1.54000D+02 4.39921D+02        cross-section                        
+ -2 1.54000D+02 1.57483D-03        asym. or it11                        
+  0 1.56000D+02 4.39926D+02        cross-section                        
+ -2 1.56000D+02 1.46133D-03        asym. or it11                        
+  0 1.58000D+02 4.39931D+02        cross-section                        
+ -2 1.58000D+02 1.34601D-03        asym. or it11                        
+  0 1.60000D+02 4.39935D+02        cross-section                        
+ -2 1.60000D+02 1.22902D-03        asym. or it11                        
+  0 1.62000D+02 4.39939D+02        cross-section                        
+ -2 1.62000D+02 1.11051D-03        asym. or it11                        
+  0 1.64000D+02 4.39943D+02        cross-section                        
+ -2 1.64000D+02 9.90621D-04        asym. or it11                        
+  0 1.66000D+02 4.39946D+02        cross-section                        
+ -2 1.66000D+02 8.69501D-04        asym. or it11                        
+  0 1.68000D+02 4.39949D+02        cross-section                        
+ -2 1.68000D+02 7.47302D-04        asym. or it11                        
+  0 1.70000D+02 4.39951D+02        cross-section                        
+ -2 1.70000D+02 6.24175D-04        asym. or it11                        
+  0 1.72000D+02 4.39953D+02        cross-section                        
+ -2 1.72000D+02 5.00273D-04        asym. or it11                        
+  0 1.74000D+02 4.39955D+02        cross-section                        
+ -2 1.74000D+02 3.75749D-04        asym. or it11                        
+  0 1.76000D+02 4.39956D+02        cross-section                        
+ -2 1.76000D+02 2.50759D-04        asym. or it11                        
+  0 1.78000D+02 4.39956D+02        cross-section                        
+ -2 1.78000D+02 1.25458D-04        asym. or it11                        
+  0 1.80000D+02 4.39957D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      5.00000000D-03    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 4.38082D+02        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 4.38082D+02        cross-section                        
+ -2 2.00000D+00 2.95640D-04        asym. or it11                        
+  0 4.00000D+00 4.38079D+02        cross-section                        
+ -2 4.00000D+00 5.90945D-04        asym. or it11                        
+  0 6.00000D+00 4.38075D+02        cross-section                        
+ -2 6.00000D+00 8.85578D-04        asym. or it11                        
+  0 8.00000D+00 4.38070D+02        cross-section                        
+ -2 8.00000D+00 1.17920D-03        asym. or it11                        
+  0 1.00000D+01 4.38063D+02        cross-section                        
+ -2 1.00000D+01 1.47149D-03        asym. or it11                        
+  0 1.20000D+01 4.38054D+02        cross-section                        
+ -2 1.20000D+01 1.76210D-03        asym. or it11                        
+  0 1.40000D+01 4.38044D+02        cross-section                        
+ -2 1.40000D+01 2.05071D-03        asym. or it11                        
+  0 1.60000D+01 4.38033D+02        cross-section                        
+ -2 1.60000D+01 2.33697D-03        asym. or it11                        
+  0 1.80000D+01 4.38020D+02        cross-section                        
+ -2 1.80000D+01 2.62058D-03        asym. or it11                        
+  0 2.00000D+01 4.38006D+02        cross-section                        
+ -2 2.00000D+01 2.90120D-03        asym. or it11                        
+  0 2.20000D+01 4.37991D+02        cross-section                        
+ -2 2.20000D+01 3.17850D-03        asym. or it11                        
+  0 2.40000D+01 4.37974D+02        cross-section                        
+ -2 2.40000D+01 3.45217D-03        asym. or it11                        
+  0 2.60000D+01 4.37956D+02        cross-section                        
+ -2 2.60000D+01 3.72189D-03        asym. or it11                        
+  0 2.80000D+01 4.37937D+02        cross-section                        
+ -2 2.80000D+01 3.98735D-03        asym. or it11                        
+  0 3.00000D+01 4.37916D+02        cross-section                        
+ -2 3.00000D+01 4.24823D-03        asym. or it11                        
+  0 3.20000D+01 4.37895D+02        cross-section                        
+ -2 3.20000D+01 4.50423D-03        asym. or it11                        
+  0 3.40000D+01 4.37873D+02        cross-section                        
+ -2 3.40000D+01 4.75506D-03        asym. or it11                        
+  0 3.60000D+01 4.37850D+02        cross-section                        
+ -2 3.60000D+01 5.00040D-03        asym. or it11                        
+  0 3.80000D+01 4.37826D+02        cross-section                        
+ -2 3.80000D+01 5.23998D-03        asym. or it11                        
+  0 4.00000D+01 4.37801D+02        cross-section                        
+ -2 4.00000D+01 5.47350D-03        asym. or it11                        
+  0 4.20000D+01 4.37776D+02        cross-section                        
+ -2 4.20000D+01 5.70068D-03        asym. or it11                        
+  0 4.40000D+01 4.37750D+02        cross-section                        
+ -2 4.40000D+01 5.92126D-03        asym. or it11                        
+  0 4.60000D+01 4.37723D+02        cross-section                        
+ -2 4.60000D+01 6.13495D-03        asym. or it11                        
+  0 4.80000D+01 4.37696D+02        cross-section                        
+ -2 4.80000D+01 6.34151D-03        asym. or it11                        
+  0 5.00000D+01 4.37669D+02        cross-section                        
+ -2 5.00000D+01 6.54067D-03        asym. or it11                        
+  0 5.20000D+01 4.37641D+02        cross-section                        
+ -2 5.20000D+01 6.73219D-03        asym. or it11                        
+  0 5.40000D+01 4.37614D+02        cross-section                        
+ -2 5.40000D+01 6.91583D-03        asym. or it11                        
+  0 5.60000D+01 4.37586D+02        cross-section                        
+ -2 5.60000D+01 7.09135D-03        asym. or it11                        
+  0 5.80000D+01 4.37558D+02        cross-section                        
+ -2 5.80000D+01 7.25854D-03        asym. or it11                        
+  0 6.00000D+01 4.37530D+02        cross-section                        
+ -2 6.00000D+01 7.41718D-03        asym. or it11                        
+  0 6.20000D+01 4.37502D+02        cross-section                        
+ -2 6.20000D+01 7.56706D-03        asym. or it11                        
+  0 6.40000D+01 4.37475D+02        cross-section                        
+ -2 6.40000D+01 7.70799D-03        asym. or it11                        
+  0 6.60000D+01 4.37448D+02        cross-section                        
+ -2 6.60000D+01 7.83978D-03        asym. or it11                        
+  0 6.80000D+01 4.37421D+02        cross-section                        
+ -2 6.80000D+01 7.96226D-03        asym. or it11                        
+  0 7.00000D+01 4.37394D+02        cross-section                        
+ -2 7.00000D+01 8.07525D-03        asym. or it11                        
+  0 7.20000D+01 4.37368D+02        cross-section                        
+ -2 7.20000D+01 8.17860D-03        asym. or it11                        
+  0 7.40000D+01 4.37343D+02        cross-section                        
+ -2 7.40000D+01 8.27217D-03        asym. or it11                        
+  0 7.60000D+01 4.37318D+02        cross-section                        
+ -2 7.60000D+01 8.35582D-03        asym. or it11                        
+  0 7.80000D+01 4.37293D+02        cross-section                        
+ -2 7.80000D+01 8.42943D-03        asym. or it11                        
+  0 8.00000D+01 4.37270D+02        cross-section                        
+ -2 8.00000D+01 8.49289D-03        asym. or it11                        
+  0 8.20000D+01 4.37247D+02        cross-section                        
+ -2 8.20000D+01 8.54609D-03        asym. or it11                        
+  0 8.40000D+01 4.37225D+02        cross-section                        
+ -2 8.40000D+01 8.58896D-03        asym. or it11                        
+  0 8.60000D+01 4.37204D+02        cross-section                        
+ -2 8.60000D+01 8.62142D-03        asym. or it11                        
+  0 8.80000D+01 4.37183D+02        cross-section                        
+ -2 8.80000D+01 8.64340D-03        asym. or it11                        
+  0 9.00000D+01 4.37164D+02        cross-section                        
+ -2 9.00000D+01 8.65486D-03        asym. or it11                        
+  0 9.20000D+01 4.37145D+02        cross-section                        
+ -2 9.20000D+01 8.65575D-03        asym. or it11                        
+  0 9.40000D+01 4.37127D+02        cross-section                        
+ -2 9.40000D+01 8.64606D-03        asym. or it11                        
+  0 9.60000D+01 4.37110D+02        cross-section                        
+ -2 9.60000D+01 8.62578D-03        asym. or it11                        
+  0 9.80000D+01 4.37095D+02        cross-section                        
+ -2 9.80000D+01 8.59490D-03        asym. or it11                        
+  0 1.00000D+02 4.37080D+02        cross-section                        
+ -2 1.00000D+02 8.55345D-03        asym. or it11                        
+  0 1.02000D+02 4.37066D+02        cross-section                        
+ -2 1.02000D+02 8.50145D-03        asym. or it11                        
+  0 1.04000D+02 4.37053D+02        cross-section                        
+ -2 1.04000D+02 8.43894D-03        asym. or it11                        
+  0 1.06000D+02 4.37041D+02        cross-section                        
+ -2 1.06000D+02 8.36599D-03        asym. or it11                        
+  0 1.08000D+02 4.37030D+02        cross-section                        
+ -2 1.08000D+02 8.28267D-03        asym. or it11                        
+  0 1.10000D+02 4.37020D+02        cross-section                        
+ -2 1.10000D+02 8.18905D-03        asym. or it11                        
+  0 1.12000D+02 4.37011D+02        cross-section                        
+ -2 1.12000D+02 8.08524D-03        asym. or it11                        
+  0 1.14000D+02 4.37002D+02        cross-section                        
+ -2 1.14000D+02 7.97135D-03        asym. or it11                        
+  0 1.16000D+02 4.36995D+02        cross-section                        
+ -2 1.16000D+02 7.84750D-03        asym. or it11                        
+  0 1.18000D+02 4.36988D+02        cross-section                        
+ -2 1.18000D+02 7.71383D-03        asym. or it11                        
+  0 1.20000D+02 4.36983D+02        cross-section                        
+ -2 1.20000D+02 7.57049D-03        asym. or it11                        
+  0 1.22000D+02 4.36978D+02        cross-section                        
+ -2 1.22000D+02 7.41765D-03        asym. or it11                        
+  0 1.24000D+02 4.36973D+02        cross-section                        
+ -2 1.24000D+02 7.25549D-03        asym. or it11                        
+  0 1.26000D+02 4.36970D+02        cross-section                        
+ -2 1.26000D+02 7.08418D-03        asym. or it11                        
+  0 1.28000D+02 4.36967D+02        cross-section                        
+ -2 1.28000D+02 6.90394D-03        asym. or it11                        
+  0 1.30000D+02 4.36965D+02        cross-section                        
+ -2 1.30000D+02 6.71499D-03        asym. or it11                        
+  0 1.32000D+02 4.36963D+02        cross-section                        
+ -2 1.32000D+02 6.51754D-03        asym. or it11                        
+  0 1.34000D+02 4.36962D+02        cross-section                        
+ -2 1.34000D+02 6.31184D-03        asym. or it11                        
+  0 1.36000D+02 4.36962D+02        cross-section                        
+ -2 1.36000D+02 6.09814D-03        asym. or it11                        
+  0 1.38000D+02 4.36962D+02        cross-section                        
+ -2 1.38000D+02 5.87670D-03        asym. or it11                        
+  0 1.40000D+02 4.36962D+02        cross-section                        
+ -2 1.40000D+02 5.64779D-03        asym. or it11                        
+  0 1.42000D+02 4.36963D+02        cross-section                        
+ -2 1.42000D+02 5.41169D-03        asym. or it11                        
+  0 1.44000D+02 4.36964D+02        cross-section                        
+ -2 1.44000D+02 5.16871D-03        asym. or it11                        
+  0 1.46000D+02 4.36965D+02        cross-section                        
+ -2 1.46000D+02 4.91913D-03        asym. or it11                        
+  0 1.48000D+02 4.36966D+02        cross-section                        
+ -2 1.48000D+02 4.66328D-03        asym. or it11                        
+  0 1.50000D+02 4.36968D+02        cross-section                        
+ -2 1.50000D+02 4.40148D-03        asym. or it11                        
+  0 1.52000D+02 4.36969D+02        cross-section                        
+ -2 1.52000D+02 4.13404D-03        asym. or it11                        
+  0 1.54000D+02 4.36971D+02        cross-section                        
+ -2 1.54000D+02 3.86132D-03        asym. or it11                        
+  0 1.56000D+02 4.36973D+02        cross-section                        
+ -2 1.56000D+02 3.58366D-03        asym. or it11                        
+  0 1.58000D+02 4.36975D+02        cross-section                        
+ -2 1.58000D+02 3.30141D-03        asym. or it11                        
+  0 1.60000D+02 4.36977D+02        cross-section                        
+ -2 1.60000D+02 3.01493D-03        asym. or it11                        
+  0 1.62000D+02 4.36979D+02        cross-section                        
+ -2 1.62000D+02 2.72458D-03        asym. or it11                        
+  0 1.64000D+02 4.36980D+02        cross-section                        
+ -2 1.64000D+02 2.43073D-03        asym. or it11                        
+  0 1.66000D+02 4.36982D+02        cross-section                        
+ -2 1.66000D+02 2.13377D-03        asym. or it11                        
+  0 1.68000D+02 4.36983D+02        cross-section                        
+ -2 1.68000D+02 1.83406D-03        asym. or it11                        
+  0 1.70000D+02 4.36984D+02        cross-section                        
+ -2 1.70000D+02 1.53200D-03        asym. or it11                        
+  0 1.72000D+02 4.36985D+02        cross-section                        
+ -2 1.72000D+02 1.22797D-03        asym. or it11                        
+  0 1.74000D+02 4.36986D+02        cross-section                        
+ -2 1.74000D+02 9.22360D-04        asym. or it11                        
+  0 1.76000D+02 4.36987D+02        cross-section                        
+ -2 1.76000D+02 6.15567D-04        asym. or it11                        
+  0 1.78000D+02 4.36987D+02        cross-section                        
+ -2 1.78000D+02 3.07981D-04        asym. or it11                        
+  0 1.80000D+02 4.36987D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      1.00000000D-02    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 4.39144D+02        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 4.39139D+02        cross-section                        
+ -2 2.00000D+00 5.46958D-04        asym. or it11                        
+  0 4.00000D+00 4.39127D+02        cross-section                        
+ -2 4.00000D+00 1.09336D-03        asym. or it11                        
+  0 6.00000D+00 4.39107D+02        cross-section                        
+ -2 6.00000D+00 1.63867D-03        asym. or it11                        
+  0 8.00000D+00 4.39078D+02        cross-section                        
+ -2 8.00000D+00 2.18232D-03        asym. or it11                        
+  0 1.00000D+01 4.39041D+02        cross-section                        
+ -2 1.00000D+01 2.72376D-03        asym. or it11                        
+  0 1.20000D+01 4.38997D+02        cross-section                        
+ -2 1.20000D+01 3.26244D-03        asym. or it11                        
+  0 1.40000D+01 4.38944D+02        cross-section                        
+ -2 1.40000D+01 3.79782D-03        asym. or it11                        
+  0 1.60000D+01 4.38884D+02        cross-section                        
+ -2 1.60000D+01 4.32935D-03        asym. or it11                        
+  0 1.80000D+01 4.38817D+02        cross-section                        
+ -2 1.80000D+01 4.85646D-03        asym. or it11                        
+  0 2.00000D+01 4.38742D+02        cross-section                        
+ -2 2.00000D+01 5.37862D-03        asym. or it11                        
+  0 2.20000D+01 4.38660D+02        cross-section                        
+ -2 2.20000D+01 5.89527D-03        asym. or it11                        
+  0 2.40000D+01 4.38571D+02        cross-section                        
+ -2 2.40000D+01 6.40588D-03        asym. or it11                        
+  0 2.60000D+01 4.38475D+02        cross-section                        
+ -2 2.60000D+01 6.90988D-03        asym. or it11                        
+  0 2.80000D+01 4.38373D+02        cross-section                        
+ -2 2.80000D+01 7.40675D-03        asym. or it11                        
+  0 3.00000D+01 4.38265D+02        cross-section                        
+ -2 3.00000D+01 7.89594D-03        asym. or it11                        
+  0 3.20000D+01 4.38151D+02        cross-section                        
+ -2 3.20000D+01 8.37690D-03        asym. or it11                        
+  0 3.40000D+01 4.38032D+02        cross-section                        
+ -2 3.40000D+01 8.84911D-03        asym. or it11                        
+  0 3.60000D+01 4.37907D+02        cross-section                        
+ -2 3.60000D+01 9.31202D-03        asym. or it11                        
+  0 3.80000D+01 4.37778D+02        cross-section                        
+ -2 3.80000D+01 9.76510D-03        asym. or it11                        
+  0 4.00000D+01 4.37644D+02        cross-section                        
+ -2 4.00000D+01 1.02078D-02        asym. or it11                        
+  0 4.20000D+01 4.37506D+02        cross-section                        
+ -2 4.20000D+01 1.06397D-02        asym. or it11                        
+  0 4.40000D+01 4.37364D+02        cross-section                        
+ -2 4.40000D+01 1.10602D-02        asym. or it11                        
+  0 4.60000D+01 4.37218D+02        cross-section                        
+ -2 4.60000D+01 1.14687D-02        asym. or it11                        
+  0 4.80000D+01 4.37070D+02        cross-section                        
+ -2 4.80000D+01 1.18649D-02        asym. or it11                        
+  0 5.00000D+01 4.36919D+02        cross-section                        
+ -2 5.00000D+01 1.22482D-02        asym. or it11                        
+  0 5.20000D+01 4.36765D+02        cross-section                        
+ -2 5.20000D+01 1.26180D-02        asym. or it11                        
+  0 5.40000D+01 4.36609D+02        cross-section                        
+ -2 5.40000D+01 1.29740D-02        asym. or it11                        
+  0 5.60000D+01 4.36452D+02        cross-section                        
+ -2 5.60000D+01 1.33157D-02        asym. or it11                        
+  0 5.80000D+01 4.36294D+02        cross-section                        
+ -2 5.80000D+01 1.36425D-02        asym. or it11                        
+  0 6.00000D+01 4.36134D+02        cross-section                        
+ -2 6.00000D+01 1.39540D-02        asym. or it11                        
+  0 6.20000D+01 4.35974D+02        cross-section                        
+ -2 6.20000D+01 1.42499D-02        asym. or it11                        
+  0 6.40000D+01 4.35814D+02        cross-section                        
+ -2 6.40000D+01 1.45296D-02        asym. or it11                        
+  0 6.60000D+01 4.35654D+02        cross-section                        
+ -2 6.60000D+01 1.47928D-02        asym. or it11                        
+  0 6.80000D+01 4.35495D+02        cross-section                        
+ -2 6.80000D+01 1.50390D-02        asym. or it11                        
+  0 7.00000D+01 4.35336D+02        cross-section                        
+ -2 7.00000D+01 1.52680D-02        asym. or it11                        
+  0 7.20000D+01 4.35179D+02        cross-section                        
+ -2 7.20000D+01 1.54792D-02        asym. or it11                        
+  0 7.40000D+01 4.35023D+02        cross-section                        
+ -2 7.40000D+01 1.56723D-02        asym. or it11                        
+  0 7.60000D+01 4.34869D+02        cross-section                        
+ -2 7.60000D+01 1.58471D-02        asym. or it11                        
+  0 7.80000D+01 4.34717D+02        cross-section                        
+ -2 7.80000D+01 1.60033D-02        asym. or it11                        
+  0 8.00000D+01 4.34567D+02        cross-section                        
+ -2 8.00000D+01 1.61404D-02        asym. or it11                        
+  0 8.20000D+01 4.34420D+02        cross-section                        
+ -2 8.20000D+01 1.62583D-02        asym. or it11                        
+  0 8.40000D+01 4.34275D+02        cross-section                        
+ -2 8.40000D+01 1.63567D-02        asym. or it11                        
+  0 8.60000D+01 4.34134D+02        cross-section                        
+ -2 8.60000D+01 1.64353D-02        asym. or it11                        
+  0 8.80000D+01 4.33996D+02        cross-section                        
+ -2 8.80000D+01 1.64941D-02        asym. or it11                        
+  0 9.00000D+01 4.33861D+02        cross-section                        
+ -2 9.00000D+01 1.65327D-02        asym. or it11                        
+  0 9.20000D+01 4.33730D+02        cross-section                        
+ -2 9.20000D+01 1.65511D-02        asym. or it11                        
+  0 9.40000D+01 4.33602D+02        cross-section                        
+ -2 9.40000D+01 1.65491D-02        asym. or it11                        
+  0 9.60000D+01 4.33479D+02        cross-section                        
+ -2 9.60000D+01 1.65266D-02        asym. or it11                        
+  0 9.80000D+01 4.33359D+02        cross-section                        
+ -2 9.80000D+01 1.64835D-02        asym. or it11                        
+  0 1.00000D+02 4.33243D+02        cross-section                        
+ -2 1.00000D+02 1.64199D-02        asym. or it11                        
+  0 1.02000D+02 4.33132D+02        cross-section                        
+ -2 1.02000D+02 1.63356D-02        asym. or it11                        
+  0 1.04000D+02 4.33025D+02        cross-section                        
+ -2 1.04000D+02 1.62308D-02        asym. or it11                        
+  0 1.06000D+02 4.32922D+02        cross-section                        
+ -2 1.06000D+02 1.61053D-02        asym. or it11                        
+  0 1.08000D+02 4.32824D+02        cross-section                        
+ -2 1.08000D+02 1.59594D-02        asym. or it11                        
+  0 1.10000D+02 4.32729D+02        cross-section                        
+ -2 1.10000D+02 1.57931D-02        asym. or it11                        
+  0 1.12000D+02 4.32640D+02        cross-section                        
+ -2 1.12000D+02 1.56065D-02        asym. or it11                        
+  0 1.14000D+02 4.32554D+02        cross-section                        
+ -2 1.14000D+02 1.53998D-02        asym. or it11                        
+  0 1.16000D+02 4.32473D+02        cross-section                        
+ -2 1.16000D+02 1.51732D-02        asym. or it11                        
+  0 1.18000D+02 4.32396D+02        cross-section                        
+ -2 1.18000D+02 1.49269D-02        asym. or it11                        
+  0 1.20000D+02 4.32323D+02        cross-section                        
+ -2 1.20000D+02 1.46612D-02        asym. or it11                        
+  0 1.22000D+02 4.32254D+02        cross-section                        
+ -2 1.22000D+02 1.43763D-02        asym. or it11                        
+  0 1.24000D+02 4.32190D+02        cross-section                        
+ -2 1.24000D+02 1.40725D-02        asym. or it11                        
+  0 1.26000D+02 4.32129D+02        cross-section                        
+ -2 1.26000D+02 1.37503D-02        asym. or it11                        
+  0 1.28000D+02 4.32072D+02        cross-section                        
+ -2 1.28000D+02 1.34099D-02        asym. or it11                        
+  0 1.30000D+02 4.32019D+02        cross-section                        
+ -2 1.30000D+02 1.30518D-02        asym. or it11                        
+  0 1.32000D+02 4.31969D+02        cross-section                        
+ -2 1.32000D+02 1.26763D-02        asym. or it11                        
+  0 1.34000D+02 4.31923D+02        cross-section                        
+ -2 1.34000D+02 1.22840D-02        asym. or it11                        
+  0 1.36000D+02 4.31880D+02        cross-section                        
+ -2 1.36000D+02 1.18754D-02        asym. or it11                        
+  0 1.38000D+02 4.31841D+02        cross-section                        
+ -2 1.38000D+02 1.14508D-02        asym. or it11                        
+  0 1.40000D+02 4.31804D+02        cross-section                        
+ -2 1.40000D+02 1.10109D-02        asym. or it11                        
+  0 1.42000D+02 4.31771D+02        cross-section                        
+ -2 1.42000D+02 1.05562D-02        asym. or it11                        
+  0 1.44000D+02 4.31740D+02        cross-section                        
+ -2 1.44000D+02 1.00874D-02        asym. or it11                        
+  0 1.46000D+02 4.31712D+02        cross-section                        
+ -2 1.46000D+02 9.60490D-03        asym. or it11                        
+  0 1.48000D+02 4.31686D+02        cross-section                        
+ -2 1.48000D+02 9.10946D-03        asym. or it11                        
+  0 1.50000D+02 4.31663D+02        cross-section                        
+ -2 1.50000D+02 8.60171D-03        asym. or it11                        
+  0 1.52000D+02 4.31642D+02        cross-section                        
+ -2 1.52000D+02 8.08230D-03        asym. or it11                        
+  0 1.54000D+02 4.31623D+02        cross-section                        
+ -2 1.54000D+02 7.55193D-03        asym. or it11                        
+  0 1.56000D+02 4.31606D+02        cross-section                        
+ -2 1.56000D+02 7.01131D-03        asym. or it11                        
+  0 1.58000D+02 4.31591D+02        cross-section                        
+ -2 1.58000D+02 6.46115D-03        asym. or it11                        
+  0 1.60000D+02 4.31578D+02        cross-section                        
+ -2 1.60000D+02 5.90219D-03        asym. or it11                        
+  0 1.62000D+02 4.31566D+02        cross-section                        
+ -2 1.62000D+02 5.33519D-03        asym. or it11                        
+  0 1.64000D+02 4.31556D+02        cross-section                        
+ -2 1.64000D+02 4.76092D-03        asym. or it11                        
+  0 1.66000D+02 4.31547D+02        cross-section                        
+ -2 1.66000D+02 4.18014D-03        asym. or it11                        
+  0 1.68000D+02 4.31540D+02        cross-section                        
+ -2 1.68000D+02 3.59365D-03        asym. or it11                        
+  0 1.70000D+02 4.31534D+02        cross-section                        
+ -2 1.70000D+02 3.00225D-03        asym. or it11                        
+  0 1.72000D+02 4.31529D+02        cross-section                        
+ -2 1.72000D+02 2.40675D-03        asym. or it11                        
+  0 1.74000D+02 4.31525D+02        cross-section                        
+ -2 1.74000D+02 1.80795D-03        asym. or it11                        
+  0 1.76000D+02 4.31522D+02        cross-section                        
+ -2 1.76000D+02 1.20668D-03        asym. or it11                        
+  0 1.78000D+02 4.31521D+02        cross-section                        
+ -2 1.78000D+02 6.03752D-04        asym. or it11                        
+  0 1.80000D+02 4.31520D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      2.00000000D-02    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 4.49733D+02        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 4.49717D+02        cross-section                        
+ -2 2.00000D+00 9.13033D-04        asym. or it11                        
+  0 4.00000D+00 4.49667D+02        cross-section                        
+ -2 4.00000D+00 1.82548D-03        asym. or it11                        
+  0 6.00000D+00 4.49585D+02        cross-section                        
+ -2 6.00000D+00 2.73676D-03        asym. or it11                        
+  0 8.00000D+00 4.49470D+02        cross-section                        
+ -2 8.00000D+00 3.64628D-03        asym. or it11                        
+  0 1.00000D+01 4.49322D+02        cross-section                        
+ -2 1.00000D+01 4.55344D-03        asym. or it11                        
+  0 1.20000D+01 4.49143D+02        cross-section                        
+ -2 1.20000D+01 5.45764D-03        asym. or it11                        
+  0 1.40000D+01 4.48932D+02        cross-section                        
+ -2 1.40000D+01 6.35826D-03        asym. or it11                        
+  0 1.60000D+01 4.48691D+02        cross-section                        
+ -2 1.60000D+01 7.25469D-03        asym. or it11                        
+  0 1.80000D+01 4.48419D+02        cross-section                        
+ -2 1.80000D+01 8.14629D-03        asym. or it11                        
+  0 2.00000D+01 4.48118D+02        cross-section                        
+ -2 2.00000D+01 9.03239D-03        asym. or it11                        
+  0 2.20000D+01 4.47788D+02        cross-section                        
+ -2 2.20000D+01 9.91234D-03        asym. or it11                        
+  0 2.40000D+01 4.47430D+02        cross-section                        
+ -2 2.40000D+01 1.07854D-02        asym. or it11                        
+  0 2.60000D+01 4.47046D+02        cross-section                        
+ -2 2.60000D+01 1.16510D-02        asym. or it11                        
+  0 2.80000D+01 4.46636D+02        cross-section                        
+ -2 2.80000D+01 1.25083D-02        asym. or it11                        
+  0 3.00000D+01 4.46201D+02        cross-section                        
+ -2 3.00000D+01 1.33566D-02        asym. or it11                        
+  0 3.20000D+01 4.45743D+02        cross-section                        
+ -2 3.20000D+01 1.41951D-02        asym. or it11                        
+  0 3.40000D+01 4.45263D+02        cross-section                        
+ -2 3.40000D+01 1.50230D-02        asym. or it11                        
+  0 3.60000D+01 4.44761D+02        cross-section                        
+ -2 3.60000D+01 1.58395D-02        asym. or it11                        
+  0 3.80000D+01 4.44240D+02        cross-section                        
+ -2 3.80000D+01 1.66439D-02        asym. or it11                        
+  0 4.00000D+01 4.43700D+02        cross-section                        
+ -2 4.00000D+01 1.74352D-02        asym. or it11                        
+  0 4.20000D+01 4.43144D+02        cross-section                        
+ -2 4.20000D+01 1.82125D-02        asym. or it11                        
+  0 4.40000D+01 4.42571D+02        cross-section                        
+ -2 4.40000D+01 1.89751D-02        asym. or it11                        
+  0 4.60000D+01 4.41985D+02        cross-section                        
+ -2 4.60000D+01 1.97218D-02        asym. or it11                        
+  0 4.80000D+01 4.41386D+02        cross-section                        
+ -2 4.80000D+01 2.04519D-02        asym. or it11                        
+  0 5.00000D+01 4.40776D+02        cross-section                        
+ -2 5.00000D+01 2.11644D-02        asym. or it11                        
+  0 5.20000D+01 4.40155D+02        cross-section                        
+ -2 5.20000D+01 2.18582D-02        asym. or it11                        
+  0 5.40000D+01 4.39527D+02        cross-section                        
+ -2 5.40000D+01 2.25325D-02        asym. or it11                        
+  0 5.60000D+01 4.38892D+02        cross-section                        
+ -2 5.60000D+01 2.31862D-02        asym. or it11                        
+  0 5.80000D+01 4.38251D+02        cross-section                        
+ -2 5.80000D+01 2.38182D-02        asym. or it11                        
+  0 6.00000D+01 4.37606D+02        cross-section                        
+ -2 6.00000D+01 2.44277D-02        asym. or it11                        
+  0 6.20000D+01 4.36959D+02        cross-section                        
+ -2 6.20000D+01 2.50135D-02        asym. or it11                        
+  0 6.40000D+01 4.36311D+02        cross-section                        
+ -2 6.40000D+01 2.55747D-02        asym. or it11                        
+  0 6.60000D+01 4.35663D+02        cross-section                        
+ -2 6.60000D+01 2.61101D-02        asym. or it11                        
+  0 6.80000D+01 4.35017D+02        cross-section                        
+ -2 6.80000D+01 2.66189D-02        asym. or it11                        
+  0 7.00000D+01 4.34374D+02        cross-section                        
+ -2 7.00000D+01 2.70999D-02        asym. or it11                        
+  0 7.20000D+01 4.33734D+02        cross-section                        
+ -2 7.20000D+01 2.75522D-02        asym. or it11                        
+  0 7.40000D+01 4.33101D+02        cross-section                        
+ -2 7.40000D+01 2.79748D-02        asym. or it11                        
+  0 7.60000D+01 4.32474D+02        cross-section                        
+ -2 7.60000D+01 2.83667D-02        asym. or it11                        
+  0 7.80000D+01 4.31855D+02        cross-section                        
+ -2 7.80000D+01 2.87270D-02        asym. or it11                        
+  0 8.00000D+01 4.31244D+02        cross-section                        
+ -2 8.00000D+01 2.90546D-02        asym. or it11                        
+  0 8.20000D+01 4.30644D+02        cross-section                        
+ -2 8.20000D+01 2.93489D-02        asym. or it11                        
+  0 8.40000D+01 4.30054D+02        cross-section                        
+ -2 8.40000D+01 2.96088D-02        asym. or it11                        
+  0 8.60000D+01 4.29476D+02        cross-section                        
+ -2 8.60000D+01 2.98335D-02        asym. or it11                        
+  0 8.80000D+01 4.28911D+02        cross-section                        
+ -2 8.80000D+01 3.00223D-02        asym. or it11                        
+  0 9.00000D+01 4.28359D+02        cross-section                        
+ -2 9.00000D+01 3.01744D-02        asym. or it11                        
+  0 9.20000D+01 4.27821D+02        cross-section                        
+ -2 9.20000D+01 3.02891D-02        asym. or it11                        
+  0 9.40000D+01 4.27297D+02        cross-section                        
+ -2 9.40000D+01 3.03659D-02        asym. or it11                        
+  0 9.60000D+01 4.26789D+02        cross-section                        
+ -2 9.60000D+01 3.04040D-02        asym. or it11                        
+  0 9.80000D+01 4.26297D+02        cross-section                        
+ -2 9.80000D+01 3.04030D-02        asym. or it11                        
+  0 1.00000D+02 4.25820D+02        cross-section                        
+ -2 1.00000D+02 3.03625D-02        asym. or it11                        
+  0 1.02000D+02 4.25360D+02        cross-section                        
+ -2 1.02000D+02 3.02819D-02        asym. or it11                        
+  0 1.04000D+02 4.24917D+02        cross-section                        
+ -2 1.04000D+02 3.01611D-02        asym. or it11                        
+  0 1.06000D+02 4.24491D+02        cross-section                        
+ -2 1.06000D+02 2.99997D-02        asym. or it11                        
+  0 1.08000D+02 4.24081D+02        cross-section                        
+ -2 1.08000D+02 2.97975D-02        asym. or it11                        
+  0 1.10000D+02 4.23689D+02        cross-section                        
+ -2 1.10000D+02 2.95545D-02        asym. or it11                        
+  0 1.12000D+02 4.23315D+02        cross-section                        
+ -2 1.12000D+02 2.92706D-02        asym. or it11                        
+  0 1.14000D+02 4.22957D+02        cross-section                        
+ -2 1.14000D+02 2.89458D-02        asym. or it11                        
+  0 1.16000D+02 4.22617D+02        cross-section                        
+ -2 1.16000D+02 2.85803D-02        asym. or it11                        
+  0 1.18000D+02 4.22293D+02        cross-section                        
+ -2 1.18000D+02 2.81742D-02        asym. or it11                        
+  0 1.20000D+02 4.21987D+02        cross-section                        
+ -2 1.20000D+02 2.77279D-02        asym. or it11                        
+  0 1.22000D+02 4.21696D+02        cross-section                        
+ -2 1.22000D+02 2.72417D-02        asym. or it11                        
+  0 1.24000D+02 4.21422D+02        cross-section                        
+ -2 1.24000D+02 2.67160D-02        asym. or it11                        
+  0 1.26000D+02 4.21164D+02        cross-section                        
+ -2 1.26000D+02 2.61513D-02        asym. or it11                        
+  0 1.28000D+02 4.20922D+02        cross-section                        
+ -2 1.28000D+02 2.55483D-02        asym. or it11                        
+  0 1.30000D+02 4.20694D+02        cross-section                        
+ -2 1.30000D+02 2.49077D-02        asym. or it11                        
+  0 1.32000D+02 4.20481D+02        cross-section                        
+ -2 1.32000D+02 2.42301D-02        asym. or it11                        
+  0 1.34000D+02 4.20283D+02        cross-section                        
+ -2 1.34000D+02 2.35165D-02        asym. or it11                        
+  0 1.36000D+02 4.20098D+02        cross-section                        
+ -2 1.36000D+02 2.27676D-02        asym. or it11                        
+  0 1.38000D+02 4.19926D+02        cross-section                        
+ -2 1.38000D+02 2.19846D-02        asym. or it11                        
+  0 1.40000D+02 4.19767D+02        cross-section                        
+ -2 1.40000D+02 2.11684D-02        asym. or it11                        
+  0 1.42000D+02 4.19620D+02        cross-section                        
+ -2 1.42000D+02 2.03201D-02        asym. or it11                        
+  0 1.44000D+02 4.19484D+02        cross-section                        
+ -2 1.44000D+02 1.94410D-02        asym. or it11                        
+  0 1.46000D+02 4.19360D+02        cross-section                        
+ -2 1.46000D+02 1.85323D-02        asym. or it11                        
+  0 1.48000D+02 4.19246D+02        cross-section                        
+ -2 1.48000D+02 1.75952D-02        asym. or it11                        
+  0 1.50000D+02 4.19142D+02        cross-section                        
+ -2 1.50000D+02 1.66312D-02        asym. or it11                        
+  0 1.52000D+02 4.19048D+02        cross-section                        
+ -2 1.52000D+02 1.56416D-02        asym. or it11                        
+  0 1.54000D+02 4.18963D+02        cross-section                        
+ -2 1.54000D+02 1.46280D-02        asym. or it11                        
+  0 1.56000D+02 4.18886D+02        cross-section                        
+ -2 1.56000D+02 1.35918D-02        asym. or it11                        
+  0 1.58000D+02 4.18817D+02        cross-section                        
+ -2 1.58000D+02 1.25345D-02        asym. or it11                        
+  0 1.60000D+02 4.18756D+02        cross-section                        
+ -2 1.60000D+02 1.14579D-02        asym. or it11                        
+  0 1.62000D+02 4.18702D+02        cross-section                        
+ -2 1.62000D+02 1.03635D-02        asym. or it11                        
+  0 1.64000D+02 4.18655D+02        cross-section                        
+ -2 1.64000D+02 9.25304D-03        asym. or it11                        
+  0 1.66000D+02 4.18614D+02        cross-section                        
+ -2 1.66000D+02 8.12818D-03        asym. or it11                        
+  0 1.68000D+02 4.18579D+02        cross-section                        
+ -2 1.68000D+02 6.99068D-03        asym. or it11                        
+  0 1.70000D+02 4.18550D+02        cross-section                        
+ -2 1.70000D+02 5.84230D-03        asym. or it11                        
+  0 1.72000D+02 4.18527D+02        cross-section                        
+ -2 1.72000D+02 4.68481D-03        asym. or it11                        
+  0 1.74000D+02 4.18509D+02        cross-section                        
+ -2 1.74000D+02 3.52001D-03        asym. or it11                        
+  0 1.76000D+02 4.18496D+02        cross-section                        
+ -2 1.76000D+02 2.34973D-03        asym. or it11                        
+  0 1.78000D+02 4.18488D+02        cross-section                        
+ -2 1.78000D+02 1.17578D-03        asym. or it11                        
+  0 1.80000D+02 4.18486D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      5.00000000D-02    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 5.25506D+02        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 5.25418D+02        cross-section                        
+ -2 2.00000D+00 1.04453D-03        asym. or it11                        
+  0 4.00000D+00 5.25156D+02        cross-section                        
+ -2 4.00000D+00 2.09050D-03        asym. or it11                        
+  0 6.00000D+00 5.24719D+02        cross-section                        
+ -2 6.00000D+00 3.13935D-03        asym. or it11                        
+  0 8.00000D+00 5.24110D+02        cross-section                        
+ -2 8.00000D+00 4.19249D-03        asym. or it11                        
+  0 1.00000D+01 5.23330D+02        cross-section                        
+ -2 1.00000D+01 5.25132D-03        asym. or it11                        
+  0 1.20000D+01 5.22380D+02        cross-section                        
+ -2 1.20000D+01 6.31719D-03        asym. or it11                        
+  0 1.40000D+01 5.21265D+02        cross-section                        
+ -2 1.40000D+01 7.39140D-03        asym. or it11                        
+  0 1.60000D+01 5.19987D+02        cross-section                        
+ -2 1.60000D+01 8.47523D-03        asym. or it11                        
+  0 1.80000D+01 5.18550D+02        cross-section                        
+ -2 1.80000D+01 9.56987D-03        asym. or it11                        
+  0 2.00000D+01 5.16957D+02        cross-section                        
+ -2 2.00000D+01 1.06764D-02        asym. or it11                        
+  0 2.20000D+01 5.15215D+02        cross-section                        
+ -2 2.20000D+01 1.17960D-02        asym. or it11                        
+  0 2.40000D+01 5.13326D+02        cross-section                        
+ -2 2.40000D+01 1.29294D-02        asym. or it11                        
+  0 2.60000D+01 5.11298D+02        cross-section                        
+ -2 2.60000D+01 1.40777D-02        asym. or it11                        
+  0 2.80000D+01 5.09135D+02        cross-section                        
+ -2 2.80000D+01 1.52414D-02        asym. or it11                        
+  0 3.00000D+01 5.06843D+02        cross-section                        
+ -2 3.00000D+01 1.64213D-02        asym. or it11                        
+  0 3.20000D+01 5.04430D+02        cross-section                        
+ -2 3.20000D+01 1.76178D-02        asym. or it11                        
+  0 3.40000D+01 5.01901D+02        cross-section                        
+ -2 3.40000D+01 1.88312D-02        asym. or it11                        
+  0 3.60000D+01 4.99264D+02        cross-section                        
+ -2 3.60000D+01 2.00618D-02        asym. or it11                        
+  0 3.80000D+01 4.96525D+02        cross-section                        
+ -2 3.80000D+01 2.13095D-02        asym. or it11                        
+  0 4.00000D+01 4.93693D+02        cross-section                        
+ -2 4.00000D+01 2.25741D-02        asym. or it11                        
+  0 4.20000D+01 4.90774D+02        cross-section                        
+ -2 4.20000D+01 2.38555D-02        asym. or it11                        
+  0 4.40000D+01 4.87777D+02        cross-section                        
+ -2 4.40000D+01 2.51529D-02        asym. or it11                        
+  0 4.60000D+01 4.84710D+02        cross-section                        
+ -2 4.60000D+01 2.64656D-02        asym. or it11                        
+  0 4.80000D+01 4.81579D+02        cross-section                        
+ -2 4.80000D+01 2.77928D-02        asym. or it11                        
+  0 5.00000D+01 4.78394D+02        cross-section                        
+ -2 5.00000D+01 2.91331D-02        asym. or it11                        
+  0 5.20000D+01 4.75162D+02        cross-section                        
+ -2 5.20000D+01 3.04851D-02        asym. or it11                        
+  0 5.40000D+01 4.71892D+02        cross-section                        
+ -2 5.40000D+01 3.18473D-02        asym. or it11                        
+  0 5.60000D+01 4.68591D+02        cross-section                        
+ -2 5.60000D+01 3.32175D-02        asym. or it11                        
+  0 5.80000D+01 4.65267D+02        cross-section                        
+ -2 5.80000D+01 3.45938D-02        asym. or it11                        
+  0 6.00000D+01 4.61929D+02        cross-section                        
+ -2 6.00000D+01 3.59736D-02        asym. or it11                        
+  0 6.20000D+01 4.58584D+02        cross-section                        
+ -2 6.20000D+01 3.73543D-02        asym. or it11                        
+  0 6.40000D+01 4.55239D+02        cross-section                        
+ -2 6.40000D+01 3.87330D-02        asym. or it11                        
+  0 6.60000D+01 4.51903D+02        cross-section                        
+ -2 6.60000D+01 4.01064D-02        asym. or it11                        
+  0 6.80000D+01 4.48582D+02        cross-section                        
+ -2 6.80000D+01 4.14711D-02        asym. or it11                        
+  0 7.00000D+01 4.45283D+02        cross-section                        
+ -2 7.00000D+01 4.28235D-02        asym. or it11                        
+  0 7.20000D+01 4.42014D+02        cross-section                        
+ -2 7.20000D+01 4.41596D-02        asym. or it11                        
+  0 7.40000D+01 4.38781D+02        cross-section                        
+ -2 7.40000D+01 4.54752D-02        asym. or it11                        
+  0 7.60000D+01 4.35589D+02        cross-section                        
+ -2 7.60000D+01 4.67662D-02        asym. or it11                        
+  0 7.80000D+01 4.32446D+02        cross-section                        
+ -2 7.80000D+01 4.80278D-02        asym. or it11                        
+  0 8.00000D+01 4.29357D+02        cross-section                        
+ -2 8.00000D+01 4.92554D-02        asym. or it11                        
+  0 8.20000D+01 4.26326D+02        cross-section                        
+ -2 8.20000D+01 5.04443D-02        asym. or it11                        
+  0 8.40000D+01 4.23360D+02        cross-section                        
+ -2 8.40000D+01 5.15893D-02        asym. or it11                        
+  0 8.60000D+01 4.20462D+02        cross-section                        
+ -2 8.60000D+01 5.26855D-02        asym. or it11                        
+  0 8.80000D+01 4.17637D+02        cross-section                        
+ -2 8.80000D+01 5.37278D-02        asym. or it11                        
+  0 9.00000D+01 4.14888D+02        cross-section                        
+ -2 9.00000D+01 5.47110D-02        asym. or it11                        
+  0 9.20000D+01 4.12220D+02        cross-section                        
+ -2 9.20000D+01 5.56299D-02        asym. or it11                        
+  0 9.40000D+01 4.09635D+02        cross-section                        
+ -2 9.40000D+01 5.64794D-02        asym. or it11                        
+  0 9.60000D+01 4.07136D+02        cross-section                        
+ -2 9.60000D+01 5.72545D-02        asym. or it11                        
+  0 9.80000D+01 4.04725D+02        cross-section                        
+ -2 9.80000D+01 5.79503D-02        asym. or it11                        
+  0 1.00000D+02 4.02404D+02        cross-section                        
+ -2 1.00000D+02 5.85620D-02        asym. or it11                        
+  0 1.02000D+02 4.00175D+02        cross-section                        
+ -2 1.02000D+02 5.90850D-02        asym. or it11                        
+  0 1.04000D+02 3.98039D+02        cross-section                        
+ -2 1.04000D+02 5.95148D-02        asym. or it11                        
+  0 1.06000D+02 3.95996D+02        cross-section                        
+ -2 1.06000D+02 5.98474D-02        asym. or it11                        
+  0 1.08000D+02 3.94047D+02        cross-section                        
+ -2 1.08000D+02 6.00788D-02        asym. or it11                        
+  0 1.10000D+02 3.92191D+02        cross-section                        
+ -2 1.10000D+02 6.02056D-02        asym. or it11                        
+  0 1.12000D+02 3.90430D+02        cross-section                        
+ -2 1.12000D+02 6.02245D-02        asym. or it11                        
+  0 1.14000D+02 3.88761D+02        cross-section                        
+ -2 1.14000D+02 6.01326D-02        asym. or it11                        
+  0 1.16000D+02 3.87184D+02        cross-section                        
+ -2 1.16000D+02 5.99276D-02        asym. or it11                        
+  0 1.18000D+02 3.85698D+02        cross-section                        
+ -2 1.18000D+02 5.96073D-02        asym. or it11                        
+  0 1.20000D+02 3.84301D+02        cross-section                        
+ -2 1.20000D+02 5.91702D-02        asym. or it11                        
+  0 1.22000D+02 3.82991D+02        cross-section                        
+ -2 1.22000D+02 5.86150D-02        asym. or it11                        
+  0 1.24000D+02 3.81766D+02        cross-section                        
+ -2 1.24000D+02 5.79409D-02        asym. or it11                        
+  0 1.26000D+02 3.80623D+02        cross-section                        
+ -2 1.26000D+02 5.71477D-02        asym. or it11                        
+  0 1.28000D+02 3.79561D+02        cross-section                        
+ -2 1.28000D+02 5.62354D-02        asym. or it11                        
+  0 1.30000D+02 3.78576D+02        cross-section                        
+ -2 1.30000D+02 5.52047D-02        asym. or it11                        
+  0 1.32000D+02 3.77666D+02        cross-section                        
+ -2 1.32000D+02 5.40566D-02        asym. or it11                        
+  0 1.34000D+02 3.76827D+02        cross-section                        
+ -2 1.34000D+02 5.27923D-02        asym. or it11                        
+  0 1.36000D+02 3.76057D+02        cross-section                        
+ -2 1.36000D+02 5.14139D-02        asym. or it11                        
+  0 1.38000D+02 3.75352D+02        cross-section                        
+ -2 1.38000D+02 4.99236D-02        asym. or it11                        
+  0 1.40000D+02 3.74709D+02        cross-section                        
+ -2 1.40000D+02 4.83240D-02        asym. or it11                        
+  0 1.42000D+02 3.74124D+02        cross-section                        
+ -2 1.42000D+02 4.66180D-02        asym. or it11                        
+  0 1.44000D+02 3.73594D+02        cross-section                        
+ -2 1.44000D+02 4.48091D-02        asym. or it11                        
+  0 1.46000D+02 3.73116D+02        cross-section                        
+ -2 1.46000D+02 4.29010D-02        asym. or it11                        
+  0 1.48000D+02 3.72686D+02        cross-section                        
+ -2 1.48000D+02 4.08975D-02        asym. or it11                        
+  0 1.50000D+02 3.72302D+02        cross-section                        
+ -2 1.50000D+02 3.88030D-02        asym. or it11                        
+  0 1.52000D+02 3.71959D+02        cross-section                        
+ -2 1.52000D+02 3.66220D-02        asym. or it11                        
+  0 1.54000D+02 3.71655D+02        cross-section                        
+ -2 1.54000D+02 3.43593D-02        asym. or it11                        
+  0 1.56000D+02 3.71387D+02        cross-section                        
+ -2 1.56000D+02 3.20200D-02        asym. or it11                        
+  0 1.58000D+02 3.71152D+02        cross-section                        
+ -2 1.58000D+02 2.96090D-02        asym. or it11                        
+  0 1.60000D+02 3.70946D+02        cross-section                        
+ -2 1.60000D+02 2.71320D-02        asym. or it11                        
+  0 1.62000D+02 3.70769D+02        cross-section                        
+ -2 1.62000D+02 2.45943D-02        asym. or it11                        
+  0 1.64000D+02 3.70617D+02        cross-section                        
+ -2 1.64000D+02 2.20018D-02        asym. or it11                        
+  0 1.66000D+02 3.70488D+02        cross-section                        
+ -2 1.66000D+02 1.93601D-02        asym. or it11                        
+  0 1.68000D+02 3.70380D+02        cross-section                        
+ -2 1.68000D+02 1.66753D-02        asym. or it11                        
+  0 1.70000D+02 3.70292D+02        cross-section                        
+ -2 1.70000D+02 1.39532D-02        asym. or it11                        
+  0 1.72000D+02 3.70221D+02        cross-section                        
+ -2 1.72000D+02 1.12000D-02        asym. or it11                        
+  0 1.74000D+02 3.70168D+02        cross-section                        
+ -2 1.74000D+02 8.42194D-03        asym. or it11                        
+  0 1.76000D+02 3.70131D+02        cross-section                        
+ -2 1.76000D+02 5.62507D-03        asym. or it11                        
+  0 1.78000D+02 3.70109D+02        cross-section                        
+ -2 1.78000D+02 2.81567D-03        asym. or it11                        
+  0 1.80000D+02 3.70101D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      1.00000000D-01    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 7.25671D+02        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 7.25402D+02        cross-section                        
+ -2 2.00000D+00-2.05207D-04        asym. or it11                        
+  0 4.00000D+00 7.24596D+02        cross-section                        
+ -2 4.00000D+00-4.06465D-04        asym. or it11                        
+  0 6.00000D+00 7.23256D+02        cross-section                        
+ -2 6.00000D+00-5.99818D-04        asym. or it11                        
+  0 8.00000D+00 7.21385D+02        cross-section                        
+ -2 8.00000D+00-7.81298D-04        asym. or it11                        
+  0 1.00000D+01 7.18990D+02        cross-section                        
+ -2 1.00000D+01-9.46913D-04        asym. or it11                        
+  0 1.20000D+01 7.16077D+02        cross-section                        
+ -2 1.20000D+01-1.09265D-03        asym. or it11                        
+  0 1.40000D+01 7.12656D+02        cross-section                        
+ -2 1.40000D+01-1.21445D-03        asym. or it11                        
+  0 1.60000D+01 7.08738D+02        cross-section                        
+ -2 1.60000D+01-1.30824D-03        asym. or it11                        
+  0 1.80000D+01 7.04334D+02        cross-section                        
+ -2 1.80000D+01-1.36988D-03        asym. or it11                        
+  0 2.00000D+01 6.99457D+02        cross-section                        
+ -2 2.00000D+01-1.39520D-03        asym. or it11                        
+  0 2.20000D+01 6.94123D+02        cross-section                        
+ -2 2.20000D+01-1.37997D-03        asym. or it11                        
+  0 2.40000D+01 6.88347D+02        cross-section                        
+ -2 2.40000D+01-1.31992D-03        asym. or it11                        
+  0 2.60000D+01 6.82147D+02        cross-section                        
+ -2 2.60000D+01-1.21072D-03        asym. or it11                        
+  0 2.80000D+01 6.75542D+02        cross-section                        
+ -2 2.80000D+01-1.04800D-03        asym. or it11                        
+  0 3.00000D+01 6.68551D+02        cross-section                        
+ -2 3.00000D+01-8.27337D-04        asym. or it11                        
+  0 3.20000D+01 6.61195D+02        cross-section                        
+ -2 3.20000D+01-5.44276D-04        asym. or it11                        
+  0 3.40000D+01 6.53495D+02        cross-section                        
+ -2 3.40000D+01-1.94323D-04        asym. or it11                        
+  0 3.60000D+01 6.45474D+02        cross-section                        
+ -2 3.60000D+01 2.27033D-04        asym. or it11                        
+  0 3.80000D+01 6.37155D+02        cross-section                        
+ -2 3.80000D+01 7.24314D-04        asym. or it11                        
+  0 4.00000D+01 6.28562D+02        cross-section                        
+ -2 4.00000D+01 1.30203D-03        asym. or it11                        
+  0 4.20000D+01 6.19719D+02        cross-section                        
+ -2 4.20000D+01 1.96466D-03        asym. or it11                        
+  0 4.40000D+01 6.10651D+02        cross-section                        
+ -2 4.40000D+01 2.71663D-03        asym. or it11                        
+  0 4.60000D+01 6.01383D+02        cross-section                        
+ -2 4.60000D+01 3.56229D-03        asym. or it11                        
+  0 4.80000D+01 5.91941D+02        cross-section                        
+ -2 4.80000D+01 4.50586D-03        asym. or it11                        
+  0 5.00000D+01 5.82351D+02        cross-section                        
+ -2 5.00000D+01 5.55141D-03        asym. or it11                        
+  0 5.20000D+01 5.72637D+02        cross-section                        
+ -2 5.20000D+01 6.70280D-03        asym. or it11                        
+  0 5.40000D+01 5.62826D+02        cross-section                        
+ -2 5.40000D+01 7.96367D-03        asym. or it11                        
+  0 5.60000D+01 5.52943D+02        cross-section                        
+ -2 5.60000D+01 9.33730D-03        asym. or it11                        
+  0 5.80000D+01 5.43013D+02        cross-section                        
+ -2 5.80000D+01 1.08267D-02        asym. or it11                        
+  0 6.00000D+01 5.33061D+02        cross-section                        
+ -2 6.00000D+01 1.24342D-02        asym. or it11                        
+  0 6.20000D+01 5.23112D+02        cross-section                        
+ -2 6.20000D+01 1.41620D-02        asym. or it11                        
+  0 6.40000D+01 5.13189D+02        cross-section                        
+ -2 6.40000D+01 1.60114D-02        asym. or it11                        
+  0 6.60000D+01 5.03316D+02        cross-section                        
+ -2 6.60000D+01 1.79831D-02        asym. or it11                        
+  0 6.80000D+01 4.93516D+02        cross-section                        
+ -2 6.80000D+01 2.00771D-02        asym. or it11                        
+  0 7.00000D+01 4.83810D+02        cross-section                        
+ -2 7.00000D+01 2.22925D-02        asym. or it11                        
+  0 7.20000D+01 4.74219D+02        cross-section                        
+ -2 7.20000D+01 2.46273D-02        asym. or it11                        
+  0 7.40000D+01 4.64763D+02        cross-section                        
+ -2 7.40000D+01 2.70788D-02        asym. or it11                        
+  0 7.60000D+01 4.55463D+02        cross-section                        
+ -2 7.60000D+01 2.96429D-02        asym. or it11                        
+  0 7.80000D+01 4.46335D+02        cross-section                        
+ -2 7.80000D+01 3.23142D-02        asym. or it11                        
+  0 8.00000D+01 4.37396D+02        cross-section                        
+ -2 8.00000D+01 3.50861D-02        asym. or it11                        
+  0 8.20000D+01 4.28664D+02        cross-section                        
+ -2 8.20000D+01 3.79506D-02        asym. or it11                        
+  0 8.40000D+01 4.20151D+02        cross-section                        
+ -2 8.40000D+01 4.08983D-02        asym. or it11                        
+  0 8.60000D+01 4.11873D+02        cross-section                        
+ -2 8.60000D+01 4.39182D-02        asym. or it11                        
+  0 8.80000D+01 4.03841D+02        cross-section                        
+ -2 8.80000D+01 4.69977D-02        asym. or it11                        
+  0 9.00000D+01 3.96066D+02        cross-section                        
+ -2 9.00000D+01 5.01228D-02        asym. or it11                        
+  0 9.20000D+01 3.88558D+02        cross-section                        
+ -2 9.20000D+01 5.32779D-02        asym. or it11                        
+  0 9.40000D+01 3.81325D+02        cross-section                        
+ -2 9.40000D+01 5.64459D-02        asym. or it11                        
+  0 9.60000D+01 3.74375D+02        cross-section                        
+ -2 9.60000D+01 5.96085D-02        asym. or it11                        
+  0 9.80000D+01 3.67713D+02        cross-section                        
+ -2 9.80000D+01 6.27458D-02        asym. or it11                        
+  0 1.00000D+02 3.61344D+02        cross-section                        
+ -2 1.00000D+02 6.58371D-02        asym. or it11                        
+  0 1.02000D+02 3.55271D+02        cross-section                        
+ -2 1.02000D+02 6.88604D-02        asym. or it11                        
+  0 1.04000D+02 3.49496D+02        cross-section                        
+ -2 1.04000D+02 7.17933D-02        asym. or it11                        
+  0 1.06000D+02 3.44020D+02        cross-section                        
+ -2 1.06000D+02 7.46128D-02        asym. or it11                        
+  0 1.08000D+02 3.38842D+02        cross-section                        
+ -2 1.08000D+02 7.72954D-02        asym. or it11                        
+  0 1.10000D+02 3.33961D+02        cross-section                        
+ -2 1.10000D+02 7.98181D-02        asym. or it11                        
+  0 1.12000D+02 3.29375D+02        cross-section                        
+ -2 1.12000D+02 8.21578D-02        asym. or it11                        
+  0 1.14000D+02 3.25078D+02        cross-section                        
+ -2 1.14000D+02 8.42925D-02        asym. or it11                        
+  0 1.16000D+02 3.21067D+02        cross-section                        
+ -2 1.16000D+02 8.62007D-02        asym. or it11                        
+  0 1.18000D+02 3.17335D+02        cross-section                        
+ -2 1.18000D+02 8.78625D-02        asym. or it11                        
+  0 1.20000D+02 3.13877D+02        cross-section                        
+ -2 1.20000D+02 8.92594D-02        asym. or it11                        
+  0 1.22000D+02 3.10683D+02        cross-section                        
+ -2 1.22000D+02 9.03746D-02        asym. or it11                        
+  0 1.24000D+02 3.07746D+02        cross-section                        
+ -2 1.24000D+02 9.11934D-02        asym. or it11                        
+  0 1.26000D+02 3.05057D+02        cross-section                        
+ -2 1.26000D+02 9.17033D-02        asym. or it11                        
+  0 1.28000D+02 3.02606D+02        cross-section                        
+ -2 1.28000D+02 9.18940D-02        asym. or it11                        
+  0 1.30000D+02 3.00382D+02        cross-section                        
+ -2 1.30000D+02 9.17577D-02        asym. or it11                        
+  0 1.32000D+02 2.98375D+02        cross-section                        
+ -2 1.32000D+02 9.12889D-02        asym. or it11                        
+  0 1.34000D+02 2.96574D+02        cross-section                        
+ -2 1.34000D+02 9.04848D-02        asym. or it11                        
+  0 1.36000D+02 2.94966D+02        cross-section                        
+ -2 1.36000D+02 8.93450D-02        asym. or it11                        
+  0 1.38000D+02 2.93540D+02        cross-section                        
+ -2 1.38000D+02 8.78711D-02        asym. or it11                        
+  0 1.40000D+02 2.92284D+02        cross-section                        
+ -2 1.40000D+02 8.60675D-02        asym. or it11                        
+  0 1.42000D+02 2.91185D+02        cross-section                        
+ -2 1.42000D+02 8.39403D-02        asym. or it11                        
+  0 1.44000D+02 2.90232D+02        cross-section                        
+ -2 1.44000D+02 8.14976D-02        asym. or it11                        
+  0 1.46000D+02 2.89413D+02        cross-section                        
+ -2 1.46000D+02 7.87495D-02        asym. or it11                        
+  0 1.48000D+02 2.88715D+02        cross-section                        
+ -2 1.48000D+02 7.57074D-02        asym. or it11                        
+  0 1.50000D+02 2.88127D+02        cross-section                        
+ -2 1.50000D+02 7.23844D-02        asym. or it11                        
+  0 1.52000D+02 2.87637D+02        cross-section                        
+ -2 1.52000D+02 6.87945D-02        asym. or it11                        
+  0 1.54000D+02 2.87234D+02        cross-section                        
+ -2 1.54000D+02 6.49529D-02        asym. or it11                        
+  0 1.56000D+02 2.86908D+02        cross-section                        
+ -2 1.56000D+02 6.08757D-02        asym. or it11                        
+  0 1.58000D+02 2.86649D+02        cross-section                        
+ -2 1.58000D+02 5.65795D-02        asym. or it11                        
+  0 1.60000D+02 2.86446D+02        cross-section                        
+ -2 1.60000D+02 5.20817D-02        asym. or it11                        
+  0 1.62000D+02 2.86291D+02        cross-section                        
+ -2 1.62000D+02 4.73999D-02        asym. or it11                        
+  0 1.64000D+02 2.86175D+02        cross-section                        
+ -2 1.64000D+02 4.25521D-02        asym. or it11                        
+  0 1.66000D+02 2.86092D+02        cross-section                        
+ -2 1.66000D+02 3.75566D-02        asym. or it11                        
+  0 1.68000D+02 2.86033D+02        cross-section                        
+ -2 1.68000D+02 3.24317D-02        asym. or it11                        
+  0 1.70000D+02 2.85994D+02        cross-section                        
+ -2 1.70000D+02 2.71959D-02        asym. or it11                        
+  0 1.72000D+02 2.85970D+02        cross-section                        
+ -2 1.72000D+02 2.18676D-02        asym. or it11                        
+  0 1.74000D+02 2.85955D+02        cross-section                        
+ -2 1.74000D+02 1.64654D-02        asym. or it11                        
+  0 1.76000D+02 2.85946D+02        cross-section                        
+ -2 1.76000D+02 1.10077D-02        asym. or it11                        
+  0 1.78000D+02 2.85942D+02        cross-section                        
+ -2 1.78000D+02 5.51308D-03        asym. or it11                        
+  0 1.80000D+02 2.85941D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      2.00000000D-01    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 1.14258D+03        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 1.14192D+03        cross-section                        
+ -2 2.00000D+00-2.25135D-03        asym. or it11                        
+  0 4.00000D+00 1.13992D+03        cross-section                        
+ -2 4.00000D+00-4.50117D-03        asym. or it11                        
+  0 6.00000D+00 1.13660D+03        cross-section                        
+ -2 6.00000D+00-6.74792D-03        asym. or it11                        
+  0 8.00000D+00 1.13198D+03        cross-section                        
+ -2 8.00000D+00-8.99001D-03        asym. or it11                        
+  0 1.00000D+01 1.12605D+03        cross-section                        
+ -2 1.00000D+01-1.12258D-02        asym. or it11                        
+  0 1.20000D+01 1.11885D+03        cross-section                        
+ -2 1.20000D+01-1.34535D-02        asym. or it11                        
+  0 1.40000D+01 1.11040D+03        cross-section                        
+ -2 1.40000D+01-1.56714D-02        asym. or it11                        
+  0 1.60000D+01 1.10073D+03        cross-section                        
+ -2 1.60000D+01-1.78774D-02        asym. or it11                        
+  0 1.80000D+01 1.08987D+03        cross-section                        
+ -2 1.80000D+01-2.00695D-02        asym. or it11                        
+  0 2.00000D+01 1.07785D+03        cross-section                        
+ -2 2.00000D+01-2.22452D-02        asym. or it11                        
+  0 2.20000D+01 1.06472D+03        cross-section                        
+ -2 2.20000D+01-2.44022D-02        asym. or it11                        
+  0 2.40000D+01 1.05052D+03        cross-section                        
+ -2 2.40000D+01-2.65377D-02        asym. or it11                        
+  0 2.60000D+01 1.03529D+03        cross-section                        
+ -2 2.60000D+01-2.86486D-02        asym. or it11                        
+  0 2.80000D+01 1.01909D+03        cross-section                        
+ -2 2.80000D+01-3.07317D-02        asym. or it11                        
+  0 3.00000D+01 1.00197D+03        cross-section                        
+ -2 3.00000D+01-3.27833D-02        asym. or it11                        
+  0 3.20000D+01 9.83976D+02        cross-section                        
+ -2 3.20000D+01-3.47994D-02        asym. or it11                        
+  0 3.40000D+01 9.65176D+02        cross-section                        
+ -2 3.40000D+01-3.67756D-02        asym. or it11                        
+  0 3.60000D+01 9.45626D+02        cross-section                        
+ -2 3.60000D+01-3.87069D-02        asym. or it11                        
+  0 3.80000D+01 9.25386D+02        cross-section                        
+ -2 3.80000D+01-4.05881D-02        asym. or it11                        
+  0 4.00000D+01 9.04521D+02        cross-section                        
+ -2 4.00000D+01-4.24131D-02        asym. or it11                        
+  0 4.20000D+01 8.83093D+02        cross-section                        
+ -2 4.20000D+01-4.41754D-02        asym. or it11                        
+  0 4.40000D+01 8.61167D+02        cross-section                        
+ -2 4.40000D+01-4.58678D-02        asym. or it11                        
+  0 4.60000D+01 8.38810D+02        cross-section                        
+ -2 4.60000D+01-4.74823D-02        asym. or it11                        
+  0 4.80000D+01 8.16086D+02        cross-section                        
+ -2 4.80000D+01-4.90102D-02        asym. or it11                        
+  0 5.00000D+01 7.93062D+02        cross-section                        
+ -2 5.00000D+01-5.04419D-02        asym. or it11                        
+  0 5.20000D+01 7.69805D+02        cross-section                        
+ -2 5.20000D+01-5.17667D-02        asym. or it11                        
+  0 5.40000D+01 7.46379D+02        cross-section                        
+ -2 5.40000D+01-5.29733D-02        asym. or it11                        
+  0 5.60000D+01 7.22849D+02        cross-section                        
+ -2 5.60000D+01-5.40488D-02        asym. or it11                        
+  0 5.80000D+01 6.99279D+02        cross-section                        
+ -2 5.80000D+01-5.49795D-02        asym. or it11                        
+  0 6.00000D+01 6.75732D+02        cross-section                        
+ -2 6.00000D+01-5.57504D-02        asym. or it11                        
+  0 6.20000D+01 6.52269D+02        cross-section                        
+ -2 6.20000D+01-5.63451D-02        asym. or it11                        
+  0 6.40000D+01 6.28950D+02        cross-section                        
+ -2 6.40000D+01-5.67457D-02        asym. or it11                        
+  0 6.60000D+01 6.05832D+02        cross-section                        
+ -2 6.60000D+01-5.69332D-02        asym. or it11                        
+  0 6.80000D+01 5.82970D+02        cross-section                        
+ -2 6.80000D+01-5.68868D-02        asym. or it11                        
+  0 7.00000D+01 5.60420D+02        cross-section                        
+ -2 7.00000D+01-5.65844D-02        asym. or it11                        
+  0 7.20000D+01 5.38231D+02        cross-section                        
+ -2 7.20000D+01-5.60024D-02        asym. or it11                        
+  0 7.40000D+01 5.16451D+02        cross-section                        
+ -2 7.40000D+01-5.51155D-02        asym. or it11                        
+  0 7.60000D+01 4.95127D+02        cross-section                        
+ -2 7.60000D+01-5.38974D-02        asym. or it11                        
+  0 7.80000D+01 4.74301D+02        cross-section                        
+ -2 7.80000D+01-5.23203D-02        asym. or it11                        
+  0 8.00000D+01 4.54013D+02        cross-section                        
+ -2 8.00000D+01-5.03556D-02        asym. or it11                        
+  0 8.20000D+01 4.34300D+02        cross-section                        
+ -2 8.20000D+01-4.79739D-02        asym. or it11                        
+  0 8.40000D+01 4.15195D+02        cross-section                        
+ -2 8.40000D+01-4.51455D-02        asym. or it11                        
+  0 8.60000D+01 3.96729D+02        cross-section                        
+ -2 8.60000D+01-4.18412D-02        asym. or it11                        
+  0 8.80000D+01 3.78928D+02        cross-section                        
+ -2 8.80000D+01-3.80326D-02        asym. or it11                        
+  0 9.00000D+01 3.61816D+02        cross-section                        
+ -2 9.00000D+01-3.36932D-02        asym. or it11                        
+  0 9.20000D+01 3.45413D+02        cross-section                        
+ -2 9.20000D+01-2.87992D-02        asym. or it11                        
+  0 9.40000D+01 3.29737D+02        cross-section                        
+ -2 9.40000D+01-2.33310D-02        asym. or it11                        
+  0 9.60000D+01 3.14800D+02        cross-section                        
+ -2 9.60000D+01-1.72744D-02        asym. or it11                        
+  0 9.80000D+01 3.00613D+02        cross-section                        
+ -2 9.80000D+01-1.06220D-02        asym. or it11                        
+  0 1.00000D+02 2.87182D+02        cross-section                        
+ -2 1.00000D+02-3.37517D-03        asym. or it11                        
+  0 1.02000D+02 2.74512D+02        cross-section                        
+ -2 1.02000D+02 4.45428D-03        asym. or it11                        
+  0 1.04000D+02 2.62602D+02        cross-section                        
+ -2 1.04000D+02 1.28425D-02        asym. or it11                        
+  0 1.06000D+02 2.51450D+02        cross-section                        
+ -2 1.06000D+02 2.17519D-02        asym. or it11                        
+  0 1.08000D+02 2.41049D+02        cross-section                        
+ -2 1.08000D+02 3.11297D-02        asym. or it11                        
+  0 1.10000D+02 2.31392D+02        cross-section                        
+ -2 1.10000D+02 4.09067D-02        asym. or it11                        
+  0 1.12000D+02 2.22465D+02        cross-section                        
+ -2 1.12000D+02 5.09972D-02        asym. or it11                        
+  0 1.14000D+02 2.14256D+02        cross-section                        
+ -2 1.14000D+02 6.12990D-02        asym. or it11                        
+  0 1.16000D+02 2.06747D+02        cross-section                        
+ -2 1.16000D+02 7.16944D-02        asym. or it11                        
+  0 1.18000D+02 1.99919D+02        cross-section                        
+ -2 1.18000D+02 8.20521D-02        asym. or it11                        
+  0 1.20000D+02 1.93750D+02        cross-section                        
+ -2 1.20000D+02 9.22301D-02        asym. or it11                        
+  0 1.22000D+02 1.88217D+02        cross-section                        
+ -2 1.22000D+02 1.02080D-01        asym. or it11                        
+  0 1.24000D+02 1.83294D+02        cross-section                        
+ -2 1.24000D+02 1.11450D-01        asym. or it11                        
+  0 1.26000D+02 1.78953D+02        cross-section                        
+ -2 1.26000D+02 1.20191D-01        asym. or it11                        
+  0 1.28000D+02 1.75165D+02        cross-section                        
+ -2 1.28000D+02 1.28163D-01        asym. or it11                        
+  0 1.30000D+02 1.71901D+02        cross-section                        
+ -2 1.30000D+02 1.35236D-01        asym. or it11                        
+  0 1.32000D+02 1.69129D+02        cross-section                        
+ -2 1.32000D+02 1.41298D-01        asym. or it11                        
+  0 1.34000D+02 1.66816D+02        cross-section                        
+ -2 1.34000D+02 1.46257D-01        asym. or it11                        
+  0 1.36000D+02 1.64929D+02        cross-section                        
+ -2 1.36000D+02 1.50043D-01        asym. or it11                        
+  0 1.38000D+02 1.63435D+02        cross-section                        
+ -2 1.38000D+02 1.52611D-01        asym. or it11                        
+  0 1.40000D+02 1.62299D+02        cross-section                        
+ -2 1.40000D+02 1.53939D-01        asym. or it11                        
+  0 1.42000D+02 1.61487D+02        cross-section                        
+ -2 1.42000D+02 1.54027D-01        asym. or it11                        
+  0 1.44000D+02 1.60964D+02        cross-section                        
+ -2 1.44000D+02 1.52896D-01        asym. or it11                        
+  0 1.46000D+02 1.60698D+02        cross-section                        
+ -2 1.46000D+02 1.50587D-01        asym. or it11                        
+  0 1.48000D+02 1.60653D+02        cross-section                        
+ -2 1.48000D+02 1.47152D-01        asym. or it11                        
+  0 1.50000D+02 1.60799D+02        cross-section                        
+ -2 1.50000D+02 1.42659D-01        asym. or it11                        
+  0 1.52000D+02 1.61102D+02        cross-section                        
+ -2 1.52000D+02 1.37180D-01        asym. or it11                        
+  0 1.54000D+02 1.61532D+02        cross-section                        
+ -2 1.54000D+02 1.30797D-01        asym. or it11                        
+  0 1.56000D+02 1.62060D+02        cross-section                        
+ -2 1.56000D+02 1.23589D-01        asym. or it11                        
+  0 1.58000D+02 1.62657D+02        cross-section                        
+ -2 1.58000D+02 1.15642D-01        asym. or it11                        
+  0 1.60000D+02 1.63296D+02        cross-section                        
+ -2 1.60000D+02 1.07034D-01        asym. or it11                        
+  0 1.62000D+02 1.63953D+02        cross-section                        
+ -2 1.62000D+02 9.78457D-02        asym. or it11                        
+  0 1.64000D+02 1.64606D+02        cross-section                        
+ -2 1.64000D+02 8.81512D-02        asym. or it11                        
+  0 1.66000D+02 1.65232D+02        cross-section                        
+ -2 1.66000D+02 7.80213D-02        asym. or it11                        
+  0 1.68000D+02 1.65814D+02        cross-section                        
+ -2 1.68000D+02 6.75224D-02        asym. or it11                        
+  0 1.70000D+02 1.66335D+02        cross-section                        
+ -2 1.70000D+02 5.67166D-02        asym. or it11                        
+  0 1.72000D+02 1.66780D+02        cross-section                        
+ -2 1.72000D+02 4.56618D-02        asym. or it11                        
+  0 1.74000D+02 1.67139D+02        cross-section                        
+ -2 1.74000D+02 3.44124D-02        asym. or it11                        
+  0 1.76000D+02 1.67402D+02        cross-section                        
+ -2 1.76000D+02 2.30199D-02        asym. or it11                        
+  0 1.78000D+02 1.67562D+02        cross-section                        
+ -2 1.78000D+02 1.15333D-02        asym. or it11                        
+  0 1.80000D+02 1.67616D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      5.00000000D-01    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 1.71236D+03        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 1.71094D+03        cross-section                        
+ -2 2.00000D+00-2.81429D-03        asym. or it11                        
+  0 4.00000D+00 1.70670D+03        cross-section                        
+ -2 4.00000D+00-5.63168D-03        asym. or it11                        
+  0 6.00000D+00 1.69966D+03        cross-section                        
+ -2 6.00000D+00-8.45528D-03        asym. or it11                        
+  0 8.00000D+00 1.68984D+03        cross-section                        
+ -2 8.00000D+00-1.12883D-02        asym. or it11                        
+  0 1.00000D+01 1.67730D+03        cross-section                        
+ -2 1.00000D+01-1.41338D-02        asym. or it11                        
+  0 1.20000D+01 1.66209D+03        cross-section                        
+ -2 1.20000D+01-1.69951D-02        asym. or it11                        
+  0 1.40000D+01 1.64428D+03        cross-section                        
+ -2 1.40000D+01-1.98756D-02        asym. or it11                        
+  0 1.60000D+01 1.62395D+03        cross-section                        
+ -2 1.60000D+01-2.27786D-02        asym. or it11                        
+  0 1.80000D+01 1.60119D+03        cross-section                        
+ -2 1.80000D+01-2.57077D-02        asym. or it11                        
+  0 2.00000D+01 1.57611D+03        cross-section                        
+ -2 2.00000D+01-2.86665D-02        asym. or it11                        
+  0 2.20000D+01 1.54882D+03        cross-section                        
+ -2 2.20000D+01-3.16588D-02        asym. or it11                        
+  0 2.40000D+01 1.51943D+03        cross-section                        
+ -2 2.40000D+01-3.46885D-02        asym. or it11                        
+  0 2.60000D+01 1.48807D+03        cross-section                        
+ -2 2.60000D+01-3.77596D-02        asym. or it11                        
+  0 2.80000D+01 1.45488D+03        cross-section                        
+ -2 2.80000D+01-4.08765D-02        asym. or it11                        
+  0 3.00000D+01 1.41999D+03        cross-section                        
+ -2 3.00000D+01-4.40436D-02        asym. or it11                        
+  0 3.20000D+01 1.38355D+03        cross-section                        
+ -2 3.20000D+01-4.72655D-02        asym. or it11                        
+  0 3.40000D+01 1.34571D+03        cross-section                        
+ -2 3.40000D+01-5.05471D-02        asym. or it11                        
+  0 3.60000D+01 1.30660D+03        cross-section                        
+ -2 3.60000D+01-5.38933D-02        asym. or it11                        
+  0 3.80000D+01 1.26640D+03        cross-section                        
+ -2 3.80000D+01-5.73097D-02        asym. or it11                        
+  0 4.00000D+01 1.22524D+03        cross-section                        
+ -2 4.00000D+01-6.08016D-02        asym. or it11                        
+  0 4.20000D+01 1.18328D+03        cross-section                        
+ -2 4.20000D+01-6.43749D-02        asym. or it11                        
+  0 4.40000D+01 1.14068D+03        cross-section                        
+ -2 4.40000D+01-6.80357D-02        asym. or it11                        
+  0 4.60000D+01 1.09758D+03        cross-section                        
+ -2 4.60000D+01-7.17901D-02        asym. or it11                        
+  0 4.80000D+01 1.05412D+03        cross-section                        
+ -2 4.80000D+01-7.56449D-02        asym. or it11                        
+  0 5.00000D+01 1.01046D+03        cross-section                        
+ -2 5.00000D+01-7.96068D-02        asym. or it11                        
+  0 5.20000D+01 9.66730D+02        cross-section                        
+ -2 5.20000D+01-8.36827D-02        asym. or it11                        
+  0 5.40000D+01 9.23068D+02        cross-section                        
+ -2 5.40000D+01-8.78801D-02        asym. or it11                        
+  0 5.60000D+01 8.79604D+02        cross-section                        
+ -2 5.60000D+01-9.22062D-02        asym. or it11                        
+  0 5.80000D+01 8.36462D+02        cross-section                        
+ -2 5.80000D+01-9.66687D-02        asym. or it11                        
+  0 6.00000D+01 7.93762D+02        cross-section                        
+ -2 6.00000D+01-1.01275D-01        asym. or it11                        
+  0 6.20000D+01 7.51618D+02        cross-section                        
+ -2 6.20000D+01-1.06034D-01        asym. or it11                        
+  0 6.40000D+01 7.10134D+02        cross-section                        
+ -2 6.40000D+01-1.10951D-01        asym. or it11                        
+  0 6.60000D+01 6.69411D+02        cross-section                        
+ -2 6.60000D+01-1.16035D-01        asym. or it11                        
+  0 6.80000D+01 6.29541D+02        cross-section                        
+ -2 6.80000D+01-1.21292D-01        asym. or it11                        
+  0 7.00000D+01 5.90612D+02        cross-section                        
+ -2 7.00000D+01-1.26730D-01        asym. or it11                        
+  0 7.20000D+01 5.52701D+02        cross-section                        
+ -2 7.20000D+01-1.32351D-01        asym. or it11                        
+  0 7.40000D+01 5.15882D+02        cross-section                        
+ -2 7.40000D+01-1.38162D-01        asym. or it11                        
+  0 7.60000D+01 4.80219D+02        cross-section                        
+ -2 7.60000D+01-1.44162D-01        asym. or it11                        
+  0 7.80000D+01 4.45770D+02        cross-section                        
+ -2 7.80000D+01-1.50352D-01        asym. or it11                        
+  0 8.00000D+01 4.12588D+02        cross-section                        
+ -2 8.00000D+01-1.56725D-01        asym. or it11                        
+  0 8.20000D+01 3.80717D+02        cross-section                        
+ -2 8.20000D+01-1.63273D-01        asym. or it11                        
+  0 8.40000D+01 3.50197D+02        cross-section                        
+ -2 8.40000D+01-1.69979D-01        asym. or it11                        
+  0 8.60000D+01 3.21059D+02        cross-section                        
+ -2 8.60000D+01-1.76815D-01        asym. or it11                        
+  0 8.80000D+01 2.93330D+02        cross-section                        
+ -2 8.80000D+01-1.83745D-01        asym. or it11                        
+  0 9.00000D+01 2.67030D+02        cross-section                        
+ -2 9.00000D+01-1.90713D-01        asym. or it11                        
+  0 9.20000D+01 2.42173D+02        cross-section                        
+ -2 9.20000D+01-1.97642D-01        asym. or it11                        
+  0 9.40000D+01 2.18770D+02        cross-section                        
+ -2 9.40000D+01-2.04428D-01        asym. or it11                        
+  0 9.60000D+01 1.96823D+02        cross-section                        
+ -2 9.60000D+01-2.10925D-01        asym. or it11                        
+  0 9.80000D+01 1.76331D+02        cross-section                        
+ -2 9.80000D+01-2.16935D-01        asym. or it11                        
+  0 1.00000D+02 1.57289D+02        cross-section                        
+ -2 1.00000D+02-2.22191D-01        asym. or it11                        
+  0 1.02000D+02 1.39684D+02        cross-section                        
+ -2 1.02000D+02-2.26334D-01        asym. or it11                        
+  0 1.04000D+02 1.23500D+02        cross-section                        
+ -2 1.04000D+02-2.28880D-01        asym. or it11                        
+  0 1.06000D+02 1.08718D+02        cross-section                        
+ -2 1.06000D+02-2.29185D-01        asym. or it11                        
+  0 1.08000D+02 9.53128D+01        cross-section                        
+ -2 1.08000D+02-2.26400D-01        asym. or it11                        
+  0 1.10000D+02 8.32556D+01        cross-section                        
+ -2 1.10000D+02-2.19419D-01        asym. or it11                        
+  0 1.12000D+02 7.25135D+01        cross-section                        
+ -2 1.12000D+02-2.06831D-01        asym. or it11                        
+  0 1.14000D+02 6.30499D+01        cross-section                        
+ -2 1.14000D+02-1.86903D-01        asym. or it11                        
+  0 1.16000D+02 5.48244D+01        cross-section                        
+ -2 1.16000D+02-1.57616D-01        asym. or it11                        
+  0 1.18000D+02 4.77930D+01        cross-section                        
+ -2 1.18000D+02-1.16832D-01        asym. or it11                        
+  0 1.20000D+02 4.19084D+01        cross-section                        
+ -2 1.20000D+02-6.26759D-02        asym. or it11                        
+  0 1.22000D+02 3.71199D+01        cross-section                        
+ -2 1.22000D+02 5.80454D-03        asym. or it11                        
+  0 1.24000D+02 3.33740D+01        cross-section                        
+ -2 1.24000D+02 8.77403D-02        asym. or it11                        
+  0 1.26000D+02 3.06140D+01        cross-section                        
+ -2 1.26000D+02 1.79582D-01        asym. or it11                        
+  0 1.28000D+02 2.87810D+01        cross-section                        
+ -2 1.28000D+02 2.74849D-01        asym. or it11                        
+  0 1.30000D+02 2.78131D+01        cross-section                        
+ -2 1.30000D+02 3.65061D-01        asym. or it11                        
+  0 1.32000D+02 2.76468D+01        cross-section                        
+ -2 1.32000D+02 4.41819D-01        asym. or it11                        
+  0 1.34000D+02 2.82162D+01        cross-section                        
+ -2 1.34000D+02 4.99123D-01        asym. or it11                        
+  0 1.36000D+02 2.94540D+01        cross-section                        
+ -2 1.36000D+02 5.34690D-01        asym. or it11                        
+  0 1.38000D+02 3.12915D+01        cross-section                        
+ -2 1.38000D+02 5.49738D-01        asym. or it11                        
+  0 1.40000D+02 3.36591D+01        cross-section                        
+ -2 1.40000D+02 5.47721D-01        asym. or it11                        
+  0 1.42000D+02 3.64862D+01        cross-section                        
+ -2 1.42000D+02 5.32896D-01        asym. or it11                        
+  0 1.44000D+02 3.97024D+01        cross-section                        
+ -2 1.44000D+02 5.09294D-01        asym. or it11                        
+  0 1.46000D+02 4.32370D+01        cross-section                        
+ -2 1.46000D+02 4.80218D-01        asym. or it11                        
+  0 1.48000D+02 4.70200D+01        cross-section                        
+ -2 1.48000D+02 4.48127D-01        asym. or it11                        
+  0 1.50000D+02 5.09821D+01        cross-section                        
+ -2 1.50000D+02 4.14732D-01        asym. or it11                        
+  0 1.52000D+02 5.50556D+01        cross-section                        
+ -2 1.52000D+02 3.81149D-01        asym. or it11                        
+  0 1.54000D+02 5.91744D+01        cross-section                        
+ -2 1.54000D+02 3.48067D-01        asym. or it11                        
+  0 1.56000D+02 6.32745D+01        cross-section                        
+ -2 1.56000D+02 3.15874D-01        asym. or it11                        
+  0 1.58000D+02 6.72947D+01        cross-section                        
+ -2 1.58000D+02 2.84759D-01        asym. or it11                        
+  0 1.60000D+02 7.11768D+01        cross-section                        
+ -2 1.60000D+02 2.54784D-01        asym. or it11                        
+  0 1.62000D+02 7.48660D+01        cross-section                        
+ -2 1.62000D+02 2.25927D-01        asym. or it11                        
+  0 1.64000D+02 7.83116D+01        cross-section                        
+ -2 1.64000D+02 1.98120D-01        asym. or it11                        
+  0 1.66000D+02 8.14667D+01        cross-section                        
+ -2 1.66000D+02 1.71265D-01        asym. or it11                        
+  0 1.68000D+02 8.42894D+01        cross-section                        
+ -2 1.68000D+02 1.45249D-01        asym. or it11                        
+  0 1.70000D+02 8.67425D+01        cross-section                        
+ -2 1.70000D+02 1.19953D-01        asym. or it11                        
+  0 1.72000D+02 8.87941D+01        cross-section                        
+ -2 1.72000D+02 9.52526D-02        asym. or it11                        
+  0 1.74000D+02 9.04176D+01        cross-section                        
+ -2 1.74000D+02 7.10273D-02        asym. or it11                        
+  0 1.76000D+02 9.15923D+01        cross-section                        
+ -2 1.76000D+02 4.71560D-02        asym. or it11                        
+  0 1.78000D+02 9.23032D+01        cross-section                        
+ -2 1.78000D+02 2.35195D-02        asym. or it11                        
+  0 1.80000D+02 9.25412D+01        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
+<ang.dis.>      1.01      8.00000000D-01    119.90    0    1            
+    1  0.0+   2   91                                                    
+  0 0.00000D+00 1.78179D+03        cross-section                        
+ -2 0.00000D+00 0.00000D+00        asym. or it11                        
+  0 2.00000D+00 1.77990D+03        cross-section                        
+ -2 2.00000D+00-2.83958D-03        asym. or it11                        
+  0 4.00000D+00 1.77424D+03        cross-section                        
+ -2 4.00000D+00-5.67638D-03        asym. or it11                        
+  0 6.00000D+00 1.76486D+03        cross-section                        
+ -2 6.00000D+00-8.50768D-03        asym. or it11                        
+  0 8.00000D+00 1.75180D+03        cross-section                        
+ -2 8.00000D+00-1.13308D-02        asym. or it11                        
+  0 1.00000D+01 1.73517D+03        cross-section                        
+ -2 1.00000D+01-1.41433D-02        asym. or it11                        
+  0 1.20000D+01 1.71506D+03        cross-section                        
+ -2 1.20000D+01-1.69429D-02        asym. or it11                        
+  0 1.40000D+01 1.69162D+03        cross-section                        
+ -2 1.40000D+01-1.97275D-02        asym. or it11                        
+  0 1.60000D+01 1.66498D+03        cross-section                        
+ -2 1.60000D+01-2.24952D-02        asym. or it11                        
+  0 1.80000D+01 1.63531D+03        cross-section                        
+ -2 1.80000D+01-2.52448D-02        asym. or it11                        
+  0 2.00000D+01 1.60281D+03        cross-section                        
+ -2 2.00000D+01-2.79752D-02        asym. or it11                        
+  0 2.20000D+01 1.56767D+03        cross-section                        
+ -2 2.20000D+01-3.06857D-02        asym. or it11                        
+  0 2.40000D+01 1.53010D+03        cross-section                        
+ -2 2.40000D+01-3.33765D-02        asym. or it11                        
+  0 2.60000D+01 1.49032D+03        cross-section                        
+ -2 2.60000D+01-3.60481D-02        asym. or it11                        
+  0 2.80000D+01 1.44856D+03        cross-section                        
+ -2 2.80000D+01-3.87016D-02        asym. or it11                        
+  0 3.00000D+01 1.40505D+03        cross-section                        
+ -2 3.00000D+01-4.13391D-02        asym. or it11                        
+  0 3.20000D+01 1.36003D+03        cross-section                        
+ -2 3.20000D+01-4.39634D-02        asym. or it11                        
+  0 3.40000D+01 1.31374D+03        cross-section                        
+ -2 3.40000D+01-4.65781D-02        asym. or it11                        
+  0 3.60000D+01 1.26640D+03        cross-section                        
+ -2 3.60000D+01-4.91880D-02        asym. or it11                        
+  0 3.80000D+01 1.21826D+03        cross-section                        
+ -2 3.80000D+01-5.17990D-02        asym. or it11                        
+  0 4.00000D+01 1.16953D+03        cross-section                        
+ -2 4.00000D+01-5.44179D-02        asym. or it11                        
+  0 4.20000D+01 1.12043D+03        cross-section                        
+ -2 4.20000D+01-5.70533D-02        asym. or it11                        
+  0 4.40000D+01 1.07118D+03        cross-section                        
+ -2 4.40000D+01-5.97150D-02        asym. or it11                        
+  0 4.60000D+01 1.02197D+03        cross-section                        
+ -2 4.60000D+01-6.24142D-02        asym. or it11                        
+  0 4.80000D+01 9.72988D+02        cross-section                        
+ -2 4.80000D+01-6.51644D-02        asym. or it11                        
+  0 5.00000D+01 9.24412D+02        cross-section                        
+ -2 5.00000D+01-6.79805D-02        asym. or it11                        
+  0 5.20000D+01 8.76403D+02        cross-section                        
+ -2 5.20000D+01-7.08797D-02        asym. or it11                        
+  0 5.40000D+01 8.29111D+02        cross-section                        
+ -2 5.40000D+01-7.38815D-02        asym. or it11                        
+  0 5.60000D+01 7.82671D+02        cross-section                        
+ -2 5.60000D+01-7.70078D-02        asym. or it11                        
+  0 5.80000D+01 7.37205D+02        cross-section                        
+ -2 5.80000D+01-8.02834D-02        asym. or it11                        
+  0 6.00000D+01 6.92820D+02        cross-section                        
+ -2 6.00000D+01-8.37360D-02        asym. or it11                        
+  0 6.20000D+01 6.49610D+02        cross-section                        
+ -2 6.20000D+01-8.73965D-02        asym. or it11                        
+  0 6.40000D+01 6.07658D+02        cross-section                        
+ -2 6.40000D+01-9.12995D-02        asym. or it11                        
+  0 6.60000D+01 5.67031D+02        cross-section                        
+ -2 6.60000D+01-9.54835D-02        asym. or it11                        
+  0 6.80000D+01 5.27786D+02        cross-section                        
+ -2 6.80000D+01-9.99916D-02        asym. or it11                        
+  0 7.00000D+01 4.89968D+02        cross-section                        
+ -2 7.00000D+01-1.04871D-01        asym. or it11                        
+  0 7.20000D+01 4.53614D+02        cross-section                        
+ -2 7.20000D+01-1.10176D-01        asym. or it11                        
+  0 7.40000D+01 4.18750D+02        cross-section                        
+ -2 7.40000D+01-1.15966D-01        asym. or it11                        
+  0 7.60000D+01 3.85391D+02        cross-section                        
+ -2 7.60000D+01-1.22305D-01        asym. or it11                        
+  0 7.80000D+01 3.53549D+02        cross-section                        
+ -2 7.80000D+01-1.29269D-01        asym. or it11                        
+  0 8.00000D+01 3.23227D+02        cross-section                        
+ -2 8.00000D+01-1.36940D-01        asym. or it11                        
+  0 8.20000D+01 2.94421D+02        cross-section                        
+ -2 8.20000D+01-1.45411D-01        asym. or it11                        
+  0 8.40000D+01 2.67125D+02        cross-section                        
+ -2 8.40000D+01-1.54785D-01        asym. or it11                        
+  0 8.60000D+01 2.41326D+02        cross-section                        
+ -2 8.60000D+01-1.65181D-01        asym. or it11                        
+  0 8.80000D+01 2.17010D+02        cross-section                        
+ -2 8.80000D+01-1.76730D-01        asym. or it11                        
+  0 9.00000D+01 1.94159D+02        cross-section                        
+ -2 9.00000D+01-1.89584D-01        asym. or it11                        
+  0 9.20000D+01 1.72753D+02        cross-section                        
+ -2 9.20000D+01-2.03912D-01        asym. or it11                        
+  0 9.40000D+01 1.52772D+02        cross-section                        
+ -2 9.40000D+01-2.19908D-01        asym. or it11                        
+  0 9.60000D+01 1.34191D+02        cross-section                        
+ -2 9.60000D+01-2.37791D-01        asym. or it11                        
+  0 9.80000D+01 1.16989D+02        cross-section                        
+ -2 9.80000D+01-2.57805D-01        asym. or it11                        
+  0 1.00000D+02 1.01141D+02        cross-section                        
+ -2 1.00000D+02-2.80219D-01        asym. or it11                        
+  0 1.02000D+02 8.66234D+01        cross-section                        
+ -2 1.02000D+02-3.05318D-01        asym. or it11                        
+  0 1.04000D+02 7.34109D+01        cross-section                        
+ -2 1.04000D+02-3.33382D-01        asym. or it11                        
+  0 1.06000D+02 6.14786D+01        cross-section                        
+ -2 1.06000D+02-3.64634D-01        asym. or it11                        
+  0 1.08000D+02 5.08010D+01        cross-section                        
+ -2 1.08000D+02-3.99131D-01        asym. or it11                        
+  0 1.10000D+02 4.13518D+01        cross-section                        
+ -2 1.10000D+02-4.36542D-01        asym. or it11                        
+  0 1.12000D+02 3.31039D+01        cross-section                        
+ -2 1.12000D+02-4.75675D-01        asym. or it11                        
+  0 1.14000D+02 2.60288D+01        cross-section                        
+ -2 1.14000D+02-5.13508D-01        asym. or it11                        
+  0 1.16000D+02 2.00969D+01        cross-section                        
+ -2 1.16000D+02-5.43240D-01        asym. or it11                        
+  0 1.18000D+02 1.52765D+01        cross-section                        
+ -2 1.18000D+02-5.50591D-01        asym. or it11                        
+  0 1.20000D+02 1.15339D+01        cross-section                        
+ -2 1.20000D+02-5.08037D-01        asym. or it11                        
+  0 1.22000D+02 8.83268D+00        cross-section                        
+ -2 1.22000D+02-3.71140D-01        asym. or it11                        
+  0 1.24000D+02 7.13387D+00        cross-section                        
+ -2 1.24000D+02-9.59102D-02        asym. or it11                        
+  0 1.26000D+02 6.39521D+00        cross-section                        
+ -2 1.26000D+02 2.97485D-01        asym. or it11                        
+  0 1.28000D+02 6.57103D+00        cross-section                        
+ -2 1.28000D+02 6.78762D-01        asym. or it11                        
+  0 1.30000D+02 7.61208D+00        cross-section                        
+ -2 1.30000D+02 9.15048D-01        asym. or it11                        
+  0 1.32000D+02 9.46529D+00        cross-section                        
+ -2 1.32000D+02 9.92408D-01        asym. or it11                        
+  0 1.34000D+02 1.20737D+01        cross-section                        
+ -2 1.34000D+02 9.70570D-01        asym. or it11                        
+  0 1.36000D+02 1.53765D+01        cross-section                        
+ -2 1.36000D+02 9.04884D-01        asym. or it11                        
+  0 1.38000D+02 1.93091D+01        cross-section                        
+ -2 1.38000D+02 8.26232D-01        asym. or it11                        
+  0 1.40000D+02 2.38030D+01        cross-section                        
+ -2 1.40000D+02 7.48302D-01        asym. or it11                        
+  0 1.42000D+02 2.87866D+01        cross-section                        
+ -2 1.42000D+02 6.76119D-01        asym. or it11                        
+  0 1.44000D+02 3.41850D+01        cross-section                        
+ -2 1.44000D+02 6.10919D-01        asym. or it11                        
+  0 1.46000D+02 3.99207D+01        cross-section                        
+ -2 1.46000D+02 5.52438D-01        asym. or it11                        
+  0 1.48000D+02 4.59141D+01        cross-section                        
+ -2 1.48000D+02 4.99901D-01        asym. or it11                        
+  0 1.50000D+02 5.20840D+01        cross-section                        
+ -2 1.50000D+02 4.52439D-01        asym. or it11                        
+  0 1.52000D+02 5.83483D+01        cross-section                        
+ -2 1.52000D+02 4.09235D-01        asym. or it11                        
+  0 1.54000D+02 6.46246D+01        cross-section                        
+ -2 1.54000D+02 3.69578D-01        asym. or it11                        
+  0 1.56000D+02 7.08316D+01        cross-section                        
+ -2 1.56000D+02 3.32869D-01        asym. or it11                        
+  0 1.58000D+02 7.68888D+01        cross-section                        
+ -2 1.58000D+02 2.98604D-01        asym. or it11                        
+  0 1.60000D+02 8.27185D+01        cross-section                        
+ -2 1.60000D+02 2.66367D-01        asym. or it11                        
+  0 1.62000D+02 8.82459D+01        cross-section                        
+ -2 1.62000D+02 2.35812D-01        asym. or it11                        
+  0 1.64000D+02 9.34004D+01        cross-section                        
+ -2 1.64000D+02 2.06647D-01        asym. or it11                        
+  0 1.66000D+02 9.81159D+01        cross-section                        
+ -2 1.66000D+02 1.78627D-01        asym. or it11                        
+  0 1.68000D+02 1.02332D+02        cross-section                        
+ -2 1.68000D+02 1.51545D-01        asym. or it11                        
+  0 1.70000D+02 1.05995D+02        cross-section                        
+ -2 1.70000D+02 1.25220D-01        asym. or it11                        
+  0 1.72000D+02 1.09059D+02        cross-section                        
+ -2 1.72000D+02 9.94969D-02        asym. or it11                        
+  0 1.74000D+02 1.11483D+02        cross-section                        
+ -2 1.74000D+02 7.42349D-02        asym. or it11                        
+  0 1.76000D+02 1.13237D+02        cross-section                        
+ -2 1.76000D+02 4.93083D-02        asym. or it11                        
+  0 1.78000D+02 1.14299D+02        cross-section                        
+ -2 1.78000D+02 2.46002D-02        asym. or it11                        
+  0 1.80000D+02 1.14654D+02        cross-section                        
+ -2 1.80000D+02 0.00000D+00        asym. or it11                        
 <ang.dis.>      1.01      1.00000000D+00    119.90    0    1            
     1  0.0+   2   91                                                    
   0 0.00000D+00 1.75970D+03        cross-section                        

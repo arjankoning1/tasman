@@ -2,7 +2,7 @@
 ##   title: Ag107(p,x) nuclear model parameters
 ##   source: TALYS-2.2
 ##   user: Arjan Koning
-##   date: 2026-03-28
+##   date: 2026-05-13
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 47
@@ -37,10 +37,10 @@ ptableadjust     48 108   0.00000   0
 Ufermi           48 108  30.00000   0
 cfermi           48 108   5.00000   0
 g                48 108   7.20000
-gp               48 108   3.27821
-gn               48 108   4.31512
-gnadjust         48 108   1.07878
-gpadjust         48 108   1.02444
+gp               48 108   3.20000
+gn               48 108   4.00000
+gnadjust         48 108   1.00000
+gpadjust         48 108   1.00000
 gadjust          48 108   1.00000
 Risomer          48 108   1.00000
 ## parameters: 
@@ -111,12 +111,12 @@ ctableadjust     48 107   0.00000   0
 ptableadjust     48 107   0.00000   0
 Ufermi           48 107  30.00000   0
 cfermi           48 107   5.00000   0
-D0               48 107 1.65000E+02
+D0               48 107 1.65000E-01
 g                48 107   7.13333
-gp               48 107   3.23174
-gn               48 107   4.13330
-gnadjust         48 107   1.05084
-gpadjust         48 107   1.00992
+gp               48 107   3.20000
+gn               48 107   3.93333
+gnadjust         48 107   1.00000
+gpadjust         48 107   1.00000
 gadjust          48 107   1.00000
 Risomer          48 107   1.00000
 ## parameters: 
@@ -188,10 +188,10 @@ ptableadjust     47 107   0.00000   0
 Ufermi           47 107  30.00000   0
 cfermi           47 107   5.00000   0
 g                47 107   7.13333
-gp               47 107   3.02107
-gn               47 107   3.76236
-gnadjust         47 107   0.94059
-gpadjust         47 107   0.96417
+gp               47 107   3.13333
+gn               47 107   4.00000
+gnadjust         47 107   1.00000
+gpadjust         47 107   1.00000
 gadjust          47 107   1.00000
 Risomer          47 107   1.00000
 ## parameters: 
@@ -412,7 +412,7 @@ ctableadjust     46 105   0.00000   0
 ptableadjust     46 105   0.00000   0
 Ufermi           46 105  30.00000   0
 cfermi           46 105   5.00000   0
-D0               46 105 3.00000E+02
+D0               46 105 3.00000E-01
 g                46 105   7.00000
 gp               46 105   3.06667
 gn               46 105   3.93333
@@ -788,7 +788,7 @@ ctableadjust     46 106   0.00000   0
 ptableadjust     46 106   0.00000   0
 Ufermi           46 106  30.00000   0
 cfermi           46 106   5.00000   0
-D0               46 106 1.03000E+01
+D0               46 106 1.03000E-02
 g                46 106   7.06667
 gp               46 106   3.06667
 gn               46 106   4.00000
@@ -864,7 +864,7 @@ ctableadjust     45 104   0.00000   0
 ptableadjust     45 104   0.00000   0
 Ufermi           45 104  30.00000   0
 cfermi           45 104   5.00000   0
-D0               45 104 3.20000E+01
+D0               45 104 3.20000E-02
 g                45 104   6.93333
 gp               45 104   3.00000
 gn               45 104   3.93333
@@ -1165,7 +1165,7 @@ ctableadjust     44 101   0.00000   0
 ptableadjust     44 101   0.00000   0
 Ufermi           44 101  30.00000   0
 cfermi           44 101   5.00000   0
-D0               44 101 3.45000E+02
+D0               44 101 3.45000E-01
 g                44 101   6.73333
 gp               44 101   2.93333
 gn               44 101   3.80000
@@ -1241,7 +1241,7 @@ ctableadjust     44 100   0.00000   0
 ptableadjust     44 100   0.00000   0
 Ufermi           44 100  30.00000   0
 cfermi           44 100   5.00000   0
-D0               44 100 2.50000E+01
+D0               44 100 2.50000E-02
 g                44 100   6.66667
 gp               44 100   2.93333
 gn               44 100   3.73333
@@ -1767,7 +1767,7 @@ ctableadjust     44 103   0.00000   0
 ptableadjust     44 103   0.00000   0
 Ufermi           44 103  30.00000   0
 cfermi           44 103   5.00000   0
-D0               44 103 2.80000E+02
+D0               44 103 2.80000E-01
 g                44 103   6.86667
 gp               44 103   2.93333
 gn               44 103   3.93333
@@ -1843,7 +1843,7 @@ ctableadjust     44 102   0.00000   0
 ptableadjust     44 102   0.00000   0
 Ufermi           44 102  30.00000   0
 cfermi           44 102   5.00000   0
-D0               44 102 1.80000E+01
+D0               44 102 1.80000E-02
 g                44 102   6.80000
 gp               44 102   2.93333
 gn               44 102   3.86667
@@ -1919,7 +1919,7 @@ ctableadjust     43 100   0.00000   0
 ptableadjust     43 100   0.00000   0
 Ufermi           43 100  30.00000   0
 cfermi           43 100   5.00000   0
-D0               43 100 1.40000E+01
+D0               43 100 1.40000E-02
 g                43 100   6.66667
 gp               43 100   2.86667
 gn               43 100   3.80000
@@ -2290,7 +2290,7 @@ xscaptherm      0.00000E+00
 levinger        6.50000E+00
 ## General parameters:
 ##   pre-equilibrium
-M2constant        1.03730
+M2constant        1.00000
 M2limit           1.00000
 M2shift           1.00000
 Rpipi             1.00000
@@ -2346,21 +2346,21 @@ v1adjust      n   1.00000
 v2adjust      n   1.00000
 v3adjust      n   1.00000
 v4adjust      n   1.00000
-rvadjust      n   0.99023
-avadjust      n   0.98639
-w1adjust      n   0.98741
+rvadjust      n   1.00000
+avadjust      n   1.00000
+w1adjust      n   1.00000
 w2adjust      n   1.00000
 w3adjust      n   1.00000
 w4adjust      n   1.00000
-rwadjust      n   0.99023
-awadjust      n   0.98639
-rvdadjust     n   0.98988
-avdadjust     n   1.01174
+rwadjust      n   1.00000
+awadjust      n   1.00000
+rvdadjust     n   1.00000
+avdadjust     n   1.00000
 d1adjust      n   1.00000
-d2adjust      n   1.09020
+d2adjust      n   1.00000
 d3adjust      n   1.00000
-rwdadjust     n   0.98988
-awdadjust     n   1.01174
+rwdadjust     n   1.00000
+awdadjust     n   1.00000
 rvsoadjust    n   1.00000
 avsoadjust    n   1.00000
 vso1adjust    n   1.00000
@@ -2374,21 +2374,21 @@ v1adjust      p   1.00000
 v2adjust      p   1.00000
 v3adjust      p   1.00000
 v4adjust      p   1.00000
-rvadjust      p   1.01417
-avadjust      p   0.97354
-w1adjust      p   1.10145
+rvadjust      p   1.00000
+avadjust      p   1.00000
+w1adjust      p   1.00000
 w2adjust      p   1.00000
 w3adjust      p   1.00000
 w4adjust      p   1.00000
-rwadjust      p   1.01417
-awadjust      p   0.97354
-rvdadjust     p   0.96162
-avdadjust     p   0.99233
+rwadjust      p   1.00000
+awadjust      p   1.00000
+rvdadjust     p   1.00000
+avdadjust     p   1.00000
 d1adjust      p   1.00000
-d2adjust      p   1.08911
+d2adjust      p   1.00000
 d3adjust      p   1.00000
-rwdadjust     p   0.96162
-awdadjust     p   0.99233
+rwdadjust     p   1.00000
+awdadjust     p   1.00000
 rvsoadjust    p   1.00000
 avsoadjust    p   1.00000
 vso1adjust    p   1.00000
@@ -2514,21 +2514,21 @@ v1adjust      e   1.00000
 v2adjust      e   1.00000
 v3adjust      e   1.00000
 v4adjust      e   1.00000
-rvadjust      e   1.01417
-avadjust      e   0.97354
-w1adjust      e   1.10145
+rvadjust      e   1.00000
+avadjust      e   1.00000
+w1adjust      e   1.00000
 w2adjust      e   1.00000
 w3adjust      e   1.00000
 w4adjust      e   1.00000
-rwadjust      e   1.01417
-awadjust      e   0.97354
-rvdadjust     e   0.96162
-avdadjust     e   0.99233
+rwadjust      e   1.00000
+awadjust      e   1.00000
+rvdadjust     e   1.00000
+avdadjust     e   1.00000
 d1adjust      e   1.00000
-d2adjust      e   1.08911
+d2adjust      e   1.00000
 d3adjust      e   1.00000
-rwdadjust     e   0.96162
-awdadjust     e   0.99233
+rwdadjust     e   1.00000
+awdadjust     e   1.00000
 rvsoadjust    e   1.00000
 avsoadjust    e   1.00000
 vso1adjust    e   1.00000

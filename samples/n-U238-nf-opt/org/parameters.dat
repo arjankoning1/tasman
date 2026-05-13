@@ -2,7 +2,7 @@
 ##   title: U238(n,x) nuclear model parameters
 ##   source: TALYS-2.2
 ##   user: Arjan Koning
-##   date: 2026-03-28
+##   date: 2026-05-13
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 92
@@ -37,8 +37,8 @@ deltaW           92 239   2.50000   1
 Ntop             92 239   1   1
 Nlow             92 239   0   1
 s2adjust         92 239   1.00000   1
-ctable           92 239   0.51031   1
-ptable           92 239   0.57035   1
+ctable           92 239  -0.39753   1
+ptable           92 239  -0.03277   1
 ctableadjust     92 239   0.00000   1
 ptableadjust     92 239   0.00000   1
 Ufermi           92 239  45.00000   1
@@ -50,8 +50,8 @@ deltaW           92 239   0.60000   2
 Ntop             92 239   1   2
 Nlow             92 239   0   2
 s2adjust         92 239   1.00000   2
-ctable           92 239  -0.15170   2
-ptable           92 239  -1.97709   2
+ctable           92 239   0.66973   2
+ptable           92 239  -0.45975   2
 ctableadjust     92 239   0.00000   2
 ptableadjust     92 239   0.00000   2
 Ufermi           92 239  45.00000   2
@@ -63,14 +63,14 @@ deltaW           92 239   0.60000   3
 Ntop             92 239   1   3
 Nlow             92 239   0   3
 s2adjust         92 239   1.00000   3
-ctable           92 239   0.97253   3
-ptable           92 239   0.96821   3
+ctable           92 239   0.44307   3
+ptable           92 239  -0.14079   3
 ctableadjust     92 239   0.00000   3
 ptableadjust     92 239   0.00000   3
 Ufermi           92 239  45.00000   3
 cfermi           92 239   5.00000   3
 Krotconstant     92 239   1.00000   3
-D0               92 239 2.03000E+01
+D0               92 239 2.03000E-02
 g                92 239  15.93333
 gp               92 239   6.13333
 gn               92 239   9.80000
@@ -134,8 +134,8 @@ ggradjust        92 239   1.000 M2
 ## parameters: 
 ##   fission
 ##
-betafiscor       92 239   0.76510
-vfiscor          92 239   1.19064
+betafiscor       92 239   0.80811
+vfiscor          92 239   0.95026
 rmiufiscor       92 239   1.00000
 betafiscoradjust   92 239   1.00000
 vfiscoradjust    92 239   1.00000
@@ -216,7 +216,7 @@ ptableadjust     92 238   0.00000   3
 Ufermi           92 238  45.00000   3
 cfermi           92 238   5.00000   3
 Krotconstant     92 238   1.00000   3
-D0               92 238 3.50000E+00
+D0               92 238 3.50000E-03
 g                92 238  15.86667
 gp               92 238   6.13333
 gn               92 238   9.73333
@@ -1093,7 +1093,7 @@ ptableadjust     92 237   0.00000   3
 Ufermi           92 237  45.00000   3
 cfermi           92 237   5.00000   3
 Krotconstant     92 237   1.00000   3
-D0               92 237 1.40000E+01
+D0               92 237 1.40000E-02
 g                92 237  15.80000
 gp               92 237   6.13333
 gn               92 237   9.66667
@@ -1384,7 +1384,7 @@ ptableadjust     90 234   0.00000   3
 Ufermi           90 234  45.00000   3
 cfermi           90 234   5.00000   3
 Krotconstant     90 234   1.00000   3
-D0               90 234 1.94000E+01
+D0               90 234 1.94000E-02
 g                90 234  15.60000
 gp               90 234   6.00000
 gn               90 234   9.60000
@@ -1735,4 +1735,4 @@ rcadjust      e   1.00000
 ## General parameters:
 ##   resonance parameters
 ## Z   A     S0        R      xs(therm)    D0         a         P        Sn
-##  92 238 4.388E-01 5.885E+00 2.670E+03 2.031E+01 1.658E+01 7.762E-01 4.806E+00
+##  92 238 4.028E-01 6.282E+00 2.670E+03 2.031E+01 1.658E+01 7.762E-01 4.806E+00

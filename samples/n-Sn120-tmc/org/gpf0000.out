@@ -1,5 +1,5 @@
 
-    TEFAL-2.2 (Version: December 18, 2025)
+    TEFAL-2.23 (Version: May 10, 2026)
 
            Creating ENDF-6 files with TALYS
 
@@ -45,7 +45,7 @@
  rp10                n     flagrp10      flag to put all residual production cross sections in MF10
  fis10               n     flagfis10     flag to put (subactinide) fission cross sections in MF10
  gam13               n     flaggam13     flag to use MF13 for gamma production instead of MF12 (if not in MF6)
- gamdisc             y     flaggamdisc   flag to store gamma production per discrete level cross section (MT51..) instead of in the total of MT4
+ gamdiscrete         y     flaggamdisc   flag to store gamma production per discrete level cross section (MT51..) instead of in the total of MT4
  gamspectrum         n     flaggamspec   flag to store gamma production only as a spectrum and not per discrete level
  ngn                 n     flagngn       flag to include (n,gamma n) data
  partialn            y     flagparn      flag to include partial cross sections for neutrons
@@ -92,8 +92,8 @@
  endffile n-Sn120-rand-0000 endffile      name of ENDF file
 
 
- Number of deleted points:   371 (see file tefal.clean)
+ Number of deleted points:   357 (see file tefal.clean)
 
- Execution time:  0 hours  0 minutes  4.32 seconds 
+ Execution time:  0 hours  0 minutes  4.51 seconds 
 
  TEFAL has created the following ENDF-6 file: n-Sn120-rand-0000

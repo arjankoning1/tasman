@@ -2,7 +2,7 @@
 #   title: Sn120(n,pa)Ag116n cross section Run 9999
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-03-28
+#   date: 2026-05-13
 #   format: YANDF-0.4
 # target:
 #   Z: 50
@@ -29,7 +29,7 @@
 #     type: cross section
 #   datablock:
 #     columns: 3
-#     entries: 38
+#     entries: 40
 ##       E             xs       Isomeric_ratio
 ##     [MeV]          [mb]            []
    1.000000E-11   0.000000E+00
@@ -38,8 +38,10 @@
    1.000000E-05   0.000000E+00
    1.000000E-04   0.000000E+00
    2.000000E-04   0.000000E+00
+   2.500000E-04   0.000000E+00
    5.000000E-04   0.000000E+00
    1.000000E-03   0.000000E+00
+   1.250000E-03   0.000000E+00
    2.000000E-03   0.000000E+00
    5.000000E-03   0.000000E+00
    1.000000E-02   0.000000E+00

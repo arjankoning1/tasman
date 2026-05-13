@@ -1,16 +1,10 @@
-Symmetric rotational optical model                                      
-TFFFFTFTFFFTTFFFFFFFFFFFTFFTFFFFFFFFFFFFFFFFFFFFFF
+Spherical optical model                                                 
+FFFFFTFTFFFFFFFFFFFFFFFFTFFTFFFFFFFFFFFFFFFFFFFFFF
 FFFFFFFFTFFFTTTFTTTFTTTFTFFFFFFFFFFFFFFFFFFFTFFFFF
-    5   20    0    1
+    1   20    1    1
    0.00000   0.00000              1.e-10    1.e-10    1.e-30
 
- 0.00 0 1+   5.00000   0.50000   1.00866 238.05079   0.00000
- 2.00 0 1+   0.04492
- 4.00 0 1+   0.14838
- 6.00 0 1+   0.30718
- 8.00 0 1+   0.51810
-    4    8       0.0
-   1.54606   0.44508
+ 0.00 1 1+   5.00000   0.50000   1.00866 238.05079   0.00000
   43.63731   1.26395   0.65668
    0.20132   1.26537   0.70211
    3.75061   1.19205   0.61062
