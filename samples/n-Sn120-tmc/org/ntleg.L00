@@ -2,7 +2,7 @@
 #   title: Sn120(n,t_0) Legendre coefficients at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -31,9 +31,9 @@
      3            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
      4            1.869593E-24   0.000000E+00   1.869593E-24   0.000000E+00   0.000000E+00
      5            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-     6            1.503360E-25   0.000000E+00   1.503360E-25   0.000000E+00   0.000000E+00
+     6            1.503359E-25   0.000000E+00   1.503359E-25   0.000000E+00   0.000000E+00
      7            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-     8           -7.150336E-27   0.000000E+00  -7.150336E-27   0.000000E+00   0.000000E+00
+     8           -7.150331E-27   0.000000E+00  -7.150331E-27   0.000000E+00   0.000000E+00
      9            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
     10            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
     11            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
@@ -71,7 +71,7 @@
 #   title: Sn120(n,t_0) Legendre coefficients at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -140,7 +140,7 @@
 #   title: Sn120(n,t_0) Legendre coefficients at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -209,7 +209,7 @@
 #   title: Sn120(n,t_0) Legendre coefficients at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -278,7 +278,7 @@
 #   title: Sn120(n,t_0) Legendre coefficients at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

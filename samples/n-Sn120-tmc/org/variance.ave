@@ -2,7 +2,7 @@
 #   title: Sn120(n,tot) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -57,7 +57,7 @@
 #   title: Sn120(n,el) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -112,7 +112,7 @@
 #   title: Sn120(n,non) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -167,7 +167,7 @@
 #   title: Sn120(n,g) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -222,7 +222,7 @@
 #   title: Sn120(n,g)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -267,7 +267,7 @@
    3.000000E+00   6.932644E-04   2.632991E-02   5.203283E+00   1.370020E-01
    3.500000E+00   6.213186E-04   2.492626E-02   3.757395E+00   9.365783E-02
    4.000000E+00   4.304918E-04   2.074830E-02   2.746449E+00   5.698413E-02
-   5.000000E+00   7.912724E-04   2.812956E-02   1.703909E+00   4.793021E-02
+   5.000000E+00   7.912742E-04   2.812960E-02   1.703908E+00   4.793025E-02
    6.000000E+00   1.568700E-02   1.252478E-01   1.137853E+00   1.425135E-01
    8.000000E+00   2.405249E-01   4.904334E-01   1.076235E+00   5.278217E-01
    9.000000E+00   3.359894E-01   5.796459E-01   1.526306E+00   8.847170E-01
@@ -279,7 +279,7 @@
 #   title: Sn120(n,g)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -316,7 +316,7 @@
    1.000000E-01   1.062326E-03   3.259334E-02   1.883484E+00   6.138904E-02
    2.000000E-01   1.167122E-02   1.080334E-01   2.328522E+00   2.515582E-01
    5.000000E-01   2.380697E-03   4.879239E-02   3.079687E+00   1.502653E-01
-   1.000000E+00   2.468190E-03   4.968088E-02   5.330223E+00   2.648102E-01
+   1.000000E+00   2.468185E-03   4.968083E-02   5.330224E+00   2.648099E-01
    1.400000E+00   5.434196E-03   7.371700E-02   5.114386E+00   3.770172E-01
    1.600000E+00   5.618668E-03   7.495777E-02   5.262577E+00   3.944710E-01
    1.800000E+00   5.639042E-03   7.509356E-02   5.797717E+00   4.353712E-01
@@ -336,7 +336,7 @@
 #   title: Sn120(n,n') cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -391,7 +391,7 @@
 #   title: Sn120(n,2n) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -446,7 +446,7 @@
 #   title: Sn120(n,2n)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -503,7 +503,7 @@
 #   title: Sn120(n,2n)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -560,7 +560,7 @@
 #   title: Sn120(n,3n) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -615,7 +615,7 @@
 #   title: Sn120(n,p) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -670,7 +670,7 @@
 #   title: Sn120(n,p)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -727,7 +727,7 @@
 #   title: Sn120(n,p)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -774,7 +774,7 @@
    4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    6.000000E+00   0.000000E+00   0.000000E+00   1.832595E-10   0.000000E+00
-   8.000000E+00   2.312576E-03   4.808925E-02   5.594074E-05   2.690148E-06
+   8.000000E+00   2.312577E-03   4.808927E-02   5.594074E-05   2.690149E-06
    9.000000E+00   5.694996E-03   7.546519E-02   7.668012E-04   5.786680E-05
    1.000000E+01   3.511597E-02   1.873925E-01   5.514123E-03   1.033306E-03
    1.200000E+01   7.539369E-02   2.745791E-01   2.786121E-01   7.650107E-02
@@ -784,7 +784,7 @@
 #   title: Sn120(n,p)n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -841,7 +841,7 @@
 #   title: Sn120(n,np) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -896,7 +896,7 @@
 #   title: Sn120(n,np)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -953,7 +953,7 @@
 #   title: Sn120(n,np)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1010,7 +1010,7 @@
 #   title: Sn120(n,2np) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1065,7 +1065,7 @@
 #   title: Sn120(n,2np)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1122,7 +1122,7 @@
 #   title: Sn120(n,2np)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1179,7 +1179,7 @@
 #   title: Sn120(n,2np)n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1236,7 +1236,7 @@
 #   title: Sn120(n,d) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1291,7 +1291,7 @@
 #   title: Sn120(n,d)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1348,7 +1348,7 @@
 #   title: Sn120(n,d)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1405,7 +1405,7 @@
 #   title: Sn120(n,nd) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1460,7 +1460,7 @@
 #   title: Sn120(n,nd)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1517,7 +1517,7 @@
 #   title: Sn120(n,nd)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1574,7 +1574,7 @@
 #   title: Sn120(n,nd)n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1631,7 +1631,7 @@
 #   title: Sn120(n,t) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1686,7 +1686,7 @@
 #   title: Sn120(n,t)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1743,7 +1743,7 @@
 #   title: Sn120(n,t)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1800,7 +1800,7 @@
 #   title: Sn120(n,t)n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1857,7 +1857,7 @@
 #   title: Sn120(n,nt) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1912,7 +1912,7 @@
 #   title: Sn120(n,nt)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1969,7 +1969,7 @@
 #   title: Sn120(n,nt)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2026,7 +2026,7 @@
 #   title: Sn120(n,h) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2081,7 +2081,7 @@
 #   title: Sn120(n,a) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2121,8 +2121,8 @@
    1.600000E+00   0.000000E+00   0.000000E+00   1.000000E-20   0.000000E+00
    1.800000E+00   0.000000E+00   0.000000E+00   1.000000E-20   0.000000E+00
    2.000000E+00   0.000000E+00   0.000000E+00   1.000000E-20   0.000000E+00
-   3.000000E+00   0.000000E+00   0.000000E+00   2.510238E-14   0.000000E+00
-   3.500000E+00   0.000000E+00   0.000000E+00   5.721072E-12   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   2.510228E-14   0.000000E+00
+   3.500000E+00   0.000000E+00   0.000000E+00   5.721070E-12   0.000000E+00
    4.000000E+00   0.000000E+00   0.000000E+00   2.152475E-10   0.000000E+00
    5.000000E+00   0.000000E+00   0.000000E+00   4.968977E-08   0.000000E+00
    6.000000E+00   7.325815E-02   2.706624E-01   1.523839E-06   4.124458E-07
@@ -2136,7 +2136,7 @@
 #   title: Sn120(n,a)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2178,12 +2178,12 @@
    1.600000E+00   0.000000E+00   0.000000E+00   5.000000E-21   0.000000E+00
    1.800000E+00   0.000000E+00   0.000000E+00   5.000000E-21   0.000000E+00
    2.000000E+00   0.000000E+00   0.000000E+00   5.000000E-21   0.000000E+00
-   3.000000E+00   0.000000E+00   0.000000E+00   2.140080E-14   0.000000E+00
-   3.500000E+00   0.000000E+00   0.000000E+00   3.837386E-12   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   2.140071E-14   0.000000E+00
+   3.500000E+00   0.000000E+00   0.000000E+00   3.837385E-12   0.000000E+00
    4.000000E+00   0.000000E+00   0.000000E+00   1.387806E-10   0.000000E+00
-   5.000000E+00   0.000000E+00   0.000000E+00   3.237749E-08   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   3.237748E-08   0.000000E+00
    6.000000E+00   7.591306E-02   2.755232E-01   9.805437E-07   2.701626E-07
-   8.000000E+00   5.676143E-02   2.382466E-01   8.127391E-05   1.936323E-05
+   8.000000E+00   5.676140E-02   2.382465E-01   8.127389E-05   1.936322E-05
    9.000000E+00   5.816546E-02   2.411752E-01   4.301540E-04   1.037425E-04
    1.000000E+01   2.125227E-03   4.610018E-02   1.806965E-03   8.330141E-05
    1.200000E+01   1.986739E-02   1.409517E-01   1.482506E-02   2.089618E-03
@@ -2193,7 +2193,7 @@
 #   title: Sn120(n,a)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2235,10 +2235,10 @@
    1.600000E+00   0.000000E+00   0.000000E+00   5.000000E-21   0.000000E+00
    1.800000E+00   0.000000E+00   0.000000E+00   5.000000E-21   0.000000E+00
    2.000000E+00   0.000000E+00   0.000000E+00   5.000000E-21   0.000000E+00
-   3.000000E+00   0.000000E+00   0.000000E+00   3.701575E-15   0.000000E+00
-   3.500000E+00   0.000000E+00   0.000000E+00   1.883685E-12   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   3.701565E-15   0.000000E+00
+   3.500000E+00   0.000000E+00   0.000000E+00   1.883683E-12   0.000000E+00
    4.000000E+00   0.000000E+00   0.000000E+00   7.646695E-11   0.000000E+00
-   5.000000E+00   0.000000E+00   0.000000E+00   1.731228E-08   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   1.731229E-08   0.000000E+00
    6.000000E+00   1.050816E-01   3.241629E-01   5.432948E-07   1.761160E-07
    8.000000E+00   7.166034E-02   2.676945E-01   5.096257E-05   1.364240E-05
    9.000000E+00   3.725228E-02   1.930085E-01   2.784852E-04   5.375000E-05
@@ -2250,7 +2250,7 @@
 #   title: Sn120(n,na) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2296,7 +2296,7 @@
    5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    6.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-   9.000000E+00   0.000000E+00   0.000000E+00   1.763064E-12   0.000000E+00
+   9.000000E+00   0.000000E+00   0.000000E+00   1.763089E-12   0.000000E+00
    1.000000E+01   0.000000E+00   0.000000E+00   2.388774E-10   0.000000E+00
    1.200000E+01   1.777805E-01   4.216402E-01   1.238924E-06   5.223804E-07
    1.400000E+01   2.056584E-01   4.534957E-01   2.897728E-04   1.314108E-04
@@ -2305,7 +2305,7 @@
 #   title: Sn120(n,2na) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2360,7 +2360,7 @@
 #   title: Sn120(n,2na)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2417,7 +2417,7 @@
 #   title: Sn120(n,2na)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2474,7 +2474,7 @@
 #   title: Sn120(n,pa) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2529,7 +2529,7 @@
 #   title: Sn120(n,pa)g cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2586,7 +2586,7 @@
 #   title: Sn120(n,pa)m cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2643,7 +2643,7 @@
 #   title: Sn120(n,pa)n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2700,7 +2700,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2755,7 +2755,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2810,7 +2810,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2865,7 +2865,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2920,7 +2920,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2975,7 +2975,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3030,7 +3030,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3065,7 +3065,7 @@
    1.000000E-01   7.304764E-03   8.546791E-02   9.030788E-02   7.718426E-03
    2.000000E-01   2.593474E-02   1.610427E-01   1.588459E-01   2.558096E-02
    5.000000E-01   8.335073E-03   9.129662E-02   2.107987E-01   1.924521E-02
-   1.000000E+00   1.679045E-03   4.097615E-02   2.372383E-01   9.721113E-03
+   1.000000E+00   1.679048E-03   4.097619E-02   2.372384E-01   9.721124E-03
    1.400000E+00   6.901729E-03   8.307665E-02   1.342336E-01   1.115168E-02
    1.600000E+00   7.869258E-03   8.870883E-02   1.238202E-01   1.098394E-02
    1.800000E+00   8.912660E-03   9.440689E-02   1.227229E-01   1.158588E-02
@@ -3085,7 +3085,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3140,7 +3140,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3179,7 +3179,7 @@
    1.400000E+00   6.932782E-04   2.633017E-02   2.227070E-03   5.863913E-05
    1.600000E+00   2.334064E-03   4.831215E-02   3.162752E-03   1.527994E-04
    1.800000E+00   4.724002E-03   6.873138E-02   4.231980E-03   2.908698E-04
-   2.000000E+00   6.723901E-03   8.199940E-02   5.497490E-03   4.507909E-04
+   2.000000E+00   6.723918E-03   8.199950E-02   5.497490E-03   4.507914E-04
    3.000000E+00   3.165503E-01   5.626281E-01   2.502800E-03   1.408146E-03
    3.500000E+00   3.246871E-01   5.698132E-01   2.941087E-03   1.675870E-03
    4.000000E+00   3.305386E-01   5.749249E-01   3.589554E-03   2.063724E-03
@@ -3195,7 +3195,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3250,7 +3250,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3279,7 +3279,7 @@
    1.250000E-03   6.593910E-02   2.567861E-01   8.199086E+00   2.105412E+00
    2.000000E-03   5.961658E-02   2.441651E-01   6.624617E+00   1.617500E+00
    5.000000E-03   3.295032E-02   1.815222E-01   3.935950E+00   7.144623E-01
-   1.000000E-02   1.657809E-02   1.287559E-01   2.430633E+00   3.129584E-01
+   1.000000E-02   1.657806E-02   1.287558E-01   2.430633E+00   3.129581E-01
    2.000000E-02   7.136920E-03   8.448029E-02   1.425549E+00   1.204308E-01
    5.000000E-02   1.498342E-03   3.870842E-02   7.014112E-01   2.715052E-02
    1.000000E-01   5.493740E-04   2.343873E-02   4.381236E-01   1.026906E-02
@@ -3305,7 +3305,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3360,7 +3360,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3415,7 +3415,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3470,7 +3470,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3525,7 +3525,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3554,7 +3554,7 @@
    1.250000E-03   3.102888E-03   5.570357E-02   7.043039E+00   3.923225E-01
    2.000000E-03   4.590326E-03   6.775194E-02   4.845825E+00   3.283141E-01
    5.000000E-03   4.602505E-03   6.784177E-02   2.310708E+00   1.567625E-01
-   1.000000E-02   2.942195E-03   5.424200E-02   1.292286E+00   7.009619E-02
+   1.000000E-02   2.942174E-03   5.424181E-02   1.292286E+00   7.009593E-02
    2.000000E-02   1.401334E-03   3.743440E-02   7.176484E-01   2.686474E-02
    5.000000E-02   3.012629E-04   1.735692E-02   3.546077E-01   6.154899E-03
    1.000000E-01   1.678000E-04   1.295376E-02   2.308888E-01   2.990879E-03
@@ -3580,7 +3580,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3617,7 +3617,7 @@
    5.000000E-01   8.288398E-03   9.104064E-02   1.367302E-01   1.244801E-02
    1.000000E+00   1.700162E-03   4.123302E-02   1.574626E-01   6.492660E-03
    1.400000E+00   7.032854E-03   8.386212E-02   9.090534E-02   7.623514E-03
-   1.600000E+00   7.861005E-03   8.866231E-02   8.465786E-02   7.505961E-03
+   1.600000E+00   7.861006E-03   8.866231E-02   8.465785E-02   7.505960E-03
    1.800000E+00   8.634715E-03   9.292317E-02   8.487943E-02   7.887266E-03
    2.000000E+00   9.195847E-03   9.589498E-02   8.788471E-02   8.427703E-03
    3.000000E+00   1.936538E-02   1.391595E-01   2.317067E-02   3.224420E-03
@@ -3635,7 +3635,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3672,7 +3672,7 @@
    5.000000E-01   5.006581E-03   7.075720E-02   1.901658E-01   1.345560E-02
    1.000000E+00   2.007661E-03   4.480693E-02   1.914483E-01   8.578214E-03
    1.400000E+00   1.381439E-02   1.175346E-01   9.888671E-02   1.162261E-02
-   1.600000E+00   1.620306E-02   1.272912E-01   9.063540E-02   1.153709E-02
+   1.600000E+00   1.620312E-02   1.272915E-01   9.063543E-02   1.153712E-02
    1.800000E+00   1.819621E-02   1.348933E-01   8.990160E-02   1.212713E-02
    2.000000E+00   2.011382E-02   1.418232E-01   9.065094E-02   1.285641E-02
    3.000000E+00   3.786187E-02   1.945813E-01   2.823524E-02   5.494049E-03
@@ -3690,7 +3690,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3745,7 +3745,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3800,7 +3800,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3855,7 +3855,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3910,7 +3910,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3965,7 +3965,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4020,7 +4020,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4075,7 +4075,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4130,7 +4130,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4185,7 +4185,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4240,7 +4240,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4295,7 +4295,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4319,9 +4319,9 @@
    1.000000E-06   1.035535E-03   3.217974E-02   4.698046E-01   1.511819E-02
    1.000000E-05   1.035532E-03   3.217969E-02   1.485652E-01   4.780783E-03
    1.000000E-04   1.035539E-03   3.217978E-02   4.698046E-02   1.511821E-03
-   5.000000E-04   1.530608E-02   1.237177E-01   3.043019E-01   3.764754E-02
-   1.000000E-03   4.497585E-02   2.120751E-01   3.160475E+00   6.702580E-01
-   1.250000E-03   5.731953E-02   2.394150E-01   6.732161E+00   1.611780E+00
+   5.000000E-04   1.530603E-02   1.237175E-01   3.043019E-01   3.764749E-02
+   1.000000E-03   4.497579E-02   2.120750E-01   3.160475E+00   6.702576E-01
+   1.250000E-03   5.731951E-02   2.394149E-01   6.732161E+00   1.611780E+00
    2.000000E-03   5.342050E-02   2.311288E-01   5.374331E+00   1.242162E+00
    5.000000E-03   3.056180E-02   1.748193E-01   3.150306E+00   5.507343E-01
    1.000000E-02   1.555183E-02   1.247070E-01   1.936744E+00   2.415255E-01
@@ -4331,7 +4331,7 @@
    2.000000E-01   9.678506E-04   3.111030E-02   2.544461E-01   7.915894E-03
    5.000000E-01   6.909351E-04   2.628564E-02   1.892462E-01   4.974458E-03
    1.000000E+00   4.680287E-04   2.163397E-02   1.787765E-01   3.867646E-03
-   1.400000E+00   6.600580E-03   8.124395E-02   1.000066E-01   8.124935E-03
+   1.400000E+00   6.600567E-03   8.124387E-02   1.000067E-01   8.124929E-03
    1.600000E+00   7.878618E-03   8.876158E-02   9.392503E-02   8.336934E-03
    1.800000E+00   9.385926E-03   9.688099E-02   9.410710E-02   9.117189E-03
    2.000000E+00   1.211554E-02   1.100706E-01   9.200072E-02   1.012658E-02
@@ -4350,7 +4350,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4379,7 +4379,7 @@
    1.250000E-03   5.767603E-02   2.401583E-01   6.695365E+00   1.607948E+00
    2.000000E-03   5.369460E-02   2.317210E-01   5.347452E+00   1.239117E+00
    5.000000E-03   3.073742E-02   1.753209E-01   3.135091E+00   5.496470E-01
-   1.000000E-02   1.579737E-02   1.256876E-01   1.924450E+00   2.418795E-01
+   1.000000E-02   1.579734E-02   1.256875E-01   1.924450E+00   2.418793E-01
    2.000000E-02   7.184725E-03   8.476276E-02   1.119635E+00   9.490337E-02
    5.000000E-02   2.137131E-03   4.622912E-02   5.314019E-01   2.456624E-02
    1.000000E-01   8.405596E-04   2.899241E-02   3.101620E-01   8.992342E-03
@@ -4405,7 +4405,7 @@
 #   title: Sn120 n cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4460,7 +4460,7 @@
 #   title: Sn120(n,n'_01) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4515,7 +4515,7 @@
 #   title: Sn120(n,n'_02) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4570,7 +4570,7 @@
 #   title: Sn120(n,n'_03) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4625,7 +4625,7 @@
 #   title: Sn120(n,n'_04) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4680,7 +4680,7 @@
 #   title: Sn120(n,n'_05) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4735,7 +4735,7 @@
 #   title: Sn120(n,n'_06) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4790,7 +4790,7 @@
 #   title: Sn120(n,n'_07) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4845,7 +4845,7 @@
 #   title: Sn120(n,n'_08) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4900,7 +4900,7 @@
 #   title: Sn120(n,n'_09) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -4955,7 +4955,7 @@
 #   title: Sn120(n,n'_10) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5010,7 +5010,7 @@
 #   title: Sn120(n,n'_11) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5065,7 +5065,7 @@
 #   title: Sn120(n,n'_12) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5120,7 +5120,7 @@
 #   title: Sn120(n,n'_13) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5175,7 +5175,7 @@
 #   title: Sn120(n,n'_14) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5215,7 +5215,7 @@
    1.600000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    1.800000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-   3.000000E+00   1.506909E-01   3.881893E-01   3.756119E+01   1.458085E+01
+   3.000000E+00   1.506910E-01   3.881893E-01   3.756120E+01   1.458086E+01
    3.500000E+00   6.590115E-02   2.567122E-01   3.527701E+01   9.056039E+00
    4.000000E+00   2.562475E-02   1.600773E-01   2.674490E+01   4.281252E+00
    5.000000E+00   5.694530E-03   7.546211E-02   1.150565E+01   8.682405E-01
@@ -5230,7 +5230,7 @@
 #   title: Sn120(n,n'_15) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5285,7 +5285,7 @@
 #   title: Sn120(n,n'_16) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5340,7 +5340,7 @@
 #   title: Sn120(n,n'_17) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5395,7 +5395,7 @@
 #   title: Sn120(n,n'_18) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5450,7 +5450,7 @@
 #   title: Sn120(n,n'_19) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5505,7 +5505,7 @@
 #   title: Sn120(n,n'_20) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5560,7 +5560,7 @@
 #   title: Sn120(n,n'_21) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5603,7 +5603,7 @@
    3.000000E+00   1.866823E-01   4.320674E-01   8.438168E+00   3.645857E+00
    3.500000E+00   9.292307E-02   3.048329E-01   1.152755E+01   3.513977E+00
    4.000000E+00   3.540443E-02   1.881606E-01   1.031575E+01   1.941019E+00
-   5.000000E+00   7.106097E-03   8.429767E-02   5.532164E+00   4.663486E-01
+   5.000000E+00   7.106088E-03   8.429761E-02   5.532164E+00   4.663482E-01
    6.000000E+00   3.660339E-03   6.050074E-02   2.294466E+00   1.388169E-01
    8.000000E+00   2.630678E-02   1.621937E-01   2.730219E-01   4.428243E-02
    9.000000E+00   5.255868E-02   2.292568E-01   8.434957E-02   1.933771E-02
@@ -5615,7 +5615,7 @@
 #   title: Sn120(n,n'_22) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5670,7 +5670,7 @@
 #   title: Sn120(n,n'_23) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5710,7 +5710,7 @@
    1.600000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    1.800000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-   3.000000E+00   1.743272E-01   4.175251E-01   1.735769E+01   7.247272E+00
+   3.000000E+00   1.743273E-01   4.175251E-01   1.735769E+01   7.247273E+00
    3.500000E+00   8.723008E-02   2.953474E-01   2.575455E+01   7.606540E+00
    4.000000E+00   3.164339E-02   1.778859E-01   2.143190E+01   3.812432E+00
    5.000000E+00   6.101301E-03   7.811083E-02   1.009108E+01   7.882226E-01
@@ -5725,7 +5725,7 @@
 #   title: Sn120(n,n'_24) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5780,7 +5780,7 @@
 #   title: Sn120(n,n'_25) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5835,7 +5835,7 @@
 #   title: Sn120(n,n'_26) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5890,7 +5890,7 @@
 #   title: Sn120(n,n'_27) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -5945,7 +5945,7 @@
 #   title: Sn120(n,n'_28) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6000,7 +6000,7 @@
 #   title: Sn120(n,n'_29) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6040,7 +6040,7 @@
    1.600000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    1.800000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-   3.000000E+00   4.381542E-02   2.093213E-01   2.587152E-05   5.415461E-06
+   3.000000E+00   4.381538E-02   2.093212E-01   2.587152E-05   5.415458E-06
    3.500000E+00   2.675031E-02   1.635552E-01   4.993953E-04   8.167871E-05
    4.000000E+00   2.069052E-02   1.438420E-01   2.331503E-03   3.353680E-04
    5.000000E+00   9.480602E-03   9.736838E-02   1.395755E-02   1.359025E-03
@@ -6055,7 +6055,7 @@
 #   title: Sn120(n,n'_30) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6110,7 +6110,7 @@
 #   title: Sn120(n,n'_con) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6150,7 +6150,7 @@
    1.600000E+00   1.779293E-03   4.218166E-02   9.573687E-01   4.038341E-02
    1.800000E+00   1.791066E-03   4.232099E-02   1.342617E+00   5.682088E-02
    2.000000E+00   1.855786E-03   4.307884E-02   1.820892E+00   7.844193E-02
-   3.000000E+00   1.658612E-03   4.072607E-02   1.128641E+01   4.596511E-01
+   3.000000E+00   1.658635E-03   4.072635E-02   1.128637E+01   4.596527E-01
    3.500000E+00   1.291924E-03   3.594335E-02   5.531404E+02   1.988172E+01
    4.000000E+00   1.871475E-03   4.326055E-02   1.068395E+03   4.621938E+01
    5.000000E+00   2.364956E-03   4.863081E-02   1.651217E+03   8.030002E+01
@@ -6165,7 +6165,7 @@
 #   title: Sn120(n,p_00) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6220,7 +6220,7 @@
 #   title: Sn120(n,p_01) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6275,7 +6275,7 @@
 #   title: Sn120(n,p_02) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6330,7 +6330,7 @@
 #   title: Sn120(n,p_03) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6385,7 +6385,7 @@
 #   title: Sn120(n,p_04) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6440,7 +6440,7 @@
 #   title: Sn120(n,p_05) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6495,7 +6495,7 @@
 #   title: Sn120(n,p_06) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6550,7 +6550,7 @@
 #   title: Sn120(n,p_07) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6605,7 +6605,7 @@
 #   title: Sn120(n,p_08) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6660,7 +6660,7 @@
 #   title: Sn120(n,p_09) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6715,7 +6715,7 @@
 #   title: Sn120(n,p_10) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6770,7 +6770,7 @@
 #   title: Sn120(n,p_11) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6825,7 +6825,7 @@
 #   title: Sn120(n,p_12) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6880,7 +6880,7 @@
 #   title: Sn120(n,p_13) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6935,7 +6935,7 @@
 #   title: Sn120(n,p_14) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -6990,7 +6990,7 @@
 #   title: Sn120(n,p_15) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7045,7 +7045,7 @@
 #   title: Sn120(n,p_16) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7100,7 +7100,7 @@
 #   title: Sn120(n,p_17) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7155,7 +7155,7 @@
 #   title: Sn120(n,p_18) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7210,7 +7210,7 @@
 #   title: Sn120(n,p_19) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7265,7 +7265,7 @@
 #   title: Sn120(n,p_20) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7320,7 +7320,7 @@
 #   title: Sn120(n,p_21) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7375,7 +7375,7 @@
 #   title: Sn120(n,p_22) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7430,7 +7430,7 @@
 #   title: Sn120(n,p_23) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7485,7 +7485,7 @@
 #   title: Sn120(n,p_24) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7540,7 +7540,7 @@
 #   title: Sn120(n,p_25) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7595,7 +7595,7 @@
 #   title: Sn120(n,p_26) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7650,7 +7650,7 @@
 #   title: Sn120(n,p_27) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7705,7 +7705,7 @@
 #   title: Sn120(n,p_28) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7760,7 +7760,7 @@
 #   title: Sn120(n,p_29) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7815,7 +7815,7 @@
 #   title: Sn120(n,p_30) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7870,7 +7870,7 @@
 #   title: Sn120(n,p_con) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7925,7 +7925,7 @@
 #   title: Sn120(n,d_00) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -7980,7 +7980,7 @@
 #   title: Sn120(n,d_01) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8035,7 +8035,7 @@
 #   title: Sn120(n,d_02) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8090,7 +8090,7 @@
 #   title: Sn120(n,d_03) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8137,7 +8137,7 @@
    6.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    9.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-   1.000000E+01   0.000000E+00   0.000000E+00   9.746826E-22   0.000000E+00
+   1.000000E+01   0.000000E+00   0.000000E+00   9.746644E-22   0.000000E+00
    1.200000E+01   7.738181E-01   8.796693E-01   2.358672E-07   2.074852E-07
    1.400000E+01   4.534932E-01   6.734190E-01   4.306917E-04   2.900360E-04
    1.600000E+01   3.162054E-01   5.623214E-01   1.358749E-02   7.640537E-03
@@ -8145,7 +8145,7 @@
 #   title: Sn120(n,d_04) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8192,7 +8192,7 @@
    6.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    9.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-   1.000000E+01   0.000000E+00   0.000000E+00   7.764722E-24   0.000000E+00
+   1.000000E+01   0.000000E+00   0.000000E+00   7.764720E-24   0.000000E+00
    1.200000E+01   6.843491E-01   8.272539E-01   1.097586E-07   9.079826E-08
    1.400000E+01   4.523326E-01   6.725568E-01   4.961183E-04   3.336678E-04
    1.600000E+01   3.159222E-01   5.620696E-01   1.564224E-02   8.792026E-03
@@ -8200,7 +8200,7 @@
 #   title: Sn120(n,d_05) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8255,7 +8255,7 @@
 #   title: Sn120(n,d_06) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8310,7 +8310,7 @@
 #   title: Sn120(n,d_07) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8365,7 +8365,7 @@
 #   title: Sn120(n,d_08) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8420,7 +8420,7 @@
 #   title: Sn120(n,d_09) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8475,7 +8475,7 @@
 #   title: Sn120(n,d_10) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8530,7 +8530,7 @@
 #   title: Sn120(n,d_11) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8585,7 +8585,7 @@
 #   title: Sn120(n,d_12) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8640,7 +8640,7 @@
 #   title: Sn120(n,d_13) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8695,7 +8695,7 @@
 #   title: Sn120(n,d_14) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8750,7 +8750,7 @@
 #   title: Sn120(n,d_15) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8805,7 +8805,7 @@
 #   title: Sn120(n,d_16) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8860,7 +8860,7 @@
 #   title: Sn120(n,d_17) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8915,7 +8915,7 @@
 #   title: Sn120(n,d_18) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -8970,7 +8970,7 @@
 #   title: Sn120(n,d_19) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9025,7 +9025,7 @@
 #   title: Sn120(n,d_20) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9080,7 +9080,7 @@
 #   title: Sn120(n,d_21) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9135,7 +9135,7 @@
 #   title: Sn120(n,d_22) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9190,7 +9190,7 @@
 #   title: Sn120(n,d_23) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9245,7 +9245,7 @@
 #   title: Sn120(n,d_24) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9300,7 +9300,7 @@
 #   title: Sn120(n,d_25) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9355,7 +9355,7 @@
 #   title: Sn120(n,d_26) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9410,7 +9410,7 @@
 #   title: Sn120(n,d_27) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9465,7 +9465,7 @@
 #   title: Sn120(n,d_28) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9520,7 +9520,7 @@
 #   title: Sn120(n,d_29) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9575,7 +9575,7 @@
 #   title: Sn120(n,d_30) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9630,7 +9630,7 @@
 #   title: Sn120(n,d_con) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9685,7 +9685,7 @@
 #   title: Sn120(n,t_00) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9740,7 +9740,7 @@
 #   title: Sn120(n,t_01) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9795,7 +9795,7 @@
 #   title: Sn120(n,t_02) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9850,7 +9850,7 @@
 #   title: Sn120(n,t_03) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9905,7 +9905,7 @@
 #   title: Sn120(n,t_04) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -9960,7 +9960,7 @@
 #   title: Sn120(n,t_05) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10015,7 +10015,7 @@
 #   title: Sn120(n,t_06) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10070,7 +10070,7 @@
 #   title: Sn120(n,t_07) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10125,7 +10125,7 @@
 #   title: Sn120(n,t_08) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10180,7 +10180,7 @@
 #   title: Sn120(n,t_09) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10235,7 +10235,7 @@
 #   title: Sn120(n,t_10) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10290,7 +10290,7 @@
 #   title: Sn120(n,t_11) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10345,7 +10345,7 @@
 #   title: Sn120(n,t_12) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10400,7 +10400,7 @@
 #   title: Sn120(n,t_13) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10455,7 +10455,7 @@
 #   title: Sn120(n,t_14) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10510,7 +10510,7 @@
 #   title: Sn120(n,t_15) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10565,7 +10565,7 @@
 #   title: Sn120(n,t_16) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10620,7 +10620,7 @@
 #   title: Sn120(n,t_17) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10675,7 +10675,7 @@
 #   title: Sn120(n,t_18) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10730,7 +10730,7 @@
 #   title: Sn120(n,t_19) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10785,7 +10785,7 @@
 #   title: Sn120(n,t_20) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10840,7 +10840,7 @@
 #   title: Sn120(n,t_21) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10895,7 +10895,7 @@
 #   title: Sn120(n,t_22) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -10950,7 +10950,7 @@
 #   title: Sn120(n,t_23) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -11005,7 +11005,7 @@
 #   title: Sn120(n,t_24) cross section covariance matrix
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

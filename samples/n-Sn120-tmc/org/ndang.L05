@@ -2,7 +2,7 @@
 #   title: Sn120(n,d_5) angular distribution at 1.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -120,7 +120,7 @@
 #   title: Sn120(n,d_5) angular distribution at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -238,7 +238,7 @@
 #   title: Sn120(n,d_5) angular distribution at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -356,7 +356,7 @@
 #   title: Sn120(n,d_5) angular distribution at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -474,7 +474,7 @@
 #   title: Sn120(n,d_5) angular distribution at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -562,7 +562,7 @@
    1.240000E+02   6.223401E-03   6.223254E-03   1.468061E-07
    1.260000E+02   6.053473E-03   6.053323E-03   1.502770E-07
    1.280000E+02   5.892271E-03   5.892117E-03   1.540970E-07
-   1.300000E+02   5.739527E-03   5.739369E-03   1.583072E-07
+   1.300000E+02   5.739528E-03   5.739370E-03   1.583072E-07
    1.320000E+02   5.594986E-03   5.594824E-03   1.629555E-07
    1.340000E+02   5.458394E-03   5.458226E-03   1.680956E-07
    1.360000E+02   5.329502E-03   5.329329E-03   1.737870E-07
@@ -592,7 +592,7 @@
 #   title: Sn120(n,d_5) angular distribution at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -657,7 +657,7 @@
    7.800000E+01   1.989877E-02   1.989873E-02   4.928682E-08
    8.000000E+01   1.915805E-02   1.915801E-02   4.896520E-08
    8.200000E+01   1.844059E-02   1.844054E-02   4.870908E-08
-   8.400000E+01   1.774665E-02   1.774660E-02   4.851471E-08
+   8.400000E+01   1.774666E-02   1.774661E-02   4.851471E-08
    8.600000E+01   1.707643E-02   1.707638E-02   4.837871E-08
    8.800000E+01   1.642997E-02   1.642992E-02   4.829830E-08
    9.000000E+01   1.580724E-02   1.580719E-02   4.827170E-08

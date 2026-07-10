@@ -10,7 +10,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-05-13
+ Date: 2026-06-28
 
  ########## USER INPUT ##########
 
@@ -2494,7 +2494,7 @@ file: pfns0001.800.fis
  deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
  triton  = 0.00000E+00    Multiplicity= 0.00000E+00
  helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
- alpha   = 1.16571E-13    Multiplicity= 3.59099E-17
+ alpha   = 1.16571E-13    Multiplicity= 3.59098E-17
  fission = 8.10928E+01
 
  4. Residual production cross sections
@@ -3011,7 +3011,7 @@ file: pfns0002.000.fis
  deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
  triton  = 0.00000E+00    Multiplicity= 0.00000E+00
  helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
- alpha   = 3.04933E-13    Multiplicity= 1.00259E-16
+ alpha   = 3.04933E-13    Multiplicity= 1.00258E-16
  fission = 2.03729E+02
 
  4. Residual production cross sections
@@ -3875,7 +3875,7 @@ file: pfns0002.400.fis
   3   0.30718   2.08268    6.0+     4.13473     1.96970     6.10443    Direct
   4   0.51810   1.87176    8.0+     0.22279     0.15293     0.37572    Direct
   5   0.68011   1.70975    1.0-    28.37470     2.64495    31.01965    Direct
-  6   0.73193   1.65793    3.0-     0.67155     3.22966     3.90121    Direct
+  6   0.73193   1.65793    3.0-     0.67155     3.22965     3.90121    Direct
   7   0.77590   1.61396   10.0+     0.00184     0.00138     0.00323    Direct
   8   0.82664   1.56322    5.0-     0.62492     1.35820     1.98312    Direct
   9   0.92721   1.46265    0.0+    46.98960     1.72616    48.71576    Direct
@@ -4035,7 +4035,7 @@ file: pfns0002.400.fis
  deuteron= 0.00000E+00
  triton  = 0.00000E+00
  helium-3= 0.00000E+00
- alpha   = 7.63685E-13
+ alpha   = 7.63684E-13
 
  3. Total particle production cross sections
 
@@ -4045,7 +4045,7 @@ file: pfns0002.400.fis
  deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
  triton  = 0.00000E+00    Multiplicity= 0.00000E+00
  helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
- alpha   = 7.63685E-13    Multiplicity= 2.74883E-16
+ alpha   = 7.63684E-13    Multiplicity= 2.74883E-16
  fission = 3.59169E+02
 
  4. Residual production cross sections
@@ -5586,7 +5586,7 @@ file: pfns0003.000.fis
  deuteron= 0.00000E+00
  triton  = 0.00000E+00
  helium-3= 0.00000E+00
- alpha   = 1.95082E-12
+ alpha   = 1.95081E-12
 
  3. Total particle production cross sections
 
@@ -5596,7 +5596,7 @@ file: pfns0003.000.fis
  deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
  triton  = 0.00000E+00    Multiplicity= 0.00000E+00
  helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
- alpha   = 1.95082E-12    Multiplicity= 7.45754E-16
+ alpha   = 1.95081E-12    Multiplicity= 7.45753E-16
  fission = 4.87983E+02
 
  4. Residual production cross sections
@@ -5619,7 +5619,7 @@ file: pfns0003.000.fis
   238 2.12410E+03
 
  Total residual production cross section:  2128.4689941
- Total fission cross section            :   487.9826355
+ Total fission cross section            :   487.9826050
  Fission + res. production cross section:  2616.4516602
  Non-elastic cross section              :  2615.8981934
 
@@ -6060,7 +6060,7 @@ file: pfns0003.200.fis
     n   p   d   t   h   a
     0   0   0   0   0   0    4.87983E+02  (n,gf)           
 
- Absorption cross section                 :   492.34760
+ Absorption cross section                 :   492.34756
 
  Sum over exclusive channel cross sections:  2610.88770
  (n,gn) + (n,gp) +...(n,ga) cross sections:     6.81289
@@ -6113,7 +6113,7 @@ file: pfns0003.200.fis
  deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
  triton  = 0.00000E+00    Multiplicity= 0.00000E+00
  helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
- alpha   = 2.38020E-12    Multiplicity= 9.15552E-16
+ alpha   = 2.38020E-12    Multiplicity= 9.15551E-16
  fission = 5.09873E+02
 
  4. Residual production cross sections
@@ -7188,7 +7188,7 @@ file: pfns0003.600.fis
  deuteron= 0.00000E+00
  triton  = 0.00000E+00
  helium-3= 0.00000E+00
- alpha   = 3.28556E-12
+ alpha   = 3.28555E-12
 
  3. Total particle production cross sections
 
@@ -7198,7 +7198,7 @@ file: pfns0003.600.fis
  deuteron= 0.00000E+00    Multiplicity= 0.00000E+00
  triton  = 0.00000E+00    Multiplicity= 0.00000E+00
  helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
- alpha   = 3.28556E-12    Multiplicity= 1.26243E-15
+ alpha   = 3.28555E-12    Multiplicity= 1.26243E-15
  fission = 5.36895E+02
 
  4. Residual production cross sections
@@ -11456,6 +11456,6 @@ file: xs000003.fis
 file: xs200002.fis
 file: xs100003.fis
 
- Execution time:  0 hours  2 minutes  9.05 seconds 
+ Execution time:  0 hours  1 minutes 53.63 seconds 
 
  The TALYS team congratulates you with this successful calculation.

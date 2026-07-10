@@ -2,7 +2,7 @@
 #   title: Nb93(n,x) Goodness-of-fit for run      2
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 41
@@ -2044,7 +2044,7 @@ aadjust       40  93    1.00420
 #       entries: 10
 ##    energy          TALYS          exp.           dexp         rel. unc.        Chi2            C/E          include
 ##     [MeV]          [mb]           [mb]           [mb]            [%]            []             []             []
-   8.000000E-01   4.706831E+02   1.800000E+02   7.000000E+01   3.888889E+01   1.724422E+01   2.614853E+00       y
+   8.000000E-01   4.706833E+02   1.800000E+02   7.000000E+01   3.888889E+01   1.724424E+01   2.614854E+00       y
    1.000000E+00   7.513207E+02   5.000000E+02   1.000000E+02   2.000000E+01   6.316208E+00   1.496628E+00       y
    1.200000E+00   1.001338E+03   1.350000E+03   2.000000E+02   1.481481E+01   3.039123E+00   7.627241E-01       y
    1.400000E+00   1.251356E+03   1.580000E+03   1.200000E+02   7.594937E+00   7.500480E+00   7.932804E-01       y
@@ -2056,12 +2056,12 @@ aadjust       40  93    1.00420
    2.600000E+00   2.025654E+03   1.850000E+03   2.500000E+02   1.351351E+01   4.936682E-01   1.049155E+00       y
 #       Data set Frms:  1.442104E+00
 #       Data set Erms:  1.032537E+00
-#       Data set Chi2:  6.426411E+00
+#       Data set Chi2:  6.426412E+00
 #       Total points: 10
 #       Included points: 10
 #     Channel Frms:  1.442104E+00
 #     Channel Erms:  1.032537E+00
-#     Channel Chi2:  6.426411E+00
+#     Channel Chi2:  6.426412E+00
 #   Channel: xs000000.tot
 #     Frms limit:  1.000000E+30
 #     Chi2 limit:  1.000000E+30

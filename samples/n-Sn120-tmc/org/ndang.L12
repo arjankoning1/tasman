@@ -2,7 +2,7 @@
 #   title: Sn120(n,d_12) angular distribution at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -120,7 +120,7 @@
 #   title: Sn120(n,d_12) angular distribution at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -238,7 +238,7 @@
 #   title: Sn120(n,d_12) angular distribution at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -356,7 +356,7 @@
 #   title: Sn120(n,d_12) angular distribution at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -383,7 +383,7 @@
    2.000000E+00   1.816310E-02   1.816268E-02   4.230339E-07
    4.000000E+00   1.813100E-02   1.813058E-02   4.237875E-07
    6.000000E+00   1.807768E-02   1.807725E-02   4.250053E-07
-   8.000000E+00   1.800337E-02   1.800294E-02   4.266341E-07
+   8.000000E+00   1.800337E-02   1.800295E-02   4.266341E-07
    1.000000E+01   1.790844E-02   1.790801E-02   4.286075E-07
    1.200000E+01   1.779333E-02   1.779290E-02   4.308514E-07
    1.400000E+01   1.765857E-02   1.765813E-02   4.332909E-07
@@ -474,7 +474,7 @@
 #   title: Sn120(n,d_12) angular distribution at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

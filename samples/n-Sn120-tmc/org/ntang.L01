@@ -2,7 +2,7 @@
 #   title: Sn120(n,t_1) angular distribution at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -120,7 +120,7 @@
 #   title: Sn120(n,t_1) angular distribution at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -238,7 +238,7 @@
 #   title: Sn120(n,t_1) angular distribution at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -356,7 +356,7 @@
 #   title: Sn120(n,t_1) angular distribution at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -389,7 +389,7 @@
    1.400000E+01   4.777020E-04   4.774692E-04   2.328273E-07
    1.600000E+01   4.737310E-04   4.734971E-04   2.338958E-07
    1.800000E+01   4.692849E-04   4.690499E-04   2.350621E-07
-   2.000000E+01   4.643832E-04   4.641468E-04   2.363130E-07
+   2.000000E+01   4.643831E-04   4.641468E-04   2.363130E-07
    2.200000E+01   4.590467E-04   4.588091E-04   2.376349E-07
    2.400000E+01   4.532981E-04   4.530591E-04   2.390146E-07
    2.600000E+01   4.471615E-04   4.469211E-04   2.404389E-07
@@ -474,7 +474,7 @@
 #   title: Sn120(n,t_1) angular distribution at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -579,7 +579,7 @@
    1.580000E+02   2.451227E-04   2.449518E-04   1.709040E-07
    1.600000E+02   2.418999E-04   2.417303E-04   1.696145E-07
    1.620000E+02   2.390088E-04   2.388404E-04   1.684329E-07
-   1.640000E+02   2.364419E-04   2.362746E-04   1.673650E-07
+   1.640000E+02   2.364420E-04   2.362746E-04   1.673650E-07
    1.660000E+02   2.341926E-04   2.340262E-04   1.664153E-07
    1.680000E+02   2.322551E-04   2.320895E-04   1.655874E-07
    1.700000E+02   2.306242E-04   2.304593E-04   1.648838E-07

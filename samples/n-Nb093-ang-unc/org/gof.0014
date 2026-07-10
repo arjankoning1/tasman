@@ -2,7 +2,7 @@
 #   title: Nb93(n,x) Goodness-of-fit for run     14
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 41
@@ -1307,7 +1307,7 @@ aadjust       40  93    0.98976
    1.010000E+00   6.696829E+03   6.655000E+03   1.996500E+02   3.000000E+00   4.389535E-02   1.001043E+00       y
    1.320000E+00   6.079284E+03   5.925000E+03   1.777500E+02   3.000000E+00   7.533965E-01   1.016004E+00       y
    1.600000E+00   5.521502E+03   5.364000E+03   1.609200E+02   3.000000E+00   9.579698E-01   1.019741E+00       y
-#       Data set Frms:  1.031613E+00
+#       Data set Frms:  1.031612E+00
 #       Data set Erms:  1.022935E+00
 #       Data set Chi2:  1.318809E+00
 #       Total points: 21

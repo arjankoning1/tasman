@@ -7,7 +7,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-05-13
+ Date: 2026-06-28
 
  ########## USER INPUT ##########
 
@@ -1967,7 +1967,7 @@
     0   0   0   0   0   2    2.85622E-06  (p,2a)                                                    2.48334E-09
     0   0   0   0   0   3    1.00000E-07  (p,3a)                                                    8.69449E-11
 
- Absorption cross section                 :   219.68680
+ Absorption cross section                 :   219.68683
 
  Sum over exclusive channel cross sections:  1150.15369
  (n,gn) + (n,gp) +...(n,ga) cross sections:     1.51426
@@ -2198,7 +2198,7 @@
     0   0   0   0   1   0    5.32260E-06  (p,h)                                                     4.35782E-09
     0   0   0   0   0   1    7.67250E+00  (p,a)                                                     6.28178E-03
     2   0   0   0   0   0    7.89526E+02  (p,2n)                                                    6.46416E-01
-    1   1   0   0   0   0    1.19155E+02  (p,np)                                                    9.75571E-02
+    1   1   0   0   0   0    1.19155E+02  (p,np)                                                    9.75572E-02
                                                              0     7.33393E+01  0.61549
                                                              1     4.58160E+01  0.38451   7.15400E+05 sec. 
     0   2   0   0   0   0    1.77946E-01  (p,2p)                                                    1.45691E-04
@@ -2422,6 +2422,6 @@ file: xs210000.tot
 file: xs200001.tot
 file: xs000003.tot
 
- Execution time:  0 hours  0 minutes 19.59 seconds 
+ Execution time:  0 hours  0 minutes 15.90 seconds 
 
  The TALYS team congratulates you with this successful calculation.

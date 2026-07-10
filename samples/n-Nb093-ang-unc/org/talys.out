@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-05-13
+ Date: 2026-06-28
 
  ########## USER INPUT ##########
 
@@ -1967,7 +1967,7 @@ file: na0005.000ang.L30
 
      Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
     n   p   d   t   h   a                                        cross section   ratio
-    0   0   0   0   0   0    1.28560E+00  (n,g)                                                     7.13306E-04
+    0   0   0   0   0   0    1.28560E+00  (n,g)                                                     7.13307E-04
                                                              0     6.68636E-01  0.52010
                                                              1     6.16959E-01  0.47990   3.75800E+02 sec. 
     1   0   0   0   0   0    1.78759E+03  (n,n')                                                    9.91836E-01
@@ -1985,9 +1985,9 @@ file: na0005.000ang.L30
 
  Absorption cross section                 :    14.70488
 
- Sum over exclusive channel cross sections:  1802.30396
+ Sum over exclusive channel cross sections:  1802.30383
  (n,gn) + (n,gp) +...(n,ga) cross sections:     4.08582
- Total                                    :  1806.38977
+ Total                                    :  1806.38965
  Non-elastic cross section                :  1806.29358
 
  8. Discrete state angular distributions
@@ -2256,7 +2256,7 @@ file: na0008.000ang.L30
     0   0   0   0   0   0    1.21000E+00  (n,g)                                                     6.78211E-04
                                                              0     5.10305E-01  0.42174
                                                              1     6.99692E-01  0.57826   3.75800E+02 sec. 
-    1   0   0   0   0   0    1.12917E+03  (n,n')                                                    6.32906E-01
+    1   0   0   0   0   0    1.12917E+03  (n,n')                                                    6.32905E-01
                                                              0     9.86447E+02  0.87361
                                                              1     1.42721E+02  0.12639   5.08700E+08 sec. 
     0   1   0   0   0   0    1.68000E+01  (n,p)                                                     9.41652E-03
@@ -2275,9 +2275,9 @@ file: na0008.000ang.L30
 
  Absorption cross section                 :    30.63612
 
- Sum over exclusive channel cross sections:  1784.10156
+ Sum over exclusive channel cross sections:  1784.10144
  (n,gn) + (n,gp) +...(n,ga) cross sections:     3.41484
- Total                                    :  1787.51636
+ Total                                    :  1787.51624
  Non-elastic cross section                :  1787.40857
 
  8. Discrete state angular distributions
@@ -2541,6 +2541,6 @@ file: xs200000.tot
 file: xs110000.tot
 file: xs100001.tot
 
- Execution time:  0 hours  0 minutes 12.74 seconds 
+ Execution time:  0 hours  0 minutes 12.30 seconds 
 
  The TALYS team congratulates you with this successful calculation.

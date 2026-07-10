@@ -2,7 +2,7 @@
 #   title: Nb93(n,g)Nb94m cross section Run 0014
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target:
 #   Z: 41
@@ -41,4 +41,4 @@
    4.000000E+00   1.856609E+00
    5.000000E+00   1.296726E+00
    8.000000E+00   5.263938E-01
-   1.000000E+01   6.426574E-01
+   1.000000E+01   6.426575E-01

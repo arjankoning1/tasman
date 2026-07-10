@@ -2,7 +2,7 @@
 ##   title: Sn120(n,x) nuclear model parameters
 ##   source: TALYS-2.2
 ##   user: Arjan Koning
-##   date: 2026-05-13
+##   date: 2026-06-28
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 50
@@ -2205,9 +2205,9 @@ pair             46 111   1.13899
 Pshift           46 111   0.00000   0
 Pshiftadjust     46 111   0.00000   0
 deltaW           46 111   4.16946   0
-T                46 111   0.60245   0
-E0               46 111  -1.21198   0
-Exmatch          46 111   5.73536   0
+T                46 111   0.60244   0
+E0               46 111  -1.21193   0
+Exmatch          46 111   5.73526   0
 Tadjust          46 111   1.00000   0
 E0adjust         46 111   1.00000   0
 Exmatchadjust    46 111   1.00000   0

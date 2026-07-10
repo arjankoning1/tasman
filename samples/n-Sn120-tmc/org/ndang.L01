@@ -2,7 +2,7 @@
 #   title: Sn120(n,d_1) angular distribution at 9.000000E+00 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -120,7 +120,7 @@
 #   title: Sn120(n,d_1) angular distribution at 1.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -238,7 +238,7 @@
 #   title: Sn120(n,d_1) angular distribution at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -356,7 +356,7 @@
 #   title: Sn120(n,d_1) angular distribution at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -474,7 +474,7 @@
 #   title: Sn120(n,d_1) angular distribution at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -592,7 +592,7 @@
 #   title: Sn120(n,d_1) angular distribution at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -619,7 +619,7 @@
    2.000000E+00   8.629628E-02   8.629580E-02   4.812802E-07
    4.000000E+00   8.614377E-02   8.614329E-02   4.767827E-07
    6.000000E+00   8.589038E-02   8.588991E-02   4.694438E-07
-   8.000000E+00   8.553733E-02   8.553687E-02   4.594902E-07
+   8.000000E+00   8.553734E-02   8.553687E-02   4.594902E-07
    1.000000E+01   8.508626E-02   8.508582E-02   4.472222E-07
    1.200000E+01   8.453931E-02   8.453888E-02   4.329979E-07
    1.400000E+01   8.389899E-02   8.389857E-02   4.172145E-07
@@ -680,7 +680,7 @@
    1.240000E+02   1.907996E-02   1.907978E-02   1.739348E-07
    1.260000E+02   1.855897E-02   1.855879E-02   1.781018E-07
    1.280000E+02   1.806474E-02   1.806455E-02   1.826855E-07
-   1.300000E+02   1.759643E-02   1.759625E-02   1.877403E-07
+   1.300000E+02   1.759644E-02   1.759625E-02   1.877403E-07
    1.320000E+02   1.715328E-02   1.715309E-02   1.933310E-07
    1.340000E+02   1.673449E-02   1.673429E-02   1.995328E-07
    1.360000E+02   1.633932E-02   1.633911E-02   2.064292E-07
@@ -710,7 +710,7 @@
 #   title: Sn120(n,d_1) angular distribution at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

@@ -2,7 +2,7 @@
 #   title: Sn120(n,np) emission spectrum at 1.200000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -91,7 +91,7 @@
 #   title: Sn120(n,np) emission spectrum at 1.400000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -184,7 +184,7 @@
 #   title: Sn120(n,np) emission spectrum at 1.600000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -279,7 +279,7 @@
 #   title: Sn120(n,np) emission spectrum at 1.800000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -376,7 +376,7 @@
 #   title: Sn120(n,np) emission spectrum at 2.000000E+01 MeV
 #   source: TALYS-2.2
 #   user: Arjan Koning
-#   date: 2026-05-13
+#   date: 2026-06-28
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -420,7 +420,7 @@
    1.600000E+00   1.152250E+00   2.175663E+00   1.650698E-06   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    1.700000E+00   9.244364E-01   1.830020E+00   3.969154E-06   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    1.800000E+00   7.667918E-01   1.511970E+00   8.495193E-06   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-   1.900000E+00   6.961557E-01   1.271622E+00   1.889405E-05   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.900000E+00   6.961558E-01   1.271622E+00   1.889405E-05   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    2.000000E+00   6.073788E-01   1.035341E+00   4.485351E-05   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    2.200000E+00   1.037214E+00   6.761916E-01   1.339203E-04   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
    2.400000E+00   9.180929E-01   4.111996E-01   4.510336E-04   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
