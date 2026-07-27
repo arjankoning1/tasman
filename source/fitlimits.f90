@@ -80,8 +80,10 @@ subroutine fitlimits
 ! Otherwise parameter variation is done with relative ratios.
 !
   if (flagweight) Nhistbinall = int(1.+2*Nburn**0.333333)
-  write(*,'(/" Parameter ranges for optimization"/)')
-  write(*,'(" Parameter           Input           Delta           Lower         Upper"/)')
+  if (flaglims .eqv. .false.) then
+    write(*,'(/" Parameter ranges for optimization"/)')
+    write(*,'(" Parameter           Input           Delta           Lower         Upper"/)')
+  end if
   do i = 1, Npar
     Nhistbin(i) = Nhistbinall
     if (partype(i) == 'shift ') then
@@ -109,7 +111,7 @@ subroutine fitlimits
 !     parlow(i) = max(parlow(i), 20.)
       parhigh(i) = max(parlow(i)+1, parhigh(i))
     endif
-    write(*,'(a16,5es15.6)') parkey(i),parinp(i),pardelta(i),parlow(i),parhigh(i)
+    if (flaglims .eqv. .false.) write(*,'(a16,5es15.6)') parkey(i),parinp(i),pardelta(i),parlow(i),parhigh(i)
 !
 ! Make histogram for parameter
 !
@@ -188,6 +190,14 @@ subroutine fitlimits
       endif
     endif
   enddo
+  if (flaglims) then
+    call loadtalranges
+    write(*,'(/" Parameter ranges for optimization"/)')
+    write(*,'(" Parameter           Input           Delta           Lower         Upper"/)')
+    do i=1, Npar
+      write(*,'(a16,5es15.6)') parkey(i),parinp(i),pardelta(i),parlow(i),parhigh(i)
+    end do
+  end if
   return
 end subroutine fitlimits
 ! Copyright A.J. Koning 2021

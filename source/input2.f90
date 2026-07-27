@@ -351,6 +351,7 @@ subroutine input2
   flagglobal = .false.
   flagautoinc = .true.
   flagedep = .true.
+  flaglims = .false.
   tafislib = 'none            '
   zzmin = 1
   zzmax = numZ
@@ -466,13 +467,15 @@ subroutine input2
       cycle
     endif
     if (key == '#talysversion') then
-      read(value, '(a)' , iostat = istat) talys
+      read(value, '(a)' , iostat = istat) talysversion
       if (istat /= 0) call read_error(line, istat)
+      talys = trim(binpath)//talysversion
       cycle
     endif
     if (key == '#tefalversion') then
-      read(value, '(a)' , iostat = istat) tefal
+      read(value, '(a)' , iostat = istat) tefalversion
       if (istat /= 0) call read_error(line, istat)
+      tefal = trim(binpath)//tefalversion
       cycle
     endif
     if (key == '#taresversion') then
@@ -988,6 +991,12 @@ subroutine input2
       if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
       cycle
     endif
+    if (key == '#talyslims') then
+      if (ch == 'n') flaglims = .false.
+      if (ch == 'y') flaglims = .true.
+      if (ch /= 'y' .and. ch /= 'n') call read_error(line, istat)
+      cycle
+    end if
     if (key == '#taneslib') then
       read(value, * , iostat = istat) taneslib
       if (istat /= 0) call read_error(line, istat)
