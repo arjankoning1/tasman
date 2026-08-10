@@ -256,7 +256,11 @@ subroutine sensitivity
   un(5) = '%'
   col(6) = 'Pearson corr.'
   un(6) = ''
-  Ncol = 6
+  if (mode == 1) then
+    Ncol = 6
+  else
+    Ncol = 5
+  endif
   call write_char(indent,'parameters','')
   call write_char(id2,'method',method)
   call write_integer(id2,'number of random runs',Nr)
@@ -298,9 +302,15 @@ subroutine sensitivity
       enddo
       call write_quantity(indent,quantity)
       call write_datablock(indent,Ncol,Np,col,un)
-      do k = 1, Np
-        write(1, '(a30, 4es15.6)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k), pearloc(k)
-      enddo
+      if (mode == 1) then
+        do k = 1, Np
+          write(1, '(a30, 4es15.6)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k), pearloc(k)
+        enddo
+      else
+        do k = 1, Np
+          write(1, '(a30, 3es15.6)') strloc(k)(1:30), Sloc(k), xsloc(k), 100. * ploc(k)
+        enddo
+      endif
     enddo
   enddo
   close (1)
