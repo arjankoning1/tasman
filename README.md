@@ -207,7 +207,8 @@ From the top-level TASMAN directory, the same test can be started with:
 make -C source check
 ```
 
-`make check` sets `TASMAN_DIR` automatically for the test.
+`make check` automatically sets `TASMAN_DIR` and the sibling `TALYS_DIR` and `TEFAL_DIR`, and adds the TALYS and TEFAL
+executables to `PATH` for the test.
 
 You may create your own input file, for example `tasman.inp`, after which TASMAN works as follows:
 
