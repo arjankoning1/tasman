@@ -7,6 +7,7 @@ subroutine machine
 !
 ! 2023-12-29: Original code
 ! 2026-08-25: Runtime definition of TASMAN directory and user
+! 2026-08-27: Resolve external executables through PATH
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -16,7 +17,7 @@ subroutine machine
 ! Variables for path names
 !   librariespath ! directory containing files to be read
 !   exforpath     ! directory containing files to be read
-!   binpath       ! directory containing files to be read
+!   binpath       ! optional prefix for external executables
 !   tasmanpath    ! directory containing files to be read
 !   psfpath       ! directory containing files to be read
 !
@@ -55,8 +56,8 @@ subroutine machine
   endif
 !
 ! Remove a trailing slash, if present, and determine the parent directory.
-! TASMAN expects libraries, exfortables, bin and PSF to be sibling
-! directories of the TASMAN directory.
+! TASMAN expects libraries, exfortables and PSF to be sibling directories
+! of the TASMAN directory.
 !
   i = len_trim(code_dir)
   if (i > 1) then
@@ -71,7 +72,12 @@ subroutine machine
 !
   librariespath = trim(base_dir)//'libraries/'
   exforpath = trim(base_dir)//'exfortables/'
-  binpath = trim(base_dir)//'bin/'
+!
+! External executables such as TALYS, TEFAL, TARES, TAFIS and TANES are
+! resolved through the user's PATH.  input2.f90 appends the executable
+! name to binpath, so an empty prefix lets the operating system find them.
+!
+  binpath = ''
   tasmanpath = trim(code_dir)//'/'
   psfpath = trim(base_dir)//'PSF/Photo/'
 !
