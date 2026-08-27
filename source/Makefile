@@ -1,49 +1,57 @@
-# This file is part of TASMAN
-# 
-#    Author: Arjan Koning Copyright: (C) 2024
+# TASMAN Makefile
 #
-# TASMAN is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
+# Examples:
 #
-# Basic installation (verified with the sample cases)
-#
-# FC="gfortran " FFLAGS=" "
-#
-# Distribution FC & FFLAGS (options provided by J-C Sublet)
-#
-# FC="gfortran " FFLAGS=" -Ofast "
-# FC="ifort    " FFLAGS=" -Ofast "
-# FC="nagfor   " FFLAGS=" -w     "
-#
-# Development FC & FFLAGS  (options provided by J-C Sublet)
-#
-# FC="gfortran " FFLAGS=" -Wall -fcheck=all -Og -g -fbacktrace   "
-# FC="ifort    " FFLAGS=" -O0 -g -traceback -check all -debug all"
-# FC="nagfor   " FFLAGS=" -C=all -O0 -g -gline                   "
-#
-CWD = $(shell pwd)
-PREFIX ?= $(CWD)/../
+#   make
+#   make FC=gfortran FFLAGS="-w -O3 -ffp-contract=off"
+#   make FC=ifx FFLAGS="-O3"
+#   make clean
+#   make check
 
-FC = gfortran
-FFLAGS = -w
+# Compiler-specific flags can be supplied by the user.
+ifeq ($(origin FC), default)
+  FC = gfortran
+endif
 
-fsub = $(shell echo [A-z]*.f90)
-fsub1 = $(shell echo [A-z]*.f)
-obj = $(fsub:.f=.o) $(fsub1:.f=.o)
-src = $(fsub) $(fsub1)
+ifeq ($(origin FFLAGS), undefined)
+  ifneq ($(findstring gfortran,$(FC)),)
+    FFLAGS = -w -O3 -ffp-contract=off
+  else
+    FFLAGS =
+  endif
+endif
 
-all: change tasman install clean
+# Installation directories.
 
-change : 
-	../path_change.bash
+TASMAN_DIR := $(abspath ..)
+BIN_DIR    := $(TASMAN_DIR)/bin
+TARGET     := $(BIN_DIR)/tasman
 
-tasman : $(obj)
-	$(FC) $(FFLAGS) -o  tasman  $(obj)
+# TASMAN source files.
+#
+# Free-form source files must be named so that alphabetical order places
+# module definitions, such as A0_tasman_mod.f90 and A1_error_handling_mod.f90,
+# before their users.
 
-install:
-	mkdir -p $(PREFIX)bin
-	mv tasman $(PREFIX)bin  
+FIXED_SOURCES := $(sort $(wildcard *.f))
+FREE_SOURCES  := $(sort $(wildcard *.f90))
+SOURCES       := $(FIXED_SOURCES) $(FREE_SOURCES)
+
+.PHONY: all install clean check
+
+all install: $(TARGET)
+
+$(TARGET): $(SOURCES)
+	@echo "Compiler: $(FC)"
+	@echo "Flags:    $(FFLAGS)"
+	@mkdir -p "$(BIN_DIR)"
+	$(FC) $(FFLAGS) -o "$(TARGET)" $(SOURCES)
+	@rm -f *.o *.mod
+	@echo "Installed: $(TARGET)"
 
 clean:
-	rm -f *.o *.mod
+	rm -f *.o *.mod tasman "$(TARGET)"
 
+check: all
+	cd "$(TASMAN_DIR)/samples" && \
+	  TASMAN_DIR="$(TASMAN_DIR)" ./verify
