@@ -45,17 +45,21 @@ make -C "$source_dir" all "$@"
 
 tasman_exe="$tasman_dir/bin/tasman"
 
-if [[ -x "$tasman_exe" ]]; then
-  echo
-  echo "TASMAN executable:"
-  echo "  $tasman_exe"
-  echo
-  echo "If not already done, add the following lines to your shell configuration:"
-  echo
-  echo "  export TASMAN_DIR=\"$tasman_dir\""
-  echo "  export PATH=\"\$TASMAN_DIR/bin:\$PATH\""
-  echo "  export TASMAN_USER=\"Your Name\""
-  echo
-  echo "Alternatively, edit code_dir in source/machine.f90 and rebuild TASMAN."
-  echo
+if [[ ! -x "$tasman_exe" ]]; then
+  echo "TASMAN installation error: executable not created:" >&2
+  echo "  $tasman_exe" >&2
+  exit 1
 fi
+
+echo
+echo "TASMAN executable:"
+echo "  $tasman_exe"
+echo
+echo "If not already done, add the following lines to your shell configuration:"
+echo
+echo "  export TASMAN_DIR=\"$tasman_dir\""
+echo "  export PATH=\"\$TASMAN_DIR/bin:\$PATH\""
+echo "  export TASMAN_USER=\"Your Name\""
+echo
+echo "Alternatively, edit code_dir in source/machine.f90 and rebuild TASMAN."
+echo
