@@ -1,108 +1,214 @@
-
 # TASMAN
+
 TASMAN is a statistical software package for the TALYS nuclear model code. The most important features are:
-  - uncertainty distributions and covariance matrices for TALYS results, through Monte Carlo sampling of TALYS nuclear model parameters 
-  - automatic optimization ('search') of TALYS nuclear model parameters to experimental nuclear reaction data and data from nuclear data libraries
-  - Total Monte Carlo: generation of a statistical ensemble of complete nuclear data libraries for uncertainty propagation
-  - parameter sensitivity profiles for TALYS output
+
+- uncertainty distributions and covariance matrices for TALYS results, through Monte Carlo sampling of TALYS nuclear model parameters
+- automatic optimization ('search') of TALYS nuclear model parameters to experimental nuclear reaction data and data from nuclear data libraries
+- Total Monte Carlo: generation of a statistical ensemble of complete nuclear data libraries for uncertainty propagation
+- parameter sensitivity profiles for TALYS output
 
 ## Documentation and reference
-A description of the code and its options can be found in the [TASMAN Tutorial (pdf)](https://github.com/arjankoning1/tasman/blob/main/doc/tasman.pdf).
-The reference to be used for TASMAN is
 
-A.J. Koning, D. Rochman, J.-Ch. Sublet, N. Dzysiuk, M. Fleming, and S. van der Marck, *TENDL: Complete Nuclear Data Library for innovative Nuclear Science and Technology*, Nuclear Data Sheets 155,1 (2019).
+A description of the code and its options can be found in the [TASMAN Tutorial (pdf)](https://github.com/arjankoning1/tasman/blob/main/doc/tasman.pdf).
+
+The reference to be used for TASMAN is:
+
+A.J. Koning, D. Rochman, J.-Ch. Sublet, N. Dzysiuk, M. Fleming, and S. van der Marck, *TENDL: Complete Nuclear Data Library for innovative Nuclear Science and Technology*, Nuclear Data Sheets 155, 1 (2019).
 
 ## Installation
 
-### Prerequisites:
+### Prerequisites
 
 The following are the prerequisites for compiling TASMAN:
-  - git (only if the package is downloaded via Github)
-  - a recent Fortran compiler such as gcc (gfortran)
-  - a successful installation of the TALYS nuclear model code
-  - for Total Monte Carlo: a successful installation of the TEFAL code for ENDF-6 formatting.
 
-### Downloads:
+- git (only if the package is downloaded via GitHub)
+- GNU make
+- a recent Fortran compiler, such as GNU Fortran (gfortran)
+- a successful installation of the TALYS nuclear model code
+- for Total Monte Carlo: a successful installation of TEFAL for ENDF-6 formatting
 
-To download TASMAN, you can use one of the following options:
-#### 1. Download the entire tar file (frozen version TASMAN-2.2):
-```
-https://nds.iaea.org/talys/tasman.tar
+### Downloads
+
+To download TASMAN, you can use one of the following options.
+
+#### 1. Download the entire tar file (frozen version TASMAN-2.2)
+
+```bash
+curl -LO https://nds.iaea.org/talys/tasman.tar
 tar zxf tasman.tar
 ```
 
-#### 2. Using git (latest beta version):
-```
+#### 2. Using git (latest beta version)
+
+```bash
 git clone https://github.com/arjankoning1/tasman.git
 ```
-Full use of TASMAN, including optimization to experimental data or evaluated data, is only possible when you install the appropriate directories.  
-If you will only use experimental data for parameter optimization, it is sufficient to install the EXFORTABLES database
-```
-https://nds.iaea.org/talys/exfortables.tar
+
+### Additional data
+
+Full use of TASMAN, including optimization to experimental or evaluated nuclear data, requires additional databases.
+
+For optimization to experimental data, install EXFORTABLES:
+
+```bash
+curl -LO https://nds.iaea.org/talys/exfortables.tar
 tar zxf exfortables.tar
 ```
-and place the resulting directory *exfortables/* in your home directory.
 
-If you also want to optimize to existing nuclear data libraries, you need to
-```
-Download all tar files from  Libraries from https://nds.iaea.org/talys/
-tar zxf libraries-n-A-D.tar etc.
-```
-and place the resulting directory *libraries/* in your home directory.
+For optimization to evaluated nuclear data, download the required nuclear data library archives from:
 
-### Installation instructions :
-
-To install TASMAN, you can use one of the following options:
-#### 1. Using make:
+```text
+https://nds.iaea.org/talys/
 ```
+
+TASMAN derives these external paths from the parent directory of `TASMAN_DIR`. A typical installation layout is therefore:
+
+```text
+.../talys/
+.../tefal/
+.../tasman/
+.../exfortables/
+.../libraries/
+```
+
+The optional photon strength function database is expected as:
+
+```text
+.../PSF/Photo/
+```
+
+### Installation instructions
+
+#### 1. For the tar file (frozen version TASMAN-2.2)
+
+```bash
+cd tasman
+./install_tasman.bash
+```
+
+An alternative option is:
+
+```bash
 cd tasman/source
 make
 ```
-#### 2. Using the install_tasman.bash script:
-```
+
+The above will invoke the default compiler `gfortran`.
+
+#### 2. For the git version (latest beta version)
+
+```bash
 cd tasman
-install_tasman.bash
+./install_tasman.bash
 ```
 
-The above will produce a *tasman* executable in the *tasman/bin* directory. 
-The compiler and its flags can be set in either the *source/Makefile* or in *code_build.bash*.
+which automatically executes the `Makefile` in `tasman/source`. At the end, `install_tasman.bash`
+will print the recommended shell configuration.
+
+An alternative option is:
+
+```bash
+cd tasman/source
+make
+```
+
+For both installation methods, the default compiler is `gfortran`. When `gfortran` is used and no `FFLAGS` are supplied, the Makefile uses:
+
+```text
+-w -O3 -ffp-contract=off
+```
+
+For other compilers, no default compiler flags are imposed.
+
+The compiler and compilation options can be passed to the Makefile through `install_tasman.bash`. For example:
+
+```bash
+# GNU Fortran
+./install_tasman.bash FC=gfortran FFLAGS="-O3 -ffp-contract=off"
+
+# Intel Fortran
+./install_tasman.bash FC=ifx FFLAGS="-O3"
+```
+
+The above will produce a `tasman` executable in the `tasman/bin` directory.
+
+Set `TASMAN_DIR` to the TASMAN installation directory. This variable is required unless the fallback path in `source/machine.f90` has been set manually. For example:
+
+```bash
+export TASMAN_DIR="/Users/koning/tasman"
+```
+
+If you want to run `tasman` from anywhere, add the TASMAN `bin` directory to `PATH`:
+
+```bash
+export PATH="$TASMAN_DIR/bin:$PATH"
+```
+
+To include your name in the output files, set:
+
+```bash
+export TASMAN_USER="Your Name"
+```
+
+These lines can be added to your shell configuration file, for example `~/.zshrc` or `~/.profile`.
+
+If setting `TASMAN_DIR` is not possible on a particular system, edit `code_dir` in `source/machine.f90` and rebuild TASMAN.
 
 ## The TASMAN package
 
-The *tasman/* directory contains the following directories and files:
+The `tasman/` directory contains the following directories and files:
 
-+ `README.md` this README file
-+ `LICENSE` the License file
-+ `install_tasman.bash`, `code_build.bash` and `path_change.bash` installation scripts
-+ `source/` the Fortran source code of TASMAN and the Makefile
-+ `bin/` the executable after successful installation
-+ `misc/` files with TASMAN input settings which can be used if needed, and EXFOR outlier table
-+ `parameters/` files with probability distributions for Bayesian Monte Carlo
-+ `doc/` the tutorial in pdf format
-+ `samples/` the input and output files of the sample cases, and the *verify* script to run the sample cases
+- `README.md` this README file
+- `LICENSE` the License file
+- `install_tasman.bash` installation script
+- `source/` the Fortran source code of TASMAN and the Makefile
+- `bin/` the `tasman` executable after successful installation
+- `misc/` files with TASMAN input settings and the EXFOR outlier table
+- `parameters/` files with probability distributions for Bayesian Monte Carlo
+- `doc/` the tutorial in PDF format
+- `samples/` the input and output files of the sample cases, and the `verify` script used to run the sample cases
 
-In total, you will need about 2.5 Gb of free disk space to install TASMAN.
+In total, about 2.5 GB of free disk space is required to install TASMAN.
 
 ### Miscellaneous options
 
-The above is enough for the standard use of TASMAN. There is a not often used feature which require installation of an 
-extra subdirectory in *tasman/*:
-
-+ `PSF/` a database with experimental photon strength functions, for fitting of TALYS nuclear model parameters. Download *PSF.tar* to your home directory, do *tar zxf PSF.tar* which will produce a *PSF/* directory
+The standard TASMAN package is sufficient for normal use. A less frequently used feature requires the additional `PSF/` database with experimental photon strength functions for fitting TALYS nuclear model parameters.
 
 ## Sample cases
 
-The sample cases serve to provide examples of the use of TASMAN and to verify a successful installation. The *samples/* directory contains various sample cases with a subdirectory *org/* with our results and a subdirectory *new/* with the results produced by the user. The entire sample set will take about 1 hour.
+The sample cases provide examples of the use of TASMAN and can be used to verify a successful installation. The `samples/` directory contains various sample cases with a subdirectory `org/` containing the reference results and a subdirectory `new/` for results produced by the user.
+
+The TASMAN sample cases assume that TALYS and TEFAL are installed in sibling directories:
+
+```text
+.../talys/
+.../tefal/
+.../tasman/
 ```
+
+To run the sample cases:
+
+```bash
 cd samples
 ./verify
 ```
 
-You may create your own input file, e.g. *tasman.inp* after which TASMAN works as follows:
+From the top-level TASMAN directory, the same test can be started with:
+
+```bash
+make -C source check
 ```
+
+`make check` sets `TASMAN_DIR` automatically for the test.
+
+You may create your own input file, for example `tasman.inp`, after which TASMAN works as follows:
+
+```bash
 tasman < tasman.inp > tasman.out
 ```
-assuming that *tasman* is linked to the *tasman/bin/tasman* executable.
+
+assuming that `tasman/bin` has been added to `PATH`.
 
 ## License and Copyright
+
 This software is distributed and copyrighted according to the [LICENSE](LICENSE) file.
