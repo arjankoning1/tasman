@@ -27,6 +27,11 @@ TASMAN_DIR := $(abspath ..)
 BIN_DIR    := $(TASMAN_DIR)/bin
 TARGET     := $(BIN_DIR)/tasman
 
+# Sibling TALYS and TEFAL installations used by the sample cases.
+
+TALYS_DIR_CHECK := $(abspath $(TASMAN_DIR)/../talys)
+TEFAL_DIR_CHECK := $(abspath $(TASMAN_DIR)/../tefal)
+
 # TASMAN source files.
 #
 # Free-form source files must be named so that alphabetical order places
@@ -54,4 +59,8 @@ clean:
 
 check: all
 	cd "$(TASMAN_DIR)/samples" && \
-	  TASMAN_DIR="$(TASMAN_DIR)" ./verify
+	  TASMAN_DIR="$(TASMAN_DIR)" \
+	  TALYS_DIR="$(TALYS_DIR_CHECK)" \
+	  TEFAL_DIR="$(TEFAL_DIR_CHECK)" \
+	  PATH="$(TALYS_DIR_CHECK)/bin:$(TEFAL_DIR_CHECK)/bin:$$PATH" \
+	  ./verify
