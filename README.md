@@ -77,6 +77,12 @@ The optional photon strength function database is expected as:
 .../PSF/Photo/
 ```
 
+TASMAN does not use a shared parent-level `bin/` directory. External executables such as `talys`, `tefal`, `tares`, `tafis` and `tanes` are resolved through the user's `PATH`. Therefore, any required executable must be available through `PATH`, for example:
+
+```bash
+export PATH="/path/to/talys/bin:/path/to/tefal/bin:$PATH"
+```
+
 ### Installation instructions
 
 #### 1. For the tar file (frozen version TASMAN-2.2)
@@ -185,6 +191,8 @@ The TASMAN sample cases assume that TALYS and TEFAL are installed in sibling dir
 .../tefal/
 .../tasman/
 ```
+
+The TALYS and TEFAL executables must also be available through `PATH` for normal TASMAN runs.
 
 To run the sample cases:
 
