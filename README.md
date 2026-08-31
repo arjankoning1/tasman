@@ -118,7 +118,7 @@ cd tasman/source
 make
 ```
 
-For both installation methods, the default compiler is `gfortran`. When `gfortran` is used and no `FFLAGS` are supplied, the Makefile uses:
+For the git version, the default compiler is `gfortran`. When `gfortran` is used and no `FFLAGS` are supplied, the Makefile uses:
 
 ```text
 -w -O3 -ffp-contract=off
