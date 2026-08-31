@@ -75,7 +75,7 @@ parent_directory/
 The optional photon strength function database is expected as:
 
 ```text
-.../PSF/Photo/
+parent_directory/PSF/Photo/
 ```
 
 TASMAN does not use a shared parent-level `bin/` directory. External executables such as `talys`, `tefal`, `tares`, `tafis` and `tanes` are resolved through the user's `PATH`. Therefore, any required executable must be available through `PATH`, for example:
@@ -188,9 +188,10 @@ The sample cases provide examples of the use of TASMAN and can be used to verify
 The TASMAN sample cases assume that TALYS and TEFAL are installed in sibling directories:
 
 ```text
-.../talys/
-.../tefal/
-.../tasman/
+parent_directory/
+├── talys/
+├── tefal/
+└── tasman/
 ```
 
 The TALYS and TEFAL executables must also be available through `PATH` for normal TASMAN runs.
