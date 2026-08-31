@@ -110,7 +110,7 @@ subroutine checkvalue
   call range_integer_error('#nburn', Nburn, 0, numtalys, default = -1)
   call range_real_error('#Ehigh', Ehigh, 1., 1000.)
   call range_integer_error('#tmcoffset', tmcoffset, 0, numtalys)
-  call range_integer_error('#nhigh', Nhigh, 0, numtalys)
+  call range_integer_error('#nhigh', Nhigh, 0, numtalys, default = -1)
   call range_integer_error('#liso', Liso, 0, 10)
   call range_integer_error('#maxgam', maxgam, 1, 4)
   call range_integer_error('#minbar', minbar, 0, 3)
