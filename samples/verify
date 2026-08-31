@@ -1,145 +1,37 @@
-#!/bin/bash
-echo
-echo "     verify (Version December 27 2024) (C) Copyright 2024 Arjan Koning and Viktor Zerkin All Rights Reserved"
-echo
-#
-# verify: run TASMAN for each sample case present in the new/ directories and determine
-#         the numerical differences with the results of the org/ directories
-#
-# Examples: verify     (run all sample cases)"
-#           verify 2   (run only the first 2 sample case)"
-#
-# verify has been developed on Linux and Macos.
-# For Windows, change diff --> FC  and /dev/null --> NUL
-#
-# TASMAN executable: Relative path from the current directory tasman/samples. 
-# It is assumed that TALYS and TEFAL are installed at the same level as TASMAN.
-#
-cwd=`pwd`
-tasman=${cwd}/../bin/tasman
-talys=${cwd}/../../talys/bin/talys
-tefal=${cwd}/../../tefal/bin/tefal
-#
-# Main output and determine number of sample cases
-# nfiles: total number of TASMAN sample cases
-# iimax:  number of sample cases to be run by the user
-#
-start=`date +%F,%T`
-echo "________Script [$0] starting on:`uname -n` at:$start"
-files=`find . -name tasman.inp | grep new | sort `
-nfiles=`find . -name tasman.inp | grep new | sort  | wc -l`
-iimax=1000
-if [ "$1" != "" ] ; then 
-  iimax=$1 
-else 
-  iimax=${nfiles}
-fi
-if [ $iimax -ge $nfiles ] ; then 
-  iimax=$nfiles
-fi
-iimax=`printf "%2d"  $(echo $iimax)`
-nfiles=`printf "%2d"  $(echo $nfiles)`
-echo "________in total there are ${nfiles} sample cases"
-echo "________going to run TASMAN on ${iimax} sample cases"
-#
-# Runtime of the sample cases is printed in times.log
-#
-echo "Script $0 start on:`uname -n` at:`date +%F,%T` with ${iimax} cases">times.log
-echo "TASMAN executable: ${tasman}">>times.log
-ls -la ${tasman}>>times.log
-echo
-echo 'times.log: computer time of each sample case, to be compared with times_org.log'
-echo 'files_dif.log: differences in file length for each output file'
-echo
-echo >> times.log
-echo 'Differences in file length'  > files_dif.log
-echo >> files_dif.log
-#
-# Output of TASMAN executable
-#
-homedir=`pwd`
-echo "________TASMAN executable: $tasman"
-ls -la ${tasman}
-echo ""
-#
-# Loop over sample cases
-#
-t00=`date +%s`
-ii=0
-for f in ${files} ; do
-  ii=$((ii+1))
-  dir=`dirname ${f}`
-  cd ${dir}
-#
-# Run TASMAN and output of calculation time
-#
-  echo "${ii}/${iimax}  *** Sample case $dir "
-  echo "          *** Start: `date +%F,%T`"
-  t0=`date +%s`
-  $tasman < tasman.inp > tasman.out
-  errCode=$?
-  if [ $errCode -ne 0 ] ; then 
-    echo "___________error=$errCode on $dir"
-  fi
-  colrm < tasman.out > tasman.out80 81
-  if [ $dir == n-Sn120-tmc ] ; then
-    cp ${homedir}/${dir}/tefal.inp ../new
-    ${tefal} < tefal.inp > tefal.out
-  fi
-  t1=`date +%s` 
-  dt=$(($t1-t0))
-  dt0=$(($t1-t00))
-  printf " %2d/%-2d %-30s %s time[sec]:%-5d total[sec]:%-5d sec err:%d\n" $ii ${iimax} $dir `date +%F,%T` $dt ${dt0} $errCode>>../../times.log
-  echo "          *** End  : `date +%F,%T`" time[sec]:${dt}
-  echo
-#
-# Output of file differences
-#
-  if [ -e outputdiff ]; then
-    rm outputdiff
-  fi
-  first=1
-  for of in `ls -1` ; do
-    diff ${of} ../org/${of} | grep -v date >> /dev/null
-    if [ $? -eq 1 ] ; then
-      echo $of >> outputdiff
-      diff ${of} ../org/${of} | grep -v date >> outputdiff
-    fi
-    if [ $of == optimum ] ; then
-      continue
-    fi
-    lines_new=`cat ${of}|wc -l`
-    lines_org=`cat ../org/${of}|wc -l`
-    if [ $lines_new != $lines_org ] ; then 
-      if [ $first -eq 1 ] ;then
-        echo "*** Sample case $dir" >> ../../files_dif.log
-        echo "Difference in length of output file, see files_dif.log"
-        echo
-        first=0
-      fi
-      echo $of "lines - new:" $lines_new " org:" $lines_org >> ../../files_dif.log
-    fi
-    perl -ne 'print if /[^[:ascii:]]/' $of >> /dev/null
-    if [ $? -eq 1 ] ; then
-      echo "Non-ascii characters in " $of >> files_dif.log
-      perl -ne 'print if /[^[:ascii:]]/' $of >> files_dif.log
-    fi
-  done
-#
-# Back to original directory for next sample case
-#
-  cd $homedir
-  if [ $ii -ge $iimax ] ; then 
-    break
-  fi
+#!/usr/bin/env bash
+# Run TASMAN user cases in new/ and compare them with org/ references.
+set -u; set -o pipefail
+samples_dir=$(cd "$(dirname "$0")" && pwd); cd "$samples_dir"
+tasman="$samples_dir/../bin/tasman"; tefal="$samples_dir/../../tefal/bin/tefal"; talys="${TALYS_DIR:+$TALYS_DIR/bin/talys}"; talys=${talys:-"$samples_dir/../../talys/bin/talys"}
+usage(){ echo "Usage:"; echo "  ./verify_new [--tasman PATH] [--tefal PATH] [--talys PATH]"; }
+while [[ $# -gt 0 ]]; do case "$1" in
+  -m|--tasman) [[ $# -ge 2 ]] || { echo "*** TASMAN verify error: $1 requires a pathname" >&2; exit 2; }; tasman=$2; shift 2;;
+  -e|--tefal) [[ $# -ge 2 ]] || { echo "*** TASMAN verify error: $1 requires a pathname" >&2; exit 2; }; tefal=$2; shift 2;;
+  -t|--talys) [[ $# -ge 2 ]] || { echo "*** TASMAN verify error: $1 requires a pathname" >&2; exit 2; }; talys=$2; shift 2;;
+  -h|--help) usage; exit 0;; *) echo "*** TASMAN verify error: unknown option: $1" >&2; usage >&2; exit 2;; esac; done
+resolve(){ local p=$1 d; [[ "$p" == /* ]] || { d=$(cd "$(dirname "$p")" 2>/dev/null && pwd) || return 1; p="$d/$(basename "$p")"; }; [[ -x "$p" ]] || return 1; printf '%s\n' "$p"; }
+tasman=$(resolve "$tasman") || { echo "*** TASMAN verify error: TASMAN executable not found" >&2; exit 2; }; talys=$(resolve "$talys") || { echo "*** TASMAN verify error: TALYS executable not found" >&2; exit 2; }
+talys_dir=$(cd "$(dirname "$talys")/.." && pwd); if [[ ! -d "$talys_dir/structure" ]]; then local_talys_dir=$(cd "$samples_dir/../../talys" 2>/dev/null && pwd) || local_talys_dir=; [[ -n "$local_talys_dir" && -d "$local_talys_dir/structure" ]] || { echo "*** TASMAN verify error: TALYS structure directory not found" >&2; exit 2; }; echo "Using structure database from $local_talys_dir (the selected TALYS executable is outside a TALYS installation)." >&2; talys_dir=$local_talys_dir; fi
+cases=(); while IFS= read -r f; do cases+=("$f"); done < <(find . -type f -path '*/new/tasman.inp' -print | LC_ALL=C sort); nfiles=${#cases[@]}; [[ "$nfiles" -gt 0 ]] || { echo "*** TASMAN verify error: no sample cases found" >&2; exit 2; }
+tmpdir=$(mktemp -d "${TMPDIR:-/tmp}/tasman_verify.XXXXXX") || exit 2; cleanup(){ rm -rf "$tmpdir"; }; interrupted(){ echo "*** TASMAN verification interrupted; stopping after the current command." >&2; exit "$1"; }; trap cleanup EXIT; trap 'interrupted 130' INT; trap 'interrupted 143' TERM HUP
+normalize(){ awk '/^[[:space:]]*User:[[:space:]]/ {next} /^[[:space:]]*Date:[[:space:]]/ {next} /^[[:space:]]*Execution time:/ {next} /^[[:space:]]*#[[:space:]]*user:[[:space:]]/ {next} /^[[:space:]]*#[[:space:]]*date:[[:space:]]/ {next} {print}' "$1"; }
+list_files(){ local d=$1 x; shopt -s nullglob; for x in "$d"/* "$d"/.[!.]* "$d"/..?*; do [[ -f "$x" ]] && basename "$x"; done; shopt -u nullglob; }
+: > times.log; : > files_dif.log; total_start=$(date +%s); run_failures=0; missing_files=0; different_files=0; different_cases=0; ii=0
+echo; echo "TASMAN sample verification"; echo "TASMAN executable: $tasman"; echo "TALYS_DIR:         $talys_dir"; echo "Sample cases:      $nfiles"; echo
+for f in "${cases[@]}"; do
+  ii=$((ii+1)); new=$(dirname "$f"); case_dir=$(dirname "$new"); org="$case_dir/org"; case_name=${case_dir#./}; echo "$ii/$nfiles  *** Sample case $case_name"
+  [[ -d "$org" ]] || { echo "*** Missing reference directory: $org" >&2; missing_files=$((missing_files+1)); continue; }; rm -f "$new/outputdiff"; t0=$(date +%s); err=0
+  (cd "$new" && TALYS_DIR="$talys_dir" "$tasman" < tasman.inp > tasman.out && colrm 81 < tasman.out > tasman.out80) || err=$?
+  if [[ "$err" -eq 0 && -f "$new/tefal.inp" ]]; then tefal=$(resolve "$tefal") || { echo "*** TASMAN verify error: TEFAL executable not found" >&2; err=127; }; [[ "$err" -ne 0 ]] || (cd "$new" && "$tefal" < tefal.inp > tefal.out) || err=$?; fi
+  [[ "$err" -eq 0 ]] || { echo "*** TASMAN failed for $case_name: exit status $err" >&2; run_failures=$((run_failures+1)); }; t1=$(date +%s); dt=$((t1-t0)); elapsed=$((t1-total_start)); printf '%3d/%-3d %-35s %s  time:%6d s  total:%6d s  err:%d\n' "$ii" "$nfiles" "$case_name" "$(date '+%F,%T')" "$dt" "$elapsed" "$err" >> times.log
+  names="$tmpdir/names"; { list_files "$new"; list_files "$org"; } | LC_ALL=C sort -u > "$names"; changed=0; outputdiff="$new/outputdiff"
+  while IFS= read -r name; do
+    [[ "$name" != outputdiff && "$name" != .DS_Store ]] || continue; nf="$new/$name"; of="$org/$name"
+    if [[ ! -f "$nf" ]]; then printf '\n===== %s =====\nMissing file in new results\n' "$name" >> "$outputdiff"; echo "$case_name: missing new file $name" >> files_dif.log; missing_files=$((missing_files+1)); different_files=$((different_files+1)); changed=1; continue; fi
+    if [[ ! -f "$of" ]]; then printf '\n===== %s =====\nNo reference file in org/\n' "$name" >> "$outputdiff"; different_files=$((different_files+1)); changed=1; continue; fi
+    normalize "$nf" > "$tmpdir/new"; normalize "$of" > "$tmpdir/org"; diff -u "$tmpdir/org" "$tmpdir/new" > "$tmpdir/diff"; ds=$?; if [[ "$ds" -eq 1 ]]; then printf '\n===== %s =====\n' "$name" >> "$outputdiff"; cat "$tmpdir/diff" >> "$outputdiff"; different_files=$((different_files+1)); changed=1; elif [[ "$ds" -gt 1 ]]; then echo "*** diff failed for $case_name/$name" >&2; run_failures=$((run_failures+1)); fi
+    [[ "$name" == optimum ]] && continue; ln=$(wc -l < "$nf" | tr -d ' '); lo=$(wc -l < "$of" | tr -d ' '); [[ "$ln" -eq "$lo" ]] || printf '%-35s %-30s new:%6d org:%6d\n' "$case_name" "$name" "$ln" "$lo" >> files_dif.log
+  done < "$names"
+  if [[ "$changed" -eq 1 ]]; then different_cases=$((different_cases+1)); echo "          differences: $outputdiff"; else rm -f "$outputdiff"; echo "          no differences"; fi; echo "          time: $dt s"
 done
-#
-# Output of total time
-#
-t11=`date +%s`; dt0=$(($t11-t00))
-echo "Script $0 `date +%F,%T` stop $ii cases ${dt0}sec">>times.log
-echo "Elapsed time[sec]:" ${dt0}
-end=`date +%F,%T`
-echo "*** All sample cases done " 
-echo "Start: " $start
-echo "End  : " $end
+elapsed=$(($(date +%s)-total_start)); echo "------------------------------------------------------------"; echo "TASMAN sample verification completed"; echo "Cases run: $ii"; echo "Cases with differences: $different_cases"; echo "Files with differences: $different_files"; echo "Missing files: $missing_files"; echo "Execution errors: $run_failures"; echo "Elapsed time: $elapsed s"; [[ "$run_failures" -eq 0 && "$missing_files" -eq 0 ]]
