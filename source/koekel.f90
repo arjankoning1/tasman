@@ -672,6 +672,7 @@ subroutine koekelsearch(Npar, P, Pmin, Pmax, Popt, Fopt, flagwrite, flagsens, fl
               R = 2. * real(mersenne()) - 1.
             endif
             P(i) = Popt(i) + R * V(i)
+            if (P(i)<Pmin(i).or.P(i)>Pmax(i)) P(i) = Pmin(i) + real(mersenne()) * domain(i)
           enddo
           call fcn(Npar, P, F)
           if (flagwrite) call writeval(Npar, P, F, "Random  ", out)

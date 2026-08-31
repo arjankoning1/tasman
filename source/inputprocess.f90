@@ -179,10 +179,8 @@ subroutine inputprocess
     if (mode >= 3) Ntalys = numtalys
   endif
   if (mode == 2) Ntalys = Npar
-  if (mode == 1) then
-    if (Nburn ==  -1) Nburn = Ntalys
-    if (Nhigh ==  -1) Nhigh = Ntalys
-  endif
+  if (Nburn ==  -1) Nburn = min(Ntalys, numtalys)
+  if (Nhigh ==  -1) Nhigh = min(Ntalys, numtalys)
   if (Ltarget /= 0 .and. Liso == 0) Liso = 1
   if (Liso == 0) isochar = ' '
   if (Liso == 1) isochar = 'm'

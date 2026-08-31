@@ -729,5 +729,12 @@ module A0_tasman_mod
   integer           :: fislim       ! mass above which nuclide fissions
   integer           :: offset       ! offset for numbering or random files (TMC only)
   integer           :: tmcoffset    ! offset for starting creation of ENDF-6 files (TMC only)
+!
+!-----------------------------------------------------------------------------------------------------------------------------------
+! Variables for connecting key word ranges from TALYS
+!-----------------------------------------------------------------------------------------------------------------------------------
+!
+  character(len=132), allocatable, dimension(:,:) :: talkeyranges ! Rows -> keywords; Col1=key, Col2=lower lim, Col3=upper lim
+  logical                                         :: flaglims  ! flag to enable subroutine to set optimization limits base on TALYS
 end module A0_tasman_mod
 ! Copyright A.J. Koning 2026
