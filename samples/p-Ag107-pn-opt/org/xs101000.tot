@@ -1,28 +1,28 @@
-# header: 
+# header:
 #   title: Ag107(p,nd)Ag105 cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-08-30
+#   date: 2026-08-31
 #   format: YANDF-0.4
-# target: 
+# target:
 #   Z: 47
 #   A: 107
 #   nuclide: Ag107
-# reaction: 
+# reaction:
 #   type: (p,nd)
 #   Q-value [MeV]: -1.525416E+01
 #   E-threshold [MeV]:  1.539797E+01
 #   ENDF_MF: 3
 #   ENDF_MT: 32
-#   residual: 
+#   residual:
 #     Z: 47
 #     A: 105
 #     nuclide: Ag105
-#   quantity: 
+#   quantity:
 #     type: cross section
-#   datablock: 
+#   datablock:
 #     columns: 4
-#     entries: 19
+#     entries:      0
 ##       E             xs          gamma_xs    xs/res.prod.xs
 ##     [MeV]          [mb]           [mb]            []
    2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
@@ -41,6 +41,6 @@
    1.500000E+01   0.000000E+00   0.000000E+00   0.000000E+00
    1.600000E+01   0.000000E+00   0.000000E+00   0.000000E+00
    1.700000E+01   0.000000E+00   0.000000E+00   0.000000E+00
-   1.800000E+01   2.528382E-06   7.515057E-07   5.550425E-05
-   1.900000E+01   2.437576E-04   1.056121E-04   1.857353E-03
-   2.000000E+01   6.150555E-03   3.271873E-03   2.119926E-02
+   1.800000E+01   2.059904E-06   6.193137E-07   4.816228E-05
+   1.900000E+01   2.000972E-04   8.777685E-05   1.599926E-03
+   2.000000E+01   5.212311E-03   2.779350E-03   1.864877E-02

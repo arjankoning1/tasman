@@ -1,0 +1,19 @@
+# header: 
+#   title: Sn120 (n,el) sensitivity coefficients per reaction channel
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 11
+#   entries: 0
+##  E-incident     v1adjust n     v2adjust n     rvadjust n     avadjust n   gnadjust  50 12gpadjust  50 12  m2constant   gamgamadjust  5aadjust  50 121aadjust  50 120
+##     [MeV]           []             []             []             []             []             []             []             []             []             []

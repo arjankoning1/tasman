@@ -1,0 +1,746 @@
+# header: 
+#   title: Nb93(n,tot) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,tot)
+#   ENDF_MF: 3
+#   ENDF_MT: 1
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   1.579985E-02   1.256974E-01   9.331122E+03   1.172898E+03
+   2.000000E-01   1.715321E-02   1.309703E-01   9.668822E+03   1.266328E+03
+   5.000000E-01   1.131103E-02   1.063533E-01   8.668580E+03   9.219323E+02
+   1.000000E+00   9.662882E-03   9.829996E-02   6.642498E+03   6.529572E+02
+   2.000000E+00   5.827978E-03   7.634120E-02   4.770731E+03   3.642033E+02
+   3.000000E+00   6.177434E-04   2.485444E-02   4.048535E+03   1.006241E+02
+   4.000000E+00   7.171319E-04   2.677932E-02   3.737322E+03   1.000829E+02
+   5.000000E+00   1.354876E-03   3.680864E-02   3.723657E+03   1.370628E+02
+   8.000000E+00   6.196438E-04   2.489264E-02   4.162931E+03   1.036264E+02
+   1.000000E+01   4.319101E-04   2.078245E-02   4.236546E+03   8.804579E+01
+# header: 
+#   title: Nb93(n,el) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,el)
+#   ENDF_MF: 3
+#   ENDF_MT: 2
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   1.585250E-02   1.259067E-01   9.241498E+03   1.163566E+03
+   2.000000E-01   1.720639E-02   1.311731E-01   9.606229E+03   1.260079E+03
+   5.000000E-01   1.134367E-02   1.065067E-01   8.607838E+03   9.167921E+02
+   1.000000E+00   1.134397E-02   1.065081E-01   5.903608E+03   6.287821E+02
+   2.000000E+00   1.602767E-02   1.266004E-01   2.801730E+03   3.547003E+02
+   3.000000E+00   4.748774E-03   6.891134E-02   1.994999E+03   1.374781E+02
+   4.000000E+00   6.746106E-04   2.597327E-02   1.819894E+03   4.726860E+01
+   5.000000E+00   2.780897E-03   5.273421E-02   1.882868E+03   9.929158E+01
+   8.000000E+00   1.150418E-03   3.391781E-02   2.317896E+03   7.861795E+01
+   1.000000E+01   2.324159E-04   1.524519E-02   2.422033E+03   3.692437E+01
+# header: 
+#   title: Nb93(n,non) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,non)
+#   ENDF_MF: 3
+#   ENDF_MT: 3
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   8.066048E-02   2.840079E-01   8.962934E+01   2.545544E+01
+   2.000000E-01   7.429095E-02   2.725637E-01   6.259562E+01   1.706129E+01
+   5.000000E-01   5.112256E-02   2.261030E-01   6.074559E+01   1.373476E+01
+   1.000000E+00   1.332606E-03   3.650488E-02   7.388876E+02   2.697301E+01
+   2.000000E+00   4.972748E-04   2.229966E-02   1.969000E+03   4.390803E+01
+   3.000000E+00   8.218205E-04   2.866741E-02   2.053535E+03   5.886953E+01
+   4.000000E+00   9.707939E-04   3.115757E-02   1.917427E+03   5.974236E+01
+   5.000000E+00   1.566661E-03   3.958107E-02   1.840790E+03   7.286044E+01
+   8.000000E+00   1.688518E-03   4.109158E-02   1.845037E+03   7.581547E+01
+   1.000000E+01   1.386107E-03   3.723046E-02   1.814512E+03   6.755511E+01
+# header: 
+#   title: Nb93(n,g) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,g)
+#   ENDF_MF: 3
+#   ENDF_MT: 102
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   8.233479E-02   2.869404E-01   8.880492E+01   2.548172E+01
+   2.000000E-01   8.297461E-02   2.880532E-01   5.946628E+01   1.712945E+01
+   5.000000E-01   9.928740E-02   3.150990E-01   4.361567E+01   1.374326E+01
+   1.000000E+00   1.317337E-01   3.629514E-01   2.747816E+01   9.973238E+00
+   2.000000E+00   1.689817E-01   4.110738E-01   7.426375E+00   3.052788E+00
+   3.000000E+00   1.924806E-01   4.387262E-01   4.419441E+00   1.938924E+00
+   4.000000E+00   2.270386E-01   4.764856E-01   3.051702E+00   1.454092E+00
+   5.000000E+00   2.653785E-01   5.151490E-01   2.206241E+00   1.136543E+00
+   8.000000E+00   1.715337E-01   4.141662E-01   9.406422E-01   3.895822E-01
+   1.000000E+01   2.366278E-02   1.538271E-01   1.066544E+00   1.640634E-01
+# header: 
+#   title: Nb93(n,g)g cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,g)g
+#   ENDF_MF: 9
+#   ENDF_MT: 102
+#   level: 
+#     isomer: 0
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   8.014674E-02   2.831020E-01   3.362248E+01   9.518592E+00
+   2.000000E-01   7.880339E-02   2.807194E-01   2.380247E+01   6.681816E+00
+   5.000000E-01   9.527183E-02   3.086613E-01   1.955961E+01   6.037296E+00
+   1.000000E+00   1.266956E-01   3.559433E-01   1.468512E+01   5.227069E+00
+   2.000000E+00   1.692141E-01   4.113564E-01   3.880069E+00   1.596091E+00
+   3.000000E+00   1.932452E-01   4.395966E-01   2.324495E+00   1.021840E+00
+   4.000000E+00   2.284128E-01   4.779256E-01   1.630436E+00   7.792273E-01
+   5.000000E+00   2.696892E-01   5.193161E-01   1.200080E+00   6.232208E-01
+   8.000000E+00   2.595525E-01   5.094630E-01   4.621875E-01   2.354674E-01
+   1.000000E+01   5.429636E-02   2.330158E-01   4.214218E-01   9.819794E-02
+# header: 
+#   title: Nb93(n,g)m cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,g)m
+#   ENDF_MF: 9
+#   ENDF_MT: 102
+#   level: 
+#     isomer: 1
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   8.369185E-02   2.892954E-01   5.518246E+01   1.596403E+01
+   2.000000E-01   8.589667E-02   2.930813E-01   3.566381E+01   1.045240E+01
+   5.000000E-01   1.027315E-01   3.205175E-01   2.405605E+01   7.710385E+00
+   1.000000E+00   1.377704E-01   3.711743E-01   1.279304E+01   4.748449E+00
+   2.000000E+00   1.688179E-01   4.108745E-01   3.546306E+00   1.457087E+00
+   3.000000E+00   1.917343E-01   4.378748E-01   2.094947E+00   9.173244E-01
+   4.000000E+00   2.256749E-01   4.750525E-01   1.421265E+00   6.751755E-01
+   5.000000E+00   2.606250E-01   5.105144E-01   1.006161E+00   5.136596E-01
+   8.000000E+00   1.042056E-01   3.228090E-01   4.784546E-01   1.544494E-01
+   1.000000E+01   1.073907E-02   1.036295E-01   6.451221E-01   6.685366E-02
+# header: 
+#   title: Nb93(n,n') cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,n')
+#   ENDF_MF: 3
+#   ENDF_MT: 4
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   4.322972E-03   6.574931E-02   7.312397E-01   4.807850E-02
+   2.000000E-01   3.215679E-03   5.670695E-02   3.015511E+00   1.710004E-01
+   5.000000E-01   2.483537E-03   4.983510E-02   1.684633E+01   8.395385E-01
+   1.000000E+00   1.023507E-03   3.199229E-02   7.107222E+02   2.273763E+01
+   2.000000E+00   4.923079E-04   2.218801E-02   1.960614E+03   4.350214E+01
+   3.000000E+00   8.328325E-04   2.885884E-02   2.047384E+03   5.908513E+01
+   4.000000E+00   9.794420E-04   3.129604E-02   1.911740E+03   5.982990E+01
+   5.000000E+00   1.571315E-03   3.963982E-02   1.834433E+03   7.271658E+01
+   8.000000E+00   1.731207E-03   4.160777E-02   1.829655E+03   7.612787E+01
+   1.000000E+01   1.031561E-03   3.211793E-02   1.126104E+03   3.616812E+01
+# header: 
+#   title: Nb93(n,n')g cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,n')g
+#   ENDF_MF: 10
+#   ENDF_MT: 4
+#   level: 
+#     isomer: 0
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   1.143112E-03   3.380994E-02   6.081932E+02   2.056298E+01
+   2.000000E+00   5.316336E-04   2.305718E-02   1.775222E+03   4.093160E+01
+   3.000000E+00   9.816128E-04   3.133070E-02   1.825082E+03   5.718109E+01
+   4.000000E+00   1.012559E-03   3.182073E-02   1.672983E+03   5.323553E+01
+   5.000000E+00   1.588975E-03   3.986194E-02   1.590293E+03   6.339218E+01
+   8.000000E+00   1.854365E-03   4.306233E-02   1.597237E+03   6.878073E+01
+   1.000000E+01   1.138130E-03   3.373619E-02   9.832560E+02   3.317131E+01
+# header: 
+#   title: Nb93(n,n')m cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,n')m
+#   ENDF_MF: 10
+#   ENDF_MT: 4
+#   level: 
+#     isomer: 1
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   4.322972E-03   6.574931E-02   7.312397E-01   4.807850E-02
+   2.000000E-01   3.215679E-03   5.670695E-02   3.015511E+00   1.710004E-01
+   5.000000E-01   2.483537E-03   4.983510E-02   1.684633E+01   8.395385E-01
+   1.000000E+00   1.862972E-03   4.316216E-02   1.025291E+02   4.425376E+00
+   2.000000E+00   1.775559E-03   4.213738E-02   1.853926E+02   7.811959E+00
+   3.000000E+00   8.004854E-04   2.829285E-02   2.223025E+02   6.289571E+00
+   4.000000E+00   1.069756E-03   3.270712E-02   2.387574E+02   7.809067E+00
+   5.000000E+00   1.462726E-03   3.824560E-02   2.441394E+02   9.337257E+00
+   8.000000E+00   1.116512E-03   3.341425E-02   2.324181E+02   7.766075E+00
+   1.000000E+01   5.143079E-04   2.267836E-02   1.428477E+02   3.239551E+00
+# header: 
+#   title: Nb93(n,2n) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,2n)
+#   ENDF_MF: 3
+#   ENDF_MT: 16
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+01   4.681990E-03   6.842507E-02   6.570167E+02   4.495641E+01
+# header: 
+#   title: Nb93(n,2n)g cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,2n)g
+#   ENDF_MF: 10
+#   ENDF_MT: 16
+#   level: 
+#     isomer: 0
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+01   4.709114E-03   6.862298E-02   4.487023E+02   3.079129E+01
+# header: 
+#   title: Nb93(n,2n)m cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,2n)m
+#   ENDF_MF: 10
+#   ENDF_MT: 16
+#   level: 
+#     isomer: 1
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+01   4.723307E-03   6.872632E-02   2.083144E+02   1.431668E+01
+# header: 
+#   title: Nb93(n,p) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,p)
+#   ENDF_MF: 3
+#   ENDF_MT: 103
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   1.000000E-07   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   1.000000E-07   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   1.000000E-07   0.000000E+00
+   1.000000E+00   4.651884E-04   2.156823E-02   2.933570E-04   6.327190E-06
+   2.000000E+00   5.196821E-04   2.279654E-02   1.787381E-02   4.074611E-04
+   3.000000E+00   3.273524E-03   5.721471E-02   1.619571E-01   9.266329E-03
+   4.000000E+00   9.394577E-03   9.692562E-02   6.194359E-01   6.003921E-02
+   5.000000E+00   1.520974E-02   1.233278E-01   1.563416E+00   1.928126E-01
+   8.000000E+00   3.492215E-02   1.868747E-01   7.777947E+00   1.453501E+00
+   1.000000E+01   4.063940E-02   2.015922E-01   1.536051E+01   3.096559E+00
+# header: 
+#   title: Nb93(n,np) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,np)
+#   ENDF_MF: 3
+#   ENDF_MT: 28
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   1.031608E-02   1.015681E-01   7.258054E-03   7.371869E-04
+   1.000000E+01   2.583033E-02   1.607182E-01   1.110484E+00   1.784749E-01
+# header: 
+#   title: Nb93(n,d) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,d)
+#   ENDF_MF: 3
+#   ENDF_MT: 104
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   2.145111E-03   4.631534E-02   6.920740E-03   3.205364E-04
+   1.000000E+01   1.921959E-03   4.384016E-02   3.096333E-01   1.357437E-02
+# header: 
+#   title: Nb93(n,t) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,t)
+#   ENDF_MF: 3
+#   ENDF_MT: 105
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+01   1.578105E-01   3.972537E-01   2.182608E-05   8.670491E-06
+# header: 
+#   title: Nb93(n,a) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,a)
+#   ENDF_MF: 3
+#   ENDF_MT: 107
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   1.000000E-07   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   1.000000E-07   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   1.000000E-07   0.000000E+00
+   1.000000E+00   1.824621E-03   4.271558E-02   1.056588E-04   4.513278E-06
+   2.000000E+00   4.438965E-04   2.106885E-02   3.832545E-03   8.074733E-05
+   3.000000E+00   3.677381E-03   6.064142E-02   3.186877E-02   1.932568E-03
+   4.000000E+00   1.101898E-02   1.049713E-01   1.143225E-01   1.200058E-02
+   5.000000E+00   2.349771E-02   1.532896E-01   3.701849E-01   5.674551E-02
+   8.000000E+00   1.839686E-02   1.356350E-01   4.252375E+00   5.767710E-01
+   1.000000E+01   6.779581E-03   8.233821E-02   1.160423E+01   9.554713E-01
+# header: 
+#   title: Nb93(n,a)g cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,a)g
+#   ENDF_MF: 10
+#   ENDF_MT: 107
+#   level: 
+#     isomer: 0
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   5.000000E-08   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   5.000000E-08   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   5.000000E-08   0.000000E+00
+   1.000000E+00   1.824621E-03   4.271558E-02   1.056588E-04   4.513278E-06
+   2.000000E+00   4.058394E-04   2.014546E-02   3.422543E-03   6.894868E-05
+   3.000000E+00   4.467525E-03   6.683955E-02   2.787172E-02   1.862933E-03
+   4.000000E+00   1.228593E-02   1.108419E-01   8.692039E-02   9.634420E-03
+   5.000000E+00   2.458300E-02   1.567897E-01   2.564936E-01   4.021555E-02
+   8.000000E+00   1.994806E-02   1.412376E-01   2.312050E+00   3.265483E-01
+   1.000000E+01   7.529695E-03   8.677381E-02   5.662868E+00   4.913886E-01
+# header: 
+#   title: Nb93(n,a)m cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,a)m
+#   ENDF_MF: 10
+#   ENDF_MT: 107
+#   level: 
+#     isomer: 1
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   5.000000E-08   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   5.000000E-08   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   5.000000E-08   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   4.033772E-03   6.351198E-02   4.100024E-04   2.604006E-05
+   3.000000E+00   5.129662E-03   7.162166E-02   3.997053E-03   2.862756E-04
+   4.000000E+00   1.131094E-02   1.063529E-01   2.740213E-02   2.914295E-03
+   5.000000E+00   2.154729E-02   1.467900E-01   1.136913E-01   1.668874E-02
+   8.000000E+00   1.663968E-02   1.289949E-01   1.940325E+00   2.502920E-01
+   1.000000E+01   6.109525E-03   7.816345E-02   5.941360E+00   4.643972E-01
+# header: 
+#   title: Nb93(n,na) cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,na)
+#   ENDF_MF: 3
+#   ENDF_MT: 22
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   1.333850E-02   1.154924E-01   2.057754E-03   2.376549E-04
+   1.000000E+01   2.937865E-02   1.714020E-01   9.748194E-02   1.670860E-02
+# header: 
+#   title: Nb93(n,na)g cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,na)g
+#   ENDF_MF: 10
+#   ENDF_MT: 22
+#   level: 
+#     isomer: 0
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   1.333850E-02   1.154924E-01   2.057754E-03   2.376549E-04
+   1.000000E+01   2.881324E-02   1.697446E-01   8.138363E-02   1.381444E-02
+# header: 
+#   title: Nb93(n,na)m cross section covariance matrix
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 41
+#   A: 93
+#   nuclide: Nb93
+# reaction: 
+#   type: (n,na)m
+#   ENDF_MF: 10
+#   ENDF_MT: 22
+#   level: 
+#     isomer: 1
+#   covariance: 
+#     class: variance
+#   quantity: 
+#     type: cross section covariance matrix
+#   datablock: 
+#     columns: 5
+#     entries: 10
+##       E        Rel._variance Rel._std._dev.   Average_xs      Std._dev.
+##     [MeV]           []             []            [mb]           [mb]
+   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   3.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   4.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   5.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   8.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.000000E+01   3.370468E-02   1.835884E-01   1.609828E-02   2.955456E-03

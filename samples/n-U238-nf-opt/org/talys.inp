@@ -1,3 +1,4 @@
+# Original input file
 projectile n
 element    u
 mass       238
@@ -63,5 +64,26 @@ vfiscor       92 239    0.95026
 #keyvary ptable
 #keyvary vfiscor
 #keyvary betafiscor
+ctable           92 239  -0.39753   1
+ptable           92 239  -0.03277   1
+ctable           92 239   0.66973   2
+ptable           92 239  -0.45975   2
+ctable           92 239   0.44307   3
+ptable           92 239  -0.14079   3
+betafiscor       92 239   0.80811
+vfiscor          92 239   0.95026
+# Current variables Run:    20
+#Ztarget  92
 partable y
-spherical y
+ecissave y
+inccalc n
+eciscalc n
+ctable        92 239    0.51031 1
+ptable        92 239    0.57035 1
+ctable        92 239 -1.51698E-01 2
+ptable        92 239 -1.97709E+00 2
+ctable        92 239    0.97253 3
+ptable        92 239    0.96821 3
+betafiscor    92 239    0.76510
+vfiscor       92 239    1.19064
+Estop   1000.00000

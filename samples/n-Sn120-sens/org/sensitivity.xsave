@@ -1,0 +1,280 @@
+# header: 
+#   title: Sn120 sensitivity coefficients per channel integrated over energy, sorted
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# parameters: 
+#   method: Linear sensitivity
+#   number of random runs: 1
+#   number of channels: 14
+#     channel: total.tot
+#     reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: elastic.tot
+#     reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: nonelastic.tot
+#     reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs000000.tot
+#     reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs100000.tot
+#     reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs200000.tot
+#     reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs300000.tot
+#     reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs010000.tot
+#     reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs110000.tot
+#     reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs001000.tot
+#     reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs101000.tot
+#     reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs000100.tot
+#     reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs000001.tot
+#     reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00
+#     channel: xs100001.tot
+#     reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 5
+#   entries: 10
+##   Parameter                         S       max. deviation par. deviation
+##      []             []             []            [mb]            [%]
+v1adjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+v2adjust n                       0.000000E+00   0.000000E+00   3.000000E+00
+rvadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+avadjust n                       0.000000E+00   0.000000E+00   2.000000E+00
+gnadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+gpadjust  50 121                 0.000000E+00   0.000000E+00   7.500000E+00
+m2constant                       0.000000E+00   0.000000E+00   2.000000E+01
+gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
+aadjust  50 121                  0.000000E+00   0.000000E+00   7.500000E+00
+aadjust  50 120                  0.000000E+00   0.000000E+00   7.500000E+00

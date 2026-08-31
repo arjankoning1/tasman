@@ -1,0 +1,1304 @@
+# header: 
+#   title: Sn120 sensitivity coefficients per parameter, cross section and energy
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# parameters: 
+#   method: Linear sensitivity
+#   number of random runs: 1
+#   number of parameters: 10
+#     parameter: v1adjust n
+#     parameter variation [%]:  2.000000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: v2adjust n
+#     parameter variation [%]:  3.000000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: rvadjust n
+#     parameter variation [%]:  2.000000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: avadjust n
+#     parameter variation [%]:  2.000000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: gnadjust  50 121
+#     parameter variation [%]:  7.500000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: gpadjust  50 121
+#     parameter variation [%]:  7.500000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: m2constant
+#     parameter variation [%]:  2.000000E+01
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: gamgamadjust  50 121
+#     parameter variation [%]:  2.000000E+01
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: aadjust  50 121
+#     parameter variation [%]:  7.500000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#     parameter: aadjust  50 120
+#     parameter variation [%]:  7.500000E+00
+#     number of channels: 14
+#       channel: total.tot
+#       reaction: (n,tot)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: elastic.tot
+#       reaction: (n,el)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: nonelastic.tot
+#       reaction: (n,non)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000000.tot
+#       reaction: (n,g)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100000.tot
+#       reaction: (n,n')
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs200000.tot
+#       reaction: (n,2n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs300000.tot
+#       reaction: (n,3n)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs010000.tot
+#       reaction: (n,p)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs110000.tot
+#       reaction: (n,np)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs001000.tot
+#       reaction: (n,d)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs101000.tot
+#       reaction: (n,nd)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000100.tot
+#       reaction: (n,t)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs000001.tot
+#       reaction: (n,a)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]
+#       channel: xs100001.tot
+#       reaction: (n,na)
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 0
+##    Energy            S       max. deviation       xs
+##     [MeV]           []            [mb]            [%]

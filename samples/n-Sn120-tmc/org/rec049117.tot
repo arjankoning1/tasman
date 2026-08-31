@@ -1,0 +1,50 @@
+# header: 
+#   title: Sn120(n,x) recoil emission spectrum at 2.000000E+01 MeV
+#   source: TALYS-2.24
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# reaction: 
+#   type: (n,x)
+#   ENDF_MF: 6
+#   ENDF_MT: 5
+#   parameters: 
+#     E-incident [MeV]:  2.000000E+01
+#     Integrated recoil spectrum [mb]:  9.577906E-08
+#     Residual production cross section [mb]:  9.584552E-08
+#   residual: 
+#     Z: 49
+#     A: 117
+#     nuclide: In117
+#   quantity: 
+#     type: emission spectrum
+#   datablock: 
+#     columns: 2
+#     entries: 21
+##     E-out           xs
+##     [MeV]        [mb/MeV]
+   1.183202E-02   1.661656E-13
+   3.549606E-02   1.935715E-12
+   5.916009E-02   1.965689E-12
+   8.282413E-02   1.959414E-12
+   1.064882E-01   1.534401E-09
+   1.301522E-01   1.518625E-07
+   1.538162E-01   2.432851E-06
+   1.774803E-01   1.367470E-06
+   2.011443E-01   9.048460E-08
+   2.248084E-01   3.197100E-09
+   2.484724E-01   3.490996E-11
+   2.721364E-01   1.965235E-12
+   2.958005E-01   1.935909E-12
+   3.194645E-01   1.943448E-12
+   3.431285E-01   1.943669E-12
+   3.667926E-01   1.942389E-12
+   3.904566E-01   1.920677E-12
+   4.141206E-01   1.194848E-12
+   4.377847E-01   4.657628E-14
+   4.614487E-01   0.000000E+00
+   4.851128E-01   0.000000E+00

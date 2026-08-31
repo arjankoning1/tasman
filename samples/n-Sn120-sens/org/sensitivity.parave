@@ -1,0 +1,244 @@
+# header: 
+#   title: Sn120 sensitivity coefficients per parameter integrated over energy, sorted
+#   source: TASMAN
+#   user: Arjan Koning
+#   date: 2026-08-31
+#   format: YANDF-0.4
+# target: 
+#   Z: 50
+#   A: 120
+#   nuclide: Sn120
+# parameters: 
+#   method: Linear sensitivity
+#   number of random runs: 1
+#   number of parameters: 10
+#     parameter: v1adjust n
+#     parameter variation [%]:  2.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: v2adjust n
+#     parameter variation [%]:  3.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: rvadjust n
+#     parameter variation [%]:  2.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: avadjust n
+#     parameter variation [%]:  2.000000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: gnadjust  50 121
+#     parameter variation [%]:  7.500000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: gpadjust  50 121
+#     parameter variation [%]:  7.500000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: m2constant
+#     parameter variation [%]:  2.000000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: gamgamadjust  50 121
+#     parameter variation [%]:  2.000000E+01
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: aadjust  50 121
+#     parameter variation [%]:  7.500000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00
+#     parameter: aadjust  50 120
+#     parameter variation [%]:  7.500000E+00
+# quantity: 
+#   type: sensitivity coefficients
+# datablock: 
+#   columns: 4
+#   entries: 14
+##    Channel         File             S       max. deviation
+##      []             []             []            [mb]
+(n,tot)        total.tot         0.000000E+00   0.000000E+00
+(n,el)         elastic.tot       0.000000E+00   0.000000E+00
+(n,non)        nonelastic.tot    0.000000E+00   0.000000E+00
+(n,g)          xs000000.tot      0.000000E+00   0.000000E+00
+(n,n')         xs100000.tot      0.000000E+00   0.000000E+00
+(n,2n)         xs200000.tot      0.000000E+00   0.000000E+00
+(n,3n)         xs300000.tot      0.000000E+00   0.000000E+00
+(n,p)          xs010000.tot      0.000000E+00   0.000000E+00
+(n,np)         xs110000.tot      0.000000E+00   0.000000E+00
+(n,d)          xs001000.tot      0.000000E+00   0.000000E+00
+(n,nd)         xs101000.tot      0.000000E+00   0.000000E+00
+(n,t)          xs000100.tot      0.000000E+00   0.000000E+00
+(n,a)          xs000001.tot      0.000000E+00   0.000000E+00
+(n,na)         xs100001.tot      0.000000E+00   0.000000E+00

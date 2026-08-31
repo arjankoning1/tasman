@@ -1,0 +1,19 @@
+gnadjust      48 108    1.00000 # Range:      0.92673 -      1.07906
+gpadjust      48 108    1.00000 # Range:      0.92673 -      1.07906
+gnadjust      48 107    1.00000 # Range:      0.92673 -      1.07906
+gpadjust      48 107    1.00000 # Range:      0.92673 -      1.07906
+gnadjust      47 107    1.00000 # Range:      0.92673 -      1.07906
+gpadjust      47 107    1.00000 # Range:      0.92673 -      1.07906
+m2constant      1.00000 # Range:      0.83333 -      1.20000
+rvadjust     n    1.00000 # Range:      0.98039 -      1.02000
+avadjust     n    1.00000 # Range:      0.98039 -      1.02000
+w1adjust     n    1.00000 # Range:      0.90909 -      1.10000
+d2adjust     n    1.00000 # Range:      0.90909 -      1.10000
+rwdadjust    n    1.00000 # Range:      0.97087 -      1.03000
+awdadjust    n    1.00000 # Range:      0.96154 -      1.04000
+rvadjust     p    1.00000 # Range:      0.96154 -      1.04000
+avadjust     p    1.00000 # Range:      0.96154 -      1.04000
+w1adjust     p    1.00000 # Range:      0.83333 -      1.20000
+d2adjust     p    1.00000 # Range:      0.83333 -      1.20000
+rwdadjust    p    1.00000 # Range:      0.94340 -      1.06000
+awdadjust    p    1.00000 # Range:      0.92593 -      1.08000
