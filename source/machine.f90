@@ -74,10 +74,11 @@ subroutine machine
   exforpath = trim(base_dir)//'exfortables/'
 !
 ! External executables such as TALYS, TEFAL, TARES, TAFIS and TANES are
-! resolved through the user's PATH.  input2.f90 appends the executable
-! name to binpath, so an empty prefix lets the operating system find them.
+! installed by default in the sibling bin directory.  Keep the absolute
+! prefix because the availability checks use Fortran INQUIRE, which does
+! not resolve executable names through PATH.
 !
-  binpath = ''
+  binpath = trim(base_dir)//'bin/'
   tasmanpath = trim(code_dir)//'/'
   psfpath = trim(base_dir)//'PSF/Photo/'
 !
