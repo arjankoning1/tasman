@@ -64,11 +64,12 @@ https://nds.iaea.org/talys/
 TASMAN derives these external paths from the parent directory of `TASMAN_DIR`. A typical installation layout is therefore:
 
 ```text
-.../talys/
-.../tefal/
-.../tasman/
-.../exfortables/
-.../libraries/
+parent_directory/
+├── talys/
+├── tefal/
+├── tasman/
+├── exfortables/
+└── libraries/
 ```
 
 The optional photon strength function database is expected as:
