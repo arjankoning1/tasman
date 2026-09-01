@@ -34,7 +34,7 @@ To download TASMAN, you can use one of the following options.
 #### 1. Download the entire tar file (frozen version TASMAN-2.2)
 
 ```bash
-curl -LO https://nds.iaea.org/talys/tasman.tar
+curl -LO https://nds.iaea.org/talys/codes/tasman.tar
 tar zxf tasman.tar
 ```
 
