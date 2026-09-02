@@ -6,7 +6,7 @@ program tasman
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2026-05-11: Current revision
+! 2026-09-02: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !   |-------------------------------------------------------|
@@ -56,6 +56,7 @@ program tasman
   call constants
   call tasmaninitial
   call tasmaninput
+  call allocate_arrays
 !
 ! ******** Monte Carlo uncertainties, covariances and optimization *****
 !
@@ -68,6 +69,7 @@ program tasman
   else
     call optimization
   endif
+  call deallocate_arrays
   call timer
 end program tasman
 ! Copyright A.J. Koning 2026
