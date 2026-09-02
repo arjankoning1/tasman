@@ -6,7 +6,7 @@ module A0_tasman_mod
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2026-05-11: Current revision
+! 2026-09-02: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -319,11 +319,11 @@ module A0_tasman_mod
   real(sgl), dimension(numchanxs)                     :: xsmax        ! maximum cross section per channel
   real(sgl), dimension (numchanxs,numsets,0:numenexp) :: xsnon        ! non-elastic cross section
   real(sgl), dimension(0:numenin)                     :: xsnon0       ! non-elastic cross section
-  real(sgl), dimension(0:numtalys,numchanxs,0:numenS) :: xssave       ! cross section from TALYS
   real(sgl), dimension(0:1,numchanxs,0:numenin)       :: xstalys      ! cross section from TALYS
   real(sgl), dimension(0:1,numchanxs,0:numenin)       :: xstalys2     ! cross section from TALYS
   real(sgl), dimension(0:1,numchanxs,0:numenin)       :: xstalys3     ! cross section from TALYS
   real(sgl), dimension (numchanxs,numsets,0:numenexp) :: xsth         ! theoretical cross section
+  real(sgl), allocatable                              :: xssave(:,:,:) ! cross section from TALYS
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for reading residual production cross sections
@@ -338,7 +338,7 @@ module A0_tasman_mod
   integer, dimension(numchanxs,numenin)               :: Srpindex ! index for residual production cross section
   integer, dimension(numchanrp)                       :: Zrp      ! charge number of residual product
   real(sgl), dimension(numchanrp,0:numenin)           :: Erp      ! incident energy
-  real(sgl), dimension(0:numtalys,numchanrp,0:numenS) :: rpsave   ! residual production cross section from TALYS
+  real(sgl), allocatable                              :: rpsave(:,:,:) ! residual production cross section from TALYS
   real(sgl), dimension(0:1,numchanrp,0:numenin)       :: rptalys  ! residual production cross section from TALYS
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -351,7 +351,7 @@ module A0_tasman_mod
   integer, dimension(numchanprod)                       :: Nenprod0   ! number of covariance energies
   integer, dimension(numchanxs,numenin)                 :: Sprodindex ! index of particle production cross sections
   real(sgl), dimension(numchanprod,0:numenin)           :: Eprod      ! incident energy
-  real(sgl), dimension(0:numtalys,numchanprod,0:numenS) :: prodsave   ! particle production cross section from TALY
+  real(sgl), allocatable                              :: prodsave(:,:,:) ! particle production cross section from TALY
   real(sgl), dimension(0:1,numchanprod,0:numenin)       :: prodtalys  ! particle production cross section from TALYS
   real(sgl), dimension(0:1,numchanprod,0:numenin)       :: Ytalys     ! yield from TALYS
 !
@@ -366,7 +366,7 @@ module A0_tasman_mod
   integer, dimension(numchangam)                       :: Nengam0   ! number of incident energies
   integer, dimension(numchanxs,numenin)                :: Sgamindex ! index for gamma cross section
   real(sgl), dimension(numchangam,0:numenin)           :: Egam      ! incident energy
-  real(sgl), dimension(0:numtalys,numchangam,0:numenS) :: gamsave   ! gamma cross section from TALYS
+  real(sgl), allocatable                              :: gamsave(:,:,:) ! gamma cross section from TALYS
   real(sgl), dimension(0:1,numchangam,0:numenin)       :: gamtalys  ! gamma cross section from TALYS
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -481,13 +481,13 @@ module A0_tasman_mod
   real(sgl)                                         :: Rlimit      ! limit for covariance calculation
   real(sgl), dimension(numchanxs,numencov,numencov) :: Rmt         ! intra-channel rel. cov. matrix for cross section
   real(sgl), dimension(numchanxs,numenin)           :: RmtD        ! diagonal of covariance matrix for cross sections
-  real(sgl), dimension(numpar,numchanxs,numenS)     :: S           ! sensitivity matrix
-  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson     ! Pearson correlation
-  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson_enum ! variable for Pearson correlation
-  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson_denom_par ! variable for Pearson correlation
-  real(sgl), dimension(numpar,numchanxs,numenS)     :: Pearson_denom_xs ! variable for Pearson correlation
-  real(sgl), dimension(numpar,numchanxs,numenS)     :: Sdenom      ! denominator of sensitivity matrix
-  real(sgl), dimension(numpar,numchanxs,numenS)     :: Senum       ! enumerator of sensitivity matrix
+  real(sgl), allocatable                            :: S(:,:,:)           ! sensitivity matrix
+  real(sgl), allocatable                            :: Pearson(:,:,:)     ! Pearson correlation
+  real(sgl), allocatable                            :: Pearson_enum(:,:,:) ! variable for Pearson correlation
+  real(sgl), allocatable                            :: Pearson_denom_par(:,:,:) ! variable for Pearson correlation
+  real(sgl), allocatable                            :: Pearson_denom_xs(:,:,:) ! variable for Pearson correlation
+  real(sgl), allocatable                            :: Sdenom(:,:,:) ! denominator of sensitivity matrix
+  real(sgl), allocatable                            :: Senum(:,:,:)       ! enumerator of sensitivity matrix
   real(sgl), dimension(numchanxs,numencov,numencov) :: Vmt         ! intra-channel covariance matrix for cross sectio
   real(sgl), dimension(numchanxs,numenin)           :: xsav        ! average cross section
   real(sgl), dimension(numchanxs,numencov)          :: xsavC       ! average cross section (for covariance energy grid)
