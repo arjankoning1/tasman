@@ -116,7 +116,7 @@
     i = i + 1
     if (i > numlines - nlines) then
       write(*, '(" TASMAN-error: Number of input lines exceeds ", i5)') numlines
-      write(*, '(" numlines in tasman.cmb should be increased")')
+      write(*, '(" numlines in A0_tasman_mod.f90 should be increased")')
       stop
     endif
   enddo
