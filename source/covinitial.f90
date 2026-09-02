@@ -54,14 +54,7 @@ subroutine covinitial
   RNisorelD = 0.
   errNisorel = 0.
   Nisorelav = 0.
-  S = 0.
-  Senum = 0.
-  Sdenom = 0.
   Schan = 0.
-  Pearson = 0.
-  Pearson_enum = 0.
-  Pearson_denom_par = 0.
-  Pearson_denom_xs = 0.
   xsdevav = 0.
   xsavC = 0.
   errmtC = 0.
