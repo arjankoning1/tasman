@@ -5,7 +5,7 @@ subroutine inputprocess
 !
 ! Author    : Arjan Koning
 !
-! 2021-12-30: Original code
+! 2026-09-02: Original code
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -143,16 +143,15 @@ subroutine inputprocess
 ! *** Declaration of local data
 !
   implicit none
-  integer, parameter :: numsub=200000   ! number of subentries
   logical            :: lexist          ! logical to determine existence
   character(len=1)   :: ch              ! character
   character(len=4)   :: massstring      ! string for mass number
   character(len=132) :: exppath1        ! 
   character(len=132) :: exppath2        ! 
-  character(len=132) :: aut(numsub)     ! author
+  character(len=132) :: aut             ! author
   character(len=132) :: efile           ! file with incident energies
   character(len=132) :: sub             ! file with experimental data set to include for search
-  character(len=132) :: suben(numsub)   ! subentry
+  character(len=132) :: suben           ! subentry
   integer            :: i               ! counter
   integer            :: icov            ! index for covariances
   integer            :: icovprev        ! index for covariances
@@ -489,29 +488,23 @@ Loop1:  do ilib = 1, numlib
 ! ****** Connect subentry number to experimental data filenames ********
 !
   open (unit = 3, file = trim(tasmanpath)//'misc/subentries', status = 'old')
-  i = 1
   do
-    read(3, '(2a)', iostat = istat) suben(i), aut(i)
+    read(3, '(2a)', iostat = istat) suben, aut
     if (istat == -1) exit
     if (istat /= 0) call read_error(trim(tasmanpath)//'misc/subentries', istat)
-    i = i + 1
-  enddo
-  nsub = i - 1
-  close (unit = 3)
-Loop2:  do imt = 1, nummt
-    do j = 1, expinccount(imt)
-      ch = expincfile(imt, j)(1:1)
-      if (ch >= '0' .and. ch <= '9') then
-        sub = expincfile(imt, j)
-        do i = 1, nsub
-          if (trim(sub) == trim(suben(i))) then
-            expincfile(imt, j) = aut(i)(1:40)
-            cycle Loop2
+
+    do imt = 1, nummt
+      do j = 1, expinccount(imt)
+        ch = expincfile(imt, j)(1:1)
+        if (ch >= '0' .and. ch <= '9') then
+          if (trim(expincfile(imt, j)) == trim(suben)) then
+            expincfile(imt, j) = aut(1:40)
           endif
-        enddo
-      endif
+        endif
+      enddo
     enddo
-  enddo Loop2
+  enddo
+  close (unit = 3)
   return
 end subroutine inputprocess
-! Copyright A.J. Koning 2021
+! Copyright A.J. Koning 2026
