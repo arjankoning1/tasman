@@ -21,28 +21,57 @@ A.J. Koning, D. Rochman, J.-Ch. Sublet, N. Dzysiuk, M. Fleming, and S. van der M
 
 The following are the prerequisites for compiling TASMAN:
 
-- git (only if the package is downloaded via GitHub)
 - GNU make
 - a recent Fortran compiler, such as GNU Fortran (gfortran)
 - a successful installation of the TALYS nuclear model code
 - for Total Monte Carlo: a successful installation of TEFAL for ENDF-6 formatting
+- git, only when TASMAN is downloaded using `git clone`
 
 ### Downloads
 
-To download TASMAN, you can use one of the following options.
+TASMAN can be downloaded in one of the following ways.
 
-#### 1. Download the entire tar file (frozen version TASMAN-2.2)
+#### 1. Frozen version TASMAN-2.2 (December 2025)
 
-This is available at the the [TALYS page](https://nds.iaea.org/talys/), and can be retrieved by clicking on the download link or
+The frozen TASMAN-2.2 distribution is available from the [TALYS page](https://nds.iaea.org/talys/). It can be retrieved by clicking on the download link or with
+
 ```bash
 curl -LO https://nds.iaea.org/talys/codes/tasman.tar
 tar zxf tasman.tar
 ```
 
-#### 2. Using git (latest beta version)
+This version is fixed and will not change.
+
+#### 2. Latest beta version without git
+
+Users who do not have git can download a snapshot of the current `main` branch directly from GitHub:
+
+```bash
+curl -L \
+  -o tasman-main.tar.gz \
+  https://github.com/arjankoning1/tasman/archive/refs/heads/main.tar.gz
+
+tar zxf tasman-main.tar.gz
+mv tasman-main tasman
+```
+
+This produces the same `tasman/` directory structure as the git version, but without the git history.
+
+The downloaded snapshot contains the latest version of the `main` branch at the time of download. To obtain a newer version later, download the snapshot again.
+
+#### 3. Latest beta version using git
+
+Users with git can clone the repository with
 
 ```bash
 git clone https://github.com/arjankoning1/tasman.git
+```
+
+The advantage of this method is that the local TASMAN installation can subsequently be updated with
+
+```bash
+cd tasman
+git pull --ff-only
 ```
 
 ### Additional data
@@ -87,7 +116,9 @@ export PATH="/path/to/talys/bin:/path/to/tefal/bin:$PATH"
 
 ### Installation instructions
 
-#### 1. For the tar file (frozen version TASMAN-2.2)
+#### 1. Frozen version TASMAN-2.2
+
+For the frozen tar distribution:
 
 ```bash
 cd tasman
@@ -103,15 +134,17 @@ make
 
 The above will invoke the default compiler `gfortran`.
 
-#### 2. For the git version (latest beta version)
+#### 2. Latest beta version
+
+The installation procedure is identical whether the latest beta version was obtained as a GitHub tar snapshot or using `git clone`.
+
+From the `tasman/` directory, run
 
 ```bash
-cd tasman
 ./install_tasman.bash
 ```
 
-which automatically executes the `Makefile` in `tasman/source`. At the end, `install_tasman.bash`
-will print the recommended shell configuration.
+which automatically executes the `Makefile` in `tasman/source`. At the end, `install_tasman.bash` will print the recommended shell configuration.
 
 An alternative option is:
 
@@ -120,7 +153,13 @@ cd tasman/source
 make
 ```
 
-For the git version, the default compiler is `gfortran`. When `gfortran` is used and no `FFLAGS` are supplied, the Makefile uses:
+The executable is installed as
+
+```text
+tasman/bin/tasman
+```
+
+For the latest beta version, the default compiler is `gfortran`. When `gfortran` is used and no `FFLAGS` are supplied, the Makefile uses:
 
 ```text
 -w -O3 -ffp-contract=off
@@ -137,8 +176,6 @@ The compiler and compilation options can be passed to the Makefile through `inst
 # Intel Fortran
 ./install_tasman.bash FC=ifx FFLAGS="-O3"
 ```
-
-The above will produce a `tasman` executable in the `tasman/bin` directory.
 
 Set `TASMAN_DIR` to the TASMAN installation directory. This variable is required unless the fallback path in `source/machine.f90` has been set manually. For example:
 
@@ -210,8 +247,7 @@ From the top-level TASMAN directory, the same test can be started with:
 make -C source check
 ```
 
-`make check` automatically sets `TASMAN_DIR` and the sibling `TALYS_DIR` and `TEFAL_DIR`, and adds the TALYS and TEFAL
-executables to `PATH` for the test.
+`make check` automatically sets `TASMAN_DIR` and the sibling `TALYS_DIR` and `TEFAL_DIR`, and adds the TALYS and TEFAL executables to `PATH` for the test.
 
 You may create your own input file, for example `tasman.inp`, after which TASMAN works as follows:
 
