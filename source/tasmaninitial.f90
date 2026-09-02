@@ -210,10 +210,6 @@ subroutine tasmaninitial
   Nisotalys = 0.
   yieldtalys = 0.
   Nisoreltalys = 0.
-  xssave = 0.
-  rpsave = 0.
-  gamsave = 0.
-  prodsave = 0.
   angle = 0.
   angtalys = 0.
   Eout = 0.
