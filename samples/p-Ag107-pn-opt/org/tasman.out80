@@ -7,7 +7,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-08-31
+ Date: 2026-09-02
 
  ########## USER INPUT ##########
 
@@ -865,6 +865,6 @@ awdadjust    p    0.99233
 
  Maximum number of runs done:           10
 
- Execution time:  0 hours  0 minutes  0.26 seconds 
+ Execution time:  0 hours  0 minutes  0.28 seconds 
 
  This TASMAN run has finished
