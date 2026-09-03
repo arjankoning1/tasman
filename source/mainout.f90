@@ -6,7 +6,7 @@ subroutine mainout
 ! Author    : Arjan Koning
 !
 ! 2023-12-29: Original code
-! 2026-04-11: Current revision
+! 2026-09-03: Current revision
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
 ! *** Use data from other modules
@@ -15,7 +15,7 @@ subroutine mainout
 !
 ! Main output
 !
-  write(*,'(/"    TASMAN-2.23  (Version: May 11, 2026)"/)')
+  write(*,'(/"    TASMAN-2.25  (Version: September 3, 2026)"/)')
   write(*, '(" Copyright (C) 2026  A.J. Koning"/)')
   write(*, '(" Dimensions - Cross sections: mb, Energies: MeV, ", "Angles: degrees")')
   write(*, '(/" User: ",a)') trim(user)
