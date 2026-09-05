@@ -111,6 +111,7 @@ subroutine tasmaninitial
   xsth = 0.
   Eindex = 0
   dxsexp = 0.
+  parsave = 0.
   Eexp = 0.
   dEexp = 0.
   Esamp = 0.
@@ -141,7 +142,6 @@ subroutine tasmaninitial
   legfile = ''
   parlow = 0
   parhigh = 0
-  parsave = 0.
   pardelta = 0.
   par = 0.
   readpar = 0
@@ -168,7 +168,6 @@ subroutine tasmaninitial
   Avary = 0
   Zskip = 0
   Askip = 0
-  parsave = 0.
   paradjust = 0.
   Pbot = 0.
   Pbin = 0.
