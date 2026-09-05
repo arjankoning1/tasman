@@ -265,6 +265,7 @@ subroutine sensitivity
   call write_char(id2,'method',method)
   call write_integer(id2,'number of random runs',Nr)
   call write_integer(id2,'number of channels',Nchanxs)
+  pearloc = 0.
   do i = 1, Nchanxs
     call write_char(id4,'channel',xsfile(i))
     call write_char(id4,'reaction',reaction_string(i))
@@ -277,7 +278,7 @@ subroutine sensitivity
         strloc(k) = parstring(k)
         ploc(k) = pardelta(k)
         Sloc(k) = S(k, i, n)
-        pearloc(k) = Pearson(k, i, n)
+        if (flagsens .and. .not. flagreadsens) pearloc(k) = Pearson(k, i, n)
         xsloc(k) = xsdev(k, i, n)
       enddo
       do k = 1, Np
