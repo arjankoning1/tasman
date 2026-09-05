@@ -297,6 +297,10 @@ subroutine xsread
       enddo
       close (2)
       Nen(i) = k
+      if (Nen(i) == 0) then
+        write(*, '(/" TASMAN-error: No incident-energy entries found in cross section file: ", a)') trim(xsfile(i))
+        stop
+      endif
       if (italys <= Nhigh) then
         Nen0(i) = k
       else
