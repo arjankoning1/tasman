@@ -26,19 +26,23 @@ subroutine allocate_arrays
     allocate(gamsave(0:Ntalys,numchangam,0:numenS))
     gamsave = 0.
   endif
+! allocate(parsave(0:Ntalys,Npar))
+! parsave = 0.
   allocate(S(Npar,numchanxs,numenS))
   S = 0.
   allocate(Sdenom(Npar,numchanxs,numenS))
   Sdenom = 0.
   allocate(Senum(Npar,numchanxs,numenS))
   Senum = 0.
-  allocate(Pearson(Npar,numchanxs,numenS))
-  Pearson = 0.
-  allocate(Pearson_enum(Npar,numchanxs,numenS))
-  Pearson_enum = 0.
-  allocate(Pearson_denom_par(Npar,numchanxs,numenS))
-  Pearson_denom_par = 0.
-  allocate(Pearson_denom_xs(Npar,numchanxs,numenS))
-  Pearson_denom_xs = 0.
+  if (flagcross .and. flagsens .and. .not. flagreadsens) then
+    allocate(Pearson(Npar,numchanxs,numenS))
+    Pearson = 0.
+    allocate(Pearson_enum(Npar,numchanxs,numenS))
+    Pearson_enum = 0.
+    allocate(Pearson_denom_par(Npar,numchanxs,numenS))
+    Pearson_denom_par = 0.
+    allocate(Pearson_denom_xs(Npar,numchanxs,numenS))
+    Pearson_denom_xs = 0.
+  endif
   return
 end subroutine allocate_arrays
