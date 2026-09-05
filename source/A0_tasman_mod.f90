@@ -220,7 +220,7 @@ module A0_tasman_mod
   real(sgl), dimension(numpar)            :: parD          ! random parameter value
   real(sgl), dimension(numpar)            :: pardelta      ! uncertainty of parameter
   real(sgl), dimension(numpar)            :: parinp        ! input parameter value
-  real(sgl), dimension(0:numtalys,numpar) :: parsave       ! parameter value
+  real(sgl), dimension(0:numtalys,numpar) :: parsave
   real(sgl), dimension(0:1,numpar)        :: partalys      ! parameter value
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
