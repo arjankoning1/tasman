@@ -11,6 +11,7 @@ subroutine deallocate_arrays
   if (allocated(rpsave)) deallocate(rpsave)
   if (allocated(prodsave)) deallocate(prodsave)
   if (allocated(gamsave)) deallocate(gamsave)
+! if (allocated(parsave)) deallocate(parsave)
   if (allocated(S)) deallocate(S)
   if (allocated(Sdenom)) deallocate(Sdenom)
   if (allocated(Senum)) deallocate(Senum)
