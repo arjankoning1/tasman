@@ -356,6 +356,14 @@ module A0_tasman_mod
   real(sgl), dimension(0:1,numchanprod,0:numenin)       :: Ytalys     ! yield from TALYS
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
+! Variables for residual production cross section covariances
+!-----------------------------------------------------------------------------------------------------------------------------------
+!
+  real(sgl), allocatable                           :: rpav(:,:)  ! average residual production cross section
+  real(sgl), allocatable                           :: Rrp(:,:,:)   ! covariance matrix for residual production cross sections
+  real(sgl), allocatable                           :: RrpD(:,:)  ! diagonal of covariance matrix for cross sections
+!
+!-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for reading gamma production cross sections
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
@@ -473,14 +481,11 @@ module A0_tasman_mod
   integer, dimension(numchancov)                    :: MTisocov    ! isomer of MT number with covariance data
   integer                                           :: Nchancovint ! number of channels with covariance data
   integer                                           :: Nencov      ! number of covariance energies
-  real(sgl), dimension(numchanxs,numencov,numencov) :: Cmt         ! intra-channel correlation matrix for cross secti
   real(sgl)                                         :: coveps      ! limit for covariance
   real(sgl), dimension(0:numencov)                  :: Ecov        ! covariance energy grid
   real(sgl), dimension(numchanxs,numenin)           :: errmt       ! cross section uncertainty
   real(sgl), dimension(numchanxs,numencov)          :: errmtC      ! cross section uncertainty (for cov. energy grid)
   real(sgl)                                         :: Rlimit      ! limit for covariance calculation
-  real(sgl), dimension(numchanxs,numencov,numencov) :: Rmt         ! intra-channel rel. cov. matrix for cross section
-  real(sgl), dimension(numchanxs,numenin)           :: RmtD        ! diagonal of covariance matrix for cross sections
   real(sgl), allocatable                            :: S(:,:,:)           ! sensitivity matrix
   real(sgl), allocatable                            :: Pearson(:,:,:)     ! Pearson correlation
   real(sgl), allocatable                            :: Pearson_enum(:,:,:) ! variable for Pearson correlation
@@ -488,63 +493,50 @@ module A0_tasman_mod
   real(sgl), allocatable                            :: Pearson_denom_xs(:,:,:) ! variable for Pearson correlation
   real(sgl), allocatable                            :: Sdenom(:,:,:) ! denominator of sensitivity matrix
   real(sgl), allocatable                            :: Senum(:,:,:)       ! enumerator of sensitivity matrix
-  real(sgl), dimension(numchanxs,numencov,numencov) :: Vmt         ! intra-channel covariance matrix for cross sectio
-  real(sgl), dimension(numchanxs,numenin)           :: xsav        ! average cross section
-  real(sgl), dimension(numchanxs,numencov)          :: xsavC       ! average cross section (for covariance energy grid)
-  real(sgl), dimension(numchancov,numencov,numchancov,numencov) :: Rcov        ! relative covariance matrix for cross s
-  real(sgl), dimension(numchancov,numencov,numchancov,numencov) :: Ccov        ! correlation matrix for cross sections
-  real(sgl), dimension(numchancov,numencov,numchancov,numencov) :: Vcov        ! covariance matrix for cross sections
-!
-!-----------------------------------------------------------------------------------------------------------------------------------
-! Variables for residual production cross section covariances
-!-----------------------------------------------------------------------------------------------------------------------------------
-!
-  real(sgl), dimension(numchanrp,numenin)          :: errrp ! cross section uncertainty
-  real(sgl), dimension(numchanrp,numenin)          :: rpav  ! average residual production cross section
-  real(sgl), dimension(numchanrp,numenin,numencov) :: Rrp   ! covariance matrix for residual production cross sections
-  real(sgl), dimension(numchanrp,numenin)          :: RrpD  ! diagonal of covariance matrix for cross sections
+  real(sgl), allocatable                            :: xsav(:,:)   ! average cross section
+  real(sgl), allocatable                            :: xsavC(:,:)  ! average cross section (for covariance energy grid)
+  real(sgl), allocatable                            :: Vmt(:,:,:)    ! intra-channel covariance matrix for cross sectio
+  real(sgl), allocatable                            :: Rmt(:,:,:)    ! intra-channel rel. cov. matrix for cross section
+  real(sgl), allocatable                            :: RmtD(:,:)   ! diagonal of covariance matrix for cross sections
+  real(sgl), allocatable                            :: Rcov(:,:,:,:)   ! relative covariance matrix for cross s
+  real(sgl), allocatable                            :: Vcov(:,:,:,:)   ! covariance matrix for cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for gamma production covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), dimension(numchangam,numenin)           :: errgam ! cross section uncertainty
-  real(sgl), dimension(numchangam,numenin)           :: gamav  ! average gamma production cross section
-  real(sgl), dimension(numchangam,numencov,numencov) :: Rgam   ! covariance matrix for gamma production cross sections
-  real(sgl), dimension(numchangam,numenin)           :: RgamD  ! diagonal of covariance matrix for cross sections
+  real(sgl), allocatable                             :: gamav(:,:)  ! average gamma production cross section
+  real(sgl), allocatable                             :: Rgam(:,:,:) ! covariance matrix for gamma production cross sections
+  real(sgl), allocatable                             :: RgamD(:,:)  ! diagonal of covariance matrix for cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for production cross section covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), dimension(numchanprod,numenin)           :: errprod ! cross section uncertainty
-  real(sgl), dimension(numchanprod,numenin)           :: prodav  ! average particle production cross section
-  real(sgl), dimension(numchanprod,numencov,numencov) :: Rprod   ! covariance matrix for particle production cross sect
-  real(sgl), dimension(numchanprod,numenin)           :: RprodD  ! diagonal of covariance matrix for cross sections
+  real(sgl), allocatable                              :: prodav(:,:)  ! average particle production cross section
+  real(sgl), allocatable                              :: Rprod(:,:,:)   ! covariance matrix for particle production cross sect
+  real(sgl), allocatable                              :: RprodD(:,:)  ! diagonal of covariance matrix for cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for spectra covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), dimension(numchansp,0:numen2)           :: errsp ! emission spectrum uncertainty
-  real(sgl), dimension(numchansp,0:numen2, 0:numen2) :: Rsp   ! covariance matrix for emission spectra
-  real(sgl), dimension(numchansp,0:numen2)           :: spav  ! average emission spectra
+  real(sgl), allocatable                             :: Rsp(:,:,:)   ! covariance matrix for emission spectra
+  real(sgl), allocatable                             :: spav(:,:)  ! average emission spectra
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for angular distribution covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), dimension(numchanang,0:numang)          :: angav  ! average angular distributions
-  real(sgl), dimension(numchanang,0:numang)          :: errang ! angular distributions uncertainty
-  real(sgl), dimension(numchanang,0:numang,0:numang) :: Rang   ! covariance matrix for angular distributions
+  real(sgl), allocatable                             :: angav(:,:)  ! average angular distributions
+  real(sgl), allocatable                             :: Rang(:,:,:)   ! covariance matrix for angular distributions
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for Legendre coefficient covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), dimension(numchanang,0:numleg)                     :: errleg ! Legendre coefficients uncertainty
-  real(sgl), dimension(numchanang,0:numleg)                     :: legav  ! average Legendre coefficients
-  real(sgl), dimension(numchanang,0:numleg,numchanang,0:numleg) :: Rleg   ! covariance matrix for Legendre coefficients
+  real(sgl), allocatable                                        :: legav(:,:)  ! average Legendre coefficients
+  real(sgl), allocatable                                        :: Rleg(:,:,:,:)   ! covariance matrix for Legendre coefficients
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for integral data covariances
