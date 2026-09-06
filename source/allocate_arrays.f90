@@ -70,7 +70,7 @@ subroutine allocate_arrays
   endif
 
   if (flagintegral) then
-    allocate(xseffsave(0:numtalys,numchanxs))
+    allocate(xseffsave(0:Ntalys,numchanxs))
     xseffsave = 0.
   endif
 
