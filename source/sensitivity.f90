@@ -51,7 +51,7 @@ subroutine sensitivity
 ! *** Declaration of local data
 !
   implicit none
-  character(len=15) :: col(numpar)                         ! header
+  character(len=15) :: col(numpar+1)                         ! header
   character(len=15) :: un(numpar)
   character(len=16) :: reaction
   character(len=40) :: method
