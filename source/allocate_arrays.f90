@@ -79,15 +79,16 @@ subroutine allocate_arrays
     allocate(RgamD(numchangam,numenin))
     RgamD = 0.
   endif
-! allocate(parsave(0:Ntalys,Npar))
-! parsave = 0.
-  allocate(S(Npar,numchanxs,numenS))
-  S = 0.
-  allocate(Sdenom(Npar,numchanxs,numenS))
-  Sdenom = 0.
-  allocate(Senum(Npar,numchanxs,numenS))
-  Senum = 0.
+
+  if (flagsens .or. flagreadsens .or. mode == 2) then
+    allocate(S(Npar,numchanxs,numenS))
+    S = 0.
+  endif
   if (flagcross .and. flagsens .and. .not. flagreadsens) then
+    allocate(Sdenom(Npar,numchanxs,numenS))
+    Sdenom = 0.
+    allocate(Senum(Npar,numchanxs,numenS))
+    Senum = 0.
     allocate(Pearson(Npar,numchanxs,numenS))
     Pearson = 0.
     allocate(Pearson_enum(Npar,numchanxs,numenS))
@@ -96,6 +97,10 @@ subroutine allocate_arrays
     Pearson_denom_par = 0.
     allocate(Pearson_denom_xs(Npar,numchanxs,numenS))
     Pearson_denom_xs = 0.
+  endif
+  if (flagexp .or. flaglib .or. flagtal) then
+    allocate(Gchannelsave(0:Ntalys,numchanxs))
+    Gchannelsave = 0.
   endif
   return
 end subroutine allocate_arrays
