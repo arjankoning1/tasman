@@ -68,6 +68,8 @@ subroutine covgamma
   real(sgl)         :: xsi1      ! cross section of random run
   real(sgl)         :: xsk0      ! cross section of run 0
   real(sgl)         :: xsk1      ! cross section of random run
+  real(sgl), dimension(numchangam,numenin)           :: errgam ! cross section uncertainty
+  errgam = 0.
 !
 ! Average gamma production cross sections and covariances
 !
