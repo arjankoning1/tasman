@@ -231,6 +231,7 @@ subroutine fcn(N, P, G)
     enddo
     open (unit=22,file='gofno',status='unknown')
     open (unit=23,file='gofnew',status='unknown')
+    open (unit=27,file='gof.details',status='replace')
     write(22, '("#  Run    GOF  ",a2,i4)') nuc(Ztarget), Atarget
     write(23, '("#  Run  New optimum  ",a2,i4)') nuc(Ztarget), Atarget
   endif
@@ -388,18 +389,18 @@ Loop2: do
             call write_real(id4,'Chi2 limit',chi2max(imt))
             call write_real(id4,'Fracmax',fracmax(imt))
             call write_real(id4,'xs limit [mb]',xslim)
-            write(7,'(/"# Channel          : ",a15)') xsfile(i)
-            write(7,'("# Frms limit       :",es10.3)') Fmax(imt)
-            write(7,'("# Chi2 limit       :",es10.3)') chi2max(imt)
-            write(7,'("# Fracmax          :",es10.3)') fracmax(imt)
-            write(7,'("# xs (mb) limit    :",es10.3)') xslim
+            write(27,'(/"# Channel          : ",a15)') xsfile(i)
+            write(27,'("# Frms limit       :",es10.3)') Fmax(imt)
+            write(27,'("# Chi2 limit       :",es10.3)') chi2max(imt)
+            write(27,'("# Fracmax          :",es10.3)') fracmax(imt)
+            write(27,'("# xs (mb) limit    :",es10.3)') xslim
           endif
-          write(7,'(/"# Data set         :",i4,3x,a15)') j,xsfile(i)
-          write(7,'("# Author           : ",a20)') auth(i,j)
-          write(7,'("# Year             : ",i4)') expyear(i,j)
-          write(7,'("# EXFOR subentry   : ",a9)') subentry(i,j)
-          write(7,'("# Weight           : ",f12.5)') Eweight(i,j)
-          write(7,'("# Quality          : ",a2)') quality(i,j)
+          write(27,'(/"# Data set         :",i4,3x,a15)') j,xsfile(i)
+          write(27,'("# Author           : ",a20)') auth(i,j)
+          write(27,'("# Year             : ",i4)') expyear(i,j)
+          write(27,'("# EXFOR subentry   : ",a9)') subentry(i,j)
+          write(27,'("# Weight           : ",f12.5)') Eweight(i,j)
+          write(27,'("# Quality          : ",a2)') quality(i,j)
           call write_integer(id4,'Data set',j)
           call write_char(id6,'Author',auth(i,j))
           call write_integer(id6,'Year',expyear(i,j))
@@ -408,7 +409,7 @@ Loop2: do
           call write_char(id6,'Quality',quality(i,j))
           Ncol = 8
         endif
-        if (outsearch == 5) write(7,'("# energy     TALYS      exp       dexp  rel. unc. %   Chi2      C/E   include")')
+        if (outsearch == 5) write(27,'("# energy     TALYS      exp       dexp  rel. unc. %   Chi2      C/E   include")')
         col(1) = 'energy'
         col(2) = 'TALYS'
         col(3) = 'exp.'
@@ -507,7 +508,7 @@ Loop2: do
 !
           if (outsearch == 5) write(1,'(7es15.6,7x,a1)') Eexp(i,j,k),xst,xse,xsde,relerr, &
  &          (Gpoint(m),m=3,2,-1),chinclude(i,j,k)
-          if (outsearch == 5) write(7,'(7es10.3,4x,a1)') Eexp(i,j,k),xst,xse,xsde,relerr, &
+          if (outsearch == 5) write(27,'(7es10.3,4x,a1)') Eexp(i,j,k),xst,xse,xsde,relerr, &
  &          (Gpoint(m),m=3,2,-1),chinclude(i,j,k)
 !
 ! Summation. Outliers and too small cross sections are excluded
@@ -560,12 +561,12 @@ Loop2: do
         wchan = wchan + ww
         Nsetchan(i) = Nsetchan(i) + 1
         if (outsearch >= 4) then
-          write(7,'("# Data set Frms         :",es10.3)') Gsetav(j,1)
-          write(7,'("# Data set Erms         :",es10.3)') Gsetav(j,2)
-          write(7,'("# Data set Chi2         :",es10.3)') Gsetav(j,3)
-          write(7,'("# Total points     :",i6)') Nenexp(i,j)
-          write(7,'("# Included points  :",i6)') nenset(j)
-          write(7,'("# End Data set     :",i4)') j
+          write(27,'("# Data set Frms         :",es10.3)') Gsetav(j,1)
+          write(27,'("# Data set Erms         :",es10.3)') Gsetav(j,2)
+          write(27,'("# Data set Chi2         :",es10.3)') Gsetav(j,3)
+          write(27,'("# Total points     :",i6)') Nenexp(i,j)
+          write(27,'("# Included points  :",i6)') nenset(j)
+          write(27,'("# End Data set     :",i4)') j
           call write_real(id6,'Data set Frms',Gsetav(j,1))
           call write_real(id6,'Data set Erms',Gsetav(j,2))
           call write_real(id6,'Data set Chi2',Gsetav(j,3))
@@ -584,16 +585,16 @@ Loop2: do
       Nsetnuc = Nsetnuc + Nsetchan(i)
       Nchannuc = Nchannuc + 1
       if (outsearch >= 3) then
-        write(7,'(/,"# Data set summary : ",a15)') xsfile(i)
-        write(7,'("Set  Author              Year  Subentry Points Incl. Energy range      Weight Frms      Erms     Chi2")')
+        write(27,'(/,"# Data set summary : ",a15)') xsfile(i)
+        write(27,'("Set  Author              Year  Subentry Points Incl. Energy range      Weight Frms      Erms     Chi2")')
         do j = 1, Nsets(i)
-          write(7, '(i4,1x,a20,1x,i4,1x,a9,2i5,f8.3," -",2f8.3,3es10.3)') j, auth(i,j), expyear(i,j), subentry(i,j), Nenexp(i,j), &
+          write(27, '(i4,1x,a20,1x,i4,1x,a9,2i5,f8.3," -",2f8.3,3es10.3)') j, auth(i,j), expyear(i,j), subentry(i,j), Nenexp(i,j), &
  &          nenset(j), Eexp(i,j,1), Eexp(i,j, Nenexp(i,j)), Eweight(i,j), (Gsetav(j,k), k=1,3)
         enddo
-        write(7,'("# Channel Frms     : ",es10.3)') Gchanav(i, 1)
-        write(7,'("# Channel Erms     : ",es10.3)') Gchanav(i, 2)
-        write(7,'("# Channel Chi2     : ",es10.3)') Gchanav(i, 3)
-        write(7,'("# End Channel      : ",a15)') xsfile(i)
+        write(27,'("# Channel Frms     : ",es10.3)') Gchanav(i, 1)
+        write(27,'("# Channel Erms     : ",es10.3)') Gchanav(i, 2)
+        write(27,'("# Channel Chi2     : ",es10.3)') Gchanav(i, 3)
+        write(27,'("# End Channel      : ",a15)') xsfile(i)
         call write_real(id4,'Channel Frms',Gchanav(i, 1))
         call write_real(id4,'Channel Erms',Gchanav(i, 2))
         call write_real(id4,'Channel Chi2',Gchanav(i, 3))
@@ -647,14 +648,14 @@ Loop2: do
         enddo
     endif
     if (outsearch >= 2) then
-      write(7,'("# Nuclide channels :",i6)') Nchannuc
-      write(7,'("# Nuclide data sets:",i6)') Nsetnuc
-      write(7,'("# Nuclide points   :",i6)') nennucorg
-      write(7,'("# Nuclide incl. pts:",i6)') nennuc
-      write(7,'("# Nuclide Frms     : ",es10.3)') Gnucav(1)
-      write(7,'("# Nuclide Erms     : ",es10.3)') Gnucav(2)
-      write(7,'("# Nuclide Chi2     : ",es10.3)') Gnucav(3)
-      write(7,'("# End Nuclide      : ",a,i3.3,a1)') trim(nuc(iz)), ia, trim(isochar)
+      write(27,'("# Nuclide channels :",i6)') Nchannuc
+      write(27,'("# Nuclide data sets:",i6)') Nsetnuc
+      write(27,'("# Nuclide points   :",i6)') nennucorg
+      write(27,'("# Nuclide incl. pts:",i6)') nennuc
+      write(27,'("# Nuclide Frms     : ",es10.3)') Gnucav(1)
+      write(27,'("# Nuclide Erms     : ",es10.3)') Gnucav(2)
+      write(27,'("# Nuclide Chi2     : ",es10.3)') Gnucav(3)
+      write(27,'("# End Nuclide      : ",a,i3.3,a1)') trim(nuc(iz)), ia, trim(isochar)
       if (Nnuc > 1) then
         call write_integer(id2,'Nuclide channels',Nchannuc)
         call write_integer(id2,'Nuclide data sets',Nsetnuc)
@@ -768,6 +769,7 @@ Loop2: do
       write( * , * ) "Maximum number of runs done: ", Ntalys
       close(unit=22)
       close(unit=23)
+      close(unit=27)
 !
 ! Write improvement relative to the optimum
 !
