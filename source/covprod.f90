@@ -68,6 +68,8 @@ subroutine covprod
   real(sgl)         :: xsi1      ! cross section of random run
   real(sgl)         :: xsk0      ! cross section of run 0
   real(sgl)         :: xsk1      ! cross section of random run
+  real(sgl), dimension(numchanprod,numenin)           :: errprod ! cross section uncertainty
+  errprod = 0.
 !
 ! Average particle production cross sections and covariances
 !
