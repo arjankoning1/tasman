@@ -160,6 +160,15 @@ subroutine covcross
   real(sgl)         :: xsupp(numchanxs, 0:numenin)    ! upper cross section band
   real(sgl)         :: xsuppint                       ! interpolated upper cross section band
   real(sgl)         :: xslimit                        ! xs boundary for inclusion
+  real(sgl), allocatable        :: Cmt(:,:,:)  ! intra-channel correlation matrix for cross secti
+  real(sgl), allocatable        :: Ccov(:,:,:,:) ! correlation matrix for cross sections
+!
+!
+!
+  allocate(Cmt(numchanxs,numencov,numencov))
+  Cmt = 0.
+  allocate(Ccov(numchancov,numencov,numchancov,numencov))
+  Ccov = 0.
 !
 ! ******** Create covariance matrix and average cross sections *********
 !
@@ -675,6 +684,8 @@ subroutine covcross
   do ifile = 1, 3
     close(ifile)
   enddo
+  deallocate(Cmt)
+  deallocate(Ccov)
   return
 end subroutine covcross
 ! Copyright A.J. Koning 2021
