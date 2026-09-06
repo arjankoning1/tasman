@@ -419,7 +419,7 @@ module A0_tasman_mod
   integer                                    :: Nxseff     ! number of effective cross sections
   real(sgl), dimension(numchanxs)            :: xseffexp   ! experimental effective cross section
   real(sgl), dimension(0:1,numchanxs)        :: xseffrat   ! C/E of effective cross section
-  real(sgl), dimension(0:numtalys,numchanxs) :: xseffsave  ! effective cross section from TALYS
+  real(sgl), allocatable                     :: xseffsave(:,:)  ! effective cross section from TALYS
   real(sgl), dimension(0:1,numchanxs)        :: xsefftalys ! effective cross section from TALYS
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
