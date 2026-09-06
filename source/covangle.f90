@@ -69,6 +69,8 @@ subroutine covangle
   real(sgl)         :: term0      ! help variable
   real(sgl)         :: up         ! upper value
   real(sgl)         :: xslimit    ! xs boundary for inclusion
+  real(sgl), dimension(numchanang,0:numang)          :: errang ! angular distributions uncertainty
+  errang = 0.
 !
 ! Average angular distributions
 !
