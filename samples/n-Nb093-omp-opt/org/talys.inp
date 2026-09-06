@@ -33,13 +33,12 @@ partable y
 ecissave y
 inccalc y
 eciscalc y
-rvadjust     n    1.00020
-avadjust     n    1.00020
-v1adjust     n    1.00020
-v2adjust     n    1.00044
-d1adjust     n    1.00455
-d2adjust     n    1.00455
-d3adjust     n    1.00455
-rwdadjust    n    1.00044
-awdadjust    n    1.00077
-Estop   1000.00000
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278

@@ -1,13 +1,13 @@
  Performing first TALYS run to retrieve parameters
 
-    TASMAN-2.23  (Version: May 11, 2026)
+    TASMAN-2.25  (Version: September 3, 2026)
 
  Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-02
+ Date: 2026-09-06
 
  ########## USER INPUT ##########
 
@@ -110,7 +110,7 @@
  #mode               3     mode         mode for TASMAN: optimization with exper
  #Ntalys            10     Ntalys       number of TALYS runs 
  #Nburn             -1     Nburn        number of burn-in runs 
- #Nhigh             -1     Nhigh        number of high energy runs 
+ #Nhigh             10     Nhigh        number of high energy runs 
  #Ehigh       1000.000     Ehigh        energy cutoff of high energy runs 
  #Liso               0     Liso         number of the isomeric state 
  #maxgam             4     maxgam       maximum number of discrete levels with g
@@ -233,16 +233,20 @@ d2adjust     p    1.00000
 rwdadjust    p    1.00000
 awdadjust    p    1.00000
 
-# GOF no.                0  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:   1.0000E+38
-# Erms             :   0.000     Optimum:   1.0000E+38
-# Chi2             :   0.000     Optimum:   1.0000E+38
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.219          1.034          26.51         1.0
 
-  47 107 Run:     0 New optimum (Frms Erms Chi-2):    0.000000E+00   0.000000E+0
+# GOF no.                0   1.034    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.219     Optimum:   1.0000E+38
+# Erms             :   1.034     Optimum:   1.0000E+38
+# Chi2             :   26.51     Optimum:   1.0000E+38
+
+  47 107 Run:     0 New optimum (Frms Erms Chi-2):    1.218712E+00   1.034251E+0
 
 #                         Goodness-of-fit
 # TALYS run        :     1
@@ -296,15 +300,20 @@ d2adjust     p    0.84409
 rwdadjust    p    0.98534
 awdadjust    p    0.94779
 
-# GOF no.                1  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.209         0.9523          13.73          1.
 
+# GOF no.                1  0.9523    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.209     Optimum:    1.219    
+# Erms             :  0.9523     Optimum:    1.034    
+# Chi2             :   13.73     Optimum:    26.51    
+
+  47 107 Run:     1 New optimum (Frms Erms Chi-2):    1.209324E+00   9.523317E-0
 
 #                         Goodness-of-fit
 # TALYS run        :     2
@@ -358,14 +367,18 @@ d2adjust     p    0.91946
 rwdadjust    p    0.95857
 awdadjust    p    1.00240
 
-# GOF no.                2  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.369          1.189          132.3         0.9
+
+# GOF no.                2   1.189    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.369     Optimum:    1.209    
+# Erms             :   1.189     Optimum:   0.9523    
+# Chi2             :   132.3     Optimum:    13.73    
 
 
 #                         Goodness-of-fit
@@ -420,14 +433,18 @@ d2adjust     p    0.87601
 rwdadjust    p    1.01969
 awdadjust    p    1.07122
 
-# GOF no.                3  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.353          1.200          148.1         0.9
+
+# GOF no.                3   1.200    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.353     Optimum:    1.209    
+# Erms             :   1.200     Optimum:   0.9523    
+# Chi2             :   148.1     Optimum:    13.73    
 
 
 #                         Goodness-of-fit
@@ -482,14 +499,18 @@ d2adjust     p    1.02268
 rwdadjust    p    0.97144
 awdadjust    p    1.02091
 
-# GOF no.                4  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.195         0.9722          14.44         0.9
+
+# GOF no.                4  0.9722    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.195     Optimum:    1.209    
+# Erms             :  0.9722     Optimum:   0.9523    
+# Chi2             :   14.44     Optimum:    13.73    
 
 
 #                         Goodness-of-fit
@@ -544,14 +565,18 @@ d2adjust     p    1.19986
 rwdadjust    p    0.97996
 awdadjust    p    0.96419
 
-# GOF no.                5  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.438          1.130          178.1         0.9
+
+# GOF no.                5   1.130    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.438     Optimum:    1.209    
+# Erms             :   1.130     Optimum:   0.9523    
+# Chi2             :   178.1     Optimum:    13.73    
 
 
 #                         Goodness-of-fit
@@ -606,15 +631,20 @@ d2adjust     p    1.05170
 rwdadjust    p    0.94743
 awdadjust    p    1.06262
 
-# GOF no.                6  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.212         0.9231          12.41         0.9
 
+# GOF no.                6  0.9231    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.212     Optimum:    1.209    
+# Erms             :  0.9231     Optimum:   0.9523    
+# Chi2             :   12.41     Optimum:    13.73    
+
+  47 107 Run:     6 New optimum (Frms Erms Chi-2):    1.211882E+00   9.231185E-0
 
 #                         Goodness-of-fit
 # TALYS run        :     7
@@ -668,14 +698,18 @@ d2adjust     p    0.91426
 rwdadjust    p    1.05640
 awdadjust    p    1.00920
 
-# GOF no.                7  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.206          1.061          22.76         0.9
+
+# GOF no.                7   1.061    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.206     Optimum:    1.212    
+# Erms             :   1.061     Optimum:   0.9231    
+# Chi2             :   22.76     Optimum:    12.41    
 
 
 #                         Goodness-of-fit
@@ -730,14 +764,18 @@ d2adjust     p    0.87299
 rwdadjust    p    0.98235
 awdadjust    p    0.94138
 
-# GOF no.                8  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.242          1.027          28.38         0.9
+
+# GOF no.                8   1.027    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.242     Optimum:    1.212    
+# Erms             :   1.027     Optimum:   0.9231    
+# Chi2             :   28.38     Optimum:    12.41    
 
 
 #                         Goodness-of-fit
@@ -792,14 +830,18 @@ d2adjust     p    1.19502
 rwdadjust    p    1.05949
 awdadjust    p    0.97013
 
-# GOF no.                9  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.233          1.049          33.54         0.9
+
+# GOF no.                9   1.049    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.233     Optimum:    1.212    
+# Erms             :   1.049     Optimum:   0.9231    
+# Chi2             :   33.54     Optimum:    12.41    
 
 
 #                         Goodness-of-fit
@@ -854,17 +896,21 @@ d2adjust     p    1.08911
 rwdadjust    p    0.96162
 awdadjust    p    0.99233
 
-# GOF no.               10  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : Ag107 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+xs100000.tot        3   102      1.283         0.9927          38.22         0.9
+
+# GOF no.               10  0.9927    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    3
+# Data points      :    102
+# Frms             :   1.283     Optimum:    1.212    
+# Erms             :  0.9927     Optimum:   0.9231    
+# Chi2             :   38.22     Optimum:    12.41    
 
  Maximum number of runs done:           10
 
- Execution time:  0 hours  0 minutes  0.28 seconds 
+ Execution time:  0 hours  0 minutes  0.26 seconds 
 
  This TASMAN run has finished

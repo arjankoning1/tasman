@@ -27,19 +27,18 @@ d2adjust n 1.
 d3adjust n 1.
 rwdadjust n 1.
 awdadjust n 1.
-# Current variables Run:     0
+# Current variables Run:    74
 #Ztarget  41
 partable y
 ecissave y
 inccalc y
 eciscalc y
-rvadjust     n    1.00000
-avadjust     n    1.00000
-v1adjust     n    1.00000
-v2adjust     n    1.00000
-d1adjust     n    1.00000
-d2adjust     n    1.00000
-d3adjust     n    1.00000
-rwdadjust    n    1.00000
-awdadjust    n    1.00000
-Estop   1000.00000
+rvadjust     n    0.99716
+avadjust     n    0.99037
+v1adjust     n    0.99570
+v2adjust     n    1.00384
+d1adjust     n    1.08030
+d2adjust     n    1.01791
+d3adjust     n    1.06008
+rwdadjust    n    1.03889
+awdadjust    n    0.98278

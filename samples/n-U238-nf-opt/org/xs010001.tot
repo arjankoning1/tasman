@@ -1,28 +1,28 @@
-# header:
+# header: 
 #   title: U238(n,pa)Ac234 cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-02
+#   date: 2026-09-06
 #   format: YANDF-0.4
-# target:
+# target: 
 #   Z: 92
 #   A: 238
 #   nuclide: U238
-# reaction:
+# reaction: 
 #   type: (n,pa)
 #   Q-value [MeV]:  8.243384E-01
 #   E-threshold [MeV]:  0.000000E+00
 #   ENDF_MF: 3
 #   ENDF_MT: 112
-#   residual:
+#   residual: 
 #     Z: 89
 #     A: 234
 #     nuclide: Ac234
-#   quantity:
+#   quantity: 
 #     type: cross section
-#   datablock:
+#   datablock: 
 #     columns: 4
-#     entries:      0
+#     entries: 21
 ##       E             xs          gamma_xs    xs/res.prod.xs
 ##     [MeV]          [mb]           [mb]            []
    1.000000E+00   1.000000E-07   1.000000E-07   0.000000E+00

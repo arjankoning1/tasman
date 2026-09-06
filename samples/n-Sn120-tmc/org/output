@@ -4,8 +4,8 @@
  *   $$$  $$       $$  $$$$$$$   $$  $$    *  nuclear     *  vday: 03Feb25   *
  *   $$$$ $$       $$  $$   $$    $$$$     *  data        *  site: lanl t2   *
  *   $$ $$$$  $$   $$  $$   $$     $$      *  processing  *  mach:           *
- *   $$  $$$  $$$$$$$  $$$$$$$     $$      *  system      *  date: 09/02/26  *
- *   $$   $$   $$$$$    $$$$$      $$      *              *  time: 23:01:55  *
+ *   $$  $$$  $$$$$$$  $$$$$$$     $$      *  system      *  date: 09/06/26  *
+ *   $$   $$   $$$$$    $$$$$      $$      *              *  time: 18:47:54  *
  *                                         *              *                  *
  *****************************************************************************
 
@@ -16,7 +16,7 @@
 
  tape label
  --------------------------------------
-   TENDL-2025: neutron  + Sn-120  1.e-5 eV -  20 MeV       CC-BY-4.0  
+   TENDL-2026: neutron  + Sn-120  1.e-5 eV -  20 MeV       CC-BY-4.0  
 
  using endf-6 format
                                                                           0.0s
@@ -33,7 +33,7 @@
 
  tape label
  ------------------------------------------------------------------
-  TENDL-2025: neutron  + Sn-120  1.e-5 eV -  20 MeV       CC-BY-4.0  
+  TENDL-2026: neutron  + Sn-120  1.e-5 eV -  20 MeV       CC-BY-4.0  
 
  material to be processed .............       5049
  reconstruction tolerance .............      0.001
@@ -300,15 +300,15 @@
 
  ---message from hinit---mf6, mt102 does not give recoil za= 50121
                           photon momentum recoil used.
-                                                             temp 1       2.4s
+                                                             temp 1       2.3s
 
    generating recoil from photon momentum.
                                                              temp 1       2.5s
 
-                                                                          3.1s
+                                                                          3.0s
  *****************************************************************************
 
- gaspr...add gas production cross sections                                3.1s
+ gaspr...add gas production cross sections                                3.0s
 
  units:    21    26    27
 
@@ -341,10 +341,10 @@
   neutron PENDF for Sn120 of TENDL-2025                               
 
  using endf-6 format
-                                                                          3.8s
+                                                                          3.7s
  *****************************************************************************
 
- viewr...display plots                                                    3.8s
+ viewr...display plots                                                    3.7s
 
  lori .................................          1
  xpage ................................     10.000
@@ -713,10 +713,10 @@
 
  data nform ...........................          0
 
-                                                                          3.8s
+                                                                          3.7s
  *****************************************************************************
 
- acer...monte carlo neutron and photon data                               3.8s
+ acer...monte carlo neutron and photon data                               3.7s
 
  input endf unit ......................         21
  input pendf unit .....................         27
@@ -777,10 +777,10 @@
  extending histograms as sqrt(E) below  1.49E-03 MeV for E=  1.80E+01 MeV mt= 91
  extending histograms as sqrt(E) below  1.49E-03 MeV for E=  2.00E+01 MeV mt= 91
 
-                                                                          5.1s
+                                                                          5.0s
  *****************************************************************************
 
- acer...monte carlo neutron and photon data                               5.1s
+ acer...monte carlo neutron and photon data                               5.0s
 
  input endf unit ......................          0
  input pendf unit .....................         48
@@ -839,10 +839,10 @@
                                       zaid  50120.00c   
                                        awr   118.872
                                       temp  2.53E-08
-                                      date  09/02/26
+                                      date  09/06/26
                                        mat   mat5049
       ***********************
-      *                     *         len2    287246
+      *                     *         len2    287249
       *        fast         *          nes     19364
       *                     *          ntr        45
       *   ace format file   *           nr        35
@@ -872,17 +872,17 @@
                                       andp    238377
                                      ldlwp    238377
                                       dlwp    238602
-                                        yp    279121
+                                        yp    279124
                                        fis         0
-                                       end    279161
+                                       end    279164
                                      iurpt         0
                                        nud         0
                                      dndat         0
                                       ldnd         0
                                        dnd         0
-                                     ptype    279162
-                                      ntro    279166
-                                     ploct    279170
+                                     ptype    279165
+                                      ntro    279169
+                                     ploct    279173
 
 
       hk---Sn120 neutron ACER TENDL-2025 library; T=293.6K                       
@@ -79405,10 +79405,10 @@
      28001    1769       0    7937      16      28    1.077789E+01  2.000000E+01
      91001    1783       0    9756      16      91    2.955183E+00  2.000000E+01
     102001    1817       0   14810      16     102    1.000000E-11  2.000000E+01
-    103001    1889       0   26752      16     103    4.626172E+00  2.000000E+01
-    104001    1915       0   31169      16     104    8.534853E+00  2.000000E+01
-    105001    1933       0   33662      16     105    1.083836E+01  2.000000E+01
-    107001    1947       0   35622      16     107    1.000000E-11  2.000000E+01
+    103001    1889       0   26755      16     103    4.626172E+00  2.000000E+01
+    104001    1915       0   31172      16     104    8.534853E+00  2.000000E+01
+    105001    1933       0   33665      16     105    1.083836E+01  2.000000E+01
+    107001    1947       0   35625      16     107    1.000000E-11  2.000000E+01
 1
  photon production yields
  ------------------------
@@ -84054,7 +84054,7 @@
 
 
 
-       incident energy =   2.000000E+01   intt = 1    nd =   80    np =  155
+       incident energy =   2.000000E+01   intt = 1    nd =   80    np =  156
 
          energy           pdf           cdf        energy           pdf           cdf
    ------------  ------------  ------------  ------------  ------------  ------------
@@ -84135,7 +84135,7 @@
    2.050000E+01  3.764067E-02  8.830735E-01  2.150000E+01  3.312945E-02  9.207142E-01
    2.250000E+01  2.995786E-02  9.538436E-01  2.350000E+01  1.619851E-02  9.838015E-01
    2.450000E+01  1.000000E-13  1.000000E+00  2.550000E+01  1.000000E-13  1.000000E+00
-   2.650000E+01  1.000000E-13  1.000000E+00
+   2.650000E+01  1.000000E-13  1.000000E+00  0.000000E+00  1.000000E-13  1.000000E+00
 
 
 
@@ -86769,15 +86769,15 @@
  ********** proton production **********
 
               nmtr =      2
-              mtrh = 279588
-              tyrh = 279590
-             lsigh = 279592
-              sigh = 279594
-             landh = 279610
-              andh = 279612
-             ldlwh = 279612
-              dlwh = 279614
-                yh = 282064
+              mtrh = 279591
+              tyrh = 279593
+             lsigh = 279595
+              sigh = 279597
+             landh = 279613
+              andh = 279615
+             ldlwh = 279615
+              dlwh = 279617
+                yh = 282067
 
    mtrh   tyrh   lsigh   landh   ldlwh   mtmult
    ----   ----   -----   -----   -----   ------
@@ -87571,15 +87571,15 @@
  ********** deuteron production **********
 
               nmtr =      1
-              mtrh = 282337
-              tyrh = 282338
-             lsigh = 282339
-              sigh = 282340
-             landh = 282348
-              andh = 282349
-             ldlwh = 282349
-              dlwh = 282350
-                yh = 283284
+              mtrh = 282340
+              tyrh = 282341
+             lsigh = 282342
+              sigh = 282343
+             landh = 282351
+              andh = 282352
+             ldlwh = 282352
+              dlwh = 282353
+                yh = 283287
 
    mtrh   tyrh   lsigh   landh   ldlwh   mtmult
    ----   ----   -----   -----   -----   ------
@@ -87962,15 +87962,15 @@
  ********** triton production **********
 
               nmtr =      1
-              mtrh = 283470
-              tyrh = 283471
-             lsigh = 283472
-              sigh = 283473
-             landh = 283481
-              andh = 283482
-             ldlwh = 283482
-              dlwh = 283483
-                yh = 284129
+              mtrh = 283473
+              tyrh = 283474
+             lsigh = 283475
+              sigh = 283476
+             landh = 283484
+              andh = 283485
+             ldlwh = 283485
+              dlwh = 283486
+                yh = 284132
 
    mtrh   tyrh   lsigh   landh   ldlwh   mtmult
    ----   ----   -----   -----   -----   ------
@@ -88244,15 +88244,15 @@
  ********** alpha production **********
 
               nmtr =      2
-              mtrh = 284775
-              tyrh = 284777
-             lsigh = 284779
-              sigh = 284781
-             landh = 284797
-              andh = 284799
-             ldlwh = 284799
-              dlwh = 284801
-                yh = 287244
+              mtrh = 284778
+              tyrh = 284780
+             lsigh = 284782
+              sigh = 284784
+             landh = 284800
+              andh = 284802
+             ldlwh = 284802
+              dlwh = 284804
+                yh = 287247
 
    mtrh   tyrh   lsigh   landh   ldlwh   mtmult
    ----   ----   -----   -----   -----   ------
@@ -89203,10 +89203,10 @@
 
           22   107
 
-                                                                          6.1s
+                                                                          5.9s
  *****************************************************************************
 
- viewr...display plots                                                    6.1s
+ viewr...display plots                                                    5.9s
 
  lori .................................          1
  xpage ................................     10.000
@@ -93871,5 +93871,5 @@
 
  data nform ...........................          1
 
-                                                                          6.2s
+                                                                          6.0s
  *****************************************************************************

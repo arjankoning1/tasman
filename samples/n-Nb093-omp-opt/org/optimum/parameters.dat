@@ -2,7 +2,7 @@
 ##   title: Nb93(n,x) nuclear model parameters
 ##   source: TALYS-2.24
 ##   user: Arjan Koning
-##   date: 2026-09-02
+##   date: 2026-09-06
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 41
@@ -83,25 +83,25 @@ Cbarrier          1.00000
 ##   optical model
 deuteronomp    4
 alphaomp       6
-v1adjust      n   1.00000
-v2adjust      n   1.00000
+v1adjust      n   0.99570
+v2adjust      n   1.00384
 v3adjust      n   1.00000
 v4adjust      n   1.00000
-rvadjust      n   1.00000
-avadjust      n   1.00000
+rvadjust      n   0.99716
+avadjust      n   0.99037
 w1adjust      n   1.00000
 w2adjust      n   1.00000
 w3adjust      n   1.00000
 w4adjust      n   1.00000
-rwadjust      n   1.00000
-awadjust      n   1.00000
-rvdadjust     n   1.00000
-avdadjust     n   1.00000
-d1adjust      n   1.00000
-d2adjust      n   1.00000
-d3adjust      n   1.00000
-rwdadjust     n   1.00000
-awdadjust     n   1.00000
+rwadjust      n   0.99716
+awadjust      n   0.99037
+rvdadjust     n   1.03889
+avdadjust     n   0.98278
+d1adjust      n   1.08030
+d2adjust      n   1.01791
+d3adjust      n   1.06008
+rwdadjust     n   1.03889
+awdadjust     n   0.98278
 rvsoadjust    n   1.00000
 avsoadjust    n   1.00000
 vso1adjust    n   1.00000
@@ -251,25 +251,25 @@ awsoadjust    a   1.00000
 wso1adjust    a   1.00000
 wso2adjust    a   1.00000
 rcadjust      a   1.00000
-v1adjust      e   1.00000
-v2adjust      e   1.00000
+v1adjust      e   0.99570
+v2adjust      e   1.00384
 v3adjust      e   1.00000
 v4adjust      e   1.00000
-rvadjust      e   1.00000
-avadjust      e   1.00000
+rvadjust      e   0.99716
+avadjust      e   0.99037
 w1adjust      e   1.00000
 w2adjust      e   1.00000
 w3adjust      e   1.00000
 w4adjust      e   1.00000
-rwadjust      e   1.00000
-awadjust      e   1.00000
-rvdadjust     e   1.00000
-avdadjust     e   1.00000
-d1adjust      e   1.00000
-d2adjust      e   1.00000
-d3adjust      e   1.00000
-rwdadjust     e   1.00000
-awdadjust     e   1.00000
+rwadjust      e   0.99716
+awadjust      e   0.99037
+rvdadjust     e   1.03889
+avdadjust     e   0.98278
+d1adjust      e   1.08030
+d2adjust      e   1.01791
+d3adjust      e   1.06008
+rwdadjust     e   1.03889
+awdadjust     e   0.98278
 rvsoadjust    e   1.00000
 avsoadjust    e   1.00000
 vso1adjust    e   1.00000

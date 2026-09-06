@@ -1,28 +1,28 @@
-# header:
+# header: 
 #   title: Sn120(n,a)Cd117 cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-02
+#   date: 2026-09-06
 #   format: YANDF-0.4
-# target:
+# target: 
 #   Z: 50
 #   A: 120
 #   nuclide: Sn120
-# reaction:
+# reaction: 
 #   type: (n,a)
 #   Q-value [MeV]:  9.673545E-01
 #   E-threshold [MeV]:  0.000000E+00
 #   ENDF_MF: 3
 #   ENDF_MT: 107
-#   residual:
+#   residual: 
 #     Z: 48
 #     A: 117
 #     nuclide: Cd117
-#   quantity:
+#   quantity: 
 #     type: cross section
-#   datablock:
+#   datablock: 
 #     columns: 4
-#     entries:      0
+#     entries: 39
 ##       E             xs          gamma_xs    xs/res.prod.xs
 ##     [MeV]          [mb]           [mb]            []
    1.000000E-11   0.000000E+00   0.000000E+00   0.000000E+00

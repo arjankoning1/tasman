@@ -1,28 +1,28 @@
-# header:
+# header: 
 #   title: Ag107(p,pa)Rh103 cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-02
+#   date: 2026-09-06
 #   format: YANDF-0.4
-# target:
+# target: 
 #   Z: 47
 #   A: 107
 #   nuclide: Ag107
-# reaction:
+# reaction: 
 #   type: (p,pa)
 #   Q-value [MeV]: -2.799614E+00
 #   E-threshold [MeV]:  2.826007E+00
 #   ENDF_MF: 3
 #   ENDF_MT: 112
-#   residual:
+#   residual: 
 #     Z: 45
 #     A: 103
 #     nuclide: Rh103
-#   quantity:
+#   quantity: 
 #     type: cross section
-#   datablock:
+#   datablock: 
 #     columns: 4
-#     entries:      0
+#     entries: 19
 ##       E             xs          gamma_xs    xs/res.prod.xs
 ##     [MeV]          [mb]           [mb]            []
    2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00

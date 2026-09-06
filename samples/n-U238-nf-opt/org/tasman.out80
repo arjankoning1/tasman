@@ -1,13 +1,13 @@
  Performing first TALYS run to retrieve parameters
 
-    TASMAN-2.23  (Version: May 11, 2026)
+    TASMAN-2.25  (Version: September 3, 2026)
 
  Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-02
+ Date: 2026-09-06
 
  ########## USER INPUT ##########
 
@@ -97,7 +97,7 @@
  #mode               3     mode         mode for TASMAN: optimization with exper
  #Ntalys            20     Ntalys       number of TALYS runs 
  #Nburn             -1     Nburn        number of burn-in runs 
- #Nhigh             -1     Nhigh        number of high energy runs 
+ #Nhigh             20     Nhigh        number of high energy runs 
  #Ehigh       1000.000     Ehigh        energy cutoff of high energy runs 
  #Liso               0     Liso         number of the isomeric state 
  #maxgam             4     maxgam       maximum number of discrete levels with g
@@ -187,16 +187,20 @@ ptable        92 239 -1.40790E-01 3
 betafiscor    92 239    0.80811
 vfiscor       92 239    0.95026
 
-# GOF no.                0  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:   1.0000E+38
-# Erms             :   0.000     Optimum:   1.0000E+38
-# Chi2             :   0.000     Optimum:   1.0000E+38
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      3.520          2.730          387.2         1.0
 
-  92 238 Run:     0 New optimum (Frms Erms Chi-2):    0.000000E+00   0.000000E+0
+# GOF no.                0   2.730    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   3.520     Optimum:   1.0000E+38
+# Erms             :   2.730     Optimum:   1.0000E+38
+# Chi2             :   387.2     Optimum:   1.0000E+38
+
+  92 238 Run:     0 New optimum (Frms Erms Chi-2):    3.520005E+00   2.729928E+0
 
 #                         Goodness-of-fit
 # TALYS run        :     1
@@ -228,14 +232,18 @@ ptable        92 239 -9.30988E-01 3
 betafiscor    92 239    1.04675
 vfiscor       92 239    0.83866
 
-# GOF no.                1  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      8.980          7.955          4686.          2.
+
+# GOF no.                1   7.955    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   8.980     Optimum:    3.520    
+# Erms             :   7.955     Optimum:    2.730    
+# Chi2             :   4686.     Optimum:    387.2    
 
 
 #                         Goodness-of-fit
@@ -268,15 +276,20 @@ ptable        92 239 -2.27369E+00 3
 betafiscor    92 239    0.71844
 vfiscor       92 239    1.11549
 
-# GOF no.                2  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      2.611         0.6125          11.99          2.
 
+# GOF no.                2  0.6125    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   2.611     Optimum:    3.520    
+# Erms             :  0.6125     Optimum:    2.730    
+# Chi2             :   11.99     Optimum:    387.2    
+
+  92 238 Run:     2 New optimum (Frms Erms Chi-2):    2.611325E+00   6.125042E-0
 
 #                         Goodness-of-fit
 # TALYS run        :     3
@@ -308,14 +321,18 @@ ptable        92 239 -1.75876E+00 3
 betafiscor    92 239    0.77050
 vfiscor       92 239    0.87808
 
-# GOF no.                3  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      7.385          6.277          3464.         0.6
+
+# GOF no.                3   6.277    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   7.385     Optimum:    2.611    
+# Erms             :   6.277     Optimum:   0.6125    
+# Chi2             :   3464.     Optimum:    11.99    
 
 
 #                         Goodness-of-fit
@@ -348,15 +365,20 @@ ptable        92 239 -8.01365E-01 3
 betafiscor    92 239    0.81215
 vfiscor       92 239    1.25408
 
-# GOF no.                4  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      8.366         0.1702          2.683         0.6
 
+# GOF no.                4  0.1702    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   8.366     Optimum:    2.611    
+# Erms             :  0.1702     Optimum:   0.6125    
+# Chi2             :   2.683     Optimum:    11.99    
+
+  92 238 Run:     4 New optimum (Frms Erms Chi-2):    8.366293E+00   1.702385E-0
 
 #                         Goodness-of-fit
 # TALYS run        :     5
@@ -388,14 +410,18 @@ ptable        92 239 -3.51651E-01 3
 betafiscor    92 239    0.78553
 vfiscor       92 239    0.87226
 
-# GOF no.                5  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      2.533         0.5649          11.23         0.1
+
+# GOF no.                5  0.5649    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   2.533     Optimum:    8.366    
+# Erms             :  0.5649     Optimum:   0.1702    
+# Chi2             :   11.23     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -428,14 +454,18 @@ ptable        92 239    1.95246 3
 betafiscor    92 239    0.75363
 vfiscor       92 239    0.75179
 
-# GOF no.                6  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      6.296          5.270          2304.         0.1
+
+# GOF no.                6   5.270    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   6.296     Optimum:    8.366    
+# Erms             :   5.270     Optimum:   0.1702    
+# Chi2             :   2304.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -468,14 +498,18 @@ ptable        92 239    0.64952 3
 betafiscor    92 239    1.10423
 vfiscor       92 239    1.09935
 
-# GOF no.                7  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      3.158         0.4180          1.678         0.1
+
+# GOF no.                7  0.4180    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   3.158     Optimum:    8.366    
+# Erms             :  0.4180     Optimum:   0.1702    
+# Chi2             :   1.678     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -508,14 +542,18 @@ ptable        92 239    0.11498 3
 betafiscor    92 239    0.84204
 vfiscor       92 239    0.87931
 
-# GOF no.                8  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      8.337          7.270          4216.         0.1
+
+# GOF no.                8   7.270    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   8.337     Optimum:    8.366    
+# Erms             :   7.270     Optimum:   0.1702    
+# Chi2             :   4216.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -548,14 +586,18 @@ ptable        92 239 -7.27587E-02 3
 betafiscor    92 239    0.95249
 vfiscor       92 239    0.83241
 
-# GOF no.                9  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      8.763          7.719          4573.         0.1
+
+# GOF no.                9   7.719    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   8.763     Optimum:    8.366    
+# Erms             :   7.719     Optimum:   0.1702    
+# Chi2             :   4573.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -588,14 +630,18 @@ ptable        92 239 -1.23578E+00 3
 betafiscor    92 239    0.89380
 vfiscor       92 239    0.85214
 
-# GOF no.               10  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      6.987          6.131          2218.         0.1
+
+# GOF no.               10   6.131    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   6.987     Optimum:    8.366    
+# Erms             :   6.131     Optimum:   0.1702    
+# Chi2             :   2218.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -628,14 +674,18 @@ ptable        92 239    0.94559 3
 betafiscor    92 239    1.14975
 vfiscor       92 239    0.74213
 
-# GOF no.               11  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      2.933          1.581          405.3         0.1
+
+# GOF no.               11   1.581    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   2.933     Optimum:    8.366    
+# Erms             :   1.581     Optimum:   0.1702    
+# Chi2             :   405.3     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -668,14 +718,18 @@ ptable        92 239 -1.66298E+00 3
 betafiscor    92 239    0.77978
 vfiscor       92 239    0.78822
 
-# GOF no.               12  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      8.965          7.936          4690.         0.1
+
+# GOF no.               12   7.936    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   8.965     Optimum:    8.366    
+# Erms             :   7.936     Optimum:   0.1702    
+# Chi2             :   4690.     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -708,14 +762,18 @@ ptable        92 239 -4.11435E-01 3
 betafiscor    92 239    0.68267
 vfiscor       92 239    1.10827
 
-# GOF no.               13  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      5.422         0.2270          2.636         0.1
+
+# GOF no.               13  0.2270    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   5.422     Optimum:    8.366    
+# Erms             :  0.2270     Optimum:   0.1702    
+# Chi2             :   2.636     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -748,14 +806,18 @@ ptable        92 239 -5.15254E-01 3
 betafiscor    92 239    0.79946
 vfiscor       92 239    1.05377
 
-# GOF no.               14  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      4.294         0.2704          2.484         0.1
+
+# GOF no.               14  0.2704    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   4.294     Optimum:    8.366    
+# Erms             :  0.2704     Optimum:   0.1702    
+# Chi2             :   2.484     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -788,14 +850,18 @@ ptable        92 239 -1.17259E-01 3
 betafiscor    92 239    1.08936
 vfiscor       92 239    0.95566
 
-# GOF no.               15  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      5.075          4.419          473.2         0.1
+
+# GOF no.               15   4.419    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   5.075     Optimum:    8.366    
+# Erms             :   4.419     Optimum:   0.1702    
+# Chi2             :   473.2     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -828,14 +894,18 @@ ptable        92 239 -6.31220E-01 3
 betafiscor    92 239    1.02072
 vfiscor       92 239    0.78078
 
-# GOF no.               16  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      4.592         0.2336          2.964         0.1
+
+# GOF no.               16  0.2336    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   4.592     Optimum:    8.366    
+# Erms             :  0.2336     Optimum:   0.1702    
+# Chi2             :   2.964     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -868,14 +938,18 @@ ptable        92 239 -7.26967E-01 3
 betafiscor    92 239    1.00360
 vfiscor       92 239    0.79617
 
-# GOF no.               17  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      3.785         0.2788          2.540         0.1
+
+# GOF no.               17  0.2788    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   3.785     Optimum:    8.366    
+# Erms             :  0.2788     Optimum:   0.1702    
+# Chi2             :   2.540     Optimum:    2.683    
 
 
 #                         Goodness-of-fit
@@ -908,15 +982,20 @@ ptable        92 239    0.16074 3
 betafiscor    92 239    0.99114
 vfiscor       92 239    1.22102
 
-# GOF no.               18  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      17.08         5.7439E-02      3.976         0.1
 
+# GOF no.               18  5.7439E-02
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   17.08     Optimum:    8.366    
+# Erms             :  5.7439E-02 Optimum:   0.1702    
+# Chi2             :   3.976     Optimum:    2.683    
+
+  92 238 Run:    18 New optimum (Frms Erms Chi-2):    1.707975E+01   5.743924E-0
 
 #                         Goodness-of-fit
 # TALYS run        :    19
@@ -948,14 +1027,18 @@ ptable        92 239 -4.97468E-01 3
 betafiscor    92 239    0.87665
 vfiscor       92 239    0.98140
 
-# GOF no.               19  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      3.342         0.4182          97.19         5.7
+
+# GOF no.               19  0.4182    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   3.342     Optimum:    17.08    
+# Erms             :  0.4182     Optimum:   5.7439E-02
+# Chi2             :   97.19     Optimum:    3.976    
 
 
 #                         Goodness-of-fit
@@ -988,17 +1071,21 @@ ptable        92 239    0.96821 3
 betafiscor    92 239    0.76510
 vfiscor       92 239    1.19064
 
-# GOF no.               20  1.0000E+35
-# Nuclides         :    0
-# Channels         :    0
-# Data sets        :    0
-# Data points      :      0
-# Frms             :   0.000     Optimum:    0.000    
-# Erms             :   0.000     Optimum:    0.000    
-# Chi2             :   0.000     Optimum:    0.000    
+# Channel summary  : U238 
+# Channel        Sets  Points     Frms           Erms          Chi2           To
+fission.tot         1     1      6.378         0.2511          2.132         5.7
+
+# GOF no.               20  0.2511    
+# Nuclides         :    1
+# Channels         :    1
+# Data sets        :    1
+# Data points      :      1
+# Frms             :   6.378     Optimum:    17.08    
+# Erms             :  0.2511     Optimum:   5.7439E-02
+# Chi2             :   2.132     Optimum:    3.976    
 
  Maximum number of runs done:           20
 
- Execution time:  0 hours  0 minutes  0.25 seconds 
+ Execution time:  0 hours  0 minutes  0.23 seconds 
 
  This TASMAN run has finished

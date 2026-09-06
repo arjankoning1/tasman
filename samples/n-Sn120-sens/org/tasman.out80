@@ -1,12 +1,12 @@
 
-    TASMAN-2.23  (Version: May 11, 2026)
+    TASMAN-2.25  (Version: September 3, 2026)
 
  Copyright (C) 2026  A.J. Koning
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-02
+ Date: 2026-09-06
 
  ########## USER INPUT ##########
 
@@ -62,7 +62,7 @@
  #mode               2     mode         mode for TASMAN: sensitivity matrix with
  #Ntalys            10     Ntalys       number of TALYS runs 
  #Nburn             -1     Nburn        number of burn-in runs 
- #Nhigh             -1     Nhigh        number of high energy runs 
+ #Nhigh             10     Nhigh        number of high energy runs 
  #Ehigh       1000.000     Ehigh        energy cutoff of high energy runs 
  #Liso               0     Liso         number of the isomeric state 
  #maxgam             4     maxgam       maximum number of discrete levels with g
@@ -308,6 +308,6 @@ aadjust            1.000000E+00   7.500000E-02   9.302325E-01   1.075000E+00
  aadjust       50 121    1.00000
  aadjust       50 120    1.07500
 
- Execution time:  0 hours  0 minutes  0.16 seconds 
+ Execution time:  0 hours  0 minutes  0.27 seconds 
 
  This TASMAN run has finished

@@ -1,12 +1,12 @@
 
-    TALYS-2.24 (Version: September 2, 2026)
+    TALYS-2.25 (Version: September 3, 2026)
 
  Copyright (C) 2026  A.J. Koning, S. Hilaire and S. Goriely
 
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-02
+ Date: 2026-09-06
 
  ########## USER INPUT ##########
 
@@ -47,16 +47,15 @@
  ecissave y
  inccalc y
  eciscalc y
- rvadjust     n    1.00020
- avadjust     n    1.00020
- v1adjust     n    1.00020
- v2adjust     n    1.00044
- d1adjust     n    1.00455
- d2adjust     n    1.00455
- d3adjust     n    1.00455
- rwdadjust    n    1.00044
- awdadjust    n    1.00077
- estop   1000.00000
+ rvadjust     n    0.99716
+ avadjust     n    0.99037
+ v1adjust     n    0.99570
+ v2adjust     n    1.00384
+ d1adjust     n    1.08030
+ d2adjust     n    1.01791
+ d3adjust     n    1.06008
+ rwdadjust    n    1.03889
+ awdadjust    n    0.98278
 
  USER INPUT FILE + DEFAULTS
 
@@ -338,15 +337,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 9.65794E+03
-   Shape elastic   = 5.05331E+03
-   Reaction        = 4.60463E+03
+ Total           = 8.97185E+03
+   Shape elastic   = 5.10067E+03
+   Reaction        = 3.87118E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 5.05331E+03
+     Total elastic   = 5.10067E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -388,15 +387,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 1.02327E+04
-   Shape elastic   = 5.16512E+03
-   Reaction        = 5.06757E+03
+ Total           = 9.37139E+03
+   Shape elastic   = 5.02933E+03
+   Reaction        = 4.34206E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 5.16512E+03
+     Total elastic   = 5.02933E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -438,15 +437,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 9.16766E+03
-   Shape elastic   = 5.24814E+03
-   Reaction        = 3.91952E+03
+ Total           = 8.49025E+03
+   Shape elastic   = 4.85480E+03
+   Reaction        = 3.63545E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 5.24814E+03
+     Total elastic   = 4.85480E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -488,15 +487,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 6.92466E+03
-   Shape elastic   = 4.27098E+03
-   Reaction        = 2.65368E+03
+ Total           = 6.52953E+03
+   Shape elastic   = 3.93827E+03
+   Reaction        = 2.59127E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 4.27098E+03
+     Total elastic   = 3.93827E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -538,15 +537,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 5.63286E+03
-   Shape elastic   = 3.25987E+03
-   Reaction        = 2.37300E+03
+ Total           = 5.38338E+03
+   Shape elastic   = 3.03795E+03
+   Reaction        = 2.34543E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 3.25987E+03
+     Total elastic   = 3.03795E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -588,15 +587,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 4.88203E+03
-   Shape elastic   = 2.55420E+03
-   Reaction        = 2.32783E+03
+ Total           = 4.73105E+03
+   Shape elastic   = 2.41675E+03
+   Reaction        = 2.31430E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 2.55420E+03
+     Total elastic   = 2.41675E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -638,15 +637,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 4.40200E+03
-   Shape elastic   = 2.13119E+03
-   Reaction        = 2.27081E+03
+ Total           = 4.32115E+03
+   Shape elastic   = 2.05344E+03
+   Reaction        = 2.26771E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 2.13119E+03
+     Total elastic   = 2.05344E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -688,15 +687,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 4.06311E+03
-   Shape elastic   = 1.90227E+03
-   Reaction        = 2.16084E+03
+ Total           = 4.04266E+03
+   Shape elastic   = 1.86942E+03
+   Reaction        = 2.17323E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 1.90227E+03
+     Total elastic   = 1.86942E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -738,15 +737,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 3.70097E+03
-   Shape elastic   = 1.76128E+03
-   Reaction        = 1.93969E+03
+ Total           = 3.76607E+03
+   Shape elastic   = 1.79066E+03
+   Reaction        = 1.97541E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 1.76128E+03
+     Total elastic   = 1.79066E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -788,15 +787,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 3.68184E+03
-   Shape elastic   = 1.83102E+03
-   Reaction        = 1.85082E+03
+ Total           = 3.78168E+03
+   Shape elastic   = 1.88803E+03
+   Reaction        = 1.89365E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 1.83102E+03
+     Total elastic   = 1.88803E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -838,15 +837,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 4.02168E+03
-   Shape elastic   = 2.15492E+03
-   Reaction        = 1.86676E+03
+ Total           = 4.11110E+03
+   Shape elastic   = 2.20218E+03
+   Reaction        = 1.90892E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 2.15492E+03
+     Total elastic   = 2.20218E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
@@ -888,15 +887,15 @@
 
  1. Total (binary) cross sections
 
- Total           = 4.23847E+03
-   Shape elastic   = 2.41078E+03
-   Reaction        = 1.82770E+03
+ Total           = 4.29251E+03
+   Shape elastic   = 2.42060E+03
+   Reaction        = 1.87191E+03
      Compound elastic= 0.00000E+00
      Non-elastic     = 0.00000E+00
        Direct          = 0.00000E+00
        Pre-equilibrium = 0.00000E+00
        Compound non-el = 0.00000E+00
-     Total elastic   = 2.41078E+03
+     Total elastic   = 2.42060E+03
 
  2. Binary non-elastic cross sections (non-exclusive)
 
