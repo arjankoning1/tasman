@@ -42,6 +42,7 @@ subroutine deallocate_arrays
   if (allocated(Pearson_denom_par)) deallocate(Pearson_denom_par)
   if (allocated(Pearson_denom_xs)) deallocate(Pearson_denom_xs)
   if (allocated(Gchannelsave)) deallocate(Gchannelsave)
+  if (allocated(xseffsave)) deallocate(xseffsave)
 !
   return
 end subroutine deallocate_arrays
