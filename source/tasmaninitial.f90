@@ -177,7 +177,7 @@ subroutine tasmaninitial
   histsam = 0.
   Gsave = 1.e30
   weightsave = 1.e30
-  Gchannelsave = 0.
+  if (allocated(Gchannelsave)) Gchannelsave = 0.
   Z = 0
   A = 0
   Nchanmul = 0
