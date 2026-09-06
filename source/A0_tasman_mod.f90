@@ -279,7 +279,7 @@ module A0_tasman_mod
   integer                                          :: gofmode      ! gof mode
   integer, dimension(numchanxs)                    :: Nxssamp      ! number of sampled cross sections
   real(sgl), dimension(numchanxs,numsets*numenexp) :: Esamp        ! energy of sampled cross section
-  real(sgl), dimension(0:numtalys,numchanxs)       :: Gchannelsave ! GOF for channel
+  real(sgl), allocatable :: Gchannelsave(:,:)
   real(sgl), dimension(0:numtalys)                 :: Gsave        ! GOF value
   real(sgl)                                        :: weightpower  ! power for weight of random run
   real(sgl), dimension(0:numtalys)                 :: weightsave   ! weight for TALYS run
