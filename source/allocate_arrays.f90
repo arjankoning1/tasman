@@ -69,6 +69,11 @@ subroutine allocate_arrays
     Rleg = 0.
   endif
 
+  if (flagintegral) then
+    allocate(xseffsave(0:numtalys,numchanxs))
+    xseffsave = 0.
+  endif
+
   if (flaggamma) then
     allocate(gamsave(0:Ntalys,numchangam,0:numenS))
     gamsave = 0.
