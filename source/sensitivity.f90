@@ -90,7 +90,6 @@ subroutine sensitivity
   real(sgl)         :: sumxs(numenin)                      ! sum over emission channels
   real(sgl)         :: sumxsall                            ! sumxsE summed over channels
   real(sgl)         :: sumxsE                              ! summed cross section x energy
-  real(sgl)         :: xsdev(numpar, numchanxs, numenS)    ! cross section deviation
   real(sgl)         :: xsdifi                              ! difference in cross section
   real(sgl)         :: xsi0                                ! cross section of run 0
   real(sgl)         :: xsik                                ! cross section of random run
@@ -100,6 +99,9 @@ subroutine sensitivity
   character(len=26) :: format2                             ! format string
   character(len=132):: strloc(numpar)                      ! help variable
   character(len=132):: sttmp                               ! help variable
+  real(sgl), allocatable :: xsdev(:,:,:)                   ! cross section deviation
+  allocate(xsdev(Npar,Nchanxs,numenS))
+  xsdev = 0.
 !
 ! ************************* Create S matrix ****************************
 !
@@ -546,6 +548,7 @@ subroutine sensitivity
     enddo
     close (1)
   enddo
+  deallocate(xsdev)
   return
 end subroutine sensitivity
 ! Copyright A.J. Koning 2021
