@@ -67,6 +67,8 @@ subroutine covlegendre
   real(sgl)         :: legk1      ! Legendre coefficient for random run
   real(sgl)         :: term       ! help variable
   real(sgl)         :: term0      ! help variable
+  real(sgl), dimension(numchanang,0:numleg)                     :: errleg ! Legendre coefficients uncertainty
+  errleg = 0.
 !
 ! Average Legendre coefficients and covariances
 !
