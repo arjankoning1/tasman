@@ -70,6 +70,9 @@ subroutine covspectra
   real(sgl)         :: term      ! help variable
   real(sgl)         :: term0     ! help variable
   real(sgl)         :: up        ! upper value
+  real(sgl), allocatable :: errsp(:,:) ! emission spectrum uncertainty
+  allocate(errsp(numchansp,0:numen2))
+  errsp = 0.
 !
 ! Average emission spectra and covariances
 !
@@ -196,6 +199,7 @@ subroutine covspectra
     enddo
   enddo
   close (1)
+  deallocate(errsp)
   return
 end subroutine covspectra
 ! Copyright A.J. Koning 2021
