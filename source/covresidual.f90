@@ -78,6 +78,9 @@ subroutine covresidual
   real(sgl)         :: xsi1      ! cross section of random run
   real(sgl)         :: xsk0      ! cross section of run 0
   real(sgl)         :: xsk1      ! cross section of random run
+  real(sgl), allocatable                           :: errrp(:,:) ! cross section uncertainty
+  allocate(errrp(numchanrp,numenin))
+  errrp = 0.
 !
 ! Average residual production cross sections and covariances
 !
@@ -238,6 +241,7 @@ subroutine covresidual
     enddo
     close (1)
   enddo
+  deallocate(errrp)
   return
 end subroutine covresidual
 ! Copyright A.J. Koning 2021
