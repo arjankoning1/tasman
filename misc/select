@@ -43,9 +43,12 @@ echo "number of run          " $2
 echo "selectflag             " $3
 echo "covariance flag        " $4
 echo
-Thome=/Users/koning
-bin=$Thome'/bin/'
-tefal=$bin'tefal'
+Tashome="${TASMAN_DIR:-$HOME}"
+Tashome="${Tashome%/}"     # remove final slash if present
+bin=$Tashome'/bin/'
+Tefhome="${TEFAL_DIR:-$HOME}"
+Tefhome="${Tefhome%/}"     # remove final slash if present
+tefal=$Tefhome'/bin/'tefal
 mfsel=$3
 cov=$4
 #
