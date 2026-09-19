@@ -312,7 +312,8 @@
   k=2
   do i=1,Nc
     word=''
-    L=len_trim(col(i))
+    ! Keep labels inside their fixed-width fields.
+    L=min(len_trim(col(i)),width)
     ibeg=max(width/2-L/2,0)
     word(ibeg+1:ibeg+L)=col(i)(1:L)
     obs=obs(1:k)//word
@@ -323,8 +324,9 @@
   k=2
   do i=1,Nc
     word=''
-    L=len_trim(un(i))
-    ibeg=max(width/2-L/2,0)
+    ! Reserve space for both brackets, including for overlong unit labels.
+    L=min(len_trim(un(i)),width-2)
+    ibeg=max(width/2-L/2,1)
     word(ibeg+1:ibeg+L)=un(i)(1:L)
     word(ibeg:ibeg)='['
     word(ibeg+L+1:ibeg+L+1)=']'
