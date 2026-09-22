@@ -2,7 +2,7 @@ moder
 20 21/
 reconr
 21 22/
-'neutron PENDF for Sn120 of TENDL-2025'
+'neutron PENDF for Sn120 of TENDL-2026'
 5049/
 0.001/
 0/
@@ -35,14 +35,14 @@ viewr
 acer
 21 27 0 48 49/
 1 0 1 .00 0/
-'Sn120 neutron ACER TENDL-2025 library; T=293.6K '
+'Sn120 neutron ACER TENDL-2026 library; T=293.6K '
 5049 293.6/
 1 1/
 /
 acer
 0 48 45 0 0
 7 1 1/
-'Sn120 neutron ACER TENDL-2025 library; T=293.6K '
+'Sn120 neutron ACER TENDL-2026 library; T=293.6K '
 viewr
 45 46/
 stop

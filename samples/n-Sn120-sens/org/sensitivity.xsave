@@ -2,7 +2,7 @@
 #   title: Sn120 sensitivity coefficients per channel integrated over energy, sorted
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-09-06
+#   date: 2026-09-22
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -78,15 +78,15 @@ gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
 #   entries: 10
 ##   Parameter                         S       max. deviation par. deviation
 ##      []             []             []            [mb]            [%]
-aadjust  50 121                  4.819596E+00   3.044571E+00   7.500000E+00
-rvadjust n                       1.418481E+00   3.240403E-01   2.000000E+00
-gnadjust  50 121                 1.286668E+00   1.208630E-01   7.500000E+00
-aadjust  50 120                  1.177846E+00   2.354684E-01   7.500000E+00
-gpadjust  50 121                 6.054698E-01   5.690198E-02   7.500000E+00
-avadjust n                       5.127841E-01   7.918622E-02   2.000000E+00
-m2constant                       4.385359E-01   1.098828E-01   2.000000E+01
-v1adjust n                       4.144221E-01   1.246181E-01   2.000000E+00
-v2adjust n                       3.838768E-02   1.274485E-02   3.000000E+00
+aadjust  50 121                  4.819626E+00   3.044573E+00   7.500000E+00
+rvadjust n                       1.418471E+00   3.240408E-01   2.000000E+00
+gnadjust  50 121                 1.286669E+00   1.208681E-01   7.500000E+00
+aadjust  50 120                  1.177336E+00   2.354295E-01   7.500000E+00
+gpadjust  50 121                 6.054704E-01   5.690438E-02   7.500000E+00
+avadjust n                       5.127827E-01   7.918642E-02   2.000000E+00
+m2constant                       4.385362E-01   1.098873E-01   2.000000E+01
+v1adjust n                       4.144213E-01   1.246181E-01   2.000000E+00
+v2adjust n                       3.838851E-02   1.274488E-02   3.000000E+00
 gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
 #     channel: xs100000.tot
 #     reaction: (n,n')

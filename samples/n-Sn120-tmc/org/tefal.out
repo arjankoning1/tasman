@@ -1,5 +1,5 @@
 
-    TEFAL-2.25 (Version: September 3, 2026)
+    TEFAL-2.25 (Version: September 13, 2026)
 
            Creating ENDF-6 files with TALYS
 
@@ -92,6 +92,6 @@
 
  Number of deleted points:   182 (see file tefal.clean)
 
- Execution time:  0 hours  0 minutes  1.99 seconds 
+ Execution time:  0 hours  0 minutes  2.00 seconds 
 
  TEFAL has created the following ENDF-6 file: n-Sn120.endf

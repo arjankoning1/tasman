@@ -2,7 +2,7 @@
 #   title: Sn120 sensitivity coefficients per energy, integrated over channels
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-09-06
+#   date: 2026-09-22
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -675,7 +675,7 @@ gnadjust  50 121                 1.059927E-01
 v2adjust n                       7.172133E-02
 gpadjust  50 121                 5.000320E-02
 m2constant                       2.330444E-02
-aadjust  50 120                  1.872146E-02
+aadjust  50 120                  1.872121E-02
 aadjust  50 121                  4.446419E-03
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  1.800000E+01
@@ -690,11 +690,11 @@ rvadjust n                       1.790602E+00
 v1adjust n                       5.426354E-01
 avadjust n                       3.040200E-01
 v2adjust n                       1.264506E-01
-gnadjust  50 121                 1.041676E-01
-gpadjust  50 121                 4.878390E-02
-aadjust  50 120                  2.583205E-02
-m2constant                       2.302939E-02
-aadjust  50 121                  4.306126E-03
+gnadjust  50 121                 1.041677E-01
+gpadjust  50 121                 4.878391E-02
+aadjust  50 120                  2.583185E-02
+m2constant                       2.302940E-02
+aadjust  50 121                  4.306137E-03
 gamgamadjust  50 121             0.000000E+00
 #     E-incident [MeV]:  2.000000E+01
 # quantity: 
@@ -708,9 +708,9 @@ rvadjust n                       2.020626E+00
 v1adjust n                       7.270223E-01
 avadjust n                       3.065709E-01
 v2adjust n                       1.775766E-01
-gnadjust  50 121                 1.039043E-01
-aadjust  50 120                  5.307847E-02
-gpadjust  50 121                 4.848152E-02
-m2constant                       2.303927E-02
-aadjust  50 121                  4.304735E-03
+gnadjust  50 121                 1.039044E-01
+aadjust  50 120                  5.307839E-02
+gpadjust  50 121                 4.848155E-02
+m2constant                       2.303929E-02
+aadjust  50 121                  4.304769E-03
 gamgamadjust  50 121             0.000000E+00

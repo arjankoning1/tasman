@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-06
+ Date: 2026-09-22
 
  ########## USER INPUT ##########
 
@@ -1427,7 +1427,7 @@ cbreak             1.000000E+00   2.000000E+00   3.333333E-01   3.000000E+00
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0000 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.1 (Version July 6 2025) (C) Copyright 2025 Arjan Koning, All R
+       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0000 -nopurr -outname 2 -mcnpext .
 
@@ -2445,7 +2445,7 @@ Weight of run     1: 8.86354E-01 Sum: 1.88635E+00
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0001 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.1 (Version July 6 2025) (C) Copyright 2025 Arjan Koning, All R
+       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0001 -nopurr -outname 2 -mcnpext .
 
@@ -3112,7 +3112,7 @@ Weight of run     2: 9.57317E-01 Sum: 2.84367E+00
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0002 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.1 (Version July 6 2025) (C) Copyright 2025 Arjan Koning, All R
+       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0002 -nopurr -outname 2 -mcnpext .
 
@@ -3779,7 +3779,7 @@ Weight of run     3: 8.94198E-01 Sum: 3.73787E+00
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0003 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.1 (Version July 6 2025) (C) Copyright 2025 Arjan Koning, All R
+       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0003 -nopurr -outname 2 -mcnpext .
 
@@ -3790,6 +3790,6 @@ MAT: 5049 AWI: 1.000000+0 element: Sn mass: 120 iso: projectile: neutron
 Diagnosis of NJOY output in njoy.ers
 autonjoy is done
 
- Execution time:  0 hours  0 minutes  2.33 seconds 
+ Execution time:  0 hours  0 minutes  2.32 seconds 
 
  This TASMAN run has finished

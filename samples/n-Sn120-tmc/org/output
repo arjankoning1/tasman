@@ -4,8 +4,8 @@
  *   $$$  $$       $$  $$$$$$$   $$  $$    *  nuclear     *  vday: 03Feb25   *
  *   $$$$ $$       $$  $$   $$    $$$$     *  data        *  site: lanl t2   *
  *   $$ $$$$  $$   $$  $$   $$     $$      *  processing  *  mach:           *
- *   $$  $$$  $$$$$$$  $$$$$$$     $$      *  system      *  date: 09/06/26  *
- *   $$   $$   $$$$$    $$$$$      $$      *              *  time: 18:47:54  *
+ *   $$  $$$  $$$$$$$  $$$$$$$     $$      *  system      *  date: 09/22/26  *
+ *   $$   $$   $$$$$    $$$$$      $$      *              *  time: 10:14:47  *
  *                                         *              *                  *
  *****************************************************************************
 
@@ -29,7 +29,7 @@
 
  label for pendf tape
  ------------------------------------------------------------------
- neutron PENDF for Sn120 of TENDL-2025                               
+ neutron PENDF for Sn120 of TENDL-2026                               
 
  tape label
  ------------------------------------------------------------------
@@ -300,15 +300,15 @@
 
  ---message from hinit---mf6, mt102 does not give recoil za= 50121
                           photon momentum recoil used.
-                                                             temp 1       2.3s
+                                                             temp 1       2.4s
 
    generating recoil from photon momentum.
                                                              temp 1       2.5s
 
-                                                                          3.0s
+                                                                          3.1s
  *****************************************************************************
 
- gaspr...add gas production cross sections                                3.0s
+ gaspr...add gas production cross sections                                3.1s
 
  units:    21    26    27
 
@@ -338,13 +338,13 @@
 
  tape label
  --------------------------------------
-  neutron PENDF for Sn120 of TENDL-2025                               
+  neutron PENDF for Sn120 of TENDL-2026                               
 
  using endf-6 format
-                                                                          3.7s
+                                                                          3.8s
  *****************************************************************************
 
- viewr...display plots                                                    3.7s
+ viewr...display plots                                                    3.8s
 
  lori .................................          1
  xpage ................................     10.000
@@ -713,10 +713,10 @@
 
  data nform ...........................          0
 
-                                                                          3.7s
+                                                                          3.8s
  *****************************************************************************
 
- acer...monte carlo neutron and photon data                               3.7s
+ acer...monte carlo neutron and photon data                               3.8s
 
  input endf unit ......................         21
  input pendf unit .....................         27
@@ -839,7 +839,7 @@
                                       zaid  50120.00c   
                                        awr   118.872
                                       temp  2.53E-08
-                                      date  09/06/26
+                                      date  09/22/26
                                        mat   mat5049
       ***********************
       *                     *         len2    287249
@@ -885,7 +885,7 @@
                                      ploct    279173
 
 
-      hk---Sn120 neutron ACER TENDL-2025 library; T=293.6K                       
+      hk---Sn120 neutron ACER TENDL-2026 library; T=293.6K                       
 
 
        reaction descriptors
@@ -89203,10 +89203,10 @@
 
           22   107
 
-                                                                          5.9s
+                                                                          6.0s
  *****************************************************************************
 
- viewr...display plots                                                    5.9s
+ viewr...display plots                                                    6.0s
 
  lori .................................          1
  xpage ................................     10.000
@@ -89227,7 +89227,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>rincipal cross sections                                                      
 
  itype ................................          4
@@ -89340,7 +89340,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance total cross section                                                   
 
  itype ................................          4
@@ -89384,7 +89384,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance total cross section                                                   
 
  itype ................................          4
@@ -89428,7 +89428,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance total cross section                                                   
 
  itype ................................          4
@@ -89472,7 +89472,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance total cross section                                                   
 
  itype ................................          4
@@ -89516,7 +89516,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance absorption cross sections                                             
 
  itype ................................          4
@@ -89560,7 +89560,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance absorption cross sections                                             
 
  itype ................................          4
@@ -89604,7 +89604,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance absorption cross sections                                             
 
  itype ................................          4
@@ -89648,7 +89648,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             resonance absorption cross sections                                             
 
  itype ................................          4
@@ -89692,7 +89692,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <h>eating                                                                       
 
  itype ................................          4
@@ -89736,7 +89736,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <d>amage                                                                        
 
  itype ................................          4
@@ -89780,7 +89780,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <n>on-threshold reactions                                                       
 
  itype ................................          4
@@ -89824,7 +89824,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>rincipal cross sections                                                      
 
  itype ................................          1
@@ -89937,7 +89937,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <h>eating                                                                       
 
  itype ................................          1
@@ -89981,7 +89981,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <d>amage                                                                        
 
  itype ................................          1
@@ -90025,7 +90025,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <n>on-threshold reactions                                                       
 
  itype ................................          2
@@ -90069,7 +90069,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <i>nelastic levels                                                              
 
  itype ................................          1
@@ -90205,7 +90205,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <i>nelastic levels                                                              
 
  itype ................................          1
@@ -90341,7 +90341,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <i>nelastic levels                                                              
 
  itype ................................          1
@@ -90477,7 +90477,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <i>nelastic levels                                                              
 
  itype ................................          1
@@ -90613,7 +90613,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <i>nelastic levels                                                              
 
  itype ................................          1
@@ -90749,7 +90749,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <i>nelastic levels                                                              
 
  itype ................................          1
@@ -90885,7 +90885,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <t>hreshold reactions                                                           
 
  itype ................................          1
@@ -91021,7 +91021,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <t>hreshold reactions                                                           
 
  itype ................................          1
@@ -91134,7 +91134,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <t>hreshold reactions                                                           
 
  itype ................................          1
@@ -91247,7 +91247,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for elastic                                                
 
  itype ................................         -1
@@ -91291,7 +91291,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*1)                                                
 
  itype ................................         -1
@@ -91335,7 +91335,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*2)                                                
 
  itype ................................         -1
@@ -91379,7 +91379,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*3)                                                
 
  itype ................................         -1
@@ -91423,7 +91423,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*4)                                                
 
  itype ................................         -1
@@ -91467,7 +91467,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*5)                                                
 
  itype ................................         -1
@@ -91511,7 +91511,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*6)                                                
 
  itype ................................         -1
@@ -91555,7 +91555,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*7)                                                
 
  itype ................................         -1
@@ -91599,7 +91599,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*8)                                                
 
  itype ................................         -1
@@ -91643,7 +91643,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*9)                                                
 
  itype ................................         -1
@@ -91687,7 +91687,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*10)                                               
 
  itype ................................         -1
@@ -91731,7 +91731,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*11)                                               
 
  itype ................................         -1
@@ -91775,7 +91775,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*12)                                               
 
  itype ................................         -1
@@ -91819,7 +91819,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*13)                                               
 
  itype ................................         -1
@@ -91863,7 +91863,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*14)                                               
 
  itype ................................         -1
@@ -91907,7 +91907,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*15)                                               
 
  itype ................................         -1
@@ -91951,7 +91951,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*16)                                               
 
  itype ................................         -1
@@ -91995,7 +91995,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*17)                                               
 
  itype ................................         -1
@@ -92039,7 +92039,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*18)                                               
 
  itype ................................         -1
@@ -92083,7 +92083,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*19)                                               
 
  itype ................................         -1
@@ -92127,7 +92127,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*20)                                               
 
  itype ................................         -1
@@ -92171,7 +92171,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*21)                                               
 
  itype ................................         -1
@@ -92215,7 +92215,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*22)                                               
 
  itype ................................         -1
@@ -92259,7 +92259,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*23)                                               
 
  itype ................................         -1
@@ -92303,7 +92303,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*24)                                               
 
  itype ................................         -1
@@ -92347,7 +92347,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*25)                                               
 
  itype ................................         -1
@@ -92391,7 +92391,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*26)                                               
 
  itype ................................         -1
@@ -92435,7 +92435,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*27)                                               
 
  itype ................................         -1
@@ -92479,7 +92479,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*28)                                               
 
  itype ................................         -1
@@ -92523,7 +92523,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*29)                                               
 
  itype ................................         -1
@@ -92567,7 +92567,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             angular distribution for (n,n*30)                                               
 
  itype ................................         -1
@@ -92611,7 +92611,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <n>eutron emission for (n,2n)                                                   
 
  itype ................................         -1
@@ -92655,7 +92655,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <n>eutron emission for (n,3n)                                                   
 
  itype ................................         -1
@@ -92699,7 +92699,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <n>eutron emission for (n,n*)a                                                  
 
  itype ................................         -1
@@ -92743,7 +92743,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <n>eutron emission for (n,n*)p                                                  
 
  itype ................................         -1
@@ -92787,7 +92787,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <n>eutron emission for (n,n*c)                                                  
 
  itype ................................         -1
@@ -92831,7 +92831,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,2n)                                                    
 
  itype ................................         -1
@@ -92875,7 +92875,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,3n)                                                    
 
  itype ................................         -1
@@ -92919,7 +92919,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,n*)a                                                   
 
  itype ................................         -1
@@ -92963,7 +92963,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,n*)p                                                   
 
  itype ................................         -1
@@ -93007,7 +93007,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,n*c)                                                   
 
  itype ................................         -1
@@ -93051,7 +93051,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,gma)                                                   
 
  itype ................................         -1
@@ -93095,7 +93095,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,p)                                                     
 
  itype ................................         -1
@@ -93139,7 +93139,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,d)                                                     
 
  itype ................................         -1
@@ -93183,7 +93183,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,t)                                                     
 
  itype ................................         -1
@@ -93227,7 +93227,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>hoton emission for (n,a)                                                     
 
  itype ................................         -1
@@ -93271,7 +93271,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             thermal capture photon spectrum                                                 
 
  itype ................................          2
@@ -93310,7 +93310,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             14 <m>e<v> photon spectrum                                                      
 
  itype ................................          2
@@ -93349,7 +93349,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>article heating contributions                                                
 
  itype ................................          1
@@ -93462,7 +93462,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <r>ecoil <h>eating                                                              
 
  itype ................................          1
@@ -93506,7 +93506,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             <p>article production cross sections                                            
 
  itype ................................          1
@@ -93619,7 +93619,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             protons from (n,n*)p                                                            
 
  itype ................................         -1
@@ -93663,7 +93663,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             protons from (n,p)                                                              
 
  itype ................................         -1
@@ -93707,7 +93707,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             deuterons from (n,d)                                                            
 
  itype ................................         -1
@@ -93751,7 +93751,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             tritons from (n,t)                                                              
 
  itype ................................         -1
@@ -93795,7 +93795,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             alphas from (n,n*)a                                                             
 
  itype ................................         -1
@@ -93839,7 +93839,7 @@
  wh ...................................      7.500
  wa ...................................      0.000
 
-            <Sn120 neutron ACER TENDL-2025 library; T=293.6K>                               
+            <Sn120 neutron ACER TENDL-2026 library; T=293.6K>                               
             alphas from (n,a)                                                               
 
  itype ................................         -1

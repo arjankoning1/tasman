@@ -2,7 +2,7 @@
 #   title: Sn120 sensitivity coefficients per cross section, energy and parameter, sorted
 #   source: TASMAN
 #   user: Arjan Koning
-#   date: 2026-09-06
+#   date: 2026-09-22
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2947,11 +2947,11 @@ rvadjust n                       6.811137E-01   1.714100E-02   2.000000E+00
 aadjust  50 121                  4.256518E-01   4.017005E-02   7.500000E+00
 avadjust n                       4.122237E-01   1.037408E-02   2.000000E+00
 v1adjust n                      -1.788131E-01  -4.500036E-03   2.000000E+00
-aadjust  50 120                 -1.021475E-01  -9.639973E-03   7.500000E+00
+aadjust  50 120                 -9.998626E-02  -9.436006E-03   7.500000E+00
 v2adjust n                       3.719411E-02   1.404048E-03   3.000000E+00
 gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
 #       E-incident [MeV]:  1.800000E+01
-#       Cross section [mb]:  9.114748E-01
+#       Cross section [mb]:  9.116319E-01
 # quantity: 
 #   type: sensitivity coefficients
 # datablock: 
@@ -2959,18 +2959,18 @@ gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
 #   entries: 10
 ##   Parameter                         S       max. deviation par. deviation
 ##      []             []             []            [mb]            [%]
-gnadjust  50 121                -2.429439E+00  -1.660779E-01   7.500000E+00
-rvadjust n                       1.148604E+00   2.093847E-02   2.000000E+00
-gpadjust  50 121                -1.143108E+00  -7.814355E-02   7.500000E+00
-m2constant                      -8.205410E-01  -1.495805E-01   2.000000E+01
-avadjust n                       4.083247E-01   7.443554E-03   2.000000E+00
-aadjust  50 121                  3.151352E-01   2.154284E-02   7.500000E+00
-v1adjust n                      -3.193174E-02  -5.820995E-04   2.000000E+00
-aadjust  50 120                 -2.793876E-02  -1.909910E-03   7.500000E+00
-v2adjust n                       1.053056E-02   2.879503E-04   3.000000E+00
+gnadjust  50 121                -2.429445E+00  -1.661070E-01   7.500000E+00
+rvadjust n                       1.148563E+00   2.094134E-02   2.000000E+00
+gpadjust  50 121                -1.143111E+00  -7.815726E-02   7.500000E+00
+m2constant                      -8.205419E-01  -1.496064E-01   2.000000E+01
+avadjust n                       4.083198E-01   7.444746E-03   2.000000E+00
+aadjust  50 121                  3.152029E-01   2.155118E-02   7.500000E+00
+v1adjust n                      -3.193605E-02  -5.822783E-04   2.000000E+00
+aadjust  50 120                 -2.566474E-02  -1.754760E-03   7.500000E+00
+v2adjust n                       1.053529E-02   2.881291E-04   3.000000E+00
 gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
 #       E-incident [MeV]:  2.000000E+01
-#       Cross section [mb]:  5.964296E-01
+#       Cross section [mb]:  5.966625E-01
 # quantity: 
 #   type: sensitivity coefficients
 # datablock: 
@@ -2978,15 +2978,15 @@ gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
 #   entries: 10
 ##   Parameter                         S       max. deviation par. deviation
 ##      []             []             []            [mb]            [%]
-gnadjust  50 121                -2.446439E+00  -1.094346E-01   7.500000E+00
-rvadjust n                       1.195977E+00   1.426633E-02   2.000000E+00
-gpadjust  50 121                -1.149624E+00  -5.142524E-02   7.500000E+00
-m2constant                      -8.254994E-01  -9.847046E-02   2.000000E+01
-avadjust n                       3.682836E-01   4.393105E-03   2.000000E+00
-aadjust  50 121                  3.138234E-01   1.403802E-02   7.500000E+00
-v1adjust n                       3.615680E-02   4.312996E-04   2.000000E+00
-aadjust  50 120                 -8.816994E-03  -3.944037E-04   7.500000E+00
-v2adjust n                      -7.481865E-03  -1.338722E-04   3.000000E+00
+gnadjust  50 121                -2.446452E+00  -1.094780E-01   7.500000E+00
+rvadjust n                       1.195875E+00   1.427068E-02   2.000000E+00
+gpadjust  50 121                -1.149630E+00  -5.144557E-02   7.500000E+00
+m2constant                      -8.255036E-01  -9.850942E-02   2.000000E+01
+avadjust n                       3.682647E-01   4.394595E-03   2.000000E+00
+aadjust  50 121                  3.142869E-01   1.406424E-02   7.500000E+00
+v1adjust n                       3.613269E-02   4.311803E-04   2.000000E+00
+v2adjust n                      -7.488933E-03  -1.340510E-04   3.000000E+00
+aadjust  50 120                 -7.486923E-03  -3.350375E-04   7.500000E+00
 gamgamadjust  50 121             0.000000E+00   0.000000E+00   2.000000E+01
 #     channel: xs100000.tot
 #     reaction: (n,n')
