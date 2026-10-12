@@ -20,7 +20,7 @@ subroutine tmc
 !   nuc             ! symbol of nucleus
 ! Variables for path names
 !   binpath       ! directory containing files to be read
-!   librariespath ! directory containing files to be read
+!   databasepath ! directory containing files to be read
 ! Variables for processing input
 !   Atarget         ! mass number of target nucleus
 !   k0              ! index of incident particle
@@ -338,7 +338,7 @@ subroutine tmc
         if (flagruntares) then
           mf2file = 'other.tares.'//trim(projnuc)//'.files/randomMF2/' //trim(projnuc)//'.mf2.'//randstring
         else
-          base = trim(librariespath)//'resbase/'// trim(nuclide)//'/random/'//projnuc
+          base = trim(databasepath)//'resbase/'// trim(nuclide)//'/random/'//projnuc
           mf2file = trim(base)//'.mf2.'//randstring
         endif
         inquire (file = trim(mf2file), exist = lexist)
@@ -361,7 +361,7 @@ subroutine tmc
             Efisfile = 'fission.mt458.0001'
           endif
         else
-          base = trim(librariespath)//'nubarbase/'// trim(nuclide)//'/random/'//projnuc
+          base = trim(databasepath)//'nubarbase/'// trim(nuclide)//'/random/'//projnuc
           if (italys == 0) then
             nubarfile = trim(base)//'.mt452.0000'
             nudelfile = trim(base)//'.mt455.0000'
@@ -401,7 +401,7 @@ subroutine tmc
             delfile = 'fns.mf5.delayed.0001      '
           endif
         else
-          base = trim(librariespath)//'fnsbase/'// trim(nuclide)//'/random/'//projnuc
+          base = trim(databasepath)//'fnsbase/'// trim(nuclide)//'/random/'//projnuc
           if (italys == 0) then
             fnsfile = trim(base)//'.mf5.0000'
             delfile = trim(base)//'.delayed.mf5.0000'
