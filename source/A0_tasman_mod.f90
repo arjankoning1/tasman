@@ -65,11 +65,12 @@ module A0_tasman_mod
 ! Variables for pathnames
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  character(len=132) :: librariespath ! directory containing files to be read
-  character(len=132) :: exforpath     ! directory containing files to be read
-  character(len=132) :: binpath       ! directory containing files to be read
-  character(len=132) :: tasmanpath    ! directory containing files to be read
-  character(len=132) :: psfpath       ! directory containing files to be read
+  character(len=1024) :: librariespath ! directory containing files to be read
+  character(len=1024) :: databasepath  ! directory containing files to be read
+  character(len=1024) :: exforpath     ! directory containing files to be read
+  character(len=1024) :: binpath       ! directory containing files to be read
+  character(len=1024) :: tasmanpath    ! directory containing files to be read
+  character(len=1024) :: psfpath       ! directory containing files to be read
   integer            :: year          ! year
   integer            :: month         ! month
   integer            :: day           ! day
