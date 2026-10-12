@@ -201,6 +201,9 @@ subroutine inputout
   write(*, '(" #user   ", a, t27, " user         user for this calculation")') trim(user)
   write(*, '(" #source ", a, t27, " source       source for this calculation")') trim(source)
   write(*, '(" #format ", a, t27, " oformat      format for output")') trim(oformat)
+  write(*, '(" #exforpath ", t27, " exforpath     ",a)') trim(exforpath)
+  write(*, '(" #librariespath ", t27, " librariespath ",a)') trim(librariespath)
+  write(*, '(" #databasepath ", t27, " databasepath  ",a)') trim(databasepath)
   write(*, '(" #"/" # Keywords for mode ", i1, /" #")') mode
 !
 ! 2. Keywords for uncertainties and covariances
