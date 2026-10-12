@@ -29,6 +29,9 @@ subroutine machine
   character(len=1024) :: base_dir     ! directory containing TASMAN and related packages
   character(len=1024) :: tasman_dir   ! TASMAN directory runtime defined
   character(len=1024) :: tasman_user  ! TASMAN user runtime defined
+  character(len=1024) :: libraries_dir
+  character(len=1024) :: exfortables_dir
+  character(len=1024) :: database_dir
   integer             :: envstat
   integer             :: i            ! counter
   integer             :: n
@@ -70,8 +73,32 @@ subroutine machine
     base_dir = './'
   endif
 !
+! If the user wants data libraries for TASMAN at another location, they can be set with
+! export variables.
+!
   librariespath = trim(base_dir)//'libraries/'
+  call get_environment_variable('LIBRARIES_DIR', libraries_dir, length=n, status=envstat)
+  if (envstat == 0 .and. n > 0) then
+    librariespath = trim(libraries_dir)
+    i = len_trim(librariespath)
+    if (librariespath(i:i) /= '/') librariespath = trim(librariespath)//'/'
+  endif
+
   exforpath = trim(base_dir)//'exfortables/'
+  call get_environment_variable('EXFORTABLES_DIR', exfortables_dir, length=n, status=envstat)
+  if (envstat == 0 .and. n > 0) then
+    exforpath = trim(exfortables_dir)
+    i = len_trim(exforpath)
+    if (exforpath(i:i) /= '/') exforpath = trim(exforpath)//'/'
+  endif
+
+  databasepath = trim(base_dir)
+  call get_environment_variable('DATABASE_DIR', database_dir, length=n, status=envstat)
+  if (envstat == 0 .and. n > 0) then
+    databasepath = trim(database_dir)
+    i = len_trim(databasepath)
+    if (databasepath(i:i) /= '/') databasepath = trim(databasepath)//'/'
+  endif
 !
 ! External executables such as TALYS, TEFAL, TARES, TAFIS and TANES are
 ! installed by default in the sibling bin directory.  Keep the absolute
