@@ -9,10 +9,10 @@
  Deleted point: MF=  3 MT=  2 E= 5.00000E+02 eV xs= 1.09026E+01 b
  Deleted point: MF=  3 MT=  2 E= 1.00000E+03 eV xs= 1.09026E+01 b
  Deleted point: MF=  3 MT=  2 E= 1.25000E+03 eV xs= 1.09026E+01 b
- Deleted point: MF=  3 MT= 22 E= 9.00000E+06 eV xs= 1.04514E-15 b
+ Deleted point: MF=  3 MT= 22 E= 9.00000E+06 eV xs= 9.91626E-16 b
  Deleted point: MF=  3 MT=103 E= 6.00000E+06 eV xs= 1.12612E-12 b
  Deleted point: MF=  3 MT=104 E= 1.00000E+07 eV xs= 3.36523E-16 b
- Deleted point: MF=  3 MT=105 E= 1.40000E+07 eV xs= 2.64202E-11 b
+ Deleted point: MF=  3 MT=105 E= 1.40000E+07 eV xs= 3.85615E-12 b
  Deleted point: MF=  3 MT=107 E= 2.10803E-05 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 2.54007E-05 eV xs= 1.00000E-20 b
  Deleted point: MF=  3 MT=107 E= 3.06066E-05 eV xs= 1.00000E-20 b
@@ -128,11 +128,29 @@
  Deleted Legendre coefficients: MF=  4 MT=  2 E= 1.00000E+01 eV
  Deleted Legendre coefficients: MF=  4 MT=  2 E= 1.00000E+02 eV
  Deleted Legendre coefficients: MF=  4 MT=  2 E= 1.00000E+03 eV
+ Deleted energy distribution: MF=  6 MT= 22 k=  3 E= 1.00000E+07 eV
+ Deleted energy distribution: MF=  6 MT= 22 k=  3 E= 1.20000E+07 eV
+ Deleted energy distribution: MF=  6 MT= 22 k=  3 E= 1.40000E+07 eV
  Deleted energy distribution: MF=  6 MT=102 k=  1 E= 1.00000E+00 eV
  Deleted energy distribution: MF=  6 MT=102 k=  1 E= 1.00000E+01 eV
  Deleted energy distribution: MF=  6 MT=102 k=  1 E= 1.00000E+02 eV
  Deleted energy distribution: MF=  6 MT=102 k=  1 E= 1.00000E+03 eV
+ Deleted energy distribution: MF=  6 MT=103 k=  2 E= 7.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=103 k=  2 E= 8.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=104 k=  2 E= 1.20000E+07 eV
+ Deleted energy distribution: MF=  6 MT=105 k=  2 E= 1.60000E+07 eV
  Deleted energy distribution: MF=  6 MT=107 k=  2 E= 3.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  2 E= 3.50000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  2 E= 4.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  2 E= 5.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  2 E= 6.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  2 E= 7.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  2 E= 8.00000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  2 E= 9.00000E+06 eV
+ Deleted equal yield: MF=  6 MT=107 k=  3 E= 3.50000E+06 eV  Y= 1.00000E+00
+ Deleted equal yield: MF=  6 MT=107 k=  3 E= 4.00000E+06 eV  Y= 1.00000E+00
+ Deleted energy distribution: MF=  6 MT=107 k=  3 E= 3.50000E+06 eV
+ Deleted energy distribution: MF=  6 MT=107 k=  3 E= 4.00000E+06 eV
  Deleted point: MF=  9 MT=102 iso=  1 E= 1.00000E+00 eV xs= 9.85915E-01 b
  Deleted point: MF=  9 MT=102 iso=  1 E= 1.00000E+01 eV xs= 9.85915E-01 b
  Deleted point: MF=  9 MT=102 iso=  1 E= 1.00000E+02 eV xs= 9.85915E-01 b
@@ -184,4 +202,4 @@
  Deleted point: MF= 10 MT=107 iso=  2 E= 2.00000E+06 eV xs= 1.00000E-20 b
  Deleted point: MF= 10 MT=107 iso=  2 E= 2.50000E+06 eV xs= 1.00000E-20 b
 
- Number of deleted points:   182
+ Number of deleted points:   200

@@ -2,7 +2,7 @@
 #   title: Ag107(p,x)Ru100 cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 47
@@ -10,7 +10,7 @@
 #   nuclide: Ag107
 # reaction: 
 #   type: (p,x)
-#   Q-value [MeV]:  3.260351E+00
+#   Q-value [MeV]:  3.260350E+00
 #   E-threshold [MeV]:  0.000000E+00
 #   ENDF_MF: 6
 #   ENDF_MT: 5
@@ -27,9 +27,9 @@
 #     entries: 19
 ##       E             xs
 ##     [MeV]          [mb]
-   2.000000E+00   0.000000E+00
-   3.000000E+00   0.000000E+00
-   4.000000E+00   0.000000E+00
+   2.000000E+00   1.000000E-07
+   3.000000E+00   1.000000E-07
+   4.000000E+00   1.000000E-07
    5.000000E+00   1.000000E-07
    6.000000E+00   1.000000E-07
    7.000000E+00   1.000000E-07

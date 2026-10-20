@@ -2,7 +2,7 @@
 ##   title: Ag107(p,x) nuclear model parameters
 ##   source: TALYS-2.24
 ##   user: Arjan Koning
-##   date: 2026-09-22
+##   date: 2026-10-20
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 47
@@ -536,231 +536,6 @@ sgradjust        46 104   1.000 M2
 egradjust        46 104   1.000 M2
 ggradjust        46 104   1.000 M2
 ## residual:
-##   Z: 48
-##   A: 106
-##   nuclide: Cd106 
-## parameters: 
-##   level density
-a                48 106  13.14227
-aadjust          48 106   1.00000
-gammald          48 106   0.09151
-pair             48 106   2.33109
-Pshift           48 106   0.00000   0
-Pshiftadjust     48 106   0.00000   0
-deltaW           48 106  -0.60051   0
-T                48 106   0.82114   0
-E0               48 106  -0.11219   0
-Exmatch          48 106   8.64664   0
-Tadjust          48 106   1.00000   0
-E0adjust         48 106   1.00000   0
-Exmatchadjust    48 106   1.00000   0
-Ntop             48 106  38   0
-Nlow             48 106   6   0
-s2adjust         48 106   1.00000   0
-ctable           48 106   0.00000   0
-ptable           48 106   0.00000   0
-ctableadjust     48 106   0.00000   0
-ptableadjust     48 106   0.00000   0
-Ufermi           48 106  30.00000   0
-cfermi           48 106   5.00000   0
-g                48 106   7.06667
-gp               48 106   3.20000
-gn               48 106   3.86667
-gnadjust         48 106   1.00000
-gpadjust         48 106   1.00000
-gadjust          48 106   1.00000
-Risomer          48 106   1.00000
-## parameters: 
-##   photon strength function
-gamgam           48 106   0.00000
-gamgamadjust     48 106   1.00000
-etable           48 106   0.00000 E1
-ftable           48 106   1.00000 E1
-wtable           48 106   1.00000 E1
-etableadjust     48 106   0.00000 E1
-ftableadjust     48 106   1.00000 E1
-wtableadjust     48 106   1.00000 E1
-upbendc          48 106 3.50000E-08 M1
-upbende          48 106 8.00000E-01 M1
-upbendf          48 106 6.00000E+00 M1
-upbendcadjust    48 106 1.00000E+00 M1
-upbendeadjust    48 106 1.00000E+00 M1
-upbendfadjust    48 106 1.00000E+00 M1
-sgr              48 106   1.462 M1
-egr              48 106   8.274 M1
-ggr              48 106   4.000 M1
-sgradjust        48 106   1.000 M1
-egradjust        48 106   1.000 M1
-ggradjust        48 106   1.000 M1
-etable           48 106   0.00000 E2
-ftable           48 106   1.00000 E2
-wtable           48 106   1.00000 E2
-etableadjust     48 106   0.00000 E2
-ftableadjust     48 106   1.00000 E2
-wtableadjust     48 106   1.00000 E2
-upbendc          48 106 0.00000E+00 M2
-upbende          48 106 0.00000E+00 M2
-upbendf          48 106 0.00000E+00 M2
-upbendcadjust    48 106 1.00000E+00 M2
-upbendeadjust    48 106 1.00000E+00 M2
-upbendfadjust    48 106 1.00000E+00 M2
-sgr              48 106   0.001 M2
-egr              48 106   8.274 M2
-ggr              48 106   4.000 M2
-sgradjust        48 106   1.000 M2
-egradjust        48 106   1.000 M2
-ggradjust        48 106   1.000 M2
-## residual:
-##   Z: 47
-##   A: 104
-##   nuclide: Ag104 
-## parameters: 
-##   level density
-a                47 104  13.37780
-aadjust          47 104   1.00000
-gammald          47 104   0.09209
-pair             47 104   0.00000
-Pshift           47 104   0.00000   0
-Pshiftadjust     47 104   0.00000   0
-deltaW           47 104  -0.15780   0
-T                47 104   0.80811   0
-E0               47 104  -2.44512   0
-Exmatch          47 104   6.11013   0
-Tadjust          47 104   1.00000   0
-E0adjust         47 104   1.00000   0
-Exmatchadjust    47 104   1.00000   0
-Ntop             47 104  22   0
-Nlow             47 104   4   0
-s2adjust         47 104   1.00000   0
-ctable           47 104   0.00000   0
-ptable           47 104   0.00000   0
-ctableadjust     47 104   0.00000   0
-ptableadjust     47 104   0.00000   0
-Ufermi           47 104  30.00000   0
-cfermi           47 104   5.00000   0
-g                47 104   6.93333
-gp               47 104   3.13333
-gn               47 104   3.80000
-gnadjust         47 104   1.00000
-gpadjust         47 104   1.00000
-gadjust          47 104   1.00000
-Risomer          47 104   1.00000
-## parameters: 
-##   photon strength function
-gamgam           47 104   0.00000
-gamgamadjust     47 104   1.00000
-etable           47 104   0.00000 E1
-ftable           47 104   1.00000 E1
-wtable           47 104   1.00000 E1
-etableadjust     47 104   0.00000 E1
-ftableadjust     47 104   1.00000 E1
-wtableadjust     47 104   1.00000 E1
-upbendc          47 104 3.50000E-08 M1
-upbende          47 104 8.00000E-01 M1
-upbendf          47 104 6.00000E+00 M1
-upbendcadjust    47 104 1.00000E+00 M1
-upbendeadjust    47 104 1.00000E+00 M1
-upbendfadjust    47 104 1.00000E+00 M1
-sgr              47 104   1.439 M1
-egr              47 104   8.300 M1
-ggr              47 104   4.000 M1
-sgradjust        47 104   1.000 M1
-egradjust        47 104   1.000 M1
-ggradjust        47 104   1.000 M1
-etable           47 104   0.00000 E2
-ftable           47 104   1.00000 E2
-wtable           47 104   1.00000 E2
-etableadjust     47 104   0.00000 E2
-ftableadjust     47 104   1.00000 E2
-wtableadjust     47 104   1.00000 E2
-upbendc          47 104 0.00000E+00 M2
-upbende          47 104 0.00000E+00 M2
-upbendf          47 104 0.00000E+00 M2
-upbendcadjust    47 104 1.00000E+00 M2
-upbendeadjust    47 104 1.00000E+00 M2
-upbendfadjust    47 104 1.00000E+00 M2
-sgr              47 104   0.001 M2
-egr              47 104   8.300 M2
-ggr              47 104   4.000 M2
-sgradjust        47 104   1.000 M2
-egradjust        47 104   1.000 M2
-ggradjust        47 104   1.000 M2
-## residual:
-##   Z: 46
-##   A: 103
-##   nuclide: Pd103 
-## parameters: 
-##   level density
-a                46 103  13.96684
-aadjust          46 103   1.00000
-gammald          46 103   0.09239
-pair             46 103   1.18240
-Pshift           46 103   0.00000   0
-Pshiftadjust     46 103   0.00000   0
-deltaW           46 103   0.67189   0
-T                46 103   0.83658   0
-E0               46 103  -1.93310   0
-Exmatch          46 103   7.98148   0
-Tadjust          46 103   1.00000   0
-E0adjust         46 103   1.00000   0
-Exmatchadjust    46 103   1.00000   0
-Ntop             46 103  17   0
-Nlow             46 103   6   0
-s2adjust         46 103   1.00000   0
-ctable           46 103   0.00000   0
-ptable           46 103   0.00000   0
-ctableadjust     46 103   0.00000   0
-ptableadjust     46 103   0.00000   0
-Ufermi           46 103  30.00000   0
-cfermi           46 103   5.00000   0
-g                46 103   6.86667
-gp               46 103   3.06667
-gn               46 103   3.80000
-gnadjust         46 103   1.00000
-gpadjust         46 103   1.00000
-gadjust          46 103   1.00000
-Risomer          46 103   1.00000
-## parameters: 
-##   photon strength function
-gamgam           46 103   0.00011
-gamgamadjust     46 103   1.00000
-etable           46 103   0.00000 E1
-ftable           46 103   1.00000 E1
-wtable           46 103   1.00000 E1
-etableadjust     46 103   0.00000 E1
-ftableadjust     46 103   1.00000 E1
-wtableadjust     46 103   1.00000 E1
-upbendc          46 103 3.50000E-08 M1
-upbende          46 103 8.00000E-01 M1
-upbendf          46 103 6.00000E+00 M1
-upbendcadjust    46 103 1.00000E+00 M1
-upbendeadjust    46 103 1.00000E+00 M1
-upbendfadjust    46 103 1.00000E+00 M1
-sgr              46 103   1.427 M1
-egr              46 103   8.314 M1
-ggr              46 103   4.000 M1
-sgradjust        46 103   1.000 M1
-egradjust        46 103   1.000 M1
-ggradjust        46 103   1.000 M1
-etable           46 103   0.00000 E2
-ftable           46 103   1.00000 E2
-wtable           46 103   1.00000 E2
-etableadjust     46 103   0.00000 E2
-ftableadjust     46 103   1.00000 E2
-wtableadjust     46 103   1.00000 E2
-upbendc          46 103 0.00000E+00 M2
-upbende          46 103 0.00000E+00 M2
-upbendf          46 103 0.00000E+00 M2
-upbendcadjust    46 103 1.00000E+00 M2
-upbendeadjust    46 103 1.00000E+00 M2
-upbendfadjust    46 103 1.00000E+00 M2
-sgr              46 103   0.001 M2
-egr              46 103   8.314 M2
-ggr              46 103   4.000 M2
-sgradjust        46 103   1.000 M2
-egradjust        46 103   1.000 M2
-ggradjust        46 103   1.000 M2
-## residual:
 ##   Z: 46
 ##   A: 106
 ##   nuclide: Pd106 
@@ -987,6 +762,81 @@ ggr              45 103   4.000 M2
 sgradjust        45 103   1.000 M2
 egradjust        45 103   1.000 M2
 ggradjust        45 103   1.000 M2
+## residual:
+##   Z: 46
+##   A: 103
+##   nuclide: Pd103 
+## parameters: 
+##   level density
+a                46 103  13.96684
+aadjust          46 103   1.00000
+gammald          46 103   0.09239
+pair             46 103   1.18240
+Pshift           46 103   0.00000   0
+Pshiftadjust     46 103   0.00000   0
+deltaW           46 103   0.67189   0
+T                46 103   0.83658   0
+E0               46 103  -1.93310   0
+Exmatch          46 103   7.98148   0
+Tadjust          46 103   1.00000   0
+E0adjust         46 103   1.00000   0
+Exmatchadjust    46 103   1.00000   0
+Ntop             46 103  17   0
+Nlow             46 103   6   0
+s2adjust         46 103   1.00000   0
+ctable           46 103   0.00000   0
+ptable           46 103   0.00000   0
+ctableadjust     46 103   0.00000   0
+ptableadjust     46 103   0.00000   0
+Ufermi           46 103  30.00000   0
+cfermi           46 103   5.00000   0
+g                46 103   6.86667
+gp               46 103   3.06667
+gn               46 103   3.80000
+gnadjust         46 103   1.00000
+gpadjust         46 103   1.00000
+gadjust          46 103   1.00000
+Risomer          46 103   1.00000
+## parameters: 
+##   photon strength function
+gamgam           46 103   0.00011
+gamgamadjust     46 103   1.00000
+etable           46 103   0.00000 E1
+ftable           46 103   1.00000 E1
+wtable           46 103   1.00000 E1
+etableadjust     46 103   0.00000 E1
+ftableadjust     46 103   1.00000 E1
+wtableadjust     46 103   1.00000 E1
+upbendc          46 103 3.50000E-08 M1
+upbende          46 103 8.00000E-01 M1
+upbendf          46 103 6.00000E+00 M1
+upbendcadjust    46 103 1.00000E+00 M1
+upbendeadjust    46 103 1.00000E+00 M1
+upbendfadjust    46 103 1.00000E+00 M1
+sgr              46 103   1.427 M1
+egr              46 103   8.314 M1
+ggr              46 103   4.000 M1
+sgradjust        46 103   1.000 M1
+egradjust        46 103   1.000 M1
+ggradjust        46 103   1.000 M1
+etable           46 103   0.00000 E2
+ftable           46 103   1.00000 E2
+wtable           46 103   1.00000 E2
+etableadjust     46 103   0.00000 E2
+ftableadjust     46 103   1.00000 E2
+wtableadjust     46 103   1.00000 E2
+upbendc          46 103 0.00000E+00 M2
+upbende          46 103 0.00000E+00 M2
+upbendf          46 103 0.00000E+00 M2
+upbendcadjust    46 103 1.00000E+00 M2
+upbendeadjust    46 103 1.00000E+00 M2
+upbendfadjust    46 103 1.00000E+00 M2
+sgr              46 103   0.001 M2
+egr              46 103   8.314 M2
+ggr              46 103   4.000 M2
+sgradjust        46 103   1.000 M2
+egradjust        46 103   1.000 M2
+ggradjust        46 103   1.000 M2
 ## residual:
 ##   Z: 45
 ##   A: 102
@@ -1289,6 +1139,156 @@ ggr              44 100   4.000 M2
 sgradjust        44 100   1.000 M2
 egradjust        44 100   1.000 M2
 ggradjust        44 100   1.000 M2
+## residual:
+##   Z: 48
+##   A: 106
+##   nuclide: Cd106 
+## parameters: 
+##   level density
+a                48 106  13.14227
+aadjust          48 106   1.00000
+gammald          48 106   0.09151
+pair             48 106   2.33109
+Pshift           48 106   0.00000   0
+Pshiftadjust     48 106   0.00000   0
+deltaW           48 106  -0.60051   0
+T                48 106   0.82114   0
+E0               48 106  -0.11219   0
+Exmatch          48 106   8.64664   0
+Tadjust          48 106   1.00000   0
+E0adjust         48 106   1.00000   0
+Exmatchadjust    48 106   1.00000   0
+Ntop             48 106  38   0
+Nlow             48 106   6   0
+s2adjust         48 106   1.00000   0
+ctable           48 106   0.00000   0
+ptable           48 106   0.00000   0
+ctableadjust     48 106   0.00000   0
+ptableadjust     48 106   0.00000   0
+Ufermi           48 106  30.00000   0
+cfermi           48 106   5.00000   0
+g                48 106   7.06667
+gp               48 106   3.20000
+gn               48 106   3.86667
+gnadjust         48 106   1.00000
+gpadjust         48 106   1.00000
+gadjust          48 106   1.00000
+Risomer          48 106   1.00000
+## parameters: 
+##   photon strength function
+gamgam           48 106   0.00000
+gamgamadjust     48 106   1.00000
+etable           48 106   0.00000 E1
+ftable           48 106   1.00000 E1
+wtable           48 106   1.00000 E1
+etableadjust     48 106   0.00000 E1
+ftableadjust     48 106   1.00000 E1
+wtableadjust     48 106   1.00000 E1
+upbendc          48 106 3.50000E-08 M1
+upbende          48 106 8.00000E-01 M1
+upbendf          48 106 6.00000E+00 M1
+upbendcadjust    48 106 1.00000E+00 M1
+upbendeadjust    48 106 1.00000E+00 M1
+upbendfadjust    48 106 1.00000E+00 M1
+sgr              48 106   1.462 M1
+egr              48 106   8.274 M1
+ggr              48 106   4.000 M1
+sgradjust        48 106   1.000 M1
+egradjust        48 106   1.000 M1
+ggradjust        48 106   1.000 M1
+etable           48 106   0.00000 E2
+ftable           48 106   1.00000 E2
+wtable           48 106   1.00000 E2
+etableadjust     48 106   0.00000 E2
+ftableadjust     48 106   1.00000 E2
+wtableadjust     48 106   1.00000 E2
+upbendc          48 106 0.00000E+00 M2
+upbende          48 106 0.00000E+00 M2
+upbendf          48 106 0.00000E+00 M2
+upbendcadjust    48 106 1.00000E+00 M2
+upbendeadjust    48 106 1.00000E+00 M2
+upbendfadjust    48 106 1.00000E+00 M2
+sgr              48 106   0.001 M2
+egr              48 106   8.274 M2
+ggr              48 106   4.000 M2
+sgradjust        48 106   1.000 M2
+egradjust        48 106   1.000 M2
+ggradjust        48 106   1.000 M2
+## residual:
+##   Z: 47
+##   A: 104
+##   nuclide: Ag104 
+## parameters: 
+##   level density
+a                47 104  13.37780
+aadjust          47 104   1.00000
+gammald          47 104   0.09209
+pair             47 104   0.00000
+Pshift           47 104   0.00000   0
+Pshiftadjust     47 104   0.00000   0
+deltaW           47 104  -0.15780   0
+T                47 104   0.80811   0
+E0               47 104  -2.44512   0
+Exmatch          47 104   6.11013   0
+Tadjust          47 104   1.00000   0
+E0adjust         47 104   1.00000   0
+Exmatchadjust    47 104   1.00000   0
+Ntop             47 104  22   0
+Nlow             47 104   4   0
+s2adjust         47 104   1.00000   0
+ctable           47 104   0.00000   0
+ptable           47 104   0.00000   0
+ctableadjust     47 104   0.00000   0
+ptableadjust     47 104   0.00000   0
+Ufermi           47 104  30.00000   0
+cfermi           47 104   5.00000   0
+g                47 104   6.93333
+gp               47 104   3.13333
+gn               47 104   3.80000
+gnadjust         47 104   1.00000
+gpadjust         47 104   1.00000
+gadjust          47 104   1.00000
+Risomer          47 104   1.00000
+## parameters: 
+##   photon strength function
+gamgam           47 104   0.00000
+gamgamadjust     47 104   1.00000
+etable           47 104   0.00000 E1
+ftable           47 104   1.00000 E1
+wtable           47 104   1.00000 E1
+etableadjust     47 104   0.00000 E1
+ftableadjust     47 104   1.00000 E1
+wtableadjust     47 104   1.00000 E1
+upbendc          47 104 3.50000E-08 M1
+upbende          47 104 8.00000E-01 M1
+upbendf          47 104 6.00000E+00 M1
+upbendcadjust    47 104 1.00000E+00 M1
+upbendeadjust    47 104 1.00000E+00 M1
+upbendfadjust    47 104 1.00000E+00 M1
+sgr              47 104   1.439 M1
+egr              47 104   8.300 M1
+ggr              47 104   4.000 M1
+sgradjust        47 104   1.000 M1
+egradjust        47 104   1.000 M1
+ggradjust        47 104   1.000 M1
+etable           47 104   0.00000 E2
+ftable           47 104   1.00000 E2
+wtable           47 104   1.00000 E2
+etableadjust     47 104   0.00000 E2
+ftableadjust     47 104   1.00000 E2
+wtableadjust     47 104   1.00000 E2
+upbendc          47 104 0.00000E+00 M2
+upbende          47 104 0.00000E+00 M2
+upbendf          47 104 0.00000E+00 M2
+upbendcadjust    47 104 1.00000E+00 M2
+upbendeadjust    47 104 1.00000E+00 M2
+upbendfadjust    47 104 1.00000E+00 M2
+sgr              47 104   0.001 M2
+egr              47 104   8.300 M2
+ggr              47 104   4.000 M2
+sgradjust        47 104   1.000 M2
+egradjust        47 104   1.000 M2
+ggradjust        47 104   1.000 M2
 ## residual:
 ##   Z: 48
 ##   A: 105

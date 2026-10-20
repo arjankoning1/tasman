@@ -2,7 +2,7 @@
 #   title: Ag107(p,el) cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 47
@@ -19,7 +19,7 @@
 #     entries: 19
 ##       E             xs
 ##     [MeV]          [mb]
-   2.000000E+00   3.327188E-07
+   2.000000E+00   3.327189E-07
    3.000000E+00   3.649030E-05
    4.000000E+00   1.497228E-03
    5.000000E+00   1.874368E-02

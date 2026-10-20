@@ -2,7 +2,7 @@
 #   title: Nb93(n,x)Nb93 cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 41
@@ -36,4 +36,4 @@
    4.000000E+00   1.958260E+03
    5.000000E+00   1.823025E+03
    8.000000E+00   1.791674E+03
-   1.000000E+01   1.132575E+03
+   1.000000E+01   1.132121E+03

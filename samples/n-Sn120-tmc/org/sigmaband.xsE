@@ -651,7 +651,7 @@
    6.00000E+00           1     0     1     0.00000
    7.00000E+00           1     0     1     0.00000
    8.00000E+00           1     1     0     1.00000
-   9.00000E+00           1     0     1     0.00000
+   9.00000E+00           1     1     0     1.00000
    1.00000E+01           1     0     1     0.00000
    1.20000E+01           4     0     4     0.00000
    1.40000E+01           5     1     4     0.20000
@@ -659,7 +659,7 @@
    1.80000E+01           2     0     2     0.00000
    2.00000E+01           0     0     0     1.00000
 #  Energy (MeV)     Points Inside Outside Inside fraction
-#   Total               34    19    15     0.55882
+#   Total               34    20    14     0.58824
 # Channel: xs110000.tot         Energies:  40
 #  Energy (MeV)     Points Inside Outside Inside fraction
    1.00000E-11           0     0     0     1.00000
@@ -824,7 +824,7 @@
    3.50000E+00           1     0     1     0.00000
    4.00000E+00           1     0     1     0.00000
    5.00000E+00           1     0     1     0.00000
-   6.00000E+00           1     0     1     0.00000
+   6.00000E+00           1     1     0     1.00000
    7.00000E+00           1     0     1     0.00000
    8.00000E+00           1     0     1     0.00000
    9.00000E+00           1     0     1     0.00000
@@ -835,7 +835,7 @@
    1.80000E+01           2     0     2     0.00000
    2.00000E+01           0     0     0     1.00000
 #  Energy (MeV)     Points Inside Outside Inside fraction
-#   Total               31    12    19     0.38710
+#   Total               31    13    18     0.41935
 # Channel: xs000001.L00         Energies:  40
 #  Energy (MeV)     Points Inside Outside Inside fraction
    1.00000E-11           0     0     0     1.00000
@@ -962,12 +962,12 @@
    9.00000E+00           1     0     1     0.00000
    1.00000E+01           1     0     1     0.00000
    1.20000E+01           1     1     0     1.00000
-   1.40000E+01           1     1     0     1.00000
+   1.40000E+01           1     0     1     0.00000
    1.60000E+01           1     0     1     0.00000
    1.80000E+01           2     0     2     0.00000
    2.00000E+01           0     0     0     1.00000
 #  Energy (MeV)     Points Inside Outside Inside fraction
-#   Total               27    22     5     0.81481
+#   Total               27    21     6     0.77778
 # Channel: nn.L01               Energies:  40
 #  Energy (MeV)     Points Inside Outside Inside fraction
    1.00000E-11           0     0     0     1.00000

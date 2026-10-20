@@ -7,7 +7,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-22
+ Date: 2026-10-20
 
  ########## USER INPUT ##########
 
@@ -138,6 +138,9 @@
  #user   Arjan Koning      user         user for this calculation
  #source TASMAN            source       source for this calculation
  #format YANDF-0.4         oformat      format for output
+ #exforpath                exforpath     /Users/koning/exfortables/
+ #librariespath            librariespath /Users/koning/libraries/
+ #databasepath             databasepath  /Users/koning/
  #
  # Keywords for mode 3
  #
@@ -235,7 +238,7 @@ awdadjust    p    1.00000
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.219          1.034          26.51         1.0000E+38 (   0)     1.0000E+38 (   0)
+xs100000.tot        3   102      1.219          1.034          26.49         1.0000E+38 (   0)     1.0000E+38 (   0)
 
 # GOF no.                0   1.034    
 # Nuclides         :    1
@@ -244,9 +247,9 @@ xs100000.tot        3   102      1.219          1.034          26.51         1.0
 # Data points      :    102
 # Frms             :   1.219     Optimum:   1.0000E+38
 # Erms             :   1.034     Optimum:   1.0000E+38
-# Chi2             :   26.51     Optimum:   1.0000E+38
+# Chi2             :   26.49     Optimum:   1.0000E+38
 
-  47 107 Run:     0 New optimum (Frms Erms Chi-2):    1.218712E+00   1.034251E+00   2.650989E+01
+  47 107 Run:     0 New optimum (Frms Erms Chi-2):    1.218913E+00   1.033674E+00   2.648841E+01
 
 #                         Goodness-of-fit
 # TALYS run        :     1
@@ -302,18 +305,18 @@ awdadjust    p    0.94779
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.209         0.9523          13.73          1.034     (   0)      1.034     (   0)
+xs100000.tot        3   102      1.210         0.9518          13.74          1.034     (   0)      1.034     (   0)
 
-# GOF no.                1  0.9523    
+# GOF no.                1  0.9518    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
-# Frms             :   1.209     Optimum:    1.219    
-# Erms             :  0.9523     Optimum:    1.034    
-# Chi2             :   13.73     Optimum:    26.51    
+# Frms             :   1.210     Optimum:    1.219    
+# Erms             :  0.9518     Optimum:    1.034    
+# Chi2             :   13.74     Optimum:    26.49    
 
-  47 107 Run:     1 New optimum (Frms Erms Chi-2):    1.209324E+00   9.523317E-01   1.373180E+01
+  47 107 Run:     1 New optimum (Frms Erms Chi-2):    1.209804E+00   9.517519E-01   1.373637E+01
 
 #                         Goodness-of-fit
 # TALYS run        :     2
@@ -369,16 +372,16 @@ awdadjust    p    1.00240
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.369          1.189          132.3         0.9523     (   1)     0.9523     (   1)
+xs100000.tot        3   102      1.368          1.188          132.2         0.9518     (   1)     0.9518     (   1)
 
-# GOF no.                2   1.189    
+# GOF no.                2   1.188    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
-# Frms             :   1.369     Optimum:    1.209    
-# Erms             :   1.189     Optimum:   0.9523    
-# Chi2             :   132.3     Optimum:    13.73    
+# Frms             :   1.368     Optimum:    1.210    
+# Erms             :   1.188     Optimum:   0.9518    
+# Chi2             :   132.2     Optimum:    13.74    
 
 
 #                         Goodness-of-fit
@@ -435,16 +438,16 @@ awdadjust    p    1.07122
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.353          1.200          148.1         0.9523     (   1)     0.9523     (   1)
+xs100000.tot        3   102      1.353          1.200          148.1         0.9518     (   1)     0.9518     (   1)
 
 # GOF no.                3   1.200    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
-# Frms             :   1.353     Optimum:    1.209    
-# Erms             :   1.200     Optimum:   0.9523    
-# Chi2             :   148.1     Optimum:    13.73    
+# Frms             :   1.353     Optimum:    1.210    
+# Erms             :   1.200     Optimum:   0.9518    
+# Chi2             :   148.1     Optimum:    13.74    
 
 
 #                         Goodness-of-fit
@@ -501,16 +504,16 @@ awdadjust    p    1.02091
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.195         0.9722          14.44         0.9523     (   1)     0.9523     (   1)
+xs100000.tot        3   102      1.194         0.9716          14.34         0.9518     (   1)     0.9518     (   1)
 
-# GOF no.                4  0.9722    
+# GOF no.                4  0.9716    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
-# Frms             :   1.195     Optimum:    1.209    
-# Erms             :  0.9722     Optimum:   0.9523    
-# Chi2             :   14.44     Optimum:    13.73    
+# Frms             :   1.194     Optimum:    1.210    
+# Erms             :  0.9716     Optimum:   0.9518    
+# Chi2             :   14.34     Optimum:    13.74    
 
 
 #                         Goodness-of-fit
@@ -567,16 +570,16 @@ awdadjust    p    0.96419
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.438          1.130          178.1         0.9523     (   1)     0.9523     (   1)
+xs100000.tot        3   102      1.439          1.129          178.2         0.9518     (   1)     0.9518     (   1)
 
-# GOF no.                5   1.130    
+# GOF no.                5   1.129    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
-# Frms             :   1.438     Optimum:    1.209    
-# Erms             :   1.130     Optimum:   0.9523    
-# Chi2             :   178.1     Optimum:    13.73    
+# Frms             :   1.439     Optimum:    1.210    
+# Erms             :   1.129     Optimum:   0.9518    
+# Chi2             :   178.2     Optimum:    13.74    
 
 
 #                         Goodness-of-fit
@@ -633,18 +636,18 @@ awdadjust    p    1.06262
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.212         0.9231          12.41         0.9523     (   1)     0.9523     (   1)
+xs100000.tot        3   102      1.212         0.9225          12.38         0.9518     (   1)     0.9518     (   1)
 
-# GOF no.                6  0.9231    
+# GOF no.                6  0.9225    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
-# Frms             :   1.212     Optimum:    1.209    
-# Erms             :  0.9231     Optimum:   0.9523    
-# Chi2             :   12.41     Optimum:    13.73    
+# Frms             :   1.212     Optimum:    1.210    
+# Erms             :  0.9225     Optimum:   0.9518    
+# Chi2             :   12.38     Optimum:    13.74    
 
-  47 107 Run:     6 New optimum (Frms Erms Chi-2):    1.211882E+00   9.231185E-01   1.240694E+01
+  47 107 Run:     6 New optimum (Frms Erms Chi-2):    1.212165E+00   9.225407E-01   1.238105E+01
 
 #                         Goodness-of-fit
 # TALYS run        :     7
@@ -700,16 +703,16 @@ awdadjust    p    1.00920
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.206          1.061          22.76         0.9231     (   6)     0.9231     (   6)
+xs100000.tot        3   102      1.206          1.060          22.62         0.9225     (   6)     0.9225     (   6)
 
-# GOF no.                7   1.061    
+# GOF no.                7   1.060    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
 # Frms             :   1.206     Optimum:    1.212    
-# Erms             :   1.061     Optimum:   0.9231    
-# Chi2             :   22.76     Optimum:    12.41    
+# Erms             :   1.060     Optimum:   0.9225    
+# Chi2             :   22.62     Optimum:    12.38    
 
 
 #                         Goodness-of-fit
@@ -766,16 +769,16 @@ awdadjust    p    0.94138
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.242          1.027          28.38         0.9231     (   6)     0.9231     (   6)
+xs100000.tot        3   102      1.242          1.026          28.26         0.9225     (   6)     0.9225     (   6)
 
-# GOF no.                8   1.027    
+# GOF no.                8   1.026    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
 # Frms             :   1.242     Optimum:    1.212    
-# Erms             :   1.027     Optimum:   0.9231    
-# Chi2             :   28.38     Optimum:    12.41    
+# Erms             :   1.026     Optimum:   0.9225    
+# Chi2             :   28.26     Optimum:    12.38    
 
 
 #                         Goodness-of-fit
@@ -832,7 +835,7 @@ awdadjust    p    0.97013
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.233          1.049          33.54         0.9231     (   6)     0.9231     (   6)
+xs100000.tot        3   102      1.233          1.049          33.54         0.9225     (   6)     0.9225     (   6)
 
 # GOF no.                9   1.049    
 # Nuclides         :    1
@@ -840,8 +843,8 @@ xs100000.tot        3   102      1.233          1.049          33.54         0.9
 # Data sets        :    3
 # Data points      :    102
 # Frms             :   1.233     Optimum:    1.212    
-# Erms             :   1.049     Optimum:   0.9231    
-# Chi2             :   33.54     Optimum:    12.41    
+# Erms             :   1.049     Optimum:   0.9225    
+# Chi2             :   33.54     Optimum:    12.38    
 
 
 #                         Goodness-of-fit
@@ -898,19 +901,19 @@ awdadjust    p    0.99233
 
 # Channel summary  : Ag107 
 # Channel        Sets  Points     Frms           Erms          Chi2           Total optimum         Channel optimum
-xs100000.tot        3   102      1.283         0.9927          38.22         0.9231     (   6)     0.9231     (   6)
+xs100000.tot        3   102      1.284         0.9921          38.26         0.9225     (   6)     0.9225     (   6)
 
-# GOF no.               10  0.9927    
+# GOF no.               10  0.9921    
 # Nuclides         :    1
 # Channels         :    1
 # Data sets        :    3
 # Data points      :    102
-# Frms             :   1.283     Optimum:    1.212    
-# Erms             :  0.9927     Optimum:   0.9231    
-# Chi2             :   38.22     Optimum:    12.41    
+# Frms             :   1.284     Optimum:    1.212    
+# Erms             :  0.9921     Optimum:   0.9225    
+# Chi2             :   38.26     Optimum:    12.38    
 
  Maximum number of runs done:           10
 
- Execution time:  0 hours  0 minutes  0.29 seconds 
+ Execution time:  0 hours  0 minutes  0.26 seconds 
 
  This TASMAN run has finished

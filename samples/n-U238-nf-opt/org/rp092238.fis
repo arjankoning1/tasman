@@ -2,7 +2,7 @@
 #   title: U238(n,f)U238 cross section per fissioning nuclide
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 92
@@ -39,6 +39,6 @@
    4.000000E+00   1.173311E-01
    4.200000E+00   6.246800E-01
    4.400000E+00   2.655627E+00
-   4.600000E+00   9.316855E+00
+   4.600000E+00   9.316858E+00
    4.800000E+00   2.758796E+01
    5.000000E+00   6.960804E+01

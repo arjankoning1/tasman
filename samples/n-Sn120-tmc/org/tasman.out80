@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-22
+ Date: 2026-10-20
 
  ########## USER INPUT ##########
 
@@ -455,6 +455,9 @@
  #user   Arjan Koning      user         user for this calculation
  #source TASMAN            source       source for this calculation
  #format YANDF-0.4         oformat      format for output
+ #exforpath                exforpath     /Users/koning/exfortables/
+ #librariespath            librariespath /Users/koning/libraries/
+ #databasepath             databasepath  /Users/koning/
  #
  # Keywords for mode 1
  #
@@ -1427,7 +1430,7 @@ cbreak             1.000000E+00   2.000000E+00   3.333333E-01   3.000000E+00
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0000 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
+       autonjoy-1.2 (Version October 6 2026) (C) Copyright 2026 Arjan Koning, Al
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0000 -nopurr -outname 2 -mcnpext .
 
@@ -1754,24 +1757,24 @@ total.tot          12   398      1.056          1.026          4.952         1.0
 elastic.tot         3    51      1.295         0.8870          40.98         1.0
 nonelastic.tot      1    19      1.000         0.9999         2.8385E-04     1.0
 xs000000.tot        4   101      1.186         0.9885          10.23         1.0
-xs000000.L00        1    25      1.308         0.9721         0.4631         1.0
+xs000000.L00        1    25      1.308         0.9721         0.4630         1.0
 xs000000.L01        1    22      1.266         0.8524         0.3256         1.0
-xs100000.tot        1    14      1.004          1.001         6.0654E-03     1.0
-xs200000.tot        2     7      1.204         0.8410          1.457         1.0
-xs200000.L00        1     6      1.083         0.9512         0.1663         1.0
-xs200000.L02        2    13      1.117         0.9060          1.061         1.0
-xs300000.tot        1     1      1.927         0.5189          1.583         1.0
-xs010000.tot        1     4      1.163          1.163         0.6033         1.0
-xs010000.L00        2     5      1.062          1.062         0.5249         1.0
+xs100000.tot        1    14      1.004          1.001         6.0810E-03     1.0
+xs200000.tot        2     7      1.205         0.8408          1.461         1.0
+xs200000.L00        1     6      1.084         0.9512         0.1665         1.0
+xs200000.L02        2    13      1.117         0.9059          1.066         1.0
+xs300000.tot        1     1      1.931         0.5179          1.587         1.0
+xs010000.tot        1     4      1.163          1.163         0.6034         1.0
+xs010000.L00        2     5      1.062          1.062         0.5247         1.0
 xs010000.L01        4    12      1.161          1.077         0.7014         1.0
-xs010000.L02        2     5      1.244          1.140         0.7464         1.0
-xs110000.tot        1     2      1.047          1.042         0.1084         1.0
-xs110000.L00        1     2      1.022          1.020         2.8607E-02     1.0
-xs110000.L01        1     2      1.038          1.034         3.0871E-02     1.0
-xs000001.tot        1     3      1.377          1.373         0.6693         1.0
-xs000001.L00        5     9      1.619         0.9285          4.451         1.0
-xs000001.L02        2     4      1.127         0.9445         0.5115         1.0
-xs100001.tot        1     2      1.873          1.869          2.060         1.0
+xs010000.L02        2     5      1.244          1.140         0.7468         1.0
+xs110000.tot        1     2      1.047          1.042         0.1085         1.0
+xs110000.L00        1     2      1.022          1.020         2.8613E-02     1.0
+xs110000.L01        1     2      1.038          1.034         3.0925E-02     1.0
+xs000001.tot        1     3      1.377          1.374         0.6698         1.0
+xs000001.L00        5     9      1.619         0.9284          4.452         1.0
+xs000001.L02        2     4      1.127         0.9444         0.5128         1.0
+xs100001.tot        1     2      1.887          1.883          2.110         1.0
 nn.L01              2    41      1.017         0.9927         7.5690E-02     1.0
 nn.L02              1     5      1.002          1.001         2.6966E-03     1.0
 nn.L03              1     5      1.015          1.009         2.6410E-02     1.0
@@ -1783,10 +1786,10 @@ nn.L04              1     5      1.007          1.004         1.0856E-02     1.0
 # Data sets        :   55
 # Data points      :    763
 # Frms             :   1.195     Optimum:   1.0000E+38
-# Erms             :   1.008     Optimum:   1.0000E+38
-# Chi2             :   4.785     Optimum:   1.0000E+38
+# Erms             :   1.009     Optimum:   1.0000E+38
+# Chi2             :   4.786     Optimum:   1.0000E+38
 
-  50 120 Run:     0 New optimum (Frms Erms Chi-2):    1.194784E+00   1.008485E+0
+  50 120 Run:     0 New optimum (Frms Erms Chi-2):    1.195171E+00   1.008700E+0
 Weight of run     0: 1.00000E+00 Sum: 1.00000E+00
 
   Parameters for input file:     1
@@ -2410,42 +2413,42 @@ xs000000.tot        4   101      1.166         0.9227          4.130          1.
 xs000000.L00        1    25      1.183         0.8631         0.2061          1.
 xs000000.L01        1    22      1.192         0.8516         0.2251          1.
 xs100000.tot        1    14      1.036          1.011         0.1772          1.
-xs200000.tot        2     7      1.008         0.9967         2.9960E-02      1.
-xs200000.L00        1     6      1.042          1.019         7.1033E-02      1.
-xs200000.L02        2    13      1.080          1.064          2.032          1.
+xs200000.tot        2     7      1.008         0.9967         3.0250E-02      1.
+xs200000.L00        1     6      1.043          1.020         7.1168E-02      1.
+xs200000.L02        2    13      1.079          1.064          2.020          1.
 xs300000.tot        1     1      1.087         0.9204         0.2140          1.
-xs010000.tot        1     4      1.747         0.5751          1.917          1.
+xs010000.tot        1     4      1.747         0.5750          1.917          1.
 xs010000.L00        2     5      2.086         0.5253          25.58          1.
-xs010000.L01        4    12      2.397         0.4767          5.504          1.
-xs010000.L02        2     5      2.175         0.5984          7.028          1.
+xs010000.L01        4    12      2.397         0.4767          5.505          1.
+xs010000.L02        2     5      2.175         0.5984          7.029          1.
 xs110000.tot        1     2      1.120         0.9051         0.2843          1.
 xs110000.L00        1     2      1.077         0.9351         0.1086          1.
-xs110000.L01        1     2      1.035         0.9759         3.2984E-02      1.
-xs000001.tot        1     3      1.871          1.867          1.840          1.
-xs000001.L00        5     9      1.487          1.180          2.195          1.
-xs000001.L02        2     4      1.145          1.142         0.1299          1.
-xs100001.tot        1     2      4.861          4.857          28.96          1.
+xs110000.L01        1     2      1.035         0.9758         3.3005E-02      1.
+xs000001.tot        1     3      1.871          1.867          1.837          1.
+xs000001.L00        5     9      1.488          1.180          2.196          1.
+xs000001.L02        2     4      1.145          1.142         0.1294          1.
+xs100001.tot        1     2      4.892          4.888          29.49          1.
 nn.L01              2    41      1.272          1.122          1.108          1.
 nn.L02              1     5      1.020         0.9825         3.3386E-02      1.
 nn.L03              1     5      1.062          1.027         0.1098          1.
 nn.L04              1     5      1.024         0.9820         3.7540E-02      1.
 
-# GOF no.                1   1.436    
+# GOF no.                1   1.437    
 # Nuclides         :    1
 # Channels         :   26
 # Data sets        :   55
 # Data points      :    763
-# Frms             :   1.436     Optimum:    1.195    
-# Erms             :  0.9912     Optimum:    1.008    
-# Chi2             :   10.62     Optimum:    4.785    
+# Frms             :   1.437     Optimum:    1.195    
+# Erms             :  0.9917     Optimum:    1.009    
+# Chi2             :   10.63     Optimum:    4.786    
 
-Weight of run     1: 8.86354E-01 Sum: 1.88635E+00
+Weight of run     1: 8.86257E-01 Sum: 1.88626E+00
  TASMAN: Create random ENDF-6 file 
  TASMAN: Run TEFAL 
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0001 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
+       autonjoy-1.2 (Version October 6 2026) (C) Copyright 2026 Arjan Koning, Al
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0001 -nopurr -outname 2 -mcnpext .
 
@@ -3077,21 +3080,21 @@ xs000000.tot        4   101      1.199          1.028          19.59          1.
 xs000000.L00        1    25      1.141         0.8958         0.1593          1.
 xs000000.L01        1    22      1.231         0.8363         0.2532          1.
 xs100000.tot        1    14      1.047          1.035         0.2170          1.
-xs200000.tot        2     7      1.065         0.9443         0.4181          1.
-xs200000.L00        1     6      1.030         0.9975         5.7194E-02      1.
-xs200000.L02        2    13      1.044         0.9810         0.2565          1.
-xs300000.tot        1     1      1.501         0.6662          1.015          1.
-xs010000.tot        1     4      1.637          1.634          3.528          1.
-xs010000.L00        2     5      1.395          1.392          9.792          1.
+xs200000.tot        2     7      1.065         0.9441         0.4202          1.
+xs200000.L00        1     6      1.030         0.9976         5.7414E-02      1.
+xs200000.L02        2    13      1.044         0.9809         0.2552          1.
+xs300000.tot        1     1      1.504         0.6650          1.019          1.
+xs010000.tot        1     4      1.637          1.634          3.529          1.
+xs010000.L00        2     5      1.395          1.392          9.791          1.
 xs010000.L01        4    12      1.320          1.311          1.929          1.
-xs010000.L02        2     5      1.510          1.485          1.595          1.
+xs010000.L02        2     5      1.510          1.485          1.596          1.
 xs110000.tot        1     2      1.587          1.587          2.159          1.
 xs110000.L00        1     2      1.390          1.390         0.6807          1.
-xs110000.L01        1     2      1.375          1.374         0.4400          1.
+xs110000.L01        1     2      1.375          1.374         0.4401          1.
 xs000001.tot        1     3      1.567          1.563          1.070          1.
-xs000001.L00        5     9      1.556          1.051          3.340          1.
-xs000001.L02        2     4      1.095          1.021         0.2305          1.
-xs100001.tot        1     2      2.093          2.088          2.843          1.
+xs000001.L00        5     9      1.556          1.051          3.341          1.
+xs000001.L02        2     4      1.095          1.021         0.2316          1.
+xs100001.tot        1     2      2.107          2.101          2.905          1.
 nn.L01              2    41      1.116         0.9988         0.2892          1.
 nn.L02              1     5      1.041          1.039         8.8414E-02      1.
 nn.L03              1     5      1.045          1.044         0.1023          1.
@@ -3103,16 +3106,16 @@ nn.L04              1     5      1.052          1.050         0.1240          1.
 # Data sets        :   55
 # Data points      :    763
 # Frms             :   1.282     Optimum:    1.195    
-# Erms             :   1.152     Optimum:    1.008    
-# Chi2             :   16.56     Optimum:    4.785    
+# Erms             :   1.152     Optimum:    1.009    
+# Chi2             :   16.56     Optimum:    4.786    
 
-Weight of run     2: 9.57317E-01 Sum: 2.84367E+00
+Weight of run     2: 9.57333E-01 Sum: 2.84359E+00
  TASMAN: Create random ENDF-6 file 
  TASMAN: Run TEFAL 
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0002 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
+       autonjoy-1.2 (Version October 6 2026) (C) Copyright 2026 Arjan Koning, Al
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0002 -nopurr -outname 2 -mcnpext .
 
@@ -3741,45 +3744,45 @@ total.tot          12   398      1.402          1.345          219.3          1.
 elastic.tot         3    51      1.636          1.128          84.59          1.
 nonelastic.tot      1    19      1.042          1.012         0.1345          1.
 xs000000.tot        4   101      1.256          1.030          19.48          1.
-xs000000.L00        1    25      1.992          1.240          4.908          1.
+xs000000.L00        1    25      1.992          1.240          4.907          1.
 xs000000.L01        1    22      1.575         0.9287          1.438          1.
 xs100000.tot        1    14      1.087          1.042         0.3891          1.
-xs200000.tot        2     7      1.320         0.7704          2.373          1.
-xs200000.L00        1     6      1.123         0.9206         0.2335          1.
-xs200000.L02        2    13      1.225         0.8257          3.069          1.
-xs300000.tot        1     1      2.188         0.4570          1.851          1.
+xs200000.tot        2     7      1.320         0.7703          2.377          1.
+xs200000.L00        1     6      1.123         0.9206         0.2336          1.
+xs200000.L02        2    13      1.225         0.8256          3.078          1.
+xs300000.tot        1     1      2.192         0.4561          1.855          1.
 xs010000.tot        1     4      1.302          1.297          1.205          1.
 xs010000.L00        2     5      1.211          1.210          4.117          1.
 xs010000.L01        4    12      1.196          1.170         0.9905          1.
-xs010000.L02        2     5      1.256          1.234         0.5842          1.
-xs110000.tot        1     2      1.119          1.114         0.3127          1.
-xs110000.L00        1     2      1.058          1.056         8.5646E-02      1.
-xs110000.L01        1     2      1.091          1.090         9.0137E-02      1.
-xs000001.tot        1     3      2.453          2.408          3.506          1.
-xs000001.L00        5     9      1.651          1.648          1.732          1.
-xs000001.L02        2     4      1.480          1.449          1.534          1.
-xs100001.tot        1     2      3.916          3.893          17.25          1.
+xs010000.L02        2     5      1.256          1.234         0.5845          1.
+xs110000.tot        1     2      1.119          1.114         0.3128          1.
+xs110000.L00        1     2      1.058          1.056         8.5635E-02      1.
+xs110000.L01        1     2      1.092          1.090         9.0259E-02      1.
+xs000001.tot        1     3      2.454          2.409          3.507          1.
+xs000001.L00        5     9      1.651          1.648          1.731          1.
+xs000001.L02        2     4      1.480          1.449          1.532          1.
+xs100001.tot        1     2      3.942          3.917          17.62          1.
 nn.L01              2    41      1.113          1.049         0.4989          1.
 nn.L02              1     5      1.011          1.009         1.5495E-02      1.
 nn.L03              1     5      1.042          1.030         5.8313E-02      1.
 nn.L04              1     5      1.015          1.010         1.8787E-02      1.
 
-# GOF no.                3   1.418    
+# GOF no.                3   1.419    
 # Nuclides         :    1
 # Channels         :   26
 # Data sets        :   55
 # Data points      :    763
-# Frms             :   1.418     Optimum:    1.195    
-# Erms             :   1.257     Optimum:    1.008    
-# Chi2             :   55.13     Optimum:    4.785    
+# Frms             :   1.419     Optimum:    1.195    
+# Erms             :   1.258     Optimum:    1.009    
+# Chi2             :   55.13     Optimum:    4.786    
 
-Weight of run     3: 8.94198E-01 Sum: 3.73787E+00
+Weight of run     3: 8.94113E-01 Sum: 3.73770E+00
  TASMAN: Create random ENDF-6 file 
  TASMAN: Run TEFAL 
  TASMAN: Run NJOY 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0003 -nopurr -outname 2 -mcnpext .
 
-       autonjoy-1.2 (Version September 7 2026) (C) Copyright 2026 Arjan Koning, 
+       autonjoy-1.2 (Version October 6 2026) (C) Copyright 2026 Arjan Koning, Al
 
 /Users/koning/bin/autonjoy -file n-Sn120-rand-0003 -nopurr -outname 2 -mcnpext .
 

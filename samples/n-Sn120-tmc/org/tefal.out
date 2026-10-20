@@ -90,8 +90,8 @@
  endffile n-Sn120.endf endffile      name of ENDF file
 
 
- Number of deleted points:   182 (see file tefal.clean)
+ Number of deleted points:   200 (see file tefal.clean)
 
- Execution time:  0 hours  0 minutes  2.00 seconds 
+ Execution time:  0 hours  0 minutes  1.90 seconds 
 
  TEFAL has created the following ENDF-6 file: n-Sn120.endf

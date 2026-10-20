@@ -2,7 +2,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.250000E-03 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -120,7 +120,7 @@
 #   title: Sn120(n,g_0) angular distribution at 2.000000E-03 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -238,7 +238,7 @@
 #   title: Sn120(n,g_0) angular distribution at 5.000000E-03 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -356,7 +356,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.000000E-02 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -474,7 +474,7 @@
 #   title: Sn120(n,g_0) angular distribution at 2.000000E-02 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -592,7 +592,7 @@
 #   title: Sn120(n,g_0) angular distribution at 5.000000E-02 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -710,7 +710,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.000000E-01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -828,7 +828,7 @@
 #   title: Sn120(n,g_0) angular distribution at 2.000000E-01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -946,7 +946,7 @@
 #   title: Sn120(n,g_0) angular distribution at 5.000000E-01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1064,7 +1064,7 @@
 #   title: Sn120(n,g_0) angular distribution at 8.000000E-01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1182,7 +1182,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1300,7 +1300,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.200000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1418,7 +1418,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.400000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1536,7 +1536,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.600000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1654,7 +1654,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.800000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1772,7 +1772,7 @@
 #   title: Sn120(n,g_0) angular distribution at 2.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -1890,7 +1890,7 @@
 #   title: Sn120(n,g_0) angular distribution at 2.500000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2008,7 +2008,7 @@
 #   title: Sn120(n,g_0) angular distribution at 3.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2126,7 +2126,7 @@
 #   title: Sn120(n,g_0) angular distribution at 3.500000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2244,7 +2244,7 @@
 #   title: Sn120(n,g_0) angular distribution at 4.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2362,7 +2362,7 @@
 #   title: Sn120(n,g_0) angular distribution at 5.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2480,7 +2480,7 @@
 #   title: Sn120(n,g_0) angular distribution at 6.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2598,7 +2598,7 @@
 #   title: Sn120(n,g_0) angular distribution at 7.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2716,7 +2716,7 @@
 #   title: Sn120(n,g_0) angular distribution at 8.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2834,7 +2834,7 @@
 #   title: Sn120(n,g_0) angular distribution at 9.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -2867,7 +2867,7 @@
    1.400000E+01   7.033983E-04   6.837603E-04   1.963792E-05
    1.600000E+01   7.033701E-04   6.837603E-04   1.960973E-05
    1.800000E+01   7.033385E-04   6.837603E-04   1.957820E-05
-   2.000000E+01   7.033038E-04   6.837603E-04   1.954348E-05
+   2.000000E+01   7.033038E-04   6.837603E-04   1.954347E-05
    2.200000E+01   7.032661E-04   6.837603E-04   1.950574E-05
    2.400000E+01   7.032255E-04   6.837603E-04   1.946517E-05
    2.600000E+01   7.031823E-04   6.837603E-04   1.942196E-05
@@ -2898,7 +2898,7 @@
    7.600000E+01   7.019702E-04   6.837603E-04   1.820993E-05
    7.800000E+01   7.019455E-04   6.837603E-04   1.818516E-05
    8.000000E+01   7.019243E-04   6.837603E-04   1.816400E-05
-   8.200000E+01   7.019069E-04   6.837603E-04   1.814653E-05
+   8.200000E+01   7.019069E-04   6.837603E-04   1.814654E-05
    8.400000E+01   7.018932E-04   6.837603E-04   1.813287E-05
    8.600000E+01   7.018834E-04   6.837603E-04   1.812306E-05
    8.800000E+01   7.018775E-04   6.837603E-04   1.811715E-05
@@ -2906,7 +2906,7 @@
    9.200000E+01   7.018775E-04   6.837603E-04   1.811715E-05
    9.400000E+01   7.018834E-04   6.837603E-04   1.812306E-05
    9.600000E+01   7.018932E-04   6.837603E-04   1.813287E-05
-   9.800000E+01   7.019069E-04   6.837603E-04   1.814653E-05
+   9.800000E+01   7.019069E-04   6.837603E-04   1.814654E-05
    1.000000E+02   7.019243E-04   6.837603E-04   1.816400E-05
    1.020000E+02   7.019455E-04   6.837603E-04   1.818516E-05
    1.040000E+02   7.019702E-04   6.837603E-04   1.820993E-05
@@ -2937,7 +2937,7 @@
    1.540000E+02   7.031823E-04   6.837603E-04   1.942196E-05
    1.560000E+02   7.032255E-04   6.837603E-04   1.946517E-05
    1.580000E+02   7.032661E-04   6.837603E-04   1.950574E-05
-   1.600000E+02   7.033038E-04   6.837603E-04   1.954348E-05
+   1.600000E+02   7.033038E-04   6.837603E-04   1.954347E-05
    1.620000E+02   7.033385E-04   6.837603E-04   1.957820E-05
    1.640000E+02   7.033701E-04   6.837603E-04   1.960973E-05
    1.660000E+02   7.033983E-04   6.837603E-04   1.963792E-05
@@ -2952,7 +2952,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3070,7 +3070,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.200000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3188,7 +3188,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.400000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3306,7 +3306,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.600000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3424,7 +3424,7 @@
 #   title: Sn120(n,g_0) angular distribution at 1.800000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3542,7 +3542,7 @@
 #   title: Sn120(n,g_0) angular distribution at 2.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -3573,7 +3573,7 @@
    1.000000E+01   9.597859E-05   9.597852E-05   6.493445E-11
    1.200000E+01   9.597859E-05   9.597852E-05   6.488355E-11
    1.400000E+01   9.597859E-05   9.597852E-05   6.482398E-11
-   1.600000E+01   9.597859E-05   9.597852E-05   6.475604E-11
+   1.600000E+01   9.597859E-05   9.597852E-05   6.475603E-11
    1.800000E+01   9.597859E-05   9.597852E-05   6.468004E-11
    2.000000E+01   9.597859E-05   9.597852E-05   6.459636E-11
    2.200000E+01   9.597859E-05   9.597852E-05   6.450541E-11
@@ -3604,8 +3604,8 @@
    7.200000E+01   9.597858E-05   9.597852E-05   6.152557E-11
    7.400000E+01   9.597858E-05   9.597852E-05   6.144937E-11
    7.600000E+01   9.597858E-05   9.597852E-05   6.138124E-11
-   7.800000E+01   9.597858E-05   9.597852E-05   6.132150E-11
-   8.000000E+01   9.597858E-05   9.597852E-05   6.127045E-11
+   7.800000E+01   9.597858E-05   9.597852E-05   6.132151E-11
+   8.000000E+01   9.597858E-05   9.597852E-05   6.127046E-11
    8.200000E+01   9.597858E-05   9.597852E-05   6.122834E-11
    8.400000E+01   9.597858E-05   9.597852E-05   6.119538E-11
    8.600000E+01   9.597858E-05   9.597852E-05   6.117171E-11
@@ -3615,8 +3615,8 @@
    9.400000E+01   9.597858E-05   9.597852E-05   6.117171E-11
    9.600000E+01   9.597858E-05   9.597852E-05   6.119538E-11
    9.800000E+01   9.597858E-05   9.597852E-05   6.122834E-11
-   1.000000E+02   9.597858E-05   9.597852E-05   6.127045E-11
-   1.020000E+02   9.597858E-05   9.597852E-05   6.132150E-11
+   1.000000E+02   9.597858E-05   9.597852E-05   6.127046E-11
+   1.020000E+02   9.597858E-05   9.597852E-05   6.132151E-11
    1.040000E+02   9.597858E-05   9.597852E-05   6.138124E-11
    1.060000E+02   9.597858E-05   9.597852E-05   6.144937E-11
    1.080000E+02   9.597858E-05   9.597852E-05   6.152557E-11
@@ -3632,7 +3632,7 @@
    1.280000E+02   9.597859E-05   9.597852E-05   6.263207E-11
    1.300000E+02   9.597859E-05   9.597852E-05   6.276522E-11
    1.320000E+02   9.597859E-05   9.597852E-05   6.289999E-11
-   1.340000E+02   9.597859E-05   9.597852E-05   6.303576E-11
+   1.340000E+02   9.597859E-05   9.597852E-05   6.303575E-11
    1.360000E+02   9.597859E-05   9.597852E-05   6.317184E-11
    1.380000E+02   9.597859E-05   9.597852E-05   6.330756E-11
    1.400000E+02   9.597859E-05   9.597852E-05   6.344229E-11
@@ -3647,7 +3647,7 @@
    1.580000E+02   9.597859E-05   9.597852E-05   6.450541E-11
    1.600000E+02   9.597859E-05   9.597852E-05   6.459636E-11
    1.620000E+02   9.597859E-05   9.597852E-05   6.468004E-11
-   1.640000E+02   9.597859E-05   9.597852E-05   6.475604E-11
+   1.640000E+02   9.597859E-05   9.597852E-05   6.475603E-11
    1.660000E+02   9.597859E-05   9.597852E-05   6.482398E-11
    1.680000E+02   9.597859E-05   9.597852E-05   6.488355E-11
    1.700000E+02   9.597859E-05   9.597852E-05   6.493445E-11

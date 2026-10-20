@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-09-22
+ Date: 2026-10-20
 
  ########## USER INPUT ##########
 
@@ -90,6 +90,9 @@
  #user   Arjan Koning      user         user for this calculation
  #source TASMAN            source       source for this calculation
  #format YANDF-0.4         oformat      format for output
+ #exforpath                exforpath     /Users/koning/exfortables/
+ #librariespath            librariespath /Users/koning/libraries/
+ #databasepath             databasepath  /Users/koning/
  #
  # Keywords for mode 2
  #
@@ -308,6 +311,6 @@ aadjust            1.000000E+00   7.500000E-02   9.302325E-01   1.075000E+00
  aadjust       50 121    1.00000
  aadjust       50 120    1.07500
 
- Execution time:  0 hours  0 minutes  0.27 seconds 
+ Execution time:  0 hours  0 minutes  0.28 seconds 
 
  This TASMAN run has finished

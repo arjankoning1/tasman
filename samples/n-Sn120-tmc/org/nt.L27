@@ -1,29 +1,29 @@
-# header: 
+# header:
 #   title: Sn120(n,t_27) cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-09-22
+#   date: 2026-10-20
 #   format: YANDF-0.4
-# target: 
+# target:
 #   Z: 50
 #   A: 120
 #   nuclide: Sn120
-# reaction: 
+# reaction:
 #   type: (n,t_27)
 #   Q-value [MeV]: -1.212007E+01
 #   E-threshold [MeV]:  1.222203E+01
 #   ENDF_MF: 3
 #   ENDF_MT: 727
-#   level: 
+#   level:
 #     number: 27
 #     energy [MeV]:  1.372123E+00
 #     spin:  5.000000E+00
 #     parity: -1
-#   quantity: 
+#   quantity:
 #     type: cross section
-#   datablock: 
+#   datablock:
 #     columns: 4
-#     entries: 40
+#     entries:     40
 ##       E             xs           Direct        Compound
 ##     [MeV]          [mb]           [mb]           [mb]
    1.000000E-11   0.000000E+00   0.000000E+00   0.000000E+00
