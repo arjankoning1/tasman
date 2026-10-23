@@ -28,7 +28,7 @@ module A0_tasman_mod
   integer, parameter :: numencov=52     ! maximum number of covariance energies
   integer, parameter :: numlines=5000   ! maximum number of input lines
   integer, parameter :: numenin=600     ! maximum number of incident energies
-  integer, parameter :: numpar=500      ! maximum number of parameters
+  integer, parameter :: numpar=2000     ! maximum number of parameters
   integer, parameter :: numtalys=6000   ! maximum number of TALYS runs
   integer, parameter :: nummass=414     ! maximum number of masses
   integer, parameter :: numchanxs=200   ! maximum number of channels with cross sections
