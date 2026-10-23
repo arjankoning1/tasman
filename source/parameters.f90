@@ -126,10 +126,10 @@
   N = nlines
   Mvary = 0
   lines: do i = 1, parlines
+    line = parline(i)
+    call convert(line)
+    parline(i) = line
     if ( .not. flagallpar) then
-      line = parline(i)
-      call convert(line)
-      parline(i) = line
       call getkeywords(parline(i), word)
       do k = 1, NZAvary
         ZAstring = '        '
