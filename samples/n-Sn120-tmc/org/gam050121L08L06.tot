@@ -2,7 +2,7 @@
 #   title: Sn120(n,xg_8-6)Sn121 gamma-ray production cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -71,6 +71,6 @@
    1.000000E+01   2.614631E-07
    1.200000E+01   4.372512E-07
    1.400000E+01   6.414052E-07
-   1.600000E+01   7.194163E-07
+   1.600000E+01   7.194162E-07
    1.800000E+01   5.597876E-07
    2.000000E+01   3.785402E-07

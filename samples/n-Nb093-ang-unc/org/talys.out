@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-10-20
+ Date: 2026-11-01
 
  ########## USER INPUT ##########
 
@@ -1260,7 +1260,7 @@ file: na0002.000ang.L30
                                                              0     1.90611E+03  0.89325
                                                              1     2.27802E+02  0.10675   5.08700E+08 sec. 
     0   1   0   0   0   0    1.74903E-01  (n,p)                                                     8.17372E-05
-    0   0   0   0   0   1    3.44746E-02  (n,a)                                                     1.61109E-05
+    0   0   0   0   0   1    3.44745E-02  (n,a)                                                     1.61109E-05
                                                              0     3.03728E-02  0.88102
                                                              2     4.10173E-03  0.11898   1.14800E+04 sec. 
 
@@ -2247,7 +2247,7 @@ file: na0008.000ang.L30
    90 1.23212E+01
    89 1.10615E-01
 
- Total residual production cross section:  1787.0598145
+ Total residual production cross section:  1787.0599365
  Non-elastic cross section              :  1787.4085693
 
  6. Exclusive cross sections
@@ -2544,6 +2544,6 @@ file: xs200000.tot
 file: xs110000.tot
 file: xs100001.tot
 
- Execution time:  0 hours  0 minutes  1.51 seconds 
+ Execution time:  0 hours  0 minutes  1.59 seconds 
 
  The TALYS team congratulates you with this successful calculation.

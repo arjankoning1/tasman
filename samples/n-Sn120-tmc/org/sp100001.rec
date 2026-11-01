@@ -2,7 +2,7 @@
 #   title: Sn120(n,na) recoil spectrum - exclusive at 9.000000E+00 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -51,7 +51,7 @@
 #   title: Sn120(n,na) recoil spectrum - exclusive at 1.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -100,7 +100,7 @@
 #   title: Sn120(n,na) recoil spectrum - exclusive at 1.200000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -149,7 +149,7 @@
 #   title: Sn120(n,na) recoil spectrum - exclusive at 1.400000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -198,7 +198,7 @@
 #   title: Sn120(n,na) recoil spectrum - exclusive at 1.600000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -247,7 +247,7 @@
 #   title: Sn120(n,na) recoil spectrum - exclusive at 1.800000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -281,7 +281,7 @@
    4.449909E-01   3.000392E+00
    5.043230E-01   1.055267E+00
    5.636551E-01   1.308673E-01
-   6.229873E-01   5.219490E-03
+   6.229873E-01   5.219491E-03
    6.823194E-01   1.904973E-03
    7.416515E-01   1.901326E-03
    8.009837E-01   1.882720E-03
@@ -296,7 +296,7 @@
 #   title: Sn120(n,na) recoil spectrum - exclusive at 2.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -320,12 +320,12 @@
 #     entries: 21
 ##     E-out           xs
 ##     [MeV]        [mb/MeV]
-   3.376866E-02   2.319780E-03
+   3.376866E-02   2.319779E-03
    1.013060E-01   7.102995E-03
    1.688433E-01   7.137629E-03
    2.363806E-01   1.696892E-02
-   3.039179E-01   6.857979E-01
-   3.714553E-01   6.263686E+00
+   3.039179E-01   6.857978E-01
+   3.714553E-01   6.263685E+00
    4.389926E-01   1.333664E+01
    5.065299E-01   8.964053E+00
    5.740672E-01   1.965516E+00
@@ -333,9 +333,9 @@
    7.091419E-01   9.148777E-03
    7.766792E-01   7.118377E-03
    8.442165E-01   7.062711E-03
-   9.117538E-01   6.781446E-03
+   9.117538E-01   6.781445E-03
    9.792912E-01   5.213171E-03
-   1.046829E+00   1.986097E-03
+   1.046829E+00   1.986096E-03
    1.114366E+00   3.450822E-04
    1.181903E+00   1.716701E-05
    1.249440E+00   7.008201E-09

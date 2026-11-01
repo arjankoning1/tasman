@@ -2,7 +2,7 @@
 #   title: Sn120(n,t_11) Legendre coefficients at 1.200000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -71,7 +71,7 @@
 #   title: Sn120(n,t_11) Legendre coefficients at 1.400000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -140,7 +140,7 @@
 #   title: Sn120(n,t_11) Legendre coefficients at 1.600000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -209,7 +209,7 @@
 #   title: Sn120(n,t_11) Legendre coefficients at 1.800000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -264,7 +264,7 @@
     29            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
     30           -6.398739E-24   0.000000E+00  -6.398739E-24  -1.146645E-21  -1.264897E-16
     31            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-    32           -3.167741E-25   0.000000E+00  -3.167741E-25  -5.676547E-23  -6.261961E-18
+    32           -3.167741E-25   0.000000E+00  -3.167741E-25  -5.676548E-23  -6.261962E-18
     33            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
     34           -1.641477E-26   0.000000E+00  -1.641477E-26  -2.941503E-24  -3.244856E-19
     35            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
@@ -278,7 +278,7 @@
 #   title: Sn120(n,t_11) Legendre coefficients at 2.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

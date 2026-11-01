@@ -2,7 +2,7 @@
 #   title: Sn120(n,x) recoil emission spectrum at 1.600000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -52,7 +52,7 @@
 #   title: Sn120(n,x) recoil emission spectrum at 1.800000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -87,7 +87,7 @@
    4.449909E-01   3.000394E+00
    5.043230E-01   1.055267E+00
    5.636551E-01   1.308674E-01
-   6.229873E-01   5.219493E-03
+   6.229873E-01   5.219494E-03
    6.823194E-01   1.904974E-03
    7.416515E-01   1.901327E-03
    8.009837E-01   1.882721E-03
@@ -102,7 +102,7 @@
 #   title: Sn120(n,x) recoil emission spectrum at 2.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -131,7 +131,7 @@
    1.013060E-01   7.103000E-03
    1.688433E-01   7.137634E-03
    2.363806E-01   1.696894E-02
-   3.039179E-01   6.857983E-01
+   3.039179E-01   6.857982E-01
    3.714553E-01   6.263690E+00
    4.389926E-01   1.333665E+01
    5.065299E-01   8.964060E+00

@@ -2,7 +2,7 @@
 #   title: Sn120(n,np) recoil spectrum - exclusive at 1.200000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -51,7 +51,7 @@
 #   title: Sn120(n,np) recoil spectrum - exclusive at 1.400000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -100,7 +100,7 @@
 #   title: Sn120(n,np) recoil spectrum - exclusive at 1.600000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -149,7 +149,7 @@
 #   title: Sn120(n,np) recoil spectrum - exclusive at 1.800000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -175,7 +175,7 @@
 ##     [MeV]        [mb/MeV]
    1.453862E-02   9.957844E+00
    4.361587E-02   9.422262E+00
-   7.269312E-02   8.968988E+00
+   7.269312E-02   8.968987E+00
    1.017704E-01   1.407648E+01
    1.308476E-01   2.652431E+01
    1.599249E-01   2.731869E+01
@@ -198,7 +198,7 @@
 #   title: Sn120(n,np) recoil spectrum - exclusive at 2.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -237,7 +237,7 @@
    4.222864E-01   6.402123E+00
    4.560693E-01   5.673906E+00
    4.898522E-01   5.011927E+00
-   5.236351E-01   4.333395E+00
+   5.236351E-01   4.333396E+00
    5.574180E-01   3.562863E+00
    5.912009E-01   2.643129E+00
    6.249838E-01   1.673867E+00

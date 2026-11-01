@@ -2,7 +2,7 @@
 ##   title: Ag107(p,x) nuclear model parameters
 ##   source: TALYS-2.24
 ##   user: Arjan Koning
-##   date: 2026-10-20
+##   date: 2026-11-01
 ##   format: YANDF-0.4
 ## target:
 ##   Z: 47
@@ -121,7 +121,7 @@ gadjust          48 107   1.00000
 Risomer          48 107   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           48 107   0.00016
+gamgam           48 107   0.15500
 gamgamadjust     48 107   1.00000
 etable           48 107   0.00000 E1
 ftable           48 107   1.00000 E1
@@ -422,7 +422,7 @@ gadjust          46 105   1.00000
 Risomer          46 105   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           46 105   0.00015
+gamgam           46 105   0.15000
 gamgamadjust     46 105   1.00000
 etable           46 105   0.00000 E1
 ftable           46 105   1.00000 E1
@@ -573,7 +573,7 @@ gadjust          46 106   1.00000
 Risomer          46 106   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           46 106   0.00015
+gamgam           46 106   0.15000
 gamgamadjust     46 106   1.00000
 etable           46 106   0.00000 E1
 ftable           46 106   1.00000 E1
@@ -649,7 +649,7 @@ gadjust          45 104   1.00000
 Risomer          45 104   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           45 104   0.00016
+gamgam           45 104   0.16000
 gamgamadjust     45 104   1.00000
 etable           45 104   0.00000 E1
 ftable           45 104   1.00000 E1
@@ -799,7 +799,7 @@ gadjust          46 103   1.00000
 Risomer          46 103   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           46 103   0.00011
+gamgam           46 103   0.11100
 gamgamadjust     46 103   1.00000
 etable           46 103   0.00000 E1
 ftable           46 103   1.00000 E1
@@ -1025,7 +1025,7 @@ gadjust          44 101   1.00000
 Risomer          44 101   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           44 101   0.00012
+gamgam           44 101   0.11900
 gamgamadjust     44 101   1.00000
 etable           44 101   0.00000 E1
 ftable           44 101   1.00000 E1
@@ -1101,7 +1101,7 @@ gadjust          44 100   1.00000
 Risomer          44 100   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           44 100   0.00020
+gamgam           44 100   0.19500
 gamgamadjust     44 100   1.00000
 etable           44 100   0.00000 E1
 ftable           44 100   1.00000 E1
@@ -1777,7 +1777,7 @@ gadjust          44 103   1.00000
 Risomer          44 103   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           44 103   0.00010
+gamgam           44 103   0.10000
 gamgamadjust     44 103   1.00000
 etable           44 103   0.00000 E1
 ftable           44 103   1.00000 E1
@@ -1853,7 +1853,7 @@ gadjust          44 102   1.00000
 Risomer          44 102   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           44 102   0.00018
+gamgam           44 102   0.18000
 gamgamadjust     44 102   1.00000
 etable           44 102   0.00000 E1
 ftable           44 102   1.00000 E1
@@ -1929,7 +1929,7 @@ gadjust          43 100   1.00000
 Risomer          43 100   1.00000
 ## parameters: 
 ##   photon strength function
-gamgam           43 100   0.00014
+gamgam           43 100   0.14000
 gamgamadjust     43 100   1.00000
 etable           43 100   0.00000 E1
 ftable           43 100   1.00000 E1

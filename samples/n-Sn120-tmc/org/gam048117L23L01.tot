@@ -2,7 +2,7 @@
 #   title: Sn120(n,xg_23-1)Cd117 gamma-ray production cross section
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -73,4 +73,4 @@
    1.400000E+01   3.938414E-04
    1.600000E+01   1.921062E-03
    1.800000E+01   4.103272E-03
-   2.000000E+01   5.175015E-03
+   2.000000E+01   5.175016E-03

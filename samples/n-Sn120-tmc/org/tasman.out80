@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-10-20
+ Date: 2026-11-01
 
  ########## USER INPUT ##########
 
@@ -1759,7 +1759,7 @@ nonelastic.tot      1    19      1.000         0.9999         2.8385E-04     1.0
 xs000000.tot        4   101      1.186         0.9885          10.23         1.0
 xs000000.L00        1    25      1.308         0.9721         0.4630         1.0
 xs000000.L01        1    22      1.266         0.8524         0.3256         1.0
-xs100000.tot        1    14      1.004          1.001         6.0810E-03     1.0
+xs100000.tot        1    14      1.004          1.001         6.0811E-03     1.0
 xs200000.tot        2     7      1.205         0.8408          1.461         1.0
 xs200000.L00        1     6      1.084         0.9512         0.1665         1.0
 xs200000.L02        2    13      1.117         0.9059          1.066         1.0
@@ -3793,6 +3793,6 @@ MAT: 5049 AWI: 1.000000+0 element: Sn mass: 120 iso: projectile: neutron
 Diagnosis of NJOY output in njoy.ers
 autonjoy is done
 
- Execution time:  0 hours  0 minutes  2.32 seconds 
+ Execution time:  0 hours  0 minutes  2.28 seconds 
 
  This TASMAN run has finished

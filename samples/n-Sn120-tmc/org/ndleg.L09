@@ -2,7 +2,7 @@
 #   title: Sn120(n,d_9) Legendre coefficients at 1.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -71,7 +71,7 @@
 #   title: Sn120(n,d_9) Legendre coefficients at 1.200000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -140,7 +140,7 @@
 #   title: Sn120(n,d_9) Legendre coefficients at 1.400000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -209,7 +209,7 @@
 #   title: Sn120(n,d_9) Legendre coefficients at 1.600000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -236,7 +236,7 @@
      1            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
      2            2.005854E-08   0.000000E+00   2.005854E-08   1.673651E-06   4.469404E-02
      3            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
-     4           -2.888672E-10   0.000000E+00  -2.888672E-10  -2.410260E-08  -6.436483E-04
+     4           -2.888671E-10   0.000000E+00  -2.888671E-10  -2.410259E-08  -6.436481E-04
      5            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
      6           -6.989564E-10   0.000000E+00  -6.989564E-10  -5.831976E-08  -1.557401E-03
      7            0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
@@ -278,7 +278,7 @@
 #   title: Sn120(n,d_9) Legendre coefficients at 1.800000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50
@@ -347,7 +347,7 @@
 #   title: Sn120(n,d_9) Legendre coefficients at 2.000000E+01 MeV
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target: 
 #   Z: 50

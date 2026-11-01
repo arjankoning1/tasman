@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-10-20
+ Date: 2026-11-01
 
  ########## USER INPUT ##########
 
@@ -942,7 +942,7 @@
 
  2. Binary non-elastic cross sections (non-exclusive)
 
- gamma   = 4.42444E+00
+ gamma   = 4.42445E+00
  neutron = 1.88260E+03
  proton  = 6.11054E-01
  deuteron= 0.00000E+00
@@ -1182,7 +1182,7 @@
    90 4.23150E+00
    89 2.24567E-03
 
- Total residual production cross section:  1891.1239014
+ Total residual production cross section:  1891.1240234
  Non-elastic cross section              :  1890.9909668
 
  6. Exclusive cross sections
@@ -1310,7 +1310,7 @@
     0   0   1   0   0   0    3.14067E-01  (n,d)                                                     1.70305E-04
     0   0   0   1   0   0    2.05656E-05  (n,t)                                                     1.11519E-08
     0   0   0   0   0   1    1.14603E+01  (n,a)                                                     6.21447E-03
-                                                             0     5.58596E+00  0.48742
+                                                             0     5.58595E+00  0.48742
                                                              2     5.87439E+00  0.51258   1.14800E+04 sec. 
     2   0   0   0   0   0    6.71071E+02  (n,2n)                                                    3.63894E-01
                                                              0     4.59426E+02  0.68462
@@ -1322,9 +1322,9 @@
 
  Absorption cross section                 :    27.86590
 
- Sum over exclusive channel cross sections:  1844.13818
+ Sum over exclusive channel cross sections:  1844.13806
  (n,gn) + (n,gp) +...(n,ga) cross sections:     1.47452
- Total                                    :  1845.61267
+ Total                                    :  1845.61255
  Non-elastic cross section                :  1846.11230
 
  ########## EXCITATION FUNCTIONS ###########
@@ -1383,6 +1383,6 @@ file: xs200000.tot
 file: xs110000.tot
 file: xs100001.tot
 
- Execution time:  0 hours  0 minutes  1.26 seconds 
+ Execution time:  0 hours  0 minutes  1.27 seconds 
 
  The TALYS team congratulates you with this successful calculation.

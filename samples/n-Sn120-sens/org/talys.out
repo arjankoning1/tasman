@@ -6,7 +6,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-10-20
+ Date: 2026-11-01
 
  ########## USER INPUT ##########
 
@@ -827,11 +827,11 @@
                                                              0     5.00000E-08  0.50000
                                                              2     5.00000E-08  0.50000   1.21000E+04 sec. 
 
- Absorption cross section                 :   587.69934
+ Absorption cross section                 :   587.69928
 
- Sum over exclusive channel cross sections:   587.69934
+ Sum over exclusive channel cross sections:   587.69928
  (n,gn) + (n,gp) +...(n,ga) cross sections:     0.00000
- Total                                    :   587.69934
+ Total                                    :   587.69928
  Non-elastic cross section                :   587.84766
 
  ########## RESULTS FOR E=   0.00100 ##########
@@ -1179,11 +1179,11 @@
                                                              0     5.00000E-08  0.50000
                                                              2     5.00000E-08  0.50000   1.21000E+04 sec. 
 
- Absorption cross section                 :   123.51499
+ Absorption cross section                 :   123.51500
 
- Sum over exclusive channel cross sections:   123.51499
+ Sum over exclusive channel cross sections:   123.51500
  (n,gn) + (n,gp) +...(n,ga) cross sections:     0.00231
- Total                                    :   123.51730
+ Total                                    :   123.51731
  Non-elastic cross section                :   123.74634
 
  ########## RESULTS FOR E=   0.02000 ##########
@@ -2248,7 +2248,7 @@
                                                              0     5.00000E-08  0.50000
                                                              2     5.00000E-08  0.50000   1.21000E+04 sec. 
 
- Absorption cross section                 :    34.22486
+ Absorption cross section                 :    34.22485
 
  Sum over exclusive channel cross sections:   808.11212
  (n,gn) + (n,gp) +...(n,ga) cross sections:     3.72284
@@ -2512,7 +2512,7 @@
 
      Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
     n   p   d   t   h   a                                        cross section   ratio
-    0   0   0   0   0   0    1.06415E+01  (n,g)                                                     5.61622E-03
+    0   0   0   0   0   0    1.06415E+01  (n,g)                                                     5.61621E-03
                                                              0     6.64830E+00  0.62475
                                                              1     3.99321E+00  0.37525   1.38500E+09 sec. 
     1   0   0   0   0   0    1.88414E+03  (n,n')                                                    9.94384E-01
@@ -2704,9 +2704,9 @@
 
  Absorption cross section                 :     4.60845
 
- Sum over exclusive channel cross sections:  2202.79272
+ Sum over exclusive channel cross sections:  2202.79297
  (n,gn) + (n,gp) +...(n,ga) cross sections:     5.47152
- Total                                    :  2208.26416
+ Total                                    :  2208.26440
  Non-elastic cross section                :  2208.25342
 
  ########## RESULTS FOR E=   6.00000 ##########
@@ -2795,9 +2795,9 @@
 
  Absorption cross section                 :     2.51876
 
- Sum over exclusive channel cross sections:  2166.14087
+ Sum over exclusive channel cross sections:  2166.14062
  (n,gn) + (n,gp) +...(n,ga) cross sections:     4.83283
- Total                                    :  2170.97363
+ Total                                    :  2170.97339
  Non-elastic cross section                :  2170.95850
 
  ########## RESULTS FOR E=   7.00000 ##########
@@ -2878,7 +2878,7 @@
     n   p   d   t   h   a                                        cross section   ratio
     0   0   0   0   0   0    1.42485E+00  (n,g)                                                     6.80715E-04
                                                              0     6.83895E-01  0.47998
-                                                             1     7.40954E-01  0.52002   1.38500E+09 sec. 
+                                                             1     7.40953E-01  0.52002   1.38500E+09 sec. 
     1   0   0   0   0   0    2.09174E+03  (n,n')                                                    9.99319E-01
     0   1   0   0   0   0    1.81195E-06  (n,p)                                                     8.65650E-10
                                                              0     1.16393E-06  0.64236
@@ -2890,9 +2890,9 @@
 
  Absorption cross section                 :     1.42485
 
- Sum over exclusive channel cross sections:  2093.16406
+ Sum over exclusive channel cross sections:  2093.16382
  (n,gn) + (n,gp) +...(n,ga) cross sections:     3.79682
- Total                                    :  2096.96094
+ Total                                    :  2096.96069
  Non-elastic cross section                :  2096.92505
 
  ########## RESULTS FOR E=   8.00000 ##########
@@ -2985,9 +2985,9 @@
 
  Absorption cross section                 :     1.01692
 
- Sum over exclusive channel cross sections:  2049.19507
+ Sum over exclusive channel cross sections:  2049.19531
  (n,gn) + (n,gp) +...(n,ga) cross sections:     2.87750
- Total                                    :  2052.07251
+ Total                                    :  2052.07275
  Non-elastic cross section                :  2052.02393
 
  ########## RESULTS FOR E=   9.00000 ##########
@@ -3080,9 +3080,9 @@
 
  Absorption cross section                 :     1.00235
 
- Sum over exclusive channel cross sections:  2038.65051
+ Sum over exclusive channel cross sections:  2038.65063
  (n,gn) + (n,gp) +...(n,ga) cross sections:     2.23503
- Total                                    :  2040.88550
+ Total                                    :  2040.88562
  Non-elastic cross section                :  2040.73596
 
  ########## RESULTS FOR E=  10.00000 ##########
@@ -3184,9 +3184,9 @@
 
  Absorption cross section                 :     1.18420
 
- Sum over exclusive channel cross sections:  2040.96313
+ Sum over exclusive channel cross sections:  2040.96301
  (n,gn) + (n,gp) +...(n,ga) cross sections:     1.79588
- Total                                    :  2042.75903
+ Total                                    :  2042.75891
  Non-elastic cross section                :  2043.11584
 
  ########## RESULTS FOR E=  12.00000 ##########
@@ -3529,9 +3529,9 @@
 
  Absorption cross section                 :     7.62755
 
- Sum over exclusive channel cross sections:  1978.96704
+ Sum over exclusive channel cross sections:  1978.96692
  (n,gn) + (n,gp) +...(n,ga) cross sections:     1.27911
- Total                                    :  1980.24609
+ Total                                    :  1980.24597
  Non-elastic cross section                :  1981.29004
 
  ########## RESULTS FOR E=  18.00000 ##########
@@ -3767,7 +3767,7 @@
                                                              0     1.81302E-01  0.52501
                                                              1     1.23760E-01  0.35838   2.67000E+02 sec. 
                                                              3     4.02681E-02  0.11661   8.50000E+00 sec. 
-    0   0   0   0   0   1    1.59726E+00  (n,a)                                                     8.19576E-04
+    0   0   0   0   0   1    1.59726E+00  (n,a)                                                     8.19575E-04
                                                              0     4.14422E-01  0.25946
                                                              2     1.18284E+00  0.74054   1.21000E+04 sec. 
     2   0   0   0   0   0    1.25585E+03  (n,2n)                                                    6.44394E-01
@@ -3781,9 +3781,9 @@
 
  Absorption cross section                 :    21.67858
 
- Sum over exclusive channel cross sections:  1948.88550
+ Sum over exclusive channel cross sections:  1948.88574
  (n,gn) + (n,gp) +...(n,ga) cross sections:     1.88503
- Total                                    :  1950.77051
+ Total                                    :  1950.77075
  Non-elastic cross section                :  1952.57996
 
  ########## EXCITATION FUNCTIONS ###########
@@ -3849,6 +3849,6 @@ file: xs110000.tot
 file: xs100001.tot
 file: xs300000.tot
 
- Execution time:  0 hours  0 minutes  1.39 seconds 
+ Execution time:  0 hours  0 minutes  1.52 seconds 
 
  The TALYS team congratulates you with this successful calculation.

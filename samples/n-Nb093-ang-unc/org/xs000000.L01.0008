@@ -2,7 +2,7 @@
 #   title: Nb93(n,g)Nb94m cross section Run 0008
 #   source: TALYS-2.24
 #   user: Arjan Koning
-#   date: 2026-10-20
+#   date: 2026-11-01
 #   format: YANDF-0.4
 # target:
 #   Z: 41
@@ -32,7 +32,7 @@
 #     entries: 10
 ##       E             xs       Isomeric_ratio
 ##     [MeV]          [mb]            []
-   1.000000E-01   5.564213E+01
+   1.000000E-01   5.564212E+01
    2.000000E-01   3.618127E+01
    5.000000E-01   2.439717E+01
    1.000000E+00   1.297909E+01

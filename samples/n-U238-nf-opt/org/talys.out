@@ -10,7 +10,7 @@
  Dimensions - Cross sections: mb, Energies: MeV, Angles: degrees
 
  User: Arjan Koning
- Date: 2026-10-20
+ Date: 2026-11-01
 
  ########## USER INPUT ##########
 
@@ -1924,8 +1924,8 @@ file: pfns0001.400.fis
  Exclusive
 
  Discrete    (n,g)  :     0.82508
- Continuum   (n,g)  :   109.54914
- Total       (n,g)  :   110.37422
+ Continuum   (n,g)  :   109.54915
+ Total       (n,g)  :   110.37423
 
  Inelastic cross sections:
 
@@ -1938,7 +1938,7 @@ file: pfns0001.400.fis
   3   0.30718   1.08691    6.0+     9.03458    65.67679    74.71137    Direct
   4   0.51810   0.87599    8.0+     0.08130     0.73976     0.82105    Direct
   5   0.68011   0.71398    1.0-    17.99300   163.29475   181.28775    Direct
-  6   0.73193   0.66216    3.0-     0.00000   135.17015   135.17015    Preeq 
+  6   0.73193   0.66216    3.0-     0.00000   135.17014   135.17014    Preeq 
   7   0.77590   0.61819   10.0+     0.00001     0.00054     0.00055    Direct
   8   0.82664   0.56745    5.0-     0.00000    24.75952    24.75952    Preeq 
   9   0.92721   0.46688    0.0+    53.38030    63.55497   116.93527    Direct
@@ -2055,7 +2055,7 @@ file: pfns0001.400.fis
     n   p   d   t   h   a
     0   0   0   0   0   0    3.16300E-03  (n,gf)           
 
- Absorption cross section                 :   110.37739
+ Absorption cross section                 :   110.37740
 
  Sum over exclusive channel cross sections:  3836.53345
  (n,gn) + (n,gp) +...(n,ga) cross sections:    16.53729
@@ -2483,9 +2483,9 @@ file: pfns0001.600.fis
  30   0.85881   5.54081    2.5-     0.00489     0.01121     0.01610    Preeq 
                                   ---------   ---------   ---------
  Discrete    (n,g)  :               0.01737     0.58869     0.60606
- Continuum   (n,g)  :               0.01119   116.35404   116.36523
+ Continuum   (n,g)  :               0.01119   116.35405   116.36523
                                   ---------   ---------   ---------
- Total       (n,g)  :               0.02856   116.94273   116.97133
+ Total       (n,g)  :               0.02856   116.94274   116.97133
 
 
  Exclusive
@@ -2527,14 +2527,14 @@ file: pfns0001.600.fis
  25   1.13570   0.45754    2.0+     0.00000   105.13779   105.13779    Preeq 
  26   1.15070   0.44254    9.0-     0.00005     0.00248     0.00254    Direct
  27   1.15700   0.43624    6.0-     0.00000     4.83936     4.83936    Preeq 
- 28   1.16300   0.43024    4.0+     8.09192    55.31485    63.40676    Direct
+ 28   1.16300   0.43024    4.0+     8.09192    55.31484    63.40676    Direct
  29   1.16799   0.42525    4.0+     8.03974    54.73357    62.77332    Direct
  30   1.18909   0.40415    3.0-     0.70430    49.66160    50.36589    Direct
                                   ---------   ---------   ---------
  Discrete  Inelastic:             695.84869  2291.99243  2987.84106
- Continuum Inelastic:              63.99574   836.67084   900.66656
+ Continuum Inelastic:              63.99574   836.67078   900.66650
                                   ---------   ---------   ---------
- Total     Inelastic:             759.84442  3128.66333  3888.50879
+ Total     Inelastic:             759.84442  3128.66309  3888.50879
 
  (n,gn) cross section:    20.95379
 
@@ -3050,7 +3050,7 @@ file: pfns0001.800.fis
  30   0.85881   5.73997    2.5-     0.00022     0.00805     0.00827    Preeq 
                                   ---------   ---------   ---------
  Discrete    (n,g)  :               0.01407     0.44808     0.46215
- Continuum   (n,g)  :               0.01423   111.59976   111.61399
+ Continuum   (n,g)  :               0.01423   111.59975   111.61398
                                   ---------   ---------   ---------
  Total       (n,g)  :               0.02829   112.04784   112.07617
 
@@ -3075,20 +3075,20 @@ file: pfns0001.800.fis
   6   0.73193   1.06047    3.0-     0.00000    83.31348    83.31348    Preeq 
   7   0.77590   1.01650   10.0+     0.00015     0.00392     0.00406    Direct
   8   0.82664   0.96576    5.0-     0.00000    26.59664    26.59664    Preeq 
-  9   0.92721   0.86519    0.0+    52.72630    36.99025    89.71655    Direct
- 10   0.93055   0.86185    1.0-     0.27505    63.52401    63.79906    Direct
+  9   0.92721   0.86519    0.0+    52.72630    36.99024    89.71654    Direct
+ 10   0.93055   0.86185    1.0-     0.27505    63.52401    63.79905    Direct
  11   0.95012   0.84228    2.0-     0.00000    70.34560    70.34560    Preeq 
- 12   0.96613   0.82627    2.0+     0.00000   105.25520   105.25520    Preeq 
+ 12   0.96613   0.82627    2.0+     0.00000   105.25519   105.25519    Preeq 
  13   0.98177   0.81063    7.0-     0.00000     1.69081     1.69081    Preeq 
  14   0.99723   0.79517    0.0+    12.10130    34.07272    46.17402    Direct
  15   1.01279   0.77961    3.0-     0.00000    55.78311    55.78311    Preeq 
  16   1.02800   0.76440    4.0-     0.00000    35.87388    35.87388    Preeq 
  17   1.03725   0.75515    2.0+     0.00000    97.12254    97.12254    Preeq 
  18   1.05638   0.73602    4.0+     0.00000    60.04920    60.04920    Preeq 
- 19   1.05966   0.73274    3.0+     0.00000    85.18154    85.18154    Preeq 
- 20   1.06849   0.72391    2.0+    20.36830    93.73910   114.10740    Direct
+ 19   1.05966   0.73274    3.0+     0.00000    85.18153    85.18153    Preeq 
+ 20   1.06849   0.72391    2.0+    20.36830    93.73909   114.10739    Direct
  21   1.07670   0.71570   12.0+     0.00000     0.00000     0.00000    Direct
- 22   1.10571   0.68669    3.0+     0.00000    80.08438    80.08438    Preeq 
+ 22   1.10571   0.68669    3.0+     0.00000    80.08437    80.08437    Preeq 
  23   1.12884   0.66356    2.0-     0.00000    56.77386    56.77386    Preeq 
  24   1.13075   0.66165    4.0+     8.73067    53.44431    62.17498    Direct
  25   1.13570   0.65670    2.0+     0.00000    86.85685    86.85685    Preeq 
@@ -3619,14 +3619,14 @@ file: pfns0002.000.fis
  Discrete    (n,g)  :               0.02646     0.33633     0.36279
  Continuum   (n,g)  :               0.01501   105.97501   105.99001
                                   ---------   ---------   ---------
- Total       (n,g)  :               0.04147   106.31133   106.35293
+ Total       (n,g)  :               0.04147   106.31133   106.35294
 
 
  Exclusive
 
  Discrete    (n,g)  :     0.36279
- Continuum   (n,g)  :    74.52709
- Total       (n,g)  :    74.88988
+ Continuum   (n,g)  :    74.52710
+ Total       (n,g)  :    74.88989
 
  Inelastic cross sections:
 
@@ -3656,7 +3656,7 @@ file: pfns0002.000.fis
  20   1.06849   0.92307    2.0+    19.74340    72.84177    92.58517    Direct
  21   1.07670   0.91485   12.0+     0.00000     0.00000     0.00000    Direct
  22   1.10571   0.88584    3.0+     0.00000    65.61258    65.61258    Preeq 
- 23   1.12884   0.86271    2.0-     0.00000    43.77317    43.77317    Preeq 
+ 23   1.12884   0.86271    2.0-     0.00000    43.77318    43.77318    Preeq 
  24   1.13075   0.86080    4.0+     9.20846    46.34912    55.55758    Direct
  25   1.13570   0.85585    2.0+     0.00000    67.34822    67.34822    Preeq 
  26   1.15070   0.84085    9.0-     0.00139     0.02326     0.02465    Direct
@@ -3756,7 +3756,7 @@ file: pfns0002.000.fis
     n   p   d   t   h   a
     0   0   0   0   0   0    2.71395E-02  (n,gf)           
 
- Absorption cross section                 :    74.91702
+ Absorption cross section                 :    74.91703
 
  Sum over exclusive channel cross sections:  4034.18262
  (n,gn) + (n,gp) +...(n,ga) cross sections:    31.46540
@@ -4235,7 +4235,7 @@ file: pfns0002.200.fis
  Discrete  Inelastic:             698.97925   993.71503  1692.69434
  Continuum Inelastic:              99.82074  2144.12305  2243.94385
                                   ---------   ---------   ---------
- Total     Inelastic:             798.79999  3137.83813  3936.63379
+ Total     Inelastic:             798.79999  3137.83813  3936.63354
 
  (n,gn) cross section:    33.40813
 
@@ -5327,7 +5327,7 @@ file: pfns0002.600.fis
 
  Discrete    (n,g)  :     0.12959
  Continuum   (n,g)  :    32.90708
- Total       (n,g)  :    33.03667
+ Total       (n,g)  :    33.03666
 
  Inelastic cross sections:
 
@@ -5336,7 +5336,7 @@ file: pfns0002.600.fis
  Level Energy    E-out     J/P       Direct    Compound      Total     Origin
 
   1   0.04492   2.54410    2.0+   428.57101    24.32843   452.89944    Direct
-  2   0.14838   2.44063    4.0+    78.20620    20.44621    98.65241    Direct
+  2   0.14838   2.44063    4.0+    78.20620    20.44621    98.65240    Direct
   3   0.30718   2.28183    6.0+    21.58800     7.78217    29.37017    Direct
   4   0.51810   2.07091    8.0+     2.00389     0.78644     2.79033    Direct
   5   0.68011   1.90890    1.0-    29.94970    12.41639    42.36609    Direct
@@ -5376,8 +5376,8 @@ file: pfns0002.600.fis
  Exclusive
 
  Discrete  Inelastic:  1027.46973
- Continuum Inelastic:  2549.79492
- Total     Inelastic:  3577.26465
+ Continuum Inelastic:  2549.79468
+ Total     Inelastic:  3577.26440
 
    (n,a)   cross sections:
 
@@ -5457,11 +5457,11 @@ file: pfns0002.600.fis
     n   p   d   t   h   a
     0   0   0   0   0   0    2.78226E+02  (n,gf)           
 
- Absorption cross section                 :   311.26245
+ Absorption cross section                 :   311.26242
 
- Sum over exclusive channel cross sections:  3888.52710
+ Sum over exclusive channel cross sections:  3888.52686
  (n,gn) + (n,gp) +...(n,ga) cross sections:    28.46924
- Total                                    :  3916.99634
+ Total                                    :  3916.99609
  Non-elastic cross section                :  3916.19482
 
  ########## RESULTS FOR E=   2.80000 ##########
@@ -5495,7 +5495,7 @@ file: pfns0002.600.fis
 
  fission = 2.89148E+02
  gamma   = 5.22868E+01
- neutron = 3.51034E+03
+ neutron = 3.51035E+03
  proton  = 0.00000E+00
  deuteron= 0.00000E+00
  triton  = 0.00000E+00
@@ -5887,7 +5887,7 @@ file: pfns0002.800.fis
  Discrete    (n,g)  :               0.02607     0.06596     0.09204
  Continuum   (n,g)  :               0.02847    52.16633    52.19480
                                   ---------   ---------   ---------
- Total       (n,g)  :               0.05454    52.23229    52.28682
+ Total       (n,g)  :               0.05454    52.23230    52.28682
 
 
  Exclusive
@@ -5936,7 +5936,7 @@ file: pfns0002.800.fis
  Discrete  Inelastic:             629.22888   227.85612   857.08502
  Continuum Inelastic:             135.49069  2517.76782  2653.25854
                                   ---------   ---------   ---------
- Total     Inelastic:             764.71960  2745.62402  3510.34473
+ Total     Inelastic:             764.71960  2745.62402  3510.34521
 
  (n,gn) cross section:    27.01586
 
@@ -6501,9 +6501,9 @@ file: pfns0003.000.fis
  30   1.18909   1.79823    3.0-     1.41600     5.47742     6.89342    Direct
                                   ---------   ---------   ---------
  Discrete  Inelastic:             604.56580   138.63651   743.20227
- Continuum Inelastic:             142.87665  2561.07227  2703.94897
+ Continuum Inelastic:             142.87665  2561.07202  2703.94873
                                   ---------   ---------   ---------
- Total     Inelastic:             747.44244  2699.70874  3447.15161
+ Total     Inelastic:             747.44244  2699.70850  3447.15161
 
  (n,gn) cross section:    25.24171
 
@@ -6645,7 +6645,7 @@ file: pfns0003.000.fis
  triton  = 0.00000E+00    Multiplicity= 0.00000E+00
  helium-3= 0.00000E+00    Multiplicity= 0.00000E+00
  alpha   = 2.14633E-12    Multiplicity= 5.74551E-16
- fission = 3.02491E+02
+ fission = 3.02492E+02
 
  4. Residual production cross sections
 
@@ -6667,13 +6667,13 @@ file: pfns0003.000.fis
   238 3.41871E+03
 
  Total residual production cross section:  3434.1901855
- Total fission cross section            :   302.4914856
+ Total fission cross section            :   302.4915161
  Fission + res. production cross section:  3736.6816406
  Non-elastic cross section              :  3735.6713867
 
  4b. Fission cross section per fissioning nuclide
 
-   92 239 (239U ) 3.02491E+02
+   92 239 (239U ) 3.02492E+02
 file: rp092239.fis
 
  +++ Prompt fission neutron  spectrum +++
@@ -7077,8 +7077,8 @@ file: pfns0003.200.fis
  Exclusive
 
  Discrete  Inelastic:   665.07788
- Continuum Inelastic:  2730.23193
- Total     Inelastic:  3395.30981
+ Continuum Inelastic:  2730.23169
+ Total     Inelastic:  3395.30957
 
    (n,a)   cross sections:
 
@@ -7158,11 +7158,11 @@ file: pfns0003.200.fis
     n   p   d   t   h   a
     0   0   0   0   0   0    3.02491E+02  (n,gf)           
 
- Absorption cross section                 :   317.96896
+ Absorption cross section                 :   317.96899
 
- Sum over exclusive channel cross sections:  3713.27881
+ Sum over exclusive channel cross sections:  3713.27856
  (n,gn) + (n,gp) +...(n,ga) cross sections:    23.43299
- Total                                    :  3736.71191
+ Total                                    :  3736.71167
  Non-elastic cross section                :  3735.67139
 
  ########## RESULTS FOR E=   3.40000 ##########
@@ -7586,7 +7586,7 @@ file: pfns0003.400.fis
  30   0.85881   7.33320    2.5-     0.03507     0.00049     0.03557    Preeq 
                                   ---------   ---------   ---------
  Discrete    (n,g)  :               0.07329     0.02245     0.09574
- Continuum   (n,g)  :               0.04152    33.19283    33.23434
+ Continuum   (n,g)  :               0.04152    33.19282    33.23434
                                   ---------   ---------   ---------
  Total       (n,g)  :               0.11481    33.21527    33.33011
 
@@ -7635,9 +7635,9 @@ file: pfns0003.400.fis
  30   1.18909   2.19654    3.0-     1.55107     2.07054     3.62161    Direct
                                   ---------   ---------   ---------
  Discrete  Inelastic:             560.83362    49.75927   610.59290
- Continuum Inelastic:             152.43738  2590.17358  2742.61084
+ Continuum Inelastic:             152.43738  2590.17383  2742.61133
                                   ---------   ---------   ---------
- Total     Inelastic:             713.27100  2639.93286  3353.20410
+ Total     Inelastic:             713.27100  2639.93311  3353.20410
 
  (n,gn) cross section:    21.29267
 
@@ -8831,8 +8831,8 @@ file: pfns0003.800.fis
  Exclusive
 
  Discrete  Inelastic:   542.93848
- Continuum Inelastic:  2749.63843
- Total     Inelastic:  3292.57690
+ Continuum Inelastic:  2749.63867
+ Total     Inelastic:  3292.57715
 
    (n,p)   cross sections:
 
@@ -9040,7 +9040,7 @@ file: pfns0003.800.fis
   238 3.28211E+03
 
  Total residual production cross section:  3288.1296387
- Total fission cross section            :   273.9614563
+ Total fission cross section            :   273.9614868
  Fission + res. production cross section:  3562.0910645
  Non-elastic cross section              :  3560.7834473
 
@@ -9402,7 +9402,7 @@ file: pfns0004.000.fis
  Exclusive
 
  Discrete    (n,g)  :     0.10520
- Continuum   (n,g)  :     5.91018
+ Continuum   (n,g)  :     5.91017
  Total       (n,g)  :     6.01538
 
  Inelastic cross sections:
@@ -9585,7 +9585,7 @@ file: pfns0004.000.fis
     0   0   0   0   0   0    2.73844E+02  (n,gf)           
     1   0   0   0   0   0    1.17331E-01  (n,n'f)          
 
- Absorption cross section                 :   279.97675
+ Absorption cross section                 :   279.97678
 
  Sum over exclusive channel cross sections:  3546.69678
  (n,gn) + (n,gp) +...(n,ga) cross sections:    15.52299
@@ -10805,7 +10805,7 @@ file: pfns0004.400.fis
 
      Emitted particles     cross section reaction         level    isomeric    isomeric    lifetime relative yield
     n   p   d   t   h   a                                        cross section   ratio
-    0   0   0   0   0   0    3.99395E+00  (n,g)                                                     1.14463E-03
+    0   0   0   0   0   0    3.99395E+00  (n,g)                                                     1.14464E-03
     1   0   0   0   0   0    3.22476E+03  (n,n')                                                    9.24191E-01
     0   0   0   0   0   1    1.00000E-07  (n,a)                                                     2.86592E-11
     1   0   0   0   0   1    1.00000E-07  (n,na)                                                    2.86592E-11
@@ -11315,8 +11315,8 @@ file: pfns0004.600.fis
  Exclusive
 
  Discrete  Inelastic:   476.13098
- Continuum Inelastic:  2729.39697
- Total     Inelastic:  3205.52783
+ Continuum Inelastic:  2729.39648
+ Total     Inelastic:  3205.52759
 
    (n,p)   cross sections:
 
@@ -11450,9 +11450,9 @@ file: pfns0004.600.fis
 
  Absorption cross section                 :   262.21323
 
- Sum over exclusive channel cross sections:  3467.74121
+ Sum over exclusive channel cross sections:  3467.74097
  (n,gn) + (n,gp) +...(n,ga) cross sections:    11.43547
- Total                                    :  3479.17676
+ Total                                    :  3479.17651
  Non-elastic cross section                :  3476.80371
 
  ########## RESULTS FOR E=   4.80000 ##########
@@ -11929,7 +11929,7 @@ file: pfns0004.800.fis
  Discrete  Inelastic:             464.17285     1.79381   465.96664
  Continuum Inelastic:             177.97824  2559.34595  2737.32422
                                   ---------   ---------   ---------
- Total     Inelastic:             642.15112  2561.13965  3203.29224
+ Total     Inelastic:             642.15112  2561.13965  3203.29248
 
  (n,gn) cross section:    10.08537
 
@@ -12557,8 +12557,8 @@ file: pfns0005.000.fis
  Exclusive
 
  Discrete  Inelastic:   457.34665
- Continuum Inelastic:  2672.13574
- Total     Inelastic:  3129.48242
+ Continuum Inelastic:  2672.13599
+ Total     Inelastic:  3129.48267
 
    (n,p)   cross sections:
 
@@ -12690,11 +12690,11 @@ file: pfns0005.000.fis
     0   0   0   0   0   0    2.37036E+02  (n,gf)           
     1   0   0   0   0   0    6.96079E+01  (n,n'f)          
 
- Absorption cross section                 :   308.94702
+ Absorption cross section                 :   308.94705
 
- Sum over exclusive channel cross sections:  3438.42944
+ Sum over exclusive channel cross sections:  3438.42969
  (n,gn) + (n,gp) +...(n,ga) cross sections:     9.34029
- Total                                    :  3447.76978
+ Total                                    :  3447.77002
  Non-elastic cross section                :  3445.36548
 
  ########## EXCITATION FUNCTIONS ###########
@@ -13004,6 +13004,6 @@ file: xs000003.fis
 file: xs200002.fis
 file: xs100003.fis
 
- Execution time:  0 hours  0 minutes 42.56 seconds 
+ Execution time:  0 hours  0 minutes 41.83 seconds 
 
  The TALYS team congratulates you with this successful calculation.
