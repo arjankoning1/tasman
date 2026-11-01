@@ -95,8 +95,7 @@ subroutine sensitivity
   real(sgl)         :: xsik                                ! cross section of random run
   real(sgl)         :: xsloc(numpar)                       ! help variable
   real(sgl)         :: xstmp                               ! help variable
-  character(len=33) :: format1                             ! format string
-  character(len=26) :: format2                             ! format string
+  character(len=19) :: format2                             ! format string
   character(len=132):: strloc(numpar)                      ! help variable
   character(len=132):: sttmp                               ! help variable
   real(sgl), allocatable :: xsdev(:,:,:)                   ! cross section deviation
@@ -520,10 +519,8 @@ subroutine sensitivity
 ! Output of sensitivity profile per reaction channel
 !
   if (Np == 0) return
-  format1 = '("#E                   ",xxxa30))'
-  write(format1(26:28), '(i3.3)') Np
-  format2='(es15.5,xxxes15.6)'
-  write(format2(9:11), '(i3.3)') Np
+  format2='(es15.5,xxxxes15.6)'
+  write(format2(9:12), '(i4.4)') Np
   do i = 1, Nchanxs
     reaction=reaction_string(i)
     topline=trim(targetnuclide)//' '//trim(reaction)//' '//trim(quantity)//' per reaction channel'

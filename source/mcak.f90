@@ -10,12 +10,12 @@ subroutine mcak(ipar, iR, Plow, Nbin, hist, k, kmax, P, flagkd, flagequi)
 !
 ! *** Declaration of local data
 !
+  use A0_tasman_mod, only: numpar
   implicit none
   integer, parameter :: sgl = selected_real_kind(6,37)   ! single precision kind
   integer, parameter :: dbl = selected_real_kind(15,307) ! double precision kind
   logical            :: flagequi                ! flag to use equidistant excitation bins instead of  logarithmic bins
   logical            :: flagkd                  ! flag to use KD function
-  integer, parameter :: numpar=500              ! maximum number of parameters
   integer, parameter :: numhis=100              ! number of histogram bins
   integer            :: i                       ! counter
   integer            :: ipar                    ! counter for parameter
