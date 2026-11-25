@@ -98,8 +98,8 @@ subroutine covangle
       angdifi = angi0 - angi1
       do l = 0, Nang(i)
         angk0 = angtalys(0, i, l)
-        angk1 = min(angtalys(1, i, l), angi0 * xslimit)
-        angk1 = max(angi1, angi0 / xslimit)
+        angk1 = min(angtalys(1, i, l), angk0 * xslimit)
+        angk1 = max(angk1, angk0 / xslimit)
         angk0 = angav(i, l)
         angdifk = angk0 - angk1
         term0 = angdifi * angdifk
