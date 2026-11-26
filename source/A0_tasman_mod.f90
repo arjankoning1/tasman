@@ -485,7 +485,7 @@ module A0_tasman_mod
   real(sgl), dimension(0:numencov)                  :: Ecov        ! covariance energy grid
   real(dbl), dimension(numchanxs,numenin)           :: errmt       ! cross section uncertainty
   real(dbl), dimension(numchanxs,numencov)          :: errmtC      ! cross section uncertainty (for cov. energy grid)
-  real(sgl)                                         :: Rlimit      ! limit for covariance calculation
+  real(dbl)                                         :: Rlimit      ! limit for covariance calculation
   real(dbl), allocatable                            :: S(:,:,:)           ! sensitivity matrix
   real(dbl), allocatable                            :: Pearson(:,:,:)     ! Pearson correlation
   real(dbl), allocatable                            :: Pearson_enum(:,:,:) ! variable for Pearson correlation
