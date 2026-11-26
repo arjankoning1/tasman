@@ -432,7 +432,7 @@ subroutine covcross
           ll = Ecovindex(l)
 !         write(3, '(2(3i4, es15.6), 3es15.6)') MTcov(i), MTisocov(i), jj, e(i, jj), MTcov(k), MTisocov(k), ll, &
 !&          e(k, ll), Rcov(i, j, k, l), Ccov(i, j, k, l), Vcov(i, j, k, l)
-          write(1, '(2es15.6,3es24.16e3)') e(i, jj), e(k, ll), Rcov(i, j, k, l), Ccov(i, j, k, l), Vcov(i, j, k, l)
+          write(1, '(2es15.6,3(1x,es24.16e3))') e(i, jj), e(k, ll), Rcov(i, j, k, l), Ccov(i, j, k, l), Vcov(i, j, k, l)
         enddo
       enddo
     enddo
@@ -458,7 +458,7 @@ subroutine covcross
         ll = Ecovindex(l)
 !       write(4, '(2(3i4, es15.6), 3es15.6)') MT(i), MTiso(i), jj, e(i, jj), MT(i), MTiso(i), ll, e(i, ll), Rmt(i, j, l), &
 !&        Cmt(i, j, l), Vmt(i, j, l)
-        write(1, '(2es15.6,3es24.16e3)')  e(i, jj), e(i, ll), Rmt(i, j, l), Cmt(i, j, l), Vmt(i, j, l)
+        write(1, '(2es15.6,3(1x,es24.16e3))')  e(i, jj), e(i, ll), Rmt(i, j, l), Cmt(i, j, l), Vmt(i, j, l)
       enddo
     enddo
   enddo
@@ -491,7 +491,7 @@ subroutine covcross
       jj = Ecovindex(j)
       err = xsavC(i, j) * errmtC(i, j)
 !     write(3, '(3i4, 5es15.6)') MT(i), MTiso(i), jj, e(i, jj), Rmt(i, j, j), errmtC(i, j), xsavC(i, j), err
-      write(1, '(es15.6,4es24.16e3)') e(i, jj), Rmt(i, j, j), errmtC(i, j), xsavC(i, j), err
+      write(1, '(2es15.6,3(1x,es24.16e3))') e(i, jj), Rmt(i, j, j), errmtC(i, j), xsavC(i, j), err
     enddo
   enddo
   close (1)
