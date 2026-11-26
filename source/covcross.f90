@@ -259,9 +259,8 @@ subroutine covcross
                   if (V2 > 0.) then
                     Ccov(ichan, j, kchan, l) = Vcov(ichan, j, kchan, l) / sqrt(V2)
                     term = Ccov(ichan, j, kchan, l) **2
-                    if (term > Rlimit) write(*, '(" TASMAN-warning: Correlation: ", es20.10)') term
-                    Vcov(ichan, j, kchan, l) = Vcov(ichan, j, kchan, l) / term
-                    Rcov(ichan, j, kchan, l) = Rcov(ichan, j, kchan, l) / term
+                    if (term > Rlimit) write(*, '(" TASMAN-warning: Correlation: MT=", i3, " MT=", i3, es20.10)') &
+ &                    MT(i), MT(k), term
                   endif
                   if (Vcov(ichan, j, ichan, j) == 0.) Vcov(ichan, j, kchan, l) = 0.
                   if (Rcov(ichan, j, ichan, j) == 0.) Rcov(ichan, j, kchan, l) = 0.
@@ -378,10 +377,8 @@ subroutine covcross
         if (V2 > 0.) then
           Cmt(i, j, l) = Vmt(i, j, l) / sqrt(V2)
           term = Cmt(i, j, l) **2
-          if (term > Rlimit) then
-            Vmt(i, j, l) = Vmt(i, j, l) / term
-            Rmt(i, j, l) = Rmt(i, j, l) / term
-          endif
+          if (term > Rlimit) write(*, '(" TASMAN-warning: Correlation: MT=", i3, " MT=", i3, es20.10)') &
+ &          MT(i), MT(k), term
         endif
       enddo
     enddo
