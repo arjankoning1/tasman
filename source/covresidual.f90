@@ -156,7 +156,7 @@ subroutine covresidual
         ll = Ecovindex(l)
 !       write(4, '(2(4i4, es15.6), es15.6)') Zrp(i), Arp(i), Lrp(i), jj, e(i, jj), Zrp(i), Arp(i), Lrp(i), ll, e(i, ll), &
 !&        Rrp(i, j, l)
-        write(1, '(2es15.6,es24.16e3)') e(i, jj),  e(i, ll), Rrp(i, j, l)
+        write(1, '(2es15.6, 1x, es24.16e3)') e(i, jj),  e(i, ll), Rrp(i, j, l)
       enddo
     enddo
   enddo
