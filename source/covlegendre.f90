@@ -170,7 +170,7 @@ subroutine covlegendre
       call write_datablock(id2,Ncol,(numleg+1)**2,col,un)
       do j = 0, numleg
         do l = 0, numleg
-          write(1, '(2(3x,i6,6x), es24.16e3)') j, l, Rleg(i, j, k, l)
+          write(1, '(2(3x,i6,6x), 1x, es24.16e3)') j, l, Rleg(i, j, k, l)
         enddo
       enddo
     enddo
