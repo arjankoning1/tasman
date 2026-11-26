@@ -141,7 +141,7 @@ subroutine covlegendre
       call write_quantity(id2,quantity)
       call write_datablock(id2,Ncol,numleg,col,un)
       do j = 0, numleg
-        err = legav(i, j) * errleg(i, j)
+        err = abs(legav(i, j)) * errleg(i, j)
         write(3, '(3x,i6,6x, 2es15.6)') j, legav(i, j), err
       enddo
       close (3)
