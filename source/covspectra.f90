@@ -188,7 +188,7 @@ subroutine covspectra
     call write_datablock(id2,Ncol,(Nensp(i)+1)**2,col,un)
     do j = 0, Nensp(i)
       do l = 0, Nensp(i)
-        write(1, '(2es15.6,es24.16e3)')  Eout(i, j), Eout(i, l), Rsp(i, j, l)
+        write(1, '(2es15.6, 1x, es24.16e3)')  Eout(i, j), Eout(i, l), Rsp(i, j, l)
       enddo
     enddo
   enddo
