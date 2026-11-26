@@ -69,7 +69,6 @@ subroutine covresidual
   integer           :: id2
   real(dbl)         :: err       ! error
   real(dbl)         :: term      ! help variable
-  real(dbl)         :: term0     ! help variable
   real(dbl)         :: xsdifi    ! difference in cross section
   real(dbl)         :: xsdifk    ! difference in cross section
   real(dbl)         :: xsi0      ! cross section of run 0
@@ -98,7 +97,6 @@ subroutine covresidual
         xsk0 = rptalys(0, i, ll)
         xsk1 = min(real(rptalys(1, i, ll), dbl), 10. * xsk0)
         xsdifk = xsk0 - xsk1
-        term0 = xsdifi * xsdifk
         if (Sws0 > 0.) then
           term = 0.
           if (xsi0 /= 0. .and. xsk0 /= 0.) term = (xsdifi / xsi0) * (xsdifk / xsk0)
