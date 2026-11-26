@@ -53,8 +53,8 @@ subroutine covmacs
     if (xs2 > 0.) term = term0 / xs2
     RmacsD = (RmacsD * Swp0 + Sw0 * term) / Sws0
     errmacs = sqrt(RmacsD)
+    macsav = (macsav * Swp0 + Sw0 * xsi1) / Sws0
   endif
-  macsav = (macsav * Swp0 + Sw0 * xsi1) / Sws0
 !
 ! Output
 !
