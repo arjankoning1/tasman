@@ -200,7 +200,7 @@ subroutine covangle
     call write_datablock(id2,Ncol,(Nang(i)+1)**2,col,un)
     do j = 0, Nang(i)
       do l = 0, Nang(i)
-        write(1, '(2(3x,i6,6x),es24.16e3)') j, l, Rang(i, j, l)
+        write(1, '(2(3x,i6,6x),1x,es24.16e3)') j, l, Rang(i, j, l)
       enddo
     enddo
   enddo
