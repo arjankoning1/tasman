@@ -482,7 +482,6 @@ module A0_tasman_mod
   integer, dimension(numchancov)                    :: MTisocov    ! isomer of MT number with covariance data
   integer                                           :: Nchancovint ! number of channels with covariance data
   integer                                           :: Nencov      ! number of covariance energies
-  real(sgl)                                         :: coveps      ! limit for covariance
   real(sgl), dimension(0:numencov)                  :: Ecov        ! covariance energy grid
   real(sgl), dimension(numchanxs,numenin)           :: errmt       ! cross section uncertainty
   real(sgl), dimension(numchanxs,numencov)          :: errmtC      ! cross section uncertainty (for cov. energy grid)

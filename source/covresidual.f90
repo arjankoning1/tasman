@@ -19,7 +19,6 @@ subroutine covresidual
 ! Variables for reading cross sections
 !   E            ! incident energy
 ! Variables for cross section covariances
-!   coveps       ! limit for covariance
 !   Ecovindex    ! index for covariance energy on main energy grid
 !   flagband     ! flag to represent results as error bands
 !   Nencov       ! number of covariance energies
@@ -101,12 +100,11 @@ subroutine covresidual
         xsk1 = min(rptalys(1, i, ll), 10. * xsk0)
         xsdifk = xsk0 - xsk1
         term0 = xsdifi * xsdifk
-        if (abs(term0) > coveps .and. Sws0 > 0.) then
+        if (Sws0 > 0.) then
           xs2 = xsi0 * xsk0
-          if (xs2 > 0.) then
-            term = term0 / xs2
-            Rrp(i, j, l) = (Rrp(i, j, l) * Swp0 + Sw0 * term) / Sws0
-          endif
+          term = 0.
+          if (xs2 > 0.) term = term0 / xs2
+          Rrp(i, j, l) = (Rrp(i, j, l) * Swp0 + Sw0 * term) / Sws0
         endif
       enddo
     enddo
@@ -115,13 +113,12 @@ subroutine covresidual
       xsi1 = min(rptalys(1, i, j), 10. * xsi0)
       xsdifi = xsi0 - xsi1
       term0 = xsdifi * xsdifi
-      if (abs(term0) > coveps .and. Sws0 > 0.) then
+      if (Sws0 > 0.) then
         xs2 = xsi0 * xsi0
-        if (xs2 > 0.) then
-          term = term0 / xs2
-          RrpD(i, j) = (RrpD(i, j) * Swp0 + Sw0 * term) / Sws0
-          errrp(i, j) = sqrt(RrpD(i, j))
-        endif
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        RrpD(i, j) = (RrpD(i, j) * Swp0 + Sw0 * term) / Sws0
+        errrp(i, j) = sqrt(RrpD(i, j))
       endif
       if (Sws0 > 0.) rpav(i, j) = (rpav(i, j) * Swp0 + Sw0 * xsi1) / Sws0
     enddo

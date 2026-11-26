@@ -58,7 +58,6 @@ subroutine covcross
 !   Ecovindex       ! index for covariance energy on main energy grid
 !   Ccov            ! correlation matrix for cross sections
 !   Cmt             ! intra - channel correlation matrix for cross sections
-!   coveps          ! limit for covariance
 !   errmt           ! cross section uncertainty
 !   errmtC          ! cross section uncertainty (for cov. energy grid)
 !   flagband        ! flag to represent results as error bands
@@ -232,13 +231,12 @@ subroutine covcross
                   xsk0 = xsavC(k, l)
                   xsdifk = xsk0 - xsk1
                   term0 = xsdifi * xsdifk
-                  if (abs(term0) > coveps .and. Sws > 0.) then
+                  if (Sws > 0.) then
                     Vcov(ichan, j, kchan, l) = (Vcov(ichan, j, kchan, l) * Swp + Sw * term0) / Sws
                     xs2 = xsi0 * xsk0
-                    if (xs2 > 0.) then
-                      term = term0 / xs2
-                      Rcov(ichan, j, kchan, l) = (Rcov(ichan, j, kchan, l) * Swp + Sw * term) / Sws
-                    endif
+                    term = 0.
+                    if (xs2 > 0.) term = term0 / xs2
+                    Rcov(ichan, j, kchan, l) = (Rcov(ichan, j, kchan, l) * Swp + Sw * term) / Sws
                   endif
                 enddo
               endif
@@ -314,13 +312,12 @@ subroutine covcross
         xsk0 = xsavC(i, l)
         xsdifk = xsk0 - xsk1
         term0 = xsdifi * xsdifk
-        if (abs(term0) > coveps .and. Sws > 0.) then
+        if (Sws > 0.) then
           Vmt(i, j, l) = (Vmt(i, j, l) * Swp + Sw * term0) / Sws
           xs2 = xsi0 * xsk0
-          if (xs2 > 0.) then
-            term = term0 / xs2
-            Rmt(i, j, l) = (Rmt(i, j, l) * Swp + Sw * term) / Sws
-          endif
+          term = 0.
+          if (xs2 > 0.) term = term0 / xs2
+          Rmt(i, j, l) = (Rmt(i, j, l) * Swp + Sw * term) / Sws
         endif
       enddo
       errmtC(i, j) = sqrt(Rmt(i, j, j))
@@ -336,9 +333,10 @@ subroutine covcross
       xsdifi = xsi0 - xsi1
       term0 = xsdifi * xsdifi
       xs2 = xsi0 * xsi0
-      if (abs(term0) > coveps .and. xs2 > 0.) then
-        term = term0 / xs2
-        if (Sws > 0.) RmtD(i, j) = (RmtD(i, j) * Swp + Sw * term) / Sws
+      if (Sws > 0.) then
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        RmtD(i, j) = (RmtD(i, j) * Swp + Sw * term) / Sws
         errmt(i, j) = sqrt(RmtD(i, j))
 !
 ! Monte Carlo sensitivity matrix

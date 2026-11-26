@@ -21,8 +21,6 @@ subroutine covintegral
 !   Reff         ! covariance matrix for effective cross sections
 !   ReffD        ! diagonal of covariance matrix for effective cross sections
 !   xseffav      ! average effective cross section
-! Variables for cross section covariances
-!   coveps       ! limit for covariance
 ! Variables for covariances
 !   Sw0          ! sum of weights
 !   Swp0         ! sum of weights
@@ -60,13 +58,12 @@ subroutine covintegral
     xsi1 = min(xsefftalys(1, i), 10. * xsi0)
     xsdifi = xsi0 - xsi1
     term0 = xsdifi * xsdifi
-    if (abs(term0) > coveps .and. Sws0 > 0.) then
+    if (Sws0 > 0.) then
       xs2 = xsi0 * xsi0
-      if (xs2 > 0.) then
-        term = term0 / xs2
-        ReffD(i) = (ReffD(i) * Swp0 + Sw0 * term) / Sws0
-        erreff(i) = sqrt(ReffD(i))
-      endif
+      term = 0.
+      if (xs2 > 0.) term = term0 / xs2
+      ReffD(i) = (ReffD(i) * Swp0 + Sw0 * term) / Sws0
+      erreff(i) = sqrt(ReffD(i))
     endif
     if (Sws0 > 0.) xseffav(i) = (xseffav(i) * Swp0 + Sw0 * xsi1) / Sws0
     do j = 1, Nxseff
@@ -74,12 +71,11 @@ subroutine covintegral
       xsk1 = min(xsefftalys(1, j), 10. * xsk0)
       xsdifk = xsk0 - xsk1
       term0 = xsdifi * xsdifk
-      if (abs(term0) > coveps .and. Sws0 > 0.) then
+      if (Sws0 > 0.) then
         xs2 = xsi0 * xsk0
-        if (xs2 > 0.) then
-          term = term0 / xs2
-          Reff(i, j) = (Reff(i, j) * Swp0 + Sw0 * term) / Sws0
-        endif
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        Reff(i, j) = (Reff(i, j) * Swp0 + Sw0 * term) / Sws0
       endif
     enddo
   enddo

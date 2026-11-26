@@ -27,8 +27,6 @@ subroutine covlegendre
 !   leg0        ! Legendre coefficients from TALYS
 !   legfile     ! name of file with Legendre coefficients
 !   Nchanleg    ! total number of channels with Legendre coefficients
-! Variables for cross section covariances
-!   coveps      ! limit for covariance
 ! Variables for covariances
 !   Sw0         ! sum of weights
 !   Swp0        ! sum of weights
@@ -86,12 +84,11 @@ subroutine covlegendre
           legk1 = leg0(1, k, l)
           legdifk = legk0 - legk1
           term0 = legdifi * legdifk
-          if (abs(term0) > coveps .and. Sws0 > 0.) then
+          if (Sws0 > 0.) then
             leg2 = legi0 * legk0
-            if (leg2 > 0.) then
-              term = term0 / leg2
-              Rleg(i, j, k, l) = (Rleg(i, j, k, l) * Swp0 + Sw0 * term) / Sws0
-            endif
+            term = 0.
+            if (leg2 /= 0.) term = term0 / leg2
+            Rleg(i, j, k, l) = (Rleg(i, j, k, l) * Swp0 + Sw0 * term) / Sws0
           endif
         enddo
       enddo

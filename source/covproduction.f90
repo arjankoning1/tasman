@@ -17,7 +17,6 @@ subroutine covproduction
 ! Variables for writing TALYS input files
 !   italys          ! TALYS run counter
 ! Variables for cross section covariances
-!   coveps          ! limit for covariance
 !   flagband        ! flag to represent results as error bands
 ! Variables for reading isotope production
 !   acttalys        ! activity of produced isotope in MBq
@@ -68,13 +67,12 @@ subroutine covproduction
       xsi1 = min(acttalys(1, i, j), 10. * xsi0)
       xsdifi = xsi0 - xsi1
       term0 = xsdifi * xsdifi
-      if (abs(term0) > coveps .and. Sws0 > 0.) then
+      if (Sws0 > 0.) then
         xs2 = xsi0 * xsi0
-        if (xs2 > 0.) then
-          term = term0 / xs2
-          RactD(i, j) = (RactD(i, j) * Swp0 + Sw0 * term) / Sws0
-          erract(i, j) = sqrt(RactD(i, j))
-        endif
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        RactD(i, j) = (RactD(i, j) * Swp0 + Sw0 * term) / Sws0
+        erract(i, j) = sqrt(RactD(i, j))
       endif
       if (Sws0 > 0.) actav(i, j) = (actav(i, j) * Swp0 + Sw0 * xsi1) / Sws0
     enddo
@@ -83,13 +81,12 @@ subroutine covproduction
       xsi1 = min(Nisotalys(1, i, j), 10. * xsi0)
       xsdifi = xsi0 - xsi1
       term0 = xsdifi * xsdifi
-      if (abs(term0) > coveps .and. Sws0 > 0.) then
+      if (Sws0 > 0.) then
         xs2 = xsi0 * xsi0
-        if (xs2 > 0.) then
-          term = term0 / xs2
-          RNisoD(i, j) = (RNisoD(i, j) * Swp0 + Sw0 * term) / Sws0
-          errNiso(i, j) = sqrt(RNisoD(i, j))
-        endif
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        RNisoD(i, j) = (RNisoD(i, j) * Swp0 + Sw0 * term) / Sws0
+        errNiso(i, j) = sqrt(RNisoD(i, j))
       endif
       if (Sws0 > 0.) Nisoav(i, j) = (Nisoav(i, j) * Swp0 + Sw0 * xsi1) / Sws0
     enddo
@@ -98,13 +95,12 @@ subroutine covproduction
       xsi1 = min(yieldtalys(1, i, j), 10. * xsi0)
       xsdifi = xsi0 - xsi1
       term0 = xsdifi * xsdifi
-      if (abs(term0) > coveps .and. Sws0 > 0.) then
+      if (Sws0 > 0.) then
         xs2 = xsi0 * xsi0
-        if (xs2 > 0.) then
-          term = term0 / xs2
-          RyieldD(i, j) = (RyieldD(i, j) * Swp0 + Sw0 * term) / Sws0
-          erryield(i, j) = sqrt(RyieldD(i, j))
-        endif
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        RyieldD(i, j) = (RyieldD(i, j) * Swp0 + Sw0 * term) / Sws0
+        erryield(i, j) = sqrt(RyieldD(i, j))
       endif
       if (Sws0 > 0.) yieldav(i, j) = (yieldav(i, j) * Swp0 + Sw0 * xsi1) / Sws0
     enddo
@@ -113,13 +109,12 @@ subroutine covproduction
       xsi1 = min(Nisoreltalys(1, i, j), 10. * xsi0)
       xsdifi = xsi0 - xsi1
       term0 = xsdifi * xsdifi
-      if (abs(term0) > coveps .and. Sws0 > 0.) then
+      if (Sws0 > 0.) then
         xs2 = xsi0 * xsi0
-        if (xs2 > 0.) then
-          term = term0 / xs2
-          RNisorelD(i, j) = (RNisorelD(i, j) * Swp0 + Sw0 * term) / Sws0
-          errNisorel(i, j) = sqrt(RNisorelD(i, j))
-        endif
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        RNisorelD(i, j) = (RNisorelD(i, j) * Swp0 + Sw0 * term) / Sws0
+        errNisorel(i, j) = sqrt(RNisorelD(i, j))
       endif
       if (Sws0 > 0.) Nisorelav(i, j) = (Nisorelav(i, j) * Swp0 + Sw0 * xsi1) / Sws0
     enddo

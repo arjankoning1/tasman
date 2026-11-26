@@ -16,8 +16,6 @@ subroutine covmacs
 !   sgl          ! single precision kind
 ! Variables for writing TALYS input files
 !   italys       ! TALYS run counter
-! Variables for cross section covariances
-!   coveps       ! limit for covariance
 ! Variables for covariances
 !   Sw0          ! sum of weights
 !   Swp0         ! sum of weights
@@ -49,13 +47,12 @@ subroutine covmacs
   xsi1 = min(macstalys(1), 10. * xsi0)
   xsdifi = xsi0 - xsi1
   term0 = xsdifi * xsdifi
-  if (abs(term0) > coveps .and. Sws0 > 0.) then
+  if (Sws0 > 0.) then
     xs2 = xsi0 * xsi0
-    if (xs2 > 0.) then
-      term = term0 / xs2
-      RmacsD = (RmacsD * Swp0 + Sw0 * term) / Sws0
-      errmacs = sqrt(RmacsD)
-    endif
+    term = 0.
+    if (xs2 > 0.) term = term0 / xs2
+    RmacsD = (RmacsD * Swp0 + Sw0 * term) / Sws0
+    errmacs = sqrt(RmacsD)
   endif
   macsav = (macsav * Swp0 + Sw0 * xsi1) / Sws0
 !

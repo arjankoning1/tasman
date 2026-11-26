@@ -13,7 +13,6 @@ subroutine tasmaninitial
   use A0_tasman_mod
 !
 ! Variables for cross section covariances
-!   coveps          ! limit for covariance
 !   Ecov            ! covariance energy grid
 !   Rlimit          ! limit for covariance calculation
 ! Variables for parameter variation
@@ -460,7 +459,6 @@ subroutine tasmaninitial
   Ecov(50) = 140.
   Ecov(51) = 160.
   Ecov(52) = 200.
-  coveps = 1.e-15
   Rlimit = 1.000001
   return
 end subroutine tasmaninitial

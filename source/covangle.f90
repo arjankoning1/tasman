@@ -18,7 +18,6 @@ subroutine covangle
 !   italys      ! TALYS run counter
 ! Variables for cross section covariances
 !   flagband    ! flag to represent results as error bands
-!   coveps      ! limit for covariance
 ! Variables for reading angular distributions
 !   angfile     ! name of file with angular distributions
 !   angle       ! angle
@@ -103,12 +102,11 @@ subroutine covangle
         angk0 = angav(i, l)
         angdifk = angk0 - angk1
         term0 = angdifi * angdifk
-        if (abs(term0) > coveps .and. Sws0 > 0.) then
+        if (Sws0 > 0.) then
           ang2 = angi0 * angk0
-          if (ang2 > 0.) then
-            term = term0 / ang2
-            Rang(i, j, l) = (Rang(i, j, l) * Swp0 + Sw0 * term) / Sws0
-          endif
+          term = 0.
+          if (ang2 > 0.) term = term0 / ang2
+          Rang(i, j, l) = (Rang(i, j, l) * Swp0 + Sw0 * term) / Sws0
         endif
       enddo
       errang(i, j) = sqrt(Rang(i, j, j))

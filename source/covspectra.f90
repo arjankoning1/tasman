@@ -19,7 +19,6 @@ subroutine covspectra
 ! Variables for reading experimental data
 !   Ein         ! incident energy
 ! Variables for cross section covariances
-!   coveps      ! limit for covariance
 !   flagband    ! flag to represent results as error bands
 ! Variables for reading spectra
 !   Eout        ! emission energy
@@ -89,12 +88,11 @@ subroutine covspectra
         spk1 = min(sptalys(1, i, l), 10. * spk0)
         spdifk = spk0 - spk1
         term0 = spdifi * spdifk
-        if (abs(term0) > coveps .and. Sws0 > 0.) then
+        if (Sws0 > 0.) then
           sp2 = spi0 * spk0
-          if (sp2 > 0.) then
-            term = term0 / sp2
-            Rsp(i, j, l) = (Rsp(i, j, l) * Swp0 + Sw0 * term) / Sws0
-          endif
+          term = 0.
+          if (sp2 > 0.) term = term0 / sp2
+          Rsp(i, j, l) = (Rsp(i, j, l) * Swp0 + Sw0 * term) / Sws0
         endif
       enddo
       if (Sws0 > 0.) spav(i, j) = (spav(i, j) * Swp0 + Sw0 * spi1) / Sws0

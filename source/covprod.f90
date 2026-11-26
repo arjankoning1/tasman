@@ -17,7 +17,6 @@ subroutine covprod
 ! Variables for writing TALYS input files
 !   italys       ! TALYS run counter
 ! Variables for cross section covariances
-!   coveps       ! limit for covariance
 !   Ecovindex    ! index for covariance energy on main energy grid
 !   flagband     ! flag to represent results as error bands
 !   Nencov       ! number of covariance energies
@@ -87,12 +86,11 @@ subroutine covprod
         xsk1 = min(prodtalys(1, i, ll), 10. * xsk0)
         xsdifk = xsk0 - xsk1
         term0 = xsdifi * xsdifk
-        if (abs(term0) > coveps .and. Sws0 > 0.) then
+        if (Sws0 > 0.) then
           xs2 = xsi0 * xsk0
-          if (xs2 > 0.) then
-            term = term0 / xs2
-            Rprod(i, j, l) = (Rprod(i, j, l) * Swp0 + Sw0 * term) / Sws0
-          endif
+          term = 0.
+          if (xs2 > 0.) term = term0 / xs2
+          Rprod(i, j, l) = (Rprod(i, j, l) * Swp0 + Sw0 * term) / Sws0
         endif
       enddo
     enddo
@@ -102,13 +100,12 @@ subroutine covprod
       xsdifi = xsi0 - xsi1
       if (Sws0 > 0.) prodav(i, j) = (prodav(i, j) * Swp0 + Sw0 * xsi1) / Sws0
       term0 = xsdifi * xsdifi
-      if (abs(term0) > coveps .and. Sws0 > 0.) then
+      if (Sws0 > 0.) then
         xs2 = xsi0 * xsi0
-        if (xs2 > 0.) then
-          term = term0 / xs2
-          RprodD(i, j) = (RprodD(i, j) * Swp0 + Sw0 * term) / Sws0
-          errprod(i, j) = sqrt(RprodD(i, j))
-        endif
+        term = 0.
+        if (xs2 > 0.) term = term0 / xs2
+        RprodD(i, j) = (RprodD(i, j) * Swp0 + Sw0 * term) / Sws0
+        errprod(i, j) = sqrt(RprodD(i, j))
       endif
     enddo
   enddo
