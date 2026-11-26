@@ -39,42 +39,36 @@ subroutine covintegral
   character(len=12) :: ofile     ! output file
   integer           :: i         ! counter
   integer           :: j         ! counter
-  real(sgl)         :: err       ! error
-  real(sgl)         :: errrat    ! ratio of error
-  real(sgl)         :: term      ! help variable
-  real(sgl)         :: term0     ! help variable
-  real(sgl)         :: xs2       ! help variable
-  real(sgl)         :: xsdifi    ! difference in cross section
-  real(sgl)         :: xsdifk    ! difference in cross section
-  real(sgl)         :: xsi0      ! cross section of run 0
-  real(sgl)         :: xsi1      ! cross section of random run
-  real(sgl)         :: xsk0      ! cross section of run 0
-  real(sgl)         :: xsk1      ! cross section of random run
+  real(dbl)         :: err       ! error
+  real(dbl)         :: errrat    ! ratio of error
+  real(dbl)         :: term      ! help variable
+  real(dbl)         :: xsdifi    ! difference in cross section
+  real(dbl)         :: xsdifk    ! difference in cross section
+  real(dbl)         :: xsi0      ! cross section of run 0
+  real(dbl)         :: xsi1      ! cross section of random run
+  real(dbl)         :: xsk0      ! cross section of run 0
+  real(dbl)         :: xsk1      ! cross section of random run
 !
 ! Average effective cross sections and covariances
 !
   do i = 1, Nxseff
     xsi0 = xsefftalys(0, i)
-    xsi1 = min(xsefftalys(1, i), 10. * xsi0)
+    xsi1 = min(real(xsefftalys(1, i), dbl), 10. * xsi0)
     xsdifi = xsi0 - xsi1
-    term0 = xsdifi * xsdifi
     if (Sws0 > 0.) then
-      xs2 = xsi0 * xsi0
       term = 0.
-      if (xs2 > 0.) term = term0 / xs2
+      if (xsi0 /= 0.) term = (xsdifi / xsi0) * (xsdifi / xsi0)
       ReffD(i) = (ReffD(i) * Swp0 + Sw0 * term) / Sws0
       erreff(i) = sqrt(ReffD(i))
     endif
     if (Sws0 > 0.) xseffav(i) = (xseffav(i) * Swp0 + Sw0 * xsi1) / Sws0
     do j = 1, Nxseff
       xsk0 = xsefftalys(0, j)
-      xsk1 = min(xsefftalys(1, j), 10. * xsk0)
+      xsk1 = min(real(xsefftalys(1, j), dbl), 10. * xsk0)
       xsdifk = xsk0 - xsk1
-      term0 = xsdifi * xsdifk
       if (Sws0 > 0.) then
-        xs2 = xsi0 * xsk0
         term = 0.
-        if (xs2 > 0.) term = term0 / xs2
+        if (xsi0 /= 0. .and. xsk0 /= 0.) term = (xsdifi / xsi0) * (xsdifk / xsk0)
         Reff(i, j) = (Reff(i, j) * Swp0 + Sw0 * term) / Sws0
       endif
     enddo

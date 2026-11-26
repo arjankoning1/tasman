@@ -67,17 +67,16 @@ subroutine covresidual
   integer           :: Ncol
   integer           :: indent
   integer           :: id2
-  real(sgl)         :: err       ! error
-  real(sgl)         :: term      ! help variable
-  real(sgl)         :: term0     ! help variable
-  real(sgl)         :: xs2       ! help variable
-  real(sgl)         :: xsdifi    ! difference in cross section
-  real(sgl)         :: xsdifk    ! difference in cross section
-  real(sgl)         :: xsi0      ! cross section of run 0
-  real(sgl)         :: xsi1      ! cross section of random run
-  real(sgl)         :: xsk0      ! cross section of run 0
-  real(sgl)         :: xsk1      ! cross section of random run
-  real(sgl), allocatable                           :: errrp(:,:) ! cross section uncertainty
+  real(dbl)         :: err       ! error
+  real(dbl)         :: term      ! help variable
+  real(dbl)         :: term0     ! help variable
+  real(dbl)         :: xsdifi    ! difference in cross section
+  real(dbl)         :: xsdifk    ! difference in cross section
+  real(dbl)         :: xsi0      ! cross section of run 0
+  real(dbl)         :: xsi1      ! cross section of random run
+  real(dbl)         :: xsk0      ! cross section of run 0
+  real(dbl)         :: xsk1      ! cross section of random run
+  real(dbl), allocatable                           :: errrp(:,:) ! cross section uncertainty
   allocate(errrp(numchanrp,numenin))
   errrp = 0.
 !
@@ -92,31 +91,28 @@ subroutine covresidual
     do j = 1, Nencov
       jj = Ecovindex(j)
       xsi0 = rptalys(0, i, jj)
-      xsi1 = min(rptalys(1, i, jj), 10. * xsi0)
+      xsi1 = min(real(rptalys(1, i, jj), dbl), 10. * xsi0)
       xsdifi = xsi0 - xsi1
       do l = 1, Nencov
         ll = Ecovindex(l)
         xsk0 = rptalys(0, i, ll)
-        xsk1 = min(rptalys(1, i, ll), 10. * xsk0)
+        xsk1 = min(real(rptalys(1, i, ll), dbl), 10. * xsk0)
         xsdifk = xsk0 - xsk1
         term0 = xsdifi * xsdifk
         if (Sws0 > 0.) then
-          xs2 = xsi0 * xsk0
           term = 0.
-          if (xs2 > 0.) term = term0 / xs2
+          if (xsi0 /= 0. .and. xsk0 /= 0.) term = (xsdifi / xsi0) * (xsdifk / xsk0)
           Rrp(i, j, l) = (Rrp(i, j, l) * Swp0 + Sw0 * term) / Sws0
         endif
       enddo
     enddo
     do j = 1, Nenrp(i)
       xsi0 = rptalys(0, i, j)
-      xsi1 = min(rptalys(1, i, j), 10. * xsi0)
+      xsi1 = min(real(rptalys(1, i, j), dbl), 10. * xsi0)
       xsdifi = xsi0 - xsi1
-      term0 = xsdifi * xsdifi
       if (Sws0 > 0.) then
-        xs2 = xsi0 * xsi0
         term = 0.
-        if (xs2 > 0.) term = term0 / xs2
+        if (xsi0 /= 0.) term = (xsdifi / xsi0) * (xsdifi / xsi0)
         RrpD(i, j) = (RrpD(i, j) * Swp0 + Sw0 * term) / Sws0
         errrp(i, j) = sqrt(RrpD(i, j))
       endif
@@ -162,7 +158,7 @@ subroutine covresidual
         ll = Ecovindex(l)
 !       write(4, '(2(4i4, es15.6), es15.6)') Zrp(i), Arp(i), Lrp(i), jj, e(i, jj), Zrp(i), Arp(i), Lrp(i), ll, e(i, ll), &
 !&        Rrp(i, j, l)
-        write(1, '(3es15.6)') e(i, jj),  e(i, ll), Rrp(i, j, l)
+        write(1, '(2es15.6,es24.16e3)') e(i, jj),  e(i, ll), Rrp(i, j, l)
       enddo
     enddo
   enddo

@@ -64,14 +64,14 @@ subroutine covparameter
   integer           :: id2
   real(sgl)         :: Ei         ! incident energy
   real(sgl)         :: Eprev      ! previous energy
-  real(sgl)         :: err        ! error
-  real(sgl)         :: finperc    ! relative parameter uncertainty on output
-  real(sgl)         :: inperr     ! parameter uncertainty on input
-  real(sgl)         :: inpperc    ! relative parameter uncertainty on input
-  real(sgl)         :: pdifk      ! Rdifference in parameter
-  real(sgl)         :: pdifl      ! Rdifference in parameter
-  real(sgl)         :: ratio      ! ratio of uncertainties
-  real(sgl)         :: term       ! help variable
+  real(dbl)         :: err        ! error
+  real(dbl)         :: finperc    ! relative parameter uncertainty on output
+  real(dbl)         :: inperr     ! parameter uncertainty on input
+  real(dbl)         :: inpperc    ! relative parameter uncertainty on input
+  real(dbl)         :: pdifk      ! Rdifference in parameter
+  real(dbl)         :: pdifl      ! Rdifference in parameter
+  real(dbl)         :: ratio      ! ratio of uncertainties
+  real(dbl)         :: term       ! help variable
 !
 ! Output of accepted and rejected parameters
 !
@@ -88,10 +88,10 @@ subroutine covparameter
   pdifk = 0.
   pdifl = 0.
   do k = 1, Npar
-    if (parsave(0, k) /= 0.) pdifk = (partalys(1, k) - parsave(0, k)) / parsave(0, k)
+    if (parsave(0, k) /= 0.) pdifk = (real(partalys(1, k), dbl) - real(parsave(0, k), dbl)) / real(parsave(0, k), dbl)
     if (Sweightsum(0) > 0.) then
       do l = 1, Npar
-        if (parsave(0, l) /= 0.) pdifl = (partalys(1, l) - parsave(0, l)) / parsave(0, l)
+        if (parsave(0, l) /= 0.) pdifl = (real(partalys(1, l), dbl) - real(parsave(0, l), dbl)) / real(parsave(0, l), dbl)
         term = pdifk * pdifl
         parcov(k, l) = (parcov(k, l) * Sweightprev(0) + Sweight(0) * term) / Sweightsum(0)
       enddo
@@ -125,7 +125,7 @@ subroutine covparameter
   call write_datablock(id2,Ncol,Npar*Npar,col,un)
   do k = 1, Npar
     do l = 1, Npar
-      write(1, '(2a30, 2es15.6)') parstring(k), parstring(l), parcov(k, l), parcor(k, l)
+      write(1, '(2a30, 2es24.16e3)') parstring(k), parstring(l), parcov(k, l), parcor(k, l)
     enddo
   enddo
   close (1)

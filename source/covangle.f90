@@ -55,20 +55,18 @@ subroutine covangle
   integer           :: indent
   integer           :: id2
   integer           :: id4
-  real(sgl)         :: ang2       ! product of angular cross section
-  real(sgl)         :: angdifi    ! difference in angular cross section
-  real(sgl)         :: angdifk    ! difference in angular cross section
-  real(sgl)         :: angi0      ! angular cross section of run 0
-  real(sgl)         :: angi1      ! angular cross section of random run
-  real(sgl)         :: angk0      ! angular cross section of run 0
-  real(sgl)         :: angk1      ! angular cross section of random run
-  real(sgl)         :: down       ! lower value
-  real(sgl)         :: err        ! error
-  real(sgl)         :: term       ! help variable
-  real(sgl)         :: term0      ! help variable
-  real(sgl)         :: up         ! upper value
-  real(sgl)         :: xslimit    ! xs boundary for inclusion
-  real(sgl), dimension(numchanang,0:numang)          :: errang ! angular distributions uncertainty
+  real(dbl)         :: angdifi    ! difference in angular cross section
+  real(dbl)         :: angdifk    ! difference in angular cross section
+  real(dbl)         :: angi0      ! angular cross section of run 0
+  real(dbl)         :: angi1      ! angular cross section of random run
+  real(dbl)         :: angk0      ! angular cross section of run 0
+  real(dbl)         :: angk1      ! angular cross section of random run
+  real(dbl)         :: down       ! lower value
+  real(dbl)         :: err        ! error
+  real(dbl)         :: term       ! help variable
+  real(dbl)         :: up         ! upper value
+  real(dbl)         :: xslimit    ! xs boundary for inclusion
+  real(dbl), dimension(numchanang,0:numang)          :: errang ! angular distributions uncertainty
   errang = 0.
 !
 ! Average angular distributions
@@ -80,7 +78,7 @@ subroutine covangle
   do i = 1, Nchanang
     do j = 0, Nang(i)
       angi0 = angtalys(0, i, j)
-      angi1 = min(angtalys(1, i, j), angi0 * xslimit)
+      angi1 = min(real(angtalys(1, i, j), dbl), angi0 * xslimit)
       angi1 = max(angi1, angi0 / xslimit)
       if (Sws0 > 0.) angav(i, j) = (angav(i, j) * Swp0 + Sw0 * angi1) / Sws0
     enddo
@@ -91,21 +89,19 @@ subroutine covangle
   do i = 1, Nchanang
     do j = 0, Nang(i)
       angi0 = angtalys(0, i, j)
-      angi1 = min(angtalys(1, i, j), angi0 * xslimit)
+      angi1 = min(real(angtalys(1, i, j), dbl), angi0 * xslimit)
       angi1 = max(angi1, angi0 / xslimit)
       angi0 = angav(i, j)
       angdifi = angi0 - angi1
       do l = 0, Nang(i)
         angk0 = angtalys(0, i, l)
-        angk1 = min(angtalys(1, i, l), angk0 * xslimit)
+        angk1 = min(real(angtalys(1, i, l), dbl), angk0 * xslimit)
         angk1 = max(angk1, angk0 / xslimit)
         angk0 = angav(i, l)
         angdifk = angk0 - angk1
-        term0 = angdifi * angdifk
         if (Sws0 > 0.) then
-          ang2 = angi0 * angk0
           term = 0.
-          if (ang2 > 0.) term = term0 / ang2
+          if (angi0 /= 0. .and. angk0 /= 0.) term = (angdifi / angi0) * (angdifk / angk0)
           Rang(i, j, l) = (Rang(i, j, l) * Swp0 + Sw0 * term) / Sws0
         endif
       enddo
@@ -204,7 +200,7 @@ subroutine covangle
     call write_datablock(id2,Ncol,(Nang(i)+1)**2,col,un)
     do j = 0, Nang(i)
       do l = 0, Nang(i)
-        write(1, '(2(3x,i6,6x),es15.6)') j, l, Rang(i, j, l)
+        write(1, '(2(3x,i6,6x),es24.16e3)') j, l, Rang(i, j, l)
       enddo
     enddo
   enddo

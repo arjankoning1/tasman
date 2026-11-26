@@ -57,19 +57,17 @@ subroutine covspectra
   integer           :: indent
   integer           :: id2
   integer           :: id4
-  real(sgl)         :: down      ! lower value
-  real(sgl)         :: err       ! error
-  real(sgl)         :: sp2       ! product of spectra
-  real(sgl)         :: spdifi    ! difference in spectrum
-  real(sgl)         :: spdifk    ! difference in spectrum
-  real(sgl)         :: spi0      ! spectrum of run 0
-  real(sgl)         :: spi1      ! spectrum of random run
-  real(sgl)         :: spk0      ! spectrum of run 0
-  real(sgl)         :: spk1      ! spectrum of random run
-  real(sgl)         :: term      ! help variable
-  real(sgl)         :: term0     ! help variable
-  real(sgl)         :: up        ! upper value
-  real(sgl), allocatable :: errsp(:,:) ! emission spectrum uncertainty
+  real(dbl)         :: down      ! lower value
+  real(dbl)         :: err       ! error
+  real(dbl)         :: spdifi    ! difference in spectrum
+  real(dbl)         :: spdifk    ! difference in spectrum
+  real(dbl)         :: spi0      ! spectrum of run 0
+  real(dbl)         :: spi1      ! spectrum of random run
+  real(dbl)         :: spk0      ! spectrum of run 0
+  real(dbl)         :: spk1      ! spectrum of random run
+  real(dbl)         :: term      ! help variable
+  real(dbl)         :: up        ! upper value
+  real(dbl), allocatable :: errsp(:,:) ! emission spectrum uncertainty
   allocate(errsp(numchansp,0:numen2))
   errsp = 0.
 !
@@ -81,17 +79,15 @@ subroutine covspectra
   do i = 1, Nchansp
     do j = 0, Nensp(i)
       spi0 = sptalys(0, i, j)
-      spi1 = min(sptalys(1, i, j), 10. * spi0)
+      spi1 = min(real(sptalys(1, i, j), dbl), 10. * spi0)
       spdifi = spi0 - spi1
       do l = 1, Nensp(i)
         spk0 = sptalys(0, i, l)
-        spk1 = min(sptalys(1, i, l), 10. * spk0)
+        spk1 = min(real(sptalys(1, i, l), dbl), 10. * spk0)
         spdifk = spk0 - spk1
-        term0 = spdifi * spdifk
         if (Sws0 > 0.) then
-          sp2 = spi0 * spk0
           term = 0.
-          if (sp2 > 0.) term = term0 / sp2
+          if (spi0 /= 0. .and. spk0 /= 0.) term = (spdifi / spi0) * (spdifk / spk0)
           Rsp(i, j, l) = (Rsp(i, j, l) * Swp0 + Sw0 * term) / Sws0
         endif
       enddo
@@ -192,7 +188,7 @@ subroutine covspectra
     call write_datablock(id2,Ncol,(Nensp(i)+1)**2,col,un)
     do j = 0, Nensp(i)
       do l = 0, Nensp(i)
-        write(1, '(3es15.6)')  Eout(i, j), Eout(i, l), Rsp(i, j, l)
+        write(1, '(2es15.6,es24.16e3)')  Eout(i, j), Eout(i, l), Rsp(i, j, l)
       enddo
     enddo
   enddo

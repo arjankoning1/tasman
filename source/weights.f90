@@ -42,15 +42,15 @@ subroutine weights
   implicit none
   integer   :: j                               ! counter
   integer   :: nend                            ! help variable
-  real(sgl) :: expo                            ! exponent
-  real(sgl) :: expo0                           ! exponent
-  real(sgl) :: expoD                           ! exponent
-  real(sgl) :: G                               ! goodness-of-fit value  : G = 1: chi-2 : G = 2: squared distance : G = 3: F factor :
-  real(sgl) :: G0                              ! GOF for run 0
-  real(sgl) :: GA                              ! total GOF value
-  real(sgl) :: GA0                             ! total GOF value of run 0
-  real(sgl) :: sumweight(0:numenin)            ! total cumulative weight
-  real(sgl) :: w0                              ! weight of run 0
+  real(dbl) :: expo                            ! exponent
+  real(dbl) :: expo0                           ! exponent
+  real(dbl) :: expoD                           ! exponent
+  real(dbl) :: G                               ! goodness-of-fit value  : G = 1: chi-2 : G = 2: squared distance : G = 3: F factor :
+  real(dbl) :: G0                              ! GOF for run 0
+  real(dbl) :: GA                              ! total GOF value
+  real(dbl) :: GA0                             ! total GOF value of run 0
+  real(dbl) :: sumweight(0:numenin)            ! total cumulative weight
+  real(dbl) :: w0                              ! weight of run 0
   save    sumweight
 !
 ! ******************** Set total weight ********************************
@@ -93,8 +93,8 @@ subroutine weights
           expo0 = abs(GA0)
         endif
         if (expo < 80..and.expo0 < 80.) then
-          w0 = exp( - 0.5 * expo0)
-          weight(j) = exp( - 0.5 * expo) / w0
+          w0 = exp( - 0.5_dbl * expo0)
+          weight(j) = exp( - 0.5_dbl * expo) / w0
         endif
       endif
       if (gofmode == 2 .or. gofmode == 5) then
@@ -107,7 +107,7 @@ subroutine weights
         endif
         expoD = expo / expo0
         if (expoD < 80.) then
-          w0 = exp( - 0.5)
+          w0 = exp( - 0.5_dbl)
           weight(j) = exp( - expoD) / w0
         endif
       endif

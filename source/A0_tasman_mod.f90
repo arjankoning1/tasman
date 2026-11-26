@@ -283,7 +283,7 @@ module A0_tasman_mod
   real(sgl), allocatable :: Gchannelsave(:,:)
   real(sgl), dimension(0:numtalys)                 :: Gsave        ! GOF value
   real(sgl)                                        :: weightpower  ! power for weight of random run
-  real(sgl), dimension(0:numtalys)                 :: weightsave   ! weight for TALYS run
+  real(dbl), dimension(0:numtalys)                 :: weightsave   ! weight for TALYS run
   real(sgl), dimension(numchanxs, 0:numenin)       :: xsopt        ! optimal cross section
   real(sgl), dimension(numchanxs,numsets*numenexp) :: xssamp       ! sampled random cross section
 !
@@ -360,9 +360,9 @@ module A0_tasman_mod
 ! Variables for residual production cross section covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), allocatable                           :: rpav(:,:)  ! average residual production cross section
-  real(sgl), allocatable                           :: Rrp(:,:,:)   ! covariance matrix for residual production cross sections
-  real(sgl), allocatable                           :: RrpD(:,:)  ! diagonal of covariance matrix for cross sections
+  real(dbl), allocatable                           :: rpav(:,:)  ! average residual production cross section
+  real(dbl), allocatable                           :: Rrp(:,:,:)   ! covariance matrix for residual production cross sections
+  real(dbl), allocatable                           :: RrpD(:,:)  ! diagonal of covariance matrix for cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for reading gamma production cross sections
@@ -453,23 +453,23 @@ module A0_tasman_mod
 ! Variables for covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl)                       :: Sw0         ! sum of weights
-  real(sgl), dimension(0:numenin) :: Sweight     ! weight for TALYS run
-  real(sgl), dimension(0:numenin) :: Sweightprev ! weight for previous  TALYS run
-  real(sgl), dimension(0:numenin) :: Sweightsum  ! sum of weights for TALYS run
-  real(sgl)                       :: Swp0        ! sum of weights
-  real(sgl)                       :: Sws0        ! sum of weights
-  real(sgl), dimension(0:numenin) :: weight      ! weight for experimental data sets
+  real(dbl)                       :: Sw0         ! sum of weights
+  real(dbl), dimension(0:numenin) :: Sweight     ! weight for TALYS run
+  real(dbl), dimension(0:numenin) :: Sweightprev ! weight for previous  TALYS run
+  real(dbl), dimension(0:numenin) :: Sweightsum  ! sum of weights for TALYS run
+  real(dbl)                       :: Swp0        ! sum of weights
+  real(dbl)                       :: Sws0        ! sum of weights
+  real(dbl), dimension(0:numenin) :: weight      ! weight for experimental data sets
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for parameter covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
   character(len=30), dimension(numpar)   :: parstring ! parameter string
-  real(sgl), dimension(numpar,0:numenin) :: parav     ! average parameters
-  real(sgl), dimension(numpar, numpar)   :: parcor    ! correlation of parameters
-  real(sgl), dimension(numpar, numpar)   :: parcov    ! covariance matrix for parameters
-  real(sgl), dimension(numpar)           :: pardif    ! difference of parameters
+  real(dbl), dimension(numpar,0:numenin) :: parav     ! average parameters
+  real(dbl), dimension(numpar, numpar)   :: parcor    ! correlation of parameters
+  real(dbl), dimension(numpar, numpar)   :: parcov    ! covariance matrix for parameters
+  real(dbl), dimension(numpar)           :: pardif    ! difference of parameters
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for cross section covariances
@@ -483,94 +483,94 @@ module A0_tasman_mod
   integer                                           :: Nchancovint ! number of channels with covariance data
   integer                                           :: Nencov      ! number of covariance energies
   real(sgl), dimension(0:numencov)                  :: Ecov        ! covariance energy grid
-  real(sgl), dimension(numchanxs,numenin)           :: errmt       ! cross section uncertainty
-  real(sgl), dimension(numchanxs,numencov)          :: errmtC      ! cross section uncertainty (for cov. energy grid)
+  real(dbl), dimension(numchanxs,numenin)           :: errmt       ! cross section uncertainty
+  real(dbl), dimension(numchanxs,numencov)          :: errmtC      ! cross section uncertainty (for cov. energy grid)
   real(sgl)                                         :: Rlimit      ! limit for covariance calculation
-  real(sgl), allocatable                            :: S(:,:,:)           ! sensitivity matrix
-  real(sgl), allocatable                            :: Pearson(:,:,:)     ! Pearson correlation
-  real(sgl), allocatable                            :: Pearson_enum(:,:,:) ! variable for Pearson correlation
-  real(sgl), allocatable                            :: Pearson_denom_par(:,:,:) ! variable for Pearson correlation
-  real(sgl), allocatable                            :: Pearson_denom_xs(:,:,:) ! variable for Pearson correlation
-  real(sgl), allocatable                            :: Sdenom(:,:,:) ! denominator of sensitivity matrix
-  real(sgl), allocatable                            :: Senum(:,:,:)       ! enumerator of sensitivity matrix
-  real(sgl), allocatable                            :: xsav(:,:)   ! average cross section
-  real(sgl), allocatable                            :: xsavC(:,:)  ! average cross section (for covariance energy grid)
-  real(sgl), allocatable                            :: Vmt(:,:,:)    ! intra-channel covariance matrix for cross sectio
-  real(sgl), allocatable                            :: Rmt(:,:,:)    ! intra-channel rel. cov. matrix for cross section
-  real(sgl), allocatable                            :: RmtD(:,:)   ! diagonal of covariance matrix for cross sections
-  real(sgl), allocatable                            :: Rcov(:,:,:,:)   ! relative covariance matrix for cross s
-  real(sgl), allocatable                            :: Vcov(:,:,:,:)   ! covariance matrix for cross sections
+  real(dbl), allocatable                            :: S(:,:,:)           ! sensitivity matrix
+  real(dbl), allocatable                            :: Pearson(:,:,:)     ! Pearson correlation
+  real(dbl), allocatable                            :: Pearson_enum(:,:,:) ! variable for Pearson correlation
+  real(dbl), allocatable                            :: Pearson_denom_par(:,:,:) ! variable for Pearson correlation
+  real(dbl), allocatable                            :: Pearson_denom_xs(:,:,:) ! variable for Pearson correlation
+  real(dbl), allocatable                            :: Sdenom(:,:,:) ! denominator of sensitivity matrix
+  real(dbl), allocatable                            :: Senum(:,:,:)       ! enumerator of sensitivity matrix
+  real(dbl), allocatable                            :: xsav(:,:)   ! average cross section
+  real(dbl), allocatable                            :: xsavC(:,:)  ! average cross section (for covariance energy grid)
+  real(dbl), allocatable                            :: Vmt(:,:,:)    ! intra-channel covariance matrix for cross sectio
+  real(dbl), allocatable                            :: Rmt(:,:,:)    ! intra-channel rel. cov. matrix for cross section
+  real(dbl), allocatable                            :: RmtD(:,:)   ! diagonal of covariance matrix for cross sections
+  real(dbl), allocatable                            :: Rcov(:,:,:,:)   ! relative covariance matrix for cross s
+  real(dbl), allocatable                            :: Vcov(:,:,:,:)   ! covariance matrix for cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for gamma production covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), allocatable                             :: gamav(:,:)  ! average gamma production cross section
-  real(sgl), allocatable                             :: Rgam(:,:,:) ! covariance matrix for gamma production cross sections
-  real(sgl), allocatable                             :: RgamD(:,:)  ! diagonal of covariance matrix for cross sections
+  real(dbl), allocatable                             :: gamav(:,:)  ! average gamma production cross section
+  real(dbl), allocatable                             :: Rgam(:,:,:) ! covariance matrix for gamma production cross sections
+  real(dbl), allocatable                             :: RgamD(:,:)  ! diagonal of covariance matrix for cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for production cross section covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), allocatable                              :: prodav(:,:)  ! average particle production cross section
-  real(sgl), allocatable                              :: Rprod(:,:,:)   ! covariance matrix for particle production cross sect
-  real(sgl), allocatable                              :: RprodD(:,:)  ! diagonal of covariance matrix for cross sections
+  real(dbl), allocatable                              :: prodav(:,:)  ! average particle production cross section
+  real(dbl), allocatable                              :: Rprod(:,:,:)   ! covariance matrix for particle production cross sect
+  real(dbl), allocatable                              :: RprodD(:,:)  ! diagonal of covariance matrix for cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for spectra covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), allocatable                             :: Rsp(:,:,:)   ! covariance matrix for emission spectra
-  real(sgl), allocatable                             :: spav(:,:)  ! average emission spectra
+  real(dbl), allocatable                             :: Rsp(:,:,:)   ! covariance matrix for emission spectra
+  real(dbl), allocatable                             :: spav(:,:)  ! average emission spectra
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for angular distribution covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), allocatable                             :: angav(:,:)  ! average angular distributions
-  real(sgl), allocatable                             :: Rang(:,:,:)   ! covariance matrix for angular distributions
+  real(dbl), allocatable                             :: angav(:,:)  ! average angular distributions
+  real(dbl), allocatable                             :: Rang(:,:,:)   ! covariance matrix for angular distributions
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for Legendre coefficient covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), allocatable                                        :: legav(:,:)  ! average Legendre coefficients
-  real(sgl), allocatable                                        :: Rleg(:,:,:,:)   ! covariance matrix for Legendre coefficients
+  real(dbl), allocatable                                        :: legav(:,:)  ! average Legendre coefficients
+  real(dbl), allocatable                                        :: Rleg(:,:,:,:)   ! covariance matrix for Legendre coefficients
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for integral data covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), dimension(numchanxs)            :: erreff  ! effective cross section uncertainty
-  real(sgl), dimension(numchanxs, numchanxs) :: Reff    ! covariance matrix for effective cross sections
-  real(sgl), dimension(numchanxs)            :: ReffD   ! diagonal of covariance matrix for effective cross sections
-  real(sgl), dimension(numchanxs)            :: xseffav ! average effective cross section
+  real(dbl), dimension(numchanxs)            :: erreff  ! effective cross section uncertainty
+  real(dbl), dimension(numchanxs, numchanxs) :: Reff    ! covariance matrix for effective cross sections
+  real(dbl), dimension(numchanxs)            :: ReffD   ! diagonal of covariance matrix for effective cross sections
+  real(dbl), dimension(numchanxs)            :: xseffav ! average effective cross section
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for isotope production covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl), dimension(numchanY, numtime) :: actav      ! average activity
-  real(sgl), dimension(numchanY, numtime) :: erract     ! activity uncertainty
-  real(sgl), dimension(numchanY, numtime) :: errNiso    ! error in diagonal of average number of isotopes produced afte
-  real(sgl), dimension(numchanY, numtime) :: errNisorel ! error in fraction of number of produced isotopes per element
-  real(sgl), dimension(numchanY, numtime) :: erryield   ! error in yield
-  real(sgl), dimension(numchanY, numtime) :: Nisoav     ! average number of isotopes produced after irradiation
-  real(sgl), dimension(numchanY, numtime) :: Nisorelav  ! average fraction of number of produced isotopes per element
-  real(sgl), dimension(numchanY, numtime) :: RactD      ! diagonal of covariance matrix for activity
-  real(sgl), dimension(numchanY, numtime) :: RNisoD     ! diagonal of average number of isotopes produced after irradia
-  real(sgl), dimension(numchanY, numtime) :: RNisorelD  ! diagonal in fraction of number of produced isotopes per eleme
-  real(sgl), dimension(numchanY, numtime) :: RyieldD    ! diagonal of yield covariance matrix
-  real(sgl), dimension(numchanY, numtime) :: yieldav    ! average yield of produced isotope in MBq/(mA.h)
+  real(dbl), dimension(numchanY, numtime) :: actav      ! average activity
+  real(dbl), dimension(numchanY, numtime) :: erract     ! activity uncertainty
+  real(dbl), dimension(numchanY, numtime) :: errNiso    ! error in diagonal of average number of isotopes produced afte
+  real(dbl), dimension(numchanY, numtime) :: errNisorel ! error in fraction of number of produced isotopes per element
+  real(dbl), dimension(numchanY, numtime) :: erryield   ! error in yield
+  real(dbl), dimension(numchanY, numtime) :: Nisoav     ! average number of isotopes produced after irradiation
+  real(dbl), dimension(numchanY, numtime) :: Nisorelav  ! average fraction of number of produced isotopes per element
+  real(dbl), dimension(numchanY, numtime) :: RactD      ! diagonal of covariance matrix for activity
+  real(dbl), dimension(numchanY, numtime) :: RNisoD     ! diagonal of average number of isotopes produced after irradia
+  real(dbl), dimension(numchanY, numtime) :: RNisorelD  ! diagonal in fraction of number of produced isotopes per eleme
+  real(dbl), dimension(numchanY, numtime) :: RyieldD    ! diagonal of yield covariance matrix
+  real(dbl), dimension(numchanY, numtime) :: yieldav    ! average yield of produced isotope in MBq/(mA.h)
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for MACS covariances
 !-----------------------------------------------------------------------------------------------------------------------------------
 !
-  real(sgl)  :: errmacs ! Maxwellian averaged cross section uncertainty
-  real(sgl)  :: macsav  ! average Maxwellian averaged cross section
-  real(sgl)  :: RmacsD  ! diagonal of covariance matrix for Maxwellian averaged cross sections
+  real(dbl)  :: errmacs ! Maxwellian averaged cross section uncertainty
+  real(dbl)  :: macsav  ! average Maxwellian averaged cross section
+  real(dbl)  :: RmacsD  ! diagonal of covariance matrix for Maxwellian averaged cross sections
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for sensitivity
@@ -581,10 +581,10 @@ module A0_tasman_mod
   logical                                :: flagmorris   ! flag to use Morris screening
   integer                                :: Nmorris      ! number of samples for Morris screening
   integer                                :: iloop        ! counter for Morris screening
-  real(sgl), dimension(numpar)           :: Sall         ! sensitivity for all channels
-  real(sgl), dimension(numpar,numchanxs) :: Schan        ! sensitivity for channel
-  real(sgl), dimension(numpar,numenin)   :: SE           ! sensitivity for energy
-  real(sgl), dimension(numpar,numchanxs) :: xsdevav      ! average deviation of cross section
+  real(dbl), dimension(numpar)           :: Sall         ! sensitivity for all channels
+  real(dbl), dimension(numpar,numchanxs) :: Schan        ! sensitivity for channel
+  real(dbl), dimension(numpar,numenin)   :: SE           ! sensitivity for energy
+  real(dbl), dimension(numpar,numchanxs) :: xsdevav      ! average deviation of cross section
 !
 !-----------------------------------------------------------------------------------------------------------------------------------
 ! Variables for reading experimental data

@@ -33,24 +33,20 @@ subroutine covmacs
 !
   implicit none
   character(len=13) :: ofile     ! output file
-  real(sgl)         :: err       ! error
-  real(sgl)         :: term      ! help variable
-  real(sgl)         :: term0     ! help variable
-  real(sgl)         :: xs2       ! help variable
-  real(sgl)         :: xsdifi    ! difference in cross section
-  real(sgl)         :: xsi0      ! cross section of run 0
-  real(sgl)         :: xsi1      ! cross section of random run
+  real(dbl)         :: err       ! error
+  real(dbl)         :: term      ! help variable
+  real(dbl)         :: xsdifi    ! difference in cross section
+  real(dbl)         :: xsi0      ! cross section of run 0
+  real(dbl)         :: xsi1      ! cross section of random run
 !
 ! Maxwellian averaged cross sections and uncertainties
 !
   xsi0 = macstalys(0)
-  xsi1 = min(macstalys(1), 10. * xsi0)
+  xsi1 = min(real(macstalys(1), dbl), 10. * xsi0)
   xsdifi = xsi0 - xsi1
-  term0 = xsdifi * xsdifi
   if (Sws0 > 0.) then
-    xs2 = xsi0 * xsi0
     term = 0.
-    if (xs2 > 0.) term = term0 / xs2
+    if (xsi0 /= 0.) term = (xsdifi / xsi0) * (xsdifi / xsi0)
     RmacsD = (RmacsD * Swp0 + Sw0 * term) / Sws0
     errmacs = sqrt(RmacsD)
     macsav = (macsav * Swp0 + Sw0 * xsi1) / Sws0

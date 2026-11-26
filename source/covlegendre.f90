@@ -55,17 +55,15 @@ subroutine covlegendre
   integer           :: indent
   integer           :: id2
   integer           :: id4
-  real(sgl)         :: err        ! error
-  real(sgl)         :: leg2       ! second Legendre coefficient
-  real(sgl)         :: legdifi    ! difference in Lefgendre coefficients
-  real(sgl)         :: legdifk    ! difference in Lefgendre coefficients
-  real(sgl)         :: legi0      ! Legendre coefficient for run 0
-  real(sgl)         :: legi1      ! Legendre coefficient for random run
-  real(sgl)         :: legk0      ! Legendre coefficient for run 0
-  real(sgl)         :: legk1      ! Legendre coefficient for random run
-  real(sgl)         :: term       ! help variable
-  real(sgl)         :: term0      ! help variable
-  real(sgl), dimension(numchanang,0:numleg)                     :: errleg ! Legendre coefficients uncertainty
+  real(dbl)         :: err        ! error
+  real(dbl)         :: legdifi    ! difference in Lefgendre coefficients
+  real(dbl)         :: legdifk    ! difference in Lefgendre coefficients
+  real(dbl)         :: legi0      ! Legendre coefficient for run 0
+  real(dbl)         :: legi1      ! Legendre coefficient for random run
+  real(dbl)         :: legk0      ! Legendre coefficient for run 0
+  real(dbl)         :: legk1      ! Legendre coefficient for random run
+  real(dbl)         :: term       ! help variable
+  real(dbl), dimension(numchanang,0:numleg)                     :: errleg ! Legendre coefficients uncertainty
   errleg = 0.
 !
 ! Average Legendre coefficients and covariances
@@ -83,11 +81,9 @@ subroutine covlegendre
           legk0 = leg0(0, k, l)
           legk1 = leg0(1, k, l)
           legdifk = legk0 - legk1
-          term0 = legdifi * legdifk
           if (Sws0 > 0.) then
-            leg2 = legi0 * legk0
             term = 0.
-            if (leg2 /= 0.) term = term0 / leg2
+            if (legi0 /= 0. .and. legk0 /= 0.) term = (legdifi / legi0) * (legdifk / legk0)
             Rleg(i, j, k, l) = (Rleg(i, j, k, l) * Swp0 + Sw0 * term) / Sws0
           endif
         enddo
@@ -174,7 +170,7 @@ subroutine covlegendre
       call write_datablock(id2,Ncol,(numleg+1)**2,col,un)
       do j = 0, numleg
         do l = 0, numleg
-          write(1, '(2(3x,i6,6x), es15.6)') j, l, Rleg(i, j, k, l)
+          write(1, '(2(3x,i6,6x), es24.16e3)') j, l, Rleg(i, j, k, l)
         enddo
       enddo
     enddo

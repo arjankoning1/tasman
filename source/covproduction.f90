@@ -51,26 +51,22 @@ subroutine covproduction
   character(len=21) :: ofile     ! output file
   integer           :: i         ! counter
   integer           :: j         ! counter
-  real(sgl)         :: err       ! error
-  real(sgl)         :: term      ! help variable
-  real(sgl)         :: term0     ! help variable
-  real(sgl)         :: xs2       ! help variable
-  real(sgl)         :: xsdifi    ! difference in cross section
-  real(sgl)         :: xsi0      ! cross section of run 0
-  real(sgl)         :: xsi1      ! cross section of random run
+  real(dbl)         :: err       ! error
+  real(dbl)         :: term      ! help variable
+  real(dbl)         :: xsdifi    ! difference in cross section
+  real(dbl)         :: xsi0      ! cross section of run 0
+  real(dbl)         :: xsi1      ! cross section of random run
 !
 ! Average isotope production and covariances
 !
   do i = 1, NchanY
     do j = 1, Ntime(i)
       xsi0 = acttalys(0, i, j)
-      xsi1 = min(acttalys(1, i, j), 10. * xsi0)
+      xsi1 = min(real(acttalys(1, i, j), dbl), 10. * xsi0)
       xsdifi = xsi0 - xsi1
-      term0 = xsdifi * xsdifi
       if (Sws0 > 0.) then
-        xs2 = xsi0 * xsi0
         term = 0.
-        if (xs2 > 0.) term = term0 / xs2
+        if (xsi0 /= 0.) term = (xsdifi / xsi0) * (xsdifi / xsi0)
         RactD(i, j) = (RactD(i, j) * Swp0 + Sw0 * term) / Sws0
         erract(i, j) = sqrt(RactD(i, j))
       endif
@@ -78,13 +74,11 @@ subroutine covproduction
     enddo
     do j = 1, Ntime(i)
       xsi0 = Nisotalys(0, i, j)
-      xsi1 = min(Nisotalys(1, i, j), 10. * xsi0)
+      xsi1 = min(real(Nisotalys(1, i, j), dbl), 10. * xsi0)
       xsdifi = xsi0 - xsi1
-      term0 = xsdifi * xsdifi
       if (Sws0 > 0.) then
-        xs2 = xsi0 * xsi0
         term = 0.
-        if (xs2 > 0.) term = term0 / xs2
+        if (xsi0 /= 0.) term = (xsdifi / xsi0) * (xsdifi / xsi0)
         RNisoD(i, j) = (RNisoD(i, j) * Swp0 + Sw0 * term) / Sws0
         errNiso(i, j) = sqrt(RNisoD(i, j))
       endif
@@ -92,13 +86,11 @@ subroutine covproduction
     enddo
     do j = 1, Ntime(i)
       xsi0 = yieldtalys(0, i, j)
-      xsi1 = min(yieldtalys(1, i, j), 10. * xsi0)
+      xsi1 = min(real(yieldtalys(1, i, j), dbl), 10. * xsi0)
       xsdifi = xsi0 - xsi1
-      term0 = xsdifi * xsdifi
       if (Sws0 > 0.) then
-        xs2 = xsi0 * xsi0
         term = 0.
-        if (xs2 > 0.) term = term0 / xs2
+        if (xsi0 /= 0.) term = (xsdifi / xsi0) * (xsdifi / xsi0)
         RyieldD(i, j) = (RyieldD(i, j) * Swp0 + Sw0 * term) / Sws0
         erryield(i, j) = sqrt(RyieldD(i, j))
       endif
@@ -106,13 +98,11 @@ subroutine covproduction
     enddo
     do j = 1, Ntime(i)
       xsi0 = Nisoreltalys(0, i, j)
-      xsi1 = min(Nisoreltalys(1, i, j), 10. * xsi0)
+      xsi1 = min(real(Nisoreltalys(1, i, j), dbl), 10. * xsi0)
       xsdifi = xsi0 - xsi1
-      term0 = xsdifi * xsdifi
       if (Sws0 > 0.) then
-        xs2 = xsi0 * xsi0
         term = 0.
-        if (xs2 > 0.) term = term0 / xs2
+        if (xsi0 /= 0.) term = (xsdifi / xsi0) * (xsdifi / xsi0)
         RNisorelD(i, j) = (RNisorelD(i, j) * Swp0 + Sw0 * term) / Sws0
         errNisorel(i, j) = sqrt(RNisorelD(i, j))
       endif

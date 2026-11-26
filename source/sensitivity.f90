@@ -70,35 +70,35 @@ subroutine sensitivity
   integer           :: id4
   integer           :: id6
   integer           :: Nr   
-  real(sgl)         :: dEtot                               ! total energy range
-  real(sgl)         :: factor                              ! help variable
-  real(sgl)         :: pardifj                             ! difference between parameters
-  real(sgl)         :: parj0                               ! parameter of run 0
-  real(sgl)         :: parjk                               ! parameter of random run
-  real(sgl)         :: ploc(numpar)                        ! help variable
-  real(sgl)         :: pearloc(numpar)                     ! help variable
-  real(sgl)         :: ptmp                                ! help variable
-  real(sgl)         :: peartmp                             ! help variable
-  real(sgl)         :: Sabs                                ! absolute sensitivity
-  real(sgl)         :: sens                                ! sensitivity
-  real(sgl)         :: Sloc(numpar)                        ! help variable
-  real(sgl)         :: Stmp                                ! help variable
-  real(sgl)         :: sumdev                              ! summed deviation
-  real(sgl)         :: sumE(numenin)                       ! summed sensitivity x cross section
-  real(sgl)         :: sumS                                ! integrated sensitivity
-  real(sgl)         :: sumSxs                              ! integrated sensitivity
-  real(sgl)         :: sumxs(numenin)                      ! sum over emission channels
-  real(sgl)         :: sumxsall                            ! sumxsE summed over channels
-  real(sgl)         :: sumxsE                              ! summed cross section x energy
-  real(sgl)         :: xsdifi                              ! difference in cross section
-  real(sgl)         :: xsi0                                ! cross section of run 0
-  real(sgl)         :: xsik                                ! cross section of random run
-  real(sgl)         :: xsloc(numpar)                       ! help variable
-  real(sgl)         :: xstmp                               ! help variable
+  real(dbl)         :: dEtot                               ! total energy range
+  real(dbl)         :: factor                              ! help variable
+  real(dbl)         :: pardifj                             ! difference between parameters
+  real(dbl)         :: parj0                               ! parameter of run 0
+  real(dbl)         :: parjk                               ! parameter of random run
+  real(dbl)         :: ploc(numpar)                        ! help variable
+  real(dbl)         :: pearloc(numpar)                     ! help variable
+  real(dbl)         :: ptmp                                ! help variable
+  real(dbl)         :: peartmp                             ! help variable
+  real(dbl)         :: Sabs                                ! absolute sensitivity
+  real(dbl)         :: sens                                ! sensitivity
+  real(dbl)         :: Sloc(numpar)                        ! help variable
+  real(dbl)         :: Stmp                                ! help variable
+  real(dbl)         :: sumdev                              ! summed deviation
+  real(dbl)         :: sumE(numenin)                       ! summed sensitivity x cross section
+  real(dbl)         :: sumS                                ! integrated sensitivity
+  real(dbl)         :: sumSxs                              ! integrated sensitivity
+  real(dbl)         :: sumxs(numenin)                      ! sum over emission channels
+  real(dbl)         :: sumxsall                            ! sumxsE summed over channels
+  real(dbl)         :: sumxsE                              ! summed cross section x energy
+  real(dbl)         :: xsdifi                              ! difference in cross section
+  real(dbl)         :: xsi0                                ! cross section of run 0
+  real(dbl)         :: xsik                                ! cross section of random run
+  real(dbl)         :: xsloc(numpar)                       ! help variable
+  real(dbl)         :: xstmp                               ! help variable
   character(len=19) :: format2                             ! format string
   character(len=132):: strloc(numpar)                      ! help variable
   character(len=132):: sttmp                               ! help variable
-  real(sgl), allocatable :: xsdev(:,:,:)                   ! cross section deviation
+  real(dbl), allocatable :: xsdev(:,:,:)                   ! cross section deviation
   allocate(xsdev(Npar,Nchanxs,numenS))
   xsdev = 0.
 !

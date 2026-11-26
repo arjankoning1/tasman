@@ -127,40 +127,39 @@ subroutine covcross
   real(sgl)         :: e2                             ! second energy
   real(sgl)         :: ee(0:numenin)                  ! incident energy
   real(sgl)         :: Eex                            ! excitation energy
-  real(sgl)         :: err                            ! error
+  real(dbl)         :: err                            ! error
   real(sgl)         :: fac                            ! factor
   real(sgl)         :: fracinside                     ! fraction of points inside error band
   real(sgl)         :: fracinsideE(numenin)           ! fraction of points inside error band as function of energy
   real(sgl)         :: fracinsidetot                  ! fraction of total points inside error band
   real(sgl)         :: fracinsidexsE(numenin)         ! fraction of points inside error band as function of  energy
-  real(sgl)         :: pardifj                        ! difference between parameters
-  real(sgl)         :: parj0                          ! parameter of run 0
-  real(sgl)         :: parjk                          ! parameter of random run
-  real(sgl)         :: Sw                             ! weight for TALYS run
-  real(sgl)         :: Swp                            ! weight for TALYS run
-  real(sgl)         :: Sws                            ! sum of weights for TALYS run
-  real(sgl)         :: term                           ! help variable
-  real(sgl)         :: term0                          ! help variable
-  real(sgl)         :: V2                             ! square of covariance matrix element
-  real(sgl)         :: xs2                            ! help variable
-  real(sgl)         :: xsdifi                         ! difference in cross section
-  real(sgl)         :: xsdifk                         ! difference in cross section
+  real(dbl)         :: pardifj                        ! difference between parameters
+  real(dbl)         :: parj0                          ! parameter of run 0
+  real(dbl)         :: parjk                          ! parameter of random run
+  real(dbl)         :: Sw                             ! weight for TALYS run
+  real(dbl)         :: Swp                            ! weight for TALYS run
+  real(dbl)         :: Sws                            ! sum of weights for TALYS run
+  real(dbl)         :: term                           ! help variable
+  real(dbl)         :: term0                          ! help variable
+  real(dbl)         :: V2                             ! square of covariance matrix element
+  real(dbl)         :: xsdifi                         ! difference in cross section
+  real(dbl)         :: xsdifk                         ! difference in cross section
   real(sgl)         :: xsex                           ! help variable
-  real(sgl)         :: Ssign                          ! help variable
-  real(sgl)         :: Ppar                           ! help variable
-  real(sgl)         :: Pxs                            ! help variable
-  real(sgl)         :: xsA                            ! average cross section
-  real(sgl)         :: xsi0                           ! cross section of run 0
-  real(sgl)         :: xsi1                           ! cross section of random run
-  real(sgl)         :: xsk0                           ! cross section of run 0
-  real(sgl)         :: xsk1                           ! cross section of random run
-  real(sgl)         :: xslow(numchanxs, 0:numenin)    ! lower cross section band
-  real(sgl)         :: xslowint                       ! interpolated lower cross section band
-  real(sgl)         :: xsupp(numchanxs, 0:numenin)    ! upper cross section band
-  real(sgl)         :: xsuppint                       ! interpolated upper cross section band
-  real(sgl)         :: xslimit                        ! xs boundary for inclusion
-  real(sgl), allocatable        :: Cmt(:,:,:)  ! intra-channel correlation matrix for cross secti
-  real(sgl), allocatable        :: Ccov(:,:,:,:) ! correlation matrix for cross sections
+  real(dbl)         :: Ssign                          ! help variable
+  real(dbl)         :: Ppar                           ! help variable
+  real(dbl)         :: Pxs                            ! help variable
+  real(dbl)         :: xsA                            ! average cross section
+  real(dbl)         :: xsi0                           ! cross section of run 0
+  real(dbl)         :: xsi1                           ! cross section of random run
+  real(dbl)         :: xsk0                           ! cross section of run 0
+  real(dbl)         :: xsk1                           ! cross section of random run
+  real(dbl)         :: xslow(numchanxs, 0:numenin)    ! lower cross section band
+  real(dbl)         :: xslowint                       ! interpolated lower cross section band
+  real(dbl)         :: xsupp(numchanxs, 0:numenin)    ! upper cross section band
+  real(dbl)         :: xsuppint                       ! interpolated upper cross section band
+  real(dbl)         :: xslimit                        ! xs boundary for inclusion
+  real(dbl), allocatable        :: Cmt(:,:,:)  ! intra-channel correlation matrix for cross secti
+  real(dbl), allocatable        :: Ccov(:,:,:,:) ! correlation matrix for cross sections
 !
 !
 !
@@ -187,7 +186,7 @@ subroutine covcross
       Sw = Sweight(j)
       Sws = Sweightsum(j)
       xsi0 = xseval(0, i, j)
-      xsi1 = min(xseval(1, i, j), xsi0 * xslimit)
+      xsi1 = min(real(xseval(1, i, j), dbl), xsi0 * xslimit)
       xsi1 = max(xsi1, xsi0 / xslimit)
       if (Sws > 0.) xsav(i, j) = (xsav(i, j) * Swp + Sw * xsi1) / Sws
     enddo
@@ -199,7 +198,7 @@ subroutine covcross
       Sw = Sweight(jj)
       Sws = Sweightsum(jj)
       xsi0 = xseval(0, i, jj)
-      xsi1 = min(xseval(1, i, jj), xsi0 * xslimit)
+      xsi1 = min(real(xseval(1, i, jj), dbl), xsi0 * xslimit)
       xsi1 = max(xsi1, xsi0 / xslimit)
       if (Sws > 0.) xsavC(i, j) = (xsavC(i, j) * Swp + Sw * xsi1) / Sws
     enddo
@@ -216,7 +215,7 @@ subroutine covcross
           Sw = Sweight(jj)
           Sws = Sweightsum(jj)
           xsi0 = xseval(0, i, jj)
-          xsi1 = min(xseval(1, i, jj), xsi0 * xslimit)
+          xsi1 = min(real(xseval(1, i, jj), dbl), xsi0 * xslimit)
           xsi1 = max(xsi1, xsi0 / xslimit)
           xsi0 = xsavC(i, j)
           xsdifi = xsi0 - xsi1
@@ -226,16 +225,15 @@ subroutine covcross
                 do l = 1, Nencov
                   ll = Ecovindex(l)
                   xsk0 = xseval(0, k, ll)
-                  xsk1 = min(xseval(1, k, ll), xsk0 * xslimit)
+                  xsk1 = min(real(xseval(1, k, ll), dbl), xsk0 * xslimit)
                   xsk1 = max(xsk1, xsk0 / xslimit)
                   xsk0 = xsavC(k, l)
                   xsdifk = xsk0 - xsk1
                   term0 = xsdifi * xsdifk
                   if (Sws > 0.) then
                     Vcov(ichan, j, kchan, l) = (Vcov(ichan, j, kchan, l) * Swp + Sw * term0) / Sws
-                    xs2 = xsi0 * xsk0
                     term = 0.
-                    if (xs2 > 0.) term = term0 / xs2
+                    if (xsi0 /= 0. .and. xsk0 /= 0.) term = (xsdifi / xsi0) * (xsdifk / xsk0)
                     Rcov(ichan, j, kchan, l) = (Rcov(ichan, j, kchan, l) * Swp + Sw * term) / Sws
                   endif
                 enddo
@@ -300,23 +298,22 @@ subroutine covcross
       Sw = Sweight(jj)
       Sws = Sweightsum(jj)
       xsi0 = xseval(0, i, jj)
-      xsi1 = min(xseval(1, i, jj), xsi0 * xslimit)
+      xsi1 = min(real(xseval(1, i, jj), dbl), xsi0 * xslimit)
       xsi1 = max(xsi1,  xsi0 / xslimit)
       xsi0 = xsavC(i, j)
       xsdifi = xsi0 - xsi1
       do l = 1, Nencov
         ll = Ecovindex(l)
         xsk0 = xseval(0, i, ll)
-        xsk1 = min(xseval(1, i, ll), xsk0 * xslimit)
+        xsk1 = min(real(xseval(1, i, ll), dbl), xsk0 * xslimit)
         xsk1 = max(xsk1, xsk0 / xslimit)
         xsk0 = xsavC(i, l)
         xsdifk = xsk0 - xsk1
         term0 = xsdifi * xsdifk
         if (Sws > 0.) then
           Vmt(i, j, l) = (Vmt(i, j, l) * Swp + Sw * term0) / Sws
-          xs2 = xsi0 * xsk0
           term = 0.
-          if (xs2 > 0.) term = term0 / xs2
+          if (xsi0 /= 0. .and. xsk0 /= 0.) term = (xsdifi / xsi0) * (xsdifk / xsk0)
           Rmt(i, j, l) = (Rmt(i, j, l) * Swp + Sw * term) / Sws
         endif
       enddo
@@ -327,15 +324,13 @@ subroutine covcross
       Sw = Sweight(j)
       Sws = Sweightsum(j)
       xsi0 = xseval(0, i, j)
-      xsi1 = min(xseval(1, i, j), xsi0 * xslimit)
+      xsi1 = min(real(xseval(1, i, j), dbl), xsi0 * xslimit)
       xsi1 = max(xsi1, xsi0 / xslimit)
       xsi0 = xsav(i, j)
       xsdifi = xsi0 - xsi1
-      term0 = xsdifi * xsdifi
-      xs2 = xsi0 * xsi0
       if (Sws > 0.) then
         term = 0.
-        if (xs2 > 0.) term = term0 / xs2
+        if (xsi0 /= 0) term = (xsdifi / xsi0) * (xsdifi / xsi0)
         RmtD(i, j) = (RmtD(i, j) * Swp + Sw * term) / Sws
         errmt(i, j) = sqrt(RmtD(i, j))
 !
@@ -441,7 +436,7 @@ subroutine covcross
           ll = Ecovindex(l)
 !         write(3, '(2(3i4, es15.6), 3es15.6)') MTcov(i), MTisocov(i), jj, e(i, jj), MTcov(k), MTisocov(k), ll, &
 !&          e(k, ll), Rcov(i, j, k, l), Ccov(i, j, k, l), Vcov(i, j, k, l)
-          write(1, '(5es15.6)') e(i, jj), e(k, ll), Rcov(i, j, k, l), Ccov(i, j, k, l), Vcov(i, j, k, l)
+          write(1, '(2es15.6,3es24.16e3)') e(i, jj), e(k, ll), Rcov(i, j, k, l), Ccov(i, j, k, l), Vcov(i, j, k, l)
         enddo
       enddo
     enddo
@@ -467,7 +462,7 @@ subroutine covcross
         ll = Ecovindex(l)
 !       write(4, '(2(3i4, es15.6), 3es15.6)') MT(i), MTiso(i), jj, e(i, jj), MT(i), MTiso(i), ll, e(i, ll), Rmt(i, j, l), &
 !&        Cmt(i, j, l), Vmt(i, j, l)
-        write(1, '(5es15.6)')  e(i, jj), e(i, ll), Rmt(i, j, l), Cmt(i, j, l), Vmt(i, j, l)
+        write(1, '(2es15.6,3es24.16e3)')  e(i, jj), e(i, ll), Rmt(i, j, l), Cmt(i, j, l), Vmt(i, j, l)
       enddo
     enddo
   enddo
@@ -500,7 +495,7 @@ subroutine covcross
       jj = Ecovindex(j)
       err = xsavC(i, j) * errmtC(i, j)
 !     write(3, '(3i4, 5es15.6)') MT(i), MTiso(i), jj, e(i, jj), Rmt(i, j, j), errmtC(i, j), xsavC(i, j), err
-      write(1, '(5es15.6)') e(i, jj), Rmt(i, j, j), errmtC(i, j), xsavC(i, j), err
+      write(1, '(es15.6,4es24.16e3)') e(i, jj), Rmt(i, j, j), errmtC(i, j), xsavC(i, j), err
     enddo
   enddo
   close (1)

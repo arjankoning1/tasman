@@ -56,11 +56,11 @@ subroutine readsens
   real(sgl)          :: e2                ! second energy
   real(sgl)          :: ee(0:numenin)     ! incident energy
   real(sgl)          :: Einc              ! incident energy in MeV
-  real(sgl)          :: fac               ! factor
-  real(sgl)          :: s1                ! first sensitivity value
-  real(sgl)          :: s2                ! second sensitivity value
-  real(sgl)          :: sint              ! interpolated sensitivity value
-  real(sgl)          :: Sval(0:numenin)   ! sensitivity value
+  real(dbl)          :: fac               ! factor
+  real(dbl)          :: s1                ! first sensitivity value
+  real(dbl)          :: s2                ! second sensitivity value
+  real(dbl)          :: sint              ! interpolated sensitivity value
+  real(dbl)          :: Sval(0:numenin)   ! sensitivity value
   character(len=3)   :: massstring        ! string for mass number
   character(len=20)  :: chanfile          ! file with channel cross section
   character(len=30)  :: sensstring        ! string for sensitivities
@@ -122,7 +122,7 @@ subroutine readsens
           call locate(ee, 0, NE, Einc, nn)
           e1 = ee(nn)
           e2 = ee(nn + 1)
-          fac = (Einc - e1) / (e2 - e1)
+          fac = (real(Einc, dbl) - real(e1, dbl)) / (real(e2, dbl) - real(e1, dbl))
           s1 = Sval(nn)
           s2 = Sval(nn + 1)
           sint = s1 + fac * (s2 - s1)
