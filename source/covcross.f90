@@ -211,9 +211,6 @@ subroutine covcross
       if (MT(i) == MTcov(ichan) .and. MTiso(i) == MTisocov(ichan)) then
         do j = 1, Nencov
           jj = Ecovindex(j)
-          Swp = Sweightprev(jj)
-          Sw = Sweight(jj)
-          Sws = Sweightsum(jj)
           xsi0 = xseval(0, i, jj)
           xsi1 = min(real(xseval(1, i, jj), dbl), xsi0 * xslimit)
           xsi1 = max(xsi1, xsi0 / xslimit)
@@ -230,6 +227,9 @@ subroutine covcross
                   xsk0 = xsavC(k, l)
                   xsdifk = xsk0 - xsk1
                   term0 = xsdifi * xsdifk
+                  Swp = sqrt(Sweightprev(jj) * Sweightprev(ll))
+                  Sw  = sqrt(Sweight(jj) * Sweight(ll))
+                  Sws = sqrt(Sweightsum(jj) * Sweightsum(ll))
                   if (Sws > 0.) then
                     Vcov(ichan, j, kchan, l) = (Vcov(ichan, j, kchan, l) * Swp + Sw * term0) / Sws
                     term = 0.
@@ -292,9 +292,6 @@ subroutine covcross
   do i = 1, Nchanxs
     do j = 1, Nencov
       jj = Ecovindex(j)
-      Swp = Sweightprev(jj)
-      Sw = Sweight(jj)
-      Sws = Sweightsum(jj)
       xsi0 = xseval(0, i, jj)
       xsi1 = min(real(xseval(1, i, jj), dbl), xsi0 * xslimit)
       xsi1 = max(xsi1,  xsi0 / xslimit)
@@ -308,6 +305,9 @@ subroutine covcross
         xsk0 = xsavC(i, l)
         xsdifk = xsk0 - xsk1
         term0 = xsdifi * xsdifk
+        Swp = sqrt(Sweightprev(jj) * Sweightprev(ll))
+        Sw  = sqrt(Sweight(jj) * Sweight(ll))
+        Sws = sqrt(Sweightsum(jj) * Sweightsum(ll))
         if (Sws > 0.) then
           Vmt(i, j, l) = (Vmt(i, j, l) * Swp + Sw * term0) / Sws
           term = 0.
@@ -354,7 +354,7 @@ subroutine covcross
               term = pardifj **2
               if (term == 0.) term = 1.
               if (Sws > 0.) Sdenom(k, i, n) = (Sdenom(k, i, n) * Swp + Sw * term) / Sws
-              S(k, i, n) = Senum(k, i, n) / Sdenom(k, i, n) * parj0 / xsi0
+              if (Sdenom(k, i, n) /= 0. .and. xsi0 /= 0.) S(k, i, n) = Senum(k, i, n) / Sdenom(k, i, n) * parj0 / xsi0
             endif
             Pearson_enum(k, i, n)= Pearson_enum(k, i, n) + pardifj * xsdifi
             Pearson_denom_par(k, i, n)= Pearson_denom_par(k, i, n) + (pardifj ** 2)
