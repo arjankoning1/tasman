@@ -259,10 +259,9 @@ subroutine covcross
                   if (V2 > 0.) then
                     Ccov(ichan, j, kchan, l) = Vcov(ichan, j, kchan, l) / sqrt(V2)
                     term = Ccov(ichan, j, kchan, l) **2
-                    if (term > Rlimit) then
-                      Vcov(ichan, j, kchan, l) = Vcov(ichan, j, kchan, l) / term
-                      Rcov(ichan, j, kchan, l) = Rcov(ichan, j, kchan, l) / term
-                    endif
+                    if (term > Rlimit) write(*, '(" TASMAN-warning: Correlation: ", es20.10)') term
+                    Vcov(ichan, j, kchan, l) = Vcov(ichan, j, kchan, l) / term
+                    Rcov(ichan, j, kchan, l) = Rcov(ichan, j, kchan, l) / term
                   endif
                   if (Vcov(ichan, j, ichan, j) == 0.) Vcov(ichan, j, kchan, l) = 0.
                   if (Rcov(ichan, j, ichan, j) == 0.) Rcov(ichan, j, kchan, l) = 0.
